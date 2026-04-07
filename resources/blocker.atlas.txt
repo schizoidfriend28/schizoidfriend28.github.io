@@ -1,0 +1,17 @@
+blocker.png
+size:860,548
+filter:Linear,Linear
+pma:true
+bl1
+bounds:484,361,372,184
+offsets:21,6,410,202
+bl2
+bounds:484,176,372,184
+offsets:11,5,392,198
+block
+bounds:484,1,361,174
+offsets:25,78,410,266
+cloud2
+bounds:1,38,507,482
+offsets:0,17,512,512
+rotate:90
