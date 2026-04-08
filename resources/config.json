@@ -4,11 +4,12 @@
     "//GAME-end":   "╚══════════════════════════════════════════════════════╝",
 
     "// core": "── Core ─────────────────────────────────────────────────",
+    "version": "0.0.1",
     "game.background": "#2c3e50",
     "game.totalSteps": 20,
     "game.yShift": 150,
     "portrait.game.yShift": 100,
-    "loading.totalSteps": 17,
+    "loading.totalSteps": 9,
 
     "// risk-modes": "── Risk modes (wolf chance = instant lose probability) ──",
     "mode.low.wolfChance": 0.15,
@@ -189,9 +190,6 @@
     "betMenu.hoverColor": "0x9b59b6",
     "betMenu.disabledColor": "0x4a4a4a",
     "betMenu.text.fontSize": 40,
-    "ui.betMenuYOffset": 40,
-    "ui.betMenuEdgeMargin": 8,
-    "ui.betMenuAboveOffset": 10,
 
     "// button-base": "── Shared button styling ─────────────────────────────",
     "button.bgX": -100,
@@ -224,6 +222,15 @@
     "autoplayCancelBtn.text.fontSize": 30,
     "autoplayCancelBtn.downTint": "0x660000",
     "autoplayCancelBtn.hoverTint": "0xffaaaa",
+
+    "// win-presentation": "── Win presentation (big-win spine) ─────────────────",
+    "winPresentation.idleTime": 3,
+    "winPresentation.scale": 1,
+    "winPresentation.text.fontSize": 150,
+    "winPresentation.text.fill": "#ffe200",
+    "winPresentation.text.strokeColor": "#000000",
+    "winPresentation.text.strokeWidth": 6,
+    "winPresentation.text.yOffset": 200,
 
     "// overlay": "── End-screen / round-result overlay ────────────────",
     "overlay.alpha": 0.85,
