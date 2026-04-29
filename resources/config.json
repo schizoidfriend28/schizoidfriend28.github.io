@@ -4,8 +4,8 @@
     "//GAME-end":   "╚══════════════════════════════════════════════════════╝",
 
     "// core": "── Core ─────────────────────────────────────────────────",
-    "version": "0.0.1",
-    "game.background": "#2c3e50",
+    "version": "0.0.2",
+    "game.background": "#000000",
     "game.totalSteps": 20,
     "game.yShift": 150,
     "portrait.game.yShift": 100,
@@ -78,7 +78,7 @@
     "blocker.anchorX": 0.5,
     "blocker.anchorY": 1,
     "blocker.scale": 0.4,
-    "portrait.blocker.scale": 0.25,
+    "portrait.blocker.scale": 0.4,
     "blocker.yOffset": 200,
     "portrait.blocker.yOffset": 300,
 
@@ -103,6 +103,20 @@
     "shield.text.fontFamily": "Georgia, serif",
     "shield.text.stroke.color": "#000000",
     "shield.text.stroke.width": 20,
+
+    "// value panel": "── Shield / coin sprites and multiplier labels ────────",
+    "valuepanel.anchor": 0.5,
+    "valuepanel.scale": 0.25,
+    "portrait.valuepanel.scale": 0.25,
+    "valuepanel.yFactor": 0.75,
+    "portrait.valuepanel.yFactor": 0.75,
+    "valuepanel.text.anchorY": 0.4,
+    "valuepanel.text.fill": "0xffffff",
+    "valuepanel.text.fontSize": 50,
+    "valuepanel.text.fontWeight": "bold",
+    "valuepanel.text.fontFamily": "Georgia, serif",
+    "valuepanel.text.stroke.color": "#000000",
+    "valuepanel.text.stroke.width": 3,
 
     "//GUI":        "╔══════════════════════════════════════════════════════╗",
     "//GUI-title":  "║                        GUI                           ║",
@@ -184,7 +198,7 @@
     "betButton.color": "0x8e44ad",
     "betButton.scale": 0.05,
     "betButton.labelAnchorX": 0.5,
-    "betButton.labelAnchorY": -0.2,
+    "betButton.labelAnchorY": -0.1,
 
     "// bet-menu": "── Bet dropdown menu ─────────────────────────────────",
     "betMenu.columns": 5,
@@ -213,6 +227,7 @@
     "button.text.fontWeight": "bold",
     "button.dash.color": "0x27ae60",
     "button.cashout.color": "0xf39c12",
+    "button.cashout.fontSize": 30,
     "button.pressScale": 0.95,
 
     "// autoplay-cancel-btn": "── Autoplay cancel button ────────────────────────────",
