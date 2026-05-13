@@ -1,6 +1,6 @@
 {
     "// core": "── Core ─────────────────────────────────────────────────",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "game.background": "#000000",
     "game.totalSteps": 20,
     "game.yShift": 150,
@@ -8,6 +8,7 @@
     "loading.totalSteps": 9,
 
     "// risk-modes": "── Risk modes (wolf chance = instant lose probability) ──",
+    "mode.default": "Low",
     "mode.low.wolfChance": 0.15,
     "mode.low.multiplierBase": 1.15,
     "mode.medium.wolfChance": 0.25,
@@ -44,7 +45,7 @@
     "chicken.anchorX": 0.5,
     "chicken.anchorY": 1,
     "chicken.yFactor": 0.47,
-    "portrait.chicken.yFactor": 0.55,
+    "portrait.chicken.yFactor": 0.47,
     "chicken.yOffset": -30,
     "chicken.fatalTint": "0xff0000",
 
@@ -246,7 +247,7 @@
     "button.pressScale": 0.95,
 
     "// autoplay-cancel-btn": "── Autoplay cancel button ────────────────────────────",
-    "autoplayCancelBtn.xFactor": 0.12,
+    "autoplayCancelBtn.xFactor": 0.3,
     "autoplayCancelBtn.yFactor": 0.88,
     "portrait.autoplayCancelBtn.xFactor": 0.2,
     "portrait.autoplayCancelBtn.yFactor": 0.8,
