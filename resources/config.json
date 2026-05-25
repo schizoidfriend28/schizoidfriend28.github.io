@@ -1,6 +1,6 @@
 {
     "// core": "── Core ─────────────────────────────────────────────────",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "game.background": "#000000",
     "game.totalSteps": 20,
     "game.yShift": 150,
@@ -9,7 +9,7 @@
 
     "// risk-modes": "── Risk modes (wolf chance = instant lose probability) ──",
     "mode.default": "Low",
-    "mode.low.wolfChance": 0.15,
+    "mode.low.wolfChance": 0.00015,
     "mode.low.multiplierBase": 1.15,
     "mode.medium.wolfChance": 0.25,
     "mode.medium.multiplierBase": 1.25,
