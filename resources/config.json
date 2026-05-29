@@ -1,6 +1,6 @@
 {
     "// core": "── Core ─────────────────────────────────────────────────",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "game.background": "#000000",
     "game.totalSteps": 20,
     "game.yShift": 150,
@@ -9,7 +9,7 @@
 
     "// risk-modes": "── Risk modes (wolf chance = instant lose probability) ──",
     "mode.default": "Low",
-    "mode.low.wolfChance": 0.00015,
+    "mode.low.wolfChance": 0.15,
     "mode.low.multiplierBase": 1.15,
     "mode.medium.wolfChance": 0.25,
     "mode.medium.multiplierBase": 1.25,
@@ -39,8 +39,12 @@
     "autoplay.roundStartDelay": 500,
     "autoplay.roundResultDelay": 3000,
 
+    "// ambient-bull": "── Random ambient bull sound ─────────────────────────",
+    "ambientBull.minDelayMs": 8000,
+    "ambientBull.maxDelayMs": 16000,
+
     "// character": "── Player character (roaster) ────────────────────────",
-    "chicken.scale": 0.06,
+    "chicken.scale": 0.07,
     "portrait.chicken.scale": 0.08,
     "chicken.anchorX": 0.5,
     "chicken.anchorY": 1,
@@ -193,6 +197,11 @@
 
     "// turbo-button": "── Turbo button ──────────────────────────────────────",
     "turboButton.scale": 0.4,
+
+    "// sound-button": "── Sound toggle button ───────────────────────────────",
+    "soundButton.scale": 0.3,
+    "soundButton.xGap": 20,
+    "portrait.soundButton.xGap": 20,
 
     "// mode-button": "── Mode cycle button (Easy / Med / Hard) ─────────────",
     "modeButton.color": "0x2980b9",
