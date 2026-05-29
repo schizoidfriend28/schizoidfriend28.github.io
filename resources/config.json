@@ -1,6 +1,6 @@
 {
     "// core": "── Core ─────────────────────────────────────────────────",
-    "version": "0.0.8",
+    "version": "0.1.0",
     "game.background": "#000000",
     "game.totalSteps": 20,
     "game.yShift": 150,
