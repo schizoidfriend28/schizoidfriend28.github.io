@@ -1,0 +1,230 @@
+{
+"skeleton": {
+	"hash": "t2h2AMtuIPQ",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -1000,
+	"y": -750,
+	"width": 2000,
+	"height": 1500,
+	"images": "../../GRAPHIC_ASSETS/FREE_SPINS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "MAIN_ROOT", "color": "4a0000ff", "icon": "warning" },
+	{ "name": "FREESPINS_MAIN_CTRL", "parent": "MAIN_ROOT", "color": "fffc00ff", "icon": "square" },
+	{ "name": "BACKPLATE", "parent": "FREESPINS_MAIN_CTRL", "color": "fffc00ff" },
+	{ "name": "TEXT_AREA", "parent": "MAIN_ROOT", "y": 30, "icon": "square" },
+	{ "name": "TEXT_ROOT", "parent": "MAIN_ROOT", "y": 30, "color": "ff0000ff", "icon": "warning" },
+	{ "name": "INFO_TEXT", "parent": "TEXT_ROOT", "y": -164, "color": "00ff07ff", "icon": "straightLine" },
+	{ "name": "HEADER_TEXT", "parent": "TEXT_ROOT", "y": 116, "color": "00ff07ff", "icon": "square" },
+	{ "name": "NUMBER_TEXT", "parent": "TEXT_ROOT", "y": -50, "color": "e9ff00ff", "icon": "romanV" },
+	{ "name": "HEADER", "parent": "FREESPINS_MAIN_CTRL", "y": 378, "color": "fffc00ff" },
+	{ "name": "NUMBER_TEXT_NO_LOCALE", "parent": "TEXT_ROOT", "y": -50, "color": "e9ff00ff", "icon": "romanV" }
+],
+"slots": [
+	{ "name": "BACKGROUND", "bone": "MAIN_ROOT", "color": "646464ff", "attachment": "GENERIC_ASSETS/DARKNESS_LESS" },
+	{ "name": "FREESPINS_ENTER_BACKPLATE", "bone": "BACKPLATE", "attachment": "FREE_SPINS_ENTER/FREESPINS_ENTER_BACKPLATE" },
+	{ "name": "HEADER", "bone": "HEADER", "attachment": "FREE_SPINS_ENTER/FREESPINS_ENTER_HEADER" },
+	{ "name": "FREE_SPINS_FEATURE_1_2_TITLE", "bone": "INFO_TEXT" },
+	{ "name": "FREE_SPINS_FEATURE_1_1_TITLE", "bone": "HEADER_TEXT" },
+	{ "name": "NUMBER_TEXT", "bone": "NUMBER_TEXT" },
+	{ "name": "NUMBER_TEXT_NO_LOCALE", "bone": "NUMBER_TEXT_NO_LOCALE", "attachment": "FREE_SPINS_ENTER/FREE_SPINS_ENTER_NUMBER_10" },
+	{ "name": "TEXT_AREA", "bone": "TEXT_AREA", "color": "ffffff00", "attachment": "GENERIC_ASSETS/FEATURE_TEXTS" },
+	{ "name": "FREESPINS_ENTER_HEADER", "bone": "FREESPINS_MAIN_CTRL" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"BACKGROUND": {
+				"GENERIC_ASSETS/DARKNESS_LESS": { "color": "ff0101ff", "scaleX": 8, "scaleY": 6, "width": 250, "height": 250 }
+			},
+			"FREESPINS_ENTER_BACKPLATE": {
+				"FREE_SPINS_ENTER/FREESPINS_ENTER_BACKPLATE": { "width": 507, "height": 700 }
+			},
+			"HEADER": {
+				"FREE_SPINS_ENTER/FREESPINS_ENTER_HEADER": { "width": 490, "height": 151 }
+			},
+			"NUMBER_TEXT_NO_LOCALE": {
+				"FREE_SPINS_ENTER/FREE_SPINS_ENTER_NUMBER_10": { "width": 163, "height": 129 }
+			},
+			"TEXT_AREA": {
+				"GENERIC_ASSETS/FEATURE_TEXTS": { "width": 571, "height": 563 }
+			}
+		}
+	}
+],
+"animations": {
+	"EXIT": {
+		"slots": {
+			"FREESPINS_ENTER_BACKPLATE": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.3, "color": "6d6d6d00" }
+				]
+			},
+			"FREESPINS_ENTER_HEADER": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.13333334, "color": "ffffff00" }
+				]
+			},
+			"FREE_SPINS_FEATURE_1_1_TITLE": {
+				"rgba": [
+					{ "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.033333335, "color": "ffffffff" },
+					{ "time": 0.43333337, "color": "ffffff00" }
+				]
+			},
+			"FREE_SPINS_FEATURE_1_2_TITLE": {
+				"rgba": [
+					{ "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.033333335, "color": "ffffffff" },
+					{ "time": 0.43333337, "color": "ffffff00" }
+				]
+			},
+			"HEADER": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.13333334, "color": "ffffff00" }
+				]
+			},
+			"NUMBER_TEXT": {
+				"rgba": [
+					{ "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.033333335, "color": "ffffffff" },
+					{ "time": 0.43333337, "color": "ffffff00" }
+				]
+			},
+			"NUMBER_TEXT_NO_LOCALE": {
+				"rgba": [
+					{ "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.033333335, "color": "ffffffff" },
+					{ "time": 0.23333335, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"NUMBER_TEXT": {
+				"scale": [
+					{}
+				]
+			},
+			"TEXT_ROOT": {
+				"scale": [
+					{}
+				]
+			},
+			"NUMBER_TEXT_NO_LOCALE": {
+				"scale": [
+					{}
+				]
+			}
+		},
+		"drawOrder": [
+			{}
+		]
+	},
+	"IDLE": {
+		"bones": {
+			"FREESPINS_MAIN_CTRL": {
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 1 }
+				]
+			},
+			"MAIN_ROOT": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 1, "curve": "stepped" },
+					{ "time": 2, "curve": "stepped" },
+					{ "time": 3.0000002, "curve": "stepped" },
+					{ "time": 4 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 1, "curve": "stepped" },
+					{ "time": 2, "curve": "stepped" },
+					{ "time": 3.0000002, "curve": "stepped" },
+					{ "time": 4 }
+				]
+			},
+			"NUMBER_TEXT": {
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 2, "curve": "stepped" },
+					{ "time": 4 }
+				]
+			},
+			"NUMBER_TEXT_NO_LOCALE": {
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 2, "curve": "stepped" },
+					{ "time": 4 }
+				]
+			}
+		},
+		"drawOrder": [
+			{},
+			{ "time": 1 }
+		]
+	},
+	"START": {
+		"slots": {
+			"FREESPINS_ENTER_BACKPLATE": {
+				"rgba": [
+					{ "color": "6d6d6d00" },
+					{ "time": 0.33333334, "color": "ffffffff" }
+				]
+			},
+			"FREE_SPINS_FEATURE_1_1_TITLE": {
+				"rgba": [
+					{
+						"color": "ffffff00",
+						"curve": [ 0.57939917, 1, 1.3018599, 1, 0.57939917, 1, 1.3018599, 1, 0.57939917, 1, 1.3018599, 1, 0.57939917, 0.01835528, 1.3018599, 0.99821496 ]
+					},
+					{ "time": 1.6666667, "color": "ffffffff" }
+				]
+			},
+			"FREE_SPINS_FEATURE_1_2_TITLE": {
+				"rgba": [
+					{
+						"color": "ffffff00",
+						"curve": [ 0.66746783, 1, 1.1797426, 1, 0.66746783, 1, 1.1797426, 1, 0.66746783, 1, 1.1797426, 1, 0.66746783, 0.018228693, 1.1797426, 0.9982273 ]
+					},
+					{ "time": 1.6000001, "color": "ffffffff" },
+					{ "time": 1.6666667, "color": "e9ff00ff" }
+				]
+			},
+			"HEADER": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.33333334, "color": "ffffff00" },
+					{ "time": 0.6666667, "color": "ffffffff" }
+				]
+			},
+			"NUMBER_TEXT_NO_LOCALE": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.33333334, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"NUMBER_TEXT_NO_LOCALE": {
+				"scale": [
+					{ "x": 0.5, "y": 0.5 },
+					{ "time": 0.5 },
+					{ "time": 0.6, "x": 1.5, "y": 1.5 },
+					{ "time": 0.70000005 }
+				]
+			}
+		},
+		"drawOrder": [
+			{},
+			{ "time": 1 },
+			{ "time": 1.6666667 }
+		]
+	}
+}
+}

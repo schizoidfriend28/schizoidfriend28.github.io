@@ -1,0 +1,192 @@
+{
+"skeleton": {
+	"hash": "rVFhw32l7VU",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -117.5,
+	"y": -117.5,
+	"width": 235,
+	"height": 235,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "QUICKPLAY_BUTTON", "parent": "root" }
+],
+"slots": [
+	{ "name": "QUICKPLAY_BUTTON_BACKPLATE", "bone": "QUICKPLAY_BUTTON", "attachment": "GUI/BUTTONS/ROUND_BUTTON_BASE" },
+	{ "name": "QUICKPLAY_BUTTON_ICON", "bone": "QUICKPLAY_BUTTON", "attachment": "QUICKPLAY_BUTTON_ICON" },
+	{ "name": "QUICKPLAY_BUTTON_HITBOX", "bone": "QUICKPLAY_BUTTON", "attachment": "QUICKPLAY_BUTTON_HITBOX" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"QUICKPLAY_BUTTON_BACKPLATE": {
+				"GUI/BUTTONS/ROUND_BUTTON_BASE": { "width": 235, "height": 235 }
+			},
+			"QUICKPLAY_BUTTON_HITBOX": {
+				"QUICKPLAY_BUTTON_HITBOX": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -120.82, 119.43, 118.55, 120.88, 122.18, -122.85, -117.2, -122.12 ]
+				}
+			}
+		}
+	},
+	{
+		"name": "OFF",
+		"attachments": {
+			"QUICKPLAY_BUTTON_ICON": {
+				"QUICKPLAY_BUTTON_ICON": { "name": "GUI/BUTTONS/QUICKPLAY_BUTTON_OFF", "color": "202020ff", "width": 152, "height": 162 }
+			}
+		}
+	},
+	{
+		"name": "ON",
+		"attachments": {
+			"QUICKPLAY_BUTTON_ICON": {
+				"QUICKPLAY_BUTTON_ICON": { "name": "GUI/BUTTONS/QUICKPLAY_BUTTON", "width": 180, "height": 198 }
+			}
+		}
+	},
+	{
+		"name": "SUPER",
+		"attachments": {
+			"QUICKPLAY_BUTTON_ICON": {
+				"QUICKPLAY_BUTTON_ICON": { "name": "GUI/BUTTONS/QUICKPLAY_BUTTON", "color": "ff0000ff", "width": 180, "height": 198 }
+			}
+		}
+	}
+],
+"animations": {
+	"DISABLED": {
+		"slots": {
+			"QUICKPLAY_BUTTON_BACKPLATE": {
+				"rgb": [
+					{ "color": "000000" }
+				],
+				"alpha": [
+					{ "value": 0.3333 }
+				]
+			},
+			"QUICKPLAY_BUTTON_ICON": {
+				"rgb": [
+					{ "color": "000000" }
+				],
+				"alpha": [
+					{ "value": 0.3333 }
+				]
+			}
+		}
+	},
+	"ENTER": {
+		"slots": {
+			"QUICKPLAY_BUTTON_BACKPLATE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.33333334, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/ROUND_BUTTON_BASE" }
+				]
+			},
+			"QUICKPLAY_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 0.0011 },
+					{ "time": 0.33333334, "value": 0.9989 }
+				],
+				"rgb": [
+					{ "color": "e5e5e5" }
+				],
+				"attachment": [
+					{ "name": "QUICKPLAY_BUTTON_ICON" }
+				]
+			}
+		}
+	},
+	"EXIT": {
+		"slots": {
+			"QUICKPLAY_BUTTON_BACKPLATE": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/ROUND_BUTTON_BASE" }
+				]
+			},
+			"QUICKPLAY_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0.0011 }
+				],
+				"rgb": [
+					{ "color": "e5e5e5" }
+				],
+				"attachment": [
+					{ "name": "QUICKPLAY_BUTTON_ICON" }
+				]
+			}
+		}
+	},
+	"HOVER": {
+		"slots": {
+			"QUICKPLAY_BUTTON_BACKPLATE": {
+				"attachment": [
+					{ "name": "GUI/BUTTONS/ROUND_BUTTON_BASE" }
+				]
+			},
+			"QUICKPLAY_BUTTON_ICON": {
+				"attachment": [
+					{ "name": "QUICKPLAY_BUTTON_ICON" }
+				]
+			}
+		},
+		"bones": {
+			"QUICKPLAY_BUTTON": {
+				"scale": [
+					{ "x": 1.03, "y": 1.03 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"QUICKPLAY_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 1 }
+				],
+				"rgb": [
+					{ "color": "e5e5e5" }
+				],
+				"attachment": [
+					{ "name": "QUICKPLAY_BUTTON_ICON" }
+				]
+			}
+		}
+	},
+	"PRESSED": {
+		"slots": {
+			"QUICKPLAY_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 1 }
+				],
+				"rgb": [
+					{ "color": "cccccc" }
+				],
+				"attachment": [
+					{ "name": "QUICKPLAY_BUTTON_ICON" }
+				]
+			}
+		},
+		"bones": {
+			"QUICKPLAY_BUTTON": {
+				"scale": [
+					{ "x": 0.97, "y": 0.97 }
+				]
+			}
+		}
+	}
+}
+}

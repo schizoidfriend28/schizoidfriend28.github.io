@@ -1,0 +1,206 @@
+{
+"skeleton": {
+	"hash": "chcVXIL+DZQ",
+	"spine": "4.3.05-beta",
+	"x": -313,
+	"y": -604,
+	"width": 626,
+	"height": 1017,
+	"images": "./images/",
+	"audio": "D:/Work/Vertex/UI/For Animation/./RESULTS"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "WIN_NUMBERS", "parent": "root", "y": -383 },
+	{ "name": "WIN_TEXT", "parent": "root", "y": -273 },
+	{ "name": "CURRENT_BET2", "parent": "root", "y": -143 },
+	{ "name": "CURRENT_BET1", "parent": "root", "y": 27 },
+	{ "name": "WIN_PANELS", "parent": "root", "y": 264 },
+	{ "name": "7_BALL", "parent": "WIN_PANELS", "x": 208.5, "y": -115.5, "scaleX": 0.83, "scaleY": 0.83 },
+	{ "name": "6_BALL", "parent": "WIN_PANELS", "x": 48.5, "y": -115.5, "scaleX": 0.83, "scaleY": 0.83 },
+	{ "name": "5_BALL", "parent": "WIN_PANELS", "x": -111.5, "y": -115.5, "scaleX": 0.83, "scaleY": 0.83 },
+	{ "name": "4_BALL", "parent": "WIN_PANELS", "x": -271.5, "y": -115.5, "scaleX": 0.83, "scaleY": 0.83 },
+	{ "name": "2_BALL", "parent": "WIN_PANELS", "x": 225, "y": 53, "scaleX": 2, "scaleY": 2 },
+	{ "name": "1_BALL", "parent": "WIN_PANELS", "y": 70, "scaleX": 2.33, "scaleY": 2.33 },
+	{ "name": "LEAVES_2", "parent": "WIN_PANELS", "x": -80, "y": -1, "scaleX": -1 },
+	{ "name": "3_BALL", "parent": "WIN_PANELS", "x": -225, "y": 39, "scaleX": 1.66, "scaleY": 1.66 },
+	{ "name": "WIN_NUMBERS_SHINE", "parent": "root", "y": -383 }
+],
+"slots": [
+	{ "name": "WIN_NUMBERS_SHINE", "bone": "WIN_NUMBERS_SHINE", "color": "ffffff00", "attachment": "WIN_NUMBERS_SHINE" },
+	{ "name": "WIN_NUMBERS", "bone": "WIN_NUMBERS", "color": "ffffff00" },
+	{ "name": "WIN_TEXT", "bone": "WIN_TEXT" },
+	{ "name": "CURRENT_BET2", "bone": "CURRENT_BET2", "color": "ffffff00" },
+	{ "name": "CURRENT_BET1", "bone": "CURRENT_BET1", "color": "ffffff00" },
+	{ "name": "WIN_PANELS", "bone": "WIN_PANELS", "attachment": "WIN_PANELS" },
+	{ "name": "LEAVES_1", "bone": "WIN_PANELS", "attachment": "LEAVES" },
+	{ "name": "LEAVES_2", "bone": "LEAVES_2", "attachment": "LEAVES" },
+	{ "name": "1_BALL_SHINE", "bone": "WIN_PANELS", "attachment": "1_BALL_SHINE" },
+	{ "name": "7_BALL", "bone": "7_BALL" },
+	{ "name": "6_BALL", "bone": "6_BALL" },
+	{ "name": "5_BALL", "bone": "5_BALL" },
+	{ "name": "4_BALL", "bone": "4_BALL" },
+	{ "name": "3_BALL", "bone": "3_BALL" },
+	{ "name": "2_BALL", "bone": "2_BALL" },
+	{ "name": "1_BALL", "bone": "1_BALL" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"1_BALL_SHINE": {
+				"1_BALL_SHINE": { "y": 70, "width": 158, "height": 158 }
+			},
+			"LEAVES_1": {
+				"LEAVES": { "x": 80, "y": -1, "width": 74, "height": 98 }
+			},
+			"LEAVES_2": {
+				"LEAVES": { "width": 74, "height": 98 }
+			},
+			"WIN_NUMBERS_SHINE": {
+				"WIN_NUMBERS_SHINE": { "width": 626, "height": 442 }
+			},
+			"WIN_PANELS": {
+				"WIN_PANELS": { "width": 620, "height": 280 }
+			}
+		}
+	}
+],
+"animations": {
+	"1BET_LOST": {
+		"slots": {
+			"CURRENT_BET1": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"WIN_PANELS": {
+				"translate": [
+					{ "y": -80 }
+				]
+			},
+			"WIN_TEXT": {
+				"translate": [
+					{ "y": 90 }
+				]
+			},
+			"CURRENT_BET1": {
+				"translate": [
+					{ "y": -80 }
+				]
+			}
+		}
+	},
+	"1BET_WIN": {
+		"slots": {
+			"CURRENT_BET1": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"WIN_NUMBERS": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"WIN_NUMBERS_SHINE": {
+				"alpha": [
+					{ "value": 0.39999998 }
+				]
+			}
+		},
+		"bones": {
+			"WIN_PANELS": {
+				"translate": [
+					{ "y": -80 }
+				]
+			},
+			"WIN_TEXT": {
+				"translate": [
+					{ "y": 90 }
+				]
+			},
+			"WIN_NUMBERS_SHINE": {
+				"translate": [
+					{ "y": 90 }
+				]
+			},
+			"WIN_NUMBERS": {
+				"translate": [
+					{ "y": 90 }
+				]
+			},
+			"CURRENT_BET1": {
+				"translate": [
+					{ "y": -80 }
+				]
+			}
+		}
+	},
+	"2BETS_LOST": {
+		"slots": {
+			"CURRENT_BET1": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"CURRENT_BET2": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"WIN_PANELS": {
+				"translate": [
+					{}
+				]
+			},
+			"WIN_TEXT": {
+				"translate": [
+					{}
+				]
+			}
+		}
+	},
+	"2BETS_WIN": {
+		"slots": {
+			"CURRENT_BET1": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"CURRENT_BET2": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"WIN_NUMBERS": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"WIN_NUMBERS_SHINE": {
+				"alpha": [
+					{ "value": 0.39999998 }
+				]
+			}
+		},
+		"bones": {
+			"WIN_PANELS": {
+				"translate": [
+					{}
+				]
+			},
+			"WIN_TEXT": {
+				"translate": [
+					{}
+				]
+			}
+		}
+	},
+	"IDLE": {}
+}
+}

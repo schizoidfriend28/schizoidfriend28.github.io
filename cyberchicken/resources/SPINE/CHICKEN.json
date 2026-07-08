@@ -1,0 +1,483 @@
+{
+"skeleton": {
+	"hash": "HSIEvY7O8V0",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -204,
+	"y": -245,
+	"width": 422.5,
+	"height": 472.5,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
+	{ "name": "SYMBOL_ANCHOR", "parent": "MAIN_ROOT", "color": "ff0000ff", "icon": "square" },
+	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
+	{ "name": "WIN_INDICATIONS", "parent": "MAIN_ROOT", "color": "ffbf00ff", "icon": "diamond" },
+	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_ICON", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_SHADOWS", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_SHADOW3", "parent": "SYMBOL_SHADOWS", "x": 13, "y": -15, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_SHADOW4", "parent": "SYMBOL_SHADOWS", "x": 13, "y": -15, "color": "1eff00ff", "icon": "square" }
+],
+"slots": [
+	{ "name": "WIN_INDICATIONS", "bone": "WIN_INDICATIONS" },
+	{ "name": "SYMBOL_ICON_SHADOW3", "bone": "SYMBOL_ICON_SHADOW3", "attachment": "CHICKEN/CHICKEN_SHADOW", "blend": "multiply" },
+	{ "name": "SYMBOL_ICON_SHADOW4", "bone": "SYMBOL_ICON_SHADOW4", "attachment": "CHICKEN/CHICKEN_SHADOW", "blend": "multiply" },
+	{ "name": "SYMBOL_ICON", "bone": "SYMBOL_ICON", "attachment": "CHICKEN/CHICKEN" },
+	{ "name": "SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a40000", "attachment": "CHICKEN/CHICKEN_GLOW", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"SYMBOL_ICON": {
+				"CHICKEN/CHICKEN": { "width": 374, "height": 420 }
+			},
+			"SYMBOL_ICON_GLOW": {
+				"CHICKEN/CHICKEN_GLOW": { "width": 408, "height": 455 }
+			},
+			"SYMBOL_ICON_SHADOW3": {
+				"CHICKEN/CHICKEN_SHADOW": { "width": 411, "height": 460 }
+			},
+			"SYMBOL_ICON_SHADOW4": {
+				"CHICKEN/CHICKEN_SHADOW": { "width": 411, "height": 460 }
+			}
+		}
+	}
+],
+"animations": {
+	"DEATH1": {
+		"slots": {
+			"SYMBOL_ICON": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				]
+			},
+			"SYMBOL_ICON_SHADOW4": {
+				"alpha": [
+					{ "value": 0.43919998, "curve": "stepped" },
+					{ "time": 0.36666667, "value": 0.43919998 },
+					{ "time": 0.73333335, "value": 0 }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_GLOW": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 },
+					{ "time": 0.73333335, "y": -30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_SHADOW3": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_SHADOW4": {
+				"translate": [
+					{},
+					{ "time": 0.26666668, "y": 70 },
+					{ "time": 0.73333335, "x": -125.90759, "y": 458.45068 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.16666667, "y": 1.088 },
+					{ "time": 0.73333335, "x": 0.5, "y": 0.5 }
+				]
+			},
+			"SYMBOL_ROOT": {
+				"scale": [
+					{ "time": 0.53333336 },
+					{ "time": 0.73333335, "x": 0.3, "y": 0.3 }
+				]
+			}
+		}
+	},
+	"DEATH2": {
+		"slots": {
+			"SYMBOL_ICON": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				]
+			},
+			"SYMBOL_ICON_SHADOW4": {
+				"alpha": [
+					{ "value": 0.43919998, "curve": "stepped" },
+					{ "time": 0.36666667, "value": 0.43919998 },
+					{ "time": 0.73333335, "value": 0 }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_GLOW": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 },
+					{ "time": 0.73333335, "y": -30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_SHADOW3": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_SHADOW4": {
+				"translate": [
+					{},
+					{ "time": 0.26666668, "y": 70 },
+					{ "time": 0.73333335, "x": -125.90759, "y": 458.45068 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.16666667, "y": 1.088 },
+					{ "time": 0.73333335, "x": 0.5, "y": 0.5 }
+				]
+			},
+			"SYMBOL_ROOT": {
+				"translate": [
+					{},
+					{ "time": 0.5666667, "x": -410.9724, "y": 105.78186 },
+					{ "time": 1.2, "x": -680.9724, "y": 275.78186 }
+				],
+				"scale": [
+					{ "time": 0.53333336 },
+					{ "time": 0.73333335, "x": 0.3, "y": 0.3 },
+					{ "time": 1.2 },
+					{ "time": 1.3666668, "x": 0.6, "y": 0.6 }
+				]
+			}
+		}
+	},
+	"DEATH3": {
+		"slots": {
+			"SYMBOL_ICON": {
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				],
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				]
+			},
+			"SYMBOL_ICON_SHADOW3": {
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0 }
+				]
+			},
+			"SYMBOL_ICON_SHADOW4": {
+				"alpha": [
+					{ "value": 0.43919998, "curve": "stepped" },
+					{ "time": 0.36666667, "value": 0.43919998 },
+					{ "time": 0.73333335, "value": 0 }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_GLOW": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 },
+					{ "time": 0.73333335, "y": -30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_SHADOW3": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_SHADOW4": {
+				"translate": [
+					{},
+					{ "time": 0.26666668, "y": 70 },
+					{ "time": 0.73333335, "x": -125.90759, "y": 458.45068 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.16666667, "y": 1.088 },
+					{ "time": 0.73333335, "x": 0.5, "y": 0.5 }
+				]
+			},
+			"SYMBOL_ROOT": {
+				"translate": [
+					{},
+					{ "time": 0.5666667, "x": -410.9724, "y": 105.78186 },
+					{ "time": 1.2, "x": -680.9724, "y": 275.78186 },
+					{ "time": 1.3666668, "x": -70.97241, "y": 245.78186 }
+				],
+				"scale": [
+					{ "time": 0.53333336 },
+					{ "time": 0.73333335, "x": 0.3, "y": 0.3 },
+					{ "time": 1.2 },
+					{ "time": 1.3666668, "x": 5, "y": 5 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			}
+		}
+	},
+	"IDLE_RAND1": {
+		"bones": {
+			"SYMBOL_ROOT": {
+				"translate": [
+					{},
+					{ "time": 0.86666673, "y": 20 },
+					{ "time": 1.7 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.86666673, "y": 1.0485198 },
+					{ "time": 1.7 }
+				]
+			}
+		}
+	},
+	"IDLE_RAND2": {
+		"bones": {
+			"SYMBOL_ROOT": {
+				"translate": [
+					{},
+					{ "time": 0.86666673, "y": 20 },
+					{ "time": 1 },
+					{ "time": 1.1333334, "y": 20 },
+					{ "time": 1.2666668 },
+					{ "time": 1.6333334, "y": 20 },
+					{ "time": 1.7666668 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.86666673, "y": 1.0485198 },
+					{ "time": 1 },
+					{ "time": 1.1333334, "y": 1.0485198 },
+					{ "time": 1.2666668 },
+					{ "time": 1.6333334, "y": 1.0485198 },
+					{ "time": 1.7666668 }
+				]
+			}
+		}
+	},
+	"IDLE_RAND3": {
+		"slots": {
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ROOT": {
+				"translate": [
+					{},
+					{ "time": 0.86666673, "y": 20 },
+					{ "time": 1 },
+					{ "time": 1.1333334, "y": 20 },
+					{ "time": 1.2666668 },
+					{ "time": 1.6333334, "y": 47 },
+					{ "time": 1.7666668 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.86666673, "y": 1.0485198 },
+					{ "time": 1 },
+					{ "time": 1.1333334, "y": 1.0485198 },
+					{ "time": 1.2666668 },
+					{ "time": 1.6333334, "x": 1.2, "y": 1.2 },
+					{ "time": 1.7666668 }
+				]
+			}
+		}
+	},
+	"RUNNING": {
+		"slots": {
+			"SYMBOL_ICON_SHADOW4": {
+				"alpha": [
+					{ "value": 0.44009998 }
+				],
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON_SHADOW4": {
+				"translate": [
+					{ "x": -13, "y": 15 }
+				]
+			},
+			"SYMBOL_ROOT": {
+				"translate": [
+					{},
+					{ "time": 0.13333334, "x": 60, "y": -40 },
+					{ "time": 0.26666668, "x": 60 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.13333334, "y": 0.85931194 },
+					{ "time": 0.26666668 }
+				],
+				"shear": [
+					{},
+					{ "time": 0.13333334, "x": 4.894142, "y": -9.779778 },
+					{ "time": 0.26666668 }
+				]
+			}
+		}
+	},
+	"WALKING": {
+		"slots": {
+			"SYMBOL_ICON_SHADOW4": {
+				"alpha": [
+					{ "value": 0.44009998 }
+				],
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON_SHADOW4": {
+				"translate": [
+					{ "x": -13, "y": 15 }
+				]
+			},
+			"SYMBOL_ROOT": {
+				"translate": [
+					{},
+					{ "time": 0.33333334, "x": 60, "y": -40 },
+					{ "time": 0.6666667, "x": 60 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.33333334, "y": 0.85931194 },
+					{ "time": 0.6666667 }
+				],
+				"shear": [
+					{},
+					{ "time": 0.33333334, "x": 4.894142, "y": -9.779778 },
+					{ "time": 0.6666667 }
+				]
+			}
+		}
+	}
+}
+}

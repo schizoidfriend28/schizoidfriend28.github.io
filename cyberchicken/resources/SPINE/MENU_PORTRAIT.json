@@ -1,0 +1,49 @@
+{
+"skeleton": {
+	"hash": "V4/4az1Kymg",
+	"spine": "4.3.05-beta",
+	"x": -960,
+	"y": -960,
+	"width": 1920,
+	"height": 1920,
+	"images": "./images/",
+	"audio": "D:/Work/Vertex/UI/For Animation/./menu"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "MENU", "parent": "root" },
+	{ "name": "CLOSE_MENU_BUTTON", "parent": "MENU", "x": 306.67, "y": 519.33 },
+	{ "name": "MENU_BUTTON", "parent": "MENU", "x": 306.67, "y": 399.33 },
+	{ "name": "MENU_BUTTON_2", "parent": "MENU", "x": 306.67, "y": 299.33 },
+	{ "name": "MENU_BUTTON_3", "parent": "MENU", "x": 306.67, "y": 199.33 },
+	{ "name": "MENU_BUTTON_4", "parent": "MENU", "x": 306.67, "y": 99.33 },
+	{ "name": "MENU_PAGE_CONTENT", "parent": "MENU", "x": -0.03, "y": 0.03 },
+	{ "name": "SEPARATOR_VERTICAL", "parent": "MENU", "x": 247.67, "y": -0.67, "scaleY": 1.22 }
+],
+"slots": [
+	{ "name": "MENU_BG", "bone": "MENU", "color": "ffffffcb", "attachment": "FADER" },
+	{ "name": "CLOSE_MENU_BUTTON", "bone": "CLOSE_MENU_BUTTON" },
+	{ "name": "MENU_BUTTON_SETTING", "bone": "MENU_BUTTON" },
+	{ "name": "MENU_BUTTON_HISTORY", "bone": "MENU_BUTTON_2" },
+	{ "name": "MENU_BUTTON_RACE", "bone": "MENU_BUTTON_3" },
+	{ "name": "MENU_BUTTON_RULES", "bone": "MENU_BUTTON_4" },
+	{ "name": "MENU_PAGE_CONTENT", "bone": "MENU_PAGE_CONTENT" },
+	{ "name": "SEPARATOR_VERTICAL", "bone": "SEPARATOR_VERTICAL", "color": "ffffff18", "attachment": "SEPARATOR_VERTICAL" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"MENU_BG": {
+				"FADER": { "width": 1924, "height": 1924 }
+			},
+			"SEPARATOR_VERTICAL": {
+				"SEPARATOR_VERTICAL": { "width": 2, "height": 940 }
+			}
+		}
+	}
+],
+"animations": {
+	"IDLE": {}
+}
+}

@@ -1,0 +1,10 @@
+CHECKBOX.png
+size:92,30
+filter:Linear,Linear
+pma:true
+CHECKBOX
+bounds:0,0,30,30
+CHECKBOX_ACTIVE
+bounds:31,0,30,30
+CHECKBOX_ACTIVE_DISABLED
+bounds:62,0,30,30

@@ -1,0 +1,220 @@
+{
+"skeleton": {
+	"hash": "KxIEy+p1bdM",
+	"spine": "4.3.39-beta",
+	"x": -72.799995,
+	"y": -62,
+	"width": 145.59999,
+	"height": 124,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "LOGO_COMPANY_MAIN", "parent": "root" },
+	{ "name": "FX", "parent": "root" },
+	{ "name": "SHIMMER_01", "parent": "FX", "x": -17.594894, "y": -12.779282, "scaleX": 0.3, "scaleY": 0.3 },
+	{ "name": "SHIMMER_02", "parent": "FX", "x": 17.538094, "y": -11.763281, "scaleX": 0.3, "scaleY": 0.3 },
+	{ "name": "LOGO_COMPANY_BACKPLATE", "parent": "LOGO_COMPANY_MAIN" },
+	{ "name": "LOGO_COMPANY_BACKPLATE_FRAME", "parent": "LOGO_COMPANY_BACKPLATE" },
+	{ "name": "LOGO_COMPANY_BACKPLATE_BCKGR", "parent": "LOGO_COMPANY_BACKPLATE" },
+	{ "name": "LOGO_COMPANY_ICON", "parent": "LOGO_COMPANY_MAIN" },
+	{ "name": "LOGO_COMPANY_BACKLIGHT", "parent": "LOGO_COMPANY_MAIN", "scaleX": 1.3, "scaleY": 1.3 }
+],
+"slots": [
+	{ "name": "LOGO_COMPANY_BACKPLATE_BCKGR", "bone": "LOGO_COMPANY_BACKPLATE_BCKGR", "attachment": "GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_BACKGROUND" },
+	{ "name": "LOGO_COMPANY_BACKPLATE_FRAME", "bone": "LOGO_COMPANY_BACKPLATE_FRAME", "attachment": "GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_FRAME" },
+	{ "name": "LOGO_COMPANY_BACKLIGHT", "bone": "LOGO_COMPANY_BACKLIGHT", "attachment": "GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_BACKLIGHT", "blend": "screen" },
+	{ "name": "LOGO_COMPANY_ICON", "bone": "LOGO_COMPANY_ICON", "attachment": "GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_ICON" },
+	{ "name": "LOGO_GAME_MAIN_SHINE", "bone": "LOGO_COMPANY_MAIN", "blend": "additive" },
+	{ "name": "SHIMMER_01", "bone": "SHIMMER_01", "color": "2be2ffff", "dark": "00ffff", "attachment": "SYMBOLS/SYMBOLS_BN/BASE_SHINE_2", "blend": "screen" },
+	{ "name": "SHIMMER_02", "bone": "SHIMMER_02", "color": "2be2ffff", "dark": "00ffff", "attachment": "SYMBOLS/SYMBOLS_BN/BASE_SHINE_2", "blend": "screen" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"LOGO_COMPANY_BACKLIGHT": {
+				"GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_BACKLIGHT": { "width": 112, "height": 74 }
+			},
+			"LOGO_COMPANY_BACKPLATE_BCKGR": {
+				"GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_BACKGROUND": { "width": 118, "height": 118 }
+			},
+			"LOGO_COMPANY_BACKPLATE_FRAME": {
+				"GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_FRAME": { "width": 121, "height": 124 }
+			},
+			"LOGO_COMPANY_ICON": {
+				"GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_ICON": { "width": 94, "height": 110 }
+			},
+			"LOGO_GAME_MAIN_SHINE": {
+				"GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_ICON": { "width": 94, "height": 110 }
+			},
+			"SHIMMER_01": {
+				"SYMBOLS/SYMBOLS_BN/BASE_SHINE_2": { "width": 125, "height": 125 }
+			},
+			"SHIMMER_02": {
+				"SYMBOLS/SYMBOLS_BN/BASE_SHINE_2": { "width": 125, "height": 125 }
+			}
+		}
+	}
+],
+"animations": {
+	"ENTER": {
+		"slots": {
+			"LOGO_COMPANY_BACKLIGHT": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.33333334, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_BACKLIGHT" }
+				]
+			},
+			"LOGO_COMPANY_BACKPLATE_BCKGR": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.33333334, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_BACKGROUND" }
+				]
+			},
+			"LOGO_COMPANY_BACKPLATE_FRAME": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.33333334, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_FRAME" }
+				]
+			},
+			"LOGO_COMPANY_ICON": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.33333334, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_ICON" }
+				]
+			},
+			"LOGO_GAME_MAIN_SHINE": {
+				"attachment": [
+					{}
+				]
+			},
+			"SHIMMER_01": {
+				"alpha": [
+					{ "value": 0 }
+				],
+				"attachment": [
+					{ "name": "SYMBOLS/SYMBOLS_BN/BASE_SHINE_2" }
+				]
+			},
+			"SHIMMER_02": {
+				"alpha": [
+					{ "value": 0 }
+				],
+				"attachment": [
+					{ "name": "SYMBOLS/SYMBOLS_BN/BASE_SHINE_2" }
+				]
+			}
+		}
+	},
+	"EXIT": {
+		"slots": {
+			"LOGO_COMPANY_BACKLIGHT": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_BACKLIGHT" }
+				]
+			},
+			"LOGO_COMPANY_BACKPLATE_BCKGR": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_BACKGROUND" }
+				]
+			},
+			"LOGO_COMPANY_BACKPLATE_FRAME": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_FRAME" }
+				]
+			},
+			"LOGO_COMPANY_ICON": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_ICON" }
+				]
+			},
+			"SHIMMER_01": {
+				"attachment": [
+					{}
+				]
+			},
+			"SHIMMER_02": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"LOGO_GAME_MAIN_SHINE": {
+				"alpha": [
+					{ "value": 0 }
+				],
+				"attachment": [
+					{ "name": "GENERIC/LOGO_COMPANY_SILVERFOX/SILVERFOX_LOGO_ICON" }
+				]
+			},
+			"SHIMMER_01": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 },
+					{ "time": 0.70000005, "value": 0.0011, "curve": "stepped" },
+					{ "time": 8.033334, "value": 0 },
+					{ "time": 9, "value": 0.6818 },
+					{ "time": 9.133334, "value": 0, "curve": "stepped" },
+					{ "time": 15.000001, "value": 0 },
+					{ "time": 15.233335, "value": 1 },
+					{ "time": 15.700001, "value": 0.0011, "curve": "stepped" },
+					{ "time": 23.833334, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "SYMBOLS/SYMBOLS_BN/BASE_SHINE_2" }
+				]
+			},
+			"SHIMMER_02": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 },
+					{ "time": 0.70000005, "value": 0.0011, "curve": "stepped" },
+					{ "time": 8.033334, "value": 0 },
+					{ "time": 9, "value": 0.6818 },
+					{ "time": 9.133334, "value": 0, "curve": "stepped" },
+					{ "time": 15.000001, "value": 0 },
+					{ "time": 15.233335, "value": 1 },
+					{ "time": 15.700001, "value": 0.0011, "curve": "stepped" },
+					{ "time": 23.833334, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "SYMBOLS/SYMBOLS_BN/BASE_SHINE_2" }
+				]
+			}
+		}
+	}
+}
+}

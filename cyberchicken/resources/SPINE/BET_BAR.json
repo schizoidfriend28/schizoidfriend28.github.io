@@ -1,0 +1,109 @@
+{
+"skeleton": {
+	"hash": "l25l/WZnHdY",
+	"spine": "4.3.05-beta",
+	"x": -330,
+	"y": -80,
+	"width": 660,
+	"height": 160,
+	"images": "./images/",
+	"audio": "D:/Work/Vertex/UI/For Animation"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "BET_BAR", "parent": "root" },
+	{ "name": "BET_TYPE_TEXT", "parent": "BET_BAR", "x": -300, "y": 25.5 },
+	{ "name": "CURRENT_BET_TEXT", "parent": "BET_BAR", "x": -300, "y": 52 },
+	{ "name": "BALL_S_7", "parent": "BET_BAR", "x": 278, "y": 39 },
+	{ "name": "BALL_S_6", "parent": "BET_BAR", "x": 224, "y": 39 },
+	{ "name": "BALL_S_5", "parent": "BET_BAR", "x": 170, "y": 39 },
+	{ "name": "BALL_S_4", "parent": "BET_BAR", "x": 116, "y": 39 },
+	{ "name": "BALL_S_3", "parent": "BET_BAR", "x": 62, "y": 39 },
+	{ "name": "BALL_S_2", "parent": "BET_BAR", "x": 8, "y": 39 },
+	{ "name": "POTENTIAL_WIN_TEXT", "parent": "BET_BAR", "x": 300, "y": -24.5 },
+	{ "name": "POTENTIAL_WIN_NUMBER", "parent": "BET_BAR", "x": 300, "y": -52.5 },
+	{ "name": "BET_AMOUNT_TEXT", "parent": "BET_BAR", "x": -300, "y": -24.5 },
+	{ "name": "BET_NUMBER", "parent": "BET_BAR", "x": -300, "y": -52.5 },
+	{ "name": "BALL_S_1", "parent": "BET_BAR", "x": -46, "y": 39 }
+],
+"slots": [
+	{ "name": "BET_BAR_BG", "bone": "BET_BAR", "color": "ffffffcb", "attachment": "BET_BAR_BG" },
+	{ "name": "BET_BAR_BG2", "bone": "BET_BAR", "attachment": "BET_BAR_BG2" },
+	{ "name": "BET_TYPE", "bone": "BET_TYPE_TEXT" },
+	{ "name": "CURRENT_BET", "bone": "CURRENT_BET_TEXT" },
+	{ "name": "BALL_BET_BAR_7", "bone": "BALL_S_7" },
+	{ "name": "BALL_BET_BAR_6", "bone": "BALL_S_6" },
+	{ "name": "BALL_BET_BAR_5", "bone": "BALL_S_5" },
+	{ "name": "BALL_BET_BAR_4", "bone": "BALL_S_4" },
+	{ "name": "BALL_BET_BAR_3", "bone": "BALL_S_3" },
+	{ "name": "BALL_BET_BAR_2", "bone": "BALL_S_2" },
+	{ "name": "BALL_BET_BAR_1", "bone": "BALL_S_1" },
+	{ "name": "POTENTIAL_WIN", "bone": "POTENTIAL_WIN_TEXT", "color": "ffffff7e" },
+	{ "name": "POTENTIAL_WIN_NUMBER", "bone": "POTENTIAL_WIN_NUMBER" },
+	{ "name": "BET_AMOUNT", "bone": "BET_AMOUNT_TEXT", "color": "ffffff7e" },
+	{ "name": "BET_NUMBER", "bone": "BET_NUMBER" },
+	{ "name": "ARROW_S_3", "bone": "BET_BAR" },
+	{ "name": "ARROW_S_2", "bone": "BET_BAR" },
+	{ "name": "ARROW_S_1", "bone": "BET_BAR" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"ARROW_S_1": {
+				"ARROW_S": { "x": -12.5, "y": -39.5, "width": 17, "height": 27 }
+			},
+			"ARROW_S_2": {
+				"ARROW_S": { "x": 0.5, "y": -39.5, "width": 17, "height": 27 }
+			},
+			"ARROW_S_3": {
+				"ARROW_S": { "x": 13.5, "y": -39.5, "width": 17, "height": 27 }
+			},
+			"BET_BAR_BG": {
+				"BET_BAR_BG": { "width": 660, "height": 160 }
+			},
+			"BET_BAR_BG2": {
+				"BET_BAR_BG2": { "y": 40, "width": 660, "height": 80 }
+			}
+		}
+	}
+],
+"animations": {
+	"IDLE": {
+		"slots": {
+			"ARROW_S_1": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffb2" },
+					{ "time": 0.6667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "ARROW_S" }
+				]
+			},
+			"ARROW_S_2": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffb2" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "ARROW_S" }
+				]
+			},
+			"ARROW_S_3": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.3333, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffffb2" },
+					{ "time": 1, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "ARROW_S" }
+				]
+			}
+		}
+	}
+}
+}

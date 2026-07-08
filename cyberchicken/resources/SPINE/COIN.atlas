@@ -1,0 +1,9 @@
+COIN.png
+size:415,1001
+filter:Linear,Linear
+COIN/COIN
+bounds:0,0,293,282
+COIN/COIN_GLOW
+bounds:0,598,415,403
+COIN/COIN_SHADOW
+bounds:0,283,325,314

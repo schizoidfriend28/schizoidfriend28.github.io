@@ -1,0 +1,147 @@
+{
+"skeleton": {
+	"hash": "U0TPjH/M+D4",
+	"spine": "4.3.05-beta",
+	"x": -85,
+	"y": -40,
+	"width": 170,
+	"height": 80,
+	"images": "./images/",
+	"audio": "D:/Work/Vertex/UI/For Animation"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "GRAY_BUTTON", "parent": "root" }
+],
+"slots": [
+	{ "name": "BG", "bone": "GRAY_BUTTON", "color": "ffffff7e", "attachment": "BG" },
+	{ "name": "LABEL", "bone": "GRAY_BUTTON", "color": "ffffff7e" },
+	{ "name": "BG_DISABLED", "bone": "GRAY_BUTTON" }
+],
+"skins": [
+	{
+		"name": "BIG",
+		"attachments": {
+			"BG": {
+				"BG": { "name": "BUTTON_BG", "width": 170, "height": 80 }
+			},
+			"BG_DISABLED": {
+				"BG_DISABLED": { "name": "BUTTON_BG_DISABLED", "width": 170, "height": 80 }
+			}
+		}
+	},
+	{
+		"name": "POPUP",
+		"attachments": {
+			"BG": {
+				"BG": { "name": "POPUP_BUTTON", "width": 150, "height": 60 }
+			},
+			"BG_DISABLED": {
+				"BG_DISABLED": { "name": "POPUP_BUTTON_DISABLED", "width": 150, "height": 60 }
+			}
+		}
+	},
+	{
+		"name": "SMALL",
+		"attachments": {
+			"BG": {
+				"BG": { "name": "SMALL_BUTTON_BG", "width": 90, "height": 80 }
+			},
+			"BG_DISABLED": {
+				"BG_DISABLED": { "name": "SMALL_BUTTON_BG_DISABLED", "width": 90, "height": 80 }
+			}
+		}
+	}
+],
+"animations": {
+	"DISABLED": {
+		"slots": {
+			"BG": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"BG_DISABLED": {
+				"attachment": [
+					{ "name": "BG_DISABLED" }
+				]
+			},
+			"LABEL": {
+				"rgba": [
+					{ "color": "ffffff32" }
+				]
+			}
+		},
+		"bones": {
+			"GRAY_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"HOVER": {
+		"slots": {
+			"BG": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"LABEL": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"GRAY_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"BG": {
+				"rgba": [
+					{ "color": "ffffff7f" }
+				]
+			},
+			"LABEL": {
+				"rgba": [
+					{ "color": "ffffff7f" }
+				]
+			}
+		},
+		"bones": {
+			"GRAY_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"PRESSED": {
+		"slots": {
+			"BG": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"LABEL": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"GRAY_BUTTON": {
+				"scale": [
+					{ "x": 0.94, "y": 0.94 }
+				]
+			}
+		}
+	}
+}
+}

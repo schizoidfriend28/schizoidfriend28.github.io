@@ -1,0 +1,40 @@
+{
+  "urls": [
+    "resources/SOUNDS/all.mp3",
+    "resources/SOUNDS/all.ogg"
+  ],
+  "sprite": {
+    "bigWinCoinLoop": [
+      0,
+      18017.460317460318
+    ],
+    "bigWinEnd": [
+      20000,
+      1687.4149659863954
+    ],
+    "buttonClick": [
+      23000,
+      200.11337868480794
+    ],
+    "fsStart": [
+      25000,
+      2095.827664399092
+    ],
+    "fsTriggered": [
+      29000,
+      1281.4512471655312
+    ],
+    "fsWinScreen": [
+      32000,
+      2381.2925170068056
+    ],
+    "musicBaseGame": [
+      36000,
+      88000
+    ],
+    "musicFreeSpins": [
+      125000,
+      67550.49886621317
+    ]
+  }
+}

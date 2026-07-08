@@ -1,0 +1,246 @@
+{
+"skeleton": {
+	"hash": "qddyjzH5xRg",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -40,
+	"y": -40,
+	"width": 80,
+	"height": 80,
+	"images": "../../../Marbles/Animations/images/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "MENU_BUTTON", "parent": "root" }
+],
+"slots": [
+	{ "name": "BUTTON_BG", "bone": "MENU_BUTTON", "color": "ffffffcb", "attachment": "MENU_BUTTON_BG" },
+	{ "name": "BUTTON", "bone": "MENU_BUTTON", "color": "ffffff7e", "attachment": "MENU_BUTTON" },
+	{ "name": "ICON", "bone": "MENU_BUTTON", "color": "ffffff7e", "attachment": "MENU_ICON" },
+	{ "name": "MENU_BUTTON_DISABLED", "bone": "MENU_BUTTON" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"BUTTON": {
+				"MENU_BUTTON": { "width": 80, "height": 80 }
+			},
+			"BUTTON_BG": {
+				"MENU_BUTTON_BG": { "width": 80, "height": 80 }
+			},
+			"ICON": {
+				"MENU_ICON": { "width": 36, "height": 30 }
+			},
+			"MENU_BUTTON_DISABLED": {
+				"MENU_BUTTON_DISABLED": { "width": 80, "height": 80 }
+			}
+		}
+	}
+],
+"events": {
+	"MENU_ENTER": {}
+},
+"animations": {
+	"DISABLED": {
+		"slots": {
+			"BUTTON": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"BUTTON_BG": {
+				"attachment": [
+					{ "name": "MENU_BUTTON_BG" }
+				]
+			},
+			"ICON": {
+				"rgba": [
+					{ "color": "ffffff32" }
+				],
+				"attachment": [
+					{ "name": "MENU_ICON" }
+				]
+			},
+			"MENU_BUTTON_DISABLED": {
+				"attachment": [
+					{ "name": "MENU_BUTTON_DISABLED" }
+				]
+			}
+		},
+		"bones": {
+			"MENU_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"ENTER": {
+		"slots": {
+			"BUTTON": {
+				"alpha": [
+					{ "value": 0.0011 },
+					{ "time": 0.10000001, "value": 0.49411765 }
+				],
+				"attachment": [
+					{ "name": "MENU_BUTTON" }
+				]
+			},
+			"BUTTON_BG": {
+				"alpha": [
+					{ "value": 0.0011 },
+					{ "time": 0.10000001, "value": 0.49409997 }
+				],
+				"attachment": [
+					{ "name": "MENU_BUTTON_BG" }
+				]
+			},
+			"ICON": {
+				"alpha": [
+					{ "value": 0.0011 },
+					{ "time": 0.10000001, "value": 0.49411765 }
+				],
+				"attachment": [
+					{ "name": "MENU_ICON" }
+				]
+			}
+		}
+	},
+	"EXIT": {
+		"slots": {
+			"BUTTON": {
+				"alpha": [
+					{ "value": 0.49411765 },
+					{ "time": 0.13333334, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "MENU_BUTTON" }
+				]
+			},
+			"BUTTON_BG": {
+				"alpha": [
+					{ "value": 0.49409997 },
+					{ "time": 0.13333334, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "MENU_BUTTON_BG" }
+				]
+			},
+			"ICON": {
+				"alpha": [
+					{ "value": 0.49411765 },
+					{ "time": 0.13333334, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "MENU_ICON" }
+				]
+			},
+			"MENU_BUTTON_DISABLED": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"HOVER": {
+		"slots": {
+			"BUTTON": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"BUTTON_BG": {
+				"attachment": [
+					{ "name": "MENU_BUTTON_BG" }
+				]
+			},
+			"ICON": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "MENU_ICON" }
+				]
+			}
+		},
+		"bones": {
+			"MENU_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"BUTTON": {
+				"rgb": [
+					{ "color": "ffffff" }
+				],
+				"alpha": [
+					{ "value": 0.498 }
+				]
+			},
+			"BUTTON_BG": {
+				"alpha": [
+					{ "value": 0.498 }
+				],
+				"attachment": [
+					{ "name": "MENU_BUTTON_BG" }
+				]
+			},
+			"ICON": {
+				"rgb": [
+					{ "color": "ffffff" }
+				],
+				"alpha": [
+					{ "value": 0.498 }
+				],
+				"attachment": [
+					{ "name": "MENU_ICON" }
+				]
+			}
+		},
+		"bones": {
+			"MENU_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"PRESSED": {
+		"slots": {
+			"BUTTON": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"BUTTON_BG": {
+				"attachment": [
+					{ "name": "MENU_BUTTON_BG" }
+				]
+			},
+			"ICON": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "MENU_ICON" }
+				]
+			}
+		},
+		"bones": {
+			"MENU_BUTTON": {
+				"scale": [
+					{ "x": 0.94, "y": 0.94 }
+				]
+			}
+		},
+		"events": [
+			{ "name": "MENU_ENTER" }
+		]
+	}
+}
+}

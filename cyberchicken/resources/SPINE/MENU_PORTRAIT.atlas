@@ -1,0 +1,9 @@
+MENU_PORTRAIT.png
+size:1923,1920
+filter:Linear,Linear
+pma:true
+FADER
+bounds:0,0,1920,1920
+offsets:2,2,1924,1924
+SEPARATOR_VERTICAL
+bounds:1921,980,2,940

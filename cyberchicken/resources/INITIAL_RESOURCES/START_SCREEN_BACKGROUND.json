@@ -1,0 +1,121 @@
+{
+"skeleton": {
+	"hash": "8A434lxHkrQ",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -960,
+	"y": -960,
+	"width": 1920,
+	"height": 1920,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "START_SCREEN_BACKGROUND", "parent": "root" },
+	{ "name": "START_SCREEN_LANDSCAPE", "parent": "START_SCREEN_BACKGROUND", "skin": true },
+	{ "name": "START_SCREEN_PORTRAIT", "parent": "START_SCREEN_BACKGROUND", "skin": true }
+],
+"slots": [
+	{ "name": "START_SCREEN_BACKGROUND", "bone": "START_SCREEN_BACKGROUND", "attachment": "GENERIC/BACKGROUND_FREESPINS" },
+	{ "name": "START_SCREEN_LANDSCAPE", "bone": "START_SCREEN_LANDSCAPE", "color": "ffffffcb" },
+	{ "name": "START_SCREEN_PORTRAIT", "bone": "START_SCREEN_PORTRAIT", "color": "ffffffcb", "attachment": "GENERIC/INVISIBLE_PLACEHOLDER" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"START_SCREEN_BACKGROUND": {
+				"GENERIC/BACKGROUND_FREESPINS": { "width": 1920, "height": 1920 }
+			},
+			"START_SCREEN_LANDSCAPE": {
+				"GENERIC/INVISIBLE_PLACEHOLDER": { "width": 1, "height": 1 }
+			},
+			"START_SCREEN_PORTRAIT": {
+				"GENERIC/INVISIBLE_PLACEHOLDER": { "width": 1, "height": 1 }
+			}
+		}
+	},
+	{
+		"name": "LANDSCAPE",
+		"bones": [ "START_SCREEN_LANDSCAPE" ]
+	},
+	{
+		"name": "PORTRAIT",
+		"bones": [ "START_SCREEN_PORTRAIT" ]
+	}
+],
+"animations": {
+	"ENTER": {
+		"slots": {
+			"START_SCREEN_BACKGROUND": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.16666667, "value": 0.8333333 },
+					{ "time": 0.20000002, "value": 1 }
+				]
+			},
+			"START_SCREEN_LANDSCAPE": {
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 0.16666667, "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "GENERIC/INVISIBLE_PLACEHOLDER" }
+				]
+			},
+			"START_SCREEN_PORTRAIT": {
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 0.16666667, "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			}
+		}
+	},
+	"EXIT": {
+		"slots": {
+			"START_SCREEN_BACKGROUND": {
+				"alpha": [
+					{ "time": 0.43333337, "value": 1 },
+					{ "time": 0.73333335, "value": 0 }
+				]
+			},
+			"START_SCREEN_LANDSCAPE": {
+				"alpha": [
+					{ "value": 0.79607844 },
+					{ "time": 0.5, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "GENERIC/INVISIBLE_PLACEHOLDER" }
+				]
+			},
+			"START_SCREEN_PORTRAIT": {
+				"alpha": [
+					{ "value": 0.79607844 },
+					{ "time": 0.5, "value": 0 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"START_SCREEN_BACKGROUND": {
+				"attachment": [
+					{ "name": "GENERIC/BACKGROUND_FREESPINS" }
+				]
+			},
+			"START_SCREEN_LANDSCAPE": {
+				"attachment": [
+					{ "name": "GENERIC/INVISIBLE_PLACEHOLDER" }
+				]
+			},
+			"START_SCREEN_PORTRAIT": {
+				"attachment": [
+					{ "name": "GENERIC/INVISIBLE_PLACEHOLDER" }
+				]
+			}
+		}
+	}
+}
+}

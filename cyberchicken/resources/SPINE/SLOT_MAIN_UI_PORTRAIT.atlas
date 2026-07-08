@@ -1,0 +1,9 @@
+SLOT_MAIN_UI_PORTRAIT.png
+size:1033,255
+filter:Linear,Linear
+pma:true
+GENERIC/BLANK _TEMPLATE_255X255
+bounds:778,0,255,255
+GENERIC/TXT_PORTRAIT
+bounds:0,108,147,777
+rotate:90

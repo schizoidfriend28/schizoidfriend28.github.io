@@ -1,0 +1,123 @@
+{
+"skeleton": { "hash": "01NTRgl7SEA", "spine": "4.3.05-beta", "images": "./images/", "audio": "D:/Work/Vertex/UI/For Animation" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "YELLOW_BUTTON", "parent": "root" }
+],
+"slots": [
+	{ "name": "IDLE", "bone": "YELLOW_BUTTON" },
+	{ "name": "BG_2", "bone": "YELLOW_BUTTON", "color": "ffffff65", "blend": "screen" },
+	{ "name": "BG_DISABLED", "bone": "YELLOW_BUTTON" },
+	{ "name": "LABEL", "bone": "YELLOW_BUTTON", "color": "ffffffe6" }
+],
+"skins": [
+	{
+		"name": "BET",
+		"attachments": {
+			"BG_2": {
+				"BG_2": { "name": "BIG_YELLOW_BUTTON_BG", "width": 828, "height": 80 }
+			},
+			"BG_DISABLED": {
+				"BG_DISABLED": { "name": "BIG_YELLOW_BUTTON_BG_DISABLED", "width": 828, "height": 80 }
+			}
+		}
+	},
+	{
+		"name": "SPLASH",
+		"attachments": {
+			"BG_2": {
+				"BG_2": { "name": "YELLOW_BUTTON_BG", "width": 560, "height": 70 }
+			},
+			"BG_DISABLED": {
+				"BG_DISABLED": { "name": "YELLOW_BUTTON_BG_DISABLED", "width": 560, "height": 70 }
+			}
+		}
+	}
+],
+"animations": {
+	"DISABLED": {
+		"slots": {
+			"BG_DISABLED": {
+				"attachment": [
+					{ "name": "BG_DISABLED" }
+				]
+			},
+			"IDLE": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			},
+			"LABEL": {
+				"rgba": [
+					{ "color": "00000099" }
+				]
+			}
+		},
+		"bones": {
+			"YELLOW_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"HOVER": {
+		"slots": {
+			"BG_2": {
+				"attachment": [
+					{ "name": "BG_2" }
+				]
+			},
+			"IDLE": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"YELLOW_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"IDLE": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"YELLOW_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"PRESSED": {
+		"slots": {
+			"BG_2": {
+				"attachment": [
+					{ "name": "BG_2" }
+				]
+			},
+			"IDLE": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"YELLOW_BUTTON": {
+				"scale": [
+					{ "x": 0.98, "y": 0.98 }
+				]
+			}
+		}
+	}
+}
+}

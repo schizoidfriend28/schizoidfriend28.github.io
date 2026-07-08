@@ -1,0 +1,8 @@
+MENU.png
+size:603,940
+filter:Linear,Linear
+pma:true
+MENU_BG
+bounds:0,0,600,940
+SEPARATOR_VERTICAL
+bounds:601,0,2,940

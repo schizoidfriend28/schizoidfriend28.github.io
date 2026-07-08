@@ -1,0 +1,191 @@
+{
+"skeleton": {
+	"hash": "McpvCfLkHLI",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -117.5,
+	"y": -117.5,
+	"width": 235,
+	"height": 235,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "AUTOPLAY_STOP_BUTTON", "parent": "root" }
+],
+"slots": [
+	{ "name": "AUTOPLAY_STOP_BUTTON_BACKPLATE", "bone": "AUTOPLAY_STOP_BUTTON", "attachment": "GUI/BUTTONS/ROUND_BUTTON_BASE" },
+	{ "name": "AUTOPLAY_STOP_BUTTON_ICON", "bone": "AUTOPLAY_STOP_BUTTON", "attachment": "GUI/BUTTONS/AUTOPLAY_STOP_BUTTON" },
+	{ "name": "AUTOPLAY_STOP_BUTTON_HITBOX", "bone": "AUTOPLAY_STOP_BUTTON", "attachment": "AUTOPLAY_STOP_BUTTON_HITBOX" },
+	{ "name": "AUTOPLAY_COUNTDOWN_VALUE", "bone": "AUTOPLAY_STOP_BUTTON" },
+	{ "name": "IGNORE_PLACEHOLDER_AUTOPLAY_COUNTDOWN_VALUE", "bone": "AUTOPLAY_STOP_BUTTON", "attachment": "GUI/BUTTONS/AUTOPLAY_STOP_VALUE_SAMPLE" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"AUTOPLAY_STOP_BUTTON_BACKPLATE": {
+				"GUI/BUTTONS/ROUND_BUTTON_BASE": { "width": 235, "height": 235 }
+			},
+			"AUTOPLAY_STOP_BUTTON_HITBOX": {
+				"AUTOPLAY_STOP_BUTTON_HITBOX": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -123.73, 120.15, 120.73, 123.06, 122.18, -120.67, -120.82, -124.3 ]
+				}
+			},
+			"AUTOPLAY_STOP_BUTTON_ICON": {
+				"GUI/BUTTONS/AUTOPLAY_STOP_BUTTON": { "width": 153, "height": 153 }
+			},
+			"IGNORE_PLACEHOLDER_AUTOPLAY_COUNTDOWN_VALUE": {
+				"GUI/BUTTONS/AUTOPLAY_STOP_VALUE_SAMPLE": { "width": 119, "height": 45 }
+			}
+		}
+	}
+],
+"animations": {
+	"DISABLED": {
+		"slots": {
+			"AUTOPLAY_COUNTDOWN_VALUE": {
+				"rgb": [
+					{ "color": "000000" }
+				],
+				"alpha": [
+					{ "value": 0.3333 }
+				]
+			},
+			"AUTOPLAY_STOP_BUTTON_ICON": {
+				"rgb": [
+					{ "color": "000000" }
+				],
+				"alpha": [
+					{ "value": 0.3333 }
+				]
+			},
+			"IGNORE_PLACEHOLDER_AUTOPLAY_COUNTDOWN_VALUE": {
+				"rgb": [
+					{ "color": "212121" }
+				]
+			}
+		}
+	},
+	"ENTER": {
+		"slots": {
+			"AUTOPLAY_COUNTDOWN_VALUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.33333334, "value": 1 }
+				]
+			},
+			"AUTOPLAY_STOP_BUTTON_BACKPLATE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.33333334, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/ROUND_BUTTON_BASE" }
+				]
+			},
+			"AUTOPLAY_STOP_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 0.0011 },
+					{ "time": 0.33333334, "value": 0.9989 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/AUTOPLAY_STOP_BUTTON" }
+				]
+			}
+		}
+	},
+	"EXIT": {
+		"slots": {
+			"AUTOPLAY_COUNTDOWN_VALUE": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0 }
+				]
+			},
+			"AUTOPLAY_STOP_BUTTON_BACKPLATE": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/ROUND_BUTTON_BASE" }
+				]
+			},
+			"AUTOPLAY_STOP_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0.0011 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/AUTOPLAY_STOP_BUTTON" }
+				]
+			}
+		}
+	},
+	"HOVER": {
+		"slots": {
+			"AUTOPLAY_STOP_BUTTON_ICON": {
+				"attachment": [
+					{ "name": "GUI/BUTTONS/AUTOPLAY_STOP_BUTTON" }
+				]
+			}
+		},
+		"bones": {
+			"AUTOPLAY_STOP_BUTTON": {
+				"scale": [
+					{ "x": 1.01, "y": 1.01 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"AUTOPLAY_STOP_BUTTON_BACKPLATE": {
+				"attachment": [
+					{ "name": "GUI/BUTTONS/ROUND_BUTTON_BASE" }
+				]
+			},
+			"AUTOPLAY_STOP_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 1 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/AUTOPLAY_STOP_BUTTON" }
+				]
+			}
+		},
+		"bones": {
+			"AUTOPLAY_STOP_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"PRESSED": {
+		"slots": {
+			"AUTOPLAY_STOP_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 1 }
+				],
+				"rgb": [
+					{ "color": "cccccc" }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/AUTOPLAY_STOP_BUTTON" }
+				]
+			}
+		},
+		"bones": {
+			"AUTOPLAY_STOP_BUTTON": {
+				"scale": [
+					{ "x": 0.98, "y": 0.98 }
+				]
+			}
+		}
+	}
+}
+}

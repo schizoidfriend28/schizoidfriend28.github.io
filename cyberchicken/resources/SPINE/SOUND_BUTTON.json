@@ -1,0 +1,87 @@
+{
+"skeleton": {
+	"hash": "Fh0X53y66Zs",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -30,
+	"y": -24.5,
+	"width": 60,
+	"height": 49,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "SOUND_BUTTON", "parent": "root" }
+],
+"slots": [
+	{ "name": "ICON", "bone": "SOUND_BUTTON", "color": "ffffff7e", "attachment": "ICON" }
+],
+"skins": [
+	{
+		"name": "OFF",
+		"attachments": {
+			"ICON": {
+				"ICON": { "name": "SPINCRAFT/sound_bttn", "color": "282020ff", "width": 60, "height": 49 }
+			}
+		}
+	},
+	{
+		"name": "ON",
+		"attachments": {
+			"ICON": {
+				"ICON": { "name": "SPINCRAFT/sound_bttn", "width": 60, "height": 49 }
+			}
+		}
+	}
+],
+"animations": {
+	"HOVER": {
+		"slots": {
+			"ICON": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"SOUND_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"ICON": {
+				"rgba": [
+					{ "color": "ffffff7f" }
+				]
+			}
+		},
+		"bones": {
+			"SOUND_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"PRESSED": {
+		"slots": {
+			"ICON": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"SOUND_BUTTON": {
+				"scale": [
+					{ "x": 0.94, "y": 0.94 }
+				]
+			}
+		}
+	}
+}
+}

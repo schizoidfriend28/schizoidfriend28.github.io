@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Poppins Regular';
+    src: local('☺'),
+    url('Poppins-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins SemiBold';
+    src: local('☺'),
+    url('Poppins-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins SemiBoldItalic';
+    src: local('☺'),
+    url('Poppins-SemiBoldItalic.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: local('☺'),
+    url('Poppins-Bold.ttf') format('ttf');
+}

@@ -1,0 +1,58 @@
+
+{
+	"frames":{
+		"EXCELLENT_WIN_BACKPLATE.png" : {
+			"frame": {"x": 2, "y": 2, "w":610, "h": 207},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x": 0, "y": 0, "w": 610, "h": 207},
+			"sourceSize": {"w": 610, "h": 207}
+		}, 
+		"NICE_WIN_BACKPLATE.png" : {
+			"frame": {"x": 615, "y": 2, "w":610, "h": 207},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x": 0, "y": 0, "w": 610, "h": 207},
+			"sourceSize": {"w": 610, "h": 207}
+		}, 
+		"NORMAL_WIN_BACKPLATE.png" : {
+			"frame": {"x": 1228, "y": 2, "w":610, "h": 207},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x": 0, "y": 0, "w": 610, "h": 207},
+			"sourceSize": {"w": 610, "h": 207}
+		}
+	},
+	"meta": {
+		"image": "WIN_NUMBER_BACKPLATES.png",
+		"version": "1.0",
+		"format": "RGBA8888",
+		"size": {"w": 1840, "h":211}
+	},
+    "nineslicedata": {
+        "EXCELLENT_WIN_BACKPLATE.png": {
+            "ninesliceborders": {
+                "leftWidth": 153,
+                "topHeight": 52,
+                "rightWidth": 152,
+                "bottomHeight": 51
+            }
+        },
+        "NICE_WIN_BACKPLATE.png": {
+            "ninesliceborders": {
+                "leftWidth": 153,
+                "topHeight": 52,
+                "rightWidth": 152,
+                "bottomHeight": 51
+            }
+        },
+        "NORMAL_WIN_BACKPLATE.png": {
+            "ninesliceborders": {
+                "leftWidth": 153,
+                "topHeight": 52,
+                "rightWidth": 152,
+                "bottomHeight": 51
+            }
+        }
+    }
+}

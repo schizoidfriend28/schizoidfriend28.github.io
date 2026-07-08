@@ -1,0 +1,12 @@
+HUD_FOOTER.png
+size:2142,100
+filter:Linear,Linear
+pma:true
+GUI/HUD/BALANCE_ICON
+bounds:2000,40,74,60
+GUI/HUD/BET_ICON
+bounds:2075,33,67,67
+GUI/HUD/HUD_FOOTER_BCKGR
+bounds:0,0,1920,100
+GUI/HUD/WIN_ICON
+bounds:1921,40,78,60

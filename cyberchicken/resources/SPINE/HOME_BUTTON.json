@@ -1,0 +1,79 @@
+{
+"skeleton": {
+	"hash": "8fto1Qrw4P0",
+	"spine": "4.3.05-beta",
+	"x": -17,
+	"y": -15,
+	"width": 34,
+	"height": 30,
+	"images": "./images/",
+	"audio": "D:/Work/Vertex/UI/For Animation"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "HOME_BUTTON", "parent": "root" }
+],
+"slots": [
+	{ "name": "ICON", "bone": "HOME_BUTTON", "color": "ffffff7e", "attachment": "HOME_ICON" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"ICON": {
+				"HOME_ICON": { "width": 34, "height": 30 }
+			}
+		}
+	}
+],
+"animations": {
+	"HOVER": {
+		"slots": {
+			"ICON": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"HOME_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"ICON": {
+				"rgba": [
+					{ "color": "ffffff7f" }
+				]
+			}
+		},
+		"bones": {
+			"HOME_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"PRESSED": {
+		"slots": {
+			"ICON": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"HOME_BUTTON": {
+				"scale": [
+					{ "x": 0.94, "y": 0.94 }
+				]
+			}
+		}
+	}
+}
+}

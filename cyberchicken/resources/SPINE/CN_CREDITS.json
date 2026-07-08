@@ -1,0 +1,301 @@
+{
+"skeleton": {
+	"hash": "Se93bp0kwsQ",
+	"spine": "4.2.40",
+	"x": -70,
+	"y": -28,
+	"width": 140,
+	"height": 56,
+	"fps": 24,
+	"images": "../../../ASSETS/SYMBOLS_CN/",
+	"audio": "G:/Shared drives/GRAPHICS DRIVE/Money Tree/ANIMATIONS/SPINE_PROJECTS/CN/WORKFILES/DESKTOP"
+},
+"bones": [
+	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
+	{ "name": "TARGET", "parent": "MAIN_ROOT", "y": 300, "color": "4be323ff", "icon": "arrows" },
+	{ "name": "SCALE_CTRL", "parent": "MAIN_ROOT", "color": "ff0000ff" },
+	{ "name": "COLLECTION", "parent": "SCALE_CTRL", "x": -0.79, "y": -0.17, "color": "abe323ff" },
+	{
+		"name": "COLLECTION_MAIN",
+		"parent": "COLLECTION",
+		"rotation": -108.06,
+		"x": -0.09,
+		"y": -0.8,
+		"color": "00ff11ff",
+		"icon": "particles"
+	},
+	{ "name": "BACKPLATE", "parent": "COLLECTION_MAIN", "inherit": "noRotationOrReflection", "skin": true },
+	{ "name": "NUMBER", "parent": "BACKPLATE", "inherit": "noRotationOrReflection", "skin": true, "color": "aeaeaeff" },
+	{ "name": "COINS_ROOT", "parent": "MAIN_ROOT", "color": "3c3f16ff", "icon": "ik" },
+	{ "name": "COINS_TARGET", "parent": "COINS_ROOT", "color": "3c3f16ff" },
+	{ "name": "bone", "parent": "SCALE_CTRL", "scaleX": 2.5, "scaleY": 2.5, "color": "f57f09ff" },
+	{ "name": "bone2", "parent": "SCALE_CTRL", "scaleX": 2.5, "scaleY": 2.5, "color": "f57f09ff" }
+],
+"slots": [
+	{ "name": "PARTICLES", "bone": "COLLECTION_MAIN" },
+	{ "name": "STAR_SHINE", "bone": "bone", "blend": "additive" },
+	{ "name": "STAR_SHINE2", "bone": "bone2", "blend": "additive" },
+	{ "name": "TARGET_MASK", "bone": "TARGET", "attachment": "TARGET_MASK" },
+	{ "name": "MASK_ANCHOR", "bone": "TARGET" },
+	{ "name": "CREDITS_BACKPLATE", "bone": "BACKPLATE", "attachment": "BACKPLATE_SKINS" },
+	{ "name": "CREDITS_BACKPLATE_ADD", "bone": "BACKPLATE", "color": "ffffff00", "attachment": "BACKPLATE_SKINS", "blend": "additive" },
+	{ "name": "NUMBER", "bone": "NUMBER" },
+	{ "name": "COINS_PATH1", "bone": "COINS_ROOT", "attachment": "COINS_PATH1" }
+],
+"transform": [
+	{
+		"name": "COIN_TARGET_CONSTRAINT",
+		"bones": [ "COINS_TARGET" ],
+		"target": "TARGET",
+		"scaleY": 0.08,
+		"mixRotate": 0,
+		"mixScaleX": 0,
+		"mixShearY": 0
+	}
+],
+"path": [
+	{
+		"name": "BACKPLATE_CONSTRAINT",
+		"order": 1,
+		"bones": [ "COLLECTION" ],
+		"target": "COINS_PATH1"
+	}
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"COINS_PATH1": {
+				"COINS_PATH1": {
+					"type": "path",
+					"lengths": [ 177.46, 326.9, 2137.27 ],
+					"vertexCount": 9,
+					"vertices": [ 1, 7, 8.44, -28.35, 1, 1, 7, -0.79, -0.17, 1, 2, 7, 42.77, 22.37, 0.85143, 8, -370.32, -61.97, 0.14857, 2, 7, 59.81, 63.84, 0.77714, 8, -353.29, -20.51, 0.22286, 2, 7, 159.96, 66.08, 0.50857, 8, -253.14, -18.27, 0.49143, 2, 7, 233.66, 84.44, 0.30286, 8, -179.43, 0.09, 0.69714, 1, 8, -61.3, -17.42, 1, 1, 8, 0.27, -4.73, 1, 1, 7, 1988.46, 705.1, 1 ]
+				}
+			},
+			"STAR_SHINE": {
+				"CN_RADIAL_SHINE_01": {
+					"x": 0.02,
+					"y": 0.85,
+					"scaleX": 0.5321,
+					"scaleY": 0.5321,
+					"rotation": 0.06,
+					"width": 281,
+					"height": 224
+				},
+				"CN_SPARKLE_2": { "scaleX": 0.4477, "scaleY": 0.4477, "rotation": 0.06, "width": 300, "height": 300 }
+			},
+			"STAR_SHINE2": {
+				"CN_RADIAL_SHINE_02": {
+					"x": 3.52,
+					"y": 4.15,
+					"scaleX": 0.6549,
+					"scaleY": 0.6549,
+					"rotation": 0.06,
+					"width": 281,
+					"height": 224
+				},
+				"CN_SPARKLE_2": { "scaleX": 0.4477, "scaleY": 0.4477, "rotation": 0.06, "width": 300, "height": 300 }
+			},
+			"TARGET_MASK": {
+				"TARGET_MASK": {
+					"type": "clipping",
+					"end": "MASK_ANCHOR",
+					"vertexCount": 4,
+					"vertices": [ 1, 1, -169.38, -2.08, 1, 1, 1, 182.24, -1.41, 1, 1, 0, 181.53, -104.27, 1, 1, 0, -170.59, -106.17, 1 ],
+					"color": "ce3a3aff"
+				}
+			}
+		}
+	},
+	{
+		"name": "BASIC",
+		"bones": [ "BACKPLATE", "NUMBER" ],
+		"attachments": {
+			"CREDITS_BACKPLATE": {
+				"BACKPLATE_SKINS": { "name": "CN_NUMBERS_BACKPLATE", "width": 140, "height": 56 }
+			},
+			"CREDITS_BACKPLATE_ADD": {
+				"BACKPLATE_SKINS": { "name": "CN_NUMBERS_BACKPLATE", "width": 140, "height": 56 }
+			}
+		}
+	},
+	{
+		"name": "BASIC_HIGH",
+		"bones": [ "BACKPLATE", "NUMBER" ],
+		"attachments": {
+			"CREDITS_BACKPLATE": {
+				"BACKPLATE_SKINS": { "name": "CN_NUMBERS_BACKPLATE_HIGH", "width": 140, "height": 56 }
+			},
+			"CREDITS_BACKPLATE_ADD": {
+				"BACKPLATE_SKINS": { "name": "CN_NUMBERS_BACKPLATE_HIGH", "width": 140, "height": 56 }
+			}
+		}
+	}
+],
+"events": {
+	"NEXT": {},
+	"UPDATE": {}
+},
+"animations": {
+	"CREDITS_IDLE": {},
+	"CREDITS_PAYOUT": {
+		"slots": {
+			"CREDITS_BACKPLATE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.125, "value": 1, "curve": "stepped" },
+					{ "time": 0.7917, "value": 1 },
+					{ "time": 1.0833, "value": 0 }
+				]
+			},
+			"CREDITS_BACKPLATE_ADD": {
+				"alpha": [
+					{
+						"value": 0,
+						"curve": [ 0.042, 0, 0.083, 1 ]
+					},
+					{
+						"time": 0.125,
+						"value": 1,
+						"curve": [ 0.25, 1, 0.375, 0.33 ]
+					},
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"NUMBER": {
+				"alpha": [
+					{ "time": 1.0417, "value": 1 },
+					{ "time": 1.25, "value": 0 }
+				]
+			},
+			"STAR_SHINE": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			},
+			"STAR_SHINE2": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			}
+		},
+		"bones": {
+			"COLLECTION_MAIN": {
+				"scale": [
+					{
+						"curve": [ 0.083, 1, 1.168, 0.459, 0.083, 1, 1.168, 0.459 ]
+					},
+					{ "time": 1.2917, "x": 0.094, "y": 0.094 }
+				]
+			},
+			"BACKPLATE": {
+				"scale": [
+					{
+						"time": 0.5,
+						"curve": [ 0.611, 1, 0.722, 1.172, 0.611, 1, 0.722, 1.172 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 1.172,
+						"y": 1.172,
+						"curve": [ 0.972, 1.172, 1.111, 0.284, 0.972, 1.172, 1.111, 0.284 ]
+					},
+					{ "time": 1.25, "x": 0.284, "y": 0.284 }
+				]
+			}
+		},
+		"path": {
+			"BACKPLATE_CONSTRAINT": {
+				"position": [
+					{ "time": 0.4167 },
+					{ "time": 0.9583, "value": 1 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.6667, "name": "NEXT" },
+			{ "time": 1.0417, "name": "UPDATE" }
+		]
+	},
+	"CREDITS_PAYOUT_HIGH": {
+		"slots": {
+			"CREDITS_BACKPLATE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.125, "value": 1, "curve": "stepped" },
+					{ "time": 0.7917, "value": 1 },
+					{ "time": 1.0833, "value": 0 }
+				]
+			},
+			"CREDITS_BACKPLATE_ADD": {
+				"alpha": [
+					{
+						"value": 0,
+						"curve": [ 0.042, 0, 0.083, 1 ]
+					},
+					{
+						"time": 0.125,
+						"value": 1,
+						"curve": [ 0.25, 1, 0.375, 0.33 ]
+					},
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"NUMBER": {
+				"alpha": [
+					{ "time": 1.0417, "value": 1 },
+					{ "time": 1.25, "value": 0 }
+				]
+			},
+			"STAR_SHINE": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			},
+			"STAR_SHINE2": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			}
+		},
+		"bones": {
+			"COLLECTION_MAIN": {
+				"scale": [
+					{
+						"curve": [ 0.083, 1, 1.168, 0.459, 0.083, 1, 1.168, 0.459 ]
+					},
+					{ "time": 1.2917, "x": 0.094, "y": 0.094 }
+				]
+			},
+			"BACKPLATE": {
+				"scale": [
+					{
+						"time": 0.5,
+						"curve": [ 0.611, 1, 0.722, 1.172, 0.611, 1, 0.722, 1.172 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 1.172,
+						"y": 1.172,
+						"curve": [ 0.972, 1.172, 1.111, 0.284, 0.972, 1.172, 1.111, 0.284 ]
+					},
+					{ "time": 1.25, "x": 0.284, "y": 0.284 }
+				]
+			}
+		},
+		"path": {
+			"BACKPLATE_CONSTRAINT": {
+				"position": [
+					{ "time": 0.4167 },
+					{ "time": 0.9583, "value": 1 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.6667, "name": "NEXT" },
+			{ "time": 1.0417, "name": "UPDATE" }
+		]
+	}
+}
+}

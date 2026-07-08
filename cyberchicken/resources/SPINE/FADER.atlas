@@ -1,0 +1,7 @@
+FADER.png
+size:1920,1920
+filter:Linear,Linear
+pma:true
+FADER
+bounds:0,0,1920,1920
+offsets:2,2,1924,1924

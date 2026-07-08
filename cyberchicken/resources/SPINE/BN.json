@@ -1,0 +1,366 @@
+{
+"skeleton": {
+	"hash": "mY78KDtV8So",
+	"spine": "4.2.39",
+	"x": -132,
+	"y": -140.98,
+	"width": 264,
+	"height": 272.98,
+	"fps": 24,
+	"images": "../../ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
+	{ "name": "SYMBOL_SIZE_CTRL", "parent": "MAIN_ROOT", "color": "ff0000ff" },
+	{ "name": "MAIN_CTRL", "parent": "SYMBOL_SIZE_CTRL", "color": "ffc600ff", "icon": "arrowsB" },
+	{ "name": "FX_ROOT", "parent": "MAIN_CTRL", "color": "ffae00ff", "icon": "particles" },
+	{ "name": "TAIL_ROOT", "parent": "MAIN_CTRL", "y": 36.34, "scaleX": 0.5836, "color": "004effff" },
+	{
+		"name": "TAIL__LONG",
+		"parent": "TAIL_ROOT",
+		"length": 107.41,
+		"rotation": 90,
+		"scaleX": 1.4289,
+		"scaleY": 1.4216,
+		"color": "004effff"
+	},
+	{
+		"name": "TAIL__SHORT",
+		"parent": "TAIL_ROOT",
+		"length": 47.41,
+		"rotation": 90,
+		"scaleX": 2.0246,
+		"scaleY": 1.4054,
+		"color": "004effff"
+	},
+	{ "name": "TAIL_EMBERS_ROOT", "parent": "TAIL_ROOT", "color": "000d2dff", "icon": "warning" },
+	{ "name": "TAIL_EMBER_1", "parent": "TAIL_EMBERS_ROOT", "y": -11.94, "color": "004effff" },
+	{ "name": "TAIL_EMBER_2", "parent": "TAIL_EMBERS_ROOT", "y": -11.94, "scaleX": 1.1632, "scaleY": 1.1632, "color": "004effff" },
+	{ "name": "TAIL_EMBER_3", "parent": "TAIL_EMBERS_ROOT", "y": -11.94, "scaleX": 0.5172, "scaleY": 0.8096, "color": "004effff" },
+	{ "name": "TAIL_EMBER_4", "parent": "TAIL_EMBERS_ROOT", "y": -11.94, "scaleX": 0.2831, "scaleY": 0.2831, "color": "004effff" },
+	{ "name": "TAIL_EMBER_5", "parent": "TAIL_EMBERS_ROOT", "y": -11.94, "color": "004effff" },
+	{ "name": "TAIL_EMBER_6", "parent": "TAIL_EMBERS_ROOT", "y": -11.94, "color": "004effff" },
+	{ "name": "SHADOW", "parent": "MAIN_CTRL", "y": -11.98, "scaleX": 2, "scaleY": 2, "color": "ffc600ff" }
+],
+"slots": [
+	{ "name": "NEAR_WIN_SWEEP", "bone": "TAIL__LONG", "color": "ffffff7e", "blend": "additive" },
+	{ "name": "NEAR_WIN_BOTTOM_GLOW", "bone": "TAIL__SHORT" },
+	{ "name": "EMBERS_BLUE", "bone": "TAIL_EMBER_1", "blend": "additive" },
+	{ "name": "EMBERS_BLUE5", "bone": "TAIL_EMBER_5", "blend": "additive" },
+	{ "name": "EMBERS_BLUE6", "bone": "TAIL_EMBER_6", "blend": "additive" },
+	{ "name": "EMBERS_BLUE2", "bone": "TAIL_EMBER_2", "blend": "additive" },
+	{ "name": "EMBERS_BLUE3", "bone": "TAIL_EMBER_3", "blend": "additive" },
+	{ "name": "EMBERS_BLUE4", "bone": "TAIL_EMBER_4", "blend": "additive" },
+	{ "name": "BN_SHADOW_SCALE_2X", "bone": "SHADOW", "attachment": "BN_SHADOW_SCALE_2X" },
+	{ "name": "BN_BLURRED", "bone": "MAIN_CTRL", "blend": "additive" },
+	{ "name": "BN_BACKPLATE", "bone": "MAIN_CTRL", "attachment": "BN_BACKPLATE" },
+	{ "name": "BN_FRAME", "bone": "MAIN_CTRL", "attachment": "BN_FRAME" },
+	{ "name": "BN_ICON", "bone": "MAIN_CTRL", "attachment": "BN_ICON" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"BN_BACKPLATE": {
+				"BN_BACKPLATE": { "width": 264, "height": 264 }
+			},
+			"BN_BLURRED": {
+				"BN_BLURRED": { "width": 263, "height": 263 }
+			},
+			"BN_FRAME": {
+				"BN_FRAME": { "width": 240, "height": 240 }
+			},
+			"BN_ICON": {
+				"BN_ICON": { "width": 87, "height": 87 }
+			},
+			"BN_SHADOW_SCALE_2X": {
+				"BN_SHADOW_SCALE_2X": { "width": 129, "height": 129 }
+			},
+			"EMBERS_BLUE": {
+				"EMBERS_BLUE": { "x": -20.24, "y": -3.75, "scaleX": 0.7954, "scaleY": 0.5211, "width": 168, "height": 171 }
+			},
+			"EMBERS_BLUE2": {
+				"EMBERS_BLUE": { "x": 9.02, "y": -10.96, "scaleX": 0.8543, "scaleY": -0.8543, "width": 168, "height": 171 }
+			},
+			"EMBERS_BLUE3": {
+				"EMBERS_BLUE": { "x": -8.7, "y": -20.37, "scaleX": -1, "rotation": -77.89, "width": 168, "height": 171 }
+			},
+			"EMBERS_BLUE4": {
+				"EMBERS_BLUE": { "x": 95.33, "y": 45.02, "scaleX": -2.3765, "scaleY": -2.3765, "width": 168, "height": 171 }
+			},
+			"EMBERS_BLUE5": {
+				"EMBERS_BLUE": {
+					"x": 12.67,
+					"y": 2.69,
+					"scaleX": 0.6907,
+					"scaleY": 0.4525,
+					"rotation": -90.66,
+					"width": 168,
+					"height": 171
+				}
+			},
+			"EMBERS_BLUE6": {
+				"EMBERS_BLUE": {
+					"x": -3.07,
+					"y": -2.32,
+					"scaleX": 0.5246,
+					"scaleY": 0.6367,
+					"rotation": -90.33,
+					"width": 168,
+					"height": 171
+				}
+			},
+			"NEAR_WIN_BOTTOM_GLOW": {
+				"NEAR_WIN_BOTTOM_GLOW": {
+					"x": 38.18,
+					"y": 0.51,
+					"scaleX": 1.1067,
+					"scaleY": 2.1147,
+					"rotation": -90,
+					"width": 180,
+					"height": 36
+				}
+			},
+			"NEAR_WIN_SWEEP": {
+				"NEAR_WIN_SWEEP": { "x": 225.16, "y": 0.02, "scaleX": 1.2029, "rotation": -90, "width": 163, "height": 447 }
+			}
+		}
+	}
+],
+"animations": {
+	"DARKEN_ENTER": {},
+	"DARKEN_EXIT": {},
+	"DARKEN_IDLE": {},
+	"DARKEN_TOGGLE": {},
+	"FALLING": {
+		"slots": {
+			"NEAR_WIN_BOTTOM_GLOW": {
+				"attachment": [
+					{ "name": "NEAR_WIN_BOTTOM_GLOW" }
+				]
+			},
+			"NEAR_WIN_SWEEP": {
+				"attachment": [
+					{ "name": "NEAR_WIN_SWEEP" }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"BN_BLURRED": {
+				"alpha": [
+					{ "value": 0.28489998 }
+				]
+			}
+		},
+		"bones": {
+			"MAIN_CTRL": {
+				"rotate": [
+					{}
+				],
+				"translatex": [
+					{}
+				],
+				"translatey": [
+					{}
+				],
+				"scale": [
+					{}
+				]
+			},
+			"SYMBOL_SIZE_CTRL": {
+				"rotate": [
+					{}
+				],
+				"translate": [
+					{}
+				],
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"LANDING": {
+		"bones": {
+			"MAIN_CTRL": {
+				"translate": [
+					{ "y": -13.29 },
+					{ "time": 0.125, "y": 11.43 },
+					{ "time": 0.4167 }
+				],
+				"scale": [
+					{ "x": 1.195, "y": 0.822 },
+					{ "time": 0.125, "x": 0.786, "y": 1.145 },
+					{ "time": 0.4167 }
+				]
+			}
+		}
+	},
+	"NEARWIN_ENTER": {
+		"slots": {
+			"BN_BLURRED": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 1.25, "value": 0.33589998 }
+				]
+			}
+		},
+		"bones": {
+			"MAIN_ROOT": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.2083, "curve": "stepped" },
+					{ "time": 0.4167 }
+				]
+			}
+		}
+	},
+	"NEARWIN_EXIT": {
+		"slots": {
+			"BN_BLURRED": {
+				"alpha": [
+					{ "value": 0.33589998 },
+					{ "time": 0.4167, "value": 0 }
+				]
+			}
+		},
+		"bones": {
+			"MAIN_ROOT": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.4167 }
+				]
+			},
+			"MAIN_CTRL": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.4167 }
+				],
+				"translatex": [
+					{ "curve": "stepped" },
+					{ "time": 0.4167 }
+				],
+				"translatey": [
+					{ "curve": "stepped" },
+					{ "time": 0.4167 }
+				],
+				"scale": [
+					{ "x": 1.1, "y": 1.1 },
+					{ "time": 0.1667, "x": 1.03, "y": 1.03 },
+					{ "time": 0.4167 }
+				]
+			}
+		}
+	},
+	"NEARWIN_IDLE": {
+		"slots": {
+			"BN_BLURRED": {
+				"alpha": [
+					{ "value": 0.33589998 }
+				]
+			}
+		},
+		"bones": {
+			"MAIN_ROOT": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 1.1667 }
+				]
+			},
+			"MAIN_CTRL": {
+				"rotate": [
+					{}
+				],
+				"translate": [
+					{}
+				],
+				"scale": [
+					{ "x": 1.1, "y": 1.1 },
+					{ "time": 0.4167, "x": 1.15, "y": 1.15 },
+					{ "time": 1.1667, "x": 1.1, "y": 1.1 },
+					{ "time": 1.5833, "x": 1.15, "y": 1.15 }
+				]
+			}
+		}
+	},
+	"REEL_EXIT": {
+		"slots": {
+			"NEAR_WIN_BOTTOM_GLOW": {
+				"attachment": [
+					{ "name": "NEAR_WIN_BOTTOM_GLOW" }
+				]
+			},
+			"NEAR_WIN_SWEEP": {
+				"attachment": [
+					{ "name": "NEAR_WIN_SWEEP" }
+				]
+			}
+		},
+		"bones": {
+			"TAIL_ROOT": {
+				"scale": [
+					{},
+					{ "time": 0.1667, "y": -0.054 }
+				]
+			}
+		}
+	},
+	"STOPPING": {},
+	"TRIGGER_FS_ENTER": {
+		"slots": {
+			"BN_BLURRED": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.2917, "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"MAIN_ROOT": {
+				"translate": [
+					{}
+				]
+			}
+		}
+	},
+	"TRIGGER_FS_EXIT": {
+		"slots": {
+			"BN_BLURRED": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.2917, "value": 0 },
+					{ "time": 0.4167, "value": 0.28489998 }
+				]
+			}
+		},
+		"bones": {
+			"MAIN_CTRL": {
+				"rotate": [
+					{ "time": 0.4167 }
+				],
+				"translatex": [
+					{ "time": 0.4167 }
+				],
+				"translatey": [
+					{ "time": 0.4167 }
+				],
+				"scale": [
+					{ "time": 0.4167 }
+				]
+			}
+		}
+	},
+	"TRIGGER_FS_IDLE": {
+		"bones": {
+			"MAIN_ROOT": {
+				"translate": [
+					{ "time": 0.75 }
+				]
+			}
+		}
+	}
+}
+}

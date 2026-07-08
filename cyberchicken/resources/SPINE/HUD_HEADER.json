@@ -1,0 +1,141 @@
+{
+"skeleton": {
+	"hash": "edXEBSwmjKk",
+	"spine": "4.3.39-beta",
+	"x": -861,
+	"y": -22.5,
+	"width": 1722,
+	"height": 45,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "HUD_HEADER_ROOT" },
+	{ "name": "TIME_PORTRAIT", "parent": "HUD_HEADER_ROOT", "x": 177, "scaleX": 0.6, "scaleY": 0.6 },
+	{ "name": "HEADER", "parent": "HUD_HEADER_ROOT" },
+	{ "name": "TIME_ICON", "parent": "HUD_HEADER_ROOT", "x": 212 },
+	{ "name": "TIME_LANDSCAPE", "parent": "HUD_HEADER_ROOT", "x": 177, "scaleX": 0.6, "scaleY": 0.6 },
+	{ "name": "SOUND_BUTTON", "parent": "HUD_HEADER_ROOT", "x": 416, "scaleX": 0.22555, "scaleY": 0.22555 },
+	{ "name": "BANKING_BUTTON", "parent": "HUD_HEADER_ROOT", "x": 478, "y": -0.85224, "scaleX": 0.36111, "scaleY": 0.36111 },
+	{ "name": "LOGO_GAME", "parent": "HUD_HEADER_ROOT", "x": -336, "y": -48 },
+	{ "name": "LOGO_COMPANY", "parent": "HUD_HEADER_ROOT", "x": 322, "y": -36, "scaleX": 0.9, "scaleY": 0.9 }
+],
+"slots": [
+	{ "name": "HEADER", "bone": "HEADER", "color": "ffffffcb", "attachment": "GUI/HUD/HUD_HEADER_BCKGR" },
+	{ "name": "TIME_PORTRAIT", "bone": "TIME_PORTRAIT", "color": "ffffff7e" },
+	{ "name": "TIME_LANDSCAPE", "bone": "TIME_LANDSCAPE", "color": "ffffff7e" },
+	{ "name": "TIME_ICON", "bone": "TIME_ICON", "color": "ffffff7e", "attachment": "TIME_ICON" },
+	{ "name": "SOUND_BUTTON", "bone": "SOUND_BUTTON" },
+	{ "name": "BANKING_BUTTON", "bone": "BANKING_BUTTON" },
+	{ "name": "LOGO_GAME", "bone": "LOGO_GAME" },
+	{ "name": "LOGO_COMPANY", "bone": "LOGO_COMPANY" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"HEADER": {
+				"GUI/HUD/HUD_HEADER_BCKGR": { "width": 1722, "height": 45 }
+			}
+		}
+	},
+	{
+		"name": "LANDSCAPE",
+		"attachments": {
+			"TIME_ICON": {
+				"TIME_ICON": { "name": "GUI/HUD/TIME_ICON", "width": 40, "height": 40 }
+			}
+		}
+	},
+	{
+		"name": "PORTRAIT",
+		"attachments": {
+			"TIME_ICON": {
+				"TIME_ICON": { "name": "GUI/HUD/TIME_ICON", "width": 40, "height": 40 }
+			}
+		}
+	}
+],
+"animations": {
+	"ENTER": {
+		"slots": {
+			"HEADER": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			},
+			"TIME_ICON": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			},
+			"TIME_LANDSCAPE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			},
+			"TIME_PORTRAIT": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			}
+		}
+	},
+	"EXIT": {
+		"slots": {
+			"HEADER": {
+				"alpha": [
+					{ "value": 0.79607844 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			},
+			"TIME_ICON": {
+				"alpha": [
+					{ "value": 0.49411765 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			},
+			"TIME_LANDSCAPE": {
+				"alpha": [
+					{ "value": 0.49411765 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			},
+			"TIME_PORTRAIT": {
+				"alpha": [
+					{ "value": 0.49411765 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"HEADER": {
+				"attachment": [
+					{ "name": "GUI/HUD/HUD_HEADER_BCKGR" }
+				]
+			},
+			"TIME_ICON": {
+				"attachment": [
+					{ "name": "TIME_ICON" }
+				]
+			},
+			"TIME_LANDSCAPE": {
+				"attachment": [
+					{}
+				]
+			},
+			"TIME_PORTRAIT": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	}
+}
+}

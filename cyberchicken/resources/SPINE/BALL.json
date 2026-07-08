@@ -1,0 +1,238 @@
+{
+"skeleton": {
+	"hash": "NUEH1r5FHAQ",
+	"spine": "4.0.64",
+	"x": -37,
+	"y": -37,
+	"width": 74,
+	"height": 74,
+	"images": "./images/",
+	"audio": "D:/Work/Vertex/UI/For Animation"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "BALL", "parent": "root" },
+	{ "name": "NUMBER", "parent": "BALL", "y": -40 }
+],
+"slots": [
+	{ "name": "STROKE", "bone": "BALL", "color": "ffffff18" },
+	{ "name": "STROKE_ACTIVE", "bone": "BALL" },
+	{ "name": "BALL", "bone": "BALL", "attachment": "BALL" },
+	{ "name": "MARKER", "bone": "BALL" },
+	{ "name": "CHECK", "bone": "BALL" },
+	{ "name": "NUMBER", "bone": "NUMBER", "color": "ffffff00" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"CHECK": {
+				"BALL_MARKER_CHECK": { "x": 0.5, "y": -41, "width": 22, "height": 15 }
+			},
+			"MARKER": {
+				"BALL_MARKER": { "y": -40, "width": 40, "height": 40 }
+			},
+			"STROKE": {
+				"BALL_STROKE": { "width": 92, "height": 92 }
+			},
+			"STROKE_ACTIVE": {
+				"BALL_STROKE_ACTIVE": { "width": 110, "height": 110 }
+			}
+		}
+	},
+	{
+		"name": "BLUE",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_BLUE", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "GREEN",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_GREEN", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "ORANGE",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_ORANGE", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "PINK",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_PINK", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "RED",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_RED", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "TURQUOISE",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_TURQUOISE", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "VIOLET",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_VIOLET", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "YELLOW",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_YELLOW", "width": 74, "height": 74 }
+			}
+		}
+	}
+],
+"animations": {
+	"ACTIVE_CHECK": {
+		"slots": {
+			"CHECK": {
+				"attachment": [
+					{ "name": "BALL_MARKER_CHECK" }
+				]
+			},
+			"MARKER": {
+				"attachment": [
+					{ "name": "BALL_MARKER" }
+				]
+			},
+			"STROKE": {
+				"rgba": [
+					{ "color": "ffffff32" }
+				],
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"STROKE_ACTIVE": {
+				"attachment": [
+					{ "name": "BALL_STROKE_ACTIVE" }
+				]
+			}
+		},
+		"bones": {
+			"BALL": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"ACTIVE_NUMBER": {
+		"slots": {
+			"MARKER": {
+				"attachment": [
+					{ "name": "BALL_MARKER" }
+				]
+			},
+			"NUMBER": {
+				"rgba": [
+					{ "color": "ffffffe6" }
+				],
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"STROKE": {
+				"rgba": [
+					{ "color": "ffffff32" }
+				],
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"STROKE_ACTIVE": {
+				"attachment": [
+					{ "name": "BALL_STROKE_ACTIVE" }
+				]
+			}
+		},
+		"bones": {
+			"BALL": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"HOVER": {
+		"slots": {
+			"STROKE": {
+				"rgba": [
+					{ "color": "ffffff32" }
+				],
+				"attachment": [
+					{ "name": "BALL_STROKE" }
+				]
+			}
+		},
+		"bones": {
+			"BALL": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"STROKE": {
+				"rgba": [
+					{ "color": "ffffff18" }
+				],
+				"attachment": [
+					{ "name": "BALL_STROKE" }
+				]
+			}
+		},
+		"bones": {
+			"BALL": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"PRESSED": {
+		"slots": {
+			"STROKE": {
+				"rgba": [
+					{ "color": "ffffff32" }
+				],
+				"attachment": [
+					{ "name": "BALL_STROKE" }
+				]
+			}
+		},
+		"bones": {
+			"BALL": {
+				"scale": [
+					{ "x": 0.94, "y": 0.94 }
+				]
+			}
+		}
+	}
+}
+}

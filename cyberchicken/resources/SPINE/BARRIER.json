@@ -1,0 +1,145 @@
+{
+"skeleton": {
+	"hash": "3WwROgSK3uM",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -185,
+	"y": -169.5,
+	"width": 370,
+	"height": 286.5,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
+	{ "name": "SYMBOL_ANCHOR", "parent": "MAIN_ROOT", "color": "ff0000ff", "icon": "square" },
+	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
+	{ "name": "WIN_INDICATIONS", "parent": "MAIN_ROOT", "color": "ffbf00ff", "icon": "diamond" },
+	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_ICON", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_SHADOWS", "parent": "SYMBOL_ROOT", "x": -1, "y": -32, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_SHADOW3", "parent": "SYMBOL_SHADOWS", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_SHADOW4", "parent": "SYMBOL_SHADOWS", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_GLOW2", "parent": "SYMBOL_ICON", "color": "1eff00ff", "icon": "square" }
+],
+"slots": [
+	{ "name": "WIN_INDICATIONS", "bone": "WIN_INDICATIONS" },
+	{ "name": "SYMBOL_ICON_SHADOW3", "bone": "SYMBOL_ICON_SHADOW3", "attachment": "BARRIER/BARRIER_SHADOW", "blend": "multiply" },
+	{ "name": "SYMBOL_ICON_SHADOW4", "bone": "SYMBOL_ICON_SHADOW4", "attachment": "BARRIER/BARRIER_SHADOW", "blend": "multiply" },
+	{ "name": "SYMBOL_ICON", "bone": "SYMBOL_ICON", "attachment": "BARRIER/BARRIER" },
+	{ "name": "SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a40000", "attachment": "BARRIER/BARRIER_GLOW", "blend": "additive" },
+	{ "name": "SYMBOL_ICON_GLOW2", "bone": "SYMBOL_ICON_GLOW2", "color": "f9a40000", "attachment": "BARRIER/BARRIER_GLOW", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"SYMBOL_ICON": {
+				"BARRIER/BARRIER": { "width": 333, "height": 198 }
+			},
+			"SYMBOL_ICON_GLOW": {
+				"BARRIER/BARRIER_GLOW": { "width": 370, "height": 234 }
+			},
+			"SYMBOL_ICON_GLOW2": {
+				"BARRIER/BARRIER_GLOW": { "width": 370, "height": 234 }
+			},
+			"SYMBOL_ICON_SHADOW3": {
+				"BARRIER/BARRIER_SHADOW": { "width": 346, "height": 275 }
+			},
+			"SYMBOL_ICON_SHADOW4": {
+				"BARRIER/BARRIER_SHADOW": { "width": 346, "height": 275 }
+			}
+		}
+	}
+],
+"animations": {
+	"APPEAR": {
+		"slots": {
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "time": 0.20000002, "value": 0.0011 },
+					{ "time": 0.36666667, "value": 1, "curve": "stepped" },
+					{ "time": 0.5, "value": 0.9989 },
+					{ "time": 0.8000001, "value": 0.0011 }
+				],
+				"rgb": [
+					{ "time": 0.26666668, "color": "ffd700" }
+				]
+			},
+			"SYMBOL_ICON_GLOW2": {
+				"alpha": [
+					{ "time": 0.40000004, "value": 0.0011 },
+					{ "time": 0.5666667, "value": 1, "curve": "stepped" },
+					{ "time": 0.70000005, "value": 0.9989 },
+					{ "time": 1, "value": 0.0011 }
+				],
+				"rgb": [
+					{ "time": 0.4666667, "color": "ffd700" }
+				]
+			},
+			"SYMBOL_ICON_SHADOW4": {
+				"alpha": [
+					{ "time": 0.4666667, "value": 0.9989 },
+					{ "time": 0.6333334, "value": 0.0011 },
+					{ "time": 0.8000001, "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON_GLOW": {
+				"scale": [
+					{ "time": 0.26666668 },
+					{ "time": 0.6333334, "x": 3, "y": 3 }
+				]
+			},
+			"SYMBOL_ROOT": {
+				"translate": [
+					{ "y": -90 },
+					{ "time": 0.13333334 },
+					{ "time": 0.20000002, "y": 20 },
+					{ "time": 0.26666668 },
+					{ "time": 0.6333334, "y": 47 },
+					{ "time": 0.8000001 }
+				],
+				"scale": [
+					{ "y": 0.1 },
+					{ "time": 0.13333334 },
+					{ "time": 0.20000002, "y": 1.0485198 },
+					{ "time": 0.26666668 },
+					{ "time": 0.6333334, "x": 1.2, "y": 1.2 },
+					{ "time": 0.8000001 }
+				]
+			},
+			"SYMBOL_ICON_GLOW2": {
+				"scale": [
+					{ "time": 0.4666667 },
+					{ "time": 0.8333334, "x": 3, "y": 3 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0.0011 },
+					{ "time": 1.5000001, "value": 0.19839999 },
+					{ "time": 3.0000002, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f95400" }
+				]
+			},
+			"SYMBOL_ICON_GLOW2": {
+				"alpha": [
+					{ "value": 0.0011 },
+					{ "time": 1.5000001, "value": 0.19839999 },
+					{ "time": 3.0000002, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f95400" }
+				]
+			}
+		}
+	}
+}
+}

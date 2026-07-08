@@ -1,0 +1,6 @@
+SOUND_BUTTON.png
+size:60,49
+filter:Linear,Linear
+pma:true
+SPINCRAFT/sound_bttn
+bounds:0,0,60,49

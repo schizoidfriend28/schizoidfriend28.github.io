@@ -1,0 +1,10 @@
+COL_CREDITS.png
+size:364,106
+filter:Linear,Linear
+CN_VALUE_1
+bounds:348,80,16,26
+offsets:1,0,19,26
+COL_NUMBERRPLATE
+bounds:0,0,347,106
+INVISIBLE_PLACEHOLDER
+bounds:348,78,1,1

@@ -1,0 +1,15 @@
+MAIN_UI_PORTRAIT.png
+size:2097,208
+filter:Linear,Linear
+pma:true
+BLANK _TEMPLATE
+bounds:1921,32,176,176
+BOTTOM_TOP_LINE
+bounds:0,148,1920,60
+TIME_ICON
+bounds:778,82,32,32
+TXT_PORTRAIT
+bounds:0,0,147,777
+rotate:90
+VERTEX_LOGO
+bounds:778,115,190,32

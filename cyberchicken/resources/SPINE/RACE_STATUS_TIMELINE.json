@@ -1,0 +1,126 @@
+{
+"skeleton": { "hash": "NCFvGR32QaQ", "spine": "4.3.05-beta", "images": "./images/", "audio": "D:/Work/Vertex/UI/For Animation" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "RACE_STATUS", "parent": "root" },
+	{ "name": "TIME_COUNTER", "parent": "RACE_STATUS" }
+],
+"slots": [
+	{ "name": "CIRCLE_TIMELINE_MASK", "bone": "RACE_STATUS", "attachment": "CIRCLE_TIMELINE_MASK" },
+	{ "name": "CIRCLE_TIMELINE", "bone": "RACE_STATUS" },
+	{ "name": "CIRCLE_TIMELINE2", "bone": "RACE_STATUS", "blend": "screen" },
+	{ "name": "TIME_COUNTER", "bone": "TIME_COUNTER" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"CIRCLE_TIMELINE": {
+				"CIRCLE_TIMELINE": { "width": 68, "height": 68 }
+			},
+			"CIRCLE_TIMELINE2": {
+				"CIRCLE_TIMELINE": { "width": 68, "height": 68 }
+			},
+			"CIRCLE_TIMELINE_MASK": {
+				"CIRCLE_TIMELINE_MASK": {
+					"type": "clipping",
+					"end": "CIRCLE_TIMELINE2",
+					"vertexCount": 10,
+					"vertices": [ -27.08, 28.66, 0.04, 40.07, 0.14, 0.2, 0.12, 40.04, 28.09, 27.8, 40.19, -0.04, 28.19, -27.63, -0.31, -40.25, -28.28, -26.77, -39.98, 0.16 ],
+					"color": "ce3a3aff"
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"PLAYING": {
+		"slots": {
+			"CIRCLE_TIMELINE": {
+				"attachment": [
+					{ "name": "CIRCLE_TIMELINE" }
+				]
+			},
+			"CIRCLE_TIMELINE2": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 21, "color": "ffffff00" },
+					{ "time": 21.5, "color": "ffffffff" },
+					{ "time": 22, "color": "ffffff00" },
+					{ "time": 22.5, "color": "ffffffff" },
+					{ "time": 23, "color": "ffffff00" },
+					{ "time": 23.5, "color": "ffffffff" },
+					{ "time": 24, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "CIRCLE_TIMELINE" }
+				]
+			}
+		},
+		"bones": {
+			"TIME_COUNTER": {
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 21 },
+					{ "time": 21.5, "x": 1.1, "y": 1.1 },
+					{ "time": 22 },
+					{ "time": 22.5, "x": 1.1, "y": 1.1 },
+					{ "time": 23 },
+					{ "time": 23.5, "x": 1.1, "y": 1.1 },
+					{ "time": 24 }
+				]
+			}
+		},
+		"attachments": {
+			"default": {
+				"CIRCLE_TIMELINE_MASK": {
+					"CIRCLE_TIMELINE_MASK": {
+						"deform": [
+							{
+								"vertices": [ 27.07999, 11.41999, 0, 0, 0, 0, -0.12607, -0.02275, -28.08155, 12.25919, -40.19998, 40.05999, -28.17998, 67.68007, 0.32001, 80.28003, 28.26, 66.84003, 39.98001, 39.90001 ]
+							},
+							{
+								"time": 3,
+								"offset": 6,
+								"vertices": [ -27.20607, -11.40274, -55.16154, 0.85919, -67.29999, 28.65999, -55.27997, 56.28002, -26.75999, 68.94001, 1.2, 55.46003, 12.9, 28.48 ]
+							},
+							{
+								"time": 6,
+								"offset": 6,
+								"vertices": [ -40.06607, -40.04275, -68.02152, -27.7808, -80.15997, 0.16, -68.16002, 27.66002, -39.64, 40.32002, -11.7, 26.86002 ]
+							},
+							{
+								"time": 9,
+								"offset": 6,
+								"vertices": [ -28.20485, -66.99687, -56.2415, -54.72082, -68.35997, -26.82001, -56.49998, 0.84, -28.1, 13.52, -0.18, 0.14 ]
+							},
+							{
+								"time": 12,
+								"offset": 6,
+								"vertices": [ -0.12485, -80.23688, -28.18151, -68.00081, -40.43999, -40.22001, -28.46, -12.6 ]
+							},
+							{
+								"time": 15,
+								"offset": 6,
+								"vertices": [ 28.13515, -67.61682, 0.15849, -55.42084, -11.94, -27.58 ]
+							},
+							{
+								"time": 18,
+								"offset": 6,
+								"vertices": [ 40.09629, -40.01372, 12.11849, -27.80082 ]
+							},
+							{
+								"time": 21,
+								"offset": 6,
+								"vertices": [ 27.93653, -12.22651 ]
+							},
+							{ "time": 24 }
+						]
+					}
+				}
+			}
+		}
+	},
+	"STOP": {}
+}
+}

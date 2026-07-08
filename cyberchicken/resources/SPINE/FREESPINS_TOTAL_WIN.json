@@ -1,0 +1,40 @@
+{
+"skeleton": {
+	"hash": "zTFaIDbqa/w",
+	"spine": "4.2.39",
+	"x": -216,
+	"y": -32,
+	"width": 432,
+	"height": 64,
+	"fps": 24,
+	"images": "../../ASSETS/",
+	"audio": "G:/Shared drives/GRAPHICS DRIVE/Elemento 2/ANIMATIONS/SPINE_PROJECTS/LAYOUT/WORKFILES/DESKTOP/../MOBILE"
+},
+"bones": [
+	{ "name": "MAIN_ROOT", "color": "310000ff", "icon": "warning" },
+	{ "name": "FREESPINS_TOTAL_WIN", "parent": "MAIN_ROOT", "color": "ff8200ff", "icon": "square" },
+	{ "name": "FREESPINS_TOTAL_WIN_NUMBER", "parent": "FREESPINS_TOTAL_WIN", "y": -12, "color": "ff8200ff", "icon": "romanI" },
+	{ "name": "FREESPINS_TOTAL_WIN_TEXT", "parent": "FREESPINS_TOTAL_WIN", "y": 20, "color": "ff8200ff", "icon": "romanX" }
+],
+"slots": [
+	{ "name": "FS_TOTAL_WIN_BACKPLATE", "bone": "FREESPINS_TOTAL_WIN", "attachment": "FREE_SPINS_TOTAL_WIN/FREE_SPINS_TOTAL_WIN_BACKPLATE" },
+	{ "name": "template", "bone": "MAIN_ROOT" },
+	{ "name": "FREE_SPINS_TOTAL_WIN", "bone": "FREESPINS_TOTAL_WIN_NUMBER" },
+	{ "name": "FREESPINS_TOTAL_WIN_TEXT", "bone": "FREESPINS_TOTAL_WIN_TEXT" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"FS_TOTAL_WIN_BACKPLATE": {
+				"FREE_SPINS_TOTAL_WIN/FREE_SPINS_TOTAL_WIN_BACKPLATE": { "rotation": 180, "width": 432, "height": 64 }
+			}
+		}
+	}
+],
+"animations": {
+	"ENTER": {},
+	"EXIT": {},
+	"IDLE": {}
+}
+}

@@ -1,0 +1,392 @@
+{
+"skeleton": { "hash": "QUDQxLBbmMc", "spine": "4.3.05-beta", "images": "./images/", "audio": "D:/Work/Vertex/UI/For Animation" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "LEADERSBOARD", "parent": "root" },
+	{ "name": "LEADERBOARD_BG", "parent": "LEADERSBOARD" },
+	{ "name": "LEADERBOARD_BG_MOVE", "parent": "LEADERSBOARD" },
+	{ "name": "BALL_8", "parent": "LEADERBOARD_BG_MOVE", "y": -450 },
+	{ "name": "BALL_7", "parent": "LEADERBOARD_BG_MOVE", "y": -396 },
+	{ "name": "BALL_6", "parent": "LEADERBOARD_BG_MOVE", "y": -342 },
+	{ "name": "BALL_5", "parent": "LEADERBOARD_BG_MOVE", "y": -288 },
+	{ "name": "BALL_4", "parent": "LEADERBOARD_BG_MOVE", "y": -234 },
+	{ "name": "BALL_3", "parent": "LEADERBOARD_BG_MOVE", "y": -180 },
+	{ "name": "BALL_2", "parent": "LEADERBOARD_BG_MOVE", "y": -126 },
+	{ "name": "BALL_1", "parent": "LEADERBOARD_BG_MOVE", "y": -72 },
+	{ "name": "LEADERS_BUTTON", "parent": "LEADERSBOARD" }
+],
+"slots": [
+	{ "name": "LEADERBOARD_BG", "bone": "LEADERBOARD_BG", "color": "ffffffcb" },
+	{ "name": "BALL_BET_BAR_8", "bone": "BALL_8" },
+	{ "name": "BALL_BET_BAR_7", "bone": "BALL_7" },
+	{ "name": "BALL_BET_BAR_6", "bone": "BALL_6" },
+	{ "name": "BALL_BET_BAR_5", "bone": "BALL_5" },
+	{ "name": "BALL_BET_BAR_4", "bone": "BALL_4" },
+	{ "name": "BALL_BET_BAR_3", "bone": "BALL_3" },
+	{ "name": "BALL_BET_BAR_2", "bone": "BALL_2" },
+	{ "name": "BALL_BET_BAR_1", "bone": "BALL_1" },
+	{ "name": "MENU_BUTTON_BG", "bone": "LEADERS_BUTTON", "color": "ffffffcb" },
+	{ "name": "MENU_BUTTON_DISABLED", "bone": "LEADERS_BUTTON" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"LEADERBOARD_BG": {
+				"LEADERBOARD_BG": {
+					"type": "mesh",
+					"uvs": [ 2.0E-5, 0.94014, 1.0E-5, 0.06232, 0, 0, 1, 0, 1, 0.06213, 1, 0.93975, 1, 1, 0, 1 ],
+					"triangles": [ 7, 0, 6, 0, 5, 6, 5, 0, 1, 5, 1, 4, 2, 3, 4, 1, 2, 4 ],
+					"vertices": [ 1, 3, -40, -458.28, 1, 1, 2, -40, 6.97, 1, 1, 2, -40, 40, 1, 1, 2, 40, 40, 1, 1, 2, 40, 7.07, 1, 1, 3, 40, -458.07, 1, 1, 3, 40, -490, 1, 1, 3, -40, -490, 1 ],
+					"hull": 8,
+					"edges": [ 4, 6, 12, 14, 4, 2, 6, 8, 8, 10, 10, 12, 2, 0, 0, 14, 2, 8, 10, 0 ],
+					"width": 80,
+					"height": 530
+				}
+			},
+			"MENU_BUTTON_BG": {
+				"MENU_BUTTON_BG": { "width": 80, "height": 80 }
+			},
+			"MENU_BUTTON_DISABLED": {
+				"MENU_BUTTON_DISABLED": { "width": 80, "height": 80 }
+			}
+		}
+	}
+],
+"animations": {
+	"ENTER": {
+		"slots": {
+			"BALL_BET_BAR_1": {
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 0.2, "value": 0 },
+					{ "time": 0.3333, "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_2": {
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 0.1667, "value": 0 },
+					{ "time": 0.3333, "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_3": {
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 0.1333, "value": 0 },
+					{ "time": 0.3333, "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_4": {
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 0.1, "value": 0 },
+					{ "time": 0.3333, "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_5": {
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 0.1, "value": 0 },
+					{ "time": 0.3333, "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_6": {
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 0.0667, "value": 0 },
+					{ "time": 0.3333, "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_7": {
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 0.0333, "value": 0 },
+					{ "time": 0.3333, "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_8": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.3333, "value": 1 }
+				]
+			},
+			"LEADERBOARD_BG": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffcc" }
+				],
+				"attachment": [
+					{ "name": "LEADERBOARD_BG" }
+				]
+			},
+			"MENU_BUTTON_BG": {
+				"rgba": [
+					{ "color": "ffffffcc", "curve": "stepped" },
+					{
+						"time": 0.1667,
+						"color": "ffffffcc",
+						"curve": [ 0.256, 1, 0.244, 1, 0.256, 1, 0.244, 1, 0.256, 1, 0.244, 1, 0.256, 0.8, 0.244, 0.53 ]
+					},
+					{ "time": 0.3333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "MENU_BUTTON_BG" }
+				]
+			}
+		},
+		"bones": {
+			"LEADERS_BUTTON": {
+				"scale": [
+					{}
+				]
+			},
+			"LEADERBOARD_BG": {
+				"translate": [
+					{}
+				]
+			},
+			"LEADERBOARD_BG_MOVE": {
+				"translate": [
+					{
+						"y": 450,
+						"curve": [ 0.167, 0, 0.167, 0, 0.167, 150, 0.207, -79.8 ]
+					},
+					{ "time": 0.3333 }
+				]
+			}
+		}
+	},
+	"EXIT": {
+		"slots": {
+			"BALL_BET_BAR_1": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.0333, "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_2": {
+				"alpha": [
+					{ "value": 1, "curve": "stepped" },
+					{ "time": 0.0333, "value": 1 },
+					{ "time": 0.0667, "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_3": {
+				"alpha": [
+					{ "value": 1, "curve": "stepped" },
+					{ "time": 0.0333, "value": 1 },
+					{ "time": 0.1, "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_4": {
+				"alpha": [
+					{ "value": 1, "curve": "stepped" },
+					{ "time": 0.0667, "value": 1 },
+					{ "time": 0.1333, "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_5": {
+				"alpha": [
+					{ "value": 1, "curve": "stepped" },
+					{ "time": 0.1, "value": 1 },
+					{ "time": 0.1667, "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_6": {
+				"alpha": [
+					{ "value": 1, "curve": "stepped" },
+					{ "time": 0.1, "value": 1 },
+					{ "time": 0.2, "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_7": {
+				"alpha": [
+					{ "value": 1, "curve": "stepped" },
+					{ "time": 0.1, "value": 1 },
+					{ "time": 0.2333, "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_8": {
+				"alpha": [
+					{ "value": 1, "curve": "stepped" },
+					{ "time": 0.1, "value": 1 },
+					{ "time": 0.2667, "value": 0 }
+				]
+			},
+			"LEADERBOARD_BG": {
+				"rgba": [
+					{ "color": "ffffffcc" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "LEADERBOARD_BG" }
+				]
+			}
+		},
+		"bones": {
+			"LEADERBOARD_BG": {
+				"translate": [
+					{}
+				]
+			},
+			"LEADERBOARD_BG_MOVE": {
+				"translate": [
+					{
+						"curve": [ 0.167, 0, 0.167, 0, 0.167, 300, 0.167, 450 ]
+					},
+					{ "time": 0.3333, "y": 450 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"BALL_BET_BAR_1": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_2": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_3": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_4": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_5": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_6": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_7": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"BALL_BET_BAR_8": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"LEADERBOARD_BG": {
+				"rgba": [
+					{ "color": "ffffffcc" }
+				],
+				"attachment": [
+					{ "name": "LEADERBOARD_BG" }
+				]
+			},
+			"MENU_BUTTON_BG": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"LEADERS_BUTTON": {
+				"scale": [
+					{}
+				]
+			},
+			"LEADERBOARD_BG": {
+				"translate": [
+					{}
+				]
+			},
+			"LEADERBOARD_BG_MOVE": {
+				"translate": [
+					{}
+				]
+			}
+		}
+	},
+	"INVISIBLE": {
+		"slots": {
+			"BALL_BET_BAR_1": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_2": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_3": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_4": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_5": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_6": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_7": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			},
+			"BALL_BET_BAR_8": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			},
+			"LEADERBOARD_BG": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "LEADERBOARD_BG" }
+				]
+			},
+			"MENU_BUTTON_BG": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"LEADERS_BUTTON": {
+				"scale": [
+					{}
+				]
+			},
+			"LEADERBOARD_BG": {
+				"translate": [
+					{}
+				]
+			},
+			"LEADERBOARD_BG_MOVE": {
+				"translate": [
+					{}
+				]
+			}
+		}
+	}
+}
+}

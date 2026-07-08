@@ -1,0 +1,270 @@
+{
+"skeleton": {
+	"hash": "mNiQRp7HUK8",
+	"spine": "4.3.05-beta",
+	"x": -22.2,
+	"y": -22.2,
+	"width": 44.4,
+	"height": 44.4,
+	"images": "./images/",
+	"audio": "D:/Work/Vertex/UI/For Animation"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "BALL", "parent": "root", "scaleX": 0.6, "scaleY": 0.6 }
+],
+"slots": [
+	{ "name": "BALL", "bone": "BALL", "attachment": "BALL" },
+	{ "name": "NUMBER", "bone": "root" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"NUMBER": {
+				"1": { "x": -1, "width": 12, "height": 22 },
+				"2": { "width": 16, "height": 22 },
+				"3": { "x": -0.5, "y": -0.5, "width": 17, "height": 23 },
+				"4": { "x": -0.5, "width": 19, "height": 22 },
+				"5": { "x": 0.5, "width": 17, "height": 22 },
+				"6": { "x": -0.5, "width": 17, "height": 22 },
+				"7": { "width": 16, "height": 22 }
+			}
+		}
+	},
+	{
+		"name": "BLUE",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_BLUE", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "GREEN",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_GREEN", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "ORANGE",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_ORANGE", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "PINK",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_PINK", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "RED",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_RED", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "TURQUOISE",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_TURQUOISE", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "VIOLET",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_VIOLET", "width": 74, "height": 74 }
+			}
+		}
+	},
+	{
+		"name": "YELLOW",
+		"attachments": {
+			"BALL": {
+				"BALL": { "name": "BALL_YELLOW", "width": 74, "height": 74 }
+			}
+		}
+	}
+],
+"animations": {
+	"1": {
+		"slots": {
+			"BALL": {
+				"attachment": [
+					{ "name": "BALL" }
+				]
+			},
+			"NUMBER": {
+				"attachment": [
+					{ "name": "1" }
+				]
+			}
+		},
+		"bones": {
+			"BALL": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"2": {
+		"slots": {
+			"BALL": {
+				"attachment": [
+					{ "name": "BALL" }
+				]
+			},
+			"NUMBER": {
+				"attachment": [
+					{ "name": "2" }
+				]
+			}
+		},
+		"bones": {
+			"BALL": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"3": {
+		"slots": {
+			"BALL": {
+				"attachment": [
+					{ "name": "BALL" }
+				]
+			},
+			"NUMBER": {
+				"attachment": [
+					{ "name": "3" }
+				]
+			}
+		},
+		"bones": {
+			"BALL": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"4": {
+		"slots": {
+			"BALL": {
+				"attachment": [
+					{ "name": "BALL" }
+				]
+			},
+			"NUMBER": {
+				"attachment": [
+					{ "name": "4" }
+				]
+			}
+		},
+		"bones": {
+			"BALL": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"5": {
+		"slots": {
+			"BALL": {
+				"attachment": [
+					{ "name": "BALL" }
+				]
+			},
+			"NUMBER": {
+				"attachment": [
+					{ "name": "5" }
+				]
+			}
+		},
+		"bones": {
+			"BALL": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"6": {
+		"slots": {
+			"BALL": {
+				"attachment": [
+					{ "name": "BALL" }
+				]
+			},
+			"NUMBER": {
+				"attachment": [
+					{ "name": "6" }
+				]
+			}
+		},
+		"bones": {
+			"BALL": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"7": {
+		"slots": {
+			"BALL": {
+				"attachment": [
+					{ "name": "BALL" }
+				]
+			},
+			"NUMBER": {
+				"attachment": [
+					{ "name": "7" }
+				]
+			}
+		},
+		"bones": {
+			"BALL": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"ANY": {
+		"slots": {
+			"BALL": {
+				"attachment": [
+					{ "name": "BALL" }
+				]
+			},
+			"NUMBER": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"BALL": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	}
+}
+}

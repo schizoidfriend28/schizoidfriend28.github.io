@@ -1,0 +1,8 @@
+START_SCREEN.png
+size:800,763
+filter:Linear,Linear
+pma:true
+SS_SEPARATOR
+bounds:0,0,560,2
+START_SCREEN_BG
+bounds:0,3,800,760

@@ -1,0 +1,88 @@
+{
+"skeleton": { "hash": "/mjbJjL1A/0", "spine": "4.3.18-beta", "images": "./images/", "audio": "./audio" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "BACKGROUND", "parent": "root" }
+],
+"slots": [
+	{ "name": "BASE_BCKGR", "bone": "BACKGROUND" },
+	{ "name": "FREESPIN_BCKGR", "bone": "BACKGROUND" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"BASE_BCKGR": {
+				"FLOWER_cr": { "width": 1920, "height": 1920 }
+			},
+			"FREESPIN_BCKGR": {
+				"FREESPINS_BCKGR": { "width": 1920, "height": 1920 }
+			}
+		}
+	}
+],
+"animations": {
+	"ENTER_FS": {
+		"slots": {
+			"BASE_BCKGR": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.3333, "value": 0 }
+				]
+			},
+			"FREESPIN_BCKGR": {
+				"alpha": [
+					{ "value": 0.0011 },
+					{ "time": 0.3333, "value": 0.9989 }
+				],
+				"attachment": [
+					{ "name": "FREESPINS_BCKGR" }
+				]
+			}
+		}
+	},
+	"EXIT_FS": {
+		"slots": {
+			"BASE_BCKGR": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.3333, "value": 1 }
+				]
+			},
+			"FREESPIN_BCKGR": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.3333, "value": 0.0011 }
+				],
+				"attachment": [
+					{ "name": "FREESPINS_BCKGR" }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"BASE_BCKGR": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "FLOWER_cr" }
+				]
+			}
+		}
+	},
+	"IDLE_FS": {
+		"slots": {
+			"FREESPIN_BCKGR": {
+				"alpha": [
+					{ "value": 1 }
+				],
+				"attachment": [
+					{ "name": "FREESPINS_BCKGR" }
+				]
+			}
+		}
+	}
+}
+}

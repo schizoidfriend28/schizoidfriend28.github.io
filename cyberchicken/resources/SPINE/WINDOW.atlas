@@ -1,0 +1,6 @@
+WINDOW.png
+size:16,16
+filter:Linear,Linear
+pma:true
+WINDOW_PLACEHOLDER
+bounds:0,0,1,1

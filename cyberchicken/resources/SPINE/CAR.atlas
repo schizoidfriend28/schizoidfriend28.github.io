@@ -1,0 +1,9 @@
+CAR.png
+size:319,1363
+filter:Linear,Linear
+CAR/CAR
+bounds:0,0,319,433
+CAR/CAR_GLOW
+bounds:0,434,319,437
+CAR/CAR_SHADOW
+bounds:0,872,313,491

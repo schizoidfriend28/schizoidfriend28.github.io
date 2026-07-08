@@ -1,0 +1,10 @@
+LEADERS_PANEL.png
+size:80,692
+filter:Linear,Linear
+pma:true
+LEADERBOARD_BG
+bounds:0,162,80,530
+MENU_BUTTON_BG
+bounds:0,81,80,80
+MENU_BUTTON_DISABLED
+bounds:0,0,80,80

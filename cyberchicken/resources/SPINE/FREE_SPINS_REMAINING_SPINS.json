@@ -1,0 +1,147 @@
+{
+"skeleton": {
+	"hash": "M81+55hT9mw",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -216,
+	"y": -32,
+	"width": 432,
+	"height": 64,
+	"images": "../../GRAPHIC_ASSETS/FREE_SPINS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
+	{ "name": "CTRL", "parent": "MAIN_ROOT", "color": "13ff00ff", "icon": "square" },
+	{ "name": "TEXT", "parent": "CTRL", "x": -180, "color": "13ff00ff", "icon": "circle" },
+	{ "name": "FREESPINS_REMAINING_NUMBER", "parent": "CTRL", "x": 180, "color": "ff8600ff", "icon": "romanI" },
+	{ "name": "BACKPLATE", "parent": "MAIN_ROOT", "color": "ff0000ff" }
+],
+"slots": [
+	{ "name": "BACKPLATE", "bone": "BACKPLATE", "attachment": "FREE_SPINS_REMAINING_SPINS/FREE_SPINS_REMAINING_SPINS_BACKPLATE" },
+	{ "name": "FREESPIN_REMAINING_SPINS_TEXT", "bone": "TEXT" },
+	{ "name": "FREESPINS_REMAINING_NUMBER", "bone": "FREESPINS_REMAINING_NUMBER" },
+	{ "name": "FREESPINS_REMAINING_SPINS_NUMBERS_PLACEHOLDER", "bone": "TEXT" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"BACKPLATE": {
+				"FREE_SPINS_REMAINING_SPINS/FREE_SPINS_REMAINING_SPINS_BACKPLATE": { "width": 432, "height": 64 }
+			},
+			"FREESPINS_REMAINING_SPINS_NUMBERS_PLACEHOLDER": {
+				"FREE_SPINS_REMAINING_SPINS/FREE_SPINS_REMAINING_SPINS_QNTY": { "x": 280, "width": 95, "height": 47 }
+			},
+			"FREESPIN_REMAINING_SPINS_TEXT": {
+				"FREE_SPINS_REMAINING_SPINS/FREE_SPINS_REMAINING_SPINS_TEXT": { "width": 133, "height": 47 }
+			}
+		}
+	}
+],
+"animations": {
+	"ENTER": {
+		"slots": {
+			"BACKPLATE": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.13333334, "color": "ffffffff" }
+				]
+			},
+			"FREESPINS_REMAINING_NUMBER": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.13333334, "color": "ffffffff" }
+				]
+			},
+			"FREESPINS_REMAINING_SPINS_NUMBERS_PLACEHOLDER": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.13333334, "value": 0.5421 }
+				]
+			},
+			"FREESPIN_REMAINING_SPINS_TEXT": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.13333334, "color": "ffffffff" }
+				]
+			}
+		}
+	},
+	"EXIT": {
+		"slots": {
+			"BACKPLATE": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.13333334, "color": "ffffff00" }
+				]
+			},
+			"FREESPINS_REMAINING_NUMBER": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.13333334, "color": "ffffff00" }
+				]
+			},
+			"FREESPINS_REMAINING_SPINS_NUMBERS_PLACEHOLDER": {
+				"alpha": [
+					{ "value": 0.59529996 },
+					{ "time": 0.13333334, "value": 0.0011 }
+				]
+			},
+			"FREESPIN_REMAINING_SPINS_TEXT": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.13333334, "color": "ffffff00" }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"BACKPLATE": {
+				"rgba": [
+					{ "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.33333334, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "FREE_SPINS_REMAINING_SPINS/FREE_SPINS_REMAINING_SPINS_BACKPLATE" }
+				]
+			},
+			"FREESPINS_REMAINING_NUMBER": {
+				"rgba": [
+					{ "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.33333334, "color": "ffffffff" }
+				]
+			},
+			"FREESPINS_REMAINING_SPINS_NUMBERS_PLACEHOLDER": {
+				"alpha": [
+					{ "value": 0.69729996, "curve": "stepped" },
+					{ "time": 0.33333334, "value": 0.69729996 }
+				]
+			},
+			"FREESPIN_REMAINING_SPINS_TEXT": {
+				"rgba": [
+					{ "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.33333334, "color": "ffffffff" }
+				]
+			}
+		}
+	},
+	"UPDATE": {
+		"slots": {
+			"FREESPINS_REMAINING_SPINS_NUMBERS_PLACEHOLDER": {
+				"rgba": [
+					{ "color": "ffffff8e" }
+				]
+			}
+		},
+		"bones": {
+			"MAIN_ROOT": {
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 0.33333334 }
+				]
+			}
+		}
+	}
+}
+}

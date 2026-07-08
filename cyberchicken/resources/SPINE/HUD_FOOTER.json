@@ -1,0 +1,226 @@
+{
+"skeleton": {
+	"hash": "c0Wf4zAGNzI",
+	"spine": "4.3.39-beta",
+	"x": -977.0999,
+	"y": -54,
+	"width": 1958.3999,
+	"height": 104,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "HUD_FOOTER_ROOT" },
+	{ "name": "BALANCE_VALUE_PORTRAIT", "parent": "HUD_FOOTER_ROOT", "x": -413, "scaleX": 0.8, "scaleY": 0.8 },
+	{ "name": "FOOTER", "parent": "HUD_FOOTER_ROOT" },
+	{ "name": "WIN_ICON", "parent": "HUD_FOOTER_ROOT", "x": -60 },
+	{ "name": "WIN_VALUE_PORTRAIT", "parent": "HUD_FOOTER_ROOT", "x": -2, "scaleX": 0.8, "scaleY": 0.8 },
+	{ "name": "BET_VALUE_PORTRAIT", "parent": "HUD_FOOTER_ROOT", "x": 413, "scaleX": 0.8, "scaleY": 0.8 },
+	{ "name": "BET_ICON", "parent": "HUD_FOOTER_ROOT", "x": 468 },
+	{ "name": "WIN_VALUE_LANDSCAPE", "parent": "HUD_FOOTER_ROOT", "x": -2, "scaleX": 0.8, "scaleY": 0.8 },
+	{ "name": "BET_VALUE_LANDSCAPE", "parent": "HUD_FOOTER_ROOT", "x": 413, "scaleX": 0.8, "scaleY": 0.8 },
+	{ "name": "BALANCE_VALUE_LANDSCAPE", "parent": "HUD_FOOTER_ROOT", "x": -413, "scaleX": 0.8, "scaleY": 0.8 },
+	{ "name": "BALANCE_ICON", "parent": "HUD_FOOTER_ROOT", "x": -468 }
+],
+"slots": [
+	{ "name": "FOOTER", "bone": "FOOTER", "color": "ffffffcb", "attachment": "GUI/HUD/HUD_FOOTER_BCKGR" },
+	{ "name": "BALANCE_VALUE_PORTRAIT", "bone": "BALANCE_VALUE_PORTRAIT" },
+	{ "name": "BALANCE_VALUE_LANDSCAPE", "bone": "BALANCE_VALUE_LANDSCAPE" },
+	{ "name": "BALANCE_ICON", "bone": "BALANCE_ICON", "attachment": "BALANCE_ICON" },
+	{ "name": "BET_ICON", "bone": "BET_ICON", "attachment": "BET_ICON_SKIN" },
+	{ "name": "BET_VALUE_PORTRAIT", "bone": "BET_VALUE_PORTRAIT" },
+	{ "name": "BET_VALUE_LANDSCAPE", "bone": "BET_VALUE_LANDSCAPE" },
+	{ "name": "WIN_ICON", "bone": "WIN_ICON", "attachment": "WIN_ICON_SKIN" },
+	{ "name": "WIN_VALUE_PORTRAIT", "bone": "WIN_VALUE_PORTRAIT" },
+	{ "name": "WIN_VALUE_LANDSCAPE", "bone": "WIN_VALUE_LANDSCAPE" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"FOOTER": {
+				"GUI/HUD/HUD_FOOTER_BCKGR": { "x": 2.1000366, "y": -2, "scaleX": 1.02, "scaleY": 1.04, "width": 1920, "height": 100 }
+			}
+		}
+	},
+	{
+		"name": "LANDSCAPE",
+		"attachments": {
+			"BALANCE_ICON": {
+				"BALANCE_ICON": { "name": "GUI/HUD/BALANCE_ICON", "width": 74, "height": 60 }
+			},
+			"BET_ICON": {
+				"BET_ICON_SKIN": { "name": "GUI/HUD/BET_ICON", "width": 67, "height": 67 }
+			},
+			"WIN_ICON": {
+				"WIN_ICON_SKIN": { "name": "GUI/HUD/WIN_ICON", "width": 78, "height": 60 }
+			}
+		}
+	},
+	{
+		"name": "PORTRAIT",
+		"attachments": {
+			"BALANCE_ICON": {
+				"BALANCE_ICON": { "name": "GUI/HUD/BALANCE_ICON", "width": 74, "height": 60 }
+			},
+			"BET_ICON": {
+				"BET_ICON_SKIN": { "name": "GUI/HUD/BET_ICON", "width": 67, "height": 67 }
+			},
+			"WIN_ICON": {
+				"WIN_ICON_SKIN": { "name": "GUI/HUD/WIN_ICON", "width": 78, "height": 60 }
+			}
+		}
+	}
+],
+"animations": {
+	"ENTER": {
+		"slots": {
+			"BALANCE_ICON": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			},
+			"BALANCE_VALUE_LANDSCAPE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			},
+			"BALANCE_VALUE_PORTRAIT": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			},
+			"BET_ICON": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			},
+			"BET_VALUE_LANDSCAPE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			},
+			"BET_VALUE_PORTRAIT": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			},
+			"FOOTER": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			},
+			"WIN_ICON": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			},
+			"WIN_VALUE_LANDSCAPE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			},
+			"WIN_VALUE_PORTRAIT": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.36666667, "value": 1 }
+				]
+			}
+		}
+	},
+	"EXIT": {
+		"slots": {
+			"BALANCE_ICON": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			},
+			"BALANCE_VALUE_LANDSCAPE": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			},
+			"BALANCE_VALUE_PORTRAIT": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			},
+			"BET_ICON": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			},
+			"BET_VALUE_LANDSCAPE": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			},
+			"BET_VALUE_PORTRAIT": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			},
+			"FOOTER": {
+				"alpha": [
+					{ "value": 0.79607844 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			},
+			"WIN_ICON": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			},
+			"WIN_VALUE_LANDSCAPE": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			},
+			"WIN_VALUE_PORTRAIT": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.36666667, "value": 0 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"BET_ICON": {
+				"attachment": [
+					{ "name": "BET_ICON_SKIN" }
+				]
+			},
+			"FOOTER": {
+				"attachment": [
+					{ "name": "GUI/HUD/HUD_FOOTER_BCKGR" }
+				]
+			}
+		},
+		"bones": {
+			"BET_VALUE_LANDSCAPE": {
+				"translate": [
+					{}
+				]
+			}
+		}
+	}
+}
+}

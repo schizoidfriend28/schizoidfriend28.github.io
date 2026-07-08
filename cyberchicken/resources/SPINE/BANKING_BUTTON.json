@@ -1,0 +1,99 @@
+{
+"skeleton": {
+	"hash": "D24FuDtGNjM",
+	"spine": "4.3.39-beta",
+	"x": -50.5,
+	"y": -50,
+	"width": 101,
+	"height": 100,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "BANKING_BUTTON", "parent": "root" }
+],
+"slots": [
+	{ "name": "BANKING_BUTTON_ICON", "bone": "BANKING_BUTTON", "attachment": "HUD/BANKING_BUTTON" },
+	{ "name": "BANKING_BUTTON_HITBOX", "bone": "BANKING_BUTTON", "attachment": "BANKING_BUTTON_HITBOX" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"BANKING_BUTTON_HITBOX": {
+				"BANKING_BUTTON_HITBOX": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -53.89, 53.48, 52.46, 54.02, 52.7, -53.22, -53.46, -53.71 ],
+					"color": "60ef00ff"
+				}
+			},
+			"BANKING_BUTTON_ICON": {
+				"HUD/BANKING_BUTTON": { "width": 101, "height": 100 }
+			}
+		}
+	}
+],
+"animations": {
+	"DISABLED": {
+		"slots": {
+			"BANKING_BUTTON_ICON": {
+				"rgb": [
+					{ "color": "000000" }
+				],
+				"alpha": [
+					{ "value": 0.3333 }
+				]
+			}
+		}
+	},
+	"HOVER": {
+		"bones": {
+			"root": {
+				"scale": [
+					{}
+				]
+			},
+			"BANKING_BUTTON": {
+				"scale": [
+					{ "x": 1.05, "y": 1.05 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"BANKING_BUTTON_ICON": {
+				"rgb": [
+					{ "color": "e4e4e4" }
+				],
+				"attachment": [
+					{ "name": "HUD/BANKING_BUTTON" }
+				]
+			}
+		}
+	},
+	"PRESSED": {
+		"slots": {
+			"BANKING_BUTTON_ICON": {
+				"rgb": [
+					{ "color": "cccccc" }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"scale": [
+					{}
+				]
+			},
+			"BANKING_BUTTON": {
+				"scale": [
+					{ "x": 0.95, "y": 0.95 }
+				]
+			}
+		}
+	}
+}
+}

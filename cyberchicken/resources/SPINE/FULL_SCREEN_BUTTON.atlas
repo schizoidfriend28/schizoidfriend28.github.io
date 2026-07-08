@@ -1,0 +1,8 @@
+FULL_SCREEN_BUTTON.png
+size:55,28
+filter:Linear,Linear
+pma:true
+FULL_SCREEN_EXIT_ICON
+bounds:29,2,26,26
+FULL_SCREEN_ICON
+bounds:0,0,28,28

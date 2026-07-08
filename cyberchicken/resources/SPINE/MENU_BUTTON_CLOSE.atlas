@@ -1,0 +1,12 @@
+MENU_BUTTON_CLOSE.png
+size:271,80
+filter:Linear,Linear
+pma:true
+MENU_BUTTON
+bounds:0,0,80,80
+MENU_BUTTON_BG
+bounds:81,0,80,80
+MENU_BUTTON_DISABLED
+bounds:162,0,80,80
+MENU_EXIT_ICON
+bounds:243,51,28,29

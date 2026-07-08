@@ -1,0 +1,8 @@
+SPLASH_SCREEN_PORTRAIT.png
+size:800,763
+filter:Linear,Linear
+pma:true
+SPLASH_SCREEN_BG
+bounds:0,3,800,760
+SS_SEPARATOR
+bounds:0,0,560,2

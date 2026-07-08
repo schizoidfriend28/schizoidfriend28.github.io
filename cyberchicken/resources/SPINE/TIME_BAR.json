@@ -1,0 +1,95 @@
+{
+"skeleton": {
+	"hash": "vCYz/3bPI9M",
+	"spine": "4.3.05-beta",
+	"x": -414.5,
+	"y": -3,
+	"width": 829,
+	"height": 6,
+	"images": "./images/",
+	"audio": "D:/Work/Vertex/UI/For Animation"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "TIME_BAR", "parent": "root" }
+],
+"slots": [
+	{ "name": "TIME_BAR_BG", "bone": "TIME_BAR", "color": "ffffff32", "attachment": "TIME_BAR_BG" },
+	{ "name": "TIME_BAR_MASK", "bone": "TIME_BAR", "attachment": "TIME_BAR_MASK" },
+	{ "name": "TIME_BAR_ACTIVE_GLOW", "bone": "TIME_BAR" },
+	{ "name": "TIME_BAR_ACTIVE", "bone": "TIME_BAR" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"TIME_BAR_ACTIVE": {
+				"TIME_BAR_ACTIVE": { "width": 829, "height": 6 }
+			},
+			"TIME_BAR_ACTIVE_GLOW": {
+				"TIME_BAR_ACTIVE_GLOW": { "width": 845, "height": 24 }
+			},
+			"TIME_BAR_BG": {
+				"TIME_BAR_BG": { "width": 829, "height": 6 }
+			},
+			"TIME_BAR_MASK": {
+				"TIME_BAR_MASK": {
+					"type": "clipping",
+					"end": "TIME_BAR_ACTIVE",
+					"vertexCount": 4,
+					"vertices": [ -434.76, 14.68, -434.76, -14.8, -425.33, -15.03, -424.8, 14.68 ],
+					"color": "ce3a3a00"
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"PLAYING": {
+		"slots": {
+			"TIME_BAR_ACTIVE": {
+				"attachment": [
+					{ "name": "TIME_BAR_ACTIVE" }
+				]
+			},
+			"TIME_BAR_ACTIVE_GLOW": {
+				"rgba": [
+					{
+						"color": "ffffff00",
+						"curve": [ 0.146, 1, 0.484, 1, 0.146, 1, 0.484, 1, 0.146, 1, 0.484, 1, 0.146, 0, 0.484, 1 ]
+					},
+					{ "time": 0.6333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "TIME_BAR_ACTIVE_GLOW" }
+				]
+			},
+			"TIME_BAR_MASK": {
+				"attachment": [
+					{ "name": "TIME_BAR_MASK" }
+				]
+			}
+		},
+		"attachments": {
+			"default": {
+				"TIME_BAR_MASK": {
+					"TIME_BAR_MASK": {
+						"deform": [
+							{
+								"offset": 4,
+								"vertices": [ 9.63901, 0, 9.40097 ]
+							},
+							{
+								"time": 24,
+								"offset": 4,
+								"vertices": [ 851.999, 0, 851.999 ]
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"STOP": {}
+}
+}

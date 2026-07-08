@@ -1,0 +1,114 @@
+{
+  "gameplay": {
+    "win": {
+      "beforeInitialAmountDelay": 200,
+      "finalShowingDelay": 500,
+      "niceOneRoundThresholdLow": 2,
+      "niceOneRoundThresholdHigh": 5,
+      "numberKerning": -18,
+      "biggerNumberKerning": -24
+    },
+    "bigwin": {
+      "threshold": 10,
+      "superThreshold": 25,
+      "megaThreshold": 50,
+      "epicThreshold": 100,
+      "countingTime": 6000,
+      "superCountingTime": 10000,
+      "megaCountingTime": 14000,
+      "epicCountingTime": 18000,
+      "numberKerning": -18
+    },
+    "game": {
+      "totalRoads": 20,
+      "roadWidth": 384
+    }
+  },
+  "cheats": {
+    "No Win": {
+      "maxWin": 0,
+      "maxCoinWin": 0,
+      "freeSpinsTrigger": false
+    },
+    "Ante Win (0-1]": {
+      "maxWin": 1,
+      "minWin": 0.1
+    },
+    "Normal Win (1-4.9)": {
+      "maxWin": 4.9,
+      "minWin": 1.1
+    },
+    "Excellent Win [5-15)": {
+      "maxWin": 14.9,
+      "minWin": 5
+    },
+    "BIG WIN": {
+      "maxWin": 39.9,
+      "minWin": 15
+    },
+    "SUPER WIN": {
+      "maxWin": 69.9,
+      "minWin": 40
+    },
+    "MEGA WIN": {
+      "maxWin": 99.9,
+      "minWin": 70
+    },
+    "EPIC WIN": {
+      "minWin": 100
+    },
+    "Coin Cheats": "title",
+    "Any Coin Win": {
+      "minCoinWin": 0.1
+    },
+    "Any Coin Win + mult": {
+      "hasMultiplier": true
+    },
+    "Any Coin Win + JP": {
+      "hasCoinWithJackpot": true
+    },
+    "Any Coin Win + normal win": {
+      "minCoinWin": 0.1,
+      "maxWin": 4.9,
+      "minWin": 1.1
+    },
+    "BIG COIN WIN": {
+      "maxCoinWin": 39.9,
+      "minCoinWin": 15
+    },
+    "Free Spins Cheats": "title",
+    "Free Spins (Near win)": {
+      "freeSpinsNearWin": true
+    },
+    "Free Spins (10)": {
+      "freeSpins": 10
+    },
+    "Free Spins w multipliers": {
+      "hasFSMultiplier": true
+    },
+    "Free Spins (25)": {
+      "freeSpins": 25
+    },
+    "Free Spins (10) + otherWin": {
+      "freeSpins": 10,
+      "minWin": 0.1
+    },
+    "Free Spins (15)": {
+      "freeSpins": 15
+    },
+    "Free Spins (Min Single Coin Win 5x)": {
+      "freeSpins": 10,
+      "fsMinCoinWin": 5
+    },
+    "Free Spins (3 Coin Features)": {
+      "freeSpins": 10,
+      "nFsCoinFeature": 3
+    }
+  },
+  "buildDate": {
+    "timestamp": "2026-07-08"
+  },
+  "gameVersion": {
+    "version": "0.0.2"
+  }
+}

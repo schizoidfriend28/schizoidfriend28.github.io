@@ -1,0 +1,70 @@
+{
+"skeleton": { "hash": "1Wuk28kVPMI", "spine": "4.3.05-beta", "images": "./images/", "audio": "D:/Work/Vertex/UI/For Animation" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "YELLOW_BUTTON", "parent": "root" }
+],
+"slots": [
+	{ "name": "BG_GLOW", "bone": "YELLOW_BUTTON" },
+	{ "name": "BG", "bone": "YELLOW_BUTTON" }
+],
+"skins": [
+	{
+		"name": "BET",
+		"attachments": {
+			"BG": {
+				"BG": { "name": "BIG_YELLOW_BUTTON_BG", "width": 828, "height": 80 }
+			},
+			"BG_GLOW": {
+				"BG_GLOW": { "name": "BIG_YELLOW_BUTTON_BG_GLOW", "width": 920, "height": 172 }
+			}
+		}
+	},
+	{
+		"name": "SPLASH",
+		"attachments": {
+			"BG": {
+				"BG": { "name": "YELLOW_BUTTON_BG", "width": 560, "height": 70 }
+			},
+			"BG_GLOW": {
+				"BG_GLOW": { "name": "YELLOW_BUTTON_BG_GLOW", "width": 652, "height": 162 }
+			}
+		}
+	}
+],
+"animations": {
+	"IDLE": {
+		"slots": {
+			"BG": {
+				"attachment": [
+					{ "name": "BG" }
+				]
+			},
+			"BG_GLOW": {
+				"rgba": [
+					{
+						"color": "ffffffff",
+						"curve": [ 0.23, 1, 0.765, 1, 0.23, 1, 0.765, 1, 0.23, 1, 0.765, 1, 0.23, 1, 0.765, 0.5 ]
+					},
+					{
+						"time": 1,
+						"color": "ffffff7f",
+						"curve": [ 1.23, 1, 1.765, 1, 1.23, 1, 1.765, 1, 1.23, 1, 1.765, 1, 1.23, 0.5, 1.765, 1 ]
+					},
+					{ "time": 2, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "BG_GLOW" }
+				]
+			}
+		},
+		"bones": {
+			"YELLOW_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	}
+}
+}

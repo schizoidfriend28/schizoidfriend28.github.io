@@ -1,0 +1,32 @@
+{
+"skeleton": {
+	"hash": "id5+kC5SdZU",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -960,
+	"y": -540,
+	"width": 1920,
+	"height": 1080,
+	"images": "../../GRAPHIC_ASSETS/GENERIC/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "DO NOT EXPORT THIS SKELETON", "color": "ff0000ff", "icon": "warning" },
+	{ "name": "LAYOUT_REF", "parent": "DO NOT EXPORT THIS SKELETON" }
+],
+"slots": [
+	{ "name": "LAYOUT_REF", "bone": "LAYOUT_REF", "color": "ffffff77", "attachment": "BG-PLACEHOLDER" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"LAYOUT_REF": {
+				"BG-PLACEHOLDER": { "width": 1920, "height": 1080 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

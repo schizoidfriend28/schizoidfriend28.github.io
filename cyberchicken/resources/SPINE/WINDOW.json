@@ -1,0 +1,61 @@
+{
+"skeleton": {
+	"hash": "dXDVW0cFYns",
+	"spine": "4.3.05-beta",
+	"x": -0.5,
+	"y": -0.5,
+	"width": 1,
+	"height": 1,
+	"images": "./images/",
+	"audio": "D:/Work/Vertex/UI/For Animation"
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "FADER", "bone": "root" },
+	{ "name": "WINDOW", "bone": "root" },
+	{ "name": "IGNORE", "bone": "root", "color": "ffffff00", "attachment": "WINDOW_PLACEHOLDER" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"IGNORE": {
+				"WINDOW_PLACEHOLDER": { "width": 1, "height": 1 }
+			}
+		}
+	}
+],
+"animations": {
+	"ENTER": {
+		"slots": {
+			"WINDOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.3333, "value": 1 }
+				]
+			}
+		}
+	},
+	"EXIT": {
+		"slots": {
+			"WINDOW": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.3333, "value": 0 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"WINDOW": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			}
+		}
+	}
+}
+}

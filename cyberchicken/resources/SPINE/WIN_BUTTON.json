@@ -1,0 +1,49 @@
+{
+"skeleton": {
+	"hash": "hkgFq9PONM8",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -30,
+	"y": -23,
+	"width": 60,
+	"height": 46,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
+	{ "name": "WIN_NUMBER", "parent": "MAIN_ROOT", "color": "ffb500ff", "icon": "romanI" },
+	{ "name": "WIN_NUMBER2", "parent": "MAIN_ROOT", "color": "ffb500ff", "icon": "romanI" }
+],
+"slots": [
+	{ "name": "WIN_ICON", "bone": "MAIN_ROOT", "attachment": "SPINCRAFT/win_bttn" },
+	{ "name": "WIN_ICON2", "bone": "MAIN_ROOT", "attachment": "SPINCRAFT/win_bttn" },
+	{ "name": "WIN_NUMBER", "bone": "WIN_NUMBER" },
+	{ "name": "WIN_NUMBER2", "bone": "WIN_NUMBER2" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"WIN_ICON": {
+				"SPINCRAFT/win_bttn": { "width": 60, "height": 46 }
+			},
+			"WIN_ICON2": {
+				"SPINCRAFT/win_bttn": { "width": 60, "height": 46 }
+			}
+		}
+	}
+],
+"animations": {
+	"IDLE": {},
+	"WIN": {
+		"bones": {
+			"MAIN_ROOT": {
+				"scale": [
+					{ "x": 1.1968477, "y": 1.1968477 },
+					{ "time": 0.33333334 }
+				]
+			}
+		}
+	}
+}
+}

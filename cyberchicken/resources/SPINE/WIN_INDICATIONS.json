@@ -1,0 +1,127 @@
+{
+"skeleton": {
+	"hash": "OFBsvzsZOk8",
+	"spine": "4.2.40",
+	"x": -114.68,
+	"y": -114.68,
+	"width": 229.36,
+	"height": 229.36,
+	"fps": 24,
+	"images": "../../../ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
+	{ "name": "WIN_FRAME_ROOT", "parent": "MAIN_ROOT", "color": "dfff00ff", "icon": "square" },
+	{ "name": "FRAME_MAIN_CTRL", "parent": "WIN_FRAME_ROOT", "x": 1, "y": -2, "color": "dfff00ff" }
+],
+"slots": [
+	{ "name": "WIN_INDICATION_BASE", "bone": "FRAME_MAIN_CTRL", "color": "f7ff00ff", "attachment": "WIN_INDICATIONS/1X1_WIN_FRAME", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"WIN_INDICATION_BASE": {
+				"WIN_INDICATIONS/1X1_WIN_FRAME": { "x": -1, "y": 2, "scaleX": 1.662, "scaleY": 1.662, "width": 138, "height": 138 }
+			}
+		}
+	}
+],
+"animations": {
+	"WIN_ANTE": {
+		"slots": {
+			"WIN_INDICATION_BASE": {
+				"alpha": [
+					{
+						"value": 0,
+						"curve": [ 0.042, 0, 0.083, 1 ]
+					},
+					{
+						"time": 0.125,
+						"value": 1,
+						"curve": [ 0.264, 1, 0.403, 0.96 ]
+					},
+					{
+						"time": 0.5417,
+						"value": 0.7647059,
+						"curve": [ 0.639, 0.63, 0.736, 0 ]
+					},
+					{ "time": 0.8333, "value": 0 }
+				]
+			}
+		}
+	},
+	"WIN_ENTER": {
+		"slots": {
+			"WIN_INDICATION_BASE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.75, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "WIN_INDICATIONS/1X1_WIN_FRAME" }
+				]
+			}
+		}
+	},
+	"WIN_ENTER_LARGE": {
+		"slots": {
+			"WIN_INDICATION_BASE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.2083, "value": 1, "curve": "stepped" },
+					{ "time": 0.75, "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"FRAME_MAIN_CTRL": {
+				"rotate": [
+					{ "time": 1.125 }
+				]
+			}
+		}
+	},
+	"WIN_ENTER_SMALL": {
+		"slots": {
+			"WIN_INDICATION_BASE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.2083, "value": 1, "curve": "stepped" },
+					{ "time": 0.4167, "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"FRAME_MAIN_CTRL": {
+				"rotate": [
+					{ "time": 1.125 }
+				]
+			}
+		}
+	},
+	"WIN_EXIT": {
+		"slots": {
+			"WIN_INDICATION_BASE": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.4583, "value": 0 }
+				]
+			}
+		}
+	},
+	"WIN_IDLE": {},
+	"WIN_TOGGLE": {
+		"slots": {
+			"WIN_INDICATION_BASE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.0417, "value": 1 },
+					{ "time": 2.0833, "value": 0 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,1058 @@
+{
+"skeleton": {
+	"hash": "8t4jGO6XxPc",
+	"spine": "4.2.40",
+	"x": -88,
+	"y": -88,
+	"width": 176,
+	"height": 176,
+	"images": "../../../ASSETS/",
+	"audio": "G:/Shared drives/GRAPHICS DRIVE/Gold Pigger 2/ANIMATIONS/SPINE_PROJECTS/SYMBOLS/WORKFILES/DEKSTOP"
+},
+"bones": [
+	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
+	{ "name": "SYMBOL_ANCHOR", "parent": "MAIN_ROOT", "color": "ff0000ff", "icon": "square" },
+	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_MAIN_CTRL", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_MAIN_CTRL", "color": "1eff00ff", "icon": "suiteHearts" },
+	{
+		"name": "SYMBOL_SHADOW",
+		"parent": "SYMBOL_MAIN_CTRL",
+		"y": -10,
+		"scaleX": 2,
+		"scaleY": 2,
+		"color": "000effff",
+		"icon": "square"
+	},
+	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_ICON", "color": "ffde00ff", "icon": "asterisk" },
+	{ "name": "BLURRED_SYMBOL", "parent": "SYMBOL_MAIN_CTRL", "color": "a500ffff", "icon": "circle" },
+	{ "name": "SYMBOL_BACKPLATE", "parent": "SYMBOL_MAIN_CTRL", "color": "b05000ff", "icon": "square" },
+	{ "name": "SYMBOL_BACKPLATE_GLOW", "parent": "SYMBOL_BACKPLATE", "color": "ffde00ff", "icon": "asterisk" },
+	{
+		"name": "LIGHTSWEEP",
+		"parent": "SYMBOL_MAIN_CTRL",
+		"y": -5,
+		"scaleX": 2,
+		"scaleY": 2,
+		"color": "00e3ffff",
+		"icon": "chevron"
+	},
+	{ "name": "SYMBOL_FRAME_BOTTOM", "parent": "SYMBOL_MAIN_CTRL", "color": "ff8d2fff", "icon": "square" },
+	{ "name": "SYMBOL_FRAME_TOP", "parent": "SYMBOL_MAIN_CTRL", "color": "ff8d2fff", "icon": "square" },
+	{ "name": "WIN_INDICATIONS", "parent": "MAIN_ROOT", "color": "ffbf00ff", "icon": "diamond" },
+	{ "name": "ANIMATION_CHECKER_for_testing_only", "parent": "MAIN_ROOT", "color": "ff0000ff", "icon": "crosshair" }
+],
+"slots": [
+	{ "name": "SYMBOL_SHADOW", "bone": "SYMBOL_SHADOW" },
+	{ "name": "SYMBOL_BACKPLATE", "bone": "SYMBOL_BACKPLATE", "attachment": "SYMBOLS_M/M5/M5_BACKPLATE" },
+	{ "name": "SYMBOL_FRAME_BOTTOM", "bone": "SYMBOL_FRAME_BOTTOM", "attachment": "SYMBOLS_M/M5/M5_FRAME_BOTTOM" },
+	{ "name": "SYMBOL_BACKPLATE_GLOW", "bone": "SYMBOL_BACKPLATE_GLOW", "blend": "additive" },
+	{ "name": "ICON/SYMBOL_ICON", "bone": "SYMBOL_ICON", "attachment": "SYMBOLS_M/M5/M5_ICON" },
+	{ "name": "ICON/SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "blend": "additive" },
+	{ "name": "ICON/SYMBOL_ICON_ADD", "bone": "SYMBOL_ICON", "color": "ffffff00", "blend": "additive" },
+	{ "name": "SYMBOL_FRAME_TOP", "bone": "SYMBOL_FRAME_TOP", "attachment": "SYMBOLS_M/M5/M5_FRAME_TOP" },
+	{ "name": "BLURRED_SYMBOL", "bone": "BLURRED_SYMBOL", "color": "828282ff" },
+	{ "name": "LIGHTSWEEP_SKINS", "bone": "LIGHTSWEEP", "color": "3f4fffff", "blend": "additive" },
+	{ "name": "WIN_INDICATIONS", "bone": "WIN_INDICATIONS" },
+	{ "name": "TEMPLATE", "bone": "SYMBOL_ANCHOR", "color": "ffffff87" },
+	{ "name": "ANIMATION_NAMES/ANIMATION_NAMES_BACKPLATE5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/DARKEN_ENTER5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/DARKEN_EXIT5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/DARKEN_IDLE5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/DARKEN_TOGGLE5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/FALLING5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/IDLE5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/LANDING5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/REEL_ENTER5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/REEL_EXIT5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/SLIDE5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/WIN_ANTE5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/WIN_ENTER5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/WIN_ENTER_LARGE5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/WIN_ENTER_SMALL5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/WIN_EXIT5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/WIN_IDLE5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/WIN_REMOVE5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" },
+	{ "name": "ANIMATION_NAMES/WIN_TOGGLE5", "bone": "ANIMATION_CHECKER_for_testing_only", "color": "ffffff00" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"BLURRED_SYMBOL": {
+				"SYMBOLS_M/M5/M5_BLURRED": { "width": 201, "height": 201 }
+			},
+			"LIGHTSWEEP_SKINS": {
+				"SYMBOLS_M/M5/LIGHTSWEEP/M5_": {
+					"width": 88,
+					"height": 88,
+					"sequence": { "count": 20, "start": 0, "digits": 3 }
+				}
+			},
+			"SYMBOL_BACKPLATE": {
+				"SYMBOLS_M/M5/M5_BACKPLATE": { "width": 176, "height": 176 }
+			},
+			"SYMBOL_BACKPLATE_GLOW": {
+				"SYMBOLS_M/M5/M5_BACKPLATE_GLOW": { "width": 200, "height": 200 }
+			},
+			"SYMBOL_FRAME_BOTTOM": {
+				"SYMBOLS_M/M5/M5_FRAME_BOTTOM": { "width": 176, "height": 176 }
+			},
+			"SYMBOL_FRAME_TOP": {
+				"SYMBOLS_M/M5/M5_FRAME_TOP": { "width": 176, "height": 176 }
+			},
+			"SYMBOL_SHADOW": {
+				"SYMBOLS_M/M5/M5_SHADOW_SCALE_2X": { "width": 96, "height": 96 }
+			},
+			"ANIMATION_NAMES/ANIMATION_NAMES_BACKPLATE5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/ANIMATION_NAMES_BACKPLATE": { "width": 163, "height": 163 }
+			},
+			"ANIMATION_NAMES/DARKEN_ENTER5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/DARKEN_ENTER": { "width": 92, "height": 92 }
+			},
+			"ANIMATION_NAMES/DARKEN_EXIT5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/DARKEN_EXIT": { "width": 81, "height": 81 }
+			},
+			"ANIMATION_NAMES/DARKEN_IDLE5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/DARKEN_IDLE": { "width": 81, "height": 81 }
+			},
+			"ANIMATION_NAMES/DARKEN_TOGGLE5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/DARKEN_TOGGLE": { "width": 100, "height": 100 }
+			},
+			"ANIMATION_NAMES/FALLING5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/FALLING": { "width": 46, "height": 46 }
+			},
+			"ANIMATION_NAMES/IDLE5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/IDLE": { "width": 25, "height": 25 }
+			},
+			"ANIMATION_NAMES/LANDING5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/LANDING": { "width": 52, "height": 52 }
+			},
+			"ANIMATION_NAMES/REEL_ENTER5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/REEL_ENTER": { "width": 72, "height": 72 }
+			},
+			"ANIMATION_NAMES/REEL_EXIT5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/REEL_EXIT": { "width": 61, "height": 61 }
+			},
+			"ANIMATION_NAMES/SLIDE5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/SLIDE": { "width": 33, "height": 33 }
+			},
+			"ANIMATION_NAMES/WIN_ANTE5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/WIN_ANTE": { "width": 64, "height": 64 }
+			},
+			"ANIMATION_NAMES/WIN_ENTER5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/WIN_ENTER": { "width": 69, "height": 69 }
+			},
+			"ANIMATION_NAMES/WIN_ENTER_LARGE5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/WIN_ENTER_LARGE": { "width": 115, "height": 115 }
+			},
+			"ANIMATION_NAMES/WIN_ENTER_SMALL5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/WIN_ENTER_SMALL": { "width": 115, "height": 115 }
+			},
+			"ANIMATION_NAMES/WIN_EXIT5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/WIN_EXIT": { "width": 58, "height": 58 }
+			},
+			"ANIMATION_NAMES/WIN_IDLE5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/WIN_IDLE": { "width": 58, "height": 58 }
+			},
+			"ANIMATION_NAMES/WIN_REMOVE5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/WIN_REMOVE": { "width": 80, "height": 80 }
+			},
+			"ANIMATION_NAMES/WIN_TOGGLE5": {
+				"GENERIC_ASSETS/ANIMATION_NAMES/WIN_TOGGLE": { "width": 77, "height": 77 }
+			},
+			"ICON/SYMBOL_ICON": {
+				"SYMBOLS_M/M5/M5_ICON": { "width": 110, "height": 110 }
+			},
+			"ICON/SYMBOL_ICON_ADD": {
+				"SYMBOLS_M/M5/M5_ICON": { "width": 110, "height": 110 }
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
+				"SYMBOLS_M/M5/M5_ICON_GLOW": { "width": 115, "height": 115 }
+			}
+		}
+	}
+],
+"animations": {
+	"DARKEN_ENTER": {
+		"slots": {
+			"SYMBOL_BACKPLATE": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.1, "color": "747474" }
+				]
+			},
+			"SYMBOL_FRAME_BOTTOM": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.1, "color": "747474" }
+				]
+			},
+			"SYMBOL_FRAME_TOP": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.1, "color": "747474" }
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.1, "color": "747474" }
+				]
+			}
+		}
+	},
+	"DARKEN_EXIT": {
+		"slots": {
+			"SYMBOL_BACKPLATE": {
+				"rgb": [
+					{ "color": "747474" },
+					{ "time": 0.3333, "color": "ffffff" }
+				]
+			},
+			"SYMBOL_FRAME_BOTTOM": {
+				"rgb": [
+					{ "color": "747474" },
+					{ "time": 0.3333, "color": "ffffff" }
+				]
+			},
+			"SYMBOL_FRAME_TOP": {
+				"rgb": [
+					{ "color": "747474" },
+					{ "time": 0.3333, "color": "ffffff" }
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"rgb": [
+					{ "color": "747474" },
+					{ "time": 0.3333, "color": "ffffff" }
+				]
+			}
+		}
+	},
+	"DARKEN_IDLE": {
+		"slots": {
+			"SYMBOL_BACKPLATE": {
+				"rgb": [
+					{ "color": "747474" }
+				]
+			},
+			"SYMBOL_FRAME_BOTTOM": {
+				"rgb": [
+					{ "color": "747474" }
+				]
+			},
+			"SYMBOL_FRAME_TOP": {
+				"rgb": [
+					{ "color": "747474" }
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"rgb": [
+					{ "color": "747474" }
+				]
+			}
+		}
+	},
+	"DARKEN_TOGGLE": {
+		"slots": {
+			"SYMBOL_BACKPLATE": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.1, "color": "747474", "curve": "stepped" },
+					{ "time": 0.8667, "color": "747474" },
+					{ "time": 1.3333, "color": "ffffff" }
+				]
+			},
+			"SYMBOL_FRAME_BOTTOM": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.1, "color": "747474", "curve": "stepped" },
+					{ "time": 0.8667, "color": "747474" },
+					{ "time": 1.3333, "color": "ffffff" }
+				]
+			},
+			"SYMBOL_FRAME_TOP": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.1, "color": "747474", "curve": "stepped" },
+					{ "time": 0.8667, "color": "747474" },
+					{ "time": 1.3333, "color": "ffffff" }
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.1, "color": "747474", "curve": "stepped" },
+					{ "time": 0.8667, "color": "747474" },
+					{ "time": 1.3333, "color": "ffffff" }
+				]
+			}
+		}
+	},
+	"FALLING": {
+		"slots": {
+			"BLURRED_SYMBOL": {
+				"attachment": [
+					{ "name": "SYMBOLS_M/M5/M5_BLURRED" }
+				]
+			},
+			"SYMBOL_BACKPLATE": {
+				"attachment": [
+					{}
+				]
+			},
+			"SYMBOL_FRAME_BOTTOM": {
+				"attachment": [
+					{}
+				]
+			},
+			"SYMBOL_FRAME_TOP": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"LIGHTSWEEP_SKINS": {
+				"attachment": [
+					{ "name": "SYMBOLS_M/M5/LIGHTSWEEP/M5_" }
+				]
+			}
+		},
+		"bones": {
+			"LIGHTSWEEP": {
+				"translate": [
+					{ "time": 6 }
+				]
+			}
+		}
+	},
+	"LANDING": {
+		"bones": {
+			"SYMBOL_MAIN_CTRL": {
+				"translate": [
+					{},
+					{ "time": 0.0365, "y": 4 },
+					{ "time": 0.073, "y": -1 },
+					{ "time": 0.1612, "curve": "stepped" },
+					{ "time": 0.3333 }
+				]
+			}
+		}
+	},
+	"REEL_ENTER": {
+		"slots": {
+			"BLURRED_SYMBOL": {
+				"attachment": [
+					{ "name": "SYMBOLS_M/M5/M5_BLURRED" }
+				]
+			},
+			"SYMBOL_BACKPLATE": {
+				"attachment": [
+					{}
+				]
+			},
+			"SYMBOL_FRAME_BOTTOM": {
+				"attachment": [
+					{}
+				]
+			},
+			"SYMBOL_FRAME_TOP": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"REEL_EXIT": {
+		"slots": {
+			"BLURRED_SYMBOL": {
+				"attachment": [
+					{ "name": "SYMBOLS_M/M5/M5_BLURRED" }
+				]
+			},
+			"SYMBOL_BACKPLATE": {
+				"attachment": [
+					{}
+				]
+			},
+			"SYMBOL_FRAME_BOTTOM": {
+				"attachment": [
+					{}
+				]
+			},
+			"SYMBOL_FRAME_TOP": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"SLIDE": {
+		"slots": {
+			"SYMBOL_FRAME_BOTTOM": {
+				"attachment": [
+					{}
+				]
+			},
+			"SYMBOL_FRAME_TOP": {
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_MAIN_CTRL": {
+				"scale": [
+					{ "y": 1.1 }
+				]
+			}
+		}
+	},
+	"WIN_ANTE": {
+		"slots": {
+			"ICON/SYMBOL_ICON_ADD": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.1667, "value": 1 },
+					{ "time": 0.6667, "value": 0.0011 }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_MAIN_CTRL": {
+				"scale": [
+					{},
+					{ "time": 0.0667, "x": 1.1, "y": 1.1 },
+					{ "time": 0.3333, "y": 1.1 }
+				]
+			}
+		}
+	},
+	"WIN_ENTER": {
+		"slots": {
+			"SYMBOL_BACKPLATE_GLOW": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.5333, "color": "ffffffff" }
+				]
+			},
+			"SYMBOL_SHADOW": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.1, "color": "ffffff25" },
+					{ "time": 0.4667, "color": "ffffff2f" }
+				]
+			},
+			"ICON/SYMBOL_ICON_ADD": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.1667, "value": 1 }
+				]
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.5333, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON": {
+				"translate": [
+					{
+						"curve": [ 0.05, 0, 0.116, 0, 0.05, 0, 0.116, -4.46 ]
+					},
+					{
+						"time": 0.1667,
+						"y": -4.46,
+						"curve": [ 0.243, 0, 0.291, 0, 0.243, -4.46, 0.291, 3.3 ]
+					},
+					{
+						"time": 0.3667,
+						"y": 3.3,
+						"curve": [ 0.417, 0, 0.483, 0, 0.417, 3.3, 0.483, 0 ]
+					},
+					{ "time": 0.5333 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.022, 1, 0.134, 1.093, 0.022, 1, 0.134, 1.15 ]
+					},
+					{
+						"time": 0.1667,
+						"x": 1.1,
+						"y": 1.15,
+						"curve": [ 0.285, 1.127, 0.415, 1.1, 0.285, 1.15, 0.415, 1.1 ]
+					},
+					{ "time": 0.5333, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"SYMBOL_BACKPLATE": {
+				"translate": [
+					{
+						"curve": [ 0.05, 0, 0.116, 0, 0.05, 0, 0.116, -4.46 ]
+					},
+					{
+						"time": 0.1667,
+						"y": -4.46,
+						"curve": [ 0.243, 0, 0.291, 0, 0.243, -4.46, 0.291, 3.3 ]
+					},
+					{
+						"time": 0.3667,
+						"y": 3.3,
+						"curve": [ 0.417, 0, 0.483, 0, 0.417, 3.3, 0.483, 0 ]
+					},
+					{ "time": 0.5333 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.022, 1, 0.134, 1.093, 0.022, 1, 0.134, 1.15 ]
+					},
+					{
+						"time": 0.1667,
+						"x": 1.1,
+						"y": 1.15,
+						"curve": [ 0.285, 1.127, 0.415, 1.1, 0.285, 1.15, 0.415, 1.1 ]
+					},
+					{ "time": 0.5333, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"SYMBOL_FRAME_BOTTOM": {
+				"translate": [
+					{
+						"curve": [ 0.05, 0, 0.116, 0, 0.05, 0, 0.116, -4.46 ]
+					},
+					{
+						"time": 0.1667,
+						"y": -4.46,
+						"curve": [ 0.243, 0, 0.291, 0, 0.243, -4.46, 0.291, 3.3 ]
+					},
+					{
+						"time": 0.3667,
+						"y": 3.3,
+						"curve": [ 0.417, 0, 0.483, 0, 0.417, 3.3, 0.483, 0 ]
+					},
+					{ "time": 0.5333 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.022, 1, 0.134, 1.093, 0.022, 1, 0.134, 1.15 ]
+					},
+					{
+						"time": 0.1667,
+						"x": 1.1,
+						"y": 1.15,
+						"curve": [ 0.285, 1.127, 0.415, 1.1, 0.285, 1.15, 0.415, 1.1 ]
+					},
+					{ "time": 0.5333, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"SYMBOL_FRAME_TOP": {
+				"translate": [
+					{
+						"curve": [ 0.05, 0, 0.116, 0, 0.05, 0, 0.116, -4.46 ]
+					},
+					{
+						"time": 0.1667,
+						"y": -4.46,
+						"curve": [ 0.243, 0, 0.291, 0, 0.243, -4.46, 0.291, 3.3 ]
+					},
+					{
+						"time": 0.3667,
+						"y": 3.3,
+						"curve": [ 0.417, 0, 0.483, 0, 0.417, 3.3, 0.483, 0 ]
+					},
+					{ "time": 0.5333 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.022, 1, 0.134, 1.093, 0.022, 1, 0.134, 1.15 ]
+					},
+					{
+						"time": 0.1667,
+						"x": 1.1,
+						"y": 1.15,
+						"curve": [ 0.285, 1.127, 0.415, 1.1, 0.285, 1.15, 0.415, 1.1 ]
+					},
+					{ "time": 0.5333, "x": 1.1, "y": 1.1 }
+				]
+			}
+		}
+	},
+	"WIN_ENTER_LARGE": {
+		"slots": {
+			"SYMBOL_BACKPLATE_GLOW": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5333, "color": "ffffffff" }
+				]
+			},
+			"SYMBOL_SHADOW": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.0667, "color": "ffffff25" },
+					{ "time": 0.3, "color": "ffffff2f" }
+				]
+			},
+			"ICON/SYMBOL_ICON_ADD": {
+				"alpha": [
+					{ "time": 0.1667, "value": 0 },
+					{ "time": 0.2333, "value": 1 }
+				]
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
+				"rgba": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5333, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON": {
+				"translate": [
+					{
+						"curve": [ 0.083, 0, 0.15, 0, 0.083, 0, 0.15, -4.46 ]
+					},
+					{
+						"time": 0.2333,
+						"y": -4.46,
+						"curve": [ 0.269, 0, 0.331, 0, 0.269, -4.46, 0.331, 3.3 ]
+					},
+					{
+						"time": 0.3667,
+						"y": 3.3,
+						"curve": [ 0.426, 0, 0.474, 0, 0.426, 3.3, 0.474, 0 ]
+					},
+					{ "time": 0.5333 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.059, 1, 0.107, 0.9, 0.059, 1, 0.107, 0.9 ]
+					},
+					{
+						"time": 0.1667,
+						"x": 0.9,
+						"y": 0.9,
+						"curve": [ 0.19, 0.9, 0.331, 1.183, 0.19, 0.9, 0.331, 1.3 ]
+					},
+					{
+						"time": 0.3667,
+						"x": 1.2,
+						"y": 1.3,
+						"curve": [ 0.426, 1.229, 0.474, 1.1, 0.426, 1.3, 0.474, 1.1 ]
+					},
+					{ "time": 0.5333, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"SYMBOL_BACKPLATE": {
+				"translate": [
+					{
+						"curve": [ 0.083, 0, 0.15, 0, 0.083, 0, 0.15, -4.46 ]
+					},
+					{
+						"time": 0.2333,
+						"y": -4.46,
+						"curve": [ 0.269, 0, 0.331, 0, 0.269, -4.46, 0.331, 3.3 ]
+					},
+					{
+						"time": 0.3667,
+						"y": 3.3,
+						"curve": [ 0.426, 0, 0.474, 0, 0.426, 3.3, 0.474, 0 ]
+					},
+					{ "time": 0.5333 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.059, 1, 0.107, 0.9, 0.059, 1, 0.107, 0.9 ]
+					},
+					{
+						"time": 0.1667,
+						"x": 0.9,
+						"y": 0.9,
+						"curve": [ 0.19, 0.9, 0.331, 1.183, 0.19, 0.9, 0.331, 1.3 ]
+					},
+					{
+						"time": 0.3667,
+						"x": 1.2,
+						"y": 1.3,
+						"curve": [ 0.426, 1.229, 0.474, 1.1, 0.426, 1.3, 0.474, 1.1 ]
+					},
+					{ "time": 0.5333, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"SYMBOL_FRAME_BOTTOM": {
+				"translate": [
+					{
+						"curve": [ 0.083, 0, 0.15, 0, 0.083, 0, 0.15, -4.46 ]
+					},
+					{
+						"time": 0.2333,
+						"y": -4.46,
+						"curve": [ 0.269, 0, 0.331, 0, 0.269, -4.46, 0.331, 3.3 ]
+					},
+					{
+						"time": 0.3667,
+						"y": 3.3,
+						"curve": [ 0.426, 0, 0.474, 0, 0.426, 3.3, 0.474, 0 ]
+					},
+					{ "time": 0.5333 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.059, 1, 0.107, 0.9, 0.059, 1, 0.107, 0.9 ]
+					},
+					{
+						"time": 0.1667,
+						"x": 0.9,
+						"y": 0.9,
+						"curve": [ 0.19, 0.9, 0.331, 1.183, 0.19, 0.9, 0.331, 1.3 ]
+					},
+					{
+						"time": 0.3667,
+						"x": 1.2,
+						"y": 1.3,
+						"curve": [ 0.426, 1.229, 0.474, 1.1, 0.426, 1.3, 0.474, 1.1 ]
+					},
+					{ "time": 0.5333, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"SYMBOL_FRAME_TOP": {
+				"translate": [
+					{
+						"curve": [ 0.083, 0, 0.15, 0, 0.083, 0, 0.15, -4.46 ]
+					},
+					{
+						"time": 0.2333,
+						"y": -4.46,
+						"curve": [ 0.269, 0, 0.331, 0, 0.269, -4.46, 0.331, 3.3 ]
+					},
+					{
+						"time": 0.3667,
+						"y": 3.3,
+						"curve": [ 0.426, 0, 0.474, 0, 0.426, 3.3, 0.474, 0 ]
+					},
+					{ "time": 0.5333 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.059, 1, 0.107, 0.9, 0.059, 1, 0.107, 0.9 ]
+					},
+					{
+						"time": 0.1667,
+						"x": 0.9,
+						"y": 0.9,
+						"curve": [ 0.19, 0.9, 0.331, 1.183, 0.19, 0.9, 0.331, 1.3 ]
+					},
+					{
+						"time": 0.3667,
+						"x": 1.2,
+						"y": 1.3,
+						"curve": [ 0.426, 1.229, 0.474, 1.1, 0.426, 1.3, 0.474, 1.1 ]
+					},
+					{ "time": 0.5333, "x": 1.1, "y": 1.1 }
+				]
+			}
+		}
+	},
+	"WIN_ENTER_SMALL": {
+		"slots": {
+			"SYMBOL_BACKPLATE_GLOW": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"SYMBOL_SHADOW": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.0667, "color": "ffffff25" },
+					{ "time": 0.3, "color": "ffffff2f" }
+				]
+			},
+			"ICON/SYMBOL_ICON_ADD": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.1333, "value": 1 }
+				]
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON": {
+				"translate": [
+					{
+						"curve": [ 0.044, 0, 0.089, 0, 0.044, 0, 0.089, -4.46 ]
+					},
+					{
+						"time": 0.1333,
+						"y": -4.46,
+						"curve": [ 0.17, 0, 0.303, 0, 0.17, -4.46, 0.303, 0 ]
+					},
+					{ "time": 0.3333 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.014, 1.024, 0.046, 1.108, 0.014, 1.024, 0.046, 1.108 ]
+					},
+					{
+						"time": 0.1333,
+						"x": 1.1,
+						"y": 1.1,
+						"curve": [ 0.18, 1.096, 0.193, 1.101, 0.18, 1.096, 0.193, 1.101 ]
+					},
+					{ "time": 0.3333, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"SYMBOL_BACKPLATE": {
+				"translate": [
+					{
+						"curve": [ 0.044, 0, 0.089, 0, 0.044, 0, 0.089, -4.46 ]
+					},
+					{
+						"time": 0.1333,
+						"y": -4.46,
+						"curve": [ 0.17, 0, 0.303, 0, 0.17, -4.46, 0.303, 0 ]
+					},
+					{ "time": 0.3333 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.014, 1.024, 0.046, 1.108, 0.014, 1.024, 0.046, 1.108 ]
+					},
+					{
+						"time": 0.1333,
+						"x": 1.1,
+						"y": 1.1,
+						"curve": [ 0.18, 1.096, 0.193, 1.101, 0.18, 1.096, 0.193, 1.101 ]
+					},
+					{ "time": 0.3333, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"SYMBOL_FRAME_BOTTOM": {
+				"translate": [
+					{
+						"curve": [ 0.044, 0, 0.089, 0, 0.044, 0, 0.089, -4.46 ]
+					},
+					{
+						"time": 0.1333,
+						"y": -4.46,
+						"curve": [ 0.17, 0, 0.303, 0, 0.17, -4.46, 0.303, 0 ]
+					},
+					{ "time": 0.3333 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.014, 1.024, 0.046, 1.108, 0.014, 1.024, 0.046, 1.108 ]
+					},
+					{
+						"time": 0.1333,
+						"x": 1.1,
+						"y": 1.1,
+						"curve": [ 0.18, 1.096, 0.193, 1.101, 0.18, 1.096, 0.193, 1.101 ]
+					},
+					{ "time": 0.3333, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"SYMBOL_FRAME_TOP": {
+				"translate": [
+					{
+						"curve": [ 0.044, 0, 0.089, 0, 0.044, 0, 0.089, -4.46 ]
+					},
+					{
+						"time": 0.1333,
+						"y": -4.46,
+						"curve": [ 0.17, 0, 0.303, 0, 0.17, -4.46, 0.303, 0 ]
+					},
+					{ "time": 0.3333 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.014, 1.024, 0.046, 1.108, 0.014, 1.024, 0.046, 1.108 ]
+					},
+					{
+						"time": 0.1333,
+						"x": 1.1,
+						"y": 1.1,
+						"curve": [ 0.18, 1.096, 0.193, 1.101, 0.18, 1.096, 0.193, 1.101 ]
+					},
+					{ "time": 0.3333, "x": 1.1, "y": 1.1 }
+				]
+			}
+		}
+	},
+	"WIN_EXIT": {
+		"slots": {
+			"SYMBOL_BACKPLATE_GLOW": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "ffffff00" }
+				]
+			},
+			"ICON/SYMBOL_ICON_ADD": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.6667, "value": 0 }
+				]
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.6667, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON": {
+				"scale": [
+					{ "x": 1.1, "y": 1.1 },
+					{ "time": 0.6667 }
+				]
+			},
+			"SYMBOL_BACKPLATE": {
+				"scale": [
+					{ "x": 1.094, "y": 1.094 },
+					{ "time": 0.6667 }
+				]
+			},
+			"SYMBOL_FRAME_BOTTOM": {
+				"scale": [
+					{ "x": 1.094, "y": 1.094 },
+					{ "time": 0.6667 }
+				]
+			},
+			"SYMBOL_FRAME_TOP": {
+				"scale": [
+					{ "x": 1.094, "y": 1.094 },
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	},
+	"WIN_IDLE": {
+		"slots": {
+			"LIGHTSWEEP_SKINS": {
+				"attachment": [
+					{ "name": "SYMBOLS_M/M5/LIGHTSWEEP/M5_" }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_MAIN_CTRL": {
+				"scale": [
+					{ "x": 1.1, "y": 1.1 },
+					{ "time": 0.5 },
+					{ "time": 1, "x": 1.1, "y": 1.1 }
+				]
+			}
+		},
+		"attachments": {
+			"default": {
+				"LIGHTSWEEP_SKINS": {
+					"SYMBOLS_M/M5/LIGHTSWEEP/M5_": {
+						"sequence": [
+							{ "mode": "once", "delay": 0.0333 }
+						]
+					}
+				}
+			}
+		}
+	},
+	"WIN_REMOVE": {
+		"slots": {
+			"SYMBOL_BACKPLATE": {
+				"rgba": [
+					{
+						"color": "ffffffff",
+						"curve": [ 0.333, 1, 0.667, 1, 0.333, 1, 0.667, 1, 0.333, 1, 0.667, 1, 0.341, 0.98, 0.892, 0.62 ]
+					},
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"SYMBOL_FRAME_BOTTOM": {
+				"rgba": [
+					{
+						"color": "ffffffff",
+						"curve": [ 0.333, 1, 0.667, 1, 0.333, 1, 0.667, 1, 0.333, 1, 0.667, 1, 0.341, 0.98, 0.892, 0.62 ]
+					},
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"SYMBOL_FRAME_TOP": {
+				"rgba": [
+					{
+						"color": "ffffffff",
+						"curve": [ 0.333, 1, 0.667, 1, 0.333, 1, 0.667, 1, 0.333, 1, 0.667, 1, 0.341, 0.98, 0.892, 0.62 ]
+					},
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"rgba": [
+					{
+						"color": "ffffffff",
+						"curve": [ 0.333, 1, 0.667, 1, 0.333, 1, 0.667, 1, 0.333, 1, 0.667, 1, 0.341, 0.98, 0.892, 0.62 ]
+					},
+					{ "time": 1, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_MAIN_CTRL": {
+				"translate": [
+					{
+						"curve": [ 0.333, 0, 0.667, 0, 0.333, 0, 0.676, 0.96 ]
+					},
+					{ "time": 1, "y": 18 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.333, 1, 0.687, 1.042, 0.333, 1, 0.667, 1.2 ]
+					},
+					{ "time": 1, "x": 1.2, "y": 1.2 }
+				]
+			}
+		}
+	},
+	"WIN_TOGGLE": {
+		"slots": {
+			"ICON/SYMBOL_ICON_ADD": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.1333, "value": 0.6796, "curve": "stepped" },
+					{ "time": 0.8333, "value": 0.6784 },
+					{ "time": 1.3333, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "SYMBOLS_M/M5/M5_ICON" }
+				]
+			}
+		}
+	}
+}
+}

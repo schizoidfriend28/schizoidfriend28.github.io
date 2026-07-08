@@ -1,0 +1,172 @@
+{
+"skeleton": {
+	"hash": "mwoEObsqrLE",
+	"spine": "4.3.05-beta",
+	"x": -330,
+	"y": -40,
+	"width": 660,
+	"height": 80,
+	"images": "./images/",
+	"audio": "D:/Work/Vertex/UI/For Animation"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "PLACE_BET_BUTTON", "parent": "root" },
+	{ "name": "RACE_ICON_2", "parent": "PLACE_BET_BUTTON", "x": 282, "y": 2, "scaleX": -1 }
+],
+"slots": [
+	{ "name": "BUTTON_EXTRA_BG", "bone": "PLACE_BET_BUTTON", "color": "ffffffcb", "attachment": "BUTTON_EXTRA_BG" },
+	{ "name": "BUTTON_EXTRA", "bone": "PLACE_BET_BUTTON", "color": "ffffff7e", "attachment": "BUTTON_EXTRA" },
+	{ "name": "RACE_ICON_1", "bone": "PLACE_BET_BUTTON", "color": "ffffff7e", "attachment": "RACE_ICON" },
+	{ "name": "RACE_ICON_2", "bone": "RACE_ICON_2", "color": "ffffff7e", "attachment": "RACE_ICON" },
+	{ "name": "PLACE_BET_LABEL", "bone": "PLACE_BET_BUTTON", "color": "ffffff7e", "attachment": "PLACE_BET_LABEL" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"BUTTON_EXTRA": {
+				"BUTTON_EXTRA": { "width": 660, "height": 80 }
+			},
+			"BUTTON_EXTRA_BG": {
+				"BUTTON_EXTRA_BG": { "width": 660, "height": 80 }
+			},
+			"PLACE_BET_LABEL": {
+				"PLACE_BET_LABEL": { "x": -0.5, "y": -0.5, "width": 451, "height": 23 }
+			},
+			"RACE_ICON_1": {
+				"RACE_ICON": { "x": -282, "y": -2, "width": 35, "height": 39 }
+			},
+			"RACE_ICON_2": {
+				"RACE_ICON": { "y": -4, "width": 35, "height": 39 }
+			}
+		}
+	}
+],
+"animations": {
+	"DISABLED": {
+		"slots": {
+			"BUTTON_EXTRA": {
+				"rgba": [
+					{ "color": "ffffff32" }
+				]
+			},
+			"PLACE_BET_LABEL": {
+				"rgba": [
+					{ "color": "ffffff19" }
+				]
+			},
+			"RACE_ICON_1": {
+				"rgba": [
+					{ "color": "ffffff19" }
+				]
+			},
+			"RACE_ICON_2": {
+				"rgba": [
+					{ "color": "ffffff19" }
+				]
+			}
+		},
+		"bones": {
+			"PLACE_BET_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"HOVER": {
+		"slots": {
+			"BUTTON_EXTRA": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"PLACE_BET_LABEL": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"RACE_ICON_1": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"RACE_ICON_2": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"PLACE_BET_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"BUTTON_EXTRA": {
+				"rgba": [
+					{ "color": "ffffff7f" }
+				]
+			},
+			"PLACE_BET_LABEL": {
+				"rgba": [
+					{ "color": "ffffff7f" }
+				]
+			},
+			"RACE_ICON_1": {
+				"rgba": [
+					{ "color": "ffffff7f" }
+				]
+			},
+			"RACE_ICON_2": {
+				"rgba": [
+					{ "color": "ffffff7f" }
+				]
+			}
+		},
+		"bones": {
+			"PLACE_BET_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"PRESSED": {
+		"slots": {
+			"BUTTON_EXTRA": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"PLACE_BET_LABEL": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"RACE_ICON_1": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"RACE_ICON_2": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"PLACE_BET_BUTTON": {
+				"scale": [
+					{ "x": 0.98, "y": 0.98 }
+				]
+			}
+		}
+	}
+}
+}

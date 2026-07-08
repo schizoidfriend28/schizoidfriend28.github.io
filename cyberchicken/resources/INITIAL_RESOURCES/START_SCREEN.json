@@ -1,0 +1,434 @@
+{
+"skeleton": {
+	"hash": "DJASy8+XoV0",
+	"spine": "4.3.39-beta",
+	"x": -960,
+	"y": -960,
+	"width": 1920,
+	"height": 1920,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "START_SCREEN", "parent": "root" },
+	{ "name": "ARROW_1", "parent": "START_SCREEN", "x": 358 },
+	{ "name": "ARROW_2", "parent": "START_SCREEN", "x": -358, "scaleX": -1 },
+	{ "name": "NEXT_PAGE", "parent": "START_SCREEN", "y": 63 },
+	{ "name": "CURRENT_PAGE", "parent": "START_SCREEN", "y": 63 },
+	{ "name": "PAGE_INDICATOR_5", "parent": "START_SCREEN", "x": 49.999996, "y": -146 },
+	{ "name": "PAGE_INDICATOR_4", "parent": "START_SCREEN", "x": 24.999992, "y": -146 },
+	{ "name": "PAGE_INDICATOR_3", "parent": "START_SCREEN", "y": -146 },
+	{ "name": "PAGE_INDICATOR_2", "parent": "START_SCREEN", "x": -25.000008, "y": -146 },
+	{ "name": "START_PLAYING_BUTTON", "parent": "START_SCREEN", "y": -285 },
+	{ "name": "PAGE_INDICATOR_1", "parent": "START_SCREEN", "x": -50, "y": -146 },
+	{ "name": "CHECKBOX", "parent": "START_SCREEN", "x": -134, "y": -205 },
+	{ "name": "CHECKBOX_TEXT", "parent": "START_SCREEN", "x": -99, "y": -205 },
+	{ "name": "HEADER", "parent": "START_SCREEN", "y": 290 }
+],
+"slots": [
+	{ "name": "SCREEN_SIZE_REFERENCE", "bone": "START_SCREEN", "attachment": "SCREEN_SIZE_REFERENCE" },
+	{ "name": "START_SCREEN_BG", "bone": "START_SCREEN", "color": "ffffffcb", "attachment": "GENERIC/START_SCREEN_BG" },
+	{ "name": "ARROW_BUTTON", "bone": "ARROW_1" },
+	{ "name": "ARROW_BUTTON2", "bone": "ARROW_2" },
+	{ "name": "START_SCREEN_MASK", "bone": "START_SCREEN", "attachment": "START_SCREEN_MASK" },
+	{ "name": "NEXT_PAGE", "bone": "NEXT_PAGE" },
+	{ "name": "CURRENT_PAGE", "bone": "CURRENT_PAGE" },
+	{ "name": "SS_SEPARATOR", "bone": "START_SCREEN", "attachment": "GENERIC/SS_SEPARATOR" },
+	{ "name": "CURRENT_HEADER", "bone": "HEADER" },
+	{ "name": "NEXT_HEADER", "bone": "HEADER" },
+	{ "name": "PAGE_INDICATOR_5", "bone": "PAGE_INDICATOR_5" },
+	{ "name": "PAGE_INDICATOR_1", "bone": "PAGE_INDICATOR_1" },
+	{ "name": "PAGE_INDICATOR_4", "bone": "PAGE_INDICATOR_4" },
+	{ "name": "PAGE_INDICATOR_3", "bone": "PAGE_INDICATOR_3" },
+	{ "name": "PAGE_INDICATOR_2", "bone": "PAGE_INDICATOR_2" },
+	{ "name": "CHECKBOX_TEXT", "bone": "CHECKBOX_TEXT", "color": "ffffff7e" },
+	{ "name": "CHECKBOX", "bone": "CHECKBOX" },
+	{ "name": "YELLOW_BUTTON_STARTSCRN", "bone": "START_PLAYING_BUTTON" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"SS_SEPARATOR": {
+				"GENERIC/SS_SEPARATOR": { "y": 259, "width": 560, "height": 2 }
+			},
+			"START_SCREEN_BG": {
+				"GENERIC/START_SCREEN_BG": { "width": 800, "height": 760 }
+			},
+			"START_SCREEN_MASK": {
+				"START_SCREEN_MASK": {
+					"type": "clipping",
+					"end": "CURRENT_PAGE",
+					"vertexCount": 4,
+					"vertices": [ -280.05, -129.37, -280.83, 230.37, 280.7, 230.75, 279.93, -128.59 ],
+					"color": "ce3a3a00"
+				}
+			}
+		}
+	},
+	{
+		"name": "LANDSCAPE",
+		"attachments": {
+			"SCREEN_SIZE_REFERENCE": {
+				"SCREEN_SIZE_REFERENCE": { "name": "START_SCREEN/STARTSCREEN_BACKGROUND", "width": 1920, "height": 1920 }
+			}
+		}
+	},
+	{
+		"name": "PORTRAIT",
+		"attachments": {
+			"SCREEN_SIZE_REFERENCE": {
+				"SCREEN_SIZE_REFERENCE": { "name": "START_SCREEN/STARTSCREEN_BACKGROUND", "width": 1920, "height": 1920 }
+			}
+		}
+	}
+],
+"animations": {
+	"ENTER": {
+		"slots": {
+			"ARROW_BUTTON": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"ARROW_BUTTON2": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"CHECKBOX": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"CHECKBOX_TEXT": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"CURRENT_HEADER": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"CURRENT_PAGE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"NEXT_HEADER": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"NEXT_PAGE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"PAGE_INDICATOR_1": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"PAGE_INDICATOR_2": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"PAGE_INDICATOR_3": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"PAGE_INDICATOR_4": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"PAGE_INDICATOR_5": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"SS_SEPARATOR": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"START_SCREEN_BG": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"START_SCREEN_MASK": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"YELLOW_BUTTON_STARTSCRN": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			}
+		}
+	},
+	"EXIT": {
+		"slots": {
+			"ARROW_BUTTON": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"ARROW_BUTTON2": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"CHECKBOX": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"CHECKBOX_TEXT": {
+				"alpha": [
+					{ "value": 0.49411765 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"CURRENT_HEADER": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"CURRENT_PAGE": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"NEXT_HEADER": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"NEXT_PAGE": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"PAGE_INDICATOR_1": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"PAGE_INDICATOR_2": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"PAGE_INDICATOR_3": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"PAGE_INDICATOR_4": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"PAGE_INDICATOR_5": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"SS_SEPARATOR": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"START_SCREEN_BG": {
+				"alpha": [
+					{ "value": 0.79607844 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"START_SCREEN_MASK": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
+			"YELLOW_BUTTON_STARTSCRN": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			}
+		}
+	},
+	"GO_TO_LEFT_PAGE": {
+		"slots": {
+			"CURRENT_HEADER": {
+				"alpha": [
+					{
+						"value": 1,
+						"curve": [ 0.05555556, 1, 0.11111111, 0 ]
+					},
+					{ "time": 0.16666667, "value": 0 }
+				]
+			},
+			"CURRENT_PAGE": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"NEXT_HEADER": {
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{
+						"time": 0.33333334,
+						"value": 0,
+						"curve": [ 0.38888893, 0, 0.44444445, 1 ]
+					},
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"NEXT_PAGE": {
+				"alpha": [
+					{
+						"value": 0,
+						"curve": [ 0.16666667, 0, 0.33333334, 1 ]
+					},
+					{ "time": 0.5, "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"CURRENT_PAGE": {
+				"translate": [
+					{
+						"curve": [ 0.16666667, 0, 0.33333334, 560, 0.16666667, 0, 0.33333334, 0 ]
+					},
+					{ "time": 0.5, "x": 560 }
+				]
+			},
+			"NEXT_PAGE": {
+				"translate": [
+					{
+						"x": -800,
+						"curve": [ 0.16666667, -800, 0.33333334, 0, 0.16666667, 0, 0.33333334, 0 ]
+					},
+					{ "time": 0.5 }
+				]
+			}
+		}
+	},
+	"GO_TO_RIGHT_PAGE": {
+		"slots": {
+			"CURRENT_HEADER": {
+				"alpha": [
+					{
+						"value": 1,
+						"curve": [ 0.05555556, 1, 0.11111111, 0 ]
+					},
+					{ "time": 0.16666667, "value": 0 }
+				]
+			},
+			"CURRENT_PAGE": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"NEXT_HEADER": {
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{
+						"time": 0.33333334,
+						"value": 0,
+						"curve": [ 0.38888893, 0, 0.44444445, 1 ]
+					},
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"NEXT_PAGE": {
+				"alpha": [
+					{
+						"value": 0,
+						"curve": [ 0.16666667, 0, 0.33333334, 1 ]
+					},
+					{ "time": 0.5, "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"CURRENT_PAGE": {
+				"translate": [
+					{
+						"curve": [ 0.16666667, 0, 0.33333334, -560, 0.11111112, 0, 0.3888889, 0 ]
+					},
+					{ "time": 0.5, "x": -560 }
+				]
+			},
+			"NEXT_PAGE": {
+				"translate": [
+					{
+						"x": 800,
+						"curve": [ 0.16666667, 800, 0.33333334, -2.7538174E-6, 0.11111112, 0, 0.3888889, 0 ]
+					},
+					{ "time": 0.5 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"CURRENT_HEADER": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"CURRENT_PAGE": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"NEXT_HEADER": {
+				"alpha": [
+					{ "value": 0 }
+				]
+			}
+		}
+	}
+}
+}
