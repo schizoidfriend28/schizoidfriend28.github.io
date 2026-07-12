@@ -1,0 +1,106 @@
+{
+"skeleton": {
+	"hash": "z28Tt1PztTY",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -2355,
+	"y": -1250.5,
+	"width": 2548,
+	"height": 2501,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
+	{ "name": "SYMBOL_ANCHOR", "parent": "MAIN_ROOT", "color": "ff0000ff", "icon": "square" },
+	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "x": -1081, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
+	{ "name": "WIN_INDICATIONS", "parent": "MAIN_ROOT", "color": "ffbf00ff", "icon": "diamond" },
+	{ "name": "SYMBOL_GLOWS", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_GLOWS", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_GLOW2", "parent": "SYMBOL_GLOWS", "color": "1eff00ff", "icon": "square" }
+],
+"slots": [
+	{ "name": "WIN_INDICATIONS", "bone": "WIN_INDICATIONS" },
+	{ "name": "SYMBOL_ICON", "bone": "SYMBOL_ICON", "attachment": "BACKGROUND/BCKGR_START" },
+	{ "name": "SYMBOL_ICON_OFF", "bone": "SYMBOL_ICON", "color": "0002bfff", "blend": "multiply" },
+	{ "name": "SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a40000", "attachment": "BACKGROUND/BCKGR_START", "blend": "additive" },
+	{ "name": "SYMBOL_ICON_GLOW2", "bone": "SYMBOL_ICON_GLOW2", "color": "ff0000d2", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"SYMBOL_ICON": {
+				"BACKGROUND/BCKGR_START": { "width": 2548, "height": 2501 }
+			},
+			"SYMBOL_ICON_GLOW": {
+				"BACKGROUND/BCKGR_START": { "width": 2548, "height": 2501 }
+			},
+			"SYMBOL_ICON_GLOW2": {
+				"BACKGROUND/BCKGR_START": { "width": 2548, "height": 2501 }
+			},
+			"SYMBOL_ICON_OFF": {
+				"BACKGROUND/BCKGR_START": { "width": 2548, "height": 2501 }
+			}
+		}
+	}
+],
+"animations": {
+	"IDLE": {
+		"slots": {
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.3071 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			}
+		}
+	},
+	"IDLE_OFF": {
+		"slots": {
+			"SYMBOL_ICON_GLOW2": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.9989 },
+					{ "time": 3.0000002, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "BACKGROUND/BCKGR_START" }
+				]
+			},
+			"SYMBOL_ICON_OFF": {
+				"rgb": [
+					{ "color": "0002bf" },
+					{ "time": 1.5000001, "color": "bf0000" },
+					{ "time": 3.0000002, "color": "0002bf" }
+				],
+				"attachment": [
+					{ "name": "BACKGROUND/BCKGR_START" }
+				]
+			}
+		}
+	},
+	"POWER_OFF": {
+		"slots": {
+			"SYMBOL_ICON_OFF": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.06666667, "value": 0.47779998 },
+					{ "time": 0.16666667, "value": 0 },
+					{ "time": 0.43333337, "value": 0.47779998 },
+					{ "time": 0.4666667, "value": 0 },
+					{ "time": 0.5, "value": 0.47779998 },
+					{ "time": 0.53333336, "value": 0 },
+					{ "time": 0.6333334, "value": 0.47779998 },
+					{ "time": 0.6666667, "value": 1, "curve": "stepped" },
+					{ "time": 1.1666667, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "BACKGROUND/BCKGR_START" }
+				]
+			}
+		}
+	}
+}
+}

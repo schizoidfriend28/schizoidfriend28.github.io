@@ -1,109 +1,84 @@
 {
-"skeleton": {
-	"hash": "MabM2NBp6lI",
-	"spine": "4.3.23-beta",
-	"x": -960,
-	"y": -540,
-	"width": 1920,
-	"height": 1080,
-	"images": "./images/",
-	"audio": "./audio"
-},
+"skeleton": { "hash": "aWA9plSDxLw", "spine": "4.2-from-4.3.39-beta", "images": "../../GRAPHIC_ASSETS/", "audio": "./audio" },
 "bones": [
 	{ "name": "root" },
-	{ "name": "TIME", "parent": "root", "x": 860, "y": 510 },
-	{ "name": "HOME_BUTTON", "parent": "root", "x": -864, "y": -510 },
-	{ "name": "SOUND_BUTTON", "parent": "root", "x": -811, "y": -510 },
-	{ "name": "FULL_SCREEN_BUTTON", "parent": "root", "x": -915, "y": -510 },
-	{ "name": "BALANCE_PLUS_BUTTON", "parent": "root", "x": 915, "y": -510 },
-	{ "name": "BALANCE_VALUE", "parent": "root", "x": 754, "y": -510 },
-	{ "name": "BALANCE_LABEL", "parent": "root", "x": 744, "y": -510 },
 	{ "name": "BET_WINDOW", "parent": "root" },
 	{ "name": "START_SCREEN", "parent": "root" },
-	{ "name": "BET_BAR", "parent": "root", "y": -380 },
-	{ "name": "CANCEL_AUTOBET_POPUP", "parent": "root", "y": -250 },
-	{ "name": "BET_PLACED_POPUP", "parent": "root", "rotation": 0.09, "y": -250 },
-	{ "name": "PLACE_BET_BUTTON", "parent": "root", "y": -420 },
-	{ "name": "LEADERS_BUTTON", "parent": "root", "x": 890, "y": 190 },
-	{ "name": "RACE_STATUS", "parent": "root", "x": 890, "y": 290 },
-	{ "name": "MENU", "parent": "root", "x": 650 },
-	{ "name": "MAIN_MENU_BUTTON", "parent": "root", "x": 890, "y": 410 },
+	{ "name": "BET_BAR", "parent": "root", "y": -280 },
+	{ "name": "POPUP_MENU", "parent": "root" },
+	{ "name": "BET_BUTTON", "parent": "root", "x": 775, "y": 240, "scaleX": 0.65, "scaleY": 0.65 },
+	{ "name": "MENU", "parent": "root", "x": -300, "y": -251 },
 	{ "name": "RESULTS_SHINE", "parent": "root" },
 	{ "name": "RESULTS", "parent": "root" },
 	{ "name": "BACKGROUND", "parent": "root" },
-	{ "name": "SPIN_BUTTON", "parent": "root", "x": 890 },
-	{ "name": "VERTEX_LOGO", "parent": "root", "x": -835, "y": 509 },
+	{ "name": "GO_BUTTON", "parent": "root", "x": 745, "y": 40 },
 	{ "name": "TXT_LANDSCAPE", "parent": "root" },
-	{ "name": "TIME_ICON", "parent": "root", "x": 915, "y": 510 },
 	{ "name": "SYSTEM_MESSAGE", "parent": "root" },
 	{ "name": "RESULTS_FADER", "parent": "root" },
-	{ "name": "BOTTOM_TOP_LINE_2", "parent": "root", "y": 510 },
-	{ "name": "BOTTOM_TOP_LINE", "parent": "root", "y": -510 },
-	{ "name": "REELS", "parent": "root" },
-	{ "name": "SYMBOL", "parent": "root" },
-	{ "name": "REELS_TOP_LEFT", "parent": "root", "x": -721.96, "y": 374.45 },
 	{ "name": "BIG_WIN", "parent": "root" },
 	{ "name": "WIN_PRESENTATION", "parent": "root" },
 	{ "name": "WIN_SYMBOLS", "parent": "root" },
-	{ "name": "FREESPINS_SCREENS", "parent": "root" }
+	{ "name": "HUD_HEADER", "parent": "root", "y": 518 },
+	{ "name": "HUD_FOOTER", "parent": "root", "y": -490 },
+	{ "name": "QUICKPLAY_BUTTON", "parent": "root", "x": 822, "y": -300, "scaleX": 0.5, "scaleY": 0.5 },
+	{ "name": "COINS", "parent": "root", "y": -242 },
+	{ "name": "AUTOPLAY_BUTTON", "parent": "root", "x": 775, "y": -160, "scaleX": 0.65, "scaleY": 0.65 },
+	{ "name": "AUTOPLAY_STOP_BUTTON", "parent": "root", "x": 745, "y": 40 },
+	{ "name": "PROGRESS_METER", "parent": "root", "x": -835, "y": 40 },
+	{ "name": "HTML_HEIGHT", "parent": "root", "x": -300, "y": -120 },
+	{ "name": "DIFFICULTY_BUTTON", "parent": "root", "x": 822, "y": 380, "scaleX": 0.5, "scaleY": 0.5 },
+	{ "name": "COLLECT_PROJECTILES", "parent": "root" },
+	{ "name": "GAME_NAME_TXT", "parent": "root" },
+	{ "name": "BARRIERS", "parent": "root", "y": 149 },
+	{ "name": "CARS", "parent": "root", "y": 291 },
+	{ "name": "CHICKEN", "parent": "root", "y": -71 },
+	{ "name": "LANES", "parent": "root", "y": 1 },
+	{ "name": "CASHOUT_BUTTON", "parent": "root", "x": 745, "y": 40 },
+	{ "name": "CURRENT_MULTIPLIER", "parent": "root", "y": -100 },
+	{ "name": "LOOTBOX", "parent": "root", "x": 552, "y": 323 }
 ],
 "slots": [
 	{ "name": "BACKGROUND", "bone": "BACKGROUND" },
-	{ "name": "TXT_LANDSCAPE", "bone": "TXT_LANDSCAPE", "attachment": "TXT_LANDSCAPE" },
+	{ "name": "TXT_LANDSCAPE", "bone": "TXT_LANDSCAPE", "color": "ffffff2d" },
 	{ "name": "RESULTS_FADER", "bone": "RESULTS_FADER" },
 	{ "name": "RESULTS_SHINE", "bone": "RESULTS_SHINE", "color": "ffffff00" },
-	{ "name": "PLACE_BET_BUTTON", "bone": "PLACE_BET_BUTTON", "color": "ffffff00" },
 	{ "name": "BET_BAR", "bone": "BET_BAR", "color": "ffffff00" },
-	{ "name": "CANCEL_AUTOBET_POPUP", "bone": "CANCEL_AUTOBET_POPUP", "color": "ffffff00" },
-	{ "name": "BET_PLACED_POPUP", "bone": "BET_PLACED_POPUP", "color": "ffffff00" },
-	{ "name": "LEADERS_BUTTON", "bone": "LEADERS_BUTTON", "color": "ffffff00" },
 	{ "name": "RESULTS", "bone": "RESULTS", "color": "ffffff00" },
 	{ "name": "BET_WINDOW", "bone": "BET_WINDOW", "color": "ffffff00" },
-	{ "name": "MENU", "bone": "MENU", "color": "ffffff00" },
-	{ "name": "SPIN_BUTTON", "bone": "SPIN_BUTTON" },
-	{ "name": "START_SCREEN", "bone": "START_SCREEN", "color": "ffffff00" },
-	{ "name": "BOTTOM_TOP_LINE_2", "bone": "BOTTOM_TOP_LINE_2", "color": "ffffffcb", "attachment": "BOTTOM_TOP_LINE" },
-	{ "name": "BOTTOM_TOP_LINE", "bone": "BOTTOM_TOP_LINE", "color": "ffffffcb", "attachment": "BOTTOM_TOP_LINE" },
-	{ "name": "BALANCE_VALUE", "bone": "BALANCE_VALUE" },
-	{ "name": "BALANCE_LABEL", "bone": "BALANCE_LABEL" },
-	{ "name": "BALANCE_PLUS_BUTTON", "bone": "BALANCE_PLUS_BUTTON" },
-	{ "name": "FULL_SCREEN_BUTTON", "bone": "FULL_SCREEN_BUTTON" },
-	{ "name": "HOME_BUTTON", "bone": "HOME_BUTTON" },
-	{ "name": "SOUND_BUTTON", "bone": "SOUND_BUTTON" },
-	{ "name": "MAIN_MENU_BUTTON", "bone": "MAIN_MENU_BUTTON", "color": "ffffff00" },
-	{ "name": "TIME", "bone": "TIME", "color": "ffffff7e" },
-	{ "name": "TIME_ICON", "bone": "TIME_ICON", "color": "ffffff7e", "attachment": "TIME_ICON" },
-	{ "name": "RACE_STATUS", "bone": "RACE_STATUS", "color": "ffffff00" },
-	{ "name": "SYSTEM_MESSAGE", "bone": "SYSTEM_MESSAGE" },
-	{ "name": "VERTEX_LOGO", "bone": "VERTEX_LOGO", "attachment": "VERTEX_LOGO" },
-	{ "name": "REELS", "bone": "REELS" },
-	{ "name": "SYMBOL", "bone": "SYMBOL", "attachment": "BLANK _TEMPLATE" },
+	{ "name": "LANES", "bone": "LANES" },
+	{ "name": "COINS", "bone": "COINS" },
+	{ "name": "CARS", "bone": "CARS" },
+	{ "name": "BARRIERS", "bone": "BARRIERS" },
+	{ "name": "CURRENT_MULTIPLIER", "bone": "CURRENT_MULTIPLIER" },
+	{ "name": "CHICKEN", "bone": "CHICKEN" },
+	{ "name": "LOOTBOX", "bone": "LOOTBOX" },
+	{ "name": "PROGRESS_METER", "bone": "PROGRESS_METER" },
 	{ "name": "WIN_PRESENTATION", "bone": "WIN_PRESENTATION" },
 	{ "name": "WIN_SYMBOLS", "bone": "WIN_SYMBOLS" },
 	{ "name": "BIG_WIN", "bone": "BIG_WIN" },
-	{ "name": "FREESPINS_SCREENS", "bone": "FREESPINS_SCREENS" }
+	{ "name": "COLLECT_PROJECTILES", "bone": "COLLECT_PROJECTILES" },
+	{ "name": "HUD_HEADER", "bone": "HUD_HEADER" },
+	{ "name": "HUD_FOOTER", "bone": "HUD_FOOTER" },
+	{ "name": "BET_BUTTON", "bone": "BET_BUTTON", "color": "ffffff00" },
+	{ "name": "DIFFICULTY_BUTTON", "bone": "DIFFICULTY_BUTTON" },
+	{ "name": "AUTOPLAY_STOP_BUTTON", "bone": "AUTOPLAY_STOP_BUTTON" },
+	{ "name": "QUICKPLAY_BUTTON", "bone": "QUICKPLAY_BUTTON" },
+	{ "name": "AUTOPLAY_BUTTON", "bone": "AUTOPLAY_BUTTON" },
+	{ "name": "GO_BUTTON", "bone": "GO_BUTTON" },
+	{ "name": "CASHOUT_BUTTON", "bone": "CASHOUT_BUTTON" },
+	{ "name": "START_SCREEN", "bone": "START_SCREEN", "color": "ffffff00" },
+	{ "name": "MENU", "bone": "MENU", "color": "ffffff00" },
+	{ "name": "POPUP_MENU", "bone": "POPUP_MENU", "color": "ffffff00" },
+	{ "name": "SYSTEM_MESSAGE", "bone": "SYSTEM_MESSAGE" },
+	{ "name": "HTML_HEIGHT", "bone": "HTML_HEIGHT" },
+	{ "name": "GAME_NAME_TXT", "bone": "GAME_NAME_TXT" }
 ],
 "skins": [
 	{
 		"name": "default",
 		"attachments": {
-			"BOTTOM_TOP_LINE": {
-				"BOTTOM_TOP_LINE": { "width": 1920, "height": 60 }
-			},
-			"BOTTOM_TOP_LINE_2": {
-				"BOTTOM_TOP_LINE": { "width": 1920, "height": 60 }
-			},
-			"SYMBOL": {
-				"BLANK _TEMPLATE": { "x": -633.65, "y": 285.83, "width": 176, "height": 176 }
-			},
-			"TIME_ICON": {
-				"TIME_ICON": { "width": 32, "height": 32 }
-			},
 			"TXT_LANDSCAPE": {
-				"TXT_LANDSCAPE": { "width": 1037, "height": 186 }
-			},
-			"VERTEX_LOGO": {
-				"VERTEX_LOGO": { "width": 190, "height": 32 }
+				"GENERIC/TXT_LANDSCAPE": { "width": 1037, "height": 186 }
 			}
 		}
 	}
@@ -111,25 +86,13 @@
 "animations": {
 	"ENTER": {
 		"slots": {
+			"AUTOPLAY_STOP_BUTTON": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
 			"BACKGROUND": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"BALANCE_LABEL": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"BALANCE_PLUS_BUTTON": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"BALANCE_VALUE": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.5, "value": 1 }
@@ -141,7 +104,7 @@
 					{ "time": 0.5, "value": 1 }
 				]
 			},
-			"BET_PLACED_POPUP": {
+			"BET_BUTTON": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.5, "value": 1 }
@@ -153,43 +116,13 @@
 					{ "time": 0.5, "value": 1 }
 				]
 			},
-			"BOTTOM_TOP_LINE": {
+			"CASHOUT_BUTTON": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.5, "value": 1 }
 				]
 			},
-			"BOTTOM_TOP_LINE_2": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"CANCEL_AUTOBET_POPUP": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"FULL_SCREEN_BUTTON": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"HOME_BUTTON": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"LEADERS_BUTTON": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"MAIN_MENU_BUTTON": {
+			"GO_BUTTON": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.5, "value": 1 }
@@ -201,13 +134,13 @@
 					{ "time": 0.5, "value": 1 }
 				]
 			},
-			"PLACE_BET_BUTTON": {
+			"POPUP_MENU": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.5, "value": 1 }
 				]
 			},
-			"RACE_STATUS": {
+			"PROGRESS_METER": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.5, "value": 1 }
@@ -231,18 +164,6 @@
 					{ "time": 0.5, "value": 1 }
 				]
 			},
-			"SOUND_BUTTON": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"SPIN_BUTTON": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
 			"START_SCREEN": {
 				"alpha": [
 					{ "value": 0 },
@@ -255,53 +176,23 @@
 					{ "time": 0.5, "value": 1 }
 				]
 			},
-			"TIME": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"TIME_ICON": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
 			"TXT_LANDSCAPE": {
 				"alpha": [
 					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"VERTEX_LOGO": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
+					{ "time": 0.5, "value": 0.17629999 }
 				]
 			}
 		}
 	},
 	"EXIT": {
 		"slots": {
+			"AUTOPLAY_STOP_BUTTON": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.5, "value": 0 }
+				]
+			},
 			"BACKGROUND": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"BALANCE_LABEL": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"BALANCE_PLUS_BUTTON": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"BALANCE_VALUE": {
 				"alpha": [
 					{ "value": 1 },
 					{ "time": 0.5, "value": 0 }
@@ -313,7 +204,7 @@
 					{ "time": 0.5, "value": 0 }
 				]
 			},
-			"BET_PLACED_POPUP": {
+			"BET_BUTTON": {
 				"alpha": [
 					{ "value": 1 },
 					{ "time": 0.5, "value": 0 }
@@ -325,43 +216,13 @@
 					{ "time": 0.5, "value": 0 }
 				]
 			},
-			"BOTTOM_TOP_LINE": {
+			"CASHOUT_BUTTON": {
 				"alpha": [
 					{ "value": 1 },
 					{ "time": 0.5, "value": 0 }
 				]
 			},
-			"BOTTOM_TOP_LINE_2": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"CANCEL_AUTOBET_POPUP": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"FULL_SCREEN_BUTTON": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"HOME_BUTTON": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"LEADERS_BUTTON": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"MAIN_MENU_BUTTON": {
+			"GO_BUTTON": {
 				"alpha": [
 					{ "value": 1 },
 					{ "time": 0.5, "value": 0 }
@@ -373,16 +234,16 @@
 					{ "time": 0.5, "value": 0 }
 				]
 			},
-			"PLACE_BET_BUTTON": {
+			"POPUP_MENU": {
 				"alpha": [
 					{ "value": 1 },
 					{ "time": 0.5, "value": 0 }
 				]
 			},
-			"RACE_STATUS": {
+			"PROGRESS_METER": {
 				"alpha": [
 					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
+					{ "time": 0.5, "value": 0.0011 }
 				]
 			},
 			"RESULTS": {
@@ -403,18 +264,6 @@
 					{ "time": 0.5, "value": 0 }
 				]
 			},
-			"SOUND_BUTTON": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"SPIN_BUTTON": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
 			"START_SCREEN": {
 				"alpha": [
 					{ "value": 1 },
@@ -427,27 +276,9 @@
 					{ "time": 0.5, "value": 0 }
 				]
 			},
-			"TIME": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"TIME_ICON": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
 			"TXT_LANDSCAPE": {
 				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"VERTEX_LOGO": {
-				"alpha": [
-					{ "value": 1 },
+					{ "value": 0.1765 },
 					{ "time": 0.5, "value": 0 }
 				]
 			}
@@ -455,54 +286,9 @@
 	},
 	"IDLE": {
 		"slots": {
-			"BALANCE_LABEL": {
-				"attachment": [
-					{}
-				]
-			},
-			"BALANCE_PLUS_BUTTON": {
-				"attachment": [
-					{}
-				]
-			},
-			"BOTTOM_TOP_LINE": {
-				"attachment": [
-					{ "name": "BOTTOM_TOP_LINE" }
-				]
-			},
-			"BOTTOM_TOP_LINE_2": {
-				"attachment": [
-					{ "name": "BOTTOM_TOP_LINE" }
-				]
-			},
-			"FULL_SCREEN_BUTTON": {
-				"attachment": [
-					{}
-				]
-			},
-			"HOME_BUTTON": {
-				"attachment": [
-					{}
-				]
-			},
-			"SOUND_BUTTON": {
-				"attachment": [
-					{}
-				]
-			},
-			"TIME": {
-				"attachment": [
-					{}
-				]
-			},
-			"TIME_ICON": {
-				"attachment": [
-					{ "name": "TIME_ICON" }
-				]
-			},
-			"VERTEX_LOGO": {
-				"attachment": [
-					{ "name": "VERTEX_LOGO" }
+			"TXT_LANDSCAPE": {
+				"rgba": [
+					{ "color": "ffffff2d" }
 				]
 			}
 		}

@@ -1,12 +1,12 @@
 {
 "skeleton": {
-	"hash": "D24FuDtGNjM",
-	"spine": "4.3.39-beta",
+	"hash": "jHrCrgXyQG0",
+	"spine": "4.2-from-4.3.39-beta",
 	"x": -50.5,
 	"y": -50,
 	"width": 101,
 	"height": 100,
-	"images": "../GRAPHIC_ASSETS/",
+	"images": "../../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
 "bones": [
@@ -14,7 +14,7 @@
 	{ "name": "BANKING_BUTTON", "parent": "root" }
 ],
 "slots": [
-	{ "name": "BANKING_BUTTON_ICON", "bone": "BANKING_BUTTON", "attachment": "HUD/BANKING_BUTTON" },
+	{ "name": "BANKING_BUTTON_ICON", "bone": "BANKING_BUTTON", "attachment": "GUI/HUD/BANKING_BUTTON" },
 	{ "name": "BANKING_BUTTON_HITBOX", "bone": "BANKING_BUTTON", "attachment": "BANKING_BUTTON_HITBOX" }
 ],
 "skins": [
@@ -30,7 +30,7 @@
 				}
 			},
 			"BANKING_BUTTON_ICON": {
-				"HUD/BANKING_BUTTON": { "width": 101, "height": 100 }
+				"GUI/HUD/BANKING_BUTTON": { "width": 101, "height": 100 }
 			}
 		}
 	}
@@ -69,7 +69,7 @@
 					{ "color": "e4e4e4" }
 				],
 				"attachment": [
-					{ "name": "HUD/BANKING_BUTTON" }
+					{ "name": "GUI/HUD/BANKING_BUTTON" }
 				]
 			}
 		}

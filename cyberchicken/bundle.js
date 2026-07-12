@@ -71980,7 +71980,7 @@ var _serviceReferenceManager = /* @__PURE__ */ new WeakMap();
 var _serviceResolutionManager = /* @__PURE__ */ new WeakMap();
 var _snapshotManager = /* @__PURE__ */ new WeakMap();
 var _Container_brand = /* @__PURE__ */ new WeakSet();
-var Container$7 = class {
+var Container$8 = class {
 	static {
 		__name$1(this, "Container");
 	}
@@ -95592,7 +95592,7 @@ var _n2;
 var _r2;
 var _i2;
 var _a2;
-var _o;
+var _o2;
 var _s;
 var _c;
 var _l;
@@ -95610,7 +95610,7 @@ var _n3;
 var _r3;
 var _i3;
 var _a3;
-var _o2;
+var _o3;
 var _s2;
 var _c2;
 var _l2;
@@ -95628,54 +95628,54 @@ var _n4;
 var _r4;
 var _i4;
 var _a4;
-var _o3;
+var _o4;
 var _Bezier;
 var _Class5;
+var _AutoplayButtonView;
 var _Class6;
 var _Class7;
 var _Class8;
-var _AutoplayHandlerModule;
 var _Class9;
 var _Class10;
-var _AutoplayMenuView;
+var _AutoplayHandlerModule;
 var _Class11;
-var _AutoplayButtonView;
 var _Class12;
+var _AutoplayMenuView;
 var _Class13;
 var _AutoplayStopButtonView;
-var _Class14;
 var _window$__svelte;
 var _window$__svelte$v;
 var _window;
 var _window$__svelte2;
-var _Class15;
+var _Class14;
 var _ReelConstants;
-var _Class16;
+var _Class15;
 var _SpineAvalancheSymbol;
 var _AvalancheReelsView;
+var _Class16;
 var _Class17;
-var _Class18;
 var _BackgroundView;
 var _AtlasNumbers;
 var _BigWinView;
 var _FreeSpinsScreensView;
-var _Class19;
+var _Class18;
 var _HUDView;
-var _Class20;
+var _Class19;
 var _HUDModule;
+var _Class20;
 var _Class21;
-var _Class22;
 var _QuickPlayButtonView;
-var _Class23;
+var _Class22;
 var _RestoreScreenView;
+var _Class23;
 var _Class24;
 var _Class25;
-var _Class26;
 var _MenuButtonView;
-var _Class27;
+var _Class26;
 var _SpinButtonView;
-var _Class28;
+var _Class27;
 var _BetButtonView;
+var _Class28;
 var _BetMenuView;
 var _SpineReelSymbol;
 var _SpinningReelView;
@@ -95686,8 +95686,8 @@ var _WinAmountPresentationView;
 var _Class30;
 var _IndividualReelConstants;
 var _TickerSpeedController;
-var ce = Object.defineProperty;
-var __name = (e, t) => ce(e, "name", {
+var ae = Object.defineProperty;
+var __name = (e, t) => ae(e, "name", {
 	value: t,
 	configurable: !0
 });
@@ -95708,7 +95708,7 @@ var GenericButton = class {
 		return this._button;
 	}
 };
-var fe$1 = {
+var ce = {
 	fontFamily: "Poppins Bold",
 	fontSize: 30,
 	fill: "#000000"
@@ -95736,35 +95736,35 @@ var GameConfig = class {
 		return n !== void 0;
 	}
 };
-var w$1 = 1920;
-var T = 1920;
-var me = 1080;
-var ve = "color:#fff;padding:2px 6px;border-radius:3px;font-weight:bold;";
-var ye$1 = `${ve}background:#6b7280;`;
-var be$1 = `${ve}background:#2563eb;`;
-var xe$1 = `${ve}background:#d97706;`;
-var Se$1 = `${ve}background:#dc2626;`;
+var O$1 = 1920;
+var k = 1920;
+var ue$1 = 1080;
+var me = "color:#fff;padding:2px 6px;border-radius:3px;font-weight:bold;";
+var he = `${me}background:#6b7280;`;
+var ge = `${me}background:#2563eb;`;
+var _e$1 = `${me}background:#d97706;`;
+var ve = `${me}background:#dc2626;`;
 var Logger = class {
 	log(e, ...t) {
-		console.log("%cLOG", ye$1, e, ...t);
+		console.log("%cLOG", he, e, ...t);
 	}
 	info(e, ...t) {
-		console.info("%cINFO", be$1, e, ...t);
+		console.info("%cINFO", ge, e, ...t);
 	}
 	warn(e, ...t) {
-		console.warn("%cWARN", xe$1, e, ...t);
+		console.warn("%cWARN", _e$1, e, ...t);
 	}
 	error(e, ...t) {
-		console.error("%cERROR", Se$1, e, ...t);
+		console.error("%cERROR", ve, e, ...t);
 	}
 };
-var E$1 = new Logger();
+var A = new Logger();
 var CheatState = class {
 	constructor() {
 		_defineProperty(this, "value", void 0);
 	}
 };
-var Ce$1 = new CheatState();
+var ye$1 = new CheatState();
 var QuerystringHandler = class {
 	constructor() {
 		_defineProperty(this, "_queryString", void 0);
@@ -95811,7 +95811,7 @@ function __decorate$1(e, t, n, r) {
 	return i > 3 && a && Object.defineProperty(t, n, a), a;
 }
 __name$1(__decorate$1, "__decorate");
-var we$1 = class GameController {
+var be$1 = class GameController {
 	constructor() {
 		_defineProperty(this, "_queryStringHandler", void 0);
 		_defineProperty(this, "_device", void 0);
@@ -95918,26 +95918,26 @@ var we$1 = class GameController {
 		this._queryStringHandler = new QuerystringHandler();
 	}
 	getCheatValue() {
-		return Ce$1.value;
+		return ye$1.value;
 	}
 };
-we$1 = __decorate$1([injectable()], we$1);
-var Te$1 = /* @__PURE__ */ function(e) {
+be$1 = __decorate$1([injectable()], be$1);
+var xe$1 = /* @__PURE__ */ function(e) {
 	return e[e.SPINNING = 0] = "SPINNING", e[e.AVALANCHE = 1] = "AVALANCHE", e[e.INDIVIDUAL = 2] = "INDIVIDUAL", e[e.MIXED = 3] = "MIXED", e[e.SPECIAL = 4] = "SPECIAL", e;
 }({});
-var Ee$1 = /* @__PURE__ */ function(e) {
+var Se$1 = /* @__PURE__ */ function(e) {
 	return e[e.LINES = 0] = "LINES", e[e.WAYS = 1] = "WAYS", e[e.CLUSTERS = 2] = "CLUSTERS", e[e.EVERYWHERE = 3] = "EVERYWHERE", e[e.SPECIAL = 4] = "SPECIAL", e;
 }({});
-var D$1 = /* @__PURE__ */ function(e) {
+var j = /* @__PURE__ */ function(e) {
 	return e[e.ANTE = 0] = "ANTE", e[e.SMALL = 1] = "SMALL", e[e.NICE = 2] = "NICE", e[e.EXCELLENT = 3] = "EXCELLENT", e;
 }({});
-var De$1 = /* @__PURE__ */ function(e) {
+var Ce$1 = /* @__PURE__ */ function(e) {
 	return e[e.LEFT_TO_RIGHT = 0] = "LEFT_TO_RIGHT", e[e.RIGHT_TO_LEFT = 1] = "RIGHT_TO_LEFT", e[e.BOTH_WAYS = 2] = "BOTH_WAYS", e[e.OTHER = 3] = "OTHER", e;
 }({});
-var ke$1 = /* @__PURE__ */ function(e) {
+var Te$1 = /* @__PURE__ */ function(e) {
 	return e[e.BIG = 0] = "BIG", e[e.SUPER = 1] = "SUPER", e[e.MEGA = 2] = "MEGA", e[e.EPIC = 3] = "EPIC", e;
 }({});
-var O$1 = (_WinUtils = class WinUtils {
+var M$1 = (_WinUtils = class WinUtils {
 	static updateThresholdsFromConfig(e) {
 		WinUtils.BIG_WIN_THRESHOLD = e.get("gameplay.bigwin.threshold", WinUtils.BIG_WIN_THRESHOLD), WinUtils.SUPER_WIN_THRESHOLD = e.get("gameplay.bigwin.superThreshold", WinUtils.SUPER_WIN_THRESHOLD), WinUtils.MEGA_WIN_THRESHOLD = e.get("gameplay.bigwin.megaThreshold", WinUtils.MEGA_WIN_THRESHOLD), WinUtils.EPIC_WIN_THRESHOLD = e.get("gameplay.bigwin.epicThreshold", WinUtils.EPIC_WIN_THRESHOLD), WinUtils.NICE_WIN_ONE_ROUND_THRESHOLD_LOW = e.get("gameplay.win.niceOneRoundThresholdLow", WinUtils.NICE_WIN_ONE_ROUND_THRESHOLD_LOW), WinUtils.NICE_WIN_ONE_ROUND_THRESHOLD_HIGH = e.get("gameplay.win.niceOneRoundThresholdHigh", WinUtils.NICE_WIN_ONE_ROUND_THRESHOLD_HIGH), WinUtils.SMALL_WIN_ONE_ROUND_THRESHOLD_LOW = e.get("gameplay.win.smallOneRoundThresholdLow", WinUtils.SMALL_WIN_ONE_ROUND_THRESHOLD_LOW);
 	}
@@ -95970,16 +95970,16 @@ var O$1 = (_WinUtils = class WinUtils {
 	}
 	static getWinSize(e, t) {
 		if (e <= 0) throw Error("WinUtils::getWinType win can not be 0 or less");
-		return WinUtils.isWinNumberAnteWin(t, e) ? D$1.ANTE : WinUtils.isWinNumberExcellentWin(t, e) ? D$1.EXCELLENT : WinUtils.isWinNumberNiceWin(t, e) ? D$1.NICE : D$1.SMALL;
+		return WinUtils.isWinNumberAnteWin(t, e) ? j.ANTE : WinUtils.isWinNumberExcellentWin(t, e) ? j.EXCELLENT : WinUtils.isWinNumberNiceWin(t, e) ? j.NICE : j.SMALL;
 	}
 	static getBigWinType(e, t) {
 		if (e <= 0) throw Error("WinUtils::getWinType win can not be 0 or less");
 		if (WinUtils.isWinNumberBigWin(t, e)) {
-			if (WinUtils.isWinNumberEpicWin(t, e)) return ke$1.EPIC;
-			if (WinUtils.isWinNumberMegaWin(t, e)) return ke$1.MEGA;
-			if (WinUtils.isWinNumberSuperWin(t, e)) return ke$1.SUPER;
+			if (WinUtils.isWinNumberEpicWin(t, e)) return Te$1.EPIC;
+			if (WinUtils.isWinNumberMegaWin(t, e)) return Te$1.MEGA;
+			if (WinUtils.isWinNumberSuperWin(t, e)) return Te$1.SUPER;
 		}
-		return ke$1.BIG;
+		return Te$1.BIG;
 	}
 	static formatWinAsSI(e, t) {
 		let n = e / 100, r = n < 100 ? 2 : 1;
@@ -96009,13 +96009,13 @@ var O$1 = (_WinUtils = class WinUtils {
 function __decorateMetadata(e, t) {
 	if (typeof Reflect == "object" && typeof Reflect.metadata == "function") return Reflect.metadata(e, t);
 }
-var Ae$1 = /* @__PURE__ */ function(e) {
+var Ee$1 = /* @__PURE__ */ function(e) {
 	return e[e.NONE = 0] = "NONE", e[e.INIT = 1] = "INIT", e[e.SPIN = 2] = "SPIN", e[e.FREESPIN = 3] = "FREESPIN", e[e.RESPIN = 4] = "RESPIN", e[e.PICK = 5] = "PICK", e[e.SKIPPICK = 6] = "SKIPPICK", e[e.AVALANCHE = 7] = "AVALANCHE", e[e.SCATTER_AND_AVALANCHE = 8] = "SCATTER_AND_AVALANCHE", e[e.EXPLOSION = 9] = "EXPLOSION", e[e.REMOVAL = 10] = "REMOVAL", e[e.TRANSFORM = 11] = "TRANSFORM", e[e.CROSS = 12] = "CROSS", e[e.SPARKLE = 13] = "SPARKLE", e[e.SUPER_FREESPINS = 14] = "SUPER_FREESPINS", e[e.WILD_EXPANSION = 15] = "WILD_EXPANSION", e;
 }({});
-var Me$1 = /* @__PURE__ */ function(e) {
+var Oe$1 = /* @__PURE__ */ function(e) {
 	return e[e.OFF = 0] = "OFF", e[e.ON = 1] = "ON", e[e.SUPER = 2] = "SUPER", e;
 }({});
-var Ne$1 = (_GameData = class GameData {
+var ke$1 = (_GameData = class GameData {
 	constructor() {
 		_defineProperty(this, "_currentBetValue", 1);
 		_defineProperty(this, "_betValues", void 0);
@@ -96023,6 +96023,8 @@ var Ne$1 = (_GameData = class GameData {
 		_defineProperty(this, "_lastBet", 1);
 		_defineProperty(this, "_settings", void 0);
 		_defineProperty(this, "_autoplayValues", [
+			10,
+			25,
 			50,
 			100,
 			150,
@@ -96079,9 +96081,9 @@ var Ne$1 = (_GameData = class GameData {
 		_defineProperty(this, "_allReelsets", void 0);
 		_defineProperty(this, "_currentReelset", void 0);
 		_defineProperty(this, "_gameFacts", {
-			evaluation: De$1.OTHER,
-			reelsMechanics: Te$1.SPECIAL,
-			winType: Ee$1.SPECIAL
+			evaluation: Ce$1.OTHER,
+			reelsMechanics: xe$1.SPECIAL,
+			winType: Se$1.SPECIAL
 		});
 		_defineProperty(this, "_mathVersion", "0.0.0");
 		_defineProperty(this, "_serverVersion", "0.0.0");
@@ -96122,16 +96124,16 @@ var Ne$1 = (_GameData = class GameData {
 		this.hasRestore = !1, this._balance = e.balance;
 	}
 	reactOnInit(e) {
-		this.onceBeforeSpinSetup(), this._lastInitResponse = e, this.parseState(e.state), this.parseInit(e), this.afterInitRestoreSetup(e), E$1.info("init:"), E$1.info(e);
+		this.onceBeforeSpinSetup(), this._lastInitResponse = e, this.parseState(e.state), this.parseInit(e), this.afterInitRestoreSetup(e), A.info("init:"), A.info(e);
 	}
 	plusOneFreeSpin() {
 		this._currentFreeSpin++;
 	}
 	reactOnFreeSpin(e) {
-		this.parseSpin(e), E$1.info("freespin:"), E$1.info(e);
+		this.parseSpin(e), A.info("freespin:"), A.info(e);
 	}
 	reactOnSpin(e) {
-		this.onceBeforeSpinSetup(), this._lastSpinResponse = e, this.parseState(e.state), this.parseSpin(e.baseSpin, e), E$1.info("spin:"), E$1.info(e);
+		this.onceBeforeSpinSetup(), this._lastSpinResponse = e, this.parseState(e.state), this.parseSpin(e.baseSpin, e), A.info("spin:"), A.info(e);
 	}
 	startNextRound() {
 		this._currentRoundIndex < this._totalRounds - 1 && this._currentRoundIndex++;
@@ -96140,7 +96142,7 @@ var Ne$1 = (_GameData = class GameData {
 		return !1;
 	}
 	isInNoWinRound() {
-		return !this._isFreeSpinsStarted && this.nextAction === Ae$1.SPIN && !this.isFreeSpinsJustWon() && this.isNoWin();
+		return !this._isFreeSpinsStarted && this.nextAction === Ee$1.SPIN && !this.isFreeSpinsJustWon() && this.isNoWin();
 	}
 	isFreeSpinsJustWon() {
 		return this._freeSpinsLeft === this._freespinsTotalAwarded && this._freeSpinsLeft > 0;
@@ -96157,8 +96159,8 @@ var Ne$1 = (_GameData = class GameData {
 		return this._allReelsets[t];
 	}
 	getRestoreSymbols() {
-		if (this.gameFacts.reelsMechanics === Te$1.AVALANCHE) return this._avalanches[0].initialSymbols;
-		if (this.gameFacts.reelsMechanics === Te$1.SPINNING) return this._spinRounds[0].initialSymbols;
+		if (this.gameFacts.reelsMechanics === xe$1.AVALANCHE) return this._avalanches[0].initialSymbols;
+		if (this.gameFacts.reelsMechanics === xe$1.SPINNING) return this._spinRounds[0].initialSymbols;
 		throw Error("GameData::getRestoreSymbols need to define restore symbols");
 	}
 	getTotalWin() {
@@ -96174,10 +96176,10 @@ var Ne$1 = (_GameData = class GameData {
 		return this._avalanches[this._currentRoundIndex];
 	}
 	isBigWin() {
-		return this.getSpinWin() / this.getTotalBet() >= O$1.BIG_WIN_THRESHOLD;
+		return this.getSpinWin() / this.getTotalBet() >= M$1.BIG_WIN_THRESHOLD;
 	}
 	isNumberBigWin(e) {
-		return e / this.getTotalBet() >= O$1.BIG_WIN_THRESHOLD;
+		return e / this.getTotalBet() >= M$1.BIG_WIN_THRESHOLD;
 	}
 	isWin() {
 		return this.getSpinWin() > 0;
@@ -96196,7 +96198,7 @@ var Ne$1 = (_GameData = class GameData {
 	}
 	initializeDefaultSettings() {
 		this._settings = {
-			fastPlayMode: Me$1.OFF,
+			fastPlayMode: Oe$1.OFF,
 			musicActive: !0,
 			musicVolume: 1,
 			quickStopActive: !0,
@@ -96229,7 +96231,7 @@ var Ne$1 = (_GameData = class GameData {
 	}
 	parseState(e) {}
 	parseSpin(e, t = null) {
-		!(t === null || t === void 0) && t.hasOwnProperty("balance") && typeof (t === null || t === void 0 ? void 0 : t.balance) == "number" && (this._balance = t.balance), !(t === null || t === void 0) && t.roundId && (this._roundID = t.roundId), this._roundTypes.push(Ae$1.SPIN), e.generations ? this.parseAvalanches(e) : this.parseSpinRounds(e), e.grid && this.changeCurrentReelset(e.grid), this.parseSymbolsReplacements(e), this.parseOriginalSymbols(e), this.parseMultiplier(e), this.parseOtherData(e, t), this.parseWinCap(e), this.parseFreeSpinsData(t, e), this.parseFreeSpinsTotalWin(t), this.parseFreeSpinsEndingTotalWin(t), this.parseFreeSpinsRunningTotal(e), this.parseTotalWin(t, e);
+		!(t === null || t === void 0) && t.hasOwnProperty("balance") && typeof (t === null || t === void 0 ? void 0 : t.balance) == "number" && (this._balance = t.balance), !(t === null || t === void 0) && t.roundId && (this._roundID = t.roundId), this._roundTypes.push(Ee$1.SPIN), e.generations ? this.parseAvalanches(e) : this.parseSpinRounds(e), e.grid && this.changeCurrentReelset(e.grid), this.parseSymbolsReplacements(e), this.parseOriginalSymbols(e), this.parseMultiplier(e), this.parseOtherData(e, t), this.parseWinCap(e), this.parseFreeSpinsData(t, e), this.parseFreeSpinsTotalWin(t), this.parseFreeSpinsEndingTotalWin(t), this.parseFreeSpinsRunningTotal(e), this.parseTotalWin(t, e);
 	}
 	parseWinCap(e) {
 		this._hasReachedWinCap = !1, e.hasOwnProperty("hasWinCap") && (this._hasReachedWinCap = e.hasWinCap);
@@ -96281,7 +96283,7 @@ var Ne$1 = (_GameData = class GameData {
 		this.hasFreeSpins(e) && !this.hasRestore ? this.initializeFreeSpinsFromData(e, !1) : this.isFreeSpinData(t) && this.initializeFreeSpinFromData(t);
 	}
 	initializeFreeSpinFromData(e) {
-		this.isFreeSpinData(e) && (this._currentFreeSpin === this._freeSpins.length - 1 ? this._roundTypes.push(Ae$1.SPIN) : this._roundTypes.push(Ae$1.FREESPIN), this._isFreeSpinsStarted && this.hasExtraFreeSpins(e) ? (this._hasFreeSpinsRetrigger = !0, this._freeSpinsAdded = this.getExtraFreeSpins(e), this._freespinsTotalAwarded += this._freeSpinsAdded) : (this._hasFreeSpinsRetrigger = !1, this._freeSpinsAdded = 0), this._freeSpinsLeft = this._freespinsTotalAwarded - this._currentFreeSpin - 1);
+		this.isFreeSpinData(e) && (this._currentFreeSpin === this._freeSpins.length - 1 ? this._roundTypes.push(Ee$1.SPIN) : this._roundTypes.push(Ee$1.FREESPIN), this._isFreeSpinsStarted && this.hasExtraFreeSpins(e) ? (this._hasFreeSpinsRetrigger = !0, this._freeSpinsAdded = this.getExtraFreeSpins(e), this._freespinsTotalAwarded += this._freeSpinsAdded) : (this._hasFreeSpinsRetrigger = !1, this._freeSpinsAdded = 0), this._freeSpinsLeft = this._freespinsTotalAwarded - this._currentFreeSpin - 1);
 	}
 	getExtraFreeSpins(e) {
 		return e.extraFS;
@@ -96325,7 +96327,7 @@ var Ne$1 = (_GameData = class GameData {
 		};
 	}
 	setAvalancheRoundType(e) {
-		e.winnings.length > 0 && this._roundTypes.push(Ae$1.AVALANCHE);
+		e.winnings.length > 0 && this._roundTypes.push(Ee$1.AVALANCHE);
 	}
 	parseAvalancheSymbols(e, t) {
 		let n = 0;
@@ -96465,7 +96467,7 @@ var Ne$1 = (_GameData = class GameData {
 		if (this._freespinsTotalAwarded = 0, this.hasFreeSpins(e)) {
 			var _e$state2;
 			for (let t of e.freeSpins.spins) this._freeSpins.push(t);
-			this._roundTypes.push(Ae$1.FREESPIN), this._freeSpinsLeft = this._freespinsTotalAwarded = this.getTotalFreeSpinsFromData(e), this._currentFreeSpin = -1, t && (e === null || e === void 0 || (_e$state2 = e.state) === null || _e$state2 === void 0 ? void 0 : _e$state2.currentFreeSpin) > 0 && (this._currentFreeSpin = e.state.currentFreeSpin - 1, this._freespinsTotalAwarded = this.getTotalFreeSpinsFromData(this._freeSpins[this._currentFreeSpin]), this._freeSpinsLeft = this._freespinsTotalAwarded - this._currentFreeSpin), this._beforeFSReels = [];
+			this._roundTypes.push(Ee$1.FREESPIN), this._freeSpinsLeft = this._freespinsTotalAwarded = this.getTotalFreeSpinsFromData(e), this._currentFreeSpin = -1, t && (e === null || e === void 0 || (_e$state2 = e.state) === null || _e$state2 === void 0 ? void 0 : _e$state2.currentFreeSpin) > 0 && (this._currentFreeSpin = e.state.currentFreeSpin - 1, this._freespinsTotalAwarded = this.getTotalFreeSpinsFromData(this._freeSpins[this._currentFreeSpin]), this._freeSpinsLeft = this._freespinsTotalAwarded - this._currentFreeSpin), this._beforeFSReels = [];
 			for (let e of this._initialReels) this._beforeFSReels.push({
 				symbolID: e.symbolID,
 				size: {
@@ -96530,7 +96532,7 @@ var Ne$1 = (_GameData = class GameData {
 					r.symbols.push([]), r.symbolsIDs.push([]), i++;
 					for (let t of e) {
 						let e = this.isRandomSymbol(this._serverSymbols[t]) ? this.getTotallyRandomOf(this._serverSymbols[t]) : this._serverSymbols[t];
-						e === null ? E$1.error(`Logic::parseConfigReelgrid no symbol ${t} in the list`) : (r.symbols[i].push(e), r.symbolsIDs[i].push(t));
+						e === null ? A.error(`Logic::parseConfigReelgrid no symbol ${t} in the list`) : (r.symbols[i].push(e), r.symbolsIDs[i].push(t));
 					}
 				}
 				this._allReelsets.push(r);
@@ -96642,7 +96644,7 @@ var Ne$1 = (_GameData = class GameData {
 		this._hasRestore = e;
 	}
 	get nextAction() {
-		return this._currentRoundIndex > this._roundTypes.length - 1 ? Ae$1.NONE : this._roundTypes[this._currentRoundIndex];
+		return this._currentRoundIndex > this._roundTypes.length - 1 ? Ee$1.NONE : this._roundTypes[this._currentRoundIndex];
 	}
 	get isReplayMode() {
 		return this._isReplayMode;
@@ -96789,7 +96791,7 @@ var Ne$1 = (_GameData = class GameData {
 		return this._beforeFSReels;
 	}
 }, _defineProperty(_GameData, "CENT_TO_A_DOLLAR", .01), _defineProperty(_GameData, "DOLLAR_TO_A_CENT", 100), _GameData);
-Ne$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], Ne$1);
+ke$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], ke$1);
 var PlatformEvents = (_Class2 = class {}, _defineProperty(_Class2, "FREEZE_BET_CALLBACK_CALLED", "PlatformEvents::FREEZE_BET_CALLBACK_CALLED"), _defineProperty(_Class2, "UNFREEZE_BET_CALLBACK_CALLED", "PlatformEvents::UNFREEZE_BET_CALLBACK_CALLED"), _Class2);
 Object.freeze({
 	115: "115",
@@ -96984,7 +96986,7 @@ Object.freeze({
 	X86: "ia32",
 	X86_64: "amd64"
 });
-var Fe$1 = Object.freeze({
+var je$1 = Object.freeze({
 	CONSOLE: "console",
 	DESKTOP: "desktop",
 	EMBEDDED: "embedded",
@@ -97095,7 +97097,7 @@ Object.freeze({
 	W3M: "w3m",
 	WEBKIT: "WebKit"
 });
-var Ie$1 = Object.freeze({
+var Me$1 = Object.freeze({
 	AIX: "AIX",
 	AMIGA_OS: "Amiga OS",
 	ANDROID: "Android",
@@ -97549,22 +97551,22 @@ Object.freeze({
 		VOLVO: "Volvo"
 	} }
 });
-var Le$1 = Ie$1;
-var ze$1 = Fe$1;
-var k = class Device {
+var Ne$1 = Me$1;
+var Fe$1 = je$1;
+var Ie$1 = class Device {
 	constructor() {
 		_defineProperty(this, "os", void 0);
 		_defineProperty(this, "type", void 0);
 		_defineProperty(this, "browser", void 0);
 		let e = new UAParser(navigator.userAgent).getResult(), t = e.os.name, n = e.device.type;
-		navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1 && (t = Le$1.IOS, n = ze$1.TABLET), this.os = t, this.type = n, this.browser = e.browser.name;
+		navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1 && (t = Ne$1.IOS, n = Fe$1.TABLET), this.os = t, this.type = n, this.browser = e.browser.name;
 	}
 	get isMobile() {
-		return this.type === ze$1.MOBILE || this.type === ze$1.TABLET;
+		return this.type === Fe$1.MOBILE || this.type === Fe$1.TABLET;
 	}
 };
-k = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], k);
-var A = {
+Ie$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], Ie$1);
+var N$1 = {
 	Game: Symbol("Game"),
 	System: Symbol("System"),
 	UpdateManager: Symbol("UpdateManager"),
@@ -97578,7 +97580,7 @@ var A = {
 	Resources: Symbol("Resources"),
 	APIModule: Symbol("APIModule")
 };
-var j = {
+var P$2 = {
 	ISettings: Symbol("ISettings"),
 	IModule: Symbol("IModule"),
 	IView: Symbol("IView"),
@@ -97608,7 +97610,7 @@ var j = {
 	MainUI: Symbol("MainUI"),
 	GlobalGameState: Symbol("GlobalGameState")
 };
-var M$1 = /* @__PURE__ */ function(e) {
+var F = /* @__PURE__ */ function(e) {
 	return e[e.IDLE = 0] = "IDLE", e[e.UP = 1] = "UP", e[e.DOWN = 2] = "DOWN", e[e.OVER = 3] = "OVER", e[e.DISABLED = 4] = "DISABLED", e;
 }({});
 var Button = class extends import_lib.Container {
@@ -97617,29 +97619,29 @@ var Button = class extends import_lib.Container {
 		_super(), this._callback = e, this.setupInputCallbacks();
 	}
 	enable() {
-		this._over ? this.setState(M$1.OVER) : this.setState(M$1.UP), this.interactive = !0, this.cursor = "pointer";
+		this._over ? this.setState(F.OVER) : this.setState(F.UP), this.interactive = !0, this.cursor = "pointer";
 	}
 	disable() {
-		this.setState(M$1.DISABLED), this.interactive = !1, this.cursor = "none";
+		this.setState(F.DISABLED), this.interactive = !1, this.cursor = "none";
 	}
 	setupInputCallbacks() {
 		this.on("mousedown", this.onMouseDown), this.on("mouseup", this.onMouseUp), this.on("mouseover", this.onMouseOver), this.on("mouseout", this.onMouseOut), this.on("click", this.onClick), this.on("tap", this.onClick), this.on("touchstart", this.onMouseDown), this.on("touchendoutside", this.onMouseOut), this.on("touchend", this.onMouseUp);
 	}
 	updateFrame() {}
 	onMouseUp() {
-		this.setState(M$1.UP);
+		this.setState(F.UP);
 	}
 	onMouseDown() {
-		this.setState(M$1.DOWN), this._tapDownCallback && this._tapDownCallback();
+		this.setState(F.DOWN), this._tapDownCallback && this._tapDownCallback();
 	}
 	onMouseOver() {
-		this._over = !0, this.setState(M$1.OVER);
+		this._over = !0, this.setState(F.OVER);
 	}
 	onMouseOut() {
-		this._mouseOutCallback && this._mouseOutCallback(), this._over = !1, this.setState(M$1.UP);
+		this._mouseOutCallback && this._mouseOutCallback(), this._over = !1, this.setState(F.UP);
 	}
 	onClick() {
-		this.setState(M$1.OVER), this._callback ? this._callback(this._callbackParams) : E$1.warn("There is no a callback.");
+		this.setState(F.OVER), this._callback ? this._callback(this._callbackParams) : A.warn("There is no a callback.");
 	}
 	cleanFrame() {}
 	setState(e, t = !1) {
@@ -97661,12 +97663,12 @@ var Button = class extends import_lib.Container {
 		return this._state;
 	}
 };
-var Be$1 = /* @__PURE__ */ function(e) {
+var Le$1 = /* @__PURE__ */ function(e) {
 	return e[e.SPINE = 0] = "SPINE", e[e.SPINE_ANIMATION = 1] = "SPINE_ANIMATION", e[e.SPINE_ANIMATION_MULTITRACK = 2] = "SPINE_ANIMATION_MULTITRACK", e[e.ANIMATIION = 3] = "ANIMATIION", e[e.TWEEN = 4] = "TWEEN", e[e.UPDATABLE = 5] = "UPDATABLE", e;
 }({});
 var Updatable = class {
 	constructor(e = !1) {
-		_defineProperty(this, "type", Be$1.UPDATABLE);
+		_defineProperty(this, "type", Le$1.UPDATABLE);
 		_defineProperty(this, "_updateManager", void 0);
 		_defineProperty(this, "_isPlaying", void 0);
 		e && this.start();
@@ -97689,7 +97691,7 @@ var Updatable = class {
 };
 var SpineAnimation = class extends Updatable {
 	constructor(e) {
-		var _super2 = (..._args2) => (super(..._args2), _defineProperty(this, "type", Be$1.SPINE_ANIMATION), _defineProperty(this, "_spine", void 0), _defineProperty(this, "_completedTracks", /* @__PURE__ */ new Set()), _defineProperty(this, "_completeCallbackMap", {}), _defineProperty(this, "_eventsMap", {}), this);
+		var _super2 = (..._args2) => (super(..._args2), _defineProperty(this, "type", Le$1.SPINE_ANIMATION), _defineProperty(this, "_spine", void 0), _defineProperty(this, "_completedTracks", /* @__PURE__ */ new Set()), _defineProperty(this, "_completeCallbackMap", {}), _defineProperty(this, "_eventsMap", {}), this);
 		_super2(), this._spine = e;
 	}
 	play(e, t = 0, n = !1, r) {
@@ -97860,19 +97862,19 @@ var SpineButton = class extends Button {
 		this._skin = n, this._spineAnimation = new SpineAnimation(e), this.addChild(this._spineAnimation.spine), t.add(this._spineAnimation), this.setSkinOnAnimation(), this._spineAnimation.play("IDLE", 0, !0);
 	}
 	setAnimations(e, t, n, r) {
-		this._animation[M$1.UP] = e, this._animation[M$1.DOWN] = t || e, this._animation[M$1.OVER] = n || e, this._animation[M$1.DISABLED] = r || e, this.generateNewHitArea();
+		this._animation[F.UP] = e, this._animation[F.DOWN] = t || e, this._animation[F.OVER] = n || e, this._animation[F.DISABLED] = r || e, this.generateNewHitArea();
 	}
 	enable() {
 		super.enable(), this.generateNewHitArea();
 	}
 	setAnimationsLoop(e, t, n, r) {
-		this._animationLoop[M$1.UP] = e, this._animationLoop[M$1.DOWN] = t !== null && t !== void 0 ? t : e, this._animationLoop[M$1.OVER] = n !== null && n !== void 0 ? n : e, this._animationLoop[M$1.DISABLED] = r !== null && r !== void 0 ? r : e;
+		this._animationLoop[F.UP] = e, this._animationLoop[F.DOWN] = t !== null && t !== void 0 ? t : e, this._animationLoop[F.OVER] = n !== null && n !== void 0 ? n : e, this._animationLoop[F.DISABLED] = r !== null && r !== void 0 ? r : e;
 	}
 	setCustomHitArea(e) {
 		this._customHitArea = e, this.hitArea = e;
 	}
 	resetState() {
-		this._over = !1, this.setState(M$1.UP, !0);
+		this._over = !1, this.setState(F.UP, !0);
 	}
 	hasSlotHitBox() {
 		return this.spine.skeleton.findSlot("HIT_BOX") !== null;
@@ -97897,10 +97899,10 @@ var SpineButton = class extends Button {
 		if (this._onClickIsOverState) if (this._callback) {
 			let e = this._spineAnimation.getTrackAnimationName(0) === "PRESSED" || this._spineAnimation.getTrackAnimationName(1) === "PRESSED";
 			this._spineAnimation.isPlaying && e ? this._spineAnimation.setOnComplete(() => {
-				this.setState(M$1.OVER), this._callback(this._callbackParams);
-			}) : (this.setState(M$1.OVER), this._callback(this._callbackParams));
-		} else E$1.warn("There is no a callback.");
-		else this._callback ? this._callback() : E$1.warn("There is no a callback.");
+				this.setState(F.OVER), this._callback(this._callbackParams);
+			}) : (this.setState(F.OVER), this._callback(this._callbackParams));
+		} else A.warn("There is no a callback.");
+		else this._callback ? this._callback() : A.warn("There is no a callback.");
 	}
 	updateFrame() {
 		this._animation[this._state] && this._spineAnimation.play(this._animation[this._state], 0, this._animationLoop[this._state]);
@@ -97945,10 +97947,10 @@ var LocalizedSpineButton = class extends SpineButton {
 		_super3(e), this._spineUtils = t, this._resources = n;
 	}
 	setupLocales(e, t, n, r) {
-		this._locales[M$1.UP] = e, this._locales[M$1.DOWN] = t !== null && t !== void 0 ? t : e, this._locales[M$1.OVER] = n !== null && n !== void 0 ? n : e, this._locales[M$1.DISABLED] = r !== null && r !== void 0 ? r : e;
+		this._locales[F.UP] = e, this._locales[F.DOWN] = t !== null && t !== void 0 ? t : e, this._locales[F.OVER] = n !== null && n !== void 0 ? n : e, this._locales[F.DISABLED] = r !== null && r !== void 0 ? r : e;
 	}
 	setupButtonSlots(e, t, n, r) {
-		this._slots[M$1.UP] = e, this._slots[M$1.DOWN] = t !== null && t !== void 0 ? t : e, this._slots[M$1.OVER] = n !== null && n !== void 0 ? n : e, this._slots[M$1.DISABLED] = r !== null && r !== void 0 ? r : e;
+		this._slots[F.UP] = e, this._slots[F.DOWN] = t !== null && t !== void 0 ? t : e, this._slots[F.OVER] = n !== null && n !== void 0 ? n : e, this._slots[F.DISABLED] = r !== null && r !== void 0 ? r : e;
 	}
 	updateFrame() {
 		this._animation[this._state] && (this._spineAnimation.play(this._animation[this._state], 0, this._animationLoop[this._state]), this._spineAnimation.spine.getSlotObject(this._slots[this._state]) || this._spineUtils.addSlotObject(this._spineAnimation, this._slots[this._state], new import_lib.Sprite(this._resources.getLocaleTextImage(this._locales[this._state]))));
@@ -98132,7 +98134,7 @@ var GameUtils = class {
 		}
 	}
 	static printTimestamp(e) {
-		E$1.error(`${e} ${performance.now()}`);
+		A.error(`${e} ${performance.now()}`);
 	}
 };
 var SpineThumb = class extends SpineButton {
@@ -98177,7 +98179,7 @@ var SpineThumb = class extends SpineButton {
 		this._generatedHitArea = new import_lib.Rectangle(900 * -.5, 900 * -.5, 900, 900), this.hitArea = this._generatedHitArea;
 	}
 };
-var He$1 = class EventManager {
+var ze$1 = class EventManager {
 	constructor() {
 		_defineProperty(this, "_eventMap", {});
 	}
@@ -98218,7 +98220,7 @@ var He$1 = class EventManager {
 		return this._eventMap[e].some((e) => e.owner === t);
 	}
 };
-He$1 = __decorate$1([injectable()], He$1);
+ze$1 = __decorate$1([injectable()], ze$1);
 var RectangleArea = class {
 	constructor(e = 0, t = 0) {
 		_defineProperty(this, "_width", void 0);
@@ -98357,8 +98359,8 @@ function isIframe() {
 		return !0;
 	}
 }
-var Ue$1;
-var We$1 = class FullscreenManager {
+var Be$1;
+var Ve$1 = class FullscreenManager {
 	constructor(e, t) {
 		_defineProperty(this, "_device", void 0);
 		_defineProperty(this, "_eventManager", void 0);
@@ -98394,16 +98396,16 @@ var We$1 = class FullscreenManager {
 		e !== this._wasFullscreen && (this._eventManager.emit(ScreenEvents.FULLSCREEN_STATUS_CHANGED), this._eventManager.emit(e ? ScreenEvents.FULLSCREEN_ENTERED : ScreenEvents.FULLSCREEN_EXITED)), this._wasFullscreen = e;
 	}
 };
-We$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [typeof (Ue$1 = k !== void 0 && k) == "function" ? Ue$1 : Object, Object])], We$1);
-var Ge;
-var Ke$1;
-var qe$1 = class ResolutionManager {
+Ve$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [typeof (Be$1 = Ie$1 !== void 0 && Ie$1) == "function" ? Be$1 : Object, Object])], Ve$1);
+var He$1;
+var Ue$1;
+var We$1 = class ResolutionManager {
 	constructor(e, t) {
 		_defineProperty(this, "_resolution", void 0);
 		_defineProperty(this, "_halfResolution", void 0);
 		_defineProperty(this, "_viewportResolution", void 0);
 		_defineProperty(this, "_device", void 0);
-		this._resolution = new RectangleArea(w$1, T), this._halfResolution = new RectangleArea(960, 960), this._device = t, this.initViewPortResolution(e);
+		this._resolution = new RectangleArea(O$1, k), this._halfResolution = new RectangleArea(960, 960), this._device = t, this.initViewPortResolution(e);
 	}
 	updateViewPortResolution(e, t) {
 		this._viewportResolution = {
@@ -98430,10 +98432,10 @@ var qe$1 = class ResolutionManager {
 		return this._device;
 	}
 };
-qe$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [typeof (Ge = RectangleArea !== void 0 && RectangleArea) == "function" ? Ge : Object, typeof (Ke$1 = k !== void 0 && k) == "function" ? Ke$1 : Object])], qe$1);
+We$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [typeof (He$1 = RectangleArea !== void 0 && RectangleArea) == "function" ? He$1 : Object, typeof (Ue$1 = Ie$1 !== void 0 && Ie$1) == "function" ? Ue$1 : Object])], We$1);
 var Spine = class extends Spine$1 {
 	constructor(e) {
-		var _super9 = (..._args11) => (super(..._args11), _defineProperty(this, "type", Be$1.SPINE), _defineProperty(this, "_updateManager", void 0), _defineProperty(this, "_isPlaying", void 0), this);
+		var _super9 = (..._args11) => (super(..._args11), _defineProperty(this, "type", Le$1.SPINE), _defineProperty(this, "_updateManager", void 0), _defineProperty(this, "_isPlaying", void 0), this);
 		_super9({
 			skeletonData: e,
 			autoUpdate: !1
@@ -98458,12 +98460,12 @@ var Spine = class extends Spine$1 {
 		return this._isPlaying;
 	}
 };
-var N$1 = /* @__PURE__ */ function(e) {
+var I$1 = /* @__PURE__ */ function(e) {
 	return e[e.PORTRAIT = 0] = "PORTRAIT", e[e.LANDSCAPE = 1] = "LANDSCAPE", e;
 }({});
-var Je$1;
-var Ye;
-var Xe = class ScreenLayoutManager {
+var Ge;
+var Ke$1;
+var qe$1 = class ScreenLayoutManager {
 	constructor(e, t, n) {
 		_defineProperty(this, "_orientation", void 0);
 		_defineProperty(this, "_app", void 0);
@@ -98482,7 +98484,7 @@ var Xe = class ScreenLayoutManager {
 		return this._screenParams;
 	}
 	resizeGameContainer() {
-		let e = this._orientation === N$1.PORTRAIT, t = this._app.screen.width, n = this._app.screen.height, r = e ? Math.min(t / me, n / T) : Math.min(t / w$1, n / me), i = (t - w$1 * r) * .5, a = (n - T * r) * .5;
+		let e = this._orientation === I$1.PORTRAIT, t = this._app.screen.width, n = this._app.screen.height, r = e ? Math.min(t / ue$1, n / k) : Math.min(t / O$1, n / ue$1), i = (t - O$1 * r) * .5, a = (n - k * r) * .5;
 		this._gameContainer.scale.set(r), this._gameContainer.position.set(i, a), this._screenParams = {
 			width: t,
 			height: n,
@@ -98494,22 +98496,22 @@ var Xe = class ScreenLayoutManager {
 	}
 	onResized() {
 		let e = this._orientation;
-		this._orientation = this._app.screen.height <= this._app.screen.width ? N$1.LANDSCAPE : N$1.PORTRAIT, this.resizeGameContainer(), this._eventManager.emit(ScreenEvents.SCREEN_RESIZED, _objectSpread2({}, this._screenParams)), e !== this._orientation && this.onOrientationChanged();
+		this._orientation = this._app.screen.height <= this._app.screen.width ? I$1.LANDSCAPE : I$1.PORTRAIT, this.resizeGameContainer(), this._eventManager.emit(ScreenEvents.SCREEN_RESIZED, _objectSpread2({}, this._screenParams)), e !== this._orientation && this.onOrientationChanged();
 	}
 	onOrientationChanged() {
-		this._orientation === N$1.PORTRAIT ? this._eventManager.emit(ScreenEvents.PORTRAIT_MODE) : this._eventManager.emit(ScreenEvents.LANDSCAPE_MODE), this._eventManager.emit(ScreenEvents.ORIENTATION_CHANGED, this._orientation);
+		this._orientation === I$1.PORTRAIT ? this._eventManager.emit(ScreenEvents.PORTRAIT_MODE) : this._eventManager.emit(ScreenEvents.LANDSCAPE_MODE), this._eventManager.emit(ScreenEvents.ORIENTATION_CHANGED, this._orientation);
 	}
 	applyIframeBackground() {
 		document.body.style.background = isIframe() ? "" : "black";
 	}
 };
-Xe = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [
-	typeof (Je$1 = import_lib.Application !== void 0 && import_lib.Application) == "function" ? Je$1 : Object,
-	typeof (Ye = import_lib.Container !== void 0 && import_lib.Container) == "function" ? Ye : Object,
+qe$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [
+	typeof (Ge = import_lib.Application !== void 0 && import_lib.Application) == "function" ? Ge : Object,
+	typeof (Ke$1 = import_lib.Container !== void 0 && import_lib.Container) == "function" ? Ke$1 : Object,
 	Object
-])], Xe);
-var Ze;
-var Qe$1 = class VisibilityManager {
+])], qe$1);
+var Je$1;
+var Ye = class VisibilityManager {
 	constructor() {
 		_defineProperty(this, "_eventManager", void 0);
 		_defineProperty(this, "_device", void 0);
@@ -98534,12 +98536,12 @@ var Qe$1 = class VisibilityManager {
 		this._onInvisibleCallback = e;
 	}
 };
-__decorate$1([inject(A.IEventManager), __decorateMetadata("design:type", Object)], Qe$1.prototype, "_eventManager", void 0), __decorate$1([inject(A.Device), __decorateMetadata("design:type", typeof (Ze = k !== void 0 && k) == "function" ? Ze : Object)], Qe$1.prototype, "_device", void 0), Qe$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], Qe$1);
+__decorate$1([inject(N$1.IEventManager), __decorateMetadata("design:type", Object)], Ye.prototype, "_eventManager", void 0), __decorate$1([inject(N$1.Device), __decorateMetadata("design:type", typeof (Je$1 = Ie$1 !== void 0 && Ie$1) == "function" ? Je$1 : Object)], Ye.prototype, "_device", void 0), Ye = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], Ye);
+var Xe;
+var Ze;
+var Qe$1;
 var $e$1;
-var et;
-var tt;
-var nt$1;
-var rt$1 = nt$1 = class Layout {
+var et = $e$1 = class Layout {
 	constructor() {
 		_defineProperty(this, "_device", void 0);
 		_defineProperty(this, "_resources", void 0);
@@ -98556,13 +98558,13 @@ var rt$1 = nt$1 = class Layout {
 		for (let e of r.bones) {
 			let t = n + e.name;
 			if (this._layoutObjects[t]) {
-				E$1.warn(`Bone data for ${t} already exists / has already been added. Ignoring.`);
+				A.warn(`Bone data for ${t} already exists / has already been added. Ignoring.`);
 				continue;
 			}
 			this._layoutPositions[t] = {
 				x: e.x,
 				y: e.y * -1
-			}, this._layoutAbsolutePositions[t] = nt$1.calculateAbsolutePositions(e);
+			}, this._layoutAbsolutePositions[t] = $e$1.calculateAbsolutePositions(e);
 			let r = i.skeleton.findSlot(e.name);
 			if (r) {
 				var _r$getAttachment;
@@ -98600,7 +98602,7 @@ var rt$1 = nt$1 = class Layout {
 			x: this._layoutPositions[e].x,
 			y: this._layoutPositions[e].y
 		} : null;
-		return n || E$1.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
+		return n || A.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
 	}
 	getAbsolutePosition(e, t) {
 		e = this.getViewPrefix(t) + e;
@@ -98608,11 +98610,11 @@ var rt$1 = nt$1 = class Layout {
 			x: this._layoutAbsolutePositions[e].x,
 			y: this._layoutAbsolutePositions[e].y
 		} : null;
-		return n || E$1.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
+		return n || A.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
 	}
 	getAbsoluteTopLeftPosition(e, t) {
 		let n = this.getAbsolutePosition(e, t);
-		return n.x += t === N$1.PORTRAIT ? 540 : 960, n.y += t === N$1.PORTRAIT ? 960 : 540, n;
+		return n.x += t === I$1.PORTRAIT ? 540 : 960, n.y += t === I$1.PORTRAIT ? 960 : 540, n;
 	}
 	getAbsoluteUIPosition(e, t) {
 		e = this.getViewPrefix(t) + e;
@@ -98620,7 +98622,7 @@ var rt$1 = nt$1 = class Layout {
 			x: this._layoutAbsolutePositions[e].x,
 			y: this._layoutAbsolutePositions[e].y
 		} : null;
-		return n || E$1.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), {
+		return n || A.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), {
 			x: n.x + 960,
 			y: n.y + 960
 		};
@@ -98631,7 +98633,7 @@ var rt$1 = nt$1 = class Layout {
 			width: this._layoutRegionObjects[e].width,
 			height: this._layoutRegionObjects[e].height
 		} : null;
-		return n || E$1.error(`NO ATTACHMENT NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
+		return n || A.error(`NO ATTACHMENT NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
 	}
 	getSize(e, t) {
 		e = this.getViewPrefix(t) + e;
@@ -98639,7 +98641,7 @@ var rt$1 = nt$1 = class Layout {
 			width: this._layoutObjects[e].width,
 			height: this._layoutObjects[e].height
 		} : null;
-		return n || E$1.error(`NO OBJECT WITH VALID SIZE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
+		return n || A.error(`NO OBJECT WITH VALID SIZE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
 	}
 	getScale(e, t) {
 		e = this.getViewPrefix(t) + e;
@@ -98647,7 +98649,7 @@ var rt$1 = nt$1 = class Layout {
 			x: this._layoutObjects[e].scale.x,
 			y: this._layoutObjects[e].scale.y
 		} : null;
-		return n || E$1.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
+		return n || A.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
 	}
 	getCenterOfScreen() {
 		return {
@@ -98659,8 +98661,8 @@ var rt$1 = nt$1 = class Layout {
 		return this._isLoaded;
 	}
 	getViewPrefix(e) {
-		if (e === N$1.PORTRAIT) return "portrait_";
-		if (e === N$1.LANDSCAPE) return "landscape_";
+		if (e === I$1.PORTRAIT) return "portrait_";
+		if (e === I$1.LANDSCAPE) return "landscape_";
 	}
 	static calculateAbsolutePositions(e) {
 		let t = {
@@ -98671,7 +98673,7 @@ var rt$1 = nt$1 = class Layout {
 		return t.y *= -1, t;
 	}
 };
-__decorate$1([inject(A.Device), __decorateMetadata("design:type", typeof ($e$1 = k !== void 0 && k) == "function" ? $e$1 : Object)], rt$1.prototype, "_device", void 0), __decorate$1([inject(j.AssetsManager), __decorateMetadata("design:type", Object)], rt$1.prototype, "_resources", void 0), __decorate$1([inject(A.FullscreenManager), __decorateMetadata("design:type", typeof (et = We$1 !== void 0 && We$1) == "function" ? et : Object)], rt$1.prototype, "_fullscreenManager", void 0), __decorate$1([inject(A.ResolutionManager), __decorateMetadata("design:type", typeof (tt = qe$1 !== void 0 && qe$1) == "function" ? tt : Object)], rt$1.prototype, "_resolutionManager", void 0), rt$1 = nt$1 = __decorate$1([injectable()], rt$1);
+__decorate$1([inject(N$1.Device), __decorateMetadata("design:type", typeof (Xe = Ie$1 !== void 0 && Ie$1) == "function" ? Xe : Object)], et.prototype, "_device", void 0), __decorate$1([inject(P$2.AssetsManager), __decorateMetadata("design:type", Object)], et.prototype, "_resources", void 0), __decorate$1([inject(N$1.FullscreenManager), __decorateMetadata("design:type", typeof (Ze = Ve$1 !== void 0 && Ve$1) == "function" ? Ze : Object)], et.prototype, "_fullscreenManager", void 0), __decorate$1([inject(N$1.ResolutionManager), __decorateMetadata("design:type", typeof (Qe$1 = We$1 !== void 0 && We$1) == "function" ? Qe$1 : Object)], et.prototype, "_resolutionManager", void 0), et = $e$1 = __decorate$1([injectable()], et);
 var ModuleState = class {
 	constructor(e, t) {
 		_defineProperty(this, "_events", {});
@@ -98725,17 +98727,17 @@ var QueueEventsHandler = class {
 		this._eventManager = e;
 	}
 	printData() {
-		E$1.log("_eventsQueue:");
-		for (let e in this._eventsQueue) E$1.log(`${e}`);
-		E$1.log("_eventsFunctionsQueue:");
-		for (let e in this._eventsFunctionsQueue) E$1.log(`${e}`);
-		E$1.log("_eventsListBeforeCallback:");
+		A.log("_eventsQueue:");
+		for (let e in this._eventsQueue) A.log(`${e}`);
+		A.log("_eventsFunctionsQueue:");
+		for (let e in this._eventsFunctionsQueue) A.log(`${e}`);
+		A.log("_eventsListBeforeCallback:");
 		for (let e of this._eventsListBeforeCallback) {
-			E$1.log("waitingForEvents:");
-			for (let t of e.waitingForEvents) E$1.log(`${t}`);
+			A.log("waitingForEvents:");
+			for (let t of e.waitingForEvents) A.log(`${t}`);
 		}
-		E$1.log("_eventsFlowPairs:");
-		for (let e of this._eventsFlowPairs) E$1.log(`start: ${e.start} end: ${e.end}`);
+		A.log("_eventsFlowPairs:");
+		for (let e of this._eventsFlowPairs) A.log(`start: ${e.start} end: ${e.end}`);
 	}
 	getEventPromise(e) {
 		return new Promise((t) => {
@@ -98792,7 +98794,7 @@ var QueueEventsHandler = class {
 var GlobalModuleState = class extends ModuleState {
 	constructor(e, t, n) {
 		var _super10 = (..._args12) => (super(..._args12), _defineProperty(this, "_queueEvents", void 0), _defineProperty(this, "_gameController", void 0), this);
-		_super10(e, t), n && (this._queueEvents = new QueueEventsHandler(n)), this._gameController = e.diContainer.get(j.GameController), this.setupQueueEvents();
+		_super10(e, t), n && (this._queueEvents = new QueueEventsHandler(n)), this._gameController = e.diContainer.get(P$2.GameController), this.setupQueueEvents();
 	}
 	setupQueueEvents() {}
 	on(e, t) {
@@ -98814,7 +98816,7 @@ var StatedDebug = class {
 		this._states[e] = t;
 	}
 	drawModulesMap() {
-		for (let e in this._states) this._states.hasOwnProperty(e) && E$1.log(`${e} - ${this._states[e]}`);
+		for (let e in this._states) this._states.hasOwnProperty(e) && A.log(`${e} - ${this._states[e]}`);
 	}
 	keyboardInput(e) {
 		e.code === "ArrowLeft" && this.drawModulesMap();
@@ -98929,10 +98931,10 @@ var UpdateManager = class extends Updatable {
 		this._timeScale = e;
 	}
 };
-var it$1;
-var at$1;
-var ot$1;
-var P$2 = (_Module = class Module {
+var tt;
+var nt$1;
+var rt$1;
+var L = (_Module = class Module {
 	constructor() {
 		_defineProperty(this, "_eventManager", void 0);
 		_defineProperty(this, "_updateManager", void 0);
@@ -98955,7 +98957,7 @@ var P$2 = (_Module = class Module {
 	gotoPreviousState() {
 		if (this._previousStateName && this._previousStateName.length > 0) {
 			let e = this._currentState ? this._currentState.name : "";
-			this._currentState && this._currentState.onLeaveState(), this._currentState = this._states[this._previousStateName], this._previousStateName = e, ot$1._debugInfo.setModuleState(this.constructor.name, this._currentState.name), E$1.log(`${this.constructor.name}: ${e} -> ${this.currentState.name}`);
+			this._currentState && this._currentState.onLeaveState(), this._currentState = this._states[this._previousStateName], this._previousStateName = e, rt$1._debugInfo.setModuleState(this.constructor.name, this._currentState.name), A.log(`${this.constructor.name}: ${e} -> ${this.currentState.name}`);
 		} else throw Error("Module::gotoPreviousState previous state does not exist");
 	}
 	hasConfigValue(e) {
@@ -98983,7 +98985,7 @@ var P$2 = (_Module = class Module {
 	}
 	changeStateTo(e) {
 		let t = this._currentState ? this._currentState.name : "";
-		this._previousStateName = t, this._currentState && this._currentState.onLeaveState(), this._currentState = this._states[e], this._currentState.onEnterState(), ot$1._debugInfo.setModuleState(this.constructor.name, this._currentState.name), E$1.log(`${this.constructor.name}: ${t} -> ${this.currentState.name}`);
+		this._previousStateName = t, this._currentState && this._currentState.onLeaveState(), this._currentState = this._states[e], this._currentState.onEnterState(), rt$1._debugInfo.setModuleState(this.constructor.name, this._currentState.name), A.log(`${this.constructor.name}: ${t} -> ${this.currentState.name}`);
 	}
 	setupEvents() {
 		this._view && (this.eventManager.on(ScreenEvents.LANDSCAPE_MODE, this._view.onLandscape.bind(this.view), this), this.eventManager.on(ScreenEvents.PORTRAIT_MODE, this._view.onPortrait.bind(this.view), this), this.eventManager.on(ScreenEvents.SCREEN_RESIZED, this._view.onResized.bind(this.view), this), this.eventManager.on(ScreenEvents.FULLSCREEN_ENTERED, this._view.onFullscreenEntered.bind(this.view), this), this.eventManager.on(ScreenEvents.FULLSCREEN_EXITED, this._view.onFullscreenExited.bind(this.view), this));
@@ -99038,9 +99040,9 @@ var P$2 = (_Module = class Module {
 	get diContainer() {
 		return this._game.diContainer;
 	}
-}, ot$1 = _Module, _defineProperty(_Module, "_debugInfo", new StatedDebug()), _Module);
-__decorate$1([inject(A.IEventManager), __decorateMetadata("design:type", Object)], P$2.prototype, "_eventManager", void 0), __decorate$1([inject(A.UpdateManager), __decorateMetadata("design:type", typeof (it$1 = UpdateManager !== void 0 && UpdateManager) == "function" ? it$1 : Object)], P$2.prototype, "_updateManager", void 0), __decorate$1([inject(A.Game), __decorateMetadata("design:type", Object)], P$2.prototype, "_game", void 0), __decorate$1([inject(j.GameData), __decorateMetadata("design:type", Object)], P$2.prototype, "_gameData", void 0), __decorate$1([inject(j.GameConfig), __decorateMetadata("design:type", typeof (at$1 = GameConfig !== void 0 && GameConfig) == "function" ? at$1 : Object)], P$2.prototype, "_gameConfig", void 0), P$2 = ot$1 = __decorate$1([injectable()], P$2);
-var st$1 = class GlobalStateModule extends P$2 {
+}, rt$1 = _Module, _defineProperty(_Module, "_debugInfo", new StatedDebug()), _Module);
+__decorate$1([inject(N$1.IEventManager), __decorateMetadata("design:type", Object)], L.prototype, "_eventManager", void 0), __decorate$1([inject(N$1.UpdateManager), __decorateMetadata("design:type", typeof (tt = UpdateManager !== void 0 && UpdateManager) == "function" ? tt : Object)], L.prototype, "_updateManager", void 0), __decorate$1([inject(N$1.Game), __decorateMetadata("design:type", Object)], L.prototype, "_game", void 0), __decorate$1([inject(P$2.GameData), __decorateMetadata("design:type", Object)], L.prototype, "_gameData", void 0), __decorate$1([inject(P$2.GameConfig), __decorateMetadata("design:type", typeof (nt$1 = GameConfig !== void 0 && GameConfig) == "function" ? nt$1 : Object)], L.prototype, "_gameConfig", void 0), L = rt$1 = __decorate$1([injectable()], L);
+var it$1 = class GlobalStateModule extends L {
 	onStateHandle(e) {
 		this.onCurrentStateHandle(e);
 	}
@@ -99048,19 +99050,19 @@ var st$1 = class GlobalStateModule extends P$2 {
 		return this._gameData;
 	}
 };
-st$1 = __decorate$1([injectFromBase()], st$1);
+it$1 = __decorate$1([injectFromBase()], it$1);
 var GlobalStateEvents = (_Class4 = class {}, _defineProperty(_Class4, "CAN_SPIN", "GlobalStateEvents::CAN_SPIN"), _Class4);
-var ct$1 = Array.isArray;
-var lt$1 = Array.prototype.indexOf;
-var ut$1 = Array.prototype.includes;
-var dt$1 = Array.from;
-var ft$1 = Object.defineProperty;
-var pt$1 = Object.getOwnPropertyDescriptor;
-var mt$1 = Object.getOwnPropertyDescriptors;
-var ht$1 = Object.prototype;
-var gt$1 = Array.prototype;
-var _t = Object.getPrototypeOf;
-var vt$1 = Object.isExtensible;
+var at$1 = Array.isArray;
+var ot$1 = Array.prototype.indexOf;
+var st$1 = Array.prototype.includes;
+var ct$1 = Array.from;
+var lt$1 = Object.defineProperty;
+var ut$1 = Object.getOwnPropertyDescriptor;
+var dt$1 = Object.getOwnPropertyDescriptors;
+var ft$1 = Object.prototype;
+var pt$1 = Array.prototype;
+var mt$1 = Object.getPrototypeOf;
+var ht$1 = Object.isExtensible;
 var noop = () => {};
 function run_all(e) {
 	for (var t = 0; t < e.length; t++) e[t]();
@@ -99076,36 +99078,36 @@ function deferred() {
 		reject: t
 	};
 }
-var yt$1 = 1024;
-var bt$1 = 2048;
-var xt = 4096;
-var St$1 = 8192;
-var Ct$1 = 16384;
-var wt$1 = 32768;
-var Tt = 1 << 25;
-var Et = 65536;
-var Dt = 1 << 19;
-var Ot = 1 << 20;
-var kt = 1 << 25;
-var At$1 = 65536;
-var jt = 1 << 21;
-var Mt$1 = 1 << 22;
-var Nt = 1 << 23;
-var Pt$1 = Symbol("$state");
-var Ft = Symbol("");
-var It$1 = Symbol("attributes");
-var Lt = Symbol("class");
-var Rt = Symbol("style");
-var zt = Symbol("text");
-var Bt = Symbol("form reset");
-var Vt = new class StaleReactionError extends Error {
+var gt$1 = 1024;
+var _t = 2048;
+var vt$1 = 4096;
+var yt$1 = 8192;
+var bt$1 = 16384;
+var xt = 32768;
+var St$1 = 1 << 25;
+var Ct$1 = 65536;
+var wt$1 = 1 << 19;
+var Tt = 1 << 20;
+var Et = 1 << 25;
+var Dt = 65536;
+var Ot = 1 << 21;
+var kt = 1 << 22;
+var At$1 = 1 << 23;
+var jt = Symbol("$state");
+var Mt$1 = Symbol("");
+var Nt = Symbol("attributes");
+var Pt$1 = Symbol("class");
+var Ft = Symbol("style");
+var It$1 = Symbol("text");
+var Lt = Symbol("form reset");
+var Rt = new class StaleReactionError extends Error {
 	constructor(..._args15) {
 		super(..._args15);
 		_defineProperty(this, "name", "StaleReactionError");
 		_defineProperty(this, "message", "The reaction that called `getAbortSignal()` was re-run or destroyed");
 	}
 }();
-var Ht = !!((_globalThis$document = globalThis.document) === null || _globalThis$document === void 0 ? void 0 : _globalThis$document.contentType) && /* @__PURE__ */ globalThis.document.contentType.includes("xml");
+var zt = !!((_globalThis$document = globalThis.document) === null || _globalThis$document === void 0 ? void 0 : _globalThis$document.contentType) && /* @__PURE__ */ globalThis.document.contentType.includes("xml");
 function lifecycle_outside_component(e) {
 	throw Error("https://svelte.dev/e/lifecycle_outside_component");
 }
@@ -99139,10 +99141,10 @@ function state_unsafe_mutation() {
 function svelte_boundary_reset_onerror() {
 	throw Error("https://svelte.dev/e/svelte_boundary_reset_onerror");
 }
-var Ut = {};
-var F = Symbol();
-var Wt = "http://www.w3.org/1999/xhtml";
-var Gt = "http://www.w3.org/2000/svg";
+var Bt = {};
+var R = Symbol();
+var Vt = "http://www.w3.org/1999/xhtml";
+var Ht = "http://www.w3.org/2000/svg";
 function derived_inert() {
 	console.warn("https://svelte.dev/e/derived_inert");
 }
@@ -99152,32 +99154,32 @@ function hydration_mismatch(e) {
 function svelte_boundary_reset_noop() {
 	console.warn("https://svelte.dev/e/svelte_boundary_reset_noop");
 }
-var I$1 = !1;
+var z = !1;
 function set_hydrating(e) {
-	I$1 = e;
+	z = e;
 }
-var L;
+var B;
 function set_hydrate_node(e) {
-	if (e === null) throw hydration_mismatch(), Ut;
-	return L = e;
+	if (e === null) throw hydration_mismatch(), Bt;
+	return B = e;
 }
 function hydrate_next() {
-	return set_hydrate_node(/* @__PURE__ */ get_next_sibling(L));
+	return set_hydrate_node(/* @__PURE__ */ get_next_sibling(B));
 }
 function reset(e) {
-	if (I$1) {
-		if (/* @__PURE__ */ get_next_sibling(L) !== null) throw hydration_mismatch(), Ut;
-		L = e;
+	if (z) {
+		if (/* @__PURE__ */ get_next_sibling(B) !== null) throw hydration_mismatch(), Bt;
+		B = e;
 	}
 }
 function next(e = 1) {
-	if (I$1) {
-		for (var t = e, n = L; t--;) n = /* @__PURE__ */ get_next_sibling(n);
-		L = n;
+	if (z) {
+		for (var t = e, n = B; t--;) n = /* @__PURE__ */ get_next_sibling(n);
+		B = n;
 	}
 }
 function skip_nodes(e = !0) {
-	for (var t = 0, n = L;;) {
+	for (var t = 0, n = B;;) {
 		if (n.nodeType === 8) {
 			var r = n.data;
 			if (r === "]") {
@@ -99190,7 +99192,7 @@ function skip_nodes(e = !0) {
 	}
 }
 function read_hydration_instruction(e) {
-	if (!e || e.nodeType !== 8) throw hydration_mismatch(), Ut;
+	if (!e || e.nodeType !== 8) throw hydration_mismatch(), Bt;
 	return e.data;
 }
 function equals(e) {
@@ -99202,22 +99204,22 @@ function safe_not_equal(e, t) {
 function safe_equals(e) {
 	return !safe_not_equal(e, this.v);
 }
-var Kt = !1;
-var qt = !1;
-var R = null;
+var Ut = !1;
+var Wt = !1;
+var V$1 = null;
 function set_component_context(e) {
-	R = e;
+	V$1 = e;
 }
 function push(e, t = !1, n) {
-	R = {
-		p: R,
+	V$1 = {
+		p: V$1,
 		i: !1,
 		c: null,
 		e: null,
 		s: e,
 		x: null,
-		r: H$1,
-		l: qt && !t ? {
+		r: G,
+		l: Wt && !t ? {
 			s: null,
 			u: null,
 			$: []
@@ -99225,37 +99227,37 @@ function push(e, t = !1, n) {
 	};
 }
 function pop(e) {
-	var t = R;
+	var t = V$1;
 	var n = t.e;
 	if (n !== null) {
 		t.e = null;
 		for (var r of n) create_user_effect(r);
 	}
-	return e !== void 0 && (t.x = e), t.i = !0, R = t.p, e !== null && e !== void 0 ? e : {};
+	return e !== void 0 && (t.x = e), t.i = !0, V$1 = t.p, e !== null && e !== void 0 ? e : {};
 }
 function is_runes() {
-	return !qt || R !== null && R.l === null;
+	return !Wt || V$1 !== null && V$1.l === null;
 }
-var Jt = [];
+var Gt = [];
 function run_micro_tasks() {
-	var e = Jt;
-	Jt = [], run_all(e);
+	var e = Gt;
+	Gt = [], run_all(e);
 }
 function queue_micro_task(e) {
-	if (Jt.length === 0 && !tn) {
-		var t = Jt;
+	if (Gt.length === 0 && !Qt) {
+		var t = Gt;
 		queueMicrotask(() => {
-			t === Jt && run_micro_tasks();
+			t === Gt && run_micro_tasks();
 		});
 	}
-	Jt.push(e);
+	Gt.push(e);
 }
 function flush_tasks() {
-	for (; Jt.length > 0;) run_micro_tasks();
+	for (; Gt.length > 0;) run_micro_tasks();
 }
 function handle_error(e) {
-	var t = H$1;
-	if (t === null) return V$1.f |= Nt, e;
+	var t = G;
+	if (t === null) return W.f |= At$1, e;
 	if (!(t.f & 32768) && !(t.f & 4)) throw e;
 	invoke_error_boundary(e, t);
 }
@@ -99274,36 +99276,36 @@ function invoke_error_boundary(e, t) {
 	}
 	throw e;
 }
-var Yt = ~(bt$1 | xt | yt$1);
+var Kt = ~(_t | vt$1 | gt$1);
 function set_signal_status(e, t) {
-	e.f = e.f & Yt | t;
+	e.f = e.f & Kt | t;
 }
 function update_derived_status(e) {
-	e.f & 512 || e.deps === null ? set_signal_status(e, yt$1) : set_signal_status(e, xt);
+	e.f & 512 || e.deps === null ? set_signal_status(e, gt$1) : set_signal_status(e, vt$1);
 }
 function clear_marked(e) {
-	if (e !== null) for (let t of e) !(t.f & 2) || !(t.f & 65536) || (t.f ^= At$1, clear_marked(t.deps));
+	if (e !== null) for (let t of e) !(t.f & 2) || !(t.f & 65536) || (t.f ^= Dt, clear_marked(t.deps));
 }
 function defer_effect(e, t, n) {
-	e.f & 2048 ? t.add(e) : e.f & 4096 && n.add(e), clear_marked(e.deps), set_signal_status(e, yt$1);
+	e.f & 2048 ? t.add(e) : e.f & 4096 && n.add(e), clear_marked(e.deps), set_signal_status(e, gt$1);
 }
-var Xt = !1;
+var qt = !1;
+var Jt = null;
+var Yt = null;
+var H$1 = null;
+var Xt = null;
+var U = null;
 var Zt = null;
-var Qt = null;
-var z = null;
-var $t = null;
-var B = null;
+var Qt = !1;
+var $t = !1;
 var en = null;
-var tn = !1;
-var nn = !1;
-var rn = null;
-var an = null;
-var on = 0;
-var sn = 1;
-var cn = (_e2 = /* @__PURE__ */ new WeakMap(), _t2 = /* @__PURE__ */ new WeakMap(), _n2 = /* @__PURE__ */ new WeakMap(), _r2 = /* @__PURE__ */ new WeakMap(), _i2 = /* @__PURE__ */ new WeakMap(), _a2 = /* @__PURE__ */ new WeakMap(), _o = /* @__PURE__ */ new WeakMap(), _s = /* @__PURE__ */ new WeakMap(), _c = /* @__PURE__ */ new WeakMap(), _l = /* @__PURE__ */ new WeakMap(), _u = /* @__PURE__ */ new WeakMap(), _d = /* @__PURE__ */ new WeakMap(), _f = /* @__PURE__ */ new WeakMap(), _p = /* @__PURE__ */ new WeakMap(), _m = /* @__PURE__ */ new WeakMap(), _h = /* @__PURE__ */ new WeakMap(), _Batch_brand = /* @__PURE__ */ new WeakSet(), _Batch = class Batch {
+var tn = null;
+var nn = 0;
+var rn = 1;
+var an = (_e2 = /* @__PURE__ */ new WeakMap(), _t2 = /* @__PURE__ */ new WeakMap(), _n2 = /* @__PURE__ */ new WeakMap(), _r2 = /* @__PURE__ */ new WeakMap(), _i2 = /* @__PURE__ */ new WeakMap(), _a2 = /* @__PURE__ */ new WeakMap(), _o2 = /* @__PURE__ */ new WeakMap(), _s = /* @__PURE__ */ new WeakMap(), _c = /* @__PURE__ */ new WeakMap(), _l = /* @__PURE__ */ new WeakMap(), _u = /* @__PURE__ */ new WeakMap(), _d = /* @__PURE__ */ new WeakMap(), _f = /* @__PURE__ */ new WeakMap(), _p = /* @__PURE__ */ new WeakMap(), _m = /* @__PURE__ */ new WeakMap(), _h = /* @__PURE__ */ new WeakMap(), _Batch_brand = /* @__PURE__ */ new WeakSet(), _Batch = class Batch {
 	constructor() {
 		_classPrivateMethodInitSpec(this, _Batch_brand);
-		_defineProperty(this, "id", sn++);
+		_defineProperty(this, "id", rn++);
 		_classPrivateFieldInitSpec(this, _e2, !1);
 		_defineProperty(this, "linked", !0);
 		_classPrivateFieldInitSpec(this, _t2, null);
@@ -99315,7 +99317,7 @@ var cn = (_e2 = /* @__PURE__ */ new WeakMap(), _t2 = /* @__PURE__ */ new WeakMap
 		_classPrivateFieldInitSpec(this, _r2, /* @__PURE__ */ new Set());
 		_classPrivateFieldInitSpec(this, _i2, /* @__PURE__ */ new Set());
 		_classPrivateFieldInitSpec(this, _a2, /* @__PURE__ */ new Set());
-		_classPrivateFieldInitSpec(this, _o, 0);
+		_classPrivateFieldInitSpec(this, _o2, 0);
 		_classPrivateFieldInitSpec(this, _s, /* @__PURE__ */ new Map());
 		_classPrivateFieldInitSpec(this, _c, null);
 		_classPrivateFieldInitSpec(this, _l, []);
@@ -99337,25 +99339,25 @@ var cn = (_e2 = /* @__PURE__ */ new WeakMap(), _t2 = /* @__PURE__ */ new WeakMap
 		var n = _classPrivateFieldGet2(_p, this).get(e);
 		if (n) {
 			_classPrivateFieldGet2(_p, this).delete(e);
-			for (var r of n.d) set_signal_status(r, bt$1), t(r);
-			for (r of n.m) set_signal_status(r, xt), t(r);
+			for (var r of n.d) set_signal_status(r, _t), t(r);
+			for (r of n.m) set_signal_status(r, vt$1), t(r);
 		}
 		_classPrivateFieldGet2(_m, this).add(e);
 	}
 	capture(e, t, n = !1) {
-		e.v !== F && !this.previous.has(e) && this.previous.set(e, e.v), e.f & 8388608 || (this.current.set(e, [t, n]), B === null || B === void 0 || B.set(e, t)), this.is_fork || (e.v = t);
+		e.v !== R && !this.previous.has(e) && this.previous.set(e, e.v), e.f & 8388608 || (this.current.set(e, [t, n]), U === null || U === void 0 || U.set(e, t)), this.is_fork || (e.v = t);
 	}
 	activate() {
-		z = this;
+		H$1 = this;
 	}
 	deactivate() {
-		z = null, B = null;
+		H$1 = null, U = null;
 	}
 	flush() {
 		try {
-			nn = !0, z = this, _assertClassBrand(_Batch_brand, this, _2).call(this);
+			$t = !0, H$1 = this, _assertClassBrand(_Batch_brand, this, _2).call(this);
 		} finally {
-			on = 0, en = null, rn = null, an = null, nn = !1, z = null, B = null, mn.clear();
+			nn = 0, Zt = null, en = null, tn = null, $t = !1, H$1 = null, U = null, un.clear();
 		}
 	}
 	discard() {
@@ -99366,7 +99368,7 @@ var cn = (_e2 = /* @__PURE__ */ new WeakMap(), _t2 = /* @__PURE__ */ new WeakMap
 		_classPrivateFieldGet2(_u, this).push(e);
 	}
 	increment(e, t) {
-		if (_classPrivateFieldSet2(_o, this, _classPrivateFieldGet2(_o, this) + 1), e) {
+		if (_classPrivateFieldSet2(_o2, this, _classPrivateFieldGet2(_o2, this) + 1), e) {
 			var _this$s$get;
 			let e = (_this$s$get = _classPrivateFieldGet2(_s, this).get(t)) !== null && _this$s$get !== void 0 ? _this$s$get : 0;
 			_classPrivateFieldGet2(_s, this).set(t, e + 1);
@@ -99374,7 +99376,7 @@ var cn = (_e2 = /* @__PURE__ */ new WeakMap(), _t2 = /* @__PURE__ */ new WeakMap
 	}
 	decrement(e, t) {
 		var _this$o;
-		if (_classPrivateFieldSet2(_o, this, (_this$o = _classPrivateFieldGet2(_o, this), --_this$o)), e) {
+		if (_classPrivateFieldSet2(_o2, this, (_this$o = _classPrivateFieldGet2(_o2, this), --_this$o)), e) {
 			var _this$s$get2;
 			let e = (_this$s$get2 = _classPrivateFieldGet2(_s, this).get(t)) !== null && _this$s$get2 !== void 0 ? _this$s$get2 : 0;
 			e === 1 ? _classPrivateFieldGet2(_s, this).delete(t) : _classPrivateFieldGet2(_s, this).set(t, e - 1);
@@ -99406,22 +99408,22 @@ var cn = (_e2 = /* @__PURE__ */ new WeakMap(), _t2 = /* @__PURE__ */ new WeakMap
 		return ((_classPrivateFieldGet3 = _classPrivateFieldGet2(_c, this)) !== null && _classPrivateFieldGet3 !== void 0 ? _classPrivateFieldGet3 : _classPrivateFieldSet2(_c, this, deferred())).promise;
 	}
 	static ensure() {
-		if (z === null) {
-			let e = z = new Batch();
-			_assertClassBrand(_Batch_brand, e, _C$1).call(e), !nn && !tn && queue_micro_task(() => {
+		if (H$1 === null) {
+			let e = H$1 = new Batch();
+			_assertClassBrand(_Batch_brand, e, _C$1).call(e), !$t && !Qt && queue_micro_task(() => {
 				_classPrivateFieldGet2(_e2, e) || e.flush();
 			});
 		}
-		return z;
+		return H$1;
 	}
 	apply() {
-		if (!Kt || !this.is_fork && _classPrivateFieldGet2(_t2, this) === null && _classPrivateFieldGet2(_n2, this) === null) {
-			B = null;
+		if (!Ut || !this.is_fork && _classPrivateFieldGet2(_t2, this) === null && _classPrivateFieldGet2(_n2, this) === null) {
+			U = null;
 			return;
 		}
-		B = /* @__PURE__ */ new Map();
-		for (let [e, [t]] of this.current) B.set(e, t);
-		for (let t = Zt; t !== null; t = _classPrivateFieldGet2(_n2, t)) if (!(t === this || t.is_fork)) {
+		U = /* @__PURE__ */ new Map();
+		for (let [e, [t]] of this.current) U.set(e, t);
+		for (let t = Jt; t !== null; t = _classPrivateFieldGet2(_n2, t)) if (!(t === this || t.is_fork)) {
 			var e = !1;
 			if (t.id < this.id) {
 				for (let [n, [, r]] of t.current) if (!r && this.current.has(n)) {
@@ -99429,22 +99431,22 @@ var cn = (_e2 = /* @__PURE__ */ new WeakMap(), _t2 = /* @__PURE__ */ new WeakMap
 					break;
 				}
 			}
-			if (!e) for (let [e, n] of t.previous) B.has(e) || B.set(e, n);
+			if (!e) for (let [e, n] of t.previous) U.has(e) || U.set(e, n);
 		}
 	}
 	schedule(e) {
 		var _e$b;
-		if (en = e, ((_e$b = e.b) === null || _e$b === void 0 ? void 0 : _e$b.is_pending) && e.f & 16777228 && !(e.f & 32768)) {
+		if (Zt = e, ((_e$b = e.b) === null || _e$b === void 0 ? void 0 : _e$b.is_pending) && e.f & 16777228 && !(e.f & 32768)) {
 			e.b.defer_effect(e);
 			return;
 		}
 		for (var t = e; t.parent !== null;) {
 			t = t.parent;
 			var n = t.f;
-			if (rn !== null && t === H$1 && (Kt || (V$1 === null || !(V$1.f & 2)) && !Xt)) return;
+			if (en !== null && t === G && (Ut || (W === null || !(W.f & 2)) && !qt)) return;
 			if (n & 96) {
 				if (!(n & 1024)) return;
-				t.f ^= yt$1;
+				t.f ^= gt$1;
 			}
 		}
 		_classPrivateFieldGet2(_l, this).push(t);
@@ -99466,28 +99468,28 @@ function _g() {
 }
 function _2() {
 	var _classPrivateFieldGet2$2;
-	if (_classPrivateFieldSet2(_e2, this, !0), on++ > 1e3 && (_assertClassBrand(_Batch_brand, this, _w$1).call(this), infinite_loop_guard()), !_assertClassBrand(_Batch_brand, this, _g).call(this)) {
-		for (let e of _classPrivateFieldGet2(_d, this)) _classPrivateFieldGet2(_f, this).delete(e), set_signal_status(e, bt$1), this.schedule(e);
-		for (let e of _classPrivateFieldGet2(_f, this)) set_signal_status(e, xt), this.schedule(e);
+	if (_classPrivateFieldSet2(_e2, this, !0), nn++ > 1e3 && (_assertClassBrand(_Batch_brand, this, _w$1).call(this), infinite_loop_guard()), !_assertClassBrand(_Batch_brand, this, _g).call(this)) {
+		for (let e of _classPrivateFieldGet2(_d, this)) _classPrivateFieldGet2(_f, this).delete(e), set_signal_status(e, _t), this.schedule(e);
+		for (let e of _classPrivateFieldGet2(_f, this)) set_signal_status(e, vt$1), this.schedule(e);
 	}
 	let e = _classPrivateFieldGet2(_l, this);
 	_classPrivateFieldSet2(_l, this, []), this.apply();
-	var t = rn = [];
+	var t = en = [];
 	var n = [];
-	var r = an = [];
+	var r = tn = [];
 	for (let r of e) try {
 		_assertClassBrand(_Batch_brand, this, _v).call(this, r, t, n);
 	} catch (e) {
 		throw reset_all(r), e;
 	}
-	if (z = null, r.length > 0) {
+	if (H$1 = null, r.length > 0) {
 		var i = _Batch.ensure();
 		for (let e of r) i.schedule(e);
 	}
-	if (rn = null, an = null, _assertClassBrand(_Batch_brand, this, _g).call(this)) {
+	if (en = null, tn = null, _assertClassBrand(_Batch_brand, this, _g).call(this)) {
 		_assertClassBrand(_Batch_brand, this, _x).call(this, n), _assertClassBrand(_Batch_brand, this, _x).call(this, t);
 		for (let [e, t] of _classPrivateFieldGet2(_p, this)) reset_branch(e, t);
-		r.length > 0 && _assertClassBrand(_Batch_brand, z, _2).call(z);
+		r.length > 0 && _assertClassBrand(_Batch_brand, H$1, _2).call(H$1);
 		return;
 	}
 	let a = _assertClassBrand(_Batch_brand, this, _y).call(this);
@@ -99497,9 +99499,9 @@ function _2() {
 	}
 	_classPrivateFieldGet2(_d, this).clear(), _classPrivateFieldGet2(_f, this).clear();
 	for (let e of _classPrivateFieldGet2(_r2, this)) e(this);
-	_classPrivateFieldGet2(_r2, this).clear(), $t = this, flush_queued_effects(n), flush_queued_effects(t), $t = null, (_classPrivateFieldGet2$2 = _classPrivateFieldGet2(_c, this)) === null || _classPrivateFieldGet2$2 === void 0 || _classPrivateFieldGet2$2.resolve();
-	var o = z;
-	if (this.linked && _classPrivateFieldGet2(_o, this) === 0 && _assertClassBrand(_Batch_brand, this, _w$1).call(this), Kt && !this.linked && (_assertClassBrand(_Batch_brand, this, _S$1).call(this), z = o), _classPrivateFieldGet2(_l, this).length > 0) {
+	_classPrivateFieldGet2(_r2, this).clear(), Xt = this, flush_queued_effects(n), flush_queued_effects(t), Xt = null, (_classPrivateFieldGet2$2 = _classPrivateFieldGet2(_c, this)) === null || _classPrivateFieldGet2$2 === void 0 || _classPrivateFieldGet2$2.resolve();
+	var o = H$1;
+	if (this.linked && _classPrivateFieldGet2(_o2, this) === 0 && _assertClassBrand(_Batch_brand, this, _w$1).call(this), Ut && !this.linked && (_assertClassBrand(_Batch_brand, this, _S$1).call(this), H$1 = o), _classPrivateFieldGet2(_l, this).length > 0) {
 		o === null && (o = this, _assertClassBrand(_Batch_brand, this, _C$1).call(this));
 		let e = o;
 		_classPrivateFieldGet2(_l, e).push(..._classPrivateFieldGet2(_l, this).filter((t) => !_classPrivateFieldGet2(_l, e).includes(t)));
@@ -99507,12 +99509,12 @@ function _2() {
 	o !== null && _assertClassBrand(_Batch_brand, o, _2).call(o);
 }
 function _v(e, t, n) {
-	e.f ^= yt$1;
+	e.f ^= gt$1;
 	for (var r = e.first; r !== null;) {
 		var i = r.f;
 		var a = (i & 96) != 0;
 		if (!(a && i & 1024 || i & 8192 || _classPrivateFieldGet2(_p, this).has(r)) && r.fn !== null) {
-			a ? r.f ^= yt$1 : i & 4 ? t.push(r) : Kt && i & 16777224 ? n.push(r) : is_dirty(r) && (i & 16 && _classPrivateFieldGet2(_f, this).add(r), update_effect(r));
+			a ? r.f ^= gt$1 : i & 4 ? t.push(r) : Ut && i & 16777224 ? n.push(r) : is_dirty(r) && (i & 16 && _classPrivateFieldGet2(_f, this).add(r), update_effect(r));
 			var o = r.first;
 			if (o !== null) {
 				r = o;
@@ -99551,12 +99553,12 @@ function _b$1(e) {
 			if (n & 2) mark(e);
 			else {
 				var r = e;
-				n & 4194320 && !this.async_deriveds.has(r) && (_classPrivateFieldGet2(_f, this).delete(r), set_signal_status(r, bt$1), this.schedule(r));
+				n & 4194320 && !this.async_deriveds.has(r) && (_classPrivateFieldGet2(_f, this).delete(r), set_signal_status(r, _t), this.schedule(r));
 			}
 		}
 	};
 	for (let e of this.current.keys()) mark(e);
-	this.oncommit(() => e.discard()), _assertClassBrand(_Batch_brand, e, _w$1).call(e), z = this, _assertClassBrand(_Batch_brand, this, _2).call(this);
+	this.oncommit(() => e.discard()), _assertClassBrand(_Batch_brand, e, _w$1).call(e), H$1 = this, _assertClassBrand(_Batch_brand, this, _2).call(this);
 }
 __name$1(_b$1, "_b");
 function _x(e) {
@@ -99564,7 +99566,7 @@ function _x(e) {
 }
 function _S$1() {
 	_assertClassBrand(_Batch_brand, this, _w$1).call(this);
-	for (let l = Zt; l !== null; l = _classPrivateFieldGet2(_n2, l)) {
+	for (let l = Jt; l !== null; l = _classPrivateFieldGet2(_n2, l)) {
 		var e = l.id < this.id;
 		var t = [];
 		for (let [r, [i, a]] of this.current) {
@@ -99592,7 +99594,7 @@ function _S$1() {
 				for (var o of t) mark_effects(o, r, i, a);
 				a = /* @__PURE__ */ new Map();
 				var s = [...l.current.keys()].filter((e) => this.current.has(e) ? this.current.get(e)[0] !== e.v : !0);
-				if (s.length > 0) for (let e of _classPrivateFieldGet2(_u, this)) !(e.f & 155648) && depends_on(e, s, a) && (e.f & 4194320 ? (set_signal_status(e, bt$1), l.schedule(e)) : _classPrivateFieldGet2(_d, l).add(e));
+				if (s.length > 0) for (let e of _classPrivateFieldGet2(_u, this)) !(e.f & 155648) && depends_on(e, s, a) && (e.f & 4194320 ? (set_signal_status(e, _t), l.schedule(e)) : _classPrivateFieldGet2(_d, l).add(e));
 				if (_classPrivateFieldGet2(_l, l).length > 0) {
 					l.apply();
 					for (var c of _classPrivateFieldGet2(_l, l)) _assertClassBrand(_Batch_brand, l, _v).call(l, c, [], []);
@@ -99605,85 +99607,85 @@ function _S$1() {
 }
 __name$1(_S$1, "_S");
 function _C$1() {
-	Qt === null ? Zt = Qt = this : (_classPrivateFieldSet2(_n2, Qt, this), _classPrivateFieldSet2(_t2, this, Qt)), Qt = this;
+	Yt === null ? Jt = Yt = this : (_classPrivateFieldSet2(_n2, Yt, this), _classPrivateFieldSet2(_t2, this, Yt)), Yt = this;
 }
 __name$1(_C$1, "_C");
 function _w$1() {
 	var e = _classPrivateFieldGet2(_t2, this);
 	var t = _classPrivateFieldGet2(_n2, this);
-	e === null ? Zt = t : _classPrivateFieldSet2(_n2, e, t), t === null ? Qt = e : _classPrivateFieldSet2(_t2, t, e), this.linked = !1;
+	e === null ? Jt = t : _classPrivateFieldSet2(_n2, e, t), t === null ? Yt = e : _classPrivateFieldSet2(_t2, t, e), this.linked = !1;
 }
 __name$1(_w$1, "_w");
 function flushSync(e) {
-	var t = tn;
-	tn = !0;
+	var t = Qt;
+	Qt = !0;
 	try {
 		var n;
-		for (e && (z !== null && !z.is_fork && z.flush(), n = e());;) {
-			if (flush_tasks(), z === null) return n;
-			z.flush();
+		for (e && (H$1 !== null && !H$1.is_fork && H$1.flush(), n = e());;) {
+			if (flush_tasks(), H$1 === null) return n;
+			H$1.flush();
 		}
 	} finally {
-		tn = t;
+		Qt = t;
 	}
 }
 function infinite_loop_guard() {
 	try {
 		effect_update_depth_exceeded();
 	} catch (e) {
-		invoke_error_boundary(e, en);
+		invoke_error_boundary(e, Zt);
 	}
 }
-var ln = null;
+var on = null;
 function flush_queued_effects(e) {
 	var t = e.length;
 	if (t !== 0) {
 		for (var n = 0; n < t;) {
 			var r = e[n++];
-			if (!(r.f & 24576) && is_dirty(r) && (ln = /* @__PURE__ */ new Set(), update_effect(r), r.deps === null && r.first === null && r.nodes === null && r.teardown === null && r.ac === null && unlink_effect(r), (ln === null || ln === void 0 ? void 0 : ln.size) > 0)) {
-				mn.clear();
-				for (let e of ln) {
+			if (!(r.f & 24576) && is_dirty(r) && (on = /* @__PURE__ */ new Set(), update_effect(r), r.deps === null && r.first === null && r.nodes === null && r.teardown === null && r.ac === null && unlink_effect(r), (on === null || on === void 0 ? void 0 : on.size) > 0)) {
+				un.clear();
+				for (let e of on) {
 					if (e.f & 24576) continue;
 					let t = [e];
 					let n = e.parent;
-					for (; n !== null;) ln.has(n) && (ln.delete(n), t.push(n)), n = n.parent;
+					for (; n !== null;) on.has(n) && (on.delete(n), t.push(n)), n = n.parent;
 					for (let e = t.length - 1; e >= 0; e--) {
 						let n = t[e];
 						n.f & 24576 || update_effect(n);
 					}
 				}
-				ln.clear();
+				on.clear();
 			}
 		}
-		ln = null;
+		on = null;
 	}
 }
 function mark_effects(e, t, n, r) {
 	if (!n.has(e) && (n.add(e), e.reactions !== null)) for (let i of e.reactions) {
 		let e = i.f;
-		e & 2 ? mark_effects(i, t, n, r) : e & 4194320 && !(e & 2048) && depends_on(i, t, r) && (set_signal_status(i, bt$1), schedule_effect(i));
+		e & 2 ? mark_effects(i, t, n, r) : e & 4194320 && !(e & 2048) && depends_on(i, t, r) && (set_signal_status(i, _t), schedule_effect(i));
 	}
 }
 function depends_on(e, t, n) {
 	let r = n.get(e);
 	if (r !== void 0) return r;
 	if (e.deps !== null) for (let r of e.deps) {
-		if (ut$1.call(t, r)) return !0;
+		if (st$1.call(t, r)) return !0;
 		if (r.f & 2 && depends_on(r, t, n)) return n.set(r, !0), !0;
 	}
 	return n.set(e, !1), !1;
 }
 function schedule_effect(e) {
-	z.schedule(e);
+	H$1.schedule(e);
 }
 function reset_branch(e, t) {
 	if (!(e.f & 32 && e.f & 1024)) {
-		e.f & 2048 ? t.d.push(e) : e.f & 4096 && t.m.push(e), set_signal_status(e, yt$1);
+		e.f & 2048 ? t.d.push(e) : e.f & 4096 && t.m.push(e), set_signal_status(e, gt$1);
 		for (var n = e.first; n !== null;) reset_branch(n, t), n = n.next;
 	}
 }
 function reset_all(e) {
-	set_signal_status(e, yt$1);
+	set_signal_status(e, gt$1);
 	for (var t = e.first; t !== null;) reset_all(t), t = t.next;
 }
 function createSubscriber(e) {
@@ -99698,11 +99700,11 @@ function createSubscriber(e) {
 		})));
 	};
 }
-var un = Et | Dt;
+var sn = Ct$1 | wt$1;
 function boundary(e, t, n, r) {
 	new Boundary(e, t, n, r);
 }
-var Boundary = (_e3 = /* @__PURE__ */ new WeakMap(), _t3 = /* @__PURE__ */ new WeakMap(), _n3 = /* @__PURE__ */ new WeakMap(), _r3 = /* @__PURE__ */ new WeakMap(), _i3 = /* @__PURE__ */ new WeakMap(), _a3 = /* @__PURE__ */ new WeakMap(), _o2 = /* @__PURE__ */ new WeakMap(), _s2 = /* @__PURE__ */ new WeakMap(), _c2 = /* @__PURE__ */ new WeakMap(), _l2 = /* @__PURE__ */ new WeakMap(), _u2 = /* @__PURE__ */ new WeakMap(), _d2 = /* @__PURE__ */ new WeakMap(), _f2 = /* @__PURE__ */ new WeakMap(), _p2 = /* @__PURE__ */ new WeakMap(), _m2 = /* @__PURE__ */ new WeakMap(), _h2 = /* @__PURE__ */ new WeakMap(), _Class_brand = /* @__PURE__ */ new WeakSet(), class {
+var Boundary = (_e3 = /* @__PURE__ */ new WeakMap(), _t3 = /* @__PURE__ */ new WeakMap(), _n3 = /* @__PURE__ */ new WeakMap(), _r3 = /* @__PURE__ */ new WeakMap(), _i3 = /* @__PURE__ */ new WeakMap(), _a3 = /* @__PURE__ */ new WeakMap(), _o3 = /* @__PURE__ */ new WeakMap(), _s2 = /* @__PURE__ */ new WeakMap(), _c2 = /* @__PURE__ */ new WeakMap(), _l2 = /* @__PURE__ */ new WeakMap(), _u2 = /* @__PURE__ */ new WeakMap(), _d2 = /* @__PURE__ */ new WeakMap(), _f2 = /* @__PURE__ */ new WeakMap(), _p2 = /* @__PURE__ */ new WeakMap(), _m2 = /* @__PURE__ */ new WeakMap(), _h2 = /* @__PURE__ */ new WeakMap(), _Class_brand = /* @__PURE__ */ new WeakSet(), class {
 	constructor(e, t, n, r) {
 		var _ref;
 		var _this$parent;
@@ -99711,12 +99713,12 @@ var Boundary = (_e3 = /* @__PURE__ */ new WeakMap(), _t3 = /* @__PURE__ */ new W
 		_defineProperty(this, "is_pending", !1);
 		_defineProperty(this, "transform_error", void 0);
 		_classPrivateFieldInitSpec(this, _e3, void 0);
-		_classPrivateFieldInitSpec(this, _t3, I$1 ? L : null);
+		_classPrivateFieldInitSpec(this, _t3, z ? B : null);
 		_classPrivateFieldInitSpec(this, _n3, void 0);
 		_classPrivateFieldInitSpec(this, _r3, void 0);
 		_classPrivateFieldInitSpec(this, _i3, void 0);
 		_classPrivateFieldInitSpec(this, _a3, null);
-		_classPrivateFieldInitSpec(this, _o2, null);
+		_classPrivateFieldInitSpec(this, _o3, null);
 		_classPrivateFieldInitSpec(this, _s2, null);
 		_classPrivateFieldInitSpec(this, _c2, null);
 		_classPrivateFieldInitSpec(this, _l2, 0);
@@ -99729,10 +99731,10 @@ var Boundary = (_e3 = /* @__PURE__ */ new WeakMap(), _t3 = /* @__PURE__ */ new W
 			_classPrivateFieldSet2(_m2, this, null);
 		})));
 		_classPrivateFieldSet2(_e3, this, e), _classPrivateFieldSet2(_n3, this, t), _classPrivateFieldSet2(_r3, this, (e) => {
-			var t = H$1;
+			var t = G;
 			t.b = this, t.f |= 128, n(e);
-		}), this.parent = H$1.b, this.transform_error = (_ref = r !== null && r !== void 0 ? r : (_this$parent = this.parent) === null || _this$parent === void 0 ? void 0 : _this$parent.transform_error) !== null && _ref !== void 0 ? _ref : ((e) => e), _classPrivateFieldSet2(_i3, this, block(() => {
-			if (I$1) {
+		}), this.parent = G.b, this.transform_error = (_ref = r !== null && r !== void 0 ? r : (_this$parent = this.parent) === null || _this$parent === void 0 ? void 0 : _this$parent.transform_error) !== null && _ref !== void 0 ? _ref : ((e) => e), _classPrivateFieldSet2(_i3, this, block(() => {
+			if (z) {
 				let e = _classPrivateFieldGet2(_t3, this);
 				hydrate_next();
 				let t = e.data === "[!";
@@ -99741,7 +99743,7 @@ var Boundary = (_e3 = /* @__PURE__ */ new WeakMap(), _t3 = /* @__PURE__ */ new W
 					_assertClassBrand(_Class_brand, this, _3).call(this, t);
 				} else t ? _assertClassBrand(_Class_brand, this, _v2).call(this) : _assertClassBrand(_Class_brand, this, _g2).call(this);
 			} else _assertClassBrand(_Class_brand, this, _y2).call(this);
-		}, un)), I$1 && _classPrivateFieldSet2(_e3, this, L);
+		}, sn)), z && _classPrivateFieldSet2(_e3, this, B);
 	}
 	defer_effect(e) {
 		defer_effect(e, _classPrivateFieldGet2(_f2, this), _classPrivateFieldGet2(_p2, this));
@@ -99762,7 +99764,7 @@ var Boundary = (_e3 = /* @__PURE__ */ new WeakMap(), _t3 = /* @__PURE__ */ new W
 	}
 	error(e) {
 		if (!_classPrivateFieldGet2(_n3, this).onerror && !_classPrivateFieldGet2(_n3, this).failed) throw e;
-		(z === null || z === void 0 ? void 0 : z.is_fork) ? (_classPrivateFieldGet2(_a3, this) && z.skip_effect(_classPrivateFieldGet2(_a3, this)), _classPrivateFieldGet2(_o2, this) && z.skip_effect(_classPrivateFieldGet2(_o2, this)), _classPrivateFieldGet2(_s2, this) && z.skip_effect(_classPrivateFieldGet2(_s2, this)), z.on_fork_commit(() => {
+		(H$1 === null || H$1 === void 0 ? void 0 : H$1.is_fork) ? (_classPrivateFieldGet2(_a3, this) && H$1.skip_effect(_classPrivateFieldGet2(_a3, this)), _classPrivateFieldGet2(_o3, this) && H$1.skip_effect(_classPrivateFieldGet2(_o3, this)), _classPrivateFieldGet2(_s2, this) && H$1.skip_effect(_classPrivateFieldGet2(_s2, this)), H$1.on_fork_commit(() => {
 			_assertClassBrand(_Class_brand, this, _C2).call(this, e);
 		})) : _assertClassBrand(_Class_brand, this, _C2).call(this, e);
 	}
@@ -99782,12 +99784,12 @@ function _3(e) {
 }
 function _v2() {
 	let e = _classPrivateFieldGet2(_n3, this).pending;
-	e && (this.is_pending = !0, _classPrivateFieldSet2(_o2, this, branch(() => e(_classPrivateFieldGet2(_e3, this)))), queue_micro_task(() => {
+	e && (this.is_pending = !0, _classPrivateFieldSet2(_o3, this, branch(() => e(_classPrivateFieldGet2(_e3, this)))), queue_micro_task(() => {
 		var e = _classPrivateFieldSet2(_c2, this, document.createDocumentFragment());
 		var t = create_text();
-		e.append(t), _classPrivateFieldSet2(_a3, this, _assertClassBrand(_Class_brand, this, _x2).call(this, () => branch(() => _classPrivateFieldGet2(_r3, this).call(this, t)))), _classPrivateFieldGet2(_u2, this) === 0 && (_classPrivateFieldGet2(_e3, this).before(e), _classPrivateFieldSet2(_c2, this, null), pause_effect(_classPrivateFieldGet2(_o2, this), () => {
-			_classPrivateFieldSet2(_o2, this, null);
-		}), _assertClassBrand(_Class_brand, this, _b2).call(this, z));
+		e.append(t), _classPrivateFieldSet2(_a3, this, _assertClassBrand(_Class_brand, this, _x2).call(this, () => branch(() => _classPrivateFieldGet2(_r3, this).call(this, t)))), _classPrivateFieldGet2(_u2, this) === 0 && (_classPrivateFieldGet2(_e3, this).before(e), _classPrivateFieldSet2(_c2, this, null), pause_effect(_classPrivateFieldGet2(_o3, this), () => {
+			_classPrivateFieldSet2(_o3, this, null);
+		}), _assertClassBrand(_Class_brand, this, _b2).call(this, H$1));
 	}));
 }
 function _y2() {
@@ -99798,8 +99800,8 @@ function _y2() {
 			var e = _classPrivateFieldSet2(_c2, this, document.createDocumentFragment());
 			move_effect(_classPrivateFieldGet2(_a3, this), e);
 			let t = _classPrivateFieldGet2(_n3, this).pending;
-			_classPrivateFieldSet2(_o2, this, branch(() => t(_classPrivateFieldGet2(_e3, this))));
-		} else _assertClassBrand(_Class_brand, this, _b2).call(this, z);
+			_classPrivateFieldSet2(_o3, this, branch(() => t(_classPrivateFieldGet2(_e3, this))));
+		} else _assertClassBrand(_Class_brand, this, _b2).call(this, H$1);
 	} catch (e) {
 		this.error(e);
 	}
@@ -99808,12 +99810,12 @@ function _b2(e) {
 	this.is_pending = !1, e.transfer_effects(_classPrivateFieldGet2(_f2, this), _classPrivateFieldGet2(_p2, this));
 }
 function _x2(e) {
-	var t = H$1;
-	var n = V$1;
-	var r = R;
+	var t = G;
+	var n = W;
+	var r = V$1;
 	set_active_effect(_classPrivateFieldGet2(_i3, this)), set_active_reaction(_classPrivateFieldGet2(_i3, this)), set_component_context(_classPrivateFieldGet2(_i3, this).ctx);
 	try {
-		return cn.ensure(), e();
+		return an.ensure(), e();
 	} catch (e) {
 		return handle_error(e), null;
 	} finally {
@@ -99826,12 +99828,12 @@ function _S2(e, t) {
 		this.parent && _assertClassBrand(_Class_brand, _this$parent2 = this.parent, _S2).call(_this$parent2, e, t);
 		return;
 	}
-	_classPrivateFieldSet2(_u2, this, _classPrivateFieldGet2(_u2, this) + e), _classPrivateFieldGet2(_u2, this) === 0 && (_assertClassBrand(_Class_brand, this, _b2).call(this, t), _classPrivateFieldGet2(_o2, this) && pause_effect(_classPrivateFieldGet2(_o2, this), () => {
-		_classPrivateFieldSet2(_o2, this, null);
+	_classPrivateFieldSet2(_u2, this, _classPrivateFieldGet2(_u2, this) + e), _classPrivateFieldGet2(_u2, this) === 0 && (_assertClassBrand(_Class_brand, this, _b2).call(this, t), _classPrivateFieldGet2(_o3, this) && pause_effect(_classPrivateFieldGet2(_o3, this), () => {
+		_classPrivateFieldSet2(_o3, this, null);
 	}), _classPrivateFieldGet2(_c2, this) && _classPrivateFieldSet2(_c2, this, (_classPrivateFieldGet2(_e3, this).before(_classPrivateFieldGet2(_c2, this)), null)));
 }
 function _C2(e) {
-	_classPrivateFieldGet2(_a3, this) && _classPrivateFieldSet2(_a3, this, (destroy_effect(_classPrivateFieldGet2(_a3, this)), null)), _classPrivateFieldGet2(_o2, this) && _classPrivateFieldSet2(_o2, this, (destroy_effect(_classPrivateFieldGet2(_o2, this)), null)), _classPrivateFieldGet2(_s2, this) && _classPrivateFieldSet2(_s2, this, (destroy_effect(_classPrivateFieldGet2(_s2, this)), null)), I$1 && (set_hydrate_node(_classPrivateFieldGet2(_t3, this)), next(), set_hydrate_node(skip_nodes()));
+	_classPrivateFieldGet2(_a3, this) && _classPrivateFieldSet2(_a3, this, (destroy_effect(_classPrivateFieldGet2(_a3, this)), null)), _classPrivateFieldGet2(_o3, this) && _classPrivateFieldSet2(_o3, this, (destroy_effect(_classPrivateFieldGet2(_o3, this)), null)), _classPrivateFieldGet2(_s2, this) && _classPrivateFieldSet2(_s2, this, (destroy_effect(_classPrivateFieldGet2(_s2, this)), null)), z && (set_hydrate_node(_classPrivateFieldGet2(_t3, this)), next(), set_hydrate_node(skip_nodes()));
 	var t = _classPrivateFieldGet2(_n3, this).onerror;
 	let n = _classPrivateFieldGet2(_n3, this).failed;
 	var r = !1;
@@ -99856,7 +99858,7 @@ function _C2(e) {
 		n && _classPrivateFieldSet2(_s2, this, _assertClassBrand(_Class_brand, this, _x2).call(this, () => {
 			try {
 				return branch(() => {
-					var t = H$1;
+					var t = G;
 					t.b = this, t.f |= 128, n(_classPrivateFieldGet2(_e3, this), () => e, () => reset);
 				});
 			} catch (e) {
@@ -99882,7 +99884,7 @@ function flatten$1(e, t, n, r) {
 		r(t.map(i));
 		return;
 	}
-	var o = H$1;
+	var o = G;
 	var s = capture();
 	var c = a.length === 1 ? a[0].promise : a.length > 1 ? Promise.all(a.map((e) => e.promise)) : null;
 	function finish(e) {
@@ -99910,21 +99912,21 @@ function flatten$1(e, t, n, r) {
 }
 __name(flatten$1, "flatten");
 function capture() {
-	var e = H$1;
-	var t = V$1;
-	var n = R;
-	var r = z;
+	var e = G;
+	var t = W;
+	var n = V$1;
+	var r = H$1;
 	return function restore(i = !0) {
 		set_active_effect(e), set_active_reaction(t), set_component_context(n), i && !(e.f & 16384) && (r === null || r === void 0 || r.activate(), r === null || r === void 0 || r.apply());
 	};
 }
 function unset_context(e = !0) {
-	set_active_effect(null), set_active_reaction(null), set_component_context(null), e && (z === null || z === void 0 || z.deactivate());
+	set_active_effect(null), set_active_reaction(null), set_component_context(null), e && (H$1 === null || H$1 === void 0 || H$1.deactivate());
 }
 function increment_pending() {
-	var e = H$1;
+	var e = G;
 	var t = e.b;
-	var n = z;
+	var n = H$1;
 	var r = t.is_rendered();
 	return t.update_pending_count(1, n), n.increment(r, e), () => {
 		t.update_pending_count(-1, n), n.decrement(r, e);
@@ -99932,9 +99934,9 @@ function increment_pending() {
 }
 /* @__NO_SIDE_EFFECTS__ */
 function derived(e) {
-	var t = 2 | bt$1;
-	return H$1 !== null && (H$1.f |= Dt), {
-		ctx: R,
+	var t = 2 | _t;
+	return G !== null && (G.f |= wt$1), {
+		ctx: V$1,
 		deps: null,
 		effects: null,
 		equals,
@@ -99942,46 +99944,46 @@ function derived(e) {
 		fn: e,
 		reactions: null,
 		rv: 0,
-		v: F,
+		v: R,
 		wv: 0,
-		parent: H$1,
+		parent: G,
 		ac: null
 	};
 }
-var dn = Symbol("obsolete");
+var cn = Symbol("obsolete");
 /* @__NO_SIDE_EFFECTS__ */
 function async_derived(e, t, n) {
-	let r = H$1;
+	let r = G;
 	r === null && async_derived_orphan();
 	var i = void 0;
-	var a = source(F);
-	var o = !V$1;
+	var a = source(R);
+	var o = !W;
 	var s = /* @__PURE__ */ new Set();
 	return async_effect(() => {
-		var t = H$1;
+		var t = G;
 		var n = deferred();
 		i = n.promise;
 		try {
 			Promise.resolve(e()).then(n.resolve, (e) => {
-				e !== Vt && n.reject(e);
+				e !== Rt && n.reject(e);
 			}).finally(unset_context);
 		} catch (e) {
 			n.reject(e), unset_context();
 		}
-		var c = z;
+		var c = H$1;
 		if (o) {
 			var _c$async_deriveds$get;
 			if (t.f & 32768) var l = increment_pending();
-			if (r.b.is_rendered()) (_c$async_deriveds$get = c.async_deriveds.get(t)) === null || _c$async_deriveds$get === void 0 || _c$async_deriveds$get.reject(dn);
-			else for (let e of s.values()) e.reject(dn);
+			if (r.b.is_rendered()) (_c$async_deriveds$get = c.async_deriveds.get(t)) === null || _c$async_deriveds$get === void 0 || _c$async_deriveds$get.reject(cn);
+			else for (let e of s.values()) e.reject(cn);
 			s.add(n), c.async_deriveds.set(t, n);
 		}
 		let handler = (e, t = void 0) => {
-			l === null || l === void 0 || l(), s.delete(n), t !== dn && (c.activate(), t ? (a.f |= Nt, internal_set(a, t)) : (a.f & 8388608 && (a.f ^= Nt), internal_set(a, e)), c.deactivate());
+			l === null || l === void 0 || l(), s.delete(n), t !== cn && (c.activate(), t ? (a.f |= At$1, internal_set(a, t)) : (a.f & 8388608 && (a.f ^= At$1), internal_set(a, e)), c.deactivate());
 		};
 		n.promise.then(handler, (e) => handler(null, e || "unknown"));
 	}), teardown(() => {
-		for (let e of s) e.reject(dn);
+		for (let e of s) e.reject(cn);
 	}), new Promise((e) => {
 		function next(t) {
 			function go() {
@@ -99995,7 +99997,7 @@ function async_derived(e, t, n) {
 /* @__NO_SIDE_EFFECTS__ */
 function user_derived(e) {
 	let t = /* @__PURE__ */ derived(e);
-	return Kt || push_reaction_value(t), t;
+	return Ut || push_reaction_value(t), t;
 }
 /* @__NO_SIDE_EFFECTS__ */
 function derived_safe_equal(e) {
@@ -100011,12 +100013,12 @@ function destroy_derived_effects(e) {
 }
 function execute_derived(e) {
 	var t;
-	var n = H$1;
+	var n = G;
 	var r = e.parent;
-	if (!Cn && r !== null && r.f & 24576) return derived_inert(), e.v;
+	if (!bn && r !== null && r.f & 24576) return derived_inert(), e.v;
 	set_active_effect(r);
 	try {
-		e.f &= ~At$1, destroy_derived_effects(e), t = update_reaction(e);
+		e.f &= ~Dt, destroy_derived_effects(e), t = update_reaction(e);
 	} finally {
 		set_active_effect(n);
 	}
@@ -100024,23 +100026,23 @@ function execute_derived(e) {
 }
 function update_derived(e) {
 	var t = execute_derived(e);
-	if (!e.equals(t) && (e.wv = increment_write_version(), (!(z === null || z === void 0 ? void 0 : z.is_fork) || e.deps === null) && (z === null ? e.v = t : (z.capture(e, t, !0), $t === null || $t === void 0 || $t.capture(e, t, !0)), e.deps === null))) {
-		set_signal_status(e, yt$1);
+	if (!e.equals(t) && (e.wv = increment_write_version(), (!(H$1 === null || H$1 === void 0 ? void 0 : H$1.is_fork) || e.deps === null) && (H$1 === null ? e.v = t : (H$1.capture(e, t, !0), Xt === null || Xt === void 0 || Xt.capture(e, t, !0)), e.deps === null))) {
+		set_signal_status(e, gt$1);
 		return;
 	}
-	Cn || (B === null ? update_derived_status(e) : (effect_tracking() || !(z === null || z === void 0) && z.is_fork) && B.set(e, t));
+	bn || (U === null ? update_derived_status(e) : (effect_tracking() || !(H$1 === null || H$1 === void 0) && H$1.is_fork) && U.set(e, t));
 }
 function freeze_derived_effects(e) {
 	var _t$teardown;
 	var _t$ac;
-	if (e.effects !== null) for (let t of e.effects) (t.teardown || t.ac) && ((_t$teardown = t.teardown) === null || _t$teardown === void 0 || _t$teardown.call(t), (_t$ac = t.ac) === null || _t$ac === void 0 || _t$ac.abort(Vt), t.teardown = noop, t.ac = null, remove_reactions(t, 0), destroy_effect_children(t));
+	if (e.effects !== null) for (let t of e.effects) (t.teardown || t.ac) && ((_t$teardown = t.teardown) === null || _t$teardown === void 0 || _t$teardown.call(t), (_t$ac = t.ac) === null || _t$ac === void 0 || _t$ac.abort(Rt), t.teardown = noop, t.ac = null, remove_reactions(t, 0), destroy_effect_children(t));
 }
 function unfreeze_derived_effects(e) {
 	if (e.effects !== null) for (let t of e.effects) t.teardown && update_effect(t);
 }
-var pn = /* @__PURE__ */ new Set();
-var mn = /* @__PURE__ */ new Map();
-var hn = !1;
+var ln = /* @__PURE__ */ new Set();
+var un = /* @__PURE__ */ new Map();
+var dn = !1;
 function source(e, t) {
 	return {
 		f: 0,
@@ -100058,30 +100060,30 @@ function state(e, t) {
 }
 /* @__NO_SIDE_EFFECTS__ */
 function mutable_source(e, t = !1, n = !0) {
-	var _R$l;
-	var _R$l$s;
+	var _V$l;
+	var _V$l$s;
 	let r = source(e);
-	return t || (r.equals = safe_equals), qt && n && R !== null && R.l !== null && ((_R$l$s = (_R$l = R.l).s) !== null && _R$l$s !== void 0 ? _R$l$s : _R$l.s = []).push(r), r;
+	return t || (r.equals = safe_equals), Wt && n && V$1 !== null && V$1.l !== null && ((_V$l$s = (_V$l = V$1.l).s) !== null && _V$l$s !== void 0 ? _V$l$s : _V$l.s = []).push(r), r;
 }
 function set(e, t, n = !1) {
-	return V$1 !== null && (!wn || V$1.f & 131072) && is_runes() && V$1.f & 4325394 && (Tn === null || !ut$1.call(Tn, e)) && state_unsafe_mutation(), internal_set(e, n ? proxy(t) : t, an);
+	return W !== null && (!xn || W.f & 131072) && is_runes() && W.f & 4325394 && (Sn === null || !st$1.call(Sn, e)) && state_unsafe_mutation(), internal_set(e, n ? proxy(t) : t, tn);
 }
 function internal_set(e, t, n = null) {
 	if (!e.equals(t)) {
-		mn.set(e, Cn ? t : e.v);
-		var r = cn.ensure();
+		un.set(e, bn ? t : e.v);
+		var r = an.ensure();
 		if (r.capture(e, t), e.f & 2) {
 			let t = e;
-			e.f & 2048 && execute_derived(t), B === null && update_derived_status(t);
+			e.f & 2048 && execute_derived(t), U === null && update_derived_status(t);
 		}
-		e.wv = increment_write_version(), mark_reactions(e, bt$1, n), is_runes() && H$1 !== null && H$1.f & 1024 && !(H$1.f & 96) && (Dn === null ? set_untracked_writes([e]) : Dn.push(e)), !r.is_fork && pn.size > 0 && !hn && flush_eager_effects();
+		e.wv = increment_write_version(), mark_reactions(e, _t, n), is_runes() && G !== null && G.f & 1024 && !(G.f & 96) && (Tn === null ? set_untracked_writes([e]) : Tn.push(e)), !r.is_fork && ln.size > 0 && !dn && flush_eager_effects();
 	}
 	return t;
 }
 function flush_eager_effects() {
-	hn = !1;
-	for (let e of pn) {
-		e.f & 1024 && set_signal_status(e, xt);
+	dn = !1;
+	for (let e of ln) {
+		e.f & 1024 && set_signal_status(e, vt$1);
 		let t;
 		try {
 			t = is_dirty(e);
@@ -100090,7 +100092,7 @@ function flush_eager_effects() {
 		}
 		t && update_effect(e);
 	}
-	pn.clear();
+	ln.clear();
 }
 function increment(e) {
 	set(e, e.v + 1);
@@ -100100,31 +100102,31 @@ function mark_reactions(e, t, n) {
 	if (r !== null) for (var i = is_runes(), a = r.length, o = 0; o < a; o++) {
 		var s = r[o];
 		var c = s.f;
-		if (!(!i && s === H$1)) {
-			var l = (c & bt$1) === 0;
-			if (l && set_signal_status(s, t), c & 131072) pn.add(s);
+		if (!(!i && s === G)) {
+			var l = (c & _t) === 0;
+			if (l && set_signal_status(s, t), c & 131072) ln.add(s);
 			else if (c & 2) {
 				var u = s;
-				B === null || B === void 0 || B.delete(u), c & 65536 || (c & 512 && (H$1 === null || !(H$1.f & 2097152)) && (s.f |= At$1), mark_reactions(u, xt, n));
+				U === null || U === void 0 || U.delete(u), c & 65536 || (c & 512 && (G === null || !(G.f & 2097152)) && (s.f |= Dt), mark_reactions(u, vt$1, n));
 			} else if (l) {
 				var d = s;
-				c & 16 && ln !== null && ln.add(d), n === null ? schedule_effect(d) : n.push(d);
+				c & 16 && on !== null && on.add(d), n === null ? schedule_effect(d) : n.push(d);
 			}
 		}
 	}
 }
 function proxy(e) {
-	if (typeof e != "object" || !e || Pt$1 in e) return e;
-	let t = _t(e);
-	if (t !== ht$1 && t !== gt$1) return e;
+	if (typeof e != "object" || !e || jt in e) return e;
+	let t = mt$1(e);
+	if (t !== ft$1 && t !== pt$1) return e;
 	var n = /* @__PURE__ */ new Map();
-	var r = ct$1(e);
+	var r = at$1(e);
 	var i = /* @__PURE__ */ state(0);
 	var a = null;
-	var o = An;
+	var o = On;
 	var with_parent = (e) => {
-		if (An === o) return e();
-		var t = V$1, n = An;
+		if (On === o) return e();
+		var t = W, n = On;
 		set_active_reaction(null), set_update_version(o);
 		var r = e();
 		return set_active_reaction(t), set_update_version(n), r;
@@ -100142,20 +100144,20 @@ function proxy(e) {
 			var r = n.get(t);
 			if (r === void 0) {
 				if (t in e) {
-					let e = with_parent(() => /* @__PURE__ */ state(F, a));
+					let e = with_parent(() => /* @__PURE__ */ state(R, a));
 					n.set(t, e), increment(i);
 				}
-			} else set(r, F), increment(i);
+			} else set(r, R), increment(i);
 			return !0;
 		},
 		get(t, r, i) {
-			var _pt;
-			if (r === Pt$1) return e;
+			var _ut;
+			if (r === jt) return e;
 			var o = n.get(r);
 			var s = r in t;
-			if (o === void 0 && (!s || !((_pt = pt$1(t, r)) === null || _pt === void 0) && _pt.writable) && (o = with_parent(() => /* @__PURE__ */ state(proxy(s ? t[r] : F), a)), n.set(r, o)), o !== void 0) {
+			if (o === void 0 && (!s || !((_ut = ut$1(t, r)) === null || _ut === void 0) && _ut.writable) && (o = with_parent(() => /* @__PURE__ */ state(proxy(s ? t[r] : R), a)), n.set(r, o)), o !== void 0) {
 				var c = get(o);
-				return c === F ? void 0 : c;
+				return c === R ? void 0 : c;
 			}
 			return Reflect.get(t, r, i);
 		},
@@ -100167,7 +100169,7 @@ function proxy(e) {
 			} else if (r === void 0) {
 				var a = n.get(t);
 				var o = a === null || a === void 0 ? void 0 : a.v;
-				if (a !== void 0 && o !== F) return {
+				if (a !== void 0 && o !== R) return {
 					enumerable: !0,
 					configurable: !0,
 					value: o,
@@ -100177,23 +100179,23 @@ function proxy(e) {
 			return r;
 		},
 		has(e, t) {
-			var _pt2;
-			if (t === Pt$1) return !0;
+			var _ut2;
+			if (t === jt) return !0;
 			var r = n.get(t);
-			var i = r !== void 0 && r.v !== F || Reflect.has(e, t);
-			return (r !== void 0 || H$1 !== null && (!i || ((_pt2 = pt$1(e, t)) === null || _pt2 === void 0 ? void 0 : _pt2.writable))) && (r === void 0 && (r = with_parent(() => /* @__PURE__ */ state(i ? proxy(e[t]) : F, a)), n.set(t, r)), get(r) === F) ? !1 : i;
+			var i = r !== void 0 && r.v !== R || Reflect.has(e, t);
+			return (r !== void 0 || G !== null && (!i || ((_ut2 = ut$1(e, t)) === null || _ut2 === void 0 ? void 0 : _ut2.writable))) && (r === void 0 && (r = with_parent(() => /* @__PURE__ */ state(i ? proxy(e[t]) : R, a)), n.set(t, r)), get(r) === R) ? !1 : i;
 		},
 		set(e, t, o, s) {
-			var _pt3;
+			var _ut3;
 			var c = n.get(t);
 			var l = t in e;
 			if (r && t === "length") for (var u = o; u < c.v; u += 1) {
 				var d = n.get(u + "");
-				d === void 0 ? u in e && (d = with_parent(() => /* @__PURE__ */ state(F, a)), n.set(u + "", d)) : set(d, F);
+				d === void 0 ? u in e && (d = with_parent(() => /* @__PURE__ */ state(R, a)), n.set(u + "", d)) : set(d, R);
 			}
-			if (c === void 0) (!l || !((_pt3 = pt$1(e, t)) === null || _pt3 === void 0) && _pt3.writable) && (c = with_parent(() => /* @__PURE__ */ state(void 0, a)), set(c, proxy(o)), n.set(t, c));
+			if (c === void 0) (!l || !((_ut3 = ut$1(e, t)) === null || _ut3 === void 0) && _ut3.writable) && (c = with_parent(() => /* @__PURE__ */ state(void 0, a)), set(c, proxy(o)), n.set(t, c));
 			else {
-				l = c.v !== F;
+				l = c.v !== R;
 				var f = with_parent(() => proxy(o));
 				set(c, f);
 			}
@@ -100212,9 +100214,9 @@ function proxy(e) {
 			get(i);
 			var t = Reflect.ownKeys(e).filter((e) => {
 				var t = n.get(e);
-				return t === void 0 || t.v !== F;
+				return t === void 0 || t.v !== R;
 			});
-			for (var [r, a] of n) a.v !== F && !(r in e) && t.push(r);
+			for (var [r, a] of n) a.v !== R && !(r in e) && t.push(r);
 			return t;
 		},
 		setPrototypeOf() {
@@ -100222,17 +100224,17 @@ function proxy(e) {
 		}
 	});
 }
+var pn;
+var mn;
+var hn;
 var gn;
-var _n;
-var vn;
-var yn;
 function init_operations() {
-	if (gn === void 0) {
-		gn = window, _n = /Firefox/.test(navigator.userAgent);
+	if (pn === void 0) {
+		pn = window, mn = /Firefox/.test(navigator.userAgent);
 		var e = Element.prototype;
 		var t = Node.prototype;
 		var n = Text.prototype;
-		vn = pt$1(t, "firstChild").get, yn = pt$1(t, "nextSibling").get, vt$1(e) && (e[Lt] = void 0, e[It$1] = null, e[Rt] = void 0, e.__e = void 0), vt$1(n) && (n[zt] = void 0);
+		hn = ut$1(t, "firstChild").get, gn = ut$1(t, "nextSibling").get, ht$1(e) && (e[Pt$1] = void 0, e[Nt] = null, e[Ft] = void 0, e.__e = void 0), ht$1(n) && (n[It$1] = void 0);
 	}
 }
 function create_text(e = "") {
@@ -100240,16 +100242,16 @@ function create_text(e = "") {
 }
 /* @__NO_SIDE_EFFECTS__ */
 function get_first_child(e) {
-	return vn.call(e);
+	return hn.call(e);
 }
 /* @__NO_SIDE_EFFECTS__ */
 function get_next_sibling(e) {
-	return yn.call(e);
+	return gn.call(e);
 }
 function child(e, t) {
-	if (!I$1) return /* @__PURE__ */ get_first_child(e);
-	var n = /* @__PURE__ */ get_first_child(L);
-	if (n === null) n = L.appendChild(create_text());
+	if (!z) return /* @__PURE__ */ get_first_child(e);
+	var n = /* @__PURE__ */ get_first_child(B);
+	if (n === null) n = B.appendChild(create_text());
 	else if (t && n.nodeType !== 3) {
 		var r = create_text();
 		return n === null || n === void 0 || n.before(r), set_hydrate_node(r), r;
@@ -100257,23 +100259,23 @@ function child(e, t) {
 	return t && merge_text_nodes(n), set_hydrate_node(n), n;
 }
 function first_child(e, t = !1) {
-	if (!I$1) {
+	if (!z) {
 		var n = /* @__PURE__ */ get_first_child(e);
 		return n instanceof Comment && n.data === "" ? /* @__PURE__ */ get_next_sibling(n) : n;
 	}
 	if (t) {
-		if ((L === null || L === void 0 ? void 0 : L.nodeType) !== 3) {
+		if ((B === null || B === void 0 ? void 0 : B.nodeType) !== 3) {
 			var r = create_text();
-			return L === null || L === void 0 || L.before(r), set_hydrate_node(r), r;
+			return B === null || B === void 0 || B.before(r), set_hydrate_node(r), r;
 		}
-		merge_text_nodes(L);
+		merge_text_nodes(B);
 	}
-	return L;
+	return B;
 }
 function sibling(e, t = 1, n = !1) {
-	let r = I$1 ? L : e;
+	let r = z ? B : e;
 	for (var i; t--;) i = r, r = /* @__PURE__ */ get_next_sibling(r);
-	if (!I$1) return r;
+	if (!z) return r;
 	if (n) {
 		if ((r === null || r === void 0 ? void 0 : r.nodeType) !== 3) {
 			var a = create_text();
@@ -100287,7 +100289,7 @@ function clear_text_content(e) {
 	e.textContent = "";
 }
 function should_defer_append() {
-	return !Kt || ln !== null ? !1 : (H$1.f & wt$1) !== 0;
+	return !Ut || on !== null ? !1 : (G.f & xt) !== 0;
 }
 function create_element(e, t, n) {
 	let r = n ? { is: n } : void 0;
@@ -100298,12 +100300,12 @@ function merge_text_nodes(e) {
 	let t = e.nextSibling;
 	for (; t !== null && t.nodeType === 3;) t.remove(), e.nodeValue += t.nodeValue, t = e.nextSibling;
 }
-var bn = !1;
+var _n = !1;
 function add_form_reset_listener() {
-	bn || (bn = !0, document.addEventListener("reset", (e) => {
+	_n || (_n = !0, document.addEventListener("reset", (e) => {
 		Promise.resolve().then(() => {
-			var _t$Bt;
-			if (!e.defaultPrevented) for (let t of e.target.elements) (_t$Bt = t[Bt]) === null || _t$Bt === void 0 || _t$Bt.call(t);
+			var _t$Lt;
+			if (!e.defaultPrevented) for (let t of e.target.elements) (_t$Lt = t[Lt]) === null || _t$Lt === void 0 || _t$Lt.call(t);
 		});
 	}, { capture: !0 }));
 }
@@ -100315,8 +100317,8 @@ function listen(e, t, n, r = !0) {
 	});
 }
 function without_reactive_context(e) {
-	var t = V$1;
-	var n = H$1;
+	var t = W;
+	var n = G;
 	set_active_reaction(null), set_active_effect(null);
 	try {
 		return e();
@@ -100326,26 +100328,26 @@ function without_reactive_context(e) {
 }
 function listen_to_event_and_reset_event(e, t, n, r = n) {
 	e.addEventListener(t, () => without_reactive_context(n));
-	let i = e[Bt];
-	i ? e[Bt] = () => {
+	let i = e[Lt];
+	i ? e[Lt] = () => {
 		i(), r(!0);
-	} : e[Bt] = () => r(!0), add_form_reset_listener();
+	} : e[Lt] = () => r(!0), add_form_reset_listener();
 }
 function validate_effect(e) {
-	H$1 === null && (V$1 === null && effect_orphan(e), effect_in_unowned_derived()), Cn && effect_in_teardown(e);
+	G === null && (W === null && effect_orphan(e), effect_in_unowned_derived()), bn && effect_in_teardown(e);
 }
 function push_effect(e, t) {
 	var n = t.last;
 	n === null ? t.last = t.first = e : (n.next = e, e.prev = n, t.last = e);
 }
 function create_effect(e, t) {
-	var n = H$1;
-	n !== null && n.f & 8192 && (e |= St$1);
+	var n = G;
+	n !== null && n.f & 8192 && (e |= yt$1);
 	var r = {
-		ctx: R,
+		ctx: V$1,
 		deps: null,
 		nodes: null,
-		f: e | bt$1 | 512,
+		f: e | _t | 512,
 		first: null,
 		fn: t,
 		last: null,
@@ -100357,46 +100359,46 @@ function create_effect(e, t) {
 		wv: 0,
 		ac: null
 	};
-	z === null || z === void 0 || z.register_created_effect(r);
+	H$1 === null || H$1 === void 0 || H$1.register_created_effect(r);
 	var i = r;
-	if (e & 4) rn === null ? cn.ensure().schedule(r) : rn.push(r);
+	if (e & 4) en === null ? an.ensure().schedule(r) : en.push(r);
 	else if (t !== null) {
 		try {
 			update_effect(r);
 		} catch (e) {
 			throw destroy_effect(r), e;
 		}
-		i.deps === null && i.teardown === null && i.nodes === null && i.first === i.last && !(i.f & 524288) && (i = i.first, e & 16 && e & 65536 && i !== null && (i.f |= Et));
+		i.deps === null && i.teardown === null && i.nodes === null && i.first === i.last && !(i.f & 524288) && (i = i.first, e & 16 && e & 65536 && i !== null && (i.f |= Ct$1));
 	}
-	if (i !== null && (i.parent = n, n !== null && push_effect(i, n), V$1 !== null && V$1.f & 2 && !(e & 64))) {
+	if (i !== null && (i.parent = n, n !== null && push_effect(i, n), W !== null && W.f & 2 && !(e & 64))) {
 		var _a$effects;
-		var a = V$1;
+		var a = W;
 		((_a$effects = a.effects) !== null && _a$effects !== void 0 ? _a$effects : a.effects = []).push(i);
 	}
 	return r;
 }
 function effect_tracking() {
-	return V$1 !== null && !wn;
+	return W !== null && !xn;
 }
 function teardown(e) {
 	let t = create_effect(8, null);
-	return set_signal_status(t, yt$1), t.teardown = e, t;
+	return set_signal_status(t, gt$1), t.teardown = e, t;
 }
 function user_effect(e) {
 	validate_effect("$effect");
-	var t = H$1.f;
-	if (!V$1 && t & 32 && !(t & 32768)) {
+	var t = G.f;
+	if (!W && t & 32 && !(t & 32768)) {
 		var _n$e;
-		var n = R;
+		var n = V$1;
 		((_n$e = n.e) !== null && _n$e !== void 0 ? _n$e : n.e = []).push(e);
 	} else return create_user_effect(e);
 }
 function create_user_effect(e) {
-	return create_effect(4 | Ot, e);
+	return create_effect(4 | Tt, e);
 }
 function component_root(e) {
-	cn.ensure();
-	let t = create_effect(64 | Dt, e);
+	an.ensure();
+	let t = create_effect(64 | wt$1, e);
 	return (e = {}) => new Promise((n) => {
 		e.outro ? pause_effect(t, () => {
 			destroy_effect(t), n(void 0);
@@ -100407,7 +100409,7 @@ function effect(e) {
 	return create_effect(4, e);
 }
 function async_effect(e) {
-	return create_effect(Mt$1 | Dt, e);
+	return create_effect(kt | wt$1, e);
 }
 function render_effect(e, t = 0) {
 	return create_effect(8 | t, e);
@@ -100421,13 +100423,13 @@ function block(e, t = 0) {
 	return create_effect(16 | t, e);
 }
 function branch(e) {
-	return create_effect(32 | Dt, e);
+	return create_effect(32 | wt$1, e);
 }
 function execute_effect_teardown(e) {
 	var t = e.teardown;
 	if (t !== null) {
-		let e = Cn;
-		let n = V$1;
+		let e = bn;
+		let n = W;
 		set_is_destroying_effect(!0), set_active_reaction(null);
 		try {
 			t.call(null);
@@ -100441,7 +100443,7 @@ function destroy_effect_children(e, t = !1) {
 	for (e.first = e.last = null; n !== null;) {
 		let e = n.ac;
 		e !== null && without_reactive_context(() => {
-			e.abort(Vt);
+			e.abort(Rt);
 		});
 		var r = n.next;
 		n.f & 64 ? n.parent = null : destroy_effect(n, t), n = r;
@@ -100455,10 +100457,10 @@ function destroy_block_effect_children(e) {
 }
 function destroy_effect(e, t = !0) {
 	var n = !1;
-	(t || e.f & 262144) && e.nodes !== null && e.nodes.end !== null && (remove_effect_dom(e.nodes.start, e.nodes.end), n = !0), set_signal_status(e, Tt), destroy_effect_children(e, t && !n), remove_reactions(e, 0);
+	(t || e.f & 262144) && e.nodes !== null && e.nodes.end !== null && (remove_effect_dom(e.nodes.start, e.nodes.end), n = !0), set_signal_status(e, St$1), destroy_effect_children(e, t && !n), remove_reactions(e, 0);
 	var r = e.nodes && e.nodes.t;
 	if (r !== null) for (let e of r) e.stop();
-	execute_effect_teardown(e), e.f ^= Tt, e.f |= Ct$1;
+	execute_effect_teardown(e), e.f ^= St$1, e.f |= bt$1;
 	var i = e.parent;
 	i !== null && i.first !== null && unlink_effect(e), e.next = e.prev = e.teardown = e.ctx = e.deps = e.fn = e.nodes = e.ac = e.b = null;
 }
@@ -100488,7 +100490,7 @@ function pause_effect(e, t, n = !0) {
 }
 function pause_children(e, t, n) {
 	if (!(e.f & 8192)) {
-		e.f ^= St$1;
+		e.f ^= yt$1;
 		var r = e.nodes && e.nodes.t;
 		if (r !== null) for (let e of r) (e.is_global || n) && t.push(e);
 		for (var i = e.first; i !== null;) {
@@ -100506,7 +100508,7 @@ function resume_effect(e) {
 }
 function resume_children(e, t) {
 	if (e.f & 8192) {
-		e.f ^= St$1, e.f & 1024 || (set_signal_status(e, bt$1), cn.ensure().schedule(e));
+		e.f ^= yt$1, e.f & 1024 || (set_signal_status(e, _t), an.ensure().schedule(e));
 		for (var n = e.first; n !== null;) {
 			var r = n.next;
 			var i = (n.f & 65536) != 0 || (n.f & 32) != 0;
@@ -100522,112 +100524,112 @@ function move_effect(e, t) {
 		t.append(n), n = i;
 	}
 }
-var xn = null;
-var Sn = !1;
-var Cn = !1;
+var vn = null;
+var yn = !1;
+var bn = !1;
 function set_is_destroying_effect(e) {
-	Cn = e;
+	bn = e;
 }
-var V$1 = null;
-var wn = !1;
+var W = null;
+var xn = !1;
 function set_active_reaction(e) {
-	V$1 = e;
+	W = e;
 }
-var H$1 = null;
+var G = null;
 function set_active_effect(e) {
-	H$1 = e;
+	G = e;
 }
-var Tn = null;
+var Sn = null;
 function push_reaction_value(e) {
-	V$1 !== null && (!Kt || V$1.f & 2) && (Tn === null ? Tn = [e] : Tn.push(e));
+	W !== null && (!Ut || W.f & 2) && (Sn === null ? Sn = [e] : Sn.push(e));
 }
-var U = null;
-var En = 0;
-var Dn = null;
+var Cn = null;
+var wn = 0;
+var Tn = null;
 function set_untracked_writes(e) {
-	Dn = e;
+	Tn = e;
 }
-var On = 1;
-var kn = 0;
-var An = kn;
+var En = 1;
+var Dn = 0;
+var On = Dn;
 function set_update_version(e) {
-	An = e;
+	On = e;
 }
 function increment_write_version() {
-	return ++On;
+	return ++En;
 }
 function is_dirty(e) {
 	var t = e.f;
 	if (t & 2048) return !0;
-	if (t & 2 && (e.f &= ~At$1), t & 4096) {
+	if (t & 2 && (e.f &= ~Dt), t & 4096) {
 		for (var n = e.deps, r = n.length, i = 0; i < r; i++) {
 			var a = n[i];
 			if (is_dirty(a) && update_derived(a), a.wv > e.wv) return !0;
 		}
-		t & 512 && B === null && set_signal_status(e, yt$1);
+		t & 512 && U === null && set_signal_status(e, gt$1);
 	}
 	return !1;
 }
 function schedule_possible_effect_self_invalidation(e, t, n = !0) {
 	var r = e.reactions;
-	if (r !== null && !(!Kt && Tn !== null && ut$1.call(Tn, e))) for (var i = 0; i < r.length; i++) {
+	if (r !== null && !(!Ut && Sn !== null && st$1.call(Sn, e))) for (var i = 0; i < r.length; i++) {
 		var a = r[i];
-		a.f & 2 ? schedule_possible_effect_self_invalidation(a, t, !1) : t === a && (n ? set_signal_status(a, bt$1) : a.f & 1024 && set_signal_status(a, xt), schedule_effect(a));
+		a.f & 2 ? schedule_possible_effect_self_invalidation(a, t, !1) : t === a && (n ? set_signal_status(a, _t) : a.f & 1024 && set_signal_status(a, vt$1), schedule_effect(a));
 	}
 }
 function update_reaction(e) {
-	var t = U;
-	var n = En;
-	var r = Dn;
-	var i = V$1;
-	var a = Tn;
-	var o = R;
-	var s = wn;
-	var c = An;
+	var t = Cn;
+	var n = wn;
+	var r = Tn;
+	var i = W;
+	var a = Sn;
+	var o = V$1;
+	var s = xn;
+	var c = On;
 	var l = e.f;
-	U = null, En = 0, Dn = null, V$1 = l & 96 ? null : e, Tn = null, set_component_context(e.ctx), wn = !1, An = ++kn, e.ac !== null && (without_reactive_context(() => {
-		e.ac.abort(Vt);
+	Cn = null, wn = 0, Tn = null, W = l & 96 ? null : e, Sn = null, set_component_context(e.ctx), xn = !1, On = ++Dn, e.ac !== null && (without_reactive_context(() => {
+		e.ac.abort(Rt);
 	}), e.ac = null);
 	try {
-		e.f |= jt;
+		e.f |= Ot;
 		var u = e.fn;
 		var d = u();
-		e.f |= wt$1;
+		e.f |= xt;
 		var f = e.deps;
-		var p = z === null || z === void 0 ? void 0 : z.is_fork;
-		if (U !== null) {
+		var p = H$1 === null || H$1 === void 0 ? void 0 : H$1.is_fork;
+		if (Cn !== null) {
 			var _f$m;
 			var _f$m$reactions;
 			var m;
-			if (p || remove_reactions(e, En), f !== null && En > 0) for (f.length = En + U.length, m = 0; m < U.length; m++) f[En + m] = U[m];
-			else e.deps = f = U;
-			if (effect_tracking() && e.f & 512) for (m = En; m < f.length; m++) ((_f$m$reactions = (_f$m = f[m]).reactions) !== null && _f$m$reactions !== void 0 ? _f$m$reactions : _f$m.reactions = []).push(e);
-		} else !p && f !== null && En < f.length && (remove_reactions(e, En), f.length = En);
-		if (is_runes() && Dn !== null && !wn && f !== null && !(e.f & 6146)) for (m = 0; m < Dn.length; m++) schedule_possible_effect_self_invalidation(Dn[m], e);
+			if (p || remove_reactions(e, wn), f !== null && wn > 0) for (f.length = wn + Cn.length, m = 0; m < Cn.length; m++) f[wn + m] = Cn[m];
+			else e.deps = f = Cn;
+			if (effect_tracking() && e.f & 512) for (m = wn; m < f.length; m++) ((_f$m$reactions = (_f$m = f[m]).reactions) !== null && _f$m$reactions !== void 0 ? _f$m$reactions : _f$m.reactions = []).push(e);
+		} else !p && f !== null && wn < f.length && (remove_reactions(e, wn), f.length = wn);
+		if (is_runes() && Tn !== null && !xn && f !== null && !(e.f & 6146)) for (m = 0; m < Tn.length; m++) schedule_possible_effect_self_invalidation(Tn[m], e);
 		if (i !== null && i !== e) {
-			if (kn++, i.deps !== null) for (let e = 0; e < n; e += 1) i.deps[e].rv = kn;
-			if (t !== null) for (let e of t) e.rv = kn;
-			Dn !== null && (r === null ? r = Dn : r.push(...Dn));
+			if (Dn++, i.deps !== null) for (let e = 0; e < n; e += 1) i.deps[e].rv = Dn;
+			if (t !== null) for (let e of t) e.rv = Dn;
+			Tn !== null && (r === null ? r = Tn : r.push(...Tn));
 		}
-		return e.f & 8388608 && (e.f ^= Nt), d;
+		return e.f & 8388608 && (e.f ^= At$1), d;
 	} catch (e) {
 		return handle_error(e);
 	} finally {
-		e.f ^= jt, U = t, En = n, Dn = r, V$1 = i, Tn = a, set_component_context(o), wn = s, An = c;
+		e.f ^= Ot, Cn = t, wn = n, Tn = r, W = i, Sn = a, set_component_context(o), xn = s, On = c;
 	}
 }
 function remove_reaction(e, t) {
 	let n = t.reactions;
 	if (n !== null) {
-		var r = lt$1.call(n, e);
+		var r = ot$1.call(n, e);
 		if (r !== -1) {
 			var i = n.length - 1;
 			i === 0 ? n = t.reactions = null : (n[r] = n[i], n.pop());
 		}
 	}
-	if (n === null && t.f & 2 && (U === null || !ut$1.call(U, t))) {
+	if (n === null && t.f & 2 && (Cn === null || !st$1.call(Cn, t))) {
 		var a = t;
-		a.f & 512 && (a.f ^= 512, a.f &= ~At$1), a.v !== F && update_derived_status(a), freeze_derived_effects(a), remove_reactions(a, 0);
+		a.f & 512 && (a.f ^= 512, a.f &= ~Dt), a.v !== R && update_derived_status(a), freeze_derived_effects(a), remove_reactions(a, 0);
 	}
 }
 function remove_reactions(e, t) {
@@ -100637,16 +100639,16 @@ function remove_reactions(e, t) {
 function update_effect(e) {
 	var t = e.f;
 	if (!(t & 16384)) {
-		set_signal_status(e, yt$1);
-		var n = H$1;
-		var r = Sn;
-		H$1 = e, Sn = !0;
+		set_signal_status(e, gt$1);
+		var n = G;
+		var r = yn;
+		G = e, yn = !0;
 		try {
 			t & 16777232 ? destroy_block_effect_children(e) : destroy_effect_children(e), execute_effect_teardown(e);
 			var i = update_reaction(e);
-			e.teardown = typeof i == "function" ? i : null, e.wv = On;
+			e.teardown = typeof i == "function" ? i : null, e.wv = En;
 		} finally {
-			Sn = r, H$1 = n;
+			yn = r, G = n;
 		}
 	}
 }
@@ -100655,7 +100657,7 @@ function tick() {
 }
 function _tick() {
 	_tick = _asyncToGenerator(function* () {
-		if (Kt) return new Promise((e) => {
+		if (Ut) return new Promise((e) => {
 			requestAnimationFrame(() => e()), setTimeout(() => e());
 		});
 		yield Promise.resolve(), flushSync();
@@ -100664,29 +100666,29 @@ function _tick() {
 }
 function get(e) {
 	var t = (e.f & 2) != 0;
-	if (xn === null || xn === void 0 || xn.add(e), V$1 !== null && !wn && !(H$1 !== null && H$1.f & 16384) && (Tn === null || !ut$1.call(Tn, e))) {
-		var n = V$1.deps;
-		if (V$1.f & 2097152) e.rv < kn && (e.rv = kn, U === null && n !== null && n[En] === e ? En++ : U === null ? U = [e] : U.push(e));
+	if (vn === null || vn === void 0 || vn.add(e), W !== null && !xn && !(G !== null && G.f & 16384) && (Sn === null || !st$1.call(Sn, e))) {
+		var n = W.deps;
+		if (W.f & 2097152) e.rv < Dn && (e.rv = Dn, Cn === null && n !== null && n[wn] === e ? wn++ : Cn === null ? Cn = [e] : Cn.push(e));
 		else {
-			var _V;
-			var _V$deps;
-			((_V$deps = (_V = V$1).deps) !== null && _V$deps !== void 0 ? _V$deps : _V.deps = []).push(e);
+			var _W;
+			var _W$deps;
+			((_W$deps = (_W = W).deps) !== null && _W$deps !== void 0 ? _W$deps : _W.deps = []).push(e);
 			var r = e.reactions;
-			r === null ? e.reactions = [V$1] : ut$1.call(r, V$1) || r.push(V$1);
+			r === null ? e.reactions = [W] : st$1.call(r, W) || r.push(W);
 		}
 	}
-	if (Cn && mn.has(e)) return mn.get(e);
+	if (bn && un.has(e)) return un.get(e);
 	if (t) {
 		var i = e;
-		if (Cn) {
+		if (bn) {
 			var a = i.v;
-			return (!(i.f & 1024) && i.reactions !== null || depends_on_old_values(i)) && (a = execute_derived(i)), mn.set(i, a), a;
+			return (!(i.f & 1024) && i.reactions !== null || depends_on_old_values(i)) && (a = execute_derived(i)), un.set(i, a), a;
 		}
-		var o = (i.f & 512) == 0 && !wn && V$1 !== null && (Sn || (V$1.f & 512) != 0);
-		var s = (i.f & wt$1) === 0;
+		var o = (i.f & 512) == 0 && !xn && W !== null && (yn || (W.f & 512) != 0);
+		var s = (i.f & xt) === 0;
 		is_dirty(i) && (o && (i.f |= 512), update_derived(i)), o && !s && (unfreeze_derived_effects(i), reconnect(i));
 	}
-	if (B === null || B === void 0 ? void 0 : B.has(e)) return B.get(e);
+	if (U === null || U === void 0 ? void 0 : U.has(e)) return U.get(e);
 	if (e.f & 8388608) throw e.v;
 	return e.v;
 }
@@ -100695,36 +100697,36 @@ function reconnect(e) {
 	if (e.f |= 512, e.deps !== null) for (let t of e.deps) ((_t$reactions = t.reactions) !== null && _t$reactions !== void 0 ? _t$reactions : t.reactions = []).push(e), t.f & 2 && !(t.f & 512) && (unfreeze_derived_effects(t), reconnect(t));
 }
 function depends_on_old_values(e) {
-	if (e.v === F) return !0;
+	if (e.v === R) return !0;
 	if (e.deps === null) return !1;
-	for (let t of e.deps) if (mn.has(t) || t.f & 2 && depends_on_old_values(t)) return !0;
+	for (let t of e.deps) if (un.has(t) || t.f & 2 && depends_on_old_values(t)) return !0;
 	return !1;
 }
 function untrack(e) {
-	var t = wn;
+	var t = xn;
 	try {
-		return wn = !0, e();
+		return xn = !0, e();
 	} finally {
-		wn = t;
+		xn = t;
 	}
 }
 [.../* @__PURE__ */ "allowfullscreen.async.autofocus.autoplay.checked.controls.default.disabled.formnovalidate.indeterminate.inert.ismap.loop.multiple.muted.nomodule.novalidate.open.playsinline.readonly.required.reversed.seamless.selected.webkitdirectory.defer.disablepictureinpicture.disableremoteplayback".split(".")];
-var jn = ["touchstart", "touchmove"];
+var kn = ["touchstart", "touchmove"];
 function is_passive_event(e) {
-	return jn.includes(e);
+	return kn.includes(e);
 }
-var Mn = [
+var An = [
 	"textarea",
 	"script",
 	"style",
 	"title"
 ];
 function is_raw_text_element(e) {
-	return Mn.includes(e);
+	return An.includes(e);
 }
-var Nn = Symbol("events");
-var Pn = /* @__PURE__ */ new Set();
-var Fn = /* @__PURE__ */ new Set();
+var jn = Symbol("events");
+var Mn = /* @__PURE__ */ new Set();
+var Nn = /* @__PURE__ */ new Set();
 function create_event(e, t, n, r = {}) {
 	function target_handler(e) {
 		if (r.capture || handle_event_propagation.call(t, e), !e.cancelBubble) return without_reactive_context(() => n === null || n === void 0 ? void 0 : n.call(this, e));
@@ -100744,14 +100746,14 @@ function event(e, t, n, r, i) {
 	});
 }
 function delegated(e, t, n) {
-	var _t$Nn;
-	((_t$Nn = t[Nn]) !== null && _t$Nn !== void 0 ? _t$Nn : t[Nn] = {})[e] = n;
+	var _t$jn;
+	((_t$jn = t[jn]) !== null && _t$jn !== void 0 ? _t$jn : t[jn] = {})[e] = n;
 }
 function delegate(e) {
-	for (var t = 0; t < e.length; t++) Pn.add(e[t]);
-	for (var n of Fn) n(e);
+	for (var t = 0; t < e.length; t++) Mn.add(e[t]);
+	for (var n of Nn) n(e);
 }
-var In = null;
+var Pn = null;
 function handle_event_propagation(e) {
 	var _e$composedPath;
 	var t = this;
@@ -100759,13 +100761,13 @@ function handle_event_propagation(e) {
 	var r = e.type;
 	var i = ((_e$composedPath = e.composedPath) === null || _e$composedPath === void 0 ? void 0 : _e$composedPath.call(e)) || [];
 	var a = i[0] || e.target;
-	In = e;
+	Pn = e;
 	var o = 0;
-	var s = In === e && e[Nn];
+	var s = Pn === e && e[jn];
 	if (s) {
 		var c = i.indexOf(s);
 		if (c !== -1 && (t === document || t === window)) {
-			e[Nn] = t;
+			e[jn] = t;
 			return;
 		}
 		var l = i.indexOf(t);
@@ -100773,21 +100775,21 @@ function handle_event_propagation(e) {
 		c <= l && (o = c);
 	}
 	if (a = i[o] || e.target, a !== t) {
-		ft$1(e, "currentTarget", {
+		lt$1(e, "currentTarget", {
 			configurable: !0,
 			get() {
 				return a || n;
 			}
 		});
-		var u = V$1;
-		var d = H$1;
+		var u = W;
+		var d = G;
 		set_active_reaction(null), set_active_effect(null);
 		try {
 			for (var f, p = []; a !== null;) {
 				var m = a.assignedSlot || a.parentNode || a.host || null;
 				try {
-					var _a$Nn;
-					var h = (_a$Nn = a[Nn]) === null || _a$Nn === void 0 ? void 0 : _a$Nn[r];
+					var _a$jn;
+					var h = (_a$jn = a[jn]) === null || _a$jn === void 0 ? void 0 : _a$jn[r];
 					h != null && (!a.disabled || e.target === a) && h.call(a, e);
 				} catch (e) {
 					f ? p.push(e) : f = e;
@@ -100802,21 +100804,21 @@ function handle_event_propagation(e) {
 				throw f;
 			}
 		} finally {
-			e[Nn] = t, delete e.currentTarget, set_active_reaction(u), set_active_effect(d);
+			e[jn] = t, delete e.currentTarget, set_active_reaction(u), set_active_effect(d);
 		}
 	}
 }
-var Ln = ((_globalThis = globalThis) === null || _globalThis === void 0 || (_globalThis = _globalThis.window) === null || _globalThis === void 0 ? void 0 : _globalThis.trustedTypes) && /* @__PURE__ */ globalThis.window.trustedTypes.createPolicy("svelte-trusted-html", { createHTML: (e) => e });
+var Fn = ((_globalThis = globalThis) === null || _globalThis === void 0 || (_globalThis = _globalThis.window) === null || _globalThis === void 0 ? void 0 : _globalThis.trustedTypes) && /* @__PURE__ */ globalThis.window.trustedTypes.createPolicy("svelte-trusted-html", { createHTML: (e) => e });
 function create_trusted_html(e) {
-	var _Ln$createHTML;
-	return (_Ln$createHTML = Ln === null || Ln === void 0 ? void 0 : Ln.createHTML(e)) !== null && _Ln$createHTML !== void 0 ? _Ln$createHTML : e;
+	var _Fn$createHTML;
+	return (_Fn$createHTML = Fn === null || Fn === void 0 ? void 0 : Fn.createHTML(e)) !== null && _Fn$createHTML !== void 0 ? _Fn$createHTML : e;
 }
 function create_fragment_from_html(e) {
 	var t = create_element("template");
 	return t.innerHTML = create_trusted_html(e.replaceAll("<!>", "<!---->")), t.content;
 }
 function assign_nodes(e, t) {
-	var n = H$1;
+	var n = G;
 	n.nodes === null && (n.nodes = {
 		start: e,
 		end: t,
@@ -100831,9 +100833,9 @@ function from_html(e, t) {
 	var i;
 	var a = !e.startsWith("<!>");
 	return () => {
-		if (I$1) return assign_nodes(L, null), L;
+		if (z) return assign_nodes(B, null), B;
 		i === void 0 && (i = create_fragment_from_html(a ? e : "<!>" + e), n || (i = /* @__PURE__ */ get_first_child(i)));
-		var t = r || _n ? document.importNode(i, !0) : i.cloneNode(!0);
+		var t = r || mn ? document.importNode(i, !0) : i.cloneNode(!0);
 		if (n) {
 			var o = /* @__PURE__ */ get_first_child(t);
 			var s = t.lastChild;
@@ -100849,7 +100851,7 @@ function from_namespace(e, t, n = "svg") {
 	var a = `<${n}>${r ? e : "<!>" + e}</${n}>`;
 	var o;
 	return () => {
-		if (I$1) return assign_nodes(L, null), L;
+		if (z) return assign_nodes(B, null), B;
 		if (!o) {
 			var e = /* @__PURE__ */ get_first_child(create_fragment_from_html(a));
 			if (i) for (o = document.createDocumentFragment(); /* @__PURE__ */ get_first_child(e);) o.appendChild(/* @__PURE__ */ get_first_child(e));
@@ -100869,29 +100871,29 @@ function from_svg(e, t) {
 	return /* @__PURE__ */ from_namespace(e, t, "svg");
 }
 function comment() {
-	if (I$1) return assign_nodes(L, null), L;
+	if (z) return assign_nodes(B, null), B;
 	var e = document.createDocumentFragment();
 	var t = document.createComment("");
 	var n = create_text();
 	return e.append(t, n), assign_nodes(t, n), e;
 }
 function append(e, t) {
-	if (I$1) {
-		var n = H$1;
-		(!(n.f & 32768) || n.nodes.end === null) && (n.nodes.end = L), hydrate_next();
+	if (z) {
+		var n = G;
+		(!(n.f & 32768) || n.nodes.end === null) && (n.nodes.end = B), hydrate_next();
 		return;
 	}
 	e !== null && e.before(t);
 }
 function set_text(e, t) {
-	var _e$zt;
+	var _e$It;
 	var n = t == null ? "" : typeof t == "object" ? `${t}` : t;
-	n !== ((_e$zt = e[zt]) !== null && _e$zt !== void 0 ? _e$zt : e[zt] = e.nodeValue) && (e[zt] = n, e.nodeValue = `${n}`);
+	n !== ((_e$It = e[It$1]) !== null && _e$It !== void 0 ? _e$It : e[It$1] = e.nodeValue) && (e[It$1] = n, e.nodeValue = `${n}`);
 }
 function mount(e, t) {
 	return _mount(e, t);
 }
-var Rn = /* @__PURE__ */ new Map();
+var In = /* @__PURE__ */ new Map();
 function _mount(e, { target: t, anchor: n, props: r = {}, events: i, context: a, intro: o = !0, transformError: s }) {
 	init_operations();
 	var c = void 0;
@@ -100899,8 +100901,8 @@ function _mount(e, { target: t, anchor: n, props: r = {}, events: i, context: a,
 		var o = n !== null && n !== void 0 ? n : t.appendChild(create_text());
 		boundary(o, { pending: () => {} }, (t) => {
 			push({});
-			var n = R;
-			if (a && (n.c = a), i && (r.$$events = i), I$1 && assign_nodes(t, null), c = e(t, r) || {}, I$1 && (H$1.nodes.end = L, L === null || L.nodeType !== 8 || L.data !== "]")) throw hydration_mismatch(), Ut;
+			var n = V$1;
+			if (a && (n.c = a), i && (r.$$events = i), z && assign_nodes(t, null), c = e(t, r) || {}, z && (G.nodes.end = B, B === null || B.nodeType !== 8 || B.data !== "]")) throw hydration_mismatch(), Bt;
 			pop();
 		}, s);
 		var l = /* @__PURE__ */ new Set(), event_handle = (e) => {
@@ -100910,31 +100912,31 @@ function _mount(e, { target: t, anchor: n, props: r = {}, events: i, context: a,
 					l.add(r);
 					var i = is_passive_event(r);
 					for (let e of [t, document]) {
-						var a = Rn.get(e);
-						a === void 0 && (a = /* @__PURE__ */ new Map(), Rn.set(e, a));
+						var a = In.get(e);
+						a === void 0 && (a = /* @__PURE__ */ new Map(), In.set(e, a));
 						var o = a.get(r);
 						o === void 0 ? (e.addEventListener(r, handle_event_propagation, { passive: i }), a.set(r, 1)) : a.set(r, o + 1);
 					}
 				}
 			}
 		};
-		return event_handle(dt$1(Pn)), Fn.add(event_handle), () => {
+		return event_handle(ct$1(Mn)), Nn.add(event_handle), () => {
 			var _o$parentNode;
 			for (var e of l) for (let n of [t, document]) {
-				var r = Rn.get(n), i = r.get(e);
-				--i == 0 ? (n.removeEventListener(e, handle_event_propagation), r.delete(e), r.size === 0 && Rn.delete(n)) : r.set(e, i);
+				var r = In.get(n), i = r.get(e);
+				--i == 0 ? (n.removeEventListener(e, handle_event_propagation), r.delete(e), r.size === 0 && In.delete(n)) : r.set(e, i);
 			}
-			Fn.delete(event_handle), o !== n && ((_o$parentNode = o.parentNode) === null || _o$parentNode === void 0 || _o$parentNode.removeChild(o));
+			Nn.delete(event_handle), o !== n && ((_o$parentNode = o.parentNode) === null || _o$parentNode === void 0 || _o$parentNode.removeChild(o));
 		};
 	});
-	return zn.set(c, l), c;
+	return Ln.set(c, l), c;
 }
-var zn = /* @__PURE__ */ new WeakMap();
+var Ln = /* @__PURE__ */ new WeakMap();
 function unmount(e, t) {
-	let n = zn.get(e);
-	return n ? (zn.delete(e), n(t)) : Promise.resolve();
+	let n = Ln.get(e);
+	return n ? (Ln.delete(e), n(t)) : Promise.resolve();
 }
-var BranchManager = (_e4 = /* @__PURE__ */ new WeakMap(), _t4 = /* @__PURE__ */ new WeakMap(), _n4 = /* @__PURE__ */ new WeakMap(), _r4 = /* @__PURE__ */ new WeakMap(), _i4 = /* @__PURE__ */ new WeakMap(), _a4 = /* @__PURE__ */ new WeakMap(), _o3 = /* @__PURE__ */ new WeakMap(), class {
+var BranchManager = (_e4 = /* @__PURE__ */ new WeakMap(), _t4 = /* @__PURE__ */ new WeakMap(), _n4 = /* @__PURE__ */ new WeakMap(), _r4 = /* @__PURE__ */ new WeakMap(), _i4 = /* @__PURE__ */ new WeakMap(), _a4 = /* @__PURE__ */ new WeakMap(), _o4 = /* @__PURE__ */ new WeakMap(), class {
 	constructor(e, t = !0) {
 		_defineProperty(this, "anchor", void 0);
 		_classPrivateFieldInitSpec(this, _e4, /* @__PURE__ */ new Map());
@@ -100972,7 +100974,7 @@ var BranchManager = (_e4 = /* @__PURE__ */ new WeakMap(), _t4 = /* @__PURE__ */ 
 				}
 			}
 		});
-		_classPrivateFieldInitSpec(this, _o3, (e) => {
+		_classPrivateFieldInitSpec(this, _o4, (e) => {
 			_classPrivateFieldGet2(_e4, this).delete(e);
 			let t = Array.from(_classPrivateFieldGet2(_e4, this).values());
 			for (let [e, n] of _classPrivateFieldGet2(_n4, this)) t.includes(e) || (destroy_effect(n.effect), _classPrivateFieldGet2(_n4, this).delete(e));
@@ -100980,7 +100982,7 @@ var BranchManager = (_e4 = /* @__PURE__ */ new WeakMap(), _t4 = /* @__PURE__ */ 
 		this.anchor = e, _classPrivateFieldSet2(_i4, this, t);
 	}
 	ensure(e, t) {
-		var n = z;
+		var n = H$1;
 		var r = should_defer_append();
 		if (t && !_classPrivateFieldGet2(_t4, this).has(e) && !_classPrivateFieldGet2(_n4, this).has(e)) if (r) {
 			var i = document.createDocumentFragment();
@@ -100993,17 +100995,17 @@ var BranchManager = (_e4 = /* @__PURE__ */ new WeakMap(), _t4 = /* @__PURE__ */ 
 		if (_classPrivateFieldGet2(_e4, this).set(n, e), r) {
 			for (let [t, r] of _classPrivateFieldGet2(_t4, this)) t === e ? n.unskip_effect(r) : n.skip_effect(r);
 			for (let [t, r] of _classPrivateFieldGet2(_n4, this)) t === e ? n.unskip_effect(r.effect) : n.skip_effect(r.effect);
-			n.oncommit(_classPrivateFieldGet2(_a4, this)), n.ondiscard(_classPrivateFieldGet2(_o3, this));
-		} else I$1 && (this.anchor = L), _classPrivateFieldGet2(_a4, this).call(this, n);
+			n.oncommit(_classPrivateFieldGet2(_a4, this)), n.ondiscard(_classPrivateFieldGet2(_o4, this));
+		} else z && (this.anchor = B), _classPrivateFieldGet2(_a4, this).call(this, n);
 	}
 });
 function if_block(e, t, n = !1) {
 	var r;
-	I$1 && (r = L, hydrate_next());
+	z && (r = B, hydrate_next());
 	var i = new BranchManager(e);
-	var a = n ? Et : 0;
+	var a = n ? Ct$1 : 0;
 	function update_branch(e, t) {
-		if (I$1) {
+		if (z) {
 			var n = read_hydration_instruction(r);
 			if (e !== parseInt(n.substring(1))) {
 				var a = skip_nodes();
@@ -101028,7 +101030,7 @@ function pause_effects(e, t, n) {
 			if (a) {
 				if (a.pending.delete(n), a.done.add(n), a.pending.size === 0) {
 					var t = e.outrogroups;
-					destroy_effects(e, dt$1(a.done)), t.delete(a), t.size === 0 && (e.outrogroups = null);
+					destroy_effects(e, ct$1(a.done)), t.delete(a), t.size === 0 && (e.outrogroups = null);
 				}
 			} else --o;
 		}, !1);
@@ -101054,28 +101056,28 @@ function destroy_effects(e, t, n = !0) {
 	}
 	for (var i = 0; i < t.length; i++) {
 		var a = t[i];
-		(r === null || r === void 0 ? void 0 : r.has(a)) ? (a.f |= kt, move_effect(a, document.createDocumentFragment())) : destroy_effect(t[i], n);
+		(r === null || r === void 0 ? void 0 : r.has(a)) ? (a.f |= Et, move_effect(a, document.createDocumentFragment())) : destroy_effect(t[i], n);
 	}
 }
-var Bn;
+var Rn;
 function each(e, t, n, r, i, a = null) {
 	var o = e;
 	var s = /* @__PURE__ */ new Map();
 	if (t & 4) {
 		var c = e;
-		o = I$1 ? set_hydrate_node(/* @__PURE__ */ get_first_child(c)) : c.appendChild(create_text());
+		o = z ? set_hydrate_node(/* @__PURE__ */ get_first_child(c)) : c.appendChild(create_text());
 	}
-	I$1 && hydrate_next();
+	z && hydrate_next();
 	var l = null;
 	var u = /* @__PURE__ */ derived_safe_equal(() => {
 		var e = n();
-		return ct$1(e) ? e : e == null ? [] : dt$1(e);
+		return at$1(e) ? e : e == null ? [] : ct$1(e);
 	});
 	var d;
 	var f = /* @__PURE__ */ new Map();
 	var p = !0;
 	function commit(e) {
-		m.effect.f & 16384 || (m.pending.delete(e), m.fallback = l, reconcile(m, d, o, t, r), l !== null && (d.length === 0 ? l.f & 33554432 ? (l.f ^= kt, move(l, null, o)) : resume_effect(l) : pause_effect(l, () => {
+		m.effect.f & 16384 || (m.pending.delete(e), m.fallback = l, reconcile(m, d, o, t, r), l !== null && (d.length === 0 ? l.f & 33554432 ? (l.f ^= Et, move(l, null, o)) : resume_effect(l) : pause_effect(l, () => {
 			l = null;
 		})));
 	}
@@ -101087,19 +101089,19 @@ function each(e, t, n, r, i, a = null) {
 			d = get(u);
 			var e = d.length;
 			let c = !1;
-			I$1 && read_hydration_instruction(o) === "[!" != (e === 0) && (o = skip_nodes(), set_hydrate_node(o), set_hydrating(!1), c = !0);
-			for (var m = /* @__PURE__ */ new Set(), h = z, g = should_defer_append(), _ = 0; _ < e; _ += 1) {
-				var _Bn;
-				I$1 && L.nodeType === 8 && L.data === "]" && (o = L, c = !0, set_hydrating(!1));
+			z && read_hydration_instruction(o) === "[!" != (e === 0) && (o = skip_nodes(), set_hydrate_node(o), set_hydrating(!1), c = !0);
+			for (var m = /* @__PURE__ */ new Set(), h = H$1, g = should_defer_append(), _ = 0; _ < e; _ += 1) {
+				var _Rn;
+				z && B.nodeType === 8 && B.data === "]" && (o = B, c = !0, set_hydrating(!1));
 				var v = d[_];
 				var y = r(v, _);
 				var b = p ? null : s.get(y);
-				b ? (b.v && internal_set(b.v, v), b.i && internal_set(b.i, _), g && h.unskip_effect(b.e)) : (b = create_item(s, p ? o : (_Bn = Bn) !== null && _Bn !== void 0 ? _Bn : Bn = create_text(), v, y, _, i, t, n), p || (b.e.f |= kt), s.set(y, b)), m.add(y);
+				b ? (b.v && internal_set(b.v, v), b.i && internal_set(b.i, _), g && h.unskip_effect(b.e)) : (b = create_item(s, p ? o : (_Rn = Rn) !== null && _Rn !== void 0 ? _Rn : Rn = create_text(), v, y, _, i, t, n), p || (b.e.f |= Et), s.set(y, b)), m.add(y);
 			}
 			if (e === 0 && a && !l && (p ? l = branch(() => a(o)) : (l = branch(() => {
-				var _Bn2;
-				return a((_Bn2 = Bn) !== null && _Bn2 !== void 0 ? _Bn2 : Bn = create_text());
-			}), l.f |= kt)), e > m.size && each_key_duplicate("", "", ""), I$1 && e > 0 && set_hydrate_node(skip_nodes()), !p) if (f.set(h, m), g) {
+				var _Rn2;
+				return a((_Rn2 = Rn) !== null && _Rn2 !== void 0 ? _Rn2 : Rn = create_text());
+			}), l.f |= Et)), e > m.size && each_key_duplicate("", "", ""), z && e > 0 && set_hydrate_node(skip_nodes()), !p) if (f.set(h, m), g) {
 				for (let [e, t] of s) m.has(e) || h.skip_effect(t.e);
 				h.oncommit(commit), h.ondiscard(discard);
 			} else commit(h);
@@ -101111,7 +101113,7 @@ function each(e, t, n, r, i, a = null) {
 		outrogroups: null,
 		fallback: l
 	};
-	p = !1, I$1 && (o = L);
+	p = !1, z && (o = B);
 }
 function skip_to_branch(e) {
 	for (; e !== null && !(e.f & 32);) e = e.next;
@@ -101138,7 +101140,7 @@ function reconcile(e, t, n, r, i) {
 		var _g$nodes2;
 		var _d4;
 		if (m = t[_], h = i(m, _), g = s.get(h).e, e.outrogroups !== null) for (let t of e.outrogroups) t.pending.delete(g), t.done.delete(g);
-		if (g.f & 8192 && (resume_effect(g), a && ((_g$nodes2 = g.nodes) === null || _g$nodes2 === void 0 || (_g$nodes2 = _g$nodes2.a) === null || _g$nodes2 === void 0 || _g$nodes2.unfix(), ((_d4 = d) !== null && _d4 !== void 0 ? _d4 : d = /* @__PURE__ */ new Set()).delete(g))), g.f & 33554432) if (g.f ^= kt, g === c) move(g, null, n);
+		if (g.f & 8192 && (resume_effect(g), a && ((_g$nodes2 = g.nodes) === null || _g$nodes2 === void 0 || (_g$nodes2 = _g$nodes2.a) === null || _g$nodes2 === void 0 || _g$nodes2.unfix(), ((_d4 = d) !== null && _d4 !== void 0 ? _d4 : d = /* @__PURE__ */ new Set()).delete(g))), g.f & 33554432) if (g.f ^= Et, g === c) move(g, null, n);
 		else {
 			var v = u ? u.next : c;
 			g === e.effect.last && (e.effect.last = g.prev), g.prev && (g.prev.next = g.next), g.next && (g.next.prev = g.prev), link(e, u, g), link(e, g, v), move(g, v, n), u = g, f = [], p = [], c = skip_to_branch(u.next);
@@ -101151,11 +101153,11 @@ function reconcile(e, t, n, r, i) {
 					var y = p[0];
 					var b;
 					u = y.prev;
-					var ee = f[0];
-					var x = f[f.length - 1];
+					var x = f[0];
+					var S = f[f.length - 1];
 					for (b = 0; b < f.length; b += 1) move(f[b], y, n);
 					for (b = 0; b < p.length; b += 1) l.delete(p[b]);
-					link(e, ee.prev, x.next), link(e, u, ee), link(e, x, y), c = y, u = x, --_, f = [], p = [];
+					link(e, x.prev, S.next), link(e, u, x), link(e, S, y), c = y, u = S, --_, f = [], p = [];
 				} else l.delete(g), move(g, c, n), link(e, g.prev, g.next), link(e, g, u === null ? e.effect.first : u.next), link(e, u, g), u = g;
 				continue;
 			}
@@ -101166,23 +101168,23 @@ function reconcile(e, t, n, r, i) {
 	}
 	if (e.outrogroups !== null) {
 		var _e$outrogroups2;
-		for (let t of e.outrogroups) t.pending.size === 0 && (destroy_effects(e, dt$1(t.done)), (_e$outrogroups2 = e.outrogroups) === null || _e$outrogroups2 === void 0 || _e$outrogroups2.delete(t));
+		for (let t of e.outrogroups) t.pending.size === 0 && (destroy_effects(e, ct$1(t.done)), (_e$outrogroups2 = e.outrogroups) === null || _e$outrogroups2 === void 0 || _e$outrogroups2.delete(t));
 		e.outrogroups.size === 0 && (e.outrogroups = null);
 	}
 	if (c !== null || l !== void 0) {
-		var S = [];
-		if (l !== void 0) for (g of l) g.f & 8192 || S.push(g);
-		for (; c !== null;) !(c.f & 8192) && c !== e.fallback && S.push(c), c = skip_to_branch(c.next);
-		var te = S.length;
-		if (te > 0) {
-			var ne = r & 4 && o === 0 ? n : null;
+		var C = [];
+		if (l !== void 0) for (g of l) g.f & 8192 || C.push(g);
+		for (; c !== null;) !(c.f & 8192) && c !== e.fallback && C.push(c), c = skip_to_branch(c.next);
+		var w = C.length;
+		if (w > 0) {
+			var T = r & 4 && o === 0 ? n : null;
 			if (a) {
-				var _S$_$nodes;
-				var _S$_$nodes2;
-				for (_ = 0; _ < te; _ += 1) (_S$_$nodes = S[_].nodes) === null || _S$_$nodes === void 0 || (_S$_$nodes = _S$_$nodes.a) === null || _S$_$nodes === void 0 || _S$_$nodes.measure();
-				for (_ = 0; _ < te; _ += 1) (_S$_$nodes2 = S[_].nodes) === null || _S$_$nodes2 === void 0 || (_S$_$nodes2 = _S$_$nodes2.a) === null || _S$_$nodes2 === void 0 || _S$_$nodes2.fix();
+				var _C$_$nodes;
+				var _C$_$nodes2;
+				for (_ = 0; _ < w; _ += 1) (_C$_$nodes = C[_].nodes) === null || _C$_$nodes === void 0 || (_C$_$nodes = _C$_$nodes.a) === null || _C$_$nodes === void 0 || _C$_$nodes.measure();
+				for (_ = 0; _ < w; _ += 1) (_C$_$nodes2 = C[_].nodes) === null || _C$_$nodes2 === void 0 || (_C$_$nodes2 = _C$_$nodes2.a) === null || _C$_$nodes2 === void 0 || _C$_$nodes2.fix();
 			}
-			pause_effects(e, S, ne);
+			pause_effects(e, C, T);
 		}
 	}
 	a && queue_micro_task(() => {
@@ -101217,34 +101219,34 @@ function snippet(e, t, ...n) {
 		var _t5;
 		let e = (_t5 = t()) !== null && _t5 !== void 0 ? _t5 : null;
 		r.ensure(e, e && ((t) => e(t, ...n)));
-	}, Et);
+	}, Ct$1);
 }
 function element(e, t, n, r, i, a) {
-	let o = I$1;
-	I$1 && hydrate_next();
+	let o = z;
+	z && hydrate_next();
 	var s = null;
-	I$1 && L.nodeType === 1 && (s = L, hydrate_next());
-	var c = I$1 ? L : e;
+	z && B.nodeType === 1 && (s = B, hydrate_next());
+	var c = z ? B : e;
 	var l = new BranchManager(c, !1);
 	block(() => {
 		let e = t() || null;
-		var a = i ? i() : n || e === "svg" ? Gt : void 0;
+		var a = i ? i() : n || e === "svg" ? Ht : void 0;
 		if (e === null) {
 			l.ensure(null, null);
 			return;
 		}
 		return l.ensure(e, (t) => {
 			if (e) {
-				if (s = I$1 ? s : create_element(e, a), assign_nodes(s, s), r) {
-					I$1 && is_raw_text_element(e) && s.append(document.createComment(""));
-					var n = I$1 ? /* @__PURE__ */ get_first_child(s) : s.appendChild(create_text());
-					I$1 && (n === null ? set_hydrating(!1) : set_hydrate_node(n)), r(s, n);
+				if (s = z ? s : create_element(e, a), assign_nodes(s, s), r) {
+					z && is_raw_text_element(e) && s.append(document.createComment(""));
+					var n = z ? /* @__PURE__ */ get_first_child(s) : s.appendChild(create_text());
+					z && (n === null ? set_hydrating(!1) : set_hydrate_node(n)), r(s, n);
 				}
-				H$1.nodes.end = s, t.before(s);
+				G.nodes.end = s, t.before(s);
 			}
-			I$1 && set_hydrate_node(t);
+			z && set_hydrate_node(t);
 		}), () => {};
-	}, Et), teardown(() => {}), o && (set_hydrating(!0), set_hydrate_node(c));
+	}, Ct$1), teardown(() => {}), o && (set_hydrating(!0), set_hydrate_node(c));
 }
 function append_styles$1(e, t) {
 	effect(() => {
@@ -101258,14 +101260,14 @@ function append_styles$1(e, t) {
 	});
 }
 __name(append_styles$1, "append_styles");
-var Vn = [..." 	\n\r\f\xA0\v﻿"];
+var zn = [..." 	\n\r\f\xA0\v﻿"];
 function to_class(e, t, n) {
 	var r = e == null ? "" : "" + e;
 	if (t && (r = r ? r + " " + t : t), n) {
 		for (var i of Object.keys(n)) if (n[i]) r = r ? r + " " + i : i;
 		else if (r.length) for (var a = i.length, o = 0; (o = r.indexOf(i, o)) >= 0;) {
 			var s = o + a;
-			(o === 0 || Vn.includes(r[o - 1])) && (s === r.length || Vn.includes(r[s])) ? r = (o === 0 ? "" : r.substring(0, o)) + r.substring(s + 1) : o = s;
+			(o === 0 || zn.includes(r[o - 1])) && (s === r.length || zn.includes(r[s])) ? r = (o === 0 ? "" : r.substring(0, o)) + r.substring(s + 1) : o = s;
 		}
 	}
 	return r === "" ? null : r;
@@ -101320,10 +101322,10 @@ function to_style(e, t) {
 	return e == null ? null : String(e);
 }
 function set_class(e, t, n, r, i, a) {
-	var o = e[Lt];
-	if (I$1 || o !== n || o === void 0) {
+	var o = e[Pt$1];
+	if (z || o !== n || o === void 0) {
 		var s = to_class(n, r, a);
-		(!I$1 || s !== e.getAttribute("class")) && (s == null ? e.removeAttribute("class") : t ? e.className = s : e.setAttribute("class", s)), e[Lt] = n;
+		(!z || s !== e.getAttribute("class")) && (s == null ? e.removeAttribute("class") : t ? e.className = s : e.setAttribute("class", s)), e[Pt$1] = n;
 	} else if (a && i !== a) for (var c in a) {
 		var l = !!a[c];
 		(i == null || l !== !!i[c]) && e.classList.toggle(c, l);
@@ -101337,19 +101339,19 @@ function update_styles(e, t = {}, n, r) {
 	}
 }
 function set_style(e, t, n, r) {
-	var i = e[Rt];
-	if (I$1 || i !== t) {
+	var i = e[Ft];
+	if (z || i !== t) {
 		var a = to_style(t, r);
-		(!I$1 || a !== e.getAttribute("style")) && (a == null ? e.removeAttribute("style") : e.style.cssText = a), e[Rt] = t;
+		(!z || a !== e.getAttribute("style")) && (a == null ? e.removeAttribute("style") : e.style.cssText = a), e[Ft] = t;
 	} else r && (Array.isArray(r) ? (update_styles(e, n === null || n === void 0 ? void 0 : n[0], r[0]), update_styles(e, n === null || n === void 0 ? void 0 : n[1], r[1], "important")) : update_styles(e, n, r));
 	return r;
 }
-var Hn = Symbol("is custom element");
-var Un = Symbol("is html");
-var Wn = Ht ? "link" : "LINK";
-var Gn = Ht ? "progress" : "PROGRESS";
+var Bn = Symbol("is custom element");
+var Vn = Symbol("is html");
+var Hn = zt ? "link" : "LINK";
+var Un = zt ? "progress" : "PROGRESS";
 function remove_input_defaults(e) {
-	if (I$1) {
+	if (z) {
 		var t = !1;
 		var remove_defaults = () => {
 			if (!t) {
@@ -101363,33 +101365,33 @@ function remove_input_defaults(e) {
 				}
 			}
 		};
-		e[Bt] = remove_defaults, queue_micro_task(remove_defaults), add_form_reset_listener();
+		e[Lt] = remove_defaults, queue_micro_task(remove_defaults), add_form_reset_listener();
 	}
 }
 function set_value(e, t) {
 	var n = get_attributes(e);
-	n.value === (n.value = t !== null && t !== void 0 ? t : void 0) || e.value === t && (t !== 0 || e.nodeName !== Gn) || (e.value = t !== null && t !== void 0 ? t : "");
+	n.value === (n.value = t !== null && t !== void 0 ? t : void 0) || e.value === t && (t !== 0 || e.nodeName !== Un) || (e.value = t !== null && t !== void 0 ? t : "");
 }
 function set_attribute(e, t, n, r) {
 	var i = get_attributes(e);
-	I$1 && (i[t] = e.getAttribute(t), t === "src" || t === "srcset" || t === "href" && e.nodeName === Wn) || i[t] !== (i[t] = n) && (t === "loading" && (e[Ft] = n), n == null ? e.removeAttribute(t) : typeof n != "string" && get_setters(e).includes(t) ? e[t] = n : e.setAttribute(t, n));
+	z && (i[t] = e.getAttribute(t), t === "src" || t === "srcset" || t === "href" && e.nodeName === Hn) || i[t] !== (i[t] = n) && (t === "loading" && (e[Mt$1] = n), n == null ? e.removeAttribute(t) : typeof n != "string" && get_setters(e).includes(t) ? e[t] = n : e.setAttribute(t, n));
 }
 function get_attributes(e) {
-	var _e$It;
-	return (_e$It = e[It$1]) !== null && _e$It !== void 0 ? _e$It : e[It$1] = {
-		[Hn]: e.nodeName.includes("-"),
-		[Un]: e.namespaceURI === Wt
+	var _e$Nt;
+	return (_e$Nt = e[Nt]) !== null && _e$Nt !== void 0 ? _e$Nt : e[Nt] = {
+		[Bn]: e.nodeName.includes("-"),
+		[Vn]: e.namespaceURI === Vt
 	};
 }
-var Kn = /* @__PURE__ */ new Map();
+var Wn = /* @__PURE__ */ new Map();
 function get_setters(e) {
 	var t = e.getAttribute("is") || e.nodeName;
-	var n = Kn.get(t);
+	var n = Wn.get(t);
 	if (n) return n;
-	Kn.set(t, n = []);
+	Wn.set(t, n = []);
 	for (var r, i = e, a = Element.prototype; a !== i;) {
-		for (var o in r = mt$1(i), r) r[o].set && o !== "innerHTML" && o !== "textContent" && o !== "innerText" && n.push(o);
-		i = _t(i);
+		for (var o in r = dt$1(i), r) r[o].set && o !== "innerHTML" && o !== "textContent" && o !== "innerText" && n.push(o);
+		i = mt$1(i);
 	}
 	return n;
 }
@@ -101398,7 +101400,7 @@ function bind_value(e, t, n = t) {
 	listen_to_event_and_reset_event(e, "input", function() {
 		var _ref2 = _asyncToGenerator(function* (i) {
 			var a = i ? e.defaultValue : e.value;
-			if (a = is_numberlike_input(e) ? to_number(a) : a, n(a), z !== null && r.add(z), yield tick(), a !== (a = t())) {
+			if (a = is_numberlike_input(e) ? to_number(a) : a, n(a), H$1 !== null && r.add(H$1), yield tick(), a !== (a = t())) {
 				var _a5;
 				var o = e.selectionStart;
 				var s = e.selectionEnd;
@@ -101412,10 +101414,10 @@ function bind_value(e, t, n = t) {
 		return function(_x3) {
 			return _ref2.apply(this, arguments);
 		};
-	}()), (I$1 && e.defaultValue !== e.value || untrack(t) == null && e.value) && (n(is_numberlike_input(e) ? to_number(e.value) : e.value), z !== null && r.add(z)), render_effect(() => {
+	}()), (z && e.defaultValue !== e.value || untrack(t) == null && e.value) && (n(is_numberlike_input(e) ? to_number(e.value) : e.value), H$1 !== null && r.add(H$1)), render_effect(() => {
 		var n = t();
 		if (e === document.activeElement) {
-			var i = Kt ? $t : z;
+			var i = Ut ? Xt : H$1;
 			if (r.has(i)) return;
 		}
 		is_numberlike_input(e) && n === to_number(e.value) || e.type === "date" && !n && !e.value || n !== e.value && (e.value = n !== null && n !== void 0 ? n : "");
@@ -101429,11 +101431,11 @@ function to_number(e) {
 	return e === "" ? null : +e;
 }
 function is_bound_this(e, t) {
-	return e === t || (e === null || e === void 0 ? void 0 : e[Pt$1]) === t;
+	return e === t || (e === null || e === void 0 ? void 0 : e[jt]) === t;
 }
 function bind_this(e = {}, t, n, r) {
-	var i = R.r;
-	var a = H$1;
+	var i = V$1.r;
+	var a = G;
 	return effect(() => {
 		var o;
 		var s;
@@ -101458,7 +101460,7 @@ function bind_window_size(e, t) {
 	listen(window, ["resize"], () => without_reactive_context(() => t(window[e])));
 }
 function onMount(e) {
-	R === null && lifecycle_outside_component("onMount"), qt && R.l !== null ? init_update_callbacks(R).m.push(e) : user_effect(() => {
+	V$1 === null && lifecycle_outside_component("onMount"), Wt && V$1.l !== null ? init_update_callbacks(V$1).m.push(e) : user_effect(() => {
 		let t = untrack(e);
 		if (typeof t == "function") return t;
 	});
@@ -101501,7 +101503,7 @@ var SvelteHost = class {
 		this._instance && (this._instance = (unmount(this._instance), null)), (_this$_root = this._root) === null || _this$_root === void 0 || _this$_root.remove(), this._root = null;
 	}
 };
-var qn = class SvelteMenuModule extends P$2 {
+var Gn = class SvelteMenuModule extends L {
 	constructor(..._args16) {
 		super(..._args16);
 		_defineProperty(this, "_translator", void 0);
@@ -101510,7 +101512,7 @@ var qn = class SvelteMenuModule extends P$2 {
 		_defineProperty(this, "_host", new SvelteHost());
 	}
 	init(e, t) {
-		super.init(e, t), this._translator = this.diContainer.get(j.Translator), this._currencyFormatter = this.diContainer.get(j.CurrencyFormatter);
+		super.init(e, t), this._translator = this.diContainer.get(P$2.Translator), this._currencyFormatter = this.diContainer.get(P$2.CurrencyFormatter);
 	}
 	destroy() {
 		this._host.destroy();
@@ -101534,290 +101536,7 @@ var qn = class SvelteMenuModule extends P$2 {
 		for (let e of this._listeners) e();
 	}
 };
-qn = __decorate$1([injectFromBase()], qn);
-var Jn = class AnimationPlayerModule extends P$2 {
-	constructor() {
-		super();
-	}
-	afterInit() {
-		super.afterInit(), this.view.hide(), document.addEventListener("keydown", this.keyboardInput.bind(this));
-	}
-	enterFirstState() {}
-	setupStates() {
-		super.setupStates();
-	}
-	keyboardInput(e) {
-		e.code === "KeyV" && (this.view.isVisible() ? this.view.hide() : this.view.show());
-	}
-	static randomID() {
-		let e = (/* @__PURE__ */ new Date()).getTime();
-		let t = performance && performance.now && performance.now() * 1e3 || 0;
-		return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (n) => {
-			let r = Math.random() * 16;
-			return e > 0 ? (r = (e + r) % 16 | 0, e = Math.floor(e / 16)) : (r = (t + r) % 16 | 0, t = Math.floor(t / 16)), (n == "x" ? r : r & 7 | 8).toString(16);
-		});
-	}
-};
-Jn = __decorate$1([injectFromBase(), __decorateMetadata("design:paramtypes", [])], Jn);
-var TrackLoopHTLMPick = class {
-	constructor() {
-		_defineProperty(this, "_animations", []);
-		_defineProperty(this, "_trackOptions", {});
-		_defineProperty(this, "_layout", void 0);
-		_defineProperty(this, "_tracksLayout", void 0);
-		_defineProperty(this, "_currentIndex", 0);
-		_defineProperty(this, "_trackIndex", void 0);
-		_defineProperty(this, "_id", void 0);
-		this.setupUI(), this._id = Jn.randomID();
-	}
-	cleanup() {}
-	setupUI() {
-		this._layout = HTMLUtils.makeVerticalContainer(), this._layout.style.flexGrow = "1";
-		let e = HTMLUtils.createHtmlElement("button", null, "➕");
-		e.onclick = () => {
-			E$1.info("Add another animation to track!"), this.addTrack();
-		}, this._tracksLayout = HTMLUtils.makeVerticalContainer(), this._layout.appendChild(this._tracksLayout), this.addTrack(), this._layout.appendChild(e);
-	}
-	addTrack() {
-		let e = HTMLUtils.createHtmlElement("button", null, "❌"), t = HTMLUtils.createFlexHtmlElement("select", "trackOptionsSelect"), n = HTMLUtils.createHtmlElement("input", "trackLoop");
-		n.type = "checkbox";
-		let r = HTMLUtils.makeHorizontalContainer(n, t, e), i = this._currentIndex;
-		e.onclick = () => {
-			E$1.info("Remove!"), r.parentNode.removeChild(r), this._trackOptions[i] = null;
-		}, HTMLUtils.addOptionsToDropdownList(t, this._animations), this._trackOptions[i] = {
-			track: t,
-			loop: n,
-			trackLayout: r
-		}, this._tracksLayout.appendChild(r), this._currentIndex++;
-	}
-	get trackOptions() {
-		let e = [];
-		for (let t in this._trackOptions) this._trackOptions[t] && e.push({
-			loop: this._trackOptions[t].loop.checked,
-			animation: this._trackOptions[t].track.value
-		});
-		return e;
-	}
-	get trackIndex() {
-		return this._trackIndex;
-	}
-	set trackIndex(e) {
-		this._trackIndex = e;
-	}
-	get layout() {
-		return this._layout;
-	}
-	get id() {
-		return this._id;
-	}
-	set animations(e) {
-		this._animations = e;
-		for (let t in this._trackOptions) this._trackOptions[t] && (HTMLUtils.clearDropdownList(this._trackOptions[t].track), HTMLUtils.addOptionsToDropdownList(this._trackOptions[t].track, e, null, "Select animation"));
-	}
-};
-var MultiTrackAnimationHTMLView = class {
-	constructor() {
-		_defineProperty(this, "_mainLayout", void 0);
-		_defineProperty(this, "_tracksLayout", void 0);
-		_defineProperty(this, "_mixingLayout", void 0);
-		_defineProperty(this, "_animations", void 0);
-		_defineProperty(this, "_tracksLoopHTMLPicks", []);
-		_defineProperty(this, "_trackIndex", 0);
-		_defineProperty(this, "_isMixingMode", !1);
-		_defineProperty(this, "_mixingOptionsSelection", void 0);
-		_defineProperty(this, "_mixingOptions", {
-			animationFrom: "",
-			animationTo: "",
-			mixDuration: 0
-		});
-		this.setupUI();
-	}
-	addTrack() {
-		let e = new TrackLoopHTLMPick();
-		e.animations = this._animations, e.trackIndex = this._trackIndex, this.setupTrackUI(e), this._tracksLoopHTMLPicks.push(e), this._trackIndex++;
-	}
-	setMixMode(e) {
-		this._isMixingMode = e, this.resetMixingDropDowns(), this.resetMixingOptions(), this.updateMixingUIDisplay();
-	}
-	updateMixingUIDisplay() {
-		this._mixingLayout.style.display = this._isMixingMode ? "flex" : "none";
-	}
-	setupTrackUI(e) {
-		let t = HTMLUtils.createHtmlElement("input");
-		t.value = `${this._trackIndex}`, t.type = "number", t.min = "0", t.step = "1", t.style.maxWidth = "3em", t.onchange = () => {
-			e.trackIndex = parseInt(t.value, 10);
-		};
-		let n = HTMLUtils.createHtmlElement("button", null, "❌"), r = HTMLUtils.makeHorizontalContainer(n, t), i = HTMLUtils.makeHorizontalContainer(r, e.layout);
-		n.onclick = () => {
-			let t = this._tracksLoopHTMLPicks.findIndex((t) => t.id === e.id);
-			t > -1 && this._tracksLoopHTMLPicks.splice(t, 1), i.parentNode.removeChild(i), this.onTrackRemoved();
-		}, this._tracksLayout.appendChild(i);
-	}
-	onTrackRemoved() {
-		this._tracksLoopHTMLPicks.length || (this._mixingLayout.style.display = "none");
-	}
-	setupUI() {
-		let e = HTMLUtils.createHtmlElement("button", null, "Add Track");
-		e.onclick = () => {
-			this.addTrack(), !this._mixingLayout.children.length && this.setupMixingUI(), this.updateMixingUIDisplay();
-		}, this._tracksLayout = HTMLUtils.makeVerticalContainer(), this._mixingLayout = HTMLUtils.makeVerticalContainer(), this._mainLayout = HTMLUtils.makeVerticalContainer(e, this._tracksLayout, this._mixingLayout);
-	}
-	setLabelStyle(...e) {
-		e.forEach((e) => {
-			e.style.width = "5em", e.style.display = "flex", e.style.justifyContent = "center";
-		});
-	}
-	setupMixingUI() {
-		let e = HTMLUtils.createHtmlElement("button", null, "Clear"), t = HTMLUtils.createHtmlElement("button", null, "Set mix time"), n = HTMLUtils.createFlexHtmlElement("select", "animationFromSelection"), r = HTMLUtils.createFlexHtmlElement("select", "animationToSelection"), i = HTMLUtils.createFlexHtmlElement("select", "mixDurationSelection"), a = HTMLUtils.createHtmlElement("label", "animationFromFromLabel", "FROM");
-		a.htmlFor = "animationFromSelection";
-		let o = HTMLUtils.createHtmlElement("label", "animationToLabel", "TO");
-		o.htmlFor = "animationToSelection";
-		let s = HTMLUtils.createHtmlElement("label", "mixDurationSelectionLabel", "MIX TIME");
-		s.htmlFor = "mixDurationSelection", this.setLabelStyle(a, o, s);
-		let c = HTMLUtils.makeHorizontalContainer(a, n), l = HTMLUtils.makeHorizontalContainer(o, r), u = HTMLUtils.makeHorizontalContainer(s, i), d = HTMLUtils.makeHorizontalContainer(t, e);
-		d.style.justifyContent = "space-evenly", e.onclick = () => {
-			this.onCLearButtonClicked();
-		}, t.onclick = () => {
-			this.onSetAnimationMixButtonClicked();
-		}, this._mixingLayout.appendChild(c), this._mixingLayout.appendChild(l), this._mixingLayout.appendChild(u), this._mixingLayout.appendChild(d), this._mixingOptionsSelection = {
-			animationFromSelection: n,
-			animationToSelection: r,
-			mixDurationSelection: i
-		}, this.setupDropDowns();
-	}
-	setupDropDowns() {
-		this._mixingOptionsSelection && (HTMLUtils.clearDropdownList(this._mixingOptionsSelection.animationFromSelection), HTMLUtils.clearDropdownList(this._mixingOptionsSelection.animationToSelection), HTMLUtils.clearDropdownList(this._mixingOptionsSelection.mixDurationSelection), HTMLUtils.addOptionsToDropdownList(this._mixingOptionsSelection.animationFromSelection, this._animations, null, "Select animation"), HTMLUtils.addOptionsToDropdownList(this._mixingOptionsSelection.animationToSelection, this._animations, null, "Select animation"), HTMLUtils.addOptionsToDropdownList(this._mixingOptionsSelection.mixDurationSelection, this.getMixDurationVariants(), null, "number ms"));
-	}
-	resetMixingDropDowns() {
-		this._mixingOptionsSelection && (this._mixingOptionsSelection.animationFromSelection.selectedIndex = 0, this._mixingOptionsSelection.animationToSelection.selectedIndex = 0, this._mixingOptionsSelection.mixDurationSelection.selectedIndex = 0);
-	}
-	resetMixingOptions() {
-		this._mixingOptions = {
-			animationFrom: "",
-			animationTo: "",
-			mixDuration: 0
-		};
-	}
-	getMixDurationVariants() {
-		return [
-			"0.1",
-			"0.2",
-			"0.3",
-			"0.4",
-			"0.5",
-			"0.6",
-			"0.7",
-			"0.8",
-			"0.9",
-			"1"
-		];
-	}
-	onCLearButtonClicked() {
-		this.resetMixingDropDowns(), this.resetMixingOptions();
-	}
-	onSetAnimationMixButtonClicked() {
-		let e = Number(this._mixingOptionsSelection.mixDurationSelection.value);
-		this._mixingOptions = {
-			animationFrom: this._mixingOptionsSelection.animationFromSelection.value,
-			animationTo: this._mixingOptionsSelection.animationToSelection.value,
-			mixDuration: isNaN(e) ? 0 : e
-		};
-	}
-	get mainLayout() {
-		return this._mainLayout;
-	}
-	get tracks() {
-		return this._tracksLoopHTMLPicks.map((e) => ({
-			trackIndex: e.trackIndex,
-			options: [...e.trackOptions]
-		}));
-	}
-	set visible(e) {
-		e ? this._mainLayout.style.display = "flex" : this._mainLayout.style.display = "none";
-	}
-	set animations(e) {
-		this._animations = e;
-		for (let t of this._tracksLoopHTMLPicks) t.animations = e;
-		this.setupDropDowns(), this.resetMixingOptions();
-	}
-	get mixingOptions() {
-		return this._mixingOptions;
-	}
-};
-var SlotReplacementHTMLView = class {
-	constructor(e) {
-		_defineProperty(this, "_id", Jn.randomID());
-		_defineProperty(this, "_slots", void 0);
-		_defineProperty(this, "_textures", void 0);
-		_defineProperty(this, "_mainLayout", void 0);
-		_defineProperty(this, "_slotSelect", void 0);
-		_defineProperty(this, "_textureSelect", void 0);
-		_defineProperty(this, "_removeButton", void 0);
-		_defineProperty(this, "_removeCallback", void 0);
-		this._textures = e, this._id = Jn.randomID(), this.setupUI();
-	}
-	setupUI() {
-		this._removeButton = HTMLUtils.createHtmlElement("button", "removeButton", "❌"), this._removeButton.onclick = this.onRemove.bind(this), this._slotSelect = HTMLUtils.createHtmlElement("select", "slotsId"), this._textureSelect = HTMLUtils.createHtmlElement("select", "texturesId"), HTMLUtils.addOptionsToDropdownList(this._textureSelect, this._textures, null, "Select texture"), this._mainLayout = HTMLUtils.makeHorizontalContainer(this._removeButton, this._slotSelect, this._textureSelect);
-	}
-	onRemove() {
-		this._removeCallback(), this._mainLayout.parentNode.removeChild(this._mainLayout);
-	}
-	get id() {
-		return this._id;
-	}
-	set onRemoveCallback(e) {
-		this._removeCallback = e;
-	}
-	set slots(e) {
-		this._slots = e, HTMLUtils.clearDropdownList(this._slotSelect), HTMLUtils.addOptionsToDropdownList(this._slotSelect, this._slots, null, "Select slot");
-	}
-	get layout() {
-		return this._mainLayout;
-	}
-	get slot() {
-		return this._slotSelect.value;
-	}
-	get texture() {
-		return this._textureSelect.value;
-	}
-};
-var SlotReplacementHandlerHTMLView = class {
-	constructor(e, t) {
-		_defineProperty(this, "_slotReplacements", []);
-		_defineProperty(this, "_textures", void 0);
-		_defineProperty(this, "_mainLayout", void 0);
-		_defineProperty(this, "_slotsLayout", void 0);
-		_defineProperty(this, "_id", void 0);
-		_defineProperty(this, "_slots", []);
-		this._textures = e, this._id = t, this.setupUI();
-	}
-	addSlotReplacement() {
-		let e = new SlotReplacementHTMLView(this._textures);
-		e.onRemoveCallback = this.removeSlotReplacement.bind(this, e), e.slots = this._slots, this._slotReplacements.push(e), this._slotsLayout.appendChild(e.layout);
-	}
-	removeSlotReplacement(e) {
-		let t = this._slotReplacements.findIndex((t) => t.id === e.id);
-		t > -1 && this._slotReplacements.splice(t, 1);
-	}
-	setupUI() {
-		let e = HTMLUtils.createHtmlElement("button", `slotreplacementaddbutton${this._id}`, "🆕 Slot Replacement");
-		e.onclick = () => {
-			this.addSlotReplacement();
-		}, this._slotsLayout = HTMLUtils.makeVerticalContainer(), this._mainLayout = HTMLUtils.makeVerticalContainer(e, this._slotsLayout);
-	}
-	set slots(e) {
-		this._slots = e;
-		for (let t of this._slotReplacements) t.slots = e;
-	}
-	get layout() {
-		return this._mainLayout;
-	}
-	get slotReplacements() {
-		let e = {};
-		for (let t of this._slotReplacements) e[t.slot] = t.texture;
-		return e;
-	}
-};
+Gn = __decorate$1([injectFromBase()], Gn);
 function roundToDecimals(e, t) {
 	let n = 10 ** t;
 	return Math.round(e * n) / n;
@@ -101832,7 +101551,7 @@ function roundForDisplay(e) {
 function formatForDisplay(e) {
 	return roundForDisplay(e).toString();
 }
-var Yn = {
+var Kn = {
 	AED: {
 		code: "AED",
 		symbol: "",
@@ -102794,15 +102513,15 @@ var Yn = {
 		thousandSeparator: ","
 	}
 };
-var Xn = class CurrencyFormatter {
+var qn = class CurrencyFormatter {
 	constructor() {
-		_defineProperty(this, "_data", Yn.USD);
+		_defineProperty(this, "_data", Kn.USD);
 	}
 	setCurrencyData(e) {
 		e && (this._data = e);
 	}
 	setCurrencyByCode(e) {
-		let t = Yn[e];
+		let t = Kn[e];
 		if (!t) throw Error(`CurrencyFormatter: no format defined for currency code "${e}"`);
 		this._data = t;
 	}
@@ -102835,8 +102554,8 @@ var Xn = class CurrencyFormatter {
 		return a ? o + this._data.decimalSeparator + a : o;
 	}
 };
-Xn = __decorate$1([injectable()], Xn);
-var Zn = class Translator {
+qn = __decorate$1([injectable()], qn);
+var Jn = class Translator {
 	constructor() {
 		_defineProperty(this, "_locale", void 0);
 		_defineProperty(this, "_localeStrings", void 0);
@@ -102876,7 +102595,7 @@ var Zn = class Translator {
 		this._englishLocale = flatten(e);
 	}
 };
-Zn = __decorate$1([injectable()], Zn);
+Jn = __decorate$1([injectable()], Jn);
 function flatten(e) {
 	let t = {};
 	function recurse(e, n) {
@@ -102892,7 +102611,7 @@ function flatten(e) {
 	}
 	return recurse(e, ""), t;
 }
-var W = {
+var K = {
 	Linear: { None: (e) => e },
 	Quadratic: {
 		In: (e) => e * e,
@@ -102954,29 +102673,29 @@ var W = {
 		}
 	},
 	Bounce: {
-		In: (e) => 1 - W.Bounce.Out(1 - e),
+		In: (e) => 1 - K.Bounce.Out(1 - e),
 		Out: (e) => e < 1 / 2.75 ? 7.5625 * e * e : e < 2 / 2.75 ? 7.5625 * (e -= 1.5 / 2.75) * e + .75 : e < 2.5 / 2.75 ? 7.5625 * (e -= 2.25 / 2.75) * e + .9375 : 7.5625 * (e -= 2.625 / 2.75) * e + .984375,
-		InOut: (e) => e < .5 ? W.Bounce.In(e * 2) * .5 : W.Bounce.Out(e * 2 - 1) * .5 + .5
+		InOut: (e) => e < .5 ? K.Bounce.In(e * 2) * .5 : K.Bounce.Out(e * 2 - 1) * .5 + .5
 	},
 	SingleBounce: {
-		In: (e) => 1 - W.Bounce.Out(1 - e),
+		In: (e) => 1 - K.Bounce.Out(1 - e),
 		Out: (e) => e < 1.75 / 2.75 ? 2.469387 * e * e : 2.469387 * (e -= 2.25 / 2.75) * e + .91836738,
-		InOut: (e) => e < .5 ? W.Bounce.In(e * 2) * .5 : W.Bounce.Out(e * 2 - 1) * .5 + .5,
+		InOut: (e) => e < .5 ? K.Bounce.In(e * 2) * .5 : K.Bounce.Out(e * 2 - 1) * .5 + .5,
 		Special: (e) => e < 1.75 / 2.75 ? 2.4 * e * e : (e -= 2.25 / 2.75, .9075 * e * e + .97),
 		Special2: (e) => {
-			if (e < .35) return W.Linear.None(e * 2.8571 * (719 / 664));
+			if (e < .35) return K.Linear.None(e * 2.8571 * (719 / 664));
 			if (e < .6) {
 				let t = (e - .35) * 4, n = 719 / 664 + (624 / 664 - 719 / 664) * t;
-				return W.Linear.None(n);
+				return K.Linear.None(n);
 			} else {
 				let t = 624 / 664 + (1 - 624 / 664) * ((e - .6) * (1 / .4));
-				return W.Linear.None(t);
+				return K.Linear.None(t);
 			}
 		},
-		Special3: (e) => Qn.bezier(.1, 1.25, .21, 1.01)(e)
+		Special3: (e) => Yn.bezier(.1, 1.25, .21, 1.01)(e)
 	}
 };
-var Qn = (_Bezier = class Bezier {
+var Yn = (_Bezier = class Bezier {
 	static bezier(e, t, n, r) {
 		if (!(0 <= e && e <= 1 && 0 <= n && n <= 1)) throw Error("bezier x values must be in [0, 1] range");
 		if (e === t && n === r) return Bezier.LinearEasing;
@@ -103028,24 +102747,24 @@ var Qn = (_Bezier = class Bezier {
 		return e;
 	}
 }, _defineProperty(_Bezier, "NEWTON_ITERATIONS", 4), _defineProperty(_Bezier, "NEWTON_MIN_SLOPE", .001), _defineProperty(_Bezier, "SUBDIVISION_PRECISION", 1e-7), _defineProperty(_Bezier, "SUBDIVISION_MAX_ITERATIONS", 10), _defineProperty(_Bezier, "kSplineTableSize", 11), _defineProperty(_Bezier, "kSampleStepSize", 1 / (_Bezier.kSplineTableSize - 1)), _defineProperty(_Bezier, "float32ArraySupported", typeof Float32Array == "function"), _Bezier);
-var $n = {
+var Xn = {
 	Linear: (e, t) => {
-		let n = e.length - 1, r = n * t, i = Math.floor(r), a = $n.Utils.Linear;
+		let n = e.length - 1, r = n * t, i = Math.floor(r), a = Xn.Utils.Linear;
 		return t < 0 ? a(e[0], e[1], r) : t > 1 ? a(e[n], e[n - 1], n - r) : a(e[i], e[i + 1 > n ? n : i + 1], r - i);
 	},
 	Bezier: (e, t) => {
-		let n = 0, r = e.length - 1, i = Math.pow, a = $n.Utils.Bernstein;
+		let n = 0, r = e.length - 1, i = Math.pow, a = Xn.Utils.Bernstein;
 		for (let o = 0; o <= r; o++) n += i(1 - t, r - o) * i(t, o) * e[o] * a(r, o);
 		return n;
 	},
 	CatmullRom: (e, t) => {
-		let n = e.length - 1, r = n * t, i = Math.floor(r), a = $n.Utils.CatmullRom;
+		let n = e.length - 1, r = n * t, i = Math.floor(r), a = Xn.Utils.CatmullRom;
 		return e[0] === e[n] ? (t < 0 && (i = Math.floor(r = n * (1 + t))), a(e[(i - 1 + n) % n], e[i], e[(i + 1) % n], e[(i + 2) % n], r - i)) : t < 0 ? e[0] - (a(e[0], e[0], e[1], e[1], -r) - e[0]) : t > 1 ? e[n] - (a(e[n], e[n], e[n - 1], e[n - 1], r - n) - e[n]) : a(e[i ? i - 1 : 0], e[i], e[n < i + 1 ? n : i + 1], e[n < i + 2 ? n : i + 2], r - i);
 	},
 	Utils: {
 		Linear: (e, t, n) => (t - e) * n + e,
 		Bernstein: (e, t) => {
-			let n = $n.Utils.Factorial;
+			let n = Xn.Utils.Factorial;
 			return n(e) / n(t) / n(e - t);
 		},
 		Factorial: (() => {
@@ -103065,7 +102784,7 @@ var $n = {
 };
 var Tween = class extends Updatable {
 	constructor(e) {
-		var _super12 = (..._args17) => (super(..._args17), _defineProperty(this, "type", Be$1.TWEEN), _defineProperty(this, "_currentTime", void 0), _defineProperty(this, "_startTime", null), _defineProperty(this, "_isPlaying", !1), _defineProperty(this, "_path", void 0), _defineProperty(this, "_pathFrom", void 0), _defineProperty(this, "_pathTo", void 0), _defineProperty(this, "_repeat", 0), _defineProperty(this, "_duration", 1e3), _defineProperty(this, "_object", void 0), _defineProperty(this, "_valuesStart", {}), _defineProperty(this, "_valuesEnd", {}), _defineProperty(this, "_valuesStartRepeat", {}), _defineProperty(this, "_yoyo", !1), _defineProperty(this, "_reversed", !1), _defineProperty(this, "_delayTime", 0), _defineProperty(this, "_easingFunction", W.Linear.None), _defineProperty(this, "_interpolationFunction", $n.Linear), _defineProperty(this, "_chainedTweens", []), _defineProperty(this, "_onStartCallback", null), _defineProperty(this, "_onStartCalledCallback", null), _defineProperty(this, "_onStartCallbackFired", !1), _defineProperty(this, "_onUpdateCallback", null), _defineProperty(this, "_onRepeatCallback", null), _defineProperty(this, "_onCompleteCallback", null), _defineProperty(this, "_onStopCallback", null), _defineProperty(this, "_onCompletePromiseCallback", null), _defineProperty(this, "_skipFirstUpdate", void 0), _defineProperty(this, "_shouldCorrectValuesOnStart", !1), this);
+		var _super12 = (..._args17) => (super(..._args17), _defineProperty(this, "type", Le$1.TWEEN), _defineProperty(this, "_currentTime", void 0), _defineProperty(this, "_startTime", null), _defineProperty(this, "_isPlaying", !1), _defineProperty(this, "_path", void 0), _defineProperty(this, "_pathFrom", void 0), _defineProperty(this, "_pathTo", void 0), _defineProperty(this, "_repeat", 0), _defineProperty(this, "_duration", 1e3), _defineProperty(this, "_object", void 0), _defineProperty(this, "_valuesStart", {}), _defineProperty(this, "_valuesEnd", {}), _defineProperty(this, "_valuesStartRepeat", {}), _defineProperty(this, "_yoyo", !1), _defineProperty(this, "_reversed", !1), _defineProperty(this, "_delayTime", 0), _defineProperty(this, "_easingFunction", K.Linear.None), _defineProperty(this, "_interpolationFunction", Xn.Linear), _defineProperty(this, "_chainedTweens", []), _defineProperty(this, "_onStartCallback", null), _defineProperty(this, "_onStartCalledCallback", null), _defineProperty(this, "_onStartCallbackFired", !1), _defineProperty(this, "_onUpdateCallback", null), _defineProperty(this, "_onRepeatCallback", null), _defineProperty(this, "_onCompleteCallback", null), _defineProperty(this, "_onStopCallback", null), _defineProperty(this, "_onCompletePromiseCallback", null), _defineProperty(this, "_skipFirstUpdate", void 0), _defineProperty(this, "_shouldCorrectValuesOnStart", !1), this);
 		_super12(), e && (this._object = e);
 	}
 	path(e, t) {
@@ -103077,7 +102796,7 @@ var Tween = class extends Updatable {
 		return t !== void 0 && (this._duration = t), this;
 	}
 	to(e, t) {
-		return t !== void 0 && (t <= 0 && E$1.error("Attempting to start a Tween with 0 or lower duration: ", t), this._duration = t), this._valuesEnd = e, this.parseStartValues(e), this;
+		return t !== void 0 && (t <= 0 && A.error("Attempting to start a Tween with 0 or lower duration: ", t), this._duration = t), this._valuesEnd = e, this.parseStartValues(e), this;
 	}
 	force() {
 		for (let e in this._valuesEnd) this._valuesEnd.hasOwnProperty(e) && (this._object[e] = this._valuesEnd[e]);
@@ -103209,7 +102928,7 @@ var Tween = class extends Updatable {
 		for (let t in e) if (e.hasOwnProperty(t)) try {
 			this._valuesStart[t] = parseFloat(this.object[t]);
 		} catch (e) {
-			E$1.error(e);
+			A.error(e);
 		}
 	}
 	get chainedTweens() {
@@ -103228,7 +102947,7 @@ var Tween = class extends Updatable {
 		return this._isPlaying;
 	}
 };
-var er = class TweenPresetUtils {
+var Zn = class TweenPresetUtils {
 	static completeAllThenCallback(e, ...t) {
 		return Promise.all(t.map((e) => Array.isArray(e) ? e.map((e) => e.getPromise()) : e.getPromise())).then(() => {
 			e === null || e === void 0 || e();
@@ -103249,14 +102968,14 @@ var er = class TweenPresetUtils {
 	static snackBarInOutTween(e, t, n, r = 1500, i = 100, a = 1500) {
 		let o;
 		o = n ? this.snackBarResolutionTween(e, t, n, !1, i, a) : this.snackBarTween(e, t, !1, i, a);
-		let s = a + r, c = new Tween(e).to({ alpha: 0 }, a * .33).delay(s + a * .66).shouldCorrectValuesOnStart(!0).start(), l = new Tween(e).to({ y: e.y }, a).delay(s).shouldCorrectValuesOnStart(!0).easing(W.Circular.In).start();
+		let s = a + r, c = new Tween(e).to({ alpha: 0 }, a * .33).delay(s + a * .66).shouldCorrectValuesOnStart(!0).start(), l = new Tween(e).to({ y: e.y }, a).delay(s).shouldCorrectValuesOnStart(!0).easing(K.Circular.In).start();
 		return t.add(c), t.add(l), [
 			...o,
 			l,
 			c
 		];
 	}
-	static snackBarResolutionTween(e, t, n, r = !1, i = 100, a = 2e3, o = W.Circular.Out) {
+	static snackBarResolutionTween(e, t, n, r = !1, i = 100, a = 2e3, o = K.Circular.Out) {
 		i *= r ? -1 : 1, e.position.set(n.halfResolution.width, n.halfResolution.height + i), e.alpha = 0;
 		let s = new Tween(e).to({ alpha: 1 }, a * .25).start(), c = new Tween(e).to({
 			x: n.halfResolution.width,
@@ -103264,7 +102983,7 @@ var er = class TweenPresetUtils {
 		}, a).easing(o).start();
 		return t.add(s), t.add(c), [c, s];
 	}
-	static snackBarTween(e, t, n = !1, r = 100, i = 1200, a = W.Circular.Out) {
+	static snackBarTween(e, t, n = !1, r = 100, i = 1200, a = K.Circular.Out) {
 		let o = {
 			x: e.x,
 			y: e.y
@@ -103276,7 +102995,7 @@ var er = class TweenPresetUtils {
 		}, i).easing(a).start();
 		return t.add(c), t.add(l), [l, c];
 	}
-	static snackBarOutTween(e, t, n = !0, r = 100, i = 1200, a = W.Circular.In) {
+	static snackBarOutTween(e, t, n = !0, r = 100, i = 1200, a = K.Circular.In) {
 		let o = {
 			x: e.x,
 			y: e.y
@@ -103325,7 +103044,7 @@ var er = class TweenPresetUtils {
 		}, a = new Tween(e.scale).to({
 			x: [i.x * r, i.x],
 			y: [i.y * r, i.y]
-		}, n).easing(W.Circular.Out).start();
+		}, n).easing(K.Circular.Out).start();
 		return t.add(a), [a];
 	}
 	static bounceFadeOutTween(e, t, n = 1500, r = .7, i = 1.3) {
@@ -103335,7 +103054,7 @@ var er = class TweenPresetUtils {
 		}, o = n * (1 - r), s = n * r, c = new Tween(e).to({ alpha: 0 }, o).delay(s).start(), l = new Tween(e.scale).to({
 			x: [a.x * i, a.x],
 			y: [a.y * i, a.y]
-		}, n).easing(W.Circular.Out).start();
+		}, n).easing(K.Circular.Out).start();
 		return t.add(l), t.add(c), [l, c];
 	}
 	static fadeOutTween(e, t, n = 1500) {
@@ -103348,18 +103067,18 @@ var er = class TweenPresetUtils {
 		let a = new Tween(e).to({ alpha: r }, n).delay(i).start();
 		return i && a.shouldCorrectValuesOnStart(!0), t.add(a), [a];
 	}
-	static flashMoveTween(e, t, n, r = 500, i = .2, a = .2, o = W.Cubic.InOut) {
+	static flashMoveTween(e, t, n, r = 500, i = .2, a = .2, o = K.Cubic.InOut) {
 		let s = r * i, c = r * a;
 		return TweenPresetUtils.fadeAlphaTween(e, n, s, 0, c), TweenPresetUtils.fadeAlphaTween(e, n, s, 1, r - s - c), TweenPresetUtils.targetTween(e, t, n, r, o);
 	}
-	static targetTween(e, t, n, r = 1500, i = W.Cubic.InOut) {
+	static targetTween(e, t, n, r = 1500, i = K.Cubic.InOut) {
 		let a = new Tween(e).to({
 			x: t.x,
 			y: t.y
 		}, r).easing(i).start();
 		return n.add(a), [a];
 	}
-	static targetMoveStretchTween(e, t, n, r = 150, i = 5, a = W.Circular.Out) {
+	static targetMoveStretchTween(e, t, n, r = 150, i = 5, a = K.Circular.Out) {
 		e.angle = GameUtils.angleBetweenTwoPoints(e.position, t), e.scale.y /= i * .5, e.scale.x *= i, e.anchor.set(1, .5);
 		let o = new Tween(e.anchor).to({
 			x: .5,
@@ -103369,7 +103088,7 @@ var er = class TweenPresetUtils {
 		let s = new Tween(e.scale).to({
 			x: 1,
 			y: 1
-		}, r * .4).delay(r * .6).easing(W.Circular.Out).start();
+		}, r * .4).delay(r * .6).easing(K.Circular.Out).start();
 		n.add(s);
 		let c = new Tween(e).to({
 			x: t.x,
@@ -103381,7 +103100,7 @@ var er = class TweenPresetUtils {
 			o
 		];
 	}
-	static targetMoveStretchGumTween(e, t, n, r = 250, i = 1, a = W.Sinusoidal.InOut) {
+	static targetMoveStretchGumTween(e, t, n, r = 250, i = 1, a = K.Sinusoidal.InOut) {
 		e.angle = GameUtils.angleBetweenTwoPoints(e.position, t), e.anchor.x = 0, e.scale.y = 1, e.scale.x = 1;
 		let o = e.getLocalBounds().width, s = 1;
 		o !== e.width && (s = e.width / o);
@@ -103408,13 +103127,13 @@ var er = class TweenPresetUtils {
 		let i = new Tween(e).to({ alpha: 1 }, n).start(), a = new Tween(e).to({ alpha: 0 }, r).start();
 		return i.chain(a), t.add(i), [a, i];
 	}
-	static scaleTween(e, t, n, r = 3, i = W.Circular.Out) {
+	static scaleTween(e, t, n, r = 3, i = K.Circular.Out) {
 		return new Tween(e.scale).to({
 			x: n * r,
 			y: n * r
 		}, t).easing(i).start();
 	}
-	static scaleToTween(e, t, n, r, i = W.Circular.Out) {
+	static scaleToTween(e, t, n, r, i = K.Circular.Out) {
 		let a = new Tween(e.scale).to({
 			x: r,
 			y: r
@@ -103425,7 +103144,7 @@ var er = class TweenPresetUtils {
 		let i = TweenPresetUtils.flashTween(e, t, n * .04, n * .96), a = TweenPresetUtils.scaleTween(e, n, e.scale.x, r);
 		return t.add(a), [a, ...i];
 	}
-	static zoomLandTween(e, t, n = 2500, r = 3, i = W.Circular.Out) {
+	static zoomLandTween(e, t, n = 2500, r = 3, i = K.Circular.Out) {
 		let a = TweenPresetUtils.fadeInTween(e, t, n * .85);
 		e.scale.set(r);
 		let o = TweenPresetUtils.scaleTween(e, n, r, 1 / r, i);
@@ -103448,11 +103167,12 @@ var er = class TweenPresetUtils {
 		}, r);
 	}
 };
-var tr = [
+var Qn = [
 	"LockReasons::IDLE_STATE_ENTERED",
 	"LockReasons::FEATURE_STARTED",
 	"LockReasons::WIN_STARTED",
 	"LockReasons::SPINNING_STARTED",
+	"LockReasons::ROUND_STARTED",
 	"LockReasons::RESTORE_STARTED",
 	"LockReasons::AUTOPLAY_STARTED",
 	"LockReasons::AUTOPLAY_MENU_OPENED",
@@ -103463,17 +103183,17 @@ var tr = [
 	"LockReasons::LOCKED_BY_REGULATION",
 	"LockReasons::LOCKED_BY_REPLAY"
 ];
-var rr = tr.filter((e) => e !== "LockReasons::BET_FROZEN");
-var ir = tr.filter((e) => ["LockReasons::LOCKED_BY_REGULATION", "LockReasons::LOCKED_BY_REPLAY"].includes(e));
-var ar = [...tr];
-var or = tr.filter((e) => ["LockReasons::LOCKED_BY_REGULATION", "LockReasons::LOCKED_BY_REPLAY"].includes(e));
-var sr = tr.filter((e) => [
+var er = Qn.filter((e) => e !== "LockReasons::BET_FROZEN");
+var tr = Qn.filter((e) => ["LockReasons::LOCKED_BY_REGULATION", "LockReasons::LOCKED_BY_REPLAY"].includes(e));
+var nr = [...Qn];
+var rr = Qn.filter((e) => ["LockReasons::LOCKED_BY_REGULATION", "LockReasons::LOCKED_BY_REPLAY"].includes(e));
+var ir = Qn.filter((e) => [
 	"LockReasons::AUTOPLAY_MENU_OPENED",
 	"LockReasons::BET_MENU_OPENED",
 	"LockReasons::LOCKED_BY_REGULATION",
 	"LockReasons::LOCKED_BY_REPLAY"
 ].includes(e));
-var cr = tr.filter((e) => e !== "LockReasons::BET_FROZEN");
+var ar = Qn.filter((e) => e !== "LockReasons::BET_FROZEN");
 var Lock = class {
 	constructor(e) {
 		_defineProperty(this, "reasons", /* @__PURE__ */ new Set());
@@ -103499,7 +103219,7 @@ var KeypadLocker = class {
 		_defineProperty(this, "locks", /* @__PURE__ */ new Map());
 	}
 	add(e, t) {
-		return this.locks.has(e) && E$1.error(`KeypadController: element '${e}' already added...`), this.locks.set(e, new Lock(t)), this;
+		return this.locks.has(e) && A.error(`KeypadController: element '${e}' already added...`), this.locks.set(e, new Lock(t)), this;
 	}
 	delete(e) {
 		return this.locks.delete(e), this;
@@ -103512,356 +103232,17 @@ var KeypadLocker = class {
 	}
 	unlock(e, t) {
 		let n = this.locks.get(e);
-		n ? n.unlock(t) : E$1.error(`Error: try to unlock unknown item: ${e}`);
+		n ? n.unlock(t) : A.error(`Error: try to unlock unknown item: ${e}`);
 	}
 	lock(e, t) {
 		let n = this.locks.get(e);
-		n ? n.lock(t) : E$1.error(`Error: try to lock unknown item: ${e}`);
+		n ? n.lock(t) : A.error(`Error: try to lock unknown item: ${e}`);
 	}
 	getLock(e) {
 		return this.locks.get(e);
 	}
 };
-var AnimationPlayerBase = class extends import_lib.Container {
-	constructor(..._args18) {
-		super(..._args18);
-		_defineProperty(this, "_currentAnimation", void 0);
-		_defineProperty(this, "_texturesMap", {});
-		_defineProperty(this, "_snackbarStyle", void 0);
-		_defineProperty(this, "_assets", void 0);
-		_defineProperty(this, "_spineUtils", void 0);
-		_defineProperty(this, "_updateManager", void 0);
-		_defineProperty(this, "_resolutionManager", void 0);
-	}
-	cleanup() {}
-	makeSpriteFromTexture(e) {
-		return new import_lib.Sprite(this._texturesMap[e]);
-	}
-	isValidSpine(e, t, n) {
-		let r = !0, i = new SpineAnimation(new Spine(this.assets.getSpineSkeleton(e)));
-		return this.updateManager.add(i), i.play(n, 0, t), i.skeleton || (this.showSnackBar(`Spine Skeleton does not exist.
-                        Probably missing keyframes in starting animation.
-                        Skeleton-name:${e} Animation-name:${n}`, 4e3), r = !1), this.spineUtils.stopAndDestroyAnimation(i), r;
-	}
-	kill() {
-		this._currentAnimation && (this._currentAnimation = (this.spineUtils.stopAndDestroyAnimation(this._currentAnimation), null));
-	}
-	getAllAnimationsFrom(e) {
-		let t = [];
-		for (let n of this.assets.getSpineSkeleton(e).animations) t.push(n.name);
-		return t;
-	}
-	getAllSlotsInSpine(e) {
-		let t = [];
-		for (let n of this.assets.getSpineSkeleton(e).slots) t.push(n.name);
-		return t;
-	}
-	getSkinsInSpine(e) {
-		let t = [];
-		for (let n of this.assets.getSpineSkeleton(e).skins) t.push(n.name);
-		return t;
-	}
-	showSnackBar(e, t = 2e3, n = this.getSnackbarPosition()) {
-		let r = new import_lib.Text({
-			text: `${e}`,
-			style: this.getSnackBarStyle()
-		});
-		r.anchor.set(.5), er.snackBarResolutionTween(r, this.updateManager, this.resolutionManager, !1, 100, t)[0].getPromise().then(() => {
-			er.fadeOutTween(r, this.updateManager);
-		}), E$1.info(e), this.addChild(r);
-	}
-	getSnackbarPosition() {
-		return {
-			x: this.resolutionManager.halfResolution.width,
-			y: 300
-		};
-	}
-	getSnackBarStyle() {
-		return this._snackbarStyle;
-	}
-	get texturesMap() {
-		return this._texturesMap;
-	}
-	set texturesMap(e) {
-		this._texturesMap = e;
-	}
-	get assets() {
-		return this._assets;
-	}
-	set assets(e) {
-		this._assets = e;
-	}
-	get spineUtils() {
-		return this._spineUtils;
-	}
-	set spineUtils(e) {
-		this._spineUtils = e;
-	}
-	get updateManager() {
-		return this._updateManager;
-	}
-	set updateManager(e) {
-		this._updateManager = e;
-	}
-	get resolutionManager() {
-		return this._resolutionManager;
-	}
-	set resolutionManager(e) {
-		this._resolutionManager = e;
-	}
-};
-var lr = {
-	fontFamily: "Poppins SemiBold",
-	fontSize: 20,
-	fill: "#B72838"
-};
-var AnimationPlayerHtmlView = class extends AnimationPlayerBase {
-	constructor() {
-		var _super13 = (..._args19) => (super(..._args19), _defineProperty(this, "_removeCallback", void 0), _defineProperty(this, "_mainContainer", void 0), _defineProperty(this, "_playButton", void 0), _defineProperty(this, "_stopButton", void 0), _defineProperty(this, "_pauseResumeButton", void 0), _defineProperty(this, "_removeButton", void 0), _defineProperty(this, "_stopWithMixButton", void 0), _defineProperty(this, "_isMultiCheckbox", void 0), _defineProperty(this, "_isMixingCheckbox", void 0), _defineProperty(this, "_isTargetSpriteCheckbox", void 0), _defineProperty(this, "_tracks", void 0), _defineProperty(this, "_trackChains", void 0), _defineProperty(this, "_skins", void 0), _defineProperty(this, "_playerId", void 0), _defineProperty(this, "_baseButtonsLayout", void 0), _defineProperty(this, "_spineSelection", void 0), _defineProperty(this, "_animationSelection", void 0), _defineProperty(this, "_mixWithAnimationSelection", void 0), _defineProperty(this, "_mixDurationSelection", void 0), _defineProperty(this, "_skinSelection", void 0), _defineProperty(this, "_mixingTextContainer", void 0), _defineProperty(this, "_slotsReplacementHTML", void 0), _defineProperty(this, "_multiTrackAnimationSetup", void 0), _defineProperty(this, "_mainLayout", void 0), _defineProperty(this, "_index", void 0), this);
-		_super13(), this._playerId = Jn.randomID();
-	}
-	init() {
-		this.setupUI(), this._snackbarStyle = new import_lib.TextStyle(lr);
-	}
-	showInput() {
-		this._mainContainer.style.display = "block", this._mainContainer.style.zIndex = "9999";
-	}
-	hideInput() {
-		this._mainContainer.style.display = "none";
-	}
-	onRemoveClicked() {
-		E$1.info("Remove Clicked"), this.cleanup(), this.parent.removeChild(this);
-	}
-	getDefaultMixDuration() {
-		let e = Number(this._mixDurationSelection.value);
-		return isNaN(e) ? 0 : e;
-	}
-	setupUI() {
-		this._mainContainer = HTMLUtils.makeDraggableContainerWithHeader(`animationPlayer${this.playerId}`, `Animation Player - ${this._index}`), this._mainContainer.addEventListener("keydown", (e) => {
-			e.stopImmediatePropagation();
-		}), this._mainContainer.addEventListener("keyup", (e) => {
-			e.stopImmediatePropagation();
-		}), this._mainLayout = HTMLUtils.makeVerticalContainer(), this._mainLayout.style.overflow = "scroll", this._mainLayout.style.resize = "both", this._mainLayout.style.background = "rgba(0,0,0,0.7)", this._mainContainer.style.zIndex = "9999", this._mainContainer.appendChild(this._mainLayout), this._playButton = HTMLUtils.createHtmlElement("button", `playButton${this.playerId}`, "PLAY"), this._stopButton = HTMLUtils.createHtmlElement("button", `stopButton${this.playerId}`, "STOP"), this._pauseResumeButton = HTMLUtils.createHtmlElement("button", `pauseButton${this.playerId}`, "PAUSE/RESUME"), this._stopWithMixButton = HTMLUtils.createHtmlElement("button", `stopWithMixButton${this.playerId}`, "STOP WITH MIX"), this._removeButton = HTMLUtils.createHtmlElement("button", `resetButton${this.playerId}`, "❌"), this._baseButtonsLayout = HTMLUtils.makeHorizontalContainer(this._playButton, this._stopButton, this._pauseResumeButton, this._stopWithMixButton, this._removeButton), this._baseButtonsLayout.style.justifyContent = "space-evenly", this._mainLayout.appendChild(this._baseButtonsLayout), this._playButton.onclick = this.onPlayClicked.bind(this), this._stopButton.onclick = this.onStopClicked.bind(this), this._pauseResumeButton.onclick = this.onPauseResumeClicked.bind(this), this._stopWithMixButton.onclick = this.onStopWithMix.bind(this), this._removeButton.onclick = this.onRemoveClicked.bind(this), this._spineSelection = HTMLUtils.makeHtmlDropDownWithOptions(`spineSelect${this.playerId}`, this.assets.getSpineAtlasesPaths(), this.onSkeletonChanged.bind(this)), this._mainLayout.appendChild(this._spineSelection), this._isMultiCheckbox = HTMLUtils.createHtmlElement("input", `isMulti${this.playerId}`, "MULTI"), this._isMultiCheckbox.name = `isMulti${this.playerId}`, this._isMultiCheckbox.type = "checkbox", this._isMultiCheckbox.onclick = () => {
-			this.onMultiTrackChanged(this.isMulti);
-		};
-		let e = HTMLUtils.createHtmlElement("label", `isMultiLabel${this.playerId}`, "MULTITRACK");
-		e.htmlFor = `isMulti${this.playerId}`;
-		let t = HTMLUtils.makeHorizontalContainer(this._isMultiCheckbox, e);
-		this._mainLayout.appendChild(t), this._isMixingCheckbox = HTMLUtils.createHtmlElement("input", `isMixing${this.playerId}`, "MIXING"), this._isMixingCheckbox.name = `isMixing${this.playerId}`, this._isMixingCheckbox.type = "checkbox", this._isMixingCheckbox.onclick = () => {
-			this.onMixingChanged(this._isMixingCheckbox.checked);
-		};
-		let n = HTMLUtils.createHtmlElement("label", `isMixing${this.playerId}`, "MIXING");
-		n.htmlFor = `isMixing${this.playerId}`;
-		let r = HTMLUtils.makeHorizontalContainer(this._isMixingCheckbox, n);
-		this._mainLayout.appendChild(r), this._isTargetSpriteCheckbox = HTMLUtils.createHtmlElement("input", `isTargetSprite${this.playerId}`, "MIXING"), this._isTargetSpriteCheckbox.name = `isTargetSprite${this.playerId}`, this._isTargetSpriteCheckbox.type = "checkbox", this._isTargetSpriteCheckbox.onclick = () => {
-			this.onTargetSprite(this._isTargetSpriteCheckbox.checked);
-		};
-		let i = HTMLUtils.createHtmlElement("label", `isTargetBone${this.playerId}`, "TARGET BONE");
-		i.htmlFor = `isTargetBone${this.playerId}`;
-		let a = HTMLUtils.makeHorizontalContainer(this._isTargetSpriteCheckbox, i);
-		this._mainLayout.appendChild(a);
-		let o = HTMLUtils.createHtmlElement("div", `animationDiv${this.playerId}`, "ANIMATION"), s = HTMLUtils.makeHorizontalContainer(o);
-		s.style.justifyContent = "center", this._mainLayout.appendChild(s), this._animationSelection = HTMLUtils.makeHtmlDropDownWithOptions(`animationSelect${this.playerId}`, [], this.playAgain.bind(this)), this._mainLayout.appendChild(this._animationSelection);
-		let c = HTMLUtils.createHtmlElement("div", `skinDiv${this.playerId}`, "SKIN"), l = HTMLUtils.makeHorizontalContainer(c);
-		l.style.justifyContent = "center", this._mainLayout.appendChild(l), this._skinSelection = HTMLUtils.makeHtmlDropDownWithOptions(`skinSelect${this.playerId}`, [], this.playAgain.bind(this)), this._mainLayout.appendChild(this._skinSelection);
-		let u = HTMLUtils.createHtmlElement("div", `mixingDiv${this.playerId}`, "MIXING");
-		this._mixingTextContainer = HTMLUtils.makeHorizontalContainer(u), this._mainLayout.appendChild(this._mixingTextContainer), this._mixingTextContainer.style.justifyContent = "center", this._mixDurationSelection = HTMLUtils.makeHtmlDropDownWithOptions(`_mixDurationSelection${this.playerId}`, [], null), this._mixDurationSelection.addEventListener("change", this.onAnimationMixDurationChanged.bind(this)), this._mainLayout.appendChild(this._mixDurationSelection), this._mixWithAnimationSelection = HTMLUtils.makeHtmlDropDownWithOptions(`mixWithAnimationSelect${this.playerId}`, [], null), this._mainLayout.appendChild(this._mixWithAnimationSelection), this.changeMixingHTMLElementsDisplay(!1), this._slotsReplacementHTML = new SlotReplacementHandlerHTMLView(Object.keys(this._texturesMap), this.playerId), this._mainLayout.appendChild(this._slotsReplacementHTML.layout), this._multiTrackAnimationSetup = new MultiTrackAnimationHTMLView(), this._mainLayout.appendChild(this._multiTrackAnimationSetup.mainLayout), this._multiTrackAnimationSetup.visible = !1, this._multiTrackAnimationSetup.setMixMode(!1), this.onSkeletonChanged(null);
-	}
-	onAnimationMixDurationChanged() {
-		this.setDefaultMixDuration();
-	}
-	setDefaultMixDuration() {
-		this._currentAnimation && this._currentAnimation.setDefaultMix(this.getDefaultMixDuration());
-	}
-	isTargetBoneExist() {
-		return this._currentAnimation && this._currentAnimation.isPlaying ? !!this.spineUtils.findBone(this._currentAnimation, "TARGET") : !1;
-	}
-	setupTargetSprite() {
-		if (this.getTargetSprite()) return;
-		let e = new import_lib.Text({
-			text: "TARGET",
-			style: {
-				fontSize: 25,
-				fill: "#FFFFFF",
-				stroke: {
-					color: "#FF0000",
-					width: 10
-				},
-				fontWeight: "bold"
-			}
-		});
-		e.anchor.set(.5, .5), e.name = "text";
-		let t = new import_lib.Container();
-		t.name = `target${this.playerId}`, t.addChild(e), t.position.set(this.resolutionManager.halfResolution.width, this.resolutionManager.halfResolution.height), this.addChild(t), t.visible = this.isTargetSpriteChecked, this.sortableChildren = !0, t.zIndex = 2 ** 53 - 1;
-	}
-	updateBonePosition() {
-		if (!this.isTargetBoneExist() || !this.getTargetSprite() || !this.isTargetSpriteChecked) return;
-		let e = this.spineUtils.findBone(this._currentAnimation, "TARGET"), t = this.getTargetSprite().getChildByName("text");
-		e.x = this.getTargetSprite().x - this._currentAnimation.spine.x + t.position.x, e.y = -(this.getTargetSprite().y - this._currentAnimation.spine.y + t.position.y);
-	}
-	onObjectMoved() {
-		this.updateBonePosition();
-	}
-	notifyNoTargetBoneIfNeeded() {
-		this.isTargetSpriteChecked && this.isAnimationPlaying() && !this.isTargetBoneExist() && this.showSnackBar(`There is no TARGET bone in the selected ${this.spineName} SPINE`);
-	}
-	onTargetSprite(e) {
-		this.notifyNoTargetBoneIfNeeded(), this.setupTargetSprite(), this.getTargetSprite() && (this.getTargetSprite().visible = e), this.updateBonePosition();
-	}
-	onMixingChanged(e) {
-		this._multiTrackAnimationSetup.setMixMode(e), this.changeMixingHTMLElementsDisplay(e);
-	}
-	changeMixingHTMLElementsDisplay(e) {
-		e ? (this._mixingTextContainer.style.display = "flex", this._mixDurationSelection.style.display = "flex", this._stopWithMixButton.style.display = "flex") : (this._mixDurationSelection.selectedIndex = 0, this._mixDurationSelection.style.display = "none", this._mixingTextContainer.style.display = "none", this._stopWithMixButton.style.display = "none"), e && !this.isMulti ? this._mixWithAnimationSelection.style.display = "flex" : (this._mixWithAnimationSelection.style.display = "none", this._mixWithAnimationSelection.selectedIndex = 0);
-	}
-	onMultiTrackChanged(e) {
-		this._multiTrackAnimationSetup.visible = e, e ? (this._animationSelection.style.display = "none", this.changeMixingHTMLElementsDisplay(this._isMixingCheckbox.checked)) : (this._animationSelection.style.display = "flex", this.changeMixingHTMLElementsDisplay(this._isMixingCheckbox.checked));
-	}
-	onSkeletonChanged(e) {
-		E$1.info(e), HTMLUtils.clearDropdownList(this._animationSelection), HTMLUtils.clearDropdownList(this._mixWithAnimationSelection), HTMLUtils.clearDropdownList(this._skinSelection), HTMLUtils.clearDropdownList(this._mixDurationSelection), this.spineName && (this._slotsReplacementHTML.slots = this.getAllSlotsInSpine(this.spineName), HTMLUtils.addOptionsToDropdownList(this._animationSelection, this.getAllAnimationsFrom(this.spineName), null), HTMLUtils.addOptionsToDropdownList(this._mixWithAnimationSelection, this.getAllAnimationsFrom(this.spineName), null, "Mix with animation"), HTMLUtils.addOptionsToDropdownList(this._skinSelection, this.getSkinsInSpine(this.spineName), null), HTMLUtils.addOptionsToDropdownList(this._mixDurationSelection, this.getDefaultMixDurationVariants(), null, "Default Mix: number ms"), this._multiTrackAnimationSetup.animations = this.getAllAnimationsFrom(this.spineName)), this.playAgain();
-	}
-	onPlayClicked() {
-		E$1.info("Play Clicked"), this.playAgain();
-	}
-	onStopClicked() {
-		E$1.info("Stop Clicked"), this.kill();
-	}
-	onStopWithMix() {
-		E$1.info("Stop With Mix Clicked"), this.stopWithMix();
-	}
-	onPauseResumeClicked() {
-		E$1.info("Pause/Resume Clicked"), this._currentAnimation && (this._currentAnimation.isPlaying ? this._currentAnimation.stop() : this._currentAnimation.resume());
-	}
-	cleanup() {
-		super.cleanup(), this._mainContainer.parentElement.removeChild(this._mainContainer), this._mainContainer = null, this._removeCallback(), this.kill();
-	}
-	playAgain() {
-		if (this.kill(), !this.spineName) {
-			this.showSnackBar("Cannot start without spine selected.");
-			return;
-		}
-		this.isMulti ? this.playMultiTrackAnimation() : this.playRegularAnimation(), this.isAnimationPlaying() && (this.notifyNoTargetBoneIfNeeded(), this.updateBonePosition());
-	}
-	isAnimationPlaying() {
-		var _this$_currentAnimati;
-		return (_this$_currentAnimati = this._currentAnimation) === null || _this$_currentAnimati === void 0 ? void 0 : _this$_currentAnimati.isPlaying;
-	}
-	playRegularAnimation() {
-		if (!this.animName) {
-			this.showSnackBar("Cannot start without animation name selected.");
-			return;
-		}
-		this.isValidSpine(this.spineName, !1, this.animName) && (this._currentAnimation = this.spineUtils.startSpineAnimationCreation(this.spineName, this.animName, this.loop).position({
-			x: this.resolutionManager.halfResolution.width,
-			y: this.resolutionManager.halfResolution.height
-		}).container(this).skinName(this.skinName).createAndStart(), this.processTextureSlotReplacements(), this.setDefaultMixDuration(), this._currentAnimation.state.addListener({ event: (e, t) => {
-			E$1.error(t.data.name), this.showSnackBar(`EVENT: ${t.data.name}`);
-		} }));
-	}
-	playMultiTrackAnimation() {
-		E$1.info(this._multiTrackAnimationSetup.tracks);
-		let e = this._multiTrackAnimationSetup.tracks, t = e.find(((e) => e.trackIndex === 0));
-		if (!(t === null || t === void 0 ? void 0 : t.options.length)) {
-			this.showSnackBar("Cannot start without animation on Track 0 selected.");
-			return;
-		}
-		if (!t.options[0].animation) {
-			this.showSnackBar("Cannot start without animation name selected.");
-			return;
-		}
-		if (this.isValidSpine(this.spineName, !1, t.options[0].animation)) {
-			this._currentAnimation = this.spineUtils.startSpineAnimationCreation(this.spineName, t.options[0].animation, t.options[0].loop).position({
-				x: this.resolutionManager.halfResolution.width,
-				y: this.resolutionManager.halfResolution.height
-			}).container(this).skinName(this.skinName).createAndStart(), this.setDefaultMixDuration(), this.setAnimationMix();
-			for (let t of e) for (let e of t.options) !(t.trackIndex === 0 && t.options.indexOf(e) === 0) && e.animation && this._currentAnimation.playAdd(e.animation, t.trackIndex, e.loop);
-			this.processTextureSlotReplacements();
-		}
-	}
-	stopWithMix() {
-		var _this$_currentAnimati2;
-		if (!((_this$_currentAnimati2 = this._currentAnimation) === null || _this$_currentAnimati2 === void 0 ? void 0 : _this$_currentAnimati2.isPlaying)) {
-			this.showSnackBar("Cannot stop something that is not playing");
-			return;
-		}
-		if (this.isMulti) {
-			let e = this._multiTrackAnimationSetup.tracks;
-			for (let t of e) {
-				let e = t.options[t.options.length - 1];
-				(e === null || e === void 0 ? void 0 : e.animation) ? this._currentAnimation.play(e.animation, t.trackIndex, e.loop) : this.showSnackBar(`No animation on track: ${t.trackIndex}`);
-			}
-		} else {
-			if (!this.mixAnimName) {
-				this.showSnackBar("Select animation to mix with");
-				return;
-			}
-			this._currentAnimation.play(this.mixAnimName, 0, !0);
-		}
-	}
-	setAnimationMix() {
-		if (this._currentAnimation) {
-			let e = this._multiTrackAnimationSetup.mixingOptions;
-			e.animationFrom && e.animationTo && (this._currentAnimation.setAnimationMix(e.animationFrom, e.animationTo, e.mixDuration), this.showSnackBar(`MIX SETUP DONE: Animation FROM ${e.animationFrom} -> TO ${e.animationTo} DURATION: ${e.mixDuration}`));
-		}
-	}
-	processTextureSlotReplacements() {
-		let e = this._slotsReplacementHTML.slotReplacements;
-		for (let t in e) this.spineUtils.addSlotObject(this._currentAnimation, t, this.makeSpriteFromTexture(e[t]));
-	}
-	getDefaultMixDurationVariants() {
-		return [
-			"0.1",
-			"0.2",
-			"0.3",
-			"0.4",
-			"0.5",
-			"0.6",
-			"0.7",
-			"0.8",
-			"0.9",
-			"1"
-		];
-	}
-	getTargetSprite() {
-		return this.getChildByName(`target${this.playerId}`);
-	}
-	get mainContainer() {
-		return this._mainContainer;
-	}
-	get spineName() {
-		return this._spineSelection.value;
-	}
-	get animName() {
-		return this._animationSelection.value;
-	}
-	get mixAnimName() {
-		return this._mixWithAnimationSelection.value;
-	}
-	get isMixingMode() {
-		return this._isMixingCheckbox.checked;
-	}
-	get isTargetSpriteChecked() {
-		return this._isTargetSpriteCheckbox.checked;
-	}
-	get isMulti() {
-		return this._isMultiCheckbox.checked;
-	}
-	get loop() {
-		return !0;
-	}
-	get skinName() {
-		return this._skinSelection.value === "" ? "default" : this._skinSelection.value;
-	}
-	get playerId() {
-		return this._playerId;
-	}
-	set removeCallback(e) {
-		this._removeCallback = e;
-	}
-	set index(e) {
-		this._index = e;
-	}
-};
+var AutoplayButtonEvents = (_Class5 = class {}, _defineProperty(_Class5, "AUTOPLAY_BUTTON_CLICKED", "AutoplayButtonEvents::AUTOPLAY_BUTTON_CLICKED"), _Class5);
 var SpineUtils = class {
 	constructor(e, t, n, r) {
 		_defineProperty(this, "_defaultUpdateManager", void 0);
@@ -103883,7 +103264,7 @@ var SpineUtils = class {
 		this._resources = e, this._app = r, this._defaultUpdateManager = t, this._defaultContainer = n;
 	}
 	startSpineAnimationCreation(e, t, n = !1, r) {
-		if (this._isCreationStarted) throw E$1.error(`Spine: ${this._spineName} : Skin: ${this._skinName} Animation: ${this._animationName}`), Error("SpineUtils last object creation was not finished properly. Maybe createAndStart was not called");
+		if (this._isCreationStarted) throw A.error(`Spine: ${this._spineName} : Skin: ${this._skinName} Animation: ${this._animationName}`), Error("SpineUtils last object creation was not finished properly. Maybe createAndStart was not called");
 		return this._isCreationStarted = !0, this._spineName = e, this._animationName = t, this._loop = n, this._position = {
 			x: 0,
 			y: 0
@@ -104057,7 +103438,7 @@ var SpineUtils = class {
 		return this._app;
 	}
 };
-var ur = class AssetsManager {
+var or = class AssetsManager {
 	constructor() {
 		_defineProperty(this, "_loadedResourcesAmount", 0);
 		_defineProperty(this, "_totalResourcesAmount", 0);
@@ -104311,16 +103692,16 @@ var ur = class AssetsManager {
 		return this._useSoundsLazyLoading;
 	}
 };
-ur = __decorate$1([injectable()], ur);
+or = __decorate$1([injectable()], or);
+var sr;
+var cr;
+var lr;
+var ur;
 var dr;
 var fr;
 var pr;
 var mr;
-var hr;
-var gr;
-var _r;
-var vr;
-var G = class BasicView {
+var q = class BasicView {
 	constructor() {
 		_defineProperty(this, "_pixiStage", void 0);
 		_defineProperty(this, "_assets", void 0);
@@ -104438,10 +103819,808 @@ var G = class BasicView {
 		return this.mainUI.screenLayoutManager.orientation;
 	}
 };
-__decorate$1([inject(j.PixiStageContainer), __decorateMetadata("design:type", typeof (dr = import_lib.Container !== void 0 && import_lib.Container) == "function" ? dr : Object)], G.prototype, "_pixiStage", void 0), __decorate$1([inject(j.AssetsManager), __decorateMetadata("design:type", typeof (fr = ur !== void 0 && ur) == "function" ? fr : Object)], G.prototype, "_assets", void 0), __decorate$1([inject(j.CurrencyFormatter), __decorateMetadata("design:type", typeof (pr = Xn !== void 0 && Xn) == "function" ? pr : Object)], G.prototype, "_currencyFormatter", void 0), __decorate$1([inject(j.MainUI), __decorateMetadata("design:type", Object)], G.prototype, "_mainUI", void 0), __decorate$1([inject(A.UpdateManager), __decorateMetadata("design:type", typeof (mr = UpdateManager !== void 0 && UpdateManager) == "function" ? mr : Object)], G.prototype, "_updateManager", void 0), __decorate$1([inject(A.ResolutionManager), __decorateMetadata("design:type", typeof (hr = qe$1 !== void 0 && qe$1) == "function" ? hr : Object)], G.prototype, "_resolutionManager", void 0), __decorate$1([inject(j.SoundPlayer), __decorateMetadata("design:type", Object)], G.prototype, "_soundPlayer", void 0), __decorate$1([inject(j.Application), __decorateMetadata("design:type", typeof (gr = import_lib.Application !== void 0 && import_lib.Application) == "function" ? gr : Object)], G.prototype, "_app", void 0), __decorate$1([inject(j.GameConfig), __decorateMetadata("design:type", typeof (_r = GameConfig !== void 0 && GameConfig) == "function" ? _r : Object)], G.prototype, "_gameConfig", void 0), __decorate$1([inject(j.Translator), __decorateMetadata("design:type", typeof (vr = Zn !== void 0 && Zn) == "function" ? vr : Object)], G.prototype, "_translator", void 0), G = __decorate$1([injectable()], G);
-var yr = class AnimationPlayerView extends G {
+__decorate$1([inject(P$2.PixiStageContainer), __decorateMetadata("design:type", typeof (sr = import_lib.Container !== void 0 && import_lib.Container) == "function" ? sr : Object)], q.prototype, "_pixiStage", void 0), __decorate$1([inject(P$2.AssetsManager), __decorateMetadata("design:type", typeof (cr = or !== void 0 && or) == "function" ? cr : Object)], q.prototype, "_assets", void 0), __decorate$1([inject(P$2.CurrencyFormatter), __decorateMetadata("design:type", typeof (lr = qn !== void 0 && qn) == "function" ? lr : Object)], q.prototype, "_currencyFormatter", void 0), __decorate$1([inject(P$2.MainUI), __decorateMetadata("design:type", Object)], q.prototype, "_mainUI", void 0), __decorate$1([inject(N$1.UpdateManager), __decorateMetadata("design:type", typeof (ur = UpdateManager !== void 0 && UpdateManager) == "function" ? ur : Object)], q.prototype, "_updateManager", void 0), __decorate$1([inject(N$1.ResolutionManager), __decorateMetadata("design:type", typeof (dr = We$1 !== void 0 && We$1) == "function" ? dr : Object)], q.prototype, "_resolutionManager", void 0), __decorate$1([inject(P$2.SoundPlayer), __decorateMetadata("design:type", Object)], q.prototype, "_soundPlayer", void 0), __decorate$1([inject(P$2.Application), __decorateMetadata("design:type", typeof (fr = import_lib.Application !== void 0 && import_lib.Application) == "function" ? fr : Object)], q.prototype, "_app", void 0), __decorate$1([inject(P$2.GameConfig), __decorateMetadata("design:type", typeof (pr = GameConfig !== void 0 && GameConfig) == "function" ? pr : Object)], q.prototype, "_gameConfig", void 0), __decorate$1([inject(P$2.Translator), __decorateMetadata("design:type", typeof (mr = Jn !== void 0 && Jn) == "function" ? mr : Object)], q.prototype, "_translator", void 0), q = __decorate$1([injectable()], q);
+var UIUtils = class {
+	static getXOffsetForHorizontalAlignmentPM(e) {
+		return (e - ue$1) / 2;
+	}
+	static getScreenHeight(e, t) {
+		return k / (e / t);
+	}
+	static getYOffsetForVerticalAlignmentLandscape(e) {
+		return (e - ue$1) / 2;
+	}
+	static getScreenWidth(e, t) {
+		return e / t * O$1;
+	}
+};
+var J$1 = /* @__PURE__ */ function(e) {
+	return e[e.TOP = 0] = "TOP", e[e.BOTTOM = 1] = "BOTTOM", e[e.LEFT = 2] = "LEFT", e[e.RIGHT = 3] = "RIGHT", e;
+}({});
+var UIElement = class {
+	constructor(e, t, n, r, i, a, o) {
+		_defineProperty(this, "element", void 0);
+		_defineProperty(this, "scaleLandscape", void 0);
+		_defineProperty(this, "scalePortrait", void 0);
+		_defineProperty(this, "origPositionLandscape", void 0);
+		_defineProperty(this, "origPositionPortrait", void 0);
+		_defineProperty(this, "portraitAlignment", void 0);
+		_defineProperty(this, "landscapeAlignment", void 0);
+		this.element = e, this.origPositionLandscape = t, this.origPositionPortrait = n, this.landscapeAlignment = r, this.portraitAlignment = i || r, this.scaleLandscape = a, this.scalePortrait = o;
+	}
+	updatePosition(e) {
+		var _this$scalePortrait$y, _this$scalePortrait;
+		let { width: t, height: n, isPortrait: r, y: i, scale: a } = e, o = r ? this.origPositionPortrait : this.origPositionLandscape;
+		if (r && this.hasVerticalAlignment(r)) this.hasTopAlignment(r) ? this.element.position.y = o.y - i / a : this.element.position.y = o.y + i / a / ((_this$scalePortrait$y = (_this$scalePortrait = this.scalePortrait) === null || _this$scalePortrait === void 0 ? void 0 : _this$scalePortrait.y) !== null && _this$scalePortrait$y !== void 0 ? _this$scalePortrait$y : 1), this.element.position.x = o.x;
+		else if (r && this.hasHorizontalAlignment(r)) {
+			let e = UIUtils.getScreenWidth(t, n), i = UIUtils.getXOffsetForHorizontalAlignmentPM(e), a = this.hasLeftAlignment(r) ? o.x - i : o.x + i;
+			a = this.hasLeftAlignment(r) && a > o.x || !this.hasLeftAlignment(r) && a < o.x ? o.x : a, this.element.position.x = a, this.element.position.y = o.y;
+		} else if (!r && this.hasVerticalAlignment(r)) {
+			let e = UIUtils.getScreenHeight(t, n), i = UIUtils.getYOffsetForVerticalAlignmentLandscape(e), a = this.hasTopAlignment(r) ? o.y - i : o.y + i;
+			a = this.hasTopAlignment(r) && a > o.y || !this.hasTopAlignment(r) && a < o.y ? o.y : a, this.element.position.x = o.x, this.element.position.y = a;
+		} else this.element.position.x = o.x, this.element.position.y = o.y;
+	}
+	hasVerticalAlignment(e) {
+		return this.hasTopAlignment(e) || this.hasBottomAlignment(e);
+	}
+	hasHorizontalAlignment(e) {
+		return this.hasLeftAlignment(e) || this.hasRightAlignment(e);
+	}
+	hasTopAlignment(e) {
+		return e ? this.portraitAlignment.indexOf(J$1.TOP) >= 0 : this.landscapeAlignment.indexOf(J$1.TOP) >= 0;
+	}
+	hasBottomAlignment(e) {
+		return e ? this.portraitAlignment.indexOf(J$1.BOTTOM) >= 0 : this.landscapeAlignment.indexOf(J$1.BOTTOM) >= 0;
+	}
+	hasLeftAlignment(e) {
+		return e ? this.portraitAlignment.indexOf(J$1.LEFT) >= 0 : this.landscapeAlignment.indexOf(J$1.LEFT) >= 0;
+	}
+	hasRightAlignment(e) {
+		return e ? this.portraitAlignment.indexOf(J$1.RIGHT) >= 0 : this.landscapeAlignment.indexOf(J$1.RIGHT) >= 0;
+	}
+};
+var hr = class UIView extends q {
+	constructor(..._args18) {
+		super(..._args18);
+		_defineProperty(this, "_uiElements", []);
+	}
+	onResized(e) {
+		super.onResized(e), this.applyOrientation(), this.updateUIElements(e);
+	}
+	applyOrientation() {}
+	addUIElementToParent(e, t, n, r, i, a, o) {
+		let s = this.mainUI.layout.getAbsoluteUIPosition(i, I$1.LANDSCAPE), c = this.mainUI.layout.getAbsoluteUIPosition(i, I$1.PORTRAIT), l = this.spineUtils.getBoneAbsolutePosition(r.skeleton.data, t), u = this.spineUtils.getBoneAbsolutePosition(r.skeleton.data, n);
+		this._uiElements.push(new UIElement(e, {
+			x: l.x + s.x,
+			y: l.y + s.y
+		}, {
+			x: u.x + c.x,
+			y: u.y + c.y
+		}, [a], o ? [o] : null));
+	}
+	updateUIElements(e) {
+		for (let t of this._uiElements) t.updatePosition(e);
+	}
+};
+hr = __decorate$1([injectFromBase()], hr);
+var gr;
+var _r = (_AutoplayButtonView = class AutoplayButtonView extends hr {
+	constructor(..._args19) {
+		super(..._args19);
+		_defineProperty(this, "_autoplayButton", void 0);
+	}
+	init() {
+		super.init(), this.setupButton(), this.setupLayout();
+	}
+	disableButton() {
+		this._autoplayButton.button.disable();
+	}
+	enableButton() {
+		this._autoplayButton.button.enable();
+	}
+	setupLayout() {
+		let e = this.mainUI.getBoneFromUI("AUTOPLAY_BUTTON"), t = this.mainUI.getBoneFromPortraitUI("AUTOPLAY_BUTTON");
+		this._uiElements.push(new UIElement(this._autoplayButton.button, {
+			x: 0,
+			y: 0
+		}, {
+			x: 0,
+			y: 0
+		}, [J$1.RIGHT], [J$1.BOTTOM], {
+			x: e.scaleX,
+			y: e.scaleY
+		}, {
+			x: t.scaleX,
+			y: t.scaleY
+		}));
+	}
+	setupButton() {
+		this._autoplayButton = this.createSpineButton(), this.container.addChild(this._autoplayButton.button);
+	}
+	createSpineButton() {
+		return new GenericButton("AUTOPLAY_BUTTON.json", void 0, this.spineUtils, this.onButtonClicked.bind(this));
+	}
+	onButtonClicked() {
+		this.emit(gr.BUTTON_CLICKED);
+	}
+}, gr = _AutoplayButtonView, _defineProperty(_AutoplayButtonView, "BUTTON_CLICKED", "AutoplayButtonView::BUTTON_CLICKED"), _AutoplayButtonView);
+_r = gr = __decorate$1([injectFromBase()], _r);
+var KeypadLockProperties = (_Class6 = class {}, _defineProperty(_Class6, "ENABLED", "enabled"), _defineProperty(_Class6, "VISIBLE", "visible"), _Class6);
+var vr = class KeypadModule extends L {
 	constructor(..._args20) {
 		super(..._args20);
+		_defineProperty(this, "_keypadLocker", new KeypadLocker());
+	}
+	init(e, t) {
+		super.init(e, t), this._keypadLocker.add(KeypadLockProperties.ENABLED, this.onButtonStatusChanged.bind(this)), this._keypadLocker.add(KeypadLockProperties.VISIBLE, this.onButtonVisibilityChanged.bind(this));
+	}
+	lockWithReason(e, t) {
+		t.disable && this.disable(e), t.hide && this.hide(e);
+	}
+	unlockWithReason(e, t) {
+		t.enable && this.enable(e), t.show && this.show(e);
+	}
+	setupEvents() {
+		super.setupEvents(), this.onViewEmitEvent(_r.BUTTON_CLICKED, AutoplayButtonEvents.AUTOPLAY_BUTTON_CLICKED);
+	}
+	enable(e) {
+		this._keypadLocker.unlock(KeypadLockProperties.ENABLED, e);
+	}
+	disable(e) {
+		this._keypadLocker.lock(KeypadLockProperties.ENABLED, e);
+	}
+	show(e) {
+		this._keypadLocker.unlock(KeypadLockProperties.VISIBLE, e);
+	}
+	hide(e) {
+		this._keypadLocker.lock(KeypadLockProperties.VISIBLE, e);
+	}
+	onButtonVisibilityChanged(e) {
+		e ? this.showView() : this.hideView();
+	}
+	onButtonStatusChanged(e) {
+		e ? this.enableButton() : this.disableButton();
+	}
+	hideView() {
+		this.view.hide();
+	}
+	showView() {
+		this.view.show();
+	}
+	disableButton() {
+		this.view.disableButton();
+	}
+	enableButton() {
+		this.view.enableButton();
+	}
+};
+vr = __decorate$1([injectFromBase()], vr);
+var yr = class AnimationPlayerModule extends L {
+	constructor() {
+		super();
+	}
+	afterInit() {
+		super.afterInit(), this.view.hide(), document.addEventListener("keydown", this.keyboardInput.bind(this));
+	}
+	enterFirstState() {}
+	setupStates() {
+		super.setupStates();
+	}
+	keyboardInput(e) {
+		e.code === "KeyV" && (this.view.isVisible() ? this.view.hide() : this.view.show());
+	}
+	static randomID() {
+		let e = (/* @__PURE__ */ new Date()).getTime();
+		let t = performance && performance.now && performance.now() * 1e3 || 0;
+		return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (n) => {
+			let r = Math.random() * 16;
+			return e > 0 ? (r = (e + r) % 16 | 0, e = Math.floor(e / 16)) : (r = (t + r) % 16 | 0, t = Math.floor(t / 16)), (n == "x" ? r : r & 7 | 8).toString(16);
+		});
+	}
+};
+yr = __decorate$1([injectFromBase(), __decorateMetadata("design:paramtypes", [])], yr);
+var TrackLoopHTLMPick = class {
+	constructor() {
+		_defineProperty(this, "_animations", []);
+		_defineProperty(this, "_trackOptions", {});
+		_defineProperty(this, "_layout", void 0);
+		_defineProperty(this, "_tracksLayout", void 0);
+		_defineProperty(this, "_currentIndex", 0);
+		_defineProperty(this, "_trackIndex", void 0);
+		_defineProperty(this, "_id", void 0);
+		this.setupUI(), this._id = yr.randomID();
+	}
+	cleanup() {}
+	setupUI() {
+		this._layout = HTMLUtils.makeVerticalContainer(), this._layout.style.flexGrow = "1";
+		let e = HTMLUtils.createHtmlElement("button", null, "➕");
+		e.onclick = () => {
+			A.info("Add another animation to track!"), this.addTrack();
+		}, this._tracksLayout = HTMLUtils.makeVerticalContainer(), this._layout.appendChild(this._tracksLayout), this.addTrack(), this._layout.appendChild(e);
+	}
+	addTrack() {
+		let e = HTMLUtils.createHtmlElement("button", null, "❌"), t = HTMLUtils.createFlexHtmlElement("select", "trackOptionsSelect"), n = HTMLUtils.createHtmlElement("input", "trackLoop");
+		n.type = "checkbox";
+		let r = HTMLUtils.makeHorizontalContainer(n, t, e), i = this._currentIndex;
+		e.onclick = () => {
+			A.info("Remove!"), r.parentNode.removeChild(r), this._trackOptions[i] = null;
+		}, HTMLUtils.addOptionsToDropdownList(t, this._animations), this._trackOptions[i] = {
+			track: t,
+			loop: n,
+			trackLayout: r
+		}, this._tracksLayout.appendChild(r), this._currentIndex++;
+	}
+	get trackOptions() {
+		let e = [];
+		for (let t in this._trackOptions) this._trackOptions[t] && e.push({
+			loop: this._trackOptions[t].loop.checked,
+			animation: this._trackOptions[t].track.value
+		});
+		return e;
+	}
+	get trackIndex() {
+		return this._trackIndex;
+	}
+	set trackIndex(e) {
+		this._trackIndex = e;
+	}
+	get layout() {
+		return this._layout;
+	}
+	get id() {
+		return this._id;
+	}
+	set animations(e) {
+		this._animations = e;
+		for (let t in this._trackOptions) this._trackOptions[t] && (HTMLUtils.clearDropdownList(this._trackOptions[t].track), HTMLUtils.addOptionsToDropdownList(this._trackOptions[t].track, e, null, "Select animation"));
+	}
+};
+var MultiTrackAnimationHTMLView = class {
+	constructor() {
+		_defineProperty(this, "_mainLayout", void 0);
+		_defineProperty(this, "_tracksLayout", void 0);
+		_defineProperty(this, "_mixingLayout", void 0);
+		_defineProperty(this, "_animations", void 0);
+		_defineProperty(this, "_tracksLoopHTMLPicks", []);
+		_defineProperty(this, "_trackIndex", 0);
+		_defineProperty(this, "_isMixingMode", !1);
+		_defineProperty(this, "_mixingOptionsSelection", void 0);
+		_defineProperty(this, "_mixingOptions", {
+			animationFrom: "",
+			animationTo: "",
+			mixDuration: 0
+		});
+		this.setupUI();
+	}
+	addTrack() {
+		let e = new TrackLoopHTLMPick();
+		e.animations = this._animations, e.trackIndex = this._trackIndex, this.setupTrackUI(e), this._tracksLoopHTMLPicks.push(e), this._trackIndex++;
+	}
+	setMixMode(e) {
+		this._isMixingMode = e, this.resetMixingDropDowns(), this.resetMixingOptions(), this.updateMixingUIDisplay();
+	}
+	updateMixingUIDisplay() {
+		this._mixingLayout.style.display = this._isMixingMode ? "flex" : "none";
+	}
+	setupTrackUI(e) {
+		let t = HTMLUtils.createHtmlElement("input");
+		t.value = `${this._trackIndex}`, t.type = "number", t.min = "0", t.step = "1", t.style.maxWidth = "3em", t.onchange = () => {
+			e.trackIndex = parseInt(t.value, 10);
+		};
+		let n = HTMLUtils.createHtmlElement("button", null, "❌"), r = HTMLUtils.makeHorizontalContainer(n, t), i = HTMLUtils.makeHorizontalContainer(r, e.layout);
+		n.onclick = () => {
+			let t = this._tracksLoopHTMLPicks.findIndex((t) => t.id === e.id);
+			t > -1 && this._tracksLoopHTMLPicks.splice(t, 1), i.parentNode.removeChild(i), this.onTrackRemoved();
+		}, this._tracksLayout.appendChild(i);
+	}
+	onTrackRemoved() {
+		this._tracksLoopHTMLPicks.length || (this._mixingLayout.style.display = "none");
+	}
+	setupUI() {
+		let e = HTMLUtils.createHtmlElement("button", null, "Add Track");
+		e.onclick = () => {
+			this.addTrack(), !this._mixingLayout.children.length && this.setupMixingUI(), this.updateMixingUIDisplay();
+		}, this._tracksLayout = HTMLUtils.makeVerticalContainer(), this._mixingLayout = HTMLUtils.makeVerticalContainer(), this._mainLayout = HTMLUtils.makeVerticalContainer(e, this._tracksLayout, this._mixingLayout);
+	}
+	setLabelStyle(...e) {
+		e.forEach((e) => {
+			e.style.width = "5em", e.style.display = "flex", e.style.justifyContent = "center";
+		});
+	}
+	setupMixingUI() {
+		let e = HTMLUtils.createHtmlElement("button", null, "Clear"), t = HTMLUtils.createHtmlElement("button", null, "Set mix time"), n = HTMLUtils.createFlexHtmlElement("select", "animationFromSelection"), r = HTMLUtils.createFlexHtmlElement("select", "animationToSelection"), i = HTMLUtils.createFlexHtmlElement("select", "mixDurationSelection"), a = HTMLUtils.createHtmlElement("label", "animationFromFromLabel", "FROM");
+		a.htmlFor = "animationFromSelection";
+		let o = HTMLUtils.createHtmlElement("label", "animationToLabel", "TO");
+		o.htmlFor = "animationToSelection";
+		let s = HTMLUtils.createHtmlElement("label", "mixDurationSelectionLabel", "MIX TIME");
+		s.htmlFor = "mixDurationSelection", this.setLabelStyle(a, o, s);
+		let c = HTMLUtils.makeHorizontalContainer(a, n), l = HTMLUtils.makeHorizontalContainer(o, r), u = HTMLUtils.makeHorizontalContainer(s, i), d = HTMLUtils.makeHorizontalContainer(t, e);
+		d.style.justifyContent = "space-evenly", e.onclick = () => {
+			this.onCLearButtonClicked();
+		}, t.onclick = () => {
+			this.onSetAnimationMixButtonClicked();
+		}, this._mixingLayout.appendChild(c), this._mixingLayout.appendChild(l), this._mixingLayout.appendChild(u), this._mixingLayout.appendChild(d), this._mixingOptionsSelection = {
+			animationFromSelection: n,
+			animationToSelection: r,
+			mixDurationSelection: i
+		}, this.setupDropDowns();
+	}
+	setupDropDowns() {
+		this._mixingOptionsSelection && (HTMLUtils.clearDropdownList(this._mixingOptionsSelection.animationFromSelection), HTMLUtils.clearDropdownList(this._mixingOptionsSelection.animationToSelection), HTMLUtils.clearDropdownList(this._mixingOptionsSelection.mixDurationSelection), HTMLUtils.addOptionsToDropdownList(this._mixingOptionsSelection.animationFromSelection, this._animations, null, "Select animation"), HTMLUtils.addOptionsToDropdownList(this._mixingOptionsSelection.animationToSelection, this._animations, null, "Select animation"), HTMLUtils.addOptionsToDropdownList(this._mixingOptionsSelection.mixDurationSelection, this.getMixDurationVariants(), null, "number ms"));
+	}
+	resetMixingDropDowns() {
+		this._mixingOptionsSelection && (this._mixingOptionsSelection.animationFromSelection.selectedIndex = 0, this._mixingOptionsSelection.animationToSelection.selectedIndex = 0, this._mixingOptionsSelection.mixDurationSelection.selectedIndex = 0);
+	}
+	resetMixingOptions() {
+		this._mixingOptions = {
+			animationFrom: "",
+			animationTo: "",
+			mixDuration: 0
+		};
+	}
+	getMixDurationVariants() {
+		return [
+			"0.1",
+			"0.2",
+			"0.3",
+			"0.4",
+			"0.5",
+			"0.6",
+			"0.7",
+			"0.8",
+			"0.9",
+			"1"
+		];
+	}
+	onCLearButtonClicked() {
+		this.resetMixingDropDowns(), this.resetMixingOptions();
+	}
+	onSetAnimationMixButtonClicked() {
+		let e = Number(this._mixingOptionsSelection.mixDurationSelection.value);
+		this._mixingOptions = {
+			animationFrom: this._mixingOptionsSelection.animationFromSelection.value,
+			animationTo: this._mixingOptionsSelection.animationToSelection.value,
+			mixDuration: isNaN(e) ? 0 : e
+		};
+	}
+	get mainLayout() {
+		return this._mainLayout;
+	}
+	get tracks() {
+		return this._tracksLoopHTMLPicks.map((e) => ({
+			trackIndex: e.trackIndex,
+			options: [...e.trackOptions]
+		}));
+	}
+	set visible(e) {
+		e ? this._mainLayout.style.display = "flex" : this._mainLayout.style.display = "none";
+	}
+	set animations(e) {
+		this._animations = e;
+		for (let t of this._tracksLoopHTMLPicks) t.animations = e;
+		this.setupDropDowns(), this.resetMixingOptions();
+	}
+	get mixingOptions() {
+		return this._mixingOptions;
+	}
+};
+var SlotReplacementHTMLView = class {
+	constructor(e) {
+		_defineProperty(this, "_id", yr.randomID());
+		_defineProperty(this, "_slots", void 0);
+		_defineProperty(this, "_textures", void 0);
+		_defineProperty(this, "_mainLayout", void 0);
+		_defineProperty(this, "_slotSelect", void 0);
+		_defineProperty(this, "_textureSelect", void 0);
+		_defineProperty(this, "_removeButton", void 0);
+		_defineProperty(this, "_removeCallback", void 0);
+		this._textures = e, this._id = yr.randomID(), this.setupUI();
+	}
+	setupUI() {
+		this._removeButton = HTMLUtils.createHtmlElement("button", "removeButton", "❌"), this._removeButton.onclick = this.onRemove.bind(this), this._slotSelect = HTMLUtils.createHtmlElement("select", "slotsId"), this._textureSelect = HTMLUtils.createHtmlElement("select", "texturesId"), HTMLUtils.addOptionsToDropdownList(this._textureSelect, this._textures, null, "Select texture"), this._mainLayout = HTMLUtils.makeHorizontalContainer(this._removeButton, this._slotSelect, this._textureSelect);
+	}
+	onRemove() {
+		this._removeCallback(), this._mainLayout.parentNode.removeChild(this._mainLayout);
+	}
+	get id() {
+		return this._id;
+	}
+	set onRemoveCallback(e) {
+		this._removeCallback = e;
+	}
+	set slots(e) {
+		this._slots = e, HTMLUtils.clearDropdownList(this._slotSelect), HTMLUtils.addOptionsToDropdownList(this._slotSelect, this._slots, null, "Select slot");
+	}
+	get layout() {
+		return this._mainLayout;
+	}
+	get slot() {
+		return this._slotSelect.value;
+	}
+	get texture() {
+		return this._textureSelect.value;
+	}
+};
+var SlotReplacementHandlerHTMLView = class {
+	constructor(e, t) {
+		_defineProperty(this, "_slotReplacements", []);
+		_defineProperty(this, "_textures", void 0);
+		_defineProperty(this, "_mainLayout", void 0);
+		_defineProperty(this, "_slotsLayout", void 0);
+		_defineProperty(this, "_id", void 0);
+		_defineProperty(this, "_slots", []);
+		this._textures = e, this._id = t, this.setupUI();
+	}
+	addSlotReplacement() {
+		let e = new SlotReplacementHTMLView(this._textures);
+		e.onRemoveCallback = this.removeSlotReplacement.bind(this, e), e.slots = this._slots, this._slotReplacements.push(e), this._slotsLayout.appendChild(e.layout);
+	}
+	removeSlotReplacement(e) {
+		let t = this._slotReplacements.findIndex((t) => t.id === e.id);
+		t > -1 && this._slotReplacements.splice(t, 1);
+	}
+	setupUI() {
+		let e = HTMLUtils.createHtmlElement("button", `slotreplacementaddbutton${this._id}`, "🆕 Slot Replacement");
+		e.onclick = () => {
+			this.addSlotReplacement();
+		}, this._slotsLayout = HTMLUtils.makeVerticalContainer(), this._mainLayout = HTMLUtils.makeVerticalContainer(e, this._slotsLayout);
+	}
+	set slots(e) {
+		this._slots = e;
+		for (let t of this._slotReplacements) t.slots = e;
+	}
+	get layout() {
+		return this._mainLayout;
+	}
+	get slotReplacements() {
+		let e = {};
+		for (let t of this._slotReplacements) e[t.slot] = t.texture;
+		return e;
+	}
+};
+var AnimationPlayerBase = class extends import_lib.Container {
+	constructor(..._args21) {
+		super(..._args21);
+		_defineProperty(this, "_currentAnimation", void 0);
+		_defineProperty(this, "_texturesMap", {});
+		_defineProperty(this, "_snackbarStyle", void 0);
+		_defineProperty(this, "_assets", void 0);
+		_defineProperty(this, "_spineUtils", void 0);
+		_defineProperty(this, "_updateManager", void 0);
+		_defineProperty(this, "_resolutionManager", void 0);
+	}
+	cleanup() {}
+	makeSpriteFromTexture(e) {
+		return new import_lib.Sprite(this._texturesMap[e]);
+	}
+	isValidSpine(e, t, n) {
+		let r = !0, i = new SpineAnimation(new Spine(this.assets.getSpineSkeleton(e)));
+		return this.updateManager.add(i), i.play(n, 0, t), i.skeleton || (this.showSnackBar(`Spine Skeleton does not exist.
+                        Probably missing keyframes in starting animation.
+                        Skeleton-name:${e} Animation-name:${n}`, 4e3), r = !1), this.spineUtils.stopAndDestroyAnimation(i), r;
+	}
+	kill() {
+		this._currentAnimation && (this._currentAnimation = (this.spineUtils.stopAndDestroyAnimation(this._currentAnimation), null));
+	}
+	getAllAnimationsFrom(e) {
+		let t = [];
+		for (let n of this.assets.getSpineSkeleton(e).animations) t.push(n.name);
+		return t;
+	}
+	getAllSlotsInSpine(e) {
+		let t = [];
+		for (let n of this.assets.getSpineSkeleton(e).slots) t.push(n.name);
+		return t;
+	}
+	getSkinsInSpine(e) {
+		let t = [];
+		for (let n of this.assets.getSpineSkeleton(e).skins) t.push(n.name);
+		return t;
+	}
+	showSnackBar(e, t = 2e3, n = this.getSnackbarPosition()) {
+		let r = new import_lib.Text({
+			text: `${e}`,
+			style: this.getSnackBarStyle()
+		});
+		r.anchor.set(.5), Zn.snackBarResolutionTween(r, this.updateManager, this.resolutionManager, !1, 100, t)[0].getPromise().then(() => {
+			Zn.fadeOutTween(r, this.updateManager);
+		}), A.info(e), this.addChild(r);
+	}
+	getSnackbarPosition() {
+		return {
+			x: this.resolutionManager.halfResolution.width,
+			y: 300
+		};
+	}
+	getSnackBarStyle() {
+		return this._snackbarStyle;
+	}
+	get texturesMap() {
+		return this._texturesMap;
+	}
+	set texturesMap(e) {
+		this._texturesMap = e;
+	}
+	get assets() {
+		return this._assets;
+	}
+	set assets(e) {
+		this._assets = e;
+	}
+	get spineUtils() {
+		return this._spineUtils;
+	}
+	set spineUtils(e) {
+		this._spineUtils = e;
+	}
+	get updateManager() {
+		return this._updateManager;
+	}
+	set updateManager(e) {
+		this._updateManager = e;
+	}
+	get resolutionManager() {
+		return this._resolutionManager;
+	}
+	set resolutionManager(e) {
+		this._resolutionManager = e;
+	}
+};
+var br = {
+	fontFamily: "Poppins SemiBold",
+	fontSize: 20,
+	fill: "#B72838"
+};
+var AnimationPlayerHtmlView = class extends AnimationPlayerBase {
+	constructor() {
+		var _super13 = (..._args22) => (super(..._args22), _defineProperty(this, "_removeCallback", void 0), _defineProperty(this, "_mainContainer", void 0), _defineProperty(this, "_playButton", void 0), _defineProperty(this, "_stopButton", void 0), _defineProperty(this, "_pauseResumeButton", void 0), _defineProperty(this, "_removeButton", void 0), _defineProperty(this, "_stopWithMixButton", void 0), _defineProperty(this, "_isMultiCheckbox", void 0), _defineProperty(this, "_isMixingCheckbox", void 0), _defineProperty(this, "_isTargetSpriteCheckbox", void 0), _defineProperty(this, "_tracks", void 0), _defineProperty(this, "_trackChains", void 0), _defineProperty(this, "_skins", void 0), _defineProperty(this, "_playerId", void 0), _defineProperty(this, "_baseButtonsLayout", void 0), _defineProperty(this, "_spineSelection", void 0), _defineProperty(this, "_animationSelection", void 0), _defineProperty(this, "_mixWithAnimationSelection", void 0), _defineProperty(this, "_mixDurationSelection", void 0), _defineProperty(this, "_skinSelection", void 0), _defineProperty(this, "_mixingTextContainer", void 0), _defineProperty(this, "_slotsReplacementHTML", void 0), _defineProperty(this, "_multiTrackAnimationSetup", void 0), _defineProperty(this, "_mainLayout", void 0), _defineProperty(this, "_index", void 0), this);
+		_super13(), this._playerId = yr.randomID();
+	}
+	init() {
+		this.setupUI(), this._snackbarStyle = new import_lib.TextStyle(br);
+	}
+	showInput() {
+		this._mainContainer.style.display = "block", this._mainContainer.style.zIndex = "9999";
+	}
+	hideInput() {
+		this._mainContainer.style.display = "none";
+	}
+	onRemoveClicked() {
+		A.info("Remove Clicked"), this.cleanup(), this.parent.removeChild(this);
+	}
+	getDefaultMixDuration() {
+		let e = Number(this._mixDurationSelection.value);
+		return isNaN(e) ? 0 : e;
+	}
+	setupUI() {
+		this._mainContainer = HTMLUtils.makeDraggableContainerWithHeader(`animationPlayer${this.playerId}`, `Animation Player - ${this._index}`), this._mainContainer.addEventListener("keydown", (e) => {
+			e.stopImmediatePropagation();
+		}), this._mainContainer.addEventListener("keyup", (e) => {
+			e.stopImmediatePropagation();
+		}), this._mainLayout = HTMLUtils.makeVerticalContainer(), this._mainLayout.style.overflow = "scroll", this._mainLayout.style.resize = "both", this._mainLayout.style.background = "rgba(0,0,0,0.7)", this._mainContainer.style.zIndex = "9999", this._mainContainer.appendChild(this._mainLayout), this._playButton = HTMLUtils.createHtmlElement("button", `playButton${this.playerId}`, "PLAY"), this._stopButton = HTMLUtils.createHtmlElement("button", `stopButton${this.playerId}`, "STOP"), this._pauseResumeButton = HTMLUtils.createHtmlElement("button", `pauseButton${this.playerId}`, "PAUSE/RESUME"), this._stopWithMixButton = HTMLUtils.createHtmlElement("button", `stopWithMixButton${this.playerId}`, "STOP WITH MIX"), this._removeButton = HTMLUtils.createHtmlElement("button", `resetButton${this.playerId}`, "❌"), this._baseButtonsLayout = HTMLUtils.makeHorizontalContainer(this._playButton, this._stopButton, this._pauseResumeButton, this._stopWithMixButton, this._removeButton), this._baseButtonsLayout.style.justifyContent = "space-evenly", this._mainLayout.appendChild(this._baseButtonsLayout), this._playButton.onclick = this.onPlayClicked.bind(this), this._stopButton.onclick = this.onStopClicked.bind(this), this._pauseResumeButton.onclick = this.onPauseResumeClicked.bind(this), this._stopWithMixButton.onclick = this.onStopWithMix.bind(this), this._removeButton.onclick = this.onRemoveClicked.bind(this), this._spineSelection = HTMLUtils.makeHtmlDropDownWithOptions(`spineSelect${this.playerId}`, this.assets.getSpineAtlasesPaths(), this.onSkeletonChanged.bind(this)), this._mainLayout.appendChild(this._spineSelection), this._isMultiCheckbox = HTMLUtils.createHtmlElement("input", `isMulti${this.playerId}`, "MULTI"), this._isMultiCheckbox.name = `isMulti${this.playerId}`, this._isMultiCheckbox.type = "checkbox", this._isMultiCheckbox.onclick = () => {
+			this.onMultiTrackChanged(this.isMulti);
+		};
+		let e = HTMLUtils.createHtmlElement("label", `isMultiLabel${this.playerId}`, "MULTITRACK");
+		e.htmlFor = `isMulti${this.playerId}`;
+		let t = HTMLUtils.makeHorizontalContainer(this._isMultiCheckbox, e);
+		this._mainLayout.appendChild(t), this._isMixingCheckbox = HTMLUtils.createHtmlElement("input", `isMixing${this.playerId}`, "MIXING"), this._isMixingCheckbox.name = `isMixing${this.playerId}`, this._isMixingCheckbox.type = "checkbox", this._isMixingCheckbox.onclick = () => {
+			this.onMixingChanged(this._isMixingCheckbox.checked);
+		};
+		let n = HTMLUtils.createHtmlElement("label", `isMixing${this.playerId}`, "MIXING");
+		n.htmlFor = `isMixing${this.playerId}`;
+		let r = HTMLUtils.makeHorizontalContainer(this._isMixingCheckbox, n);
+		this._mainLayout.appendChild(r), this._isTargetSpriteCheckbox = HTMLUtils.createHtmlElement("input", `isTargetSprite${this.playerId}`, "MIXING"), this._isTargetSpriteCheckbox.name = `isTargetSprite${this.playerId}`, this._isTargetSpriteCheckbox.type = "checkbox", this._isTargetSpriteCheckbox.onclick = () => {
+			this.onTargetSprite(this._isTargetSpriteCheckbox.checked);
+		};
+		let i = HTMLUtils.createHtmlElement("label", `isTargetBone${this.playerId}`, "TARGET BONE");
+		i.htmlFor = `isTargetBone${this.playerId}`;
+		let a = HTMLUtils.makeHorizontalContainer(this._isTargetSpriteCheckbox, i);
+		this._mainLayout.appendChild(a);
+		let o = HTMLUtils.createHtmlElement("div", `animationDiv${this.playerId}`, "ANIMATION"), s = HTMLUtils.makeHorizontalContainer(o);
+		s.style.justifyContent = "center", this._mainLayout.appendChild(s), this._animationSelection = HTMLUtils.makeHtmlDropDownWithOptions(`animationSelect${this.playerId}`, [], this.playAgain.bind(this)), this._mainLayout.appendChild(this._animationSelection);
+		let c = HTMLUtils.createHtmlElement("div", `skinDiv${this.playerId}`, "SKIN"), l = HTMLUtils.makeHorizontalContainer(c);
+		l.style.justifyContent = "center", this._mainLayout.appendChild(l), this._skinSelection = HTMLUtils.makeHtmlDropDownWithOptions(`skinSelect${this.playerId}`, [], this.playAgain.bind(this)), this._mainLayout.appendChild(this._skinSelection);
+		let u = HTMLUtils.createHtmlElement("div", `mixingDiv${this.playerId}`, "MIXING");
+		this._mixingTextContainer = HTMLUtils.makeHorizontalContainer(u), this._mainLayout.appendChild(this._mixingTextContainer), this._mixingTextContainer.style.justifyContent = "center", this._mixDurationSelection = HTMLUtils.makeHtmlDropDownWithOptions(`_mixDurationSelection${this.playerId}`, [], null), this._mixDurationSelection.addEventListener("change", this.onAnimationMixDurationChanged.bind(this)), this._mainLayout.appendChild(this._mixDurationSelection), this._mixWithAnimationSelection = HTMLUtils.makeHtmlDropDownWithOptions(`mixWithAnimationSelect${this.playerId}`, [], null), this._mainLayout.appendChild(this._mixWithAnimationSelection), this.changeMixingHTMLElementsDisplay(!1), this._slotsReplacementHTML = new SlotReplacementHandlerHTMLView(Object.keys(this._texturesMap), this.playerId), this._mainLayout.appendChild(this._slotsReplacementHTML.layout), this._multiTrackAnimationSetup = new MultiTrackAnimationHTMLView(), this._mainLayout.appendChild(this._multiTrackAnimationSetup.mainLayout), this._multiTrackAnimationSetup.visible = !1, this._multiTrackAnimationSetup.setMixMode(!1), this.onSkeletonChanged(null);
+	}
+	onAnimationMixDurationChanged() {
+		this.setDefaultMixDuration();
+	}
+	setDefaultMixDuration() {
+		this._currentAnimation && this._currentAnimation.setDefaultMix(this.getDefaultMixDuration());
+	}
+	isTargetBoneExist() {
+		return this._currentAnimation && this._currentAnimation.isPlaying ? !!this.spineUtils.findBone(this._currentAnimation, "TARGET") : !1;
+	}
+	setupTargetSprite() {
+		if (this.getTargetSprite()) return;
+		let e = new import_lib.Text({
+			text: "TARGET",
+			style: {
+				fontSize: 25,
+				fill: "#FFFFFF",
+				stroke: {
+					color: "#FF0000",
+					width: 10
+				},
+				fontWeight: "bold"
+			}
+		});
+		e.anchor.set(.5, .5), e.name = "text";
+		let t = new import_lib.Container();
+		t.name = `target${this.playerId}`, t.addChild(e), t.position.set(this.resolutionManager.halfResolution.width, this.resolutionManager.halfResolution.height), this.addChild(t), t.visible = this.isTargetSpriteChecked, this.sortableChildren = !0, t.zIndex = 2 ** 53 - 1;
+	}
+	updateBonePosition() {
+		if (!this.isTargetBoneExist() || !this.getTargetSprite() || !this.isTargetSpriteChecked) return;
+		let e = this.spineUtils.findBone(this._currentAnimation, "TARGET"), t = this.getTargetSprite().getChildByName("text");
+		e.x = this.getTargetSprite().x - this._currentAnimation.spine.x + t.position.x, e.y = -(this.getTargetSprite().y - this._currentAnimation.spine.y + t.position.y);
+	}
+	onObjectMoved() {
+		this.updateBonePosition();
+	}
+	notifyNoTargetBoneIfNeeded() {
+		this.isTargetSpriteChecked && this.isAnimationPlaying() && !this.isTargetBoneExist() && this.showSnackBar(`There is no TARGET bone in the selected ${this.spineName} SPINE`);
+	}
+	onTargetSprite(e) {
+		this.notifyNoTargetBoneIfNeeded(), this.setupTargetSprite(), this.getTargetSprite() && (this.getTargetSprite().visible = e), this.updateBonePosition();
+	}
+	onMixingChanged(e) {
+		this._multiTrackAnimationSetup.setMixMode(e), this.changeMixingHTMLElementsDisplay(e);
+	}
+	changeMixingHTMLElementsDisplay(e) {
+		e ? (this._mixingTextContainer.style.display = "flex", this._mixDurationSelection.style.display = "flex", this._stopWithMixButton.style.display = "flex") : (this._mixDurationSelection.selectedIndex = 0, this._mixDurationSelection.style.display = "none", this._mixingTextContainer.style.display = "none", this._stopWithMixButton.style.display = "none"), e && !this.isMulti ? this._mixWithAnimationSelection.style.display = "flex" : (this._mixWithAnimationSelection.style.display = "none", this._mixWithAnimationSelection.selectedIndex = 0);
+	}
+	onMultiTrackChanged(e) {
+		this._multiTrackAnimationSetup.visible = e, e ? (this._animationSelection.style.display = "none", this.changeMixingHTMLElementsDisplay(this._isMixingCheckbox.checked)) : (this._animationSelection.style.display = "flex", this.changeMixingHTMLElementsDisplay(this._isMixingCheckbox.checked));
+	}
+	onSkeletonChanged(e) {
+		A.info(e), HTMLUtils.clearDropdownList(this._animationSelection), HTMLUtils.clearDropdownList(this._mixWithAnimationSelection), HTMLUtils.clearDropdownList(this._skinSelection), HTMLUtils.clearDropdownList(this._mixDurationSelection), this.spineName && (this._slotsReplacementHTML.slots = this.getAllSlotsInSpine(this.spineName), HTMLUtils.addOptionsToDropdownList(this._animationSelection, this.getAllAnimationsFrom(this.spineName), null), HTMLUtils.addOptionsToDropdownList(this._mixWithAnimationSelection, this.getAllAnimationsFrom(this.spineName), null, "Mix with animation"), HTMLUtils.addOptionsToDropdownList(this._skinSelection, this.getSkinsInSpine(this.spineName), null), HTMLUtils.addOptionsToDropdownList(this._mixDurationSelection, this.getDefaultMixDurationVariants(), null, "Default Mix: number ms"), this._multiTrackAnimationSetup.animations = this.getAllAnimationsFrom(this.spineName)), this.playAgain();
+	}
+	onPlayClicked() {
+		A.info("Play Clicked"), this.playAgain();
+	}
+	onStopClicked() {
+		A.info("Stop Clicked"), this.kill();
+	}
+	onStopWithMix() {
+		A.info("Stop With Mix Clicked"), this.stopWithMix();
+	}
+	onPauseResumeClicked() {
+		A.info("Pause/Resume Clicked"), this._currentAnimation && (this._currentAnimation.isPlaying ? this._currentAnimation.stop() : this._currentAnimation.resume());
+	}
+	cleanup() {
+		super.cleanup(), this._mainContainer.parentElement.removeChild(this._mainContainer), this._mainContainer = null, this._removeCallback(), this.kill();
+	}
+	playAgain() {
+		if (this.kill(), !this.spineName) {
+			this.showSnackBar("Cannot start without spine selected.");
+			return;
+		}
+		this.isMulti ? this.playMultiTrackAnimation() : this.playRegularAnimation(), this.isAnimationPlaying() && (this.notifyNoTargetBoneIfNeeded(), this.updateBonePosition());
+	}
+	isAnimationPlaying() {
+		var _this$_currentAnimati;
+		return (_this$_currentAnimati = this._currentAnimation) === null || _this$_currentAnimati === void 0 ? void 0 : _this$_currentAnimati.isPlaying;
+	}
+	playRegularAnimation() {
+		if (!this.animName) {
+			this.showSnackBar("Cannot start without animation name selected.");
+			return;
+		}
+		this.isValidSpine(this.spineName, !1, this.animName) && (this._currentAnimation = this.spineUtils.startSpineAnimationCreation(this.spineName, this.animName, this.loop).position({
+			x: this.resolutionManager.halfResolution.width,
+			y: this.resolutionManager.halfResolution.height
+		}).container(this).skinName(this.skinName).createAndStart(), this.processTextureSlotReplacements(), this.setDefaultMixDuration(), this._currentAnimation.state.addListener({ event: (e, t) => {
+			A.error(t.data.name), this.showSnackBar(`EVENT: ${t.data.name}`);
+		} }));
+	}
+	playMultiTrackAnimation() {
+		A.info(this._multiTrackAnimationSetup.tracks);
+		let e = this._multiTrackAnimationSetup.tracks, t = e.find(((e) => e.trackIndex === 0));
+		if (!(t === null || t === void 0 ? void 0 : t.options.length)) {
+			this.showSnackBar("Cannot start without animation on Track 0 selected.");
+			return;
+		}
+		if (!t.options[0].animation) {
+			this.showSnackBar("Cannot start without animation name selected.");
+			return;
+		}
+		if (this.isValidSpine(this.spineName, !1, t.options[0].animation)) {
+			this._currentAnimation = this.spineUtils.startSpineAnimationCreation(this.spineName, t.options[0].animation, t.options[0].loop).position({
+				x: this.resolutionManager.halfResolution.width,
+				y: this.resolutionManager.halfResolution.height
+			}).container(this).skinName(this.skinName).createAndStart(), this.setDefaultMixDuration(), this.setAnimationMix();
+			for (let t of e) for (let e of t.options) !(t.trackIndex === 0 && t.options.indexOf(e) === 0) && e.animation && this._currentAnimation.playAdd(e.animation, t.trackIndex, e.loop);
+			this.processTextureSlotReplacements();
+		}
+	}
+	stopWithMix() {
+		var _this$_currentAnimati2;
+		if (!((_this$_currentAnimati2 = this._currentAnimation) === null || _this$_currentAnimati2 === void 0 ? void 0 : _this$_currentAnimati2.isPlaying)) {
+			this.showSnackBar("Cannot stop something that is not playing");
+			return;
+		}
+		if (this.isMulti) {
+			let e = this._multiTrackAnimationSetup.tracks;
+			for (let t of e) {
+				let e = t.options[t.options.length - 1];
+				(e === null || e === void 0 ? void 0 : e.animation) ? this._currentAnimation.play(e.animation, t.trackIndex, e.loop) : this.showSnackBar(`No animation on track: ${t.trackIndex}`);
+			}
+		} else {
+			if (!this.mixAnimName) {
+				this.showSnackBar("Select animation to mix with");
+				return;
+			}
+			this._currentAnimation.play(this.mixAnimName, 0, !0);
+		}
+	}
+	setAnimationMix() {
+		if (this._currentAnimation) {
+			let e = this._multiTrackAnimationSetup.mixingOptions;
+			e.animationFrom && e.animationTo && (this._currentAnimation.setAnimationMix(e.animationFrom, e.animationTo, e.mixDuration), this.showSnackBar(`MIX SETUP DONE: Animation FROM ${e.animationFrom} -> TO ${e.animationTo} DURATION: ${e.mixDuration}`));
+		}
+	}
+	processTextureSlotReplacements() {
+		let e = this._slotsReplacementHTML.slotReplacements;
+		for (let t in e) this.spineUtils.addSlotObject(this._currentAnimation, t, this.makeSpriteFromTexture(e[t]));
+	}
+	getDefaultMixDurationVariants() {
+		return [
+			"0.1",
+			"0.2",
+			"0.3",
+			"0.4",
+			"0.5",
+			"0.6",
+			"0.7",
+			"0.8",
+			"0.9",
+			"1"
+		];
+	}
+	getTargetSprite() {
+		return this.getChildByName(`target${this.playerId}`);
+	}
+	get mainContainer() {
+		return this._mainContainer;
+	}
+	get spineName() {
+		return this._spineSelection.value;
+	}
+	get animName() {
+		return this._animationSelection.value;
+	}
+	get mixAnimName() {
+		return this._mixWithAnimationSelection.value;
+	}
+	get isMixingMode() {
+		return this._isMixingCheckbox.checked;
+	}
+	get isTargetSpriteChecked() {
+		return this._isTargetSpriteCheckbox.checked;
+	}
+	get isMulti() {
+		return this._isMultiCheckbox.checked;
+	}
+	get loop() {
+		return !0;
+	}
+	get skinName() {
+		return this._skinSelection.value === "" ? "default" : this._skinSelection.value;
+	}
+	get playerId() {
+		return this._playerId;
+	}
+	set removeCallback(e) {
+		this._removeCallback = e;
+	}
+	set index(e) {
+		this._index = e;
+	}
+};
+var xr = class AnimationPlayerView extends q {
+	constructor(..._args23) {
+		super(..._args23);
 		_defineProperty(this, "_htmlViews", []);
 		_defineProperty(this, "_texturesMap", {});
 		_defineProperty(this, "_mainContainer", void 0);
@@ -104488,10 +104667,7 @@ var yr = class AnimationPlayerView extends G {
 		}, this._htmlViews.push(n), e.addChild(n), t.appendChild(n.mainContainer);
 	}
 	addAnimationRepresentation(e, t) {
-		let n = HTMLUtils.createHtmlElement("label", `AnimationPlayer(${e})`, `AnimationPlayer${this._animationPlayerIndex}`);
-		let r = HTMLUtils.createHtmlElement("button", `${e}moveupbutton`, "⬆️");
-		let i = HTMLUtils.createHtmlElement("button", `${e}movedownbutton`, "⬇️️");
-		let a = HTMLUtils.createHtmlElement("button", `${e}removebutton`, "❌");
+		let n = HTMLUtils.createHtmlElement("label", `AnimationPlayer(${e})`, `AnimationPlayer${this._animationPlayerIndex}`), r = HTMLUtils.createHtmlElement("button", `${e}moveupbutton`, "⬆️"), i = HTMLUtils.createHtmlElement("button", `${e}movedownbutton`, "⬇️️"), a = HTMLUtils.createHtmlElement("button", `${e}removebutton`, "❌");
 		a.onclick = () => {
 			t.onRemoveClicked();
 		}, r.onclick = () => {
@@ -104521,7 +104697,7 @@ var yr = class AnimationPlayerView extends G {
 		for (let e of r.keys()) this._texturesMap[`LO:${e}`] = r[e];
 	}
 };
-yr = __decorate$1([injectFromBase()], yr);
+xr = __decorate$1([injectFromBase()], xr);
 var AutoplayBasicState = class extends ModuleState {
 	onEnterState() {}
 	onLeaveState() {}
@@ -104532,7 +104708,7 @@ var AutoplayBasicState = class extends ModuleState {
 		this.module.setCanSpin(!0);
 	}
 	onAutoPlaySettingsAccepted(e, t) {
-		this.module.startAutoplay(t), this.emit(AutoplayHandlerEvents.AUTOPLAY_STARTED, t), this.module.gotoState(Cr.IN_PROGRESS);
+		this.module.startAutoplay(t), this.emit(AutoplayHandlerEvents.AUTOPLAY_STARTED, t), this.module.gotoState(Tr.IN_PROGRESS);
 	}
 };
 var AutoplayFreeSpinsState = class extends ModuleState {
@@ -104540,9 +104716,9 @@ var AutoplayFreeSpinsState = class extends ModuleState {
 	onLeaveState() {}
 	setupEvents() {}
 };
-var FreeSpinsScreensEvents = (_Class5 = class {}, _defineProperty(_Class5, "FREE_SPINS_INTRO_STARTED", "FreeSpinsEvents::FREE_SPINS_INTRO_STARTED"), _defineProperty(_Class5, "FREE_SPINS_INTRO_ANIMATION_STARTED", "FreeSpinsEvents::FREE_SPINS_INTRO_ANIMATION_STARTED"), _defineProperty(_Class5, "FREE_SPINS_RESTORE_INTRO_STARTED", "FreeSpinsEvents::FREE_SPINS_RESTORE_INTRO_STARTED"), _defineProperty(_Class5, "FREE_SPINS_OUTRO_STARTED", "FreeSpinsEvents::FREE_SPINS_OUTRO_STARTED"), _defineProperty(_Class5, "FREE_SPINS_OUTRO_ANIMATION_STARTED", "FreeSpinsEvents::FREE_SPINS_OUTRO_ANIMATION_STARTED"), _defineProperty(_Class5, "FREE_SPINS_START_READY", "FreeSpinsEvents::FREE_SPINS_START_READY"), _defineProperty(_Class5, "FREE_SPINS_INTRO_FINISHED", "FreeSpinsEvents::FREE_SPINS_INTRO_FINISHED"), _defineProperty(_Class5, "FREE_SPINS_OUTRO_FINISHED", "FreeSpinsEvents::FREE_SPINS_OUTRO_FINISHED"), _defineProperty(_Class5, "SHOWING_WIN_SUMMARY_SCREEN", "FreeSpinsEvents::SHOWING_WIN_SUMMARY_SCREEN"), _defineProperty(_Class5, "FREE_SPINS_CONTINUE_CLICKED", "FreeSpinsEvents::FREE_SPINS_CONTINUE_CLICKED"), _defineProperty(_Class5, "FREE_SPINS_OUTRO_CONTINUE_CLICKED", "FreeSpinsEvents::FREE_SPINS_OUTRO_CONTINUE_CLICKED"), _defineProperty(_Class5, "FREE_SPINS_RETRIGGER_FINISHED", "FreeSpinsEvents::FREE_SPINS_RETRIGGER_FINISHED"), _defineProperty(_Class5, "FREE_SPINS_RETRIGGER_STARTED", "FreeSpinsEvents::FREE_SPINS_RETRIGGER_STARTED"), _defineProperty(_Class5, "FREE_SPIN_STARTED", "FreeSpinsEvents::FREE_SPIN_STARTED"), _defineProperty(_Class5, "FREE_SPINS_INTRO_JINGLE_FINISHED", "FreeSpinsEvents::FREE_SPINS_INTRO_JINGLE_FINISHED"), _Class5);
-var BigWinEvents = (_Class6 = class {}, _defineProperty(_Class6, "STARTED", "BigWinEvents::__STARTED__"), _defineProperty(_Class6, "FINISHED", "BigWinEvents::__FINISHED__"), _defineProperty(_Class6, "COUNTUP_STARTED", "BigWinEvents::__COUNTUP_STARTED__"), _defineProperty(_Class6, "COUNTUP_FINISHED", "BigWinEvents::__COUNTUP_FINISHED__"), _defineProperty(_Class6, "TRANSITION_STARTED", "BigWinEvents::__TRANSITION_STARTED__"), _defineProperty(_Class6, "TRANSITION_ENDED", "BigWinEvents::__TRANSITION_ENDED__"), _defineProperty(_Class6, "EXPLOSION_STARTED", "BigWinEvents::__EXPLOSION_STARTED__"), _defineProperty(_Class6, "BIG_WIN_STARTED", "BigWinEvents::__BIG_WIN_STARTED__"), _defineProperty(_Class6, "ON_BEFORE_BIG_WIN", "BigWinEvents::ON_BEFORE_BIG_WIN"), _defineProperty(_Class6, "ON_BEFORE_BIG_WIN_FINISHED", "BigWinEvents::ON_BEFORE_BIG_WIN_FINISHED"), _defineProperty(_Class6, "END_ANIMATION_STARTED", "BigWinEvents::END_ANIMATION_STARTED"), _defineProperty(_Class6, "START_COUNTING", "BigWinEvents::START_COUNTING"), _defineProperty(_Class6, "COINS_START", "BigWinEvents::COINS_START"), _defineProperty(_Class6, "COINS_END", "BigWinEvents::COINS_END"), _defineProperty(_Class6, "SKIP_CLICKED", "BigWinEvents::SKIP_CLICKED"), _Class6);
-var WinAmountPresentationEvents = (_Class7 = class {}, _defineProperty(_Class7, "WIN_NUMBER_SHOWN_TO_PLAYER", "WinAmountPresentationEvents::WIN_NUMBER_SHOWN_TO_PLAYER"), _defineProperty(_Class7, "WIN_ANIMATION_EXIT_FINISHED", "WinAmountPresentationEvents::WIN_ANIMATION_EXIT_FINISHED"), _defineProperty(_Class7, "INITIAL_ANIMATION_STARTED", "WinAmountPresentationEvents::INITIAL_ANIMATION_STARTED"), _defineProperty(_Class7, "INITIAL_ANIMATION_FINISHED", "WinAmountPresentationEvents::INITIAL_ANIMATION_FINISHED"), _defineProperty(_Class7, "COUNTUP_ANIMATION_FINISHED", "WinAmountPresentationEvents::COUNTUP_ANIMATION_FINISHED"), _defineProperty(_Class7, "COUNTUP_ANIMATION_STARTED", "WinAmountPresentationEvents::COUNTUP_ANIMATION_STARTED"), _defineProperty(_Class7, "INDIVIDUAL_ANIMATION_STARTED", "WinAmountPresentationEvents::INDIVIDUAL_ANIMATION_STARTED"), _defineProperty(_Class7, "INDIVIDUAL_ANIMATION_SKIPPED", "WinAmountPresentationEvents::INDIVIDUAL_ANIMATION_SKIPPED"), _defineProperty(_Class7, "EXITING_INITIAL_WIN_NUMBERS", "WinAmountPresentationEvents::EXITING_INITIAL_WIN_NUMBERS"), _defineProperty(_Class7, "PLAYER_CLICKED_DURING_WIN_PRESENTATION", "WinAmountPresentationEvents::PLAYER_CLICKED_DURING_WIN_PRESENTATION"), _defineProperty(_Class7, "PLAYING_INDIVIDUAL_WIN_FOR_LINE", "WinAmountPresentationEvents::PLAYING_INDIVIDUAL_WIN_FOR_LINE"), _Class7);
+var FreeSpinsScreensEvents = (_Class7 = class {}, _defineProperty(_Class7, "FREE_SPINS_INTRO_STARTED", "FreeSpinsEvents::FREE_SPINS_INTRO_STARTED"), _defineProperty(_Class7, "FREE_SPINS_INTRO_ANIMATION_STARTED", "FreeSpinsEvents::FREE_SPINS_INTRO_ANIMATION_STARTED"), _defineProperty(_Class7, "FREE_SPINS_RESTORE_INTRO_STARTED", "FreeSpinsEvents::FREE_SPINS_RESTORE_INTRO_STARTED"), _defineProperty(_Class7, "FREE_SPINS_OUTRO_STARTED", "FreeSpinsEvents::FREE_SPINS_OUTRO_STARTED"), _defineProperty(_Class7, "FREE_SPINS_OUTRO_ANIMATION_STARTED", "FreeSpinsEvents::FREE_SPINS_OUTRO_ANIMATION_STARTED"), _defineProperty(_Class7, "FREE_SPINS_START_READY", "FreeSpinsEvents::FREE_SPINS_START_READY"), _defineProperty(_Class7, "FREE_SPINS_INTRO_FINISHED", "FreeSpinsEvents::FREE_SPINS_INTRO_FINISHED"), _defineProperty(_Class7, "FREE_SPINS_OUTRO_FINISHED", "FreeSpinsEvents::FREE_SPINS_OUTRO_FINISHED"), _defineProperty(_Class7, "SHOWING_WIN_SUMMARY_SCREEN", "FreeSpinsEvents::SHOWING_WIN_SUMMARY_SCREEN"), _defineProperty(_Class7, "FREE_SPINS_CONTINUE_CLICKED", "FreeSpinsEvents::FREE_SPINS_CONTINUE_CLICKED"), _defineProperty(_Class7, "FREE_SPINS_OUTRO_CONTINUE_CLICKED", "FreeSpinsEvents::FREE_SPINS_OUTRO_CONTINUE_CLICKED"), _defineProperty(_Class7, "FREE_SPINS_RETRIGGER_FINISHED", "FreeSpinsEvents::FREE_SPINS_RETRIGGER_FINISHED"), _defineProperty(_Class7, "FREE_SPINS_RETRIGGER_STARTED", "FreeSpinsEvents::FREE_SPINS_RETRIGGER_STARTED"), _defineProperty(_Class7, "FREE_SPIN_STARTED", "FreeSpinsEvents::FREE_SPIN_STARTED"), _defineProperty(_Class7, "FREE_SPINS_INTRO_JINGLE_FINISHED", "FreeSpinsEvents::FREE_SPINS_INTRO_JINGLE_FINISHED"), _Class7);
+var BigWinEvents = (_Class8 = class {}, _defineProperty(_Class8, "STARTED", "BigWinEvents::__STARTED__"), _defineProperty(_Class8, "FINISHED", "BigWinEvents::__FINISHED__"), _defineProperty(_Class8, "COUNTUP_STARTED", "BigWinEvents::__COUNTUP_STARTED__"), _defineProperty(_Class8, "COUNTUP_FINISHED", "BigWinEvents::__COUNTUP_FINISHED__"), _defineProperty(_Class8, "TRANSITION_STARTED", "BigWinEvents::__TRANSITION_STARTED__"), _defineProperty(_Class8, "TRANSITION_ENDED", "BigWinEvents::__TRANSITION_ENDED__"), _defineProperty(_Class8, "EXPLOSION_STARTED", "BigWinEvents::__EXPLOSION_STARTED__"), _defineProperty(_Class8, "BIG_WIN_STARTED", "BigWinEvents::__BIG_WIN_STARTED__"), _defineProperty(_Class8, "ON_BEFORE_BIG_WIN", "BigWinEvents::ON_BEFORE_BIG_WIN"), _defineProperty(_Class8, "ON_BEFORE_BIG_WIN_FINISHED", "BigWinEvents::ON_BEFORE_BIG_WIN_FINISHED"), _defineProperty(_Class8, "END_ANIMATION_STARTED", "BigWinEvents::END_ANIMATION_STARTED"), _defineProperty(_Class8, "START_COUNTING", "BigWinEvents::START_COUNTING"), _defineProperty(_Class8, "COINS_START", "BigWinEvents::COINS_START"), _defineProperty(_Class8, "COINS_END", "BigWinEvents::COINS_END"), _defineProperty(_Class8, "SKIP_CLICKED", "BigWinEvents::SKIP_CLICKED"), _Class8);
+var WinAmountPresentationEvents = (_Class9 = class {}, _defineProperty(_Class9, "WIN_NUMBER_SHOWN_TO_PLAYER", "WinAmountPresentationEvents::WIN_NUMBER_SHOWN_TO_PLAYER"), _defineProperty(_Class9, "WIN_ANIMATION_EXIT_FINISHED", "WinAmountPresentationEvents::WIN_ANIMATION_EXIT_FINISHED"), _defineProperty(_Class9, "INITIAL_ANIMATION_STARTED", "WinAmountPresentationEvents::INITIAL_ANIMATION_STARTED"), _defineProperty(_Class9, "INITIAL_ANIMATION_FINISHED", "WinAmountPresentationEvents::INITIAL_ANIMATION_FINISHED"), _defineProperty(_Class9, "COUNTUP_ANIMATION_FINISHED", "WinAmountPresentationEvents::COUNTUP_ANIMATION_FINISHED"), _defineProperty(_Class9, "COUNTUP_ANIMATION_STARTED", "WinAmountPresentationEvents::COUNTUP_ANIMATION_STARTED"), _defineProperty(_Class9, "INDIVIDUAL_ANIMATION_STARTED", "WinAmountPresentationEvents::INDIVIDUAL_ANIMATION_STARTED"), _defineProperty(_Class9, "INDIVIDUAL_ANIMATION_SKIPPED", "WinAmountPresentationEvents::INDIVIDUAL_ANIMATION_SKIPPED"), _defineProperty(_Class9, "EXITING_INITIAL_WIN_NUMBERS", "WinAmountPresentationEvents::EXITING_INITIAL_WIN_NUMBERS"), _defineProperty(_Class9, "PLAYER_CLICKED_DURING_WIN_PRESENTATION", "WinAmountPresentationEvents::PLAYER_CLICKED_DURING_WIN_PRESENTATION"), _defineProperty(_Class9, "PLAYING_INDIVIDUAL_WIN_FOR_LINE", "WinAmountPresentationEvents::PLAYING_INDIVIDUAL_WIN_FOR_LINE"), _Class9);
 var AutoplayInProgressState = class extends ModuleState {
 	onEnterState() {}
 	onLeaveState() {}
@@ -104559,10 +104735,10 @@ var AutoplayInProgressState = class extends ModuleState {
 		this.onAutoplayPaused();
 	}
 	onAutoplayPaused() {
-		this.module.gotoState(Cr.PAUSED);
+		this.module.gotoState(Tr.PAUSED);
 	}
 	onAutoplayStopClicked() {
-		this.module.stopAutoplay(), this.module.gotoState(Cr.BASIC);
+		this.module.stopAutoplay(), this.module.gotoState(Tr.BASIC);
 	}
 	onFreeSpinsWin() {
 		this.module.stopAutoplayOnReachingLimits();
@@ -104575,8 +104751,8 @@ var AutoplayInProgressState = class extends ModuleState {
 	}
 };
 var AutoplayPausedState = class extends ModuleState {
-	constructor(..._args21) {
-		super(..._args21);
+	constructor(..._args24) {
+		super(..._args24);
 		_defineProperty(this, "_waitingForSpin", !1);
 	}
 	onEnterState() {
@@ -104590,23 +104766,23 @@ var AutoplayPausedState = class extends ModuleState {
 		this.onAutoplayStopClicked();
 	}
 	onAutoplayStopClicked() {
-		this._waitingForSpin && this.module.setCanSpin(!0), this.module.stopAutoplay(), this.module.gotoState(Cr.BASIC);
+		this._waitingForSpin && this.module.setCanSpin(!0), this.module.stopAutoplay(), this.module.gotoState(Tr.BASIC);
 	}
 	onTryToRestoreAutoplay() {
-		this._waitingForSpin && this.module.isWaitingForGameResume && this.module.isWaitingForMainMenuClose && (this._waitingForSpin = !1, this.module.gotoState(Cr.IN_PROGRESS), this.module.tryToStartSpin());
+		this._waitingForSpin && this.module.isWaitingForGameResume && this.module.isWaitingForMainMenuClose && (this._waitingForSpin = !1, this.module.gotoState(Tr.IN_PROGRESS), this.module.tryToStartSpin());
 	}
 	onShowRealityCheck() {
-		this.module.gotoState(Cr.BASIC);
+		this.module.gotoState(Tr.BASIC);
 	}
 	onCanSpin() {
 		this._waitingForSpin = !0, this.onTryToRestoreAutoplay();
 	}
 };
-var ReelsEvents = (_Class8 = class {}, _defineProperty(_Class8, "SPIN_ENDED", "ReelsEvents::__SPIN_ENDED__"), _defineProperty(_Class8, "REELS_SPINNING_STARTED", "ReelsEvents::__REELS_SPINNING_STARTED__"), _defineProperty(_Class8, "REELS_AVALANCHE_STARTED", "ReelsEvents::__REELS_AVALANCHE_STARTED__"), _defineProperty(_Class8, "REEL_STOPPED", "ReelsEvents::__REEL_STOPPED__"), _defineProperty(_Class8, "ALL_REELS_STOPPED", "ReelsEvents::__ALL_REELS_STOPPED__"), _defineProperty(_Class8, "REEL_PERCEIVED_STOP", "ReelsEvents::REEL_PERCEIVED_STOP"), _defineProperty(_Class8, "REELS_FADING_OUT_FINISHED", "ReelsEvents::REELS_FADING_OUT_FINISHED"), _defineProperty(_Class8, "REELS_FADING_OUT_STARTED", "ReelsEvents::REELS_FADING_OUT_STARTED"), _defineProperty(_Class8, "REELS_FADING_IN_FINISHED", "ReelsEvents::REELS_FADING_IN_FINISHED"), _defineProperty(_Class8, "REELS_FADING_IN_STARTED", "ReelsEvents::REELS_FADING_IN_STARTED"), _Class8);
-var br;
-var Cr = (_AutoplayHandlerModule = class AutoplayHandlerModule extends P$2 {
-	constructor(..._args22) {
-		super(..._args22);
+var ReelsEvents = (_Class10 = class {}, _defineProperty(_Class10, "SPIN_ENDED", "ReelsEvents::__SPIN_ENDED__"), _defineProperty(_Class10, "REELS_SPINNING_STARTED", "ReelsEvents::__REELS_SPINNING_STARTED__"), _defineProperty(_Class10, "REELS_AVALANCHE_STARTED", "ReelsEvents::__REELS_AVALANCHE_STARTED__"), _defineProperty(_Class10, "REEL_STOPPED", "ReelsEvents::__REEL_STOPPED__"), _defineProperty(_Class10, "ALL_REELS_STOPPED", "ReelsEvents::__ALL_REELS_STOPPED__"), _defineProperty(_Class10, "REEL_PERCEIVED_STOP", "ReelsEvents::REEL_PERCEIVED_STOP"), _defineProperty(_Class10, "REELS_FADING_OUT_FINISHED", "ReelsEvents::REELS_FADING_OUT_FINISHED"), _defineProperty(_Class10, "REELS_FADING_OUT_STARTED", "ReelsEvents::REELS_FADING_OUT_STARTED"), _defineProperty(_Class10, "REELS_FADING_IN_FINISHED", "ReelsEvents::REELS_FADING_IN_FINISHED"), _defineProperty(_Class10, "REELS_FADING_IN_STARTED", "ReelsEvents::REELS_FADING_IN_STARTED"), _Class10);
+var Sr;
+var Tr = (_AutoplayHandlerModule = class AutoplayHandlerModule extends L {
+	constructor(..._args25) {
+		super(..._args25);
 		_defineProperty(this, "_requiredSettings", void 0);
 		_defineProperty(this, "_currentTimer", void 0);
 		_defineProperty(this, "_canSpin", !0);
@@ -104648,7 +104824,7 @@ var Cr = (_AutoplayHandlerModule = class AutoplayHandlerModule extends P$2 {
 	}
 	tryToStartAutoplay() {
 		this.gameData.isAutoplayInProgress = !0, this.timeUtils.killTimer(this._currentTimer);
-		let e = this.gameData.settings.fastPlayMode === Me$1.SUPER ? 0 : br.BEFORE_SPIN_TIMER;
+		let e = this.gameData.settings.fastPlayMode === Oe$1.SUPER ? 0 : Sr.BEFORE_SPIN_TIMER;
 		this._currentTimer = this.timeUtils.createTimer(this.startAutoplaySpin.bind(this), e);
 	}
 	stopAutoplayAndEmitRoundsFinished() {
@@ -104658,10 +104834,10 @@ var Cr = (_AutoplayHandlerModule = class AutoplayHandlerModule extends P$2 {
 		this.timeUtils.killTimer(this._currentTimer), this.gameData.isAutoplayInProgress = !1, this.eventManager.emit(AutoplayHandlerEvents.AUTOPLAY_STOPPED), this._isWaitingForSpinToFinish = !1;
 	}
 	enterFirstState() {
-		this.gotoState(br.BASIC), window.autoplay = this;
+		this.gotoState(Sr.BASIC), window.autoplay = this;
 	}
 	setupStates() {
-		super.setupStates(), this.addState(new AutoplayBasicState(this, br.BASIC)), this.addState(new AutoplayInProgressState(this, br.IN_PROGRESS)), this.addState(new AutoplayPausedState(this, br.PAUSED)), this.addState(new AutoplayFreeSpinsState(this, br.IN_FREESPINS));
+		super.setupStates(), this.addState(new AutoplayBasicState(this, Sr.BASIC)), this.addState(new AutoplayInProgressState(this, Sr.IN_PROGRESS)), this.addState(new AutoplayPausedState(this, Sr.PAUSED)), this.addState(new AutoplayFreeSpinsState(this, Sr.IN_FREESPINS));
 	}
 	setupEvents() {
 		this.on(AutoplayMenuEvents.AUTOPLAY_MENU_VALUES_UPDATED, this.onAutoplayValuesUpdated), this.on(ReelsEvents.REELS_SPINNING_STARTED, this.onSpinStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_INTRO_STARTED, this.onFreeSpinsStarted);
@@ -104741,13 +104917,13 @@ var Cr = (_AutoplayHandlerModule = class AutoplayHandlerModule extends P$2 {
 	set isWaitingForSpinToFinish(e) {
 		this._isWaitingForSpinToFinish = e;
 	}
-}, br = _AutoplayHandlerModule, _defineProperty(_AutoplayHandlerModule, "BASIC", "basic"), _defineProperty(_AutoplayHandlerModule, "IN_PROGRESS", "inprogress"), _defineProperty(_AutoplayHandlerModule, "PAUSED", "paused"), _defineProperty(_AutoplayHandlerModule, "IN_FREESPINS", "in_freespins"), _defineProperty(_AutoplayHandlerModule, "BEFORE_SPIN_TIMER", 0), _AutoplayHandlerModule);
-Cr = br = __decorate$1([injectFromBase()], Cr);
-var AutoplayHandlerEvents = (_Class9 = class {}, _defineProperty(_Class9, "START_AUTOPLAY_SPIN", "AutoplayHandlerEvents::START_AUTOPLAY_SPIN"), _defineProperty(_Class9, "AUTOPLAY_ROUNDS_FINISHED", "AutoplayHandlerEvents::AUTOPLAY_ROUNDS_FINISHED"), _defineProperty(_Class9, "AUTOPLAY_STOPPED", "AutoplayHandlerEvents::AUTOPLAY_STOPPED"), _defineProperty(_Class9, "AUTOPLAY_STOPPED_ON_WIN_LIMIT", "AutoplayHandlerEvents::AUTOPLAY_STOPPED_ON_WIN_LIMIT"), _defineProperty(_Class9, "AUTOPLAY_STOPPED_ON_LOSE_LIMIT", "AutoplayHandlerEvents::AUTOPLAY_STOPPED_ON_LOSE_LIMIT"), _defineProperty(_Class9, "AUTOPLAY_STOPPED_ON_SINGLE_WIN_LIMIT", "AutoplayHandlerEvents::AUTOPLAY_STOPPED_ON_SINGLE_WIN_LIMIT"), _defineProperty(_Class9, "AUTOPLAY_STARTED", "AutoplayHandlerEvents::AUTOPLAY_STARTED"), _Class9);
-var AutoplayMenuEvents = (_Class10 = class {}, _defineProperty(_Class10, "UPDATE_AUTOPLAY_SPINS", "AutoplayMenuEvents::UPDATE_AUTOPLAY_SPINS"), _defineProperty(_Class10, "AUTOPLAY_MENU_ACCEPTED", "AutoplayMenuEvents::AUTOPLAY_MENU_ACCEPTED"), _defineProperty(_Class10, "AUTOPLAY_MENU_DECLINED", "AutoplayMenuEvents::AUTOPLAY_MENU_CANCELLED"), _defineProperty(_Class10, "BUTTON_PRESSED", "AutoplayMenuEvents::BUTTON_PRESSED"), _defineProperty(_Class10, "AUTOPLAY_MENU_OPENED", "AutoplayMenuEvents::AUTOPLAY_MENU_OPENED"), _defineProperty(_Class10, "AUTOPLAY_MENU_CLOSED", "AutoplayMenuEvents::AUTOPLAY_MENU_CLOSED"), _defineProperty(_Class10, "AUTOPLAY_MENU_VALUES_UPDATED", "AutoplayMenuEvent::AUTOPLAY_MENU_VALUES_UPDATED"), _defineProperty(_Class10, "TRIGGER_BET_MENU", "AutoplayMenuEvents::TRIGGER_BET_MENU"), _Class10);
-var wr = class AutoplayMenuModule extends P$2 {
+}, Sr = _AutoplayHandlerModule, _defineProperty(_AutoplayHandlerModule, "BASIC", "basic"), _defineProperty(_AutoplayHandlerModule, "IN_PROGRESS", "inprogress"), _defineProperty(_AutoplayHandlerModule, "PAUSED", "paused"), _defineProperty(_AutoplayHandlerModule, "IN_FREESPINS", "in_freespins"), _defineProperty(_AutoplayHandlerModule, "BEFORE_SPIN_TIMER", 0), _AutoplayHandlerModule);
+Tr = Sr = __decorate$1([injectFromBase()], Tr);
+var AutoplayHandlerEvents = (_Class11 = class {}, _defineProperty(_Class11, "START_AUTOPLAY_SPIN", "AutoplayHandlerEvents::START_AUTOPLAY_SPIN"), _defineProperty(_Class11, "AUTOPLAY_ROUNDS_FINISHED", "AutoplayHandlerEvents::AUTOPLAY_ROUNDS_FINISHED"), _defineProperty(_Class11, "AUTOPLAY_STOPPED", "AutoplayHandlerEvents::AUTOPLAY_STOPPED"), _defineProperty(_Class11, "AUTOPLAY_STOPPED_ON_WIN_LIMIT", "AutoplayHandlerEvents::AUTOPLAY_STOPPED_ON_WIN_LIMIT"), _defineProperty(_Class11, "AUTOPLAY_STOPPED_ON_LOSE_LIMIT", "AutoplayHandlerEvents::AUTOPLAY_STOPPED_ON_LOSE_LIMIT"), _defineProperty(_Class11, "AUTOPLAY_STOPPED_ON_SINGLE_WIN_LIMIT", "AutoplayHandlerEvents::AUTOPLAY_STOPPED_ON_SINGLE_WIN_LIMIT"), _defineProperty(_Class11, "AUTOPLAY_STARTED", "AutoplayHandlerEvents::AUTOPLAY_STARTED"), _Class11);
+var AutoplayMenuEvents = (_Class12 = class {}, _defineProperty(_Class12, "UPDATE_AUTOPLAY_SPINS", "AutoplayMenuEvents::UPDATE_AUTOPLAY_SPINS"), _defineProperty(_Class12, "AUTOPLAY_MENU_ACCEPTED", "AutoplayMenuEvents::AUTOPLAY_MENU_ACCEPTED"), _defineProperty(_Class12, "AUTOPLAY_MENU_DECLINED", "AutoplayMenuEvents::AUTOPLAY_MENU_CANCELLED"), _defineProperty(_Class12, "BUTTON_PRESSED", "AutoplayMenuEvents::BUTTON_PRESSED"), _defineProperty(_Class12, "AUTOPLAY_MENU_OPENED", "AutoplayMenuEvents::AUTOPLAY_MENU_OPENED"), _defineProperty(_Class12, "AUTOPLAY_MENU_CLOSED", "AutoplayMenuEvents::AUTOPLAY_MENU_CLOSED"), _defineProperty(_Class12, "AUTOPLAY_MENU_VALUES_UPDATED", "AutoplayMenuEvent::AUTOPLAY_MENU_VALUES_UPDATED"), _defineProperty(_Class12, "TRIGGER_BET_MENU", "AutoplayMenuEvents::TRIGGER_BET_MENU"), _Class12);
+var Er = class AutoplayMenuModule extends L {
 	setupEvents() {
-		super.setupEvents(), this.onView(kr.ACCEPT_CLICKED, this.onViewAcceptClicked), this.onView(kr.DECLINE_CLICKED, this.onViewDeclineClicked), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponseReceived), this.on(AutoplayButtonEvents.AUTOPLAY_BUTTON_CLICKED, this.onAutoplayButtonClicked);
+		super.setupEvents(), this.onView(jr.ACCEPT_CLICKED, this.onViewAcceptClicked), this.onView(jr.DECLINE_CLICKED, this.onViewDeclineClicked), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponseReceived), this.on(AutoplayButtonEvents.AUTOPLAY_BUTTON_CLICKED, this.onAutoplayButtonClicked);
 	}
 	onAutoplayButtonClicked() {
 		this.view.show(), this.emit(AutoplayMenuEvents.AUTOPLAY_MENU_OPENED);
@@ -104762,10 +104938,10 @@ var wr = class AutoplayMenuModule extends P$2 {
 		this.view.hide(), this.eventManager.emit(AutoplayMenuEvents.AUTOPLAY_MENU_CLOSED), this.eventManager.emit(AutoplayMenuEvents.AUTOPLAY_MENU_DECLINED);
 	}
 };
-wr = __decorate$1([injectFromBase()], wr);
+Er = __decorate$1([injectFromBase()], Er);
 var FullscreenGraphics = class extends import_lib.Graphics {
 	constructor(e) {
-		var _super14 = (..._args23) => (super(..._args23), _defineProperty(this, "offsetLandscape", void 0), _defineProperty(this, "offsetPM", void 0), this);
+		var _super14 = (..._args26) => (super(..._args26), _defineProperty(this, "offsetLandscape", void 0), _defineProperty(this, "offsetPM", void 0), this);
 		let { color: t, alpha: n, screenParams: r, offsetLandscape: i, offsetPM: a } = e;
 		_super14(), this.props = e, this.rect(0, 0, 1, 1).fill(t), typeof n == "number" && (this.alpha = n), this.offsetLandscape = i, this.offsetPM = a, this.resize(r);
 	}
@@ -104774,8 +104950,8 @@ var FullscreenGraphics = class extends import_lib.Graphics {
 		return this.width = t / r, this.height = n / r, this.position.set(-this.width / 2, -this.height / 2), this.offsetLandscape && !i && (this.x += this.offsetLandscape.x, this.y += this.offsetLandscape.y), this.offsetPM && i && (this.x += this.offsetPM.x, this.y += this.offsetPM.y), this;
 	}
 };
-var Tr;
-var Er = {
+var Dr;
+var Or = {
 	fill: 16777215,
 	fontSize: 40,
 	fontWeight: "bold",
@@ -104787,7 +104963,7 @@ var Er = {
 		angle: 0
 	}
 };
-var Dr = {
+var kr = {
 	color: "#918e8e",
 	hoverColor: "#e4dcdf",
 	pressedColor: "#807879",
@@ -104796,14 +104972,14 @@ var Dr = {
 	panelColor: "#222425",
 	panelBorderColor: "#3e3f40"
 };
-var Or = {
-	fontColor: Dr.textColor,
-	bgColor: Dr.panelColor,
-	bgBorderColor: Dr.panelBorderColor,
-	buttonColor: Dr.color,
-	hoverButtonColor: Dr.hoverColor,
-	pressedButtonColor: Dr.pressedColor,
-	disabledButtonColor: Dr.disabledColor,
+var Ar = {
+	fontColor: kr.textColor,
+	bgColor: kr.panelColor,
+	bgBorderColor: kr.panelBorderColor,
+	buttonColor: kr.color,
+	hoverButtonColor: kr.hoverColor,
+	pressedButtonColor: kr.pressedColor,
+	disabledButtonColor: kr.disabledColor,
 	radius: 20,
 	elementsMargin: 10,
 	topPadding: 20,
@@ -104812,9 +104988,9 @@ var Or = {
 	elementsWidth: 100,
 	elementsHeight: 100
 };
-var kr = (_AutoplayMenuView = class AutoplayMenuView extends G {
-	constructor(..._args24) {
-		super(..._args24);
+var jr = (_AutoplayMenuView = class AutoplayMenuView extends q {
+	constructor(..._args27) {
+		super(..._args27);
 		_defineProperty(this, "_autoplayDefault", -1);
 		_defineProperty(this, "_spinsAmountIndex", -1);
 		_defineProperty(this, "_newSpinsAmountIndex", -1);
@@ -104844,11 +105020,11 @@ var kr = (_AutoplayMenuView = class AutoplayMenuView extends G {
 		});
 	}
 	initButtons() {
-		let { fontColor: e, bgColor: t, bgBorderColor: n, elementsMargin: r, topPadding: i, leftPadding: o, rightPadding: s, radius: c } = Or, l = [];
+		let { fontColor: e, bgColor: t, bgBorderColor: n, elementsMargin: r, topPadding: i, leftPadding: o, rightPadding: s, radius: c } = Ar, l = [];
 		for (let t = 0; t < this._autoplayValues.length; t++) {
 			let n = new import_lib.Text({
 				text: this._autoplayValues[t],
-				style: _objectSpread2(_objectSpread2({}, Er), {}, { fill: e })
+				style: _objectSpread2(_objectSpread2({}, Or), {}, { fill: e })
 			}), r = this.createFancyButton(n);
 			r.label = `Button${t}`, r.onPress.connect(() => {
 				this.resetAllButtons(), this.onSpinsAmountClicked(t), r.button.enabled = !1, r.setState("disabled");
@@ -104859,14 +105035,14 @@ var kr = (_AutoplayMenuView = class AutoplayMenuView extends G {
 			width: 1
 		}), _ = this.createFancyButton(new import_lib.Text({
 			text: "✕",
-			style: _objectSpread2(_objectSpread2({}, Er), {}, { fill: e })
+			style: _objectSpread2(_objectSpread2({}, Or), {}, { fill: e })
 		}));
 		_.onPress.connect(() => {
 			this.onDeclineClicked();
 		}), _.position.set(g.width / 2 - _.width, g.height / 2 - _.height / 2);
 		let v = this.createFancyButton(new import_lib.Text({
 			text: "✓",
-			style: _objectSpread2(_objectSpread2({}, Er), {}, { fill: e })
+			style: _objectSpread2(_objectSpread2({}, Or), {}, { fill: e })
 		}));
 		v.onPress.connect(() => {
 			this.onAcceptClicked();
@@ -104879,7 +105055,7 @@ var kr = (_AutoplayMenuView = class AutoplayMenuView extends G {
 		}), g.addChild(this._buttonsList), this.container.addChild(g, v, _), g.position.set(-(g.width / 2), -(g.height / 2 + _.height / 2)), l.forEach((e) => this._buttonsList.addChild(e));
 	}
 	createFancyButton(e) {
-		let { buttonColor: t, hoverButtonColor: n, pressedButtonColor: r, disabledButtonColor: i, elementsWidth: o, elementsHeight: s, radius: c } = Or, l = new FancyButton({
+		let { buttonColor: t, hoverButtonColor: n, pressedButtonColor: r, disabledButtonColor: i, elementsWidth: o, elementsHeight: s, radius: c } = Ar, l = new FancyButton({
 			defaultView: new import_lib.Graphics().roundRect(0, 0, o, s, c).fill(t).roundRect(0, 8, o - 3, s - 3, c).stroke({
 				color: t,
 				width: 2
@@ -104905,11 +105081,11 @@ var kr = (_AutoplayMenuView = class AutoplayMenuView extends G {
 		}), l.anchor.set(0), l;
 	}
 	onAcceptClicked() {
-		this._spinsAmountIndex = this._newSpinsAmountIndex >= 0 ? this._newSpinsAmountIndex : this._spinsAmountIndex, this._newSpinsAmountIndex = -1, this.emit(Tr.ACCEPT_CLICKED, this._autoplayValues[this._spinsAmountIndex]);
+		this._spinsAmountIndex = this._newSpinsAmountIndex >= 0 ? this._newSpinsAmountIndex : this._spinsAmountIndex, this._newSpinsAmountIndex = -1, this.emit(Dr.ACCEPT_CLICKED, this._autoplayValues[this._spinsAmountIndex]);
 	}
 	onDeclineClicked() {
 		let e = this._buttonsList.getChildByLabel(`Button${this._spinsAmountIndex}`);
-		e && (this.resetAllButtons(), e.button.enabled = !1, e.setState("disabled")), this._newSpinsAmountIndex = -1, this.emit(Tr.DECLINE_CLICKED);
+		e && (this.resetAllButtons(), e.button.enabled = !1, e.setState("disabled")), this._newSpinsAmountIndex = -1, this.emit(Dr.DECLINE_CLICKED);
 	}
 	onSpinsAmountClicked(e) {
 		this._newSpinsAmountIndex = e;
@@ -104917,194 +105093,18 @@ var kr = (_AutoplayMenuView = class AutoplayMenuView extends G {
 	getDefaultOptionsPerRow() {
 		return 6;
 	}
-}, Tr = _AutoplayMenuView, _defineProperty(_AutoplayMenuView, "ACCEPT_CLICKED", "AutoplayMenuView::ACCEPT_CLICKED"), _defineProperty(_AutoplayMenuView, "DECLINE_CLICKED", "AutoplayMenuView::DECLINE_CLICKED"), _AutoplayMenuView);
-kr = Tr = __decorate$1([injectFromBase()], kr);
-var AutoplayButtonEvents = (_Class11 = class {}, _defineProperty(_Class11, "AUTOPLAY_BUTTON_CLICKED", "AutoplayButtonEvents::AUTOPLAY_BUTTON_CLICKED"), _Class11);
-var UIUtils = class {
-	static getXOffsetForHorizontalAlignmentPM(e) {
-		return (e - me) / 2;
-	}
-	static getScreenHeight(e, t) {
-		return T / (e / t);
-	}
-	static getYOffsetForVerticalAlignmentLandscape(e) {
-		return (e - me) / 2;
-	}
-	static getScreenWidth(e, t) {
-		return e / t * w$1;
-	}
-};
-var K = /* @__PURE__ */ function(e) {
-	return e[e.TOP = 0] = "TOP", e[e.BOTTOM = 1] = "BOTTOM", e[e.LEFT = 2] = "LEFT", e[e.RIGHT = 3] = "RIGHT", e;
-}({});
-var UIElement = class {
-	constructor(e, t, n, r, i, a, o) {
-		_defineProperty(this, "element", void 0);
-		_defineProperty(this, "scaleLandscape", void 0);
-		_defineProperty(this, "scalePortrait", void 0);
-		_defineProperty(this, "origPositionLandscape", void 0);
-		_defineProperty(this, "origPositionPortrait", void 0);
-		_defineProperty(this, "portraitAlignment", void 0);
-		_defineProperty(this, "landscapeAlignment", void 0);
-		this.element = e, this.origPositionLandscape = t, this.origPositionPortrait = n, this.landscapeAlignment = r, this.portraitAlignment = i || r, this.scaleLandscape = a, this.scalePortrait = o;
-	}
-	updatePosition(e) {
-		var _this$scalePortrait$y, _this$scalePortrait;
-		let { width: t, height: n, isPortrait: r, y: i, scale: a } = e, o = r ? this.origPositionPortrait : this.origPositionLandscape;
-		if (r && this.hasVerticalAlignment(r)) this.hasTopAlignment(r) ? this.element.position.y = o.y - i / a : this.element.position.y = o.y + i / a / ((_this$scalePortrait$y = (_this$scalePortrait = this.scalePortrait) === null || _this$scalePortrait === void 0 ? void 0 : _this$scalePortrait.y) !== null && _this$scalePortrait$y !== void 0 ? _this$scalePortrait$y : 1), this.element.position.x = o.x;
-		else if (r && this.hasHorizontalAlignment(r)) {
-			let e = UIUtils.getScreenWidth(t, n), i = UIUtils.getXOffsetForHorizontalAlignmentPM(e), a = this.hasLeftAlignment(r) ? o.x - i : o.x + i;
-			a = this.hasLeftAlignment(r) && a > o.x || !this.hasLeftAlignment(r) && a < o.x ? o.x : a, this.element.position.x = a, this.element.position.y = o.y;
-		} else if (!r && this.hasVerticalAlignment(r)) {
-			let e = UIUtils.getScreenHeight(t, n), i = UIUtils.getYOffsetForVerticalAlignmentLandscape(e), a = this.hasTopAlignment(r) ? o.y - i : o.y + i;
-			a = this.hasTopAlignment(r) && a > o.y || !this.hasTopAlignment(r) && a < o.y ? o.y : a, this.element.position.x = o.x, this.element.position.y = a;
-		} else this.element.position.x = o.x, this.element.position.y = o.y;
-	}
-	hasVerticalAlignment(e) {
-		return this.hasTopAlignment(e) || this.hasBottomAlignment(e);
-	}
-	hasHorizontalAlignment(e) {
-		return this.hasLeftAlignment(e) || this.hasRightAlignment(e);
-	}
-	hasTopAlignment(e) {
-		return e ? this.portraitAlignment.indexOf(K.TOP) >= 0 : this.landscapeAlignment.indexOf(K.TOP) >= 0;
-	}
-	hasBottomAlignment(e) {
-		return e ? this.portraitAlignment.indexOf(K.BOTTOM) >= 0 : this.landscapeAlignment.indexOf(K.BOTTOM) >= 0;
-	}
-	hasLeftAlignment(e) {
-		return e ? this.portraitAlignment.indexOf(K.LEFT) >= 0 : this.landscapeAlignment.indexOf(K.LEFT) >= 0;
-	}
-	hasRightAlignment(e) {
-		return e ? this.portraitAlignment.indexOf(K.RIGHT) >= 0 : this.landscapeAlignment.indexOf(K.RIGHT) >= 0;
-	}
-};
-var Ar = class UIView extends G {
-	constructor(..._args25) {
-		super(..._args25);
-		_defineProperty(this, "_uiElements", []);
-	}
-	onResized(e) {
-		super.onResized(e), this.applyOrientation(), this.updateUIElements(e);
-	}
-	applyOrientation() {}
-	addUIElementToParent(e, t, n, r, i, a, o) {
-		let s = this.mainUI.layout.getAbsoluteUIPosition(i, N$1.LANDSCAPE), c = this.mainUI.layout.getAbsoluteUIPosition(i, N$1.PORTRAIT), l = this.spineUtils.getBoneAbsolutePosition(r.skeleton.data, t), u = this.spineUtils.getBoneAbsolutePosition(r.skeleton.data, n);
-		this._uiElements.push(new UIElement(e, {
-			x: l.x + s.x,
-			y: l.y + s.y
-		}, {
-			x: u.x + c.x,
-			y: u.y + c.y
-		}, [a], o ? [o] : null));
-	}
-	updateUIElements(e) {
-		for (let t of this._uiElements) t.updatePosition(e);
-	}
-};
-Ar = __decorate$1([injectFromBase()], Ar);
-var jr;
-var Mr = (_AutoplayButtonView = class AutoplayButtonView extends Ar {
-	constructor(..._args26) {
-		super(..._args26);
-		_defineProperty(this, "_autoplayButton", void 0);
-	}
-	init() {
-		super.init(), this.setupButton(), this.setupLayout();
-	}
-	disableButton() {
-		this._autoplayButton.button.disable();
-	}
-	enableButton() {
-		this._autoplayButton.button.enable();
-	}
-	setupLayout() {
-		let e = this.mainUI.getBoneFromUI("AUTOPLAY_BUTTON"), t = this.mainUI.getBoneFromPortraitUI("AUTOPLAY_BUTTON");
-		this._uiElements.push(new UIElement(this._autoplayButton.button, {
-			x: 0,
-			y: 0
-		}, {
-			x: 0,
-			y: 0
-		}, [K.RIGHT], [K.BOTTOM], {
-			x: e.scaleX,
-			y: e.scaleY
-		}, {
-			x: t.scaleX,
-			y: t.scaleY
-		}));
-	}
-	setupButton() {
-		this._autoplayButton = this.createSpineButton(), this.container.addChild(this._autoplayButton.button);
-	}
-	createSpineButton() {
-		return new GenericButton("AUTOPLAY_BUTTON.json", void 0, this.spineUtils, this.onButtonClicked.bind(this));
-	}
-	onButtonClicked() {
-		this.emit(jr.BUTTON_CLICKED);
-	}
-}, jr = _AutoplayButtonView, _defineProperty(_AutoplayButtonView, "BUTTON_CLICKED", "AutoplayButtonView::BUTTON_CLICKED"), _AutoplayButtonView);
-Mr = jr = __decorate$1([injectFromBase()], Mr);
-var KeypadLockProperties = (_Class12 = class {}, _defineProperty(_Class12, "ENABLED", "enabled"), _defineProperty(_Class12, "VISIBLE", "visible"), _Class12);
-var Nr = class KeypadModule extends P$2 {
-	constructor(..._args27) {
-		super(..._args27);
-		_defineProperty(this, "_keypadLocker", new KeypadLocker());
-	}
-	init(e, t) {
-		super.init(e, t), this._keypadLocker.add(KeypadLockProperties.ENABLED, this.onButtonStatusChanged.bind(this)), this._keypadLocker.add(KeypadLockProperties.VISIBLE, this.onButtonVisibilityChanged.bind(this));
-	}
-	lockWithReason(e, t) {
-		t.disable && this.disable(e), t.hide && this.hide(e);
-	}
-	unlockWithReason(e, t) {
-		t.enable && this.enable(e), t.show && this.show(e);
-	}
+}, Dr = _AutoplayMenuView, _defineProperty(_AutoplayMenuView, "ACCEPT_CLICKED", "AutoplayMenuView::ACCEPT_CLICKED"), _defineProperty(_AutoplayMenuView, "DECLINE_CLICKED", "AutoplayMenuView::DECLINE_CLICKED"), _AutoplayMenuView);
+jr = Dr = __decorate$1([injectFromBase()], jr);
+var Mr = class AutoplayButtonModule extends vr {
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(Mr.BUTTON_CLICKED, AutoplayButtonEvents.AUTOPLAY_BUTTON_CLICKED);
-	}
-	enable(e) {
-		this._keypadLocker.unlock(KeypadLockProperties.ENABLED, e);
-	}
-	disable(e) {
-		this._keypadLocker.lock(KeypadLockProperties.ENABLED, e);
-	}
-	show(e) {
-		this._keypadLocker.unlock(KeypadLockProperties.VISIBLE, e);
-	}
-	hide(e) {
-		this._keypadLocker.lock(KeypadLockProperties.VISIBLE, e);
-	}
-	onButtonVisibilityChanged(e) {
-		e ? this.showView() : this.hideView();
-	}
-	onButtonStatusChanged(e) {
-		e ? this.enableButton() : this.disableButton();
-	}
-	hideView() {
-		this.view.hide();
-	}
-	showView() {
-		this.view.show();
-	}
-	disableButton() {
-		this.view.disableButton();
-	}
-	enableButton() {
-		this.view.enableButton();
+		super.setupEvents(), this.onViewEmitEvent(_r.BUTTON_CLICKED, AutoplayButtonEvents.AUTOPLAY_BUTTON_CLICKED);
 	}
 };
-Nr = __decorate$1([injectFromBase()], Nr);
-var Pr = class AutoplayButtonModule extends Nr {
-	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(Mr.BUTTON_CLICKED, AutoplayButtonEvents.AUTOPLAY_BUTTON_CLICKED);
-	}
-};
-Pr = __decorate$1([injectFromBase()], Pr);
+Mr = __decorate$1([injectFromBase()], Mr);
 var AutoplayStopButtonEvents = (_Class13 = class {}, _defineProperty(_Class13, "AUTOPLAY_STOP_BUTTON_CLICKED", "AutoplayStopButtonEvents::AUTOPLAY_STOP_BUTTON_CLICKED"), _Class13);
-var Fr = class AutoplayStopButtonModule extends P$2 {
+var Nr = class AutoplayStopButtonModule extends L {
 	setupEvents() {
-		super.setupEvents(), this.onView(Rr.STOP_BUTTON_CLICKED, this.onViewStopButtonClicked), this.on(AutoplayHandlerEvents.AUTOPLAY_STARTED, this.onAutoplayStarted), this.on(AutoplayHandlerEvents.AUTOPLAY_STOPPED, this.onAutoplayStopped), this.on(AutoplayHandlerEvents.START_AUTOPLAY_SPIN, this.onAutoplaySpinStarted);
+		super.setupEvents(), this.onView(Ir.STOP_BUTTON_CLICKED, this.onViewStopButtonClicked), this.on(AutoplayHandlerEvents.AUTOPLAY_STARTED, this.onAutoplayStarted), this.on(AutoplayHandlerEvents.AUTOPLAY_STOPPED, this.onAutoplayStopped), this.on(AutoplayHandlerEvents.START_AUTOPLAY_SPIN, this.onAutoplaySpinStarted);
 	}
 	onAutoplaySpinStarted(e, t) {
 		this.view.setSpinsLeft(t);
@@ -105119,14 +105119,14 @@ var Fr = class AutoplayStopButtonModule extends P$2 {
 		this.emit(AutoplayStopButtonEvents.AUTOPLAY_STOP_BUTTON_CLICKED);
 	}
 };
-Fr = __decorate$1([injectFromBase()], Fr);
-var Ir = {
+Nr = __decorate$1([injectFromBase()], Nr);
+var Pr = {
 	fontFamily: "Poppins SemiBold",
 	fontSize: 20,
 	fill: "#FFFFFF"
 };
-var Lr;
-var Rr = (_AutoplayStopButtonView = class AutoplayStopButtonView extends Ar {
+var Fr;
+var Ir = (_AutoplayStopButtonView = class AutoplayStopButtonView extends hr {
 	constructor(..._args28) {
 		super(..._args28);
 		_defineProperty(this, "_stopButton", void 0);
@@ -105142,7 +105142,7 @@ var Rr = (_AutoplayStopButtonView = class AutoplayStopButtonView extends Ar {
 		}), this._spinsLeft.label = "spinsLeft", this._spinsLeft.anchor.set(.5, .5), this.spineUtils.replaceSlotAttachment(this._stopButton.button.spineAnimation, "IGNORE_PLACEHOLDER_AUTOPLAY_COUNTDOWN_VALUE", this._spinsLeft));
 	}
 	getSpinsLeftStyle() {
-		return _objectSpread2(_objectSpread2({}, Ir), {}, { fontSize: 60 });
+		return _objectSpread2(_objectSpread2({}, Pr), {}, { fontSize: 60 });
 	}
 	setupLayout() {
 		this._uiElements.push(new UIElement(this._stopButton.button.spine, {
@@ -105151,7 +105151,7 @@ var Rr = (_AutoplayStopButtonView = class AutoplayStopButtonView extends Ar {
 		}, {
 			x: 0,
 			y: 0
-		}, [K.RIGHT], [K.BOTTOM]));
+		}, [J$1.RIGHT], [J$1.BOTTOM]));
 	}
 	setupStopButton() {
 		this._stopButton = this.createStopAutoplayButton(), this.container.addChild(this._stopButton.button);
@@ -105160,23 +105160,21 @@ var Rr = (_AutoplayStopButtonView = class AutoplayStopButtonView extends Ar {
 		return new GenericButton("AUTOPLAY_STOP_BUTTON.json", void 0, this.spineUtils, this.onButtonClicked.bind(this));
 	}
 	onButtonClicked() {
-		this.hide(), this.emit(Lr.STOP_BUTTON_CLICKED);
+		this.hide(), this.emit(Fr.STOP_BUTTON_CLICKED);
 	}
-}, Lr = _AutoplayStopButtonView, _defineProperty(_AutoplayStopButtonView, "STOP_BUTTON_CLICKED", "SpinButtonView::STOP_BUTTON_CLICKED"), _AutoplayStopButtonView);
-Rr = Lr = __decorate$1([injectFromBase()], Rr);
-var BetMenuEvents = (_Class14 = class {}, _defineProperty(_Class14, "BET_MENU_OPENED", "BetMenuEvents::BET_MENU_OPENED"), _defineProperty(_Class14, "BET_MENU_CLOSED", "BetMenuEvents::BET_MENU_CLOSED"), _defineProperty(_Class14, "BET_CHANGED", "BetMenuEvents::BET_CHANGED"), _defineProperty(_Class14, "BET_MENU_ACCEPT_CLICKED", "BetMenuEvents::BET_MENU_ACCEPT_CLICKED"), _defineProperty(_Class14, "BET_MENU_DECLINE_CLICKED", "BetMenuEvents::BET_MENU_DECLINE_CLICKED"), _Class14);
-typeof window < "u" && ((_window$__svelte$v = (_window$__svelte = (_window$__svelte2 = (_window = window).__svelte) !== null && _window$__svelte2 !== void 0 ? _window$__svelte2 : _window.__svelte = {}).v) !== null && _window$__svelte$v !== void 0 ? _window$__svelte$v : _window$__svelte.v = /* @__PURE__ */ new Set()).add("5");
-var zr = /* @__PURE__ */ from_html("<span class=\"ap-sym svelte-1ufu24w\"> </span>");
-var Br = /* @__PURE__ */ from_html("<span class=\"ap-sym svelte-1ufu24w\"> </span>");
-var Vr = /* @__PURE__ */ from_html("<!> <!>", 1);
-var Hr = /* @__PURE__ */ from_html("<button> </button>");
-var Ur = /* @__PURE__ */ from_html("<div class=\"ap-overlay svelte-1ufu24w\"><button class=\"ap-backdrop svelte-1ufu24w\"></button> <div class=\"ap-card svelte-1ufu24w\" role=\"dialog\" aria-modal=\"true\"><div class=\"ap-head svelte-1ufu24w\"><div class=\"ap-title svelte-1ufu24w\"><span class=\"ap-dot svelte-1ufu24w\"></span> <h2 class=\"svelte-1ufu24w\"> </h2></div> <button class=\"ap-close svelte-1ufu24w\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1 1L13 13M13 1L1 13\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg></button></div> <div class=\"ap-stats svelte-1ufu24w\"><div class=\"ap-stat svelte-1ufu24w\"><span class=\"ap-stat-label svelte-1ufu24w\"> </span> <span class=\"ap-stat-value svelte-1ufu24w\"> </span></div> <span class=\"ap-stat-divider svelte-1ufu24w\" aria-hidden=\"true\"></span> <div class=\"ap-stat svelte-1ufu24w\"><span class=\"ap-stat-label svelte-1ufu24w\"> </span> <span class=\"ap-stat-value svelte-1ufu24w\"><!></span></div></div> <div class=\"ap-field svelte-1ufu24w\"><span class=\"ap-field-label svelte-1ufu24w\"> </span> <div class=\"ap-rounds svelte-1ufu24w\"></div></div> <div class=\"ap-field svelte-1ufu24w\"><span class=\"ap-field-label svelte-1ufu24w\"> </span> <div class=\"ap-stepper svelte-1ufu24w\"><button class=\"ap-step svelte-1ufu24w\">−</button> <span class=\"ap-stepper-value svelte-1ufu24w\"><!></span> <button class=\"ap-step svelte-1ufu24w\">+</button></div></div> <button class=\"ap-start svelte-1ufu24w\"> </button></div></div>");
-var Wr = {
+}, Fr = _AutoplayStopButtonView, _defineProperty(_AutoplayStopButtonView, "STOP_BUTTON_CLICKED", "SpinButtonView::STOP_BUTTON_CLICKED"), _AutoplayStopButtonView);
+Ir = Fr = __decorate$1([injectFromBase()], Ir), typeof window < "u" && ((_window$__svelte$v = (_window$__svelte = (_window$__svelte2 = (_window = window).__svelte) !== null && _window$__svelte2 !== void 0 ? _window$__svelte2 : _window.__svelte = {}).v) !== null && _window$__svelte$v !== void 0 ? _window$__svelte$v : _window$__svelte.v = /* @__PURE__ */ new Set()).add("5");
+var Lr = /* @__PURE__ */ from_html("<span class=\"ap-sym svelte-1ufu24w\"> </span>");
+var Rr = /* @__PURE__ */ from_html("<span class=\"ap-sym svelte-1ufu24w\"> </span>");
+var zr = /* @__PURE__ */ from_html("<!> <!>", 1);
+var Br = /* @__PURE__ */ from_html("<button> </button>");
+var Vr = /* @__PURE__ */ from_html("<div class=\"ap-overlay svelte-1ufu24w\"><button class=\"ap-backdrop svelte-1ufu24w\"></button> <div class=\"ap-card svelte-1ufu24w\" role=\"dialog\" aria-modal=\"true\"><div class=\"ap-head svelte-1ufu24w\"><div class=\"ap-title svelte-1ufu24w\"><span class=\"ap-dot svelte-1ufu24w\"></span> <h2 class=\"svelte-1ufu24w\"> </h2></div> <button class=\"ap-close svelte-1ufu24w\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1 1L13 13M13 1L1 13\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg></button></div> <div class=\"ap-stats svelte-1ufu24w\"><div class=\"ap-stat svelte-1ufu24w\"><span class=\"ap-stat-label svelte-1ufu24w\"> </span> <span class=\"ap-stat-value svelte-1ufu24w\"> </span></div> <span class=\"ap-stat-divider svelte-1ufu24w\" aria-hidden=\"true\"></span> <div class=\"ap-stat svelte-1ufu24w\"><span class=\"ap-stat-label svelte-1ufu24w\"> </span> <span class=\"ap-stat-value svelte-1ufu24w\"><!></span></div></div> <div class=\"ap-field svelte-1ufu24w\"><span class=\"ap-field-label svelte-1ufu24w\"> </span> <div class=\"ap-rounds svelte-1ufu24w\"></div></div> <div class=\"ap-field svelte-1ufu24w\"><span class=\"ap-field-label svelte-1ufu24w\"> </span> <div class=\"ap-stepper svelte-1ufu24w\"><button class=\"ap-step svelte-1ufu24w\">−</button> <span class=\"ap-stepper-value svelte-1ufu24w\"><!></span> <button class=\"ap-step svelte-1ufu24w\">+</button></div></div> <button class=\"ap-start svelte-1ufu24w\"> </button></div></div>");
+var Hr = {
 	hash: "svelte-1ufu24w",
 	code: ".ap-overlay.svelte-1ufu24w {--cream: #ffffff;--muted: #7a6a48;--accent: #caa23a;--start-top: #f4cf45;--start-bottom: #d9aa28;--accent-soft: rgba(202, 162, 58, 0.14);--accent-shadow: rgba(202, 162, 58, 0.45);--surface-a: #1c150e;--surface-b: #120d08;--fill: rgba(255, 255, 255, 0.03);--fill-strong: rgba(255, 255, 255, 0.08);position:fixed;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;font-family:'Geist', 'Inter', system-ui, -apple-system, sans-serif;color:var(--cream);user-select:none;-webkit-font-smoothing:antialiased;}.ap-overlay.svelte-1ufu24w * {box-sizing:border-box;}\n\n	/* Transparent click-catcher: clicking outside the card closes the menu. */.ap-backdrop.svelte-1ufu24w {position:absolute;inset:0;border:none;padding:0;background:transparent;cursor:pointer;}.ap-card.svelte-1ufu24w {position:relative;z-index:1;width:min(600px, 92vw);padding:28px;display:flex;flex-direction:column;gap:24px;border-radius:18px;background:linear-gradient(var(--surface-a) 0%, var(--surface-b) 100%);box-shadow:rgba(0, 0, 0, 0.5) 0 30px 60px 0,\n			rgba(255, 255, 255, 0.06) 0 1px 0 0 inset;}.ap-head.svelte-1ufu24w {display:flex;align-items:center;justify-content:space-between;}.ap-title.svelte-1ufu24w {display:flex;align-items:center;gap:10px;}.ap-dot.svelte-1ufu24w {width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px 0 var(--accent);}.ap-title.svelte-1ufu24w h2:where(.svelte-1ufu24w) {margin:0;font-size:13px;font-weight:600;letter-spacing:0.32em;text-transform:uppercase;}.ap-close.svelte-1ufu24w {display:flex;align-items:center;justify-content:center;width:32px;height:32px;border:none;border-radius:8px;background:var(--fill);color:rgba(255, 255, 255, 0.7);cursor:pointer;}.ap-close.svelte-1ufu24w:hover {background:var(--fill-strong);color:var(--cream);}.ap-stats.svelte-1ufu24w {display:grid;grid-template-columns:1fr 1px 1fr;align-items:center;}.ap-stat.svelte-1ufu24w {display:flex;flex-direction:column;align-items:center;gap:8px;min-width:0;text-align:center;}.ap-stat-label.svelte-1ufu24w {font-size:10px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--muted);}.ap-stat-value.svelte-1ufu24w {display:flex;align-items:center;justify-content:center;height:50px;max-width:100%;font-size:50px;font-weight:600;line-height:1;white-space:nowrap;}.ap-stat-divider.svelte-1ufu24w {width:1px;height:64px;background:rgba(255, 255, 255, 0.08);}.ap-sym.svelte-1ufu24w {color:var(--accent);}.ap-field.svelte-1ufu24w {display:flex;flex-direction:column;gap:12px;}.ap-field-label.svelte-1ufu24w {font-size:10px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--muted);}.ap-rounds.svelte-1ufu24w {display:grid;grid-template-columns:repeat(auto-fit, minmax(0, 1fr));gap:8px;}.ap-round.svelte-1ufu24w {padding:13px 0;border:none;border-radius:10px;background:var(--fill);color:var(--muted);font:inherit;font-size:14px;font-weight:500;cursor:pointer;}.ap-round.svelte-1ufu24w:hover {background:var(--fill-strong);color:var(--cream);}.ap-round.active.svelte-1ufu24w {background:var(--accent-soft);color:var(--cream);box-shadow:inset 0 0 0 1px var(--accent-shadow);}.ap-stepper.svelte-1ufu24w {display:flex;align-items:center;gap:8px;padding:12px;border-radius:12px;background:var(--fill);}.ap-step.svelte-1ufu24w {flex:none;width:44px;height:44px;border:none;border-radius:11px;background:var(--fill-strong);color:var(--cream);font-size:22px;line-height:1;cursor:pointer;}.ap-step.svelte-1ufu24w:hover:not(:disabled) {background:rgba(255, 255, 255, 0.14);}.ap-step.svelte-1ufu24w:disabled {opacity:0.35;cursor:not-allowed;}.ap-stepper-value.svelte-1ufu24w {flex:1;text-align:center;font-size:28px;font-weight:600;}.ap-start.svelte-1ufu24w {padding:16px 0;border:none;border-radius:12px;background:linear-gradient(var(--start-top), var(--start-bottom));box-shadow:var(--accent-shadow) 0 8px 20px 0,\n			rgba(255, 255, 255, 0.2) 0 1px 0 0 inset;color:rgb(255, 255, 255);font:inherit;font-size:14px;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;cursor:pointer;}.ap-start.svelte-1ufu24w:hover {filter:brightness(1.06);}.ap-start.svelte-1ufu24w:active {filter:brightness(0.96);}\n\n	@media (max-width: 520px) {.ap-card.svelte-1ufu24w {gap:18px;padding:20px;}.ap-stat-value.svelte-1ufu24w {height:38px;}.ap-stat-divider.svelte-1ufu24w {height:46px;}\n	}"
 };
 function AutoplayMenu(e, t) {
-	push(t, !0), append_styles$1(e, Wr);
+	push(t, !0), append_styles$1(e, Hr);
 	let n = /* @__PURE__ */ state(proxy([]));
 	let r = /* @__PURE__ */ state(0);
 	let i = /* @__PURE__ */ state(proxy([]));
@@ -105217,14 +105215,14 @@ function AutoplayMenu(e, t) {
 	function onKeydown(e) {
 		e.key === "Escape" ? close() : e.key === "Enter" && start();
 	}
-	var h = Ur();
-	event("keydown", gn, onKeydown);
+	var h = Vr();
+	event("keydown", pn, onKeydown);
 	{
 		let money = (e, t = noop) => {
-			var n = Vr();
+			var n = zr();
 			var r = first_child(n);
 			var consequent = (e) => {
-				var n = zr(), r = child(n, !0);
+				var n = Lr(), r = child(n, !0);
 				reset(n), template_effect(() => set_text(r, t().pre)), append(e, n);
 			};
 			if_block(r, (e) => {
@@ -105233,7 +105231,7 @@ function AutoplayMenu(e, t) {
 			var i = sibling(r, 1, !0);
 			var a = sibling(i);
 			var consequent_1 = (e) => {
-				var n = Br(), r = child(n, !0);
+				var n = Rr(), r = child(n, !0);
 				reset(n), template_effect(() => set_text(r, t().post)), append(e, n);
 			};
 			if_block(a, (e) => {
@@ -105245,53 +105243,53 @@ function AutoplayMenu(e, t) {
 		var v = child(_);
 		var y = child(v);
 		var b = sibling(child(y), 2);
-		var ee = child(b, !0);
+		var x = child(b, !0);
 		reset(b), reset(y);
-		var x = sibling(y, 2);
+		var S = sibling(y, 2);
 		reset(v);
-		var S = sibling(v, 2);
-		var te = child(S);
-		var ne = child(te);
-		var C = child(ne, !0);
-		reset(ne);
-		var re = sibling(ne, 2);
+		var C = sibling(v, 2);
+		var w = child(C);
+		var T = child(w);
+		var E = child(T, !0);
+		reset(T);
+		var ee = sibling(T, 2);
+		var te = child(ee, !0);
+		reset(ee), reset(w);
+		var ne = sibling(w, 4);
+		var re = child(ne);
 		var ie = child(re, !0);
-		reset(re), reset(te);
-		var ae = sibling(te, 4);
-		var oe = child(ae);
+		reset(re);
+		var ae = sibling(re, 2);
+		money(child(ae), () => get(u)), reset(ae), reset(ne), reset(C);
+		var D = sibling(C, 2);
+		var oe = child(D);
 		var se = child(oe, !0);
 		reset(oe);
 		var ce = sibling(oe, 2);
-		money(child(ce), () => get(u)), reset(ce), reset(ae), reset(S);
-		var le = sibling(S, 2);
-		var ue = child(le);
-		var de = child(ue, !0);
-		reset(ue);
-		var fe = sibling(ue, 2);
-		each(fe, 20, () => get(n), (e) => e, (e, t) => {
-			var n = Hr();
+		each(ce, 20, () => get(n), (e) => e, (e, t) => {
+			var n = Br();
 			let i;
 			var a = child(n, !0);
 			reset(n), template_effect(() => {
 				i = set_class(n, 1, "ap-round svelte-1ufu24w", null, i, { active: t === get(r) }), set_text(a, t);
 			}), delegated("click", n, () => selectRounds(t)), append(e, n);
-		}), reset(fe), reset(le);
-		var pe = sibling(le, 2);
-		var w = child(pe);
-		var T = child(w, !0);
-		reset(w);
-		var me = sibling(w, 2);
+		}), reset(ce), reset(D);
+		var le = sibling(D, 2);
+		var O = child(le);
+		var k = child(O, !0);
+		reset(O);
+		var ue = sibling(O, 2);
+		var de = child(ue);
+		var fe = sibling(de, 2);
+		money(child(fe), () => get(d)), reset(fe);
+		var pe = sibling(fe, 2);
+		reset(ue), reset(le);
+		var me = sibling(le, 2);
 		var he = child(me);
-		var ge = sibling(he, 2);
-		money(child(ge), () => get(d)), reset(ge);
-		var _e = sibling(ge, 2);
-		reset(me), reset(pe);
-		var ve = sibling(pe, 2);
-		var ye = child(ve);
-		reset(ve), reset(_), reset(h), template_effect((e, t, n, i, a, o, s, u, d, f) => {
+		reset(me), reset(_), reset(h), template_effect((e, t, n, i, a, o, s, u, d, f) => {
 			var _get;
 			var _get2;
-			set_attribute(g, "aria-label", e), set_text(ee, t), set_attribute(x, "aria-label", n), set_text(C, i), set_style(re, `font-size:${(_get = get(p)) !== null && _get !== void 0 ? _get : ""}px`), set_text(ie, get(r)), set_text(se, a), set_style(ce, `font-size:${(_get2 = get(m)) !== null && _get2 !== void 0 ? _get2 : ""}px`), set_text(de, o), set_text(T, s), set_attribute(he, "aria-label", u), he.disabled = !get(c), set_attribute(_e, "aria-label", d), _e.disabled = !get(l), set_text(ye, `${f !== null && f !== void 0 ? f : ""} ▸`);
+			set_attribute(g, "aria-label", e), set_text(x, t), set_attribute(S, "aria-label", n), set_text(E, i), set_style(ee, `font-size:${(_get = get(p)) !== null && _get !== void 0 ? _get : ""}px`), set_text(te, get(r)), set_text(ie, a), set_style(ae, `font-size:${(_get2 = get(m)) !== null && _get2 !== void 0 ? _get2 : ""}px`), set_text(se, o), set_text(k, s), set_attribute(de, "aria-label", u), de.disabled = !get(c), set_attribute(pe, "aria-label", d), pe.disabled = !get(l), set_text(he, `${f !== null && f !== void 0 ? f : ""} ▸`);
 		}, [
 			() => t.host.t("autoplay.close", "Close"),
 			() => t.host.t("autoplay.title", "Autoplay"),
@@ -105303,12 +105301,12 @@ function AutoplayMenu(e, t) {
 			() => t.host.t("bet.decrease", "Decrease"),
 			() => t.host.t("bet.increase", "Increase"),
 			() => t.host.t("autoplay.start", "Start")
-		]), delegated("click", g, close), delegated("click", x, close), delegated("click", he, () => step(-1)), delegated("click", _e, () => step(1)), delegated("click", ve, start);
+		]), delegated("click", g, close), delegated("click", S, close), delegated("click", de, () => step(-1)), delegated("click", pe, () => step(1)), delegated("click", me, start);
 	}
 	bind_window_size("innerWidth", (e) => set(f, e, !0)), append(e, h), pop();
 }
 delegate(["click"]);
-var Gr = class AutoplaySvelteMenuModule extends qn {
+var Ur = class AutoplaySvelteMenuModule extends Gn {
 	constructor(..._args29) {
 		super(..._args29);
 		_defineProperty(this, "_selectedRounds", 0);
@@ -105361,9 +105359,228 @@ var Gr = class AutoplaySvelteMenuModule extends qn {
 		this.open(AutoplayMenuEvents.AUTOPLAY_MENU_OPENED);
 	}
 };
-Gr = __decorate$1([injectFromBase()], Gr);
-var AvalancheReelsEvents = (_Class15 = class {}, _defineProperty(_Class15, "REEL_SYMBOL_PERCEIVED_STOP", "Avalanche2Events::REEL_SYMBOL_PERCEIVED_STOP"), _defineProperty(_Class15, "DROPPING_OUT_FINISHED", "Avalanche2Events::DROPPING_OUT_FINISHED"), _defineProperty(_Class15, "REEL_DROPPING_NEW_FINISHED", "Avalanche2Events::REEL_DROPPING_FINISHED"), _defineProperty(_Class15, "ALL_REELS_DROPPING_NEW_STARTED", "Avalanche2Events::ALL_REELS_DROPPING_NEW_STARTED"), _defineProperty(_Class15, "ALL_REELS_DROPPING_NEW_FINISHED", "Avalanche2Events::ALL_REELS_DROPPING_NEW_FINISHED"), _defineProperty(_Class15, "REMOVING_WIN_STARTED", "Avalanche2Events::REMOVING_WIN_STARTED"), _defineProperty(_Class15, "REMOVING_WIN_FINISHED", "Avalanche2Events::REMOVING_WIN_FINISHED"), _defineProperty(_Class15, "SLIDING_STARTED", "Avalanche2Events::SLIDING_STARTED"), _defineProperty(_Class15, "SLIDING_FINISHED", "Avalanche2Events::SLIDING_FINISHED"), _defineProperty(_Class15, "ADDING_STARTED", "Avalanche2Events::ADDING_STARTED"), _defineProperty(_Class15, "ADDING_FINISHED", "Avalanche2Events::ADDING_FINISHED"), _defineProperty(_Class15, "STARTED_ADDING_NEW_SYMBOLS_ON_REEL", "Avalanche2Events::STARTED_ADDING_NEW_SYMBOLS_ON_REEL"), _defineProperty(_Class15, "REELS_FADING_OUT_FINISHED", "Avalanche2Events::REELS_FADING_OUT_FINISHED"), _defineProperty(_Class15, "REELS_FADING_IN_FINISHED", "Avalanche2Events::REELS_FADING_IN_FINISHED"), _defineProperty(_Class15, "REELS_FADING_OUT_STARTED", "Avalanche2Events::REELS_FADING_OUT_STARTED"), _defineProperty(_Class15, "REELS_FADING_IN_STARTED", "Avalanche2Events::REELS_FADING_IN_STARTED"), _defineProperty(_Class15, "SPIN_SPEED_CHANGES_APPLIED", "Avalanche2Events::SPIN_SPEED_CHANGES_APPLIED"), _defineProperty(_Class15, "AVALANCHE_FINISHED", "AvalancheReelsEvents::AVALANCHE_FINISHED"), _Class15);
-var q = (_ReelConstants = class ReelConstants {
+Ur = __decorate$1([injectFromBase()], Ur);
+var Wr = /* @__PURE__ */ from_html("<span class=\"ap-sym svelte-9rxfxa\"> </span>");
+var Gr = /* @__PURE__ */ from_html("<span class=\"ap-sym svelte-9rxfxa\"> </span>");
+var Kr = /* @__PURE__ */ from_html("<!> <!>", 1);
+var qr = /* @__PURE__ */ from_html("<button> </button>");
+var Jr = /* @__PURE__ */ from_html("<div class=\"ap-overlay svelte-9rxfxa\"><button class=\"ap-backdrop svelte-9rxfxa\"></button> <div class=\"ap-card svelte-9rxfxa\" role=\"dialog\" aria-modal=\"true\"><div class=\"ap-head svelte-9rxfxa\"><div class=\"ap-title svelte-9rxfxa\"><span class=\"ap-dot svelte-9rxfxa\"></span> <h2 class=\"svelte-9rxfxa\"> </h2></div> <button class=\"ap-close svelte-9rxfxa\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1 1L13 13M13 1L1 13\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg></button></div> <div class=\"ap-stats svelte-9rxfxa\"><div class=\"ap-stat svelte-9rxfxa\"><span class=\"ap-stat-label svelte-9rxfxa\"> </span> <span class=\"ap-stat-value svelte-9rxfxa\"> </span></div> <span class=\"ap-stat-divider svelte-9rxfxa\" aria-hidden=\"true\"></span> <div class=\"ap-stat svelte-9rxfxa\"><span class=\"ap-stat-label svelte-9rxfxa\"> </span> <span class=\"ap-stat-value svelte-9rxfxa\"><!></span></div></div> <div class=\"ap-field svelte-9rxfxa\"><span class=\"ap-field-label svelte-9rxfxa\"> </span> <div class=\"ap-rounds svelte-9rxfxa\"></div></div> <div class=\"ap-field svelte-9rxfxa\"><span class=\"ap-field-label svelte-9rxfxa\"> </span> <div class=\"ap-stepper svelte-9rxfxa\"><button class=\"ap-step svelte-9rxfxa\">−</button> <span class=\"ap-stepper-value svelte-9rxfxa\"><!></span> <button class=\"ap-step svelte-9rxfxa\">+</button></div></div> <div class=\"ap-field svelte-9rxfxa\"><span class=\"ap-field-label svelte-9rxfxa\"> </span> <div class=\"ap-slider-row svelte-9rxfxa\"><input class=\"ap-slider svelte-9rxfxa\" type=\"range\" min=\"1\" max=\"20\" step=\"1\"/> <span class=\"ap-slider-value svelte-9rxfxa\"> </span></div></div> <button class=\"ap-start svelte-9rxfxa\"> </button></div></div>");
+var Yr = {
+	hash: "svelte-9rxfxa",
+	code: ".ap-overlay.svelte-9rxfxa {--cream: #ffffff;--muted: #7a6a48;--accent: #caa23a;--start-top: #f4cf45;--start-bottom: #d9aa28;--accent-soft: rgba(202, 162, 58, 0.14);--accent-shadow: rgba(202, 162, 58, 0.45);--surface-a: #1c150e;--surface-b: #120d08;--fill: rgba(255, 255, 255, 0.03);--fill-strong: rgba(255, 255, 255, 0.08);position:fixed;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;font-family:'Geist', 'Inter', system-ui, -apple-system, sans-serif;color:var(--cream);user-select:none;-webkit-font-smoothing:antialiased;}.ap-overlay.svelte-9rxfxa * {box-sizing:border-box;}\n\n    /* Transparent click-catcher: clicking outside the card closes the menu. */.ap-backdrop.svelte-9rxfxa {position:absolute;inset:0;border:none;padding:0;background:transparent;cursor:pointer;}.ap-card.svelte-9rxfxa {position:relative;z-index:1;width:min(600px, 92vw);padding:28px;display:flex;flex-direction:column;gap:24px;border-radius:18px;background:linear-gradient(var(--surface-a) 0%, var(--surface-b) 100%);box-shadow:rgba(0, 0, 0, 0.5) 0 30px 60px 0,\n                rgba(255, 255, 255, 0.06) 0 1px 0 0 inset;}.ap-head.svelte-9rxfxa {display:flex;align-items:center;justify-content:space-between;}.ap-title.svelte-9rxfxa {display:flex;align-items:center;gap:10px;}.ap-dot.svelte-9rxfxa {width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px 0 var(--accent);}.ap-title.svelte-9rxfxa h2:where(.svelte-9rxfxa) {margin:0;font-size:13px;font-weight:600;letter-spacing:0.32em;text-transform:uppercase;}.ap-close.svelte-9rxfxa {display:flex;align-items:center;justify-content:center;width:32px;height:32px;border:none;border-radius:8px;background:var(--fill);color:rgba(255, 255, 255, 0.7);cursor:pointer;}.ap-close.svelte-9rxfxa:hover {background:var(--fill-strong);color:var(--cream);}.ap-stats.svelte-9rxfxa {display:grid;grid-template-columns:1fr 1px 1fr;align-items:center;}.ap-stat.svelte-9rxfxa {display:flex;flex-direction:column;align-items:center;gap:8px;min-width:0;text-align:center;}.ap-stat-label.svelte-9rxfxa {font-size:10px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--muted);}.ap-stat-value.svelte-9rxfxa {display:flex;align-items:center;justify-content:center;height:50px;max-width:100%;font-size:50px;font-weight:600;line-height:1;white-space:nowrap;}.ap-stat-divider.svelte-9rxfxa {width:1px;height:64px;background:rgba(255, 255, 255, 0.08);}.ap-sym.svelte-9rxfxa {color:var(--accent);}.ap-field.svelte-9rxfxa {display:flex;flex-direction:column;gap:12px;}.ap-field-label.svelte-9rxfxa {font-size:10px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--muted);}.ap-rounds.svelte-9rxfxa {display:grid;grid-template-columns:repeat(auto-fit, minmax(0, 1fr));gap:8px;}.ap-round.svelte-9rxfxa {padding:13px 0;border:none;border-radius:10px;background:var(--fill);color:var(--muted);font:inherit;font-size:14px;font-weight:500;cursor:pointer;}.ap-round.svelte-9rxfxa:hover {background:var(--fill-strong);color:var(--cream);}.ap-round.active.svelte-9rxfxa {background:var(--accent-soft);color:var(--cream);box-shadow:inset 0 0 0 1px var(--accent-shadow);}.ap-stepper.svelte-9rxfxa {display:flex;align-items:center;gap:8px;padding:12px;border-radius:12px;background:var(--fill);}.ap-step.svelte-9rxfxa {flex:none;width:44px;height:44px;border:none;border-radius:11px;background:var(--fill-strong);color:var(--cream);font-size:22px;line-height:1;cursor:pointer;}.ap-step.svelte-9rxfxa:hover:not(:disabled) {background:rgba(255, 255, 255, 0.14);}.ap-step.svelte-9rxfxa:disabled {opacity:0.35;cursor:not-allowed;}.ap-stepper-value.svelte-9rxfxa {flex:1;text-align:center;font-size:28px;font-weight:600;}.ap-slider-row.svelte-9rxfxa {display:flex;align-items:center;gap:14px;padding:12px;border-radius:12px;background:var(--fill);}.ap-slider.svelte-9rxfxa {flex:1;appearance:none;height:4px;border-radius:999px;background:var(--fill-strong);accent-color:var(--accent);}.ap-slider-value.svelte-9rxfxa {min-width:2ch;text-align:right;font-size:16px;font-weight:600;font-variant-numeric:tabular-nums;}.ap-start.svelte-9rxfxa {padding:16px 0;border:none;border-radius:12px;background:linear-gradient(var(--start-top), var(--start-bottom));box-shadow:var(--accent-shadow) 0 8px 20px 0,\n                rgba(255, 255, 255, 0.2) 0 1px 0 0 inset;color:rgb(255, 255, 255);font:inherit;font-size:14px;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;cursor:pointer;}.ap-start.svelte-9rxfxa:hover {filter:brightness(1.06);}.ap-start.svelte-9rxfxa:active {filter:brightness(0.96);}\n\n    @media (max-width: 520px) {.ap-card.svelte-9rxfxa {gap:18px;padding:20px;}.ap-stat-value.svelte-9rxfxa {height:38px;}.ap-stat-divider.svelte-9rxfxa {height:46px;}\n    }"
+};
+function ChickenAutoplayMenu(e, t) {
+	push(t, !0), append_styles$1(e, Yr);
+	let n = /* @__PURE__ */ state(proxy([]));
+	let r = /* @__PURE__ */ state(0);
+	let i = /* @__PURE__ */ state(proxy([]));
+	let a = /* @__PURE__ */ state(0);
+	let o = /* @__PURE__ */ state(0);
+	let s = /* @__PURE__ */ state(1);
+	onMount(() => {
+		let sync = () => {
+			set(n, t.host.rounds, !0), set(r, t.host.selectedRounds, !0), set(i, t.host.bets, !0), set(a, t.host.betPerRound, !0), set(o, t.host.totalStake, !0), set(s, t.host.selectedCashOutStep, !0);
+		};
+		return sync(), t.host.subscribe(sync);
+	});
+	let c = /* @__PURE__ */ user_derived(() => Math.max(0, get(i).indexOf(get(a))));
+	let l = /* @__PURE__ */ user_derived(() => get(c) > 0);
+	let u = /* @__PURE__ */ user_derived(() => get(i).length > 0 && get(c) < get(i).length - 1);
+	let d = /* @__PURE__ */ user_derived(() => t.host.formatMoneyParts(get(o)));
+	let f = /* @__PURE__ */ user_derived(() => t.host.formatMoneyParts(get(a)));
+	let p = /* @__PURE__ */ state(proxy(typeof window < "u" ? window.innerWidth : 1024));
+	function fitFontSize(e) {
+		let t = get(p) <= 520;
+		let n = t ? 36 : 50;
+		let r = t ? 6 : 7;
+		return e.length <= r ? n : Math.max(16, Math.round(n * r / e.length));
+	}
+	let m = /* @__PURE__ */ user_derived(() => fitFontSize(String(get(r))));
+	let h = /* @__PURE__ */ user_derived(() => fitFontSize(t.host.formatMoney(get(o), !0)));
+	function selectRounds(e) {
+		t.host.selectRounds(e);
+	}
+	function step(e) {
+		t.host.stepBet(e);
+	}
+	function onCashOutStepInput(e) {
+		t.host.selectCashOutStep(Number(e.currentTarget.value));
+	}
+	function start() {
+		t.host.start();
+	}
+	function close() {
+		t.host.close();
+	}
+	function onKeydown(e) {
+		e.key === "Escape" ? close() : e.key === "Enter" && start();
+	}
+	var g = Jr();
+	event("keydown", pn, onKeydown);
+	{
+		let money = (e, t = noop) => {
+			var n = Kr();
+			var r = first_child(n);
+			var consequent = (e) => {
+				var n = Wr(), r = child(n, !0);
+				reset(n), template_effect(() => set_text(r, t().pre)), append(e, n);
+			};
+			if_block(r, (e) => {
+				t().pre && e(consequent);
+			});
+			var i = sibling(r, 1, !0);
+			var a = sibling(i);
+			var consequent_1 = (e) => {
+				var n = Gr(), r = child(n, !0);
+				reset(n), template_effect(() => set_text(r, t().post)), append(e, n);
+			};
+			if_block(a, (e) => {
+				t().post && e(consequent_1);
+			}), template_effect(() => set_text(i, t().num)), append(e, n);
+		};
+		var _ = child(g);
+		var v = sibling(_, 2);
+		var y = child(v);
+		var b = child(y);
+		var x = sibling(child(b), 2);
+		var S = child(x, !0);
+		reset(x), reset(b);
+		var C = sibling(b, 2);
+		reset(y);
+		var w = sibling(y, 2);
+		var T = child(w);
+		var E = child(T);
+		var ee = child(E, !0);
+		reset(E);
+		var te = sibling(E, 2);
+		var ne = child(te, !0);
+		reset(te), reset(T);
+		var re = sibling(T, 4);
+		var ie = child(re);
+		var ae = child(ie, !0);
+		reset(ie);
+		var D = sibling(ie, 2);
+		money(child(D), () => get(d)), reset(D), reset(re), reset(w);
+		var oe = sibling(w, 2);
+		var se = child(oe);
+		var ce = child(se, !0);
+		reset(se);
+		var le = sibling(se, 2);
+		each(le, 20, () => get(n), (e) => e, (e, t) => {
+			var n = qr();
+			let i;
+			var a = child(n, !0);
+			reset(n), template_effect(() => {
+				i = set_class(n, 1, "ap-round svelte-9rxfxa", null, i, { active: t === get(r) }), set_text(a, t);
+			}), delegated("click", n, () => selectRounds(t)), append(e, n);
+		}), reset(le), reset(oe);
+		var O = sibling(oe, 2);
+		var k = child(O);
+		var ue = child(k, !0);
+		reset(k);
+		var de = sibling(k, 2);
+		var fe = child(de);
+		var pe = sibling(fe, 2);
+		money(child(pe), () => get(f)), reset(pe);
+		var me = sibling(pe, 2);
+		reset(de), reset(O);
+		var he = sibling(O, 2);
+		var ge = child(he);
+		var _e = child(ge, !0);
+		reset(ge);
+		var ve = sibling(ge, 2);
+		var A = child(ve);
+		remove_input_defaults(A);
+		var ye = sibling(A, 2);
+		var be = child(ye, !0);
+		reset(ye), reset(ve), reset(he);
+		var xe = sibling(he, 2);
+		var Se = child(xe);
+		reset(xe), reset(v), reset(g), template_effect((e, t, n, i, a, o, c, d, f, p, g, v) => {
+			var _get3;
+			var _get4;
+			set_attribute(_, "aria-label", e), set_text(S, t), set_attribute(C, "aria-label", n), set_text(ee, i), set_style(te, `font-size:${(_get3 = get(m)) !== null && _get3 !== void 0 ? _get3 : ""}px`), set_text(ne, get(r)), set_text(ae, a), set_style(D, `font-size:${(_get4 = get(h)) !== null && _get4 !== void 0 ? _get4 : ""}px`), set_text(ce, o), set_text(ue, c), set_attribute(fe, "aria-label", d), fe.disabled = !get(l), set_attribute(me, "aria-label", f), me.disabled = !get(u), set_text(_e, p), set_value(A, get(s)), set_attribute(A, "aria-label", g), set_text(be, get(s)), set_text(Se, `${v !== null && v !== void 0 ? v : ""} ▸`);
+		}, [
+			() => t.host.t("autoplay.close", "Close"),
+			() => t.host.t("autoplay.title", "Cyberchicken Autoplay"),
+			() => t.host.t("autoplay.close", "Close"),
+			() => t.host.t("autoplay.rounds", "Rounds"),
+			() => t.host.t("autoplay.totalStake", "Total stake"),
+			() => t.host.t("autoplay.numberOfRounds", "Number of rounds"),
+			() => t.host.t("autoplay.betPerRound", "Bet per round"),
+			() => t.host.t("bet.decrease", "Decrease"),
+			() => t.host.t("bet.increase", "Increase"),
+			() => t.host.t("autoplay.cashOutAfterSteps", "Cash out after steps:"),
+			() => t.host.t("autoplay.cashOutAfterSteps", "Cash out after steps:"),
+			() => t.host.t("autoplay.start", "Start")
+		]), delegated("click", _, close), delegated("click", C, close), delegated("click", fe, () => step(-1)), delegated("click", me, () => step(1)), delegated("input", A, onCashOutStepInput), delegated("click", xe, start);
+	}
+	bind_window_size("innerWidth", (e) => set(p, e, !0)), append(e, g), pop();
+}
+delegate(["click", "input"]);
+var Xr = class ChickenAutoplayMenuSvelteModule extends Gn {
+	constructor(..._args30) {
+		super(..._args30);
+		_defineProperty(this, "_selectedRounds", 0);
+		_defineProperty(this, "_selectedCashOutStep", 1);
+	}
+	init(e, t) {
+		super.init(e, t), this._selectedRounds = this.gameData.autoplayDefault;
+	}
+	afterInit() {
+		super.afterInit(), this._host.mount(ChickenAutoplayMenu, { host: this }, "AutoplaySvelteMenuRoot");
+	}
+	get rounds() {
+		var _this$gameData$autopl2;
+		return (_this$gameData$autopl2 = this.gameData.autoplayValues) !== null && _this$gameData$autopl2 !== void 0 ? _this$gameData$autopl2 : [];
+	}
+	get selectedRounds() {
+		return this._selectedRounds;
+	}
+	get betPerRound() {
+		return this.gameData.betValue;
+	}
+	get totalStake() {
+		return this._selectedRounds * this.gameData.betValue;
+	}
+	get bets() {
+		var _this$gameData$betVal2;
+		return (_this$gameData$betVal2 = this.gameData.betValues) !== null && _this$gameData$betVal2 !== void 0 ? _this$gameData$betVal2 : [];
+	}
+	get selectedCashOutStep() {
+		return this._selectedCashOutStep;
+	}
+	selectRounds(e) {
+		this._selectedRounds = e, this.notify();
+	}
+	selectCashOutStep(e) {
+		this._selectedCashOutStep = e, this.notify();
+	}
+	stepBet(e) {
+		let t = this.bets;
+		if (t.length === 0) return;
+		let n = Math.max(0, Math.min(t.indexOf(this.gameData.betValue) + e, t.length - 1));
+		t[n] !== this.gameData.betValue && (this.gameData.betValue = t[n], this.emit(BetMenuEvents.BET_CHANGED, t[n]), this.notify());
+	}
+	start() {
+		this._host.hide(), this.emit(AutoplayMenuEvents.AUTOPLAY_MENU_CLOSED), this.emit(AutoplayMenuEvents.AUTOPLAY_MENU_ACCEPTED, this._selectedRounds, this._selectedCashOutStep);
+	}
+	close() {
+		this._host.hide(), this.emit(AutoplayMenuEvents.AUTOPLAY_MENU_CLOSED), this.emit(AutoplayMenuEvents.AUTOPLAY_MENU_DECLINED);
+	}
+	setupEvents() {
+		super.setupEvents(), this.on(AutoplayButtonEvents.AUTOPLAY_BUTTON_CLICKED, this.onAutoplayButtonClicked), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponseReceived);
+	}
+	onInitResponseReceived() {
+		this._selectedRounds = this.gameData.autoplayDefault, this.notify();
+	}
+	onAutoplayButtonClicked() {
+		this.open(AutoplayMenuEvents.AUTOPLAY_MENU_OPENED);
+	}
+};
+Xr = __decorate$1([injectFromBase()], Xr);
+var AvalancheReelsEvents = (_Class14 = class {}, _defineProperty(_Class14, "REEL_SYMBOL_PERCEIVED_STOP", "Avalanche2Events::REEL_SYMBOL_PERCEIVED_STOP"), _defineProperty(_Class14, "DROPPING_OUT_FINISHED", "Avalanche2Events::DROPPING_OUT_FINISHED"), _defineProperty(_Class14, "REEL_DROPPING_NEW_FINISHED", "Avalanche2Events::REEL_DROPPING_FINISHED"), _defineProperty(_Class14, "ALL_REELS_DROPPING_NEW_STARTED", "Avalanche2Events::ALL_REELS_DROPPING_NEW_STARTED"), _defineProperty(_Class14, "ALL_REELS_DROPPING_NEW_FINISHED", "Avalanche2Events::ALL_REELS_DROPPING_NEW_FINISHED"), _defineProperty(_Class14, "REMOVING_WIN_STARTED", "Avalanche2Events::REMOVING_WIN_STARTED"), _defineProperty(_Class14, "REMOVING_WIN_FINISHED", "Avalanche2Events::REMOVING_WIN_FINISHED"), _defineProperty(_Class14, "SLIDING_STARTED", "Avalanche2Events::SLIDING_STARTED"), _defineProperty(_Class14, "SLIDING_FINISHED", "Avalanche2Events::SLIDING_FINISHED"), _defineProperty(_Class14, "ADDING_STARTED", "Avalanche2Events::ADDING_STARTED"), _defineProperty(_Class14, "ADDING_FINISHED", "Avalanche2Events::ADDING_FINISHED"), _defineProperty(_Class14, "STARTED_ADDING_NEW_SYMBOLS_ON_REEL", "Avalanche2Events::STARTED_ADDING_NEW_SYMBOLS_ON_REEL"), _defineProperty(_Class14, "REELS_FADING_OUT_FINISHED", "Avalanche2Events::REELS_FADING_OUT_FINISHED"), _defineProperty(_Class14, "REELS_FADING_IN_FINISHED", "Avalanche2Events::REELS_FADING_IN_FINISHED"), _defineProperty(_Class14, "REELS_FADING_OUT_STARTED", "Avalanche2Events::REELS_FADING_OUT_STARTED"), _defineProperty(_Class14, "REELS_FADING_IN_STARTED", "Avalanche2Events::REELS_FADING_IN_STARTED"), _defineProperty(_Class14, "SPIN_SPEED_CHANGES_APPLIED", "Avalanche2Events::SPIN_SPEED_CHANGES_APPLIED"), _defineProperty(_Class14, "AVALANCHE_FINISHED", "AvalancheReelsEvents::AVALANCHE_FINISHED"), _Class14);
+var Y$1 = (_ReelConstants = class ReelConstants {
 	static setReelsOffset(e, t) {
 		ReelConstants.REELS_OFFSET[e] = {
 			x: t.x,
@@ -105395,28 +105612,28 @@ var q = (_ReelConstants = class ReelConstants {
 		};
 	}
 	static manualInit(e, t) {
-		ReelConstants.SYMBOL_SLOT[N$1.LANDSCAPE] = {
+		ReelConstants.SYMBOL_SLOT[I$1.LANDSCAPE] = {
 			width: e.width,
 			height: e.height
-		}, ReelConstants.SYMBOL_SLOT[N$1.PORTRAIT] = {
+		}, ReelConstants.SYMBOL_SLOT[I$1.PORTRAIT] = {
 			width: t.width,
 			height: t.height
-		}, ReelConstants.recalculateNumbers(N$1.LANDSCAPE), ReelConstants.recalculateNumbers(N$1.PORTRAIT);
+		}, ReelConstants.recalculateNumbers(I$1.LANDSCAPE), ReelConstants.recalculateNumbers(I$1.PORTRAIT);
 	}
 	static initializeFromLayout(e) {
 		ReelConstants.initializeFromLayoutCustomResourceNames(e, "SYMBOL");
 	}
 	static initializeFromLayoutCustomResourceNames(e, t) {
-		let n = e.getSize(t, N$1.PORTRAIT), r = e.getSize(t, N$1.LANDSCAPE);
-		ReelConstants.SYMBOL_SLOT[N$1.PORTRAIT] = {
+		let n = e.getSize(t, I$1.PORTRAIT), r = e.getSize(t, I$1.LANDSCAPE);
+		ReelConstants.SYMBOL_SLOT[I$1.PORTRAIT] = {
 			width: n.width,
 			height: n.height
-		}, ReelConstants.SYMBOL_SLOT[N$1.LANDSCAPE] = {
+		}, ReelConstants.SYMBOL_SLOT[I$1.LANDSCAPE] = {
 			width: r.width,
 			height: r.height
-		}, ReelConstants.recalculateNumbers(N$1.PORTRAIT), ReelConstants.recalculateNumbers(N$1.LANDSCAPE);
+		}, ReelConstants.recalculateNumbers(I$1.PORTRAIT), ReelConstants.recalculateNumbers(I$1.LANDSCAPE);
 	}
-	static getSymbolSlot(e = N$1.PORTRAIT) {
+	static getSymbolSlot(e = I$1.PORTRAIT) {
 		return ReelConstants.SYMBOL_SLOT[e];
 	}
 	static getReelsCenter(e) {
@@ -105431,7 +105648,7 @@ var q = (_ReelConstants = class ReelConstants {
 	static getReels() {
 		return ReelConstants.REELS;
 	}
-	static getSymbolPosition(e, t = N$1.PORTRAIT) {
+	static getSymbolPosition(e, t = I$1.PORTRAIT) {
 		return {
 			x: ReelConstants.getSymbolSlot(t).width * e.x + ReelConstants.getSymbolSlot(t).width / 2,
 			y: ReelConstants.getSymbolSlot(t).height * e.y + ReelConstants.getSymbolSlot(t).height / 2
@@ -105448,10 +105665,10 @@ var q = (_ReelConstants = class ReelConstants {
 		return ReelConstants.REELS_OFFSET[e];
 	}
 }, _defineProperty(_ReelConstants, "FIRST_VISIBLE_ROW", 2), _defineProperty(_ReelConstants, "FIRST_VISIBLE_ROW_ON_STOP", 1), _defineProperty(_ReelConstants, "REELS_AMOUNT", 6), _defineProperty(_ReelConstants, "ROW_AMOUNT", 6), _defineProperty(_ReelConstants, "MAX_ROW_AMOUNT", 6), _defineProperty(_ReelConstants, "LINES", 0), _defineProperty(_ReelConstants, "BOTH_WAYS", !1), _defineProperty(_ReelConstants, "SYMBOL_SLOT", []), _defineProperty(_ReelConstants, "REELS", []), _defineProperty(_ReelConstants, "REELS_CENTER", []), _defineProperty(_ReelConstants, "REELS_OFFSET", []), _defineProperty(_ReelConstants, "ROWS_ON_REEL", []), _ReelConstants);
-var AvalancheConstants = (_Class16 = class {}, _defineProperty(_Class16, "TIMER_BETWEEN_REELS_OUT", 45), _defineProperty(_Class16, "TIMER_BETWEEN_SYMBOLS_OUT", 17), _defineProperty(_Class16, "TIMER_BETWEEN_REELS_NEW", 100), _defineProperty(_Class16, "TIMER_BETWEEN_SYMBOLS_NEW", 17), _defineProperty(_Class16, "AVALANCHE_OUT_TIMER", 320), _defineProperty(_Class16, "AVALANCHE_NEW_TIMER", 200), _defineProperty(_Class16, "AVALANCHE_REPOSITION_TIMER", 200), _Class16);
+var AvalancheConstants = (_Class15 = class {}, _defineProperty(_Class15, "TIMER_BETWEEN_REELS_OUT", 45), _defineProperty(_Class15, "TIMER_BETWEEN_SYMBOLS_OUT", 17), _defineProperty(_Class15, "TIMER_BETWEEN_REELS_NEW", 100), _defineProperty(_Class15, "TIMER_BETWEEN_SYMBOLS_NEW", 17), _defineProperty(_Class15, "AVALANCHE_OUT_TIMER", 320), _defineProperty(_Class15, "AVALANCHE_NEW_TIMER", 200), _defineProperty(_Class15, "AVALANCHE_REPOSITION_TIMER", 200), _Class15);
 var AvalancheSymbol = class extends import_lib.Container {
-	constructor(..._args30) {
-		super(..._args30);
+	constructor(..._args31) {
+		super(..._args31);
 		_defineProperty(this, "_symbolType", void 0);
 		_defineProperty(this, "_reelsPosition", void 0);
 		_defineProperty(this, "_size", {
@@ -105496,7 +105713,7 @@ var AvalancheSymbol = class extends import_lib.Container {
 		this.hideSymbol();
 	}
 	setupLayersOrder(e, t, n) {
-		this._container = new import_lib.Container(), this._container.pivot.set(q.getSymbolSlot().width / 2, q.getSymbolSlot().height / 2), this.addChild(this._container), this._symbolContainer = new import_lib.Container(), this._container.addChild(this._symbolContainer), t && this._symbolContainer.addChild(t), this._symbolContainer.addChild(e), n && this._symbolContainer.addChild(n);
+		this._container = new import_lib.Container(), this._container.pivot.set(Y$1.getSymbolSlot().width / 2, Y$1.getSymbolSlot().height / 2), this.addChild(this._container), this._symbolContainer = new import_lib.Container(), this._container.addChild(this._symbolContainer), t && this._symbolContainer.addChild(t), this._symbolContainer.addChild(e), n && this._symbolContainer.addChild(n);
 	}
 	setupBackground() {}
 	setupForeground() {}
@@ -105535,9 +105752,9 @@ var AvalancheSymbol = class extends import_lib.Container {
 		return this._isSymbolHidden;
 	}
 };
-var Kr = (_SpineAvalancheSymbol = class SpineAvalancheSymbol extends AvalancheSymbol {
-	constructor(..._args31) {
-		super(..._args31);
+var Zr = (_SpineAvalancheSymbol = class SpineAvalancheSymbol extends AvalancheSymbol {
+	constructor(..._args32) {
+		super(..._args32);
 		_defineProperty(this, "_spineSymbol", void 0);
 	}
 	initSpineSymbol(e = "GAME_SYMBOLS.json", t = "IDLE") {
@@ -105605,10 +105822,10 @@ var Kr = (_SpineAvalancheSymbol = class SpineAvalancheSymbol extends AvalancheSy
 	STOPPING: "IDLE",
 	REEL_EXIT: "IDLE"
 }), _defineProperty(_SpineAvalancheSymbol, "specialSymbols", void 0), _SpineAvalancheSymbol);
-var J$1;
-var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
-	constructor(..._args32) {
-		super(..._args32);
+var X$1;
+var Z$1 = (_AvalancheReelsView = class AvalancheReelsView extends q {
+	constructor(..._args33) {
+		super(..._args33);
 		_defineProperty(this, "_symbols", []);
 		_defineProperty(this, "_symbolsOnReel", []);
 		_defineProperty(this, "_symbolsContainer", void 0);
@@ -105618,7 +105835,7 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 		_defineProperty(this, "_fastPlayActive", void 0);
 	}
 	init() {
-		super.init(), q.initializeFromLayout(this.mainUI.layout), this.initContainers(), this.setupReelSetMaskForSpinning(), this.updateManager.add(this._movementUpdateManager), this._movementUpdateManager.start();
+		super.init(), Y$1.initializeFromLayout(this.mainUI.layout), this.initContainers(), this.setupReelSetMaskForSpinning(), this.updateManager.add(this._movementUpdateManager), this._movementUpdateManager.start();
 	}
 	createReels(e) {
 		for (let t = 0; t < this.getReelsAmount(); t++) {
@@ -105671,7 +105888,7 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 		this._fastPlayActive = !1;
 	}
 	applyFastplaySettings() {
-		this._movementUpdateManager.timeScale = this._fastPlayActive ? this.getFastPlayTimeScale() : 1, this.emit(J$1.SPIN_SPEED_CHANGES_APPLIED, this._fastPlayActive);
+		this._movementUpdateManager.timeScale = this._fastPlayActive ? this.getFastPlayTimeScale() : 1, this.emit(X$1.SPIN_SPEED_CHANGES_APPLIED, this._fastPlayActive);
 	}
 	dropNewSymbols(e, t) {
 		for (let n = 0; n < this.getReelsAmount(); n++) for (let r = 0; r < this.getRowsAmount(n); r++) {
@@ -105713,17 +105930,17 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 		for (let e of this._symbols) for (let t of e) this.showSymbol(t);
 	}
 	fadeOutSymbols() {
-		if (this.emit(J$1.REELS_FADING_OUT_STARTED), this.container) {
+		if (this.emit(X$1.REELS_FADING_OUT_STARTED), this.container) {
 			let e = new Tween(this.container).to({ alpha: 0 }, this.getFadingTimer()).onComplete(() => {
-				this.emit(J$1.REELS_FADING_OUT_FINISHED);
+				this.emit(X$1.REELS_FADING_OUT_FINISHED);
 			}).start();
 			this.updateManager.add(e);
 		}
 	}
 	fadeInSymbols() {
-		if (this.emit(J$1.REELS_FADING_IN_STARTED), this.container) {
+		if (this.emit(X$1.REELS_FADING_IN_STARTED), this.container) {
 			let e = new Tween(this.container).to({ alpha: 1 }, this.getFadingTimer()).onComplete(() => {
-				this.emit(J$1.REELS_FADING_IN_FINISHED);
+				this.emit(X$1.REELS_FADING_IN_FINISHED);
 			}).start();
 			this.updateManager.add(e);
 		}
@@ -105737,7 +105954,7 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 		for (let l of e) {
 			r = this._symbols[l.position.x][l.position.y], r.position.y = this.getBeforeDropNewYPositionFor(l.position), this.showSymbol(r), r.setSymbol(l.symbol), this.isSymbolsHaveSizes() && (r.size = l.size), r.playFalling(), t.indexOf(l.position.x) >= 0 && a.indexOf(l.position.x) < 0 && (a.push(l.position.x), i += this.getAddNewSymbolsExpectedWinAdditionalDelay());
 			let e = this.getToPositionForNewSymbols(l.position), u = this.createAddNewTween(r, e, l, o, i, () => {
-				s[l.position.x] || (s[l.position.x] = !0, this.emit(J$1.STARTED_ADDING_NEW_SYMBOLS_ON_REEL, l.position.x, c[l.position.x]));
+				s[l.position.x] || (s[l.position.x] = !0, this.emit(X$1.STARTED_ADDING_NEW_SYMBOLS_ON_REEL, l.position.x, c[l.position.x]));
 			});
 			this._movementUpdateManager.add(u), n = u, u.onComplete(this.onFinishedSymbolAdding.bind(this, r));
 		}
@@ -105747,10 +105964,10 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 		throw Error("AvalancheReelsView::getCurrentGameBonusSymbol must be defined");
 	}
 	getToPositionForNewSymbols(e) {
-		let t = q.getSymbolPosition({
+		let t = Y$1.getSymbolPosition({
 			x: e.x,
 			y: e.y
-		}), n = q.getSymbolSlot();
+		}), n = Y$1.getSymbolSlot();
 		return {
 			x: t.x + n.width / 2,
 			y: t.y + n.height / 2
@@ -105773,7 +105990,7 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 		e.playReelExit();
 	}
 	onFinishedDroppingOut(e) {
-		this.tryToStopDroppingOutAnimation(e), this.emitDelayed(J$1.DROPPING_OUT_FINISHED);
+		this.tryToStopDroppingOutAnimation(e), this.emitDelayed(X$1.DROPPING_OUT_FINISHED);
 	}
 	createAddNewTween(e, t, n, r, i, a) {
 		return new Tween(e.position).to({ y: t.y }, this.getAddNewSymbolsDuration()).delay(r[n.position.x] * this.getAddNewSymbolsBetweenReelsBasicDelay() + i).easing(this.getAddNewSymbolsEasing()).onStart(() => {
@@ -105793,23 +106010,23 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 		this.tryToPlayStopAnimationOnSymbol(e);
 	}
 	onFinishedDroppingNew(e) {
-		this.tryToPlayStopAnimationOnReel(e.reelsPosition.x), this.tryToPlayStopAnimationOnSymbol(e), this.emit(J$1.REEL_DROPPING_NEW_FINISHED, e.reelsPosition.x), this.emitDelayed(J$1.ALL_REELS_DROPPING_NEW_FINISHED);
+		this.tryToPlayStopAnimationOnReel(e.reelsPosition.x), this.tryToPlayStopAnimationOnSymbol(e), this.emit(X$1.REEL_DROPPING_NEW_FINISHED, e.reelsPosition.x), this.emitDelayed(X$1.ALL_REELS_DROPPING_NEW_FINISHED);
 	}
 	onFinishedDroppingNewOnReel(e) {
-		this.emit(J$1.REEL_DROPPING_NEW_FINISHED, e.reelsPosition.x), this.tryToPlayStopAnimationOnReel(e.reelsPosition.x), this.tryToPlayStopAnimationOnSymbol(e);
+		this.emit(X$1.REEL_DROPPING_NEW_FINISHED, e.reelsPosition.x), this.tryToPlayStopAnimationOnReel(e.reelsPosition.x), this.tryToPlayStopAnimationOnSymbol(e);
 	}
 	tryToPlayStopAnimationOnReel(e) {}
 	tryToPlayStopAnimationOnSymbol(e) {
 		e.playIdle();
 	}
 	getBeforeDropNewYPositionFor(e) {
-		return -this.resolutionManager.resolution.height - q.getSymbolSlot().height / 2 - q.getSymbolSlot().height * e.y;
+		return -this.resolutionManager.resolution.height - Y$1.getSymbolSlot().height / 2 - Y$1.getSymbolSlot().height * e.y;
 	}
 	getAfterDropNewYPositionFor(e) {
-		return q.getSymbolPosition(e).y + q.getSymbolSlot().height / 2;
+		return Y$1.getSymbolPosition(e).y + Y$1.getSymbolSlot().height / 2;
 	}
 	getDroppingEasing() {
-		return this._fastPlayActive, W.Quadratic.In;
+		return this._fastPlayActive, K.Quadratic.In;
 	}
 	createDropNewTween(e, t, n) {
 		return new Tween(e).to({ y: this.getAfterDropNewYPositionFor(n) }, this.getDroppingDuration()).easing(this.getDroppingEasing()).delay(t).start();
@@ -105837,7 +106054,7 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 		}, e);
 	}
 	onWinsRemovalCompleted() {
-		this.emitDelayed(J$1.REMOVING_WIN_FINISHED);
+		this.emitDelayed(X$1.REMOVING_WIN_FINISHED);
 	}
 	playRemoveAnimationOn(e, t) {
 		let n = this._symbols[e.x][e.y];
@@ -105876,7 +106093,7 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 		e && e.playIdle();
 	}
 	onSlidingFinished(e) {
-		this.tryToPlaySlidingStopAnimationOnSymbol(e), this.emitDelayed(J$1.SLIDING_FINISHED);
+		this.tryToPlaySlidingStopAnimationOnSymbol(e), this.emitDelayed(X$1.SLIDING_FINISHED);
 	}
 	rearrangeSymbolsAfterRemoval() {
 		let e = [];
@@ -105891,7 +106108,7 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 		this._symbols = e;
 	}
 	getSlidingEasing() {
-		return this._fastPlayActive, W.Quadratic.In;
+		return this._fastPlayActive, K.Quadratic.In;
 	}
 	createSlideTween(e, t, n, r) {
 		return new Tween(e).to({ y: this.getAfterDropNewYPositionFor(n) }, this.getSlidingDuration(r)).easing(this.getSlidingEasing()).delay(t).start();
@@ -105908,7 +106125,7 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 		return !0;
 	}
 	getAddNewSymbolsEasing() {
-		return this._fastPlayActive, W.Quadratic.In;
+		return this._fastPlayActive, K.Quadratic.In;
 	}
 	countSymbolsOnReel(e, t) {
 		let n = 0;
@@ -105929,7 +106146,7 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 		e.playLanding();
 	}
 	onAddingNewCompleted(e) {
-		this.tryToPlayAddingStopAnimationOnSymbol(e), this.emitDelayed(J$1.ADDING_FINISHED);
+		this.tryToPlayAddingStopAnimationOnSymbol(e), this.emitDelayed(X$1.ADDING_FINISHED);
 	}
 	sortAvalancheNewSymbols(e) {
 		return e.sort((e, t) => e.position.x === t.position.x ? e.position.y - t.position.y : e.position.x - t.position.x);
@@ -105941,26 +106158,26 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 		e.visible = !0;
 	}
 	placeSymbolIntoInitialPosition(e, t) {
-		let n = q.getSymbolSlot(), r = t ? q.getSymbolPosition(t) : q.getSymbolPosition(e.reelsPosition);
+		let n = Y$1.getSymbolSlot(), r = t ? Y$1.getSymbolPosition(t) : Y$1.getSymbolPosition(e.reelsPosition);
 		e.position.set(r.x + n.width / 2, r.y + n.height / 2);
 	}
 	setInitialSymbolAtPosition(e, t) {
 		e.setSymbol(this.getGameSymbolID(t.symbolID));
 	}
 	getInitialSymbolsOnReelAmount(e) {
-		return q.MAX_ROW_AMOUNT;
+		return Y$1.MAX_ROW_AMOUNT;
 	}
 	getGameSymbolID(e, t) {
 		return e;
 	}
 	createReelSymbol() {
-		return new Kr();
+		return new Zr();
 	}
 	getRowsAmount(e) {
-		return q.MAX_ROW_AMOUNT;
+		return Y$1.MAX_ROW_AMOUNT;
 	}
 	getReelsAmount() {
-		return q.REELS_AMOUNT;
+		return Y$1.REELS_AMOUNT;
 	}
 	isSymbolsHaveSizes() {
 		return !1;
@@ -105995,13 +106212,13 @@ var Y$1 = (_AvalancheReelsView = class AvalancheReelsView extends G {
 	getFastPlayTimeScale() {
 		return this.getConfigValue("avalanche.fastPlayTimeScale", 3);
 	}
-}, J$1 = _AvalancheReelsView, _defineProperty(_AvalancheReelsView, "DROPPING_OUT_FINISHED", "Avalanche2View::DROPPING_OUT_FINISHED"), _defineProperty(_AvalancheReelsView, "REEL_DROPPING_NEW_FINISHED", "Avalanche2View::REEL_DROPPING_FINISHED"), _defineProperty(_AvalancheReelsView, "ALL_REELS_DROPPING_NEW_FINISHED", "Avalanche2View::ALL_REELS_DROPPING_NEW_FINISHED"), _defineProperty(_AvalancheReelsView, "REMOVING_WIN_FINISHED", "Avalanche2View::REMOVING_WIN_FINISHED"), _defineProperty(_AvalancheReelsView, "SLIDING_STARTED", "Avalanche2View::SLIDING_STARTED"), _defineProperty(_AvalancheReelsView, "SLIDING_FINISHED", "Avalanche2View::SLIDING_FINISHED"), _defineProperty(_AvalancheReelsView, "ADDING_FINISHED", "Avalanche2View::ADDING_FINISHED"), _defineProperty(_AvalancheReelsView, "REEL_SYMBOL_PERCIEVED_STOP", "Avalanche2View::REEL_SYMBOL_PERCIEVED_STOP"), _defineProperty(_AvalancheReelsView, "STARTED_ADDING_NEW_SYMBOLS_ON_REEL", "Avalanche2View::SYMBOL_STARTED_DROPPING"), _defineProperty(_AvalancheReelsView, "REELS_FADING_OUT_FINISHED", "Avalanche2View::REELS_FADING_OUT_FINISHED"), _defineProperty(_AvalancheReelsView, "REELS_FADING_IN_FINISHED", "Avalanche2View::REELS_FADING_IN_FINISHED"), _defineProperty(_AvalancheReelsView, "REELS_FADING_OUT_STARTED", "Avalanche2View::REELS_FADING_OUT_STARTED"), _defineProperty(_AvalancheReelsView, "REELS_FADING_IN_STARTED", "Avalanche2View::REELS_FADING_IN_STARTED"), _defineProperty(_AvalancheReelsView, "SPIN_SPEED_CHANGES_APPLIED", "Avalanche2View::SPIN_SPEED_CHANGES_APPLIED"), _AvalancheReelsView);
-Y$1 = J$1 = __decorate$1([injectFromBase()], Y$1);
-var StartScreenEvents = (_Class17 = class {}, _defineProperty(_Class17, "INTRO_STARTED", "StartScreenEvents::GAME_INTRO_STARTED"), _defineProperty(_Class17, "EXIT_FINISHED", "StartScreenEvents::GAME_INTRO_EXIT_FINISHED"), _Class17);
-var SettingsEvents = (_Class18 = class {}, _defineProperty(_Class18, "TOGGLE_SOUND_EFFECTS_OFF", "SettingsEvents::TOGGLE_SOUND_OFF"), _defineProperty(_Class18, "TOGGLE_SOUND_EFFECTS_ON", "SettingsEvents::TOGGLE_SOUND_ON"), _defineProperty(_Class18, "TOGGLE_MUSIC_OFF", "SettingsEvents::TOGGLE_MUSIC_OFF"), _defineProperty(_Class18, "TOGGLE_MUSIC_ON", "SettingsEvents::TOGGLE_MUSIC_ON"), _defineProperty(_Class18, "TOGGLE_FAST_PLAY_ON", "SettingsEvents::TOGGLE_FAST_PLAY_ON"), _defineProperty(_Class18, "TOGGLE_FAST_PLAY_OFF", "SettingsEvents::TOGGLE_FAST_PLAY_OFF"), _Class18);
-var qr = class AvalancheReelsModule extends P$2 {
-	constructor(..._args33) {
-		super(..._args33);
+}, X$1 = _AvalancheReelsView, _defineProperty(_AvalancheReelsView, "DROPPING_OUT_FINISHED", "Avalanche2View::DROPPING_OUT_FINISHED"), _defineProperty(_AvalancheReelsView, "REEL_DROPPING_NEW_FINISHED", "Avalanche2View::REEL_DROPPING_FINISHED"), _defineProperty(_AvalancheReelsView, "ALL_REELS_DROPPING_NEW_FINISHED", "Avalanche2View::ALL_REELS_DROPPING_NEW_FINISHED"), _defineProperty(_AvalancheReelsView, "REMOVING_WIN_FINISHED", "Avalanche2View::REMOVING_WIN_FINISHED"), _defineProperty(_AvalancheReelsView, "SLIDING_STARTED", "Avalanche2View::SLIDING_STARTED"), _defineProperty(_AvalancheReelsView, "SLIDING_FINISHED", "Avalanche2View::SLIDING_FINISHED"), _defineProperty(_AvalancheReelsView, "ADDING_FINISHED", "Avalanche2View::ADDING_FINISHED"), _defineProperty(_AvalancheReelsView, "REEL_SYMBOL_PERCIEVED_STOP", "Avalanche2View::REEL_SYMBOL_PERCIEVED_STOP"), _defineProperty(_AvalancheReelsView, "STARTED_ADDING_NEW_SYMBOLS_ON_REEL", "Avalanche2View::SYMBOL_STARTED_DROPPING"), _defineProperty(_AvalancheReelsView, "REELS_FADING_OUT_FINISHED", "Avalanche2View::REELS_FADING_OUT_FINISHED"), _defineProperty(_AvalancheReelsView, "REELS_FADING_IN_FINISHED", "Avalanche2View::REELS_FADING_IN_FINISHED"), _defineProperty(_AvalancheReelsView, "REELS_FADING_OUT_STARTED", "Avalanche2View::REELS_FADING_OUT_STARTED"), _defineProperty(_AvalancheReelsView, "REELS_FADING_IN_STARTED", "Avalanche2View::REELS_FADING_IN_STARTED"), _defineProperty(_AvalancheReelsView, "SPIN_SPEED_CHANGES_APPLIED", "Avalanche2View::SPIN_SPEED_CHANGES_APPLIED"), _AvalancheReelsView);
+Z$1 = X$1 = __decorate$1([injectFromBase()], Z$1);
+var StartScreenEvents = (_Class16 = class {}, _defineProperty(_Class16, "INTRO_STARTED", "StartScreenEvents::GAME_INTRO_STARTED"), _defineProperty(_Class16, "EXIT_FINISHED", "StartScreenEvents::GAME_INTRO_EXIT_FINISHED"), _Class16);
+var SettingsEvents = (_Class17 = class {}, _defineProperty(_Class17, "TOGGLE_SOUND_EFFECTS_OFF", "SettingsEvents::TOGGLE_SOUND_OFF"), _defineProperty(_Class17, "TOGGLE_SOUND_EFFECTS_ON", "SettingsEvents::TOGGLE_SOUND_ON"), _defineProperty(_Class17, "TOGGLE_MUSIC_OFF", "SettingsEvents::TOGGLE_MUSIC_OFF"), _defineProperty(_Class17, "TOGGLE_MUSIC_ON", "SettingsEvents::TOGGLE_MUSIC_ON"), _defineProperty(_Class17, "TOGGLE_FAST_PLAY_ON", "SettingsEvents::TOGGLE_FAST_PLAY_ON"), _defineProperty(_Class17, "TOGGLE_FAST_PLAY_OFF", "SettingsEvents::TOGGLE_FAST_PLAY_OFF"), _Class17);
+var Qr = class AvalancheReelsModule extends L {
+	constructor(..._args34) {
+		super(..._args34);
 		_defineProperty(this, "_basicInitialReels", [
 			[
 				{ symbolID: 1 },
@@ -106101,7 +106318,7 @@ var qr = class AvalancheReelsModule extends P$2 {
 		}, this.getBeforeDroppingOutDelay());
 	}
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(Y$1.REMOVING_WIN_FINISHED, AvalancheReelsEvents.REMOVING_WIN_FINISHED), this.onViewEmitEvent(Y$1.SLIDING_STARTED, AvalancheReelsEvents.SLIDING_STARTED), this.onViewEmitEvent(Y$1.SLIDING_FINISHED, AvalancheReelsEvents.SLIDING_FINISHED), this.onViewEmitEvent(Y$1.DROPPING_OUT_FINISHED, AvalancheReelsEvents.DROPPING_OUT_FINISHED), this.onViewEmitEvent(Y$1.ALL_REELS_DROPPING_NEW_FINISHED, AvalancheReelsEvents.ALL_REELS_DROPPING_NEW_FINISHED), this.onViewEmitEvent(Y$1.REEL_DROPPING_NEW_FINISHED, AvalancheReelsEvents.REEL_DROPPING_NEW_FINISHED), this.onViewEmitEvent(Y$1.STARTED_ADDING_NEW_SYMBOLS_ON_REEL, AvalancheReelsEvents.STARTED_ADDING_NEW_SYMBOLS_ON_REEL), this.onViewEmitEvent(Y$1.SPIN_SPEED_CHANGES_APPLIED, AvalancheReelsEvents.SPIN_SPEED_CHANGES_APPLIED), this.onViewEmitEvent(Y$1.REELS_FADING_OUT_FINISHED, AvalancheReelsEvents.REELS_FADING_OUT_FINISHED), this.onViewEmitEvent(Y$1.REELS_FADING_OUT_STARTED, AvalancheReelsEvents.REELS_FADING_OUT_STARTED), this.onViewEmitEvent(Y$1.REELS_FADING_IN_FINISHED, AvalancheReelsEvents.REELS_FADING_IN_FINISHED), this.onViewEmitEvent(Y$1.REELS_FADING_IN_STARTED, AvalancheReelsEvents.REELS_FADING_IN_STARTED), this.onView(Y$1.ADDING_FINISHED, this.onAddingSymbolsFinished), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponse), this.on(FreeSpinsScreensEvents.FREE_SPINS_INTRO_STARTED, this.onFreeSpinsIntroStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_RESTORE_INTRO_STARTED, this.onFreeSpinsIntroRestoreStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_INTRO_FINISHED, this.onFreeSpinsIntroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_STARTED, this.onFreeSpinsOutroStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_FINISHED, this.onFreeSpinsOutroFinished), this.on(StartScreenEvents.INTRO_STARTED, this.onStartScreenIntroStarted), this.on(StartScreenEvents.EXIT_FINISHED, this.onStartScreenIntroFinished), this.on(SettingsEvents.TOGGLE_FAST_PLAY_ON, this.onFastPlayOn), this.on(SettingsEvents.TOGGLE_FAST_PLAY_OFF, this.onFastPlayOff);
+		super.setupEvents(), this.onViewEmitEvent(Z$1.REMOVING_WIN_FINISHED, AvalancheReelsEvents.REMOVING_WIN_FINISHED), this.onViewEmitEvent(Z$1.SLIDING_STARTED, AvalancheReelsEvents.SLIDING_STARTED), this.onViewEmitEvent(Z$1.SLIDING_FINISHED, AvalancheReelsEvents.SLIDING_FINISHED), this.onViewEmitEvent(Z$1.DROPPING_OUT_FINISHED, AvalancheReelsEvents.DROPPING_OUT_FINISHED), this.onViewEmitEvent(Z$1.ALL_REELS_DROPPING_NEW_FINISHED, AvalancheReelsEvents.ALL_REELS_DROPPING_NEW_FINISHED), this.onViewEmitEvent(Z$1.REEL_DROPPING_NEW_FINISHED, AvalancheReelsEvents.REEL_DROPPING_NEW_FINISHED), this.onViewEmitEvent(Z$1.STARTED_ADDING_NEW_SYMBOLS_ON_REEL, AvalancheReelsEvents.STARTED_ADDING_NEW_SYMBOLS_ON_REEL), this.onViewEmitEvent(Z$1.SPIN_SPEED_CHANGES_APPLIED, AvalancheReelsEvents.SPIN_SPEED_CHANGES_APPLIED), this.onViewEmitEvent(Z$1.REELS_FADING_OUT_FINISHED, AvalancheReelsEvents.REELS_FADING_OUT_FINISHED), this.onViewEmitEvent(Z$1.REELS_FADING_OUT_STARTED, AvalancheReelsEvents.REELS_FADING_OUT_STARTED), this.onViewEmitEvent(Z$1.REELS_FADING_IN_FINISHED, AvalancheReelsEvents.REELS_FADING_IN_FINISHED), this.onViewEmitEvent(Z$1.REELS_FADING_IN_STARTED, AvalancheReelsEvents.REELS_FADING_IN_STARTED), this.onView(Z$1.ADDING_FINISHED, this.onAddingSymbolsFinished), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponse), this.on(FreeSpinsScreensEvents.FREE_SPINS_INTRO_STARTED, this.onFreeSpinsIntroStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_RESTORE_INTRO_STARTED, this.onFreeSpinsIntroRestoreStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_INTRO_FINISHED, this.onFreeSpinsIntroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_STARTED, this.onFreeSpinsOutroStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_FINISHED, this.onFreeSpinsOutroFinished), this.on(StartScreenEvents.INTRO_STARTED, this.onStartScreenIntroStarted), this.on(StartScreenEvents.EXIT_FINISHED, this.onStartScreenIntroFinished), this.on(SettingsEvents.TOGGLE_FAST_PLAY_ON, this.onFastPlayOn), this.on(SettingsEvents.TOGGLE_FAST_PLAY_OFF, this.onFastPlayOff);
 	}
 	onAddingSymbolsFinished() {
 		this.emit(AvalancheReelsEvents.AVALANCHE_FINISHED);
@@ -106155,11 +106372,11 @@ var qr = class AvalancheReelsModule extends P$2 {
 		return this.getConfigValue("avalanche.beforeDroppingOutDelay", 0);
 	}
 };
-qr = __decorate$1([injectFromBase()], qr);
-var Jr;
-var Yr = (_BackgroundView = class BackgroundView extends G {
-	constructor(..._args34) {
-		super(..._args34);
+Qr = __decorate$1([injectFromBase()], Qr);
+var $r;
+var ei = (_BackgroundView = class BackgroundView extends q {
+	constructor(..._args35) {
+		super(..._args35);
 		_defineProperty(this, "_background", void 0);
 	}
 	init() {
@@ -106172,12 +106389,12 @@ var Yr = (_BackgroundView = class BackgroundView extends G {
 		e ? this._background.play("EXIT_FS", 0, !1, "IDLE") : this._background.play("IDLE");
 	}
 	onResized(e) {
-		let { width: t, height: n, isPortrait: r } = this.mainUI.screenLayoutManager.screenParams, i = r ? t / n : n / t, a = i < Jr.BASIC_RATIO ? Jr.BASIC_RATIO / i : 1;
+		let { width: t, height: n, isPortrait: r } = this.mainUI.screenLayoutManager.screenParams, i = r ? t / n : n / t, a = i < $r.BASIC_RATIO ? $r.BASIC_RATIO / i : 1;
 		this._background.spine.scale.set(a);
 	}
-}, Jr = _BackgroundView, _defineProperty(_BackgroundView, "BASIC_RATIO", .5625), _BackgroundView);
-Yr = Jr = __decorate$1([injectFromBase()], Yr);
-var Xr = class BackgroundModule extends P$2 {
+}, $r = _BackgroundView, _defineProperty(_BackgroundView, "BASIC_RATIO", .5625), _BackgroundView);
+ei = $r = __decorate$1([injectFromBase()], ei);
+var ti = class BackgroundModule extends L {
 	restore() {
 		super.restore(), this.gameData.isFreeSpinsStarted && this.restoreToFS();
 	}
@@ -106191,10 +106408,10 @@ var Xr = class BackgroundModule extends P$2 {
 		this.view.exitFS();
 	}
 };
-Xr = __decorate$1([injectFromBase()], Xr);
+ti = __decorate$1([injectFromBase()], ti);
 var Meter = class extends UpdateManager {
-	constructor(e, t = W.Linear.None, n) {
-		var _super15 = (..._args35) => (super(..._args35), _defineProperty(this, "_textObject", void 0), _defineProperty(this, "_tween", void 0), _defineProperty(this, "_valueWrapper", {
+	constructor(e, t = K.Linear.None, n) {
+		var _super15 = (..._args36) => (super(..._args36), _defineProperty(this, "_textObject", void 0), _defineProperty(this, "_tween", void 0), _defineProperty(this, "_valueWrapper", {
 			value: 0,
 			targetValue: 0
 		}), _defineProperty(this, "_formatter", void 0), this);
@@ -106235,8 +106452,8 @@ var Meter = class extends UpdateManager {
 	}
 };
 var WinMeter = class extends Meter {
-	constructor(e, t = W.Linear.None, n, r = 1) {
-		var _super16 = (..._args36) => (super(..._args36), _defineProperty(this, "_winText", void 0), _defineProperty(this, "_resolutionWidth", void 0), _defineProperty(this, "_resolutionPadding", 0), _defineProperty(this, "_autoFitWinNumbers", !0), this);
+	constructor(e, t = K.Linear.None, n, r = 1) {
+		var _super16 = (..._args37) => (super(..._args37), _defineProperty(this, "_winText", void 0), _defineProperty(this, "_resolutionWidth", void 0), _defineProperty(this, "_resolutionPadding", 0), _defineProperty(this, "_autoFitWinNumbers", !0), this);
 		_super16(null, t, n), this._winText = e, this._winText.scale.set(r);
 	}
 	forceUpdate() {
@@ -106271,9 +106488,9 @@ var WinMeter = class extends Meter {
 		this._resolutionPadding = e;
 	}
 };
-var Zr = (_AtlasNumbers = class AtlasNumbers extends import_lib.Container {
+var ni = (_AtlasNumbers = class AtlasNumbers extends import_lib.Container {
 	constructor(e, t, n = "NUMBERS.json", i) {
-		var _super17 = (..._args37) => (super(..._args37), _defineProperty(this, "_resources", void 0), _defineProperty(this, "_numbersContainer", void 0), _defineProperty(this, "_numberKerning", 0), _defineProperty(this, "_autoCenterMyself", !0), _defineProperty(this, "_numberAnchor", void 0), _defineProperty(this, "_tintValue", 16777215), _defineProperty(this, "_shouldTintNumbers", void 0), _defineProperty(this, "_shouldAddShadow", !1), _defineProperty(this, "_shadowTint", 0), _defineProperty(this, "_shadowOffset", {
+		var _super17 = (..._args38) => (super(..._args38), _defineProperty(this, "_resources", void 0), _defineProperty(this, "_numbersContainer", void 0), _defineProperty(this, "_numberKerning", 0), _defineProperty(this, "_autoCenterMyself", !0), _defineProperty(this, "_numberAnchor", void 0), _defineProperty(this, "_tintValue", 16777215), _defineProperty(this, "_shouldTintNumbers", void 0), _defineProperty(this, "_shouldAddShadow", !1), _defineProperty(this, "_shadowTint", 0), _defineProperty(this, "_shadowOffset", {
 			x: 0,
 			y: .15
 		}), _defineProperty(this, "_additionalOffset", 0), _defineProperty(this, "_commaAdditionalOffset", 0), _defineProperty(this, "_currentText", void 0), _defineProperty(this, "_numberBlendMode", "inherit"), _defineProperty(this, "_symbolIDPrefix", void 0), _defineProperty(this, "_atlas", void 0), this);
@@ -106321,7 +106538,7 @@ var Zr = (_AtlasNumbers = class AtlasNumbers extends import_lib.Container {
 		return t.width = this._resources.getSpriteSheetTexture(this._atlas, `${this._symbolIDPrefix}DOT.png`).width, t;
 	}
 	validatePrefix(e) {
-		this._resources.hasSpriteSpriteSheetTexture(this._atlas, `${e}0.png`) || E$1.error(`${this._atlas}: No resource found: ${e}0.png`);
+		this._resources.hasSpriteSpriteSheetTexture(this._atlas, `${e}0.png`) || A.error(`${this._atlas}: No resource found: ${e}0.png`);
 	}
 	static isValidCharacter(e) {
 		return AtlasNumbers.characterImageMap[e] !== void 0;
@@ -106406,10 +106623,10 @@ var Zr = (_AtlasNumbers = class AtlasNumbers extends import_lib.Container {
 	["=", "EQUALSIGN"],
 	["%", "PCT"]
 ])), _AtlasNumbers);
-var Qr;
-var X$1 = (_BigWinView = class BigWinView extends G {
-	constructor(..._args38) {
-		super(..._args38);
+var ri;
+var ii = (_BigWinView = class BigWinView extends q {
+	constructor(..._args39) {
+		super(..._args39);
 		_defineProperty(this, "_meter", void 0);
 		_defineProperty(this, "_currentWin", void 0);
 		_defineProperty(this, "_bigWinLevel", void 0);
@@ -106439,7 +106656,7 @@ var X$1 = (_BigWinView = class BigWinView extends G {
 	}
 	setupQuickstopContainer() {
 		this._skipCover = new import_lib.Container();
-		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, w$1, T).fill(16711680);
+		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, O$1, k).fill(16711680);
 		this._skipCover.pivot.set(960, 960), this._skipCover.addChild(e), this._skipCover.interactive = !0, this._skipCover.onclick = () => {
 			this._isPlayingEndingEnd || this.skip();
 		}, this._skipCover.ontap = () => {
@@ -106453,7 +106670,7 @@ var X$1 = (_BigWinView = class BigWinView extends G {
 		this._transitionTimer && (this._transitionTimer = (this._transitionTimer.stop(), null)), this._finishingTimer && (this._finishingTimer = (this._finishingTimer.stop(), null));
 	}
 	startForCheats(e, t) {
-		this.killAllAnimations(), this._currentWin = e, this._bigWinLevel = t, this._currentLevel = t, this._isPlayingEndingEnd = !1, this.show(), this._meter = new WinMeter(this._winNumber, W.Cubic.Out, this.currencyFormatter), this._meter.onCompleteCallback = this.onMeterFinished.bind(this), this._meter.from(0).to(e, 2e3), this._meter.resolutionWidth = this.resolutionManager.resolution.width, this.startInitialAnimations(), this.showNumber("0"), this.startCounting(), this.addMeterInto();
+		this.killAllAnimations(), this._currentWin = e, this._bigWinLevel = t, this._currentLevel = t, this._isPlayingEndingEnd = !1, this.show(), this._meter = new WinMeter(this._winNumber, K.Cubic.Out, this.currencyFormatter), this._meter.onCompleteCallback = this.onMeterFinished.bind(this), this._meter.from(0).to(e, 2e3), this._meter.resolutionWidth = this.resolutionManager.resolution.width, this.startInitialAnimations(), this.showNumber("0"), this.startCounting(), this.addMeterInto();
 	}
 	start(e, t, n = 0, r = !1) {
 		this.killAllAnimations(), this._currentWin = e, this._bigWinLevel = t, this._currentLevel = 1, this._isPlayingEndingEnd = !1, this.show(), this.initMeter(e, n), this.startInitialAnimations(r), this.addMeterInto(), this.showSkipCover();
@@ -106467,7 +106684,7 @@ var X$1 = (_BigWinView = class BigWinView extends G {
 			let e = _this20.getFlashConfig();
 			yield _this20.timeUtils.createTimer(null, e.initialDelay).getPromise();
 			let t = _this20._winNumber.clone(!0), r = _this20._winNumber.clone(!0), i = _this20._winNumber.clone(!0);
-			t.zIndex = 10, r.zIndex = 10, i.zIndex = 5, er.fadeInTween(t, _this20.updateManager, e.flash1.fadeIn), er.fadeInTween(r, _this20.updateManager, e.flash2.fadeIn), er.fadeInTween(i, _this20.updateManager, e.flash3.fadeIn), yield _this20.timeUtils.createTimer(null, e.secondDelay).getPromise(), t.setBlendMode("add"), r.setBlendMode("add");
+			t.zIndex = 10, r.zIndex = 10, i.zIndex = 5, Zn.fadeInTween(t, _this20.updateManager, e.flash1.fadeIn), Zn.fadeInTween(r, _this20.updateManager, e.flash2.fadeIn), Zn.fadeInTween(i, _this20.updateManager, e.flash3.fadeIn), yield _this20.timeUtils.createTimer(null, e.secondDelay).getPromise(), t.setBlendMode("add"), r.setBlendMode("add");
 			let a = new import_lib.BlurFilter({
 				strength: 16,
 				quality: 4
@@ -106477,11 +106694,11 @@ var X$1 = (_BigWinView = class BigWinView extends G {
 				strength: 6,
 				quality: 4
 			});
-			o.blendMode = "add", i.filters = [a], r.filters = [o], _this20.getMainAnimationContainer().addChild(i, t, r), er.explodeTween(i, _this20.updateManager, e.flash1.duration, e.flash1.scale)[0].onComplete(() => {
+			o.blendMode = "add", i.filters = [a], r.filters = [o], _this20.getMainAnimationContainer().addChild(i, t, r), Zn.explodeTween(i, _this20.updateManager, e.flash1.duration, e.flash1.scale)[0].onComplete(() => {
 				i.removeFromParent();
-			}), er.explodeTween(t, _this20.updateManager, e.flash2.duration, e.flash2.scale)[0].onComplete(() => {
+			}), Zn.explodeTween(t, _this20.updateManager, e.flash2.duration, e.flash2.scale)[0].onComplete(() => {
 				t.removeFromParent();
-			}), er.explodeTween(r, _this20.updateManager, e.flash3.duration, e.flash3.scale)[0].onComplete(() => {
+			}), Zn.explodeTween(r, _this20.updateManager, e.flash3.duration, e.flash3.scale)[0].onComplete(() => {
 				r.removeFromParent();
 			});
 		})();
@@ -106493,8 +106710,8 @@ var X$1 = (_BigWinView = class BigWinView extends G {
 		this.hideSkipCover(), this._finishingTimer && (this._finishingTimer = (this.updateManager.remove(this._finishingTimer), this._finishingTimer.stop(), null)), this._hasFinishedBigWinsExitAnimation = !1, this.killCurrentAnimation(), this.killEffectsAnimations(), this._currentAnimation = this.spineUtils.startSpineAnimationCreation("BIG_WINS.json", `EXIT${this.getCurrentLevelAnimationPostfix()}`, !1).container(this.getMainAnimationContainer()).onComplete(() => {
 			this.killCurrentAnimation(), this._hasFinishedBigWinsExitAnimation = !0, this.tryEmitBigWinFinished();
 		}).onEvent("COINS_END", () => {
-			this.emit(Qr.COINS_END);
-		}).createAndStart(), this.playEndingEndAnimationEffects(), this._isPlayingEndingEnd = !0, this.emit(Qr.END_ANIMATION_STARTED);
+			this.emit(ri.COINS_END);
+		}).createAndStart(), this.playEndingEndAnimationEffects(), this._isPlayingEndingEnd = !0, this.emit(ri.END_ANIMATION_STARTED);
 	}
 	startCounting() {
 		this._meter.start(), this.updateManager.add(this._meter);
@@ -106524,7 +106741,7 @@ var X$1 = (_BigWinView = class BigWinView extends G {
 		};
 	}
 	tryEmitBigWinFinished() {
-		this.isAllBigWinEndingAnimationsDone() && this.emit(Qr.END_ANIMATION_FINISHED);
+		this.isAllBigWinEndingAnimationsDone() && this.emit(ri.END_ANIMATION_FINISHED);
 	}
 	isAllBigWinEndingAnimationsDone() {
 		return this._hasFinishedBigWinsExitAnimation;
@@ -106540,7 +106757,7 @@ var X$1 = (_BigWinView = class BigWinView extends G {
 	}
 	setupWinNumber() {
 		let e = this.getFontSize(this.device.isMobile);
-		this._winNumber = new Zr(this.assets, e), this._winNumber.numberKerning = this.getBigWinNumberKerning(), this.container.addChild(this._winNumber);
+		this._winNumber = new ni(this.assets, e), this._winNumber.numberKerning = this.getBigWinNumberKerning(), this.container.addChild(this._winNumber);
 	}
 	getBigWinNumberKerning() {
 		return this.getConfigValue(this.device.isMobile ? "bigwin.numberKerningMobile" : "bigwin.numberKerning", 0);
@@ -106558,8 +106775,8 @@ var X$1 = (_BigWinView = class BigWinView extends G {
 		}).onEvent("START_COUNTUP", () => {
 			this.showNumber("0"), this.startCounting();
 		}).onEvent("COINS_START", () => {
-			this.emit(Qr.COINS_START);
-		}).createAndStart(), this.startInitialAnimationsEffects(e), this.emit(Qr.BIG_WIN_STARTED);
+			this.emit(ri.COINS_START);
+		}).createAndStart(), this.startInitialAnimationsEffects(e), this.emit(ri.BIG_WIN_STARTED);
 	}
 	startInitialAnimationsEffects(e = !1) {
 		let t = this.spineUtils.startSpineAnimationCreation("BIG_WINS_EFFECT.json", e ? "START_MULTIPLIER" : "START", !1).chainIdleAnimation(`IDLE${this.getCurrentLevelAnimationPostfix()}`).container(this.getEffectContainer()).createAndStart();
@@ -106589,7 +106806,7 @@ var X$1 = (_BigWinView = class BigWinView extends G {
 			case 2: return this.getSuperWinCountingEasing();
 			case 3: return this.getMegaWinCountingEasing();
 			case 4: return this.getEpicWinCountingEasing();
-			default: return W.Linear.None;
+			default: return K.Linear.None;
 		}
 	}
 	getCountingTime() {
@@ -106614,28 +106831,28 @@ var X$1 = (_BigWinView = class BigWinView extends G {
 		return this.getConfigValue("bigwin.epicCountingTime", 18e3);
 	}
 	getBigWinCountingEasing() {
-		return this.getConfigValue("bigwin.countingEasing", W.Linear.None);
+		return this.getConfigValue("bigwin.countingEasing", K.Linear.None);
 	}
 	getSuperWinCountingEasing() {
-		return this.getConfigValue("bigwin.superCountingEasing", W.Linear.None);
+		return this.getConfigValue("bigwin.superCountingEasing", K.Linear.None);
 	}
 	getMegaWinCountingEasing() {
-		return this.getConfigValue("bigwin.megaCountingEasing", W.Linear.None);
+		return this.getConfigValue("bigwin.megaCountingEasing", K.Linear.None);
 	}
 	getEpicWinCountingEasing() {
-		return this.getConfigValue("bigwin.epicCountingEasing", W.Linear.None);
+		return this.getConfigValue("bigwin.epicCountingEasing", K.Linear.None);
 	}
 	onMeterFinished() {
-		this.emit(Qr.METER_FINISHED), this.emit(Qr.EXPLOSION_STARTED), this.startFinishingTimer();
+		this.emit(ri.METER_FINISHED), this.emit(ri.EXPLOSION_STARTED), this.startFinishingTimer();
 	}
 	startFinishingTimer() {
 		this._finishingTimer = new Timer(() => {
 			this._isPlayingEndingEnd || this.playEndingEndAnimation();
-		}, Qr.FINISHING_TIMER_VALUE, !0), this.updateManager.add(this._finishingTimer);
+		}, ri.FINISHING_TIMER_VALUE, !0), this.updateManager.add(this._finishingTimer);
 	}
 	playBigWinLoop() {
 		this.addMeterInto(), this._currentLevel < this._bigWinLevel && (this._transitionTimer = new Timer(() => {
-			this.playTransitionToNextLevel(), this.emit(Qr.TRANSITION_STARTED, this._currentLevel);
+			this.playTransitionToNextLevel(), this.emit(ri.TRANSITION_STARTED, this._currentLevel);
 		}, this.getTimerValueUntilNextLevel(), !0), this.updateManager.add(this._transitionTimer));
 	}
 	getTimerValueUntilNextLevel() {
@@ -106673,16 +106890,16 @@ var X$1 = (_BigWinView = class BigWinView extends G {
 		for (let e of this._effectAnimation) this.spineUtils.stopAndDestroyAnimation(e);
 		this._effectAnimation = [];
 	}
-}, Qr = _BigWinView, _defineProperty(_BigWinView, "FINISHING_TIMER_VALUE", 3e3), _defineProperty(_BigWinView, "METER_FINISHED", "BigWinView::METER_FINISHED"), _defineProperty(_BigWinView, "END_ANIMATION_FINISHED", "BigWinView::END_ANIMATION_FINISHED"), _defineProperty(_BigWinView, "END_ANIMATION_STARTED", "BigWinView::END_ANIMATION_STARTED"), _defineProperty(_BigWinView, "SKIP_CLICKED", "BigWinView::SKIP_CLICKED"), _defineProperty(_BigWinView, "EXPLOSION_STARTED", "BigWinView::EXPLOSION_START"), _defineProperty(_BigWinView, "BIG_WIN_STARTED", "BigWinView::BIG_WIN_START"), _defineProperty(_BigWinView, "TRANSITION_STARTED", "BigWinView::TRANSITION_START"), _defineProperty(_BigWinView, "TRANSITION_ENDED", "BigWinView::TRANSITION_END"), _defineProperty(_BigWinView, "COINS_START", "BigWinView::COINS_START"), _defineProperty(_BigWinView, "COINS_END", "BigWinView::COINS_END"), _defineProperty(_BigWinView, "START_COUNTUP", "BigWinView::START_COUNTUP"), _BigWinView);
-X$1 = Qr = __decorate$1([injectFromBase()], X$1);
-var $r = class BigWinModule extends P$2 {
+}, ri = _BigWinView, _defineProperty(_BigWinView, "FINISHING_TIMER_VALUE", 3e3), _defineProperty(_BigWinView, "METER_FINISHED", "BigWinView::METER_FINISHED"), _defineProperty(_BigWinView, "END_ANIMATION_FINISHED", "BigWinView::END_ANIMATION_FINISHED"), _defineProperty(_BigWinView, "END_ANIMATION_STARTED", "BigWinView::END_ANIMATION_STARTED"), _defineProperty(_BigWinView, "SKIP_CLICKED", "BigWinView::SKIP_CLICKED"), _defineProperty(_BigWinView, "EXPLOSION_STARTED", "BigWinView::EXPLOSION_START"), _defineProperty(_BigWinView, "BIG_WIN_STARTED", "BigWinView::BIG_WIN_START"), _defineProperty(_BigWinView, "TRANSITION_STARTED", "BigWinView::TRANSITION_START"), _defineProperty(_BigWinView, "TRANSITION_ENDED", "BigWinView::TRANSITION_END"), _defineProperty(_BigWinView, "COINS_START", "BigWinView::COINS_START"), _defineProperty(_BigWinView, "COINS_END", "BigWinView::COINS_END"), _defineProperty(_BigWinView, "START_COUNTUP", "BigWinView::START_COUNTUP"), _BigWinView);
+ii = ri = __decorate$1([injectFromBase()], ii);
+var ai = class BigWinModule extends L {
 	play(e) {
 		this.emit(BigWinEvents.ON_BEFORE_BIG_WIN), this.timeUtils.createTimer(() => {
 			this.view.start(e, this.getBigWinLevelFromWinNumber(e)), this.emit(BigWinEvents.STARTED), this.emit(BigWinEvents.COUNTUP_STARTED);
 		}, this.getBeforeBigWinPause());
 	}
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(X$1.EXPLOSION_STARTED, BigWinEvents.EXPLOSION_STARTED), this.onViewEmitEvent(X$1.TRANSITION_STARTED, BigWinEvents.TRANSITION_STARTED), this.onViewEmitEvent(X$1.BIG_WIN_STARTED, BigWinEvents.BIG_WIN_STARTED), this.onViewEmitEvent(X$1.TRANSITION_ENDED, BigWinEvents.TRANSITION_ENDED), this.onViewEmitEvent(X$1.END_ANIMATION_STARTED, BigWinEvents.END_ANIMATION_STARTED), this.onViewEmitEvent(X$1.COINS_START, BigWinEvents.COINS_START), this.onViewEmitEvent(X$1.COINS_END, BigWinEvents.COINS_END), this.onViewEmitEvent(X$1.START_COUNTUP, BigWinEvents.START_COUNTING), this.onViewEmitEvent(X$1.SKIP_CLICKED, BigWinEvents.SKIP_CLICKED), this.onView(X$1.METER_FINISHED, this.onMeterFinished), this.onView(X$1.END_ANIMATION_FINISHED, this.onEndAnimationFinished);
+		super.setupEvents(), this.onViewEmitEvent(ii.EXPLOSION_STARTED, BigWinEvents.EXPLOSION_STARTED), this.onViewEmitEvent(ii.TRANSITION_STARTED, BigWinEvents.TRANSITION_STARTED), this.onViewEmitEvent(ii.BIG_WIN_STARTED, BigWinEvents.BIG_WIN_STARTED), this.onViewEmitEvent(ii.TRANSITION_ENDED, BigWinEvents.TRANSITION_ENDED), this.onViewEmitEvent(ii.END_ANIMATION_STARTED, BigWinEvents.END_ANIMATION_STARTED), this.onViewEmitEvent(ii.COINS_START, BigWinEvents.COINS_START), this.onViewEmitEvent(ii.COINS_END, BigWinEvents.COINS_END), this.onViewEmitEvent(ii.START_COUNTUP, BigWinEvents.START_COUNTING), this.onViewEmitEvent(ii.SKIP_CLICKED, BigWinEvents.SKIP_CLICKED), this.onView(ii.METER_FINISHED, this.onMeterFinished), this.onView(ii.END_ANIMATION_FINISHED, this.onEndAnimationFinished);
 	}
 	onMeterFinished() {
 		this.emit(BigWinEvents.COUNTUP_FINISHED), this.view.playBigWinEnd();
@@ -106694,10 +106911,10 @@ var $r = class BigWinModule extends P$2 {
 		return this.getConfigValue("bigwin.beforePause", 800);
 	}
 	getBigWinLevelFromWinNumber(e) {
-		return e >= this.gameData.getTotalBet() * O$1.EPIC_WIN_THRESHOLD ? 4 : e >= this.gameData.getTotalBet() * O$1.MEGA_WIN_THRESHOLD && e < this.gameData.getTotalBet() * O$1.EPIC_WIN_THRESHOLD ? 3 : e >= this.gameData.getTotalBet() * O$1.SUPER_WIN_THRESHOLD && e < this.gameData.getTotalBet() * O$1.MEGA_WIN_THRESHOLD ? 2 : 1;
+		return e >= this.gameData.getTotalBet() * M$1.EPIC_WIN_THRESHOLD ? 4 : e >= this.gameData.getTotalBet() * M$1.MEGA_WIN_THRESHOLD && e < this.gameData.getTotalBet() * M$1.EPIC_WIN_THRESHOLD ? 3 : e >= this.gameData.getTotalBet() * M$1.SUPER_WIN_THRESHOLD && e < this.gameData.getTotalBet() * M$1.MEGA_WIN_THRESHOLD ? 2 : 1;
 	}
 };
-$r = __decorate$1([injectFromBase()], $r);
+ai = __decorate$1([injectFromBase()], ai);
 function parseCheatGroups(e) {
 	if (!e || typeof e != "object") return [];
 	let t = [];
@@ -106715,19 +106932,19 @@ function parseCheatGroups(e) {
 	}
 	return t;
 }
-var ei = /* @__PURE__ */ from_html("<span class=\"p-active-tag svelte-n033qi\"><span class=\"p-active-pip svelte-n033qi\"></span> <span class=\"p-active-name svelte-n033qi\"> </span></span>");
-var ti = /* @__PURE__ */ from_html("<div role=\"radio\" tabindex=\"0\"><span class=\"p-radio svelte-n033qi\" aria-hidden=\"true\"></span> <span class=\"p-cheat-name svelte-n033qi\"> </span></div>");
-var ni = /* @__PURE__ */ from_html("<div class=\"p-group-body svelte-n033qi\"></div>");
-var ri = /* @__PURE__ */ from_html("<div class=\"p-group svelte-n033qi\"><button class=\"p-group-head svelte-n033qi\"><span><svg width=\"12\" height=\"12\" viewBox=\"0 0 16 16\"><path d=\"M4 6l4 4 4-4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></span> <span class=\"p-group-name svelte-n033qi\"> </span> <span class=\"p-group-count svelte-n033qi\"> </span> <!></button> <!></div>");
-var ii = /* @__PURE__ */ from_html("<div class=\"p-empty svelte-n033qi\"> </div>");
-var ai = /* @__PURE__ */ from_html("<div class=\"p-foot-math svelte-n033qi\"> </div>");
-var oi = /* @__PURE__ */ from_html("<div class=\"p-panel svelte-n033qi\"><div class=\"p-head svelte-n033qi\"><div class=\"p-title svelte-n033qi\"><span class=\"p-dot svelte-n033qi\"></span> <span>Cheats</span></div> <label class=\"p-search svelte-n033qi\"><svg width=\"13\" height=\"13\" viewBox=\"0 0 16 16\" aria-hidden=\"true\"><circle cx=\"7\" cy=\"7\" r=\"4.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"></circle><path d=\"M10.5 10.5L14 14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg> <input placeholder=\"Search…\" class=\"svelte-n033qi\"/> <kbd class=\"svelte-n033qi\">/</kbd></label> <div class=\"p-btngroup svelte-n033qi\"><button class=\"p-iconbtn svelte-n033qi\" title=\"Expand all\" aria-label=\"Expand all\"><svg width=\"11\" height=\"11\" viewBox=\"0 0 16 16\"><path d=\"M5 4l3-3 3 3M5 12l3 3 3-3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button> <button class=\"p-iconbtn svelte-n033qi\" title=\"Collapse all\" aria-label=\"Collapse all\"><svg width=\"11\" height=\"11\" viewBox=\"0 0 16 16\"><path d=\"M5 3l3 3 3-3M5 13l3-3 3 3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button></div></div> <div class=\"p-list svelte-n033qi\"><!> <!></div> <div class=\"p-foot svelte-n033qi\"><div class=\"p-foot-status svelte-n033qi\"><div class=\"p-foot-line svelte-n033qi\"><span></span> <span class=\"p-foot-label svelte-n033qi\">APPLIED</span> <span class=\"p-foot-value svelte-n033qi\"> </span></div> <!></div> <div class=\"p-foot-actions svelte-n033qi\"><button class=\"p-btn svelte-n033qi\">Reset</button></div></div></div>");
-var si = {
+var oi = /* @__PURE__ */ from_html("<span class=\"p-active-tag svelte-n033qi\"><span class=\"p-active-pip svelte-n033qi\"></span> <span class=\"p-active-name svelte-n033qi\"> </span></span>");
+var si = /* @__PURE__ */ from_html("<div role=\"radio\" tabindex=\"0\"><span class=\"p-radio svelte-n033qi\" aria-hidden=\"true\"></span> <span class=\"p-cheat-name svelte-n033qi\"> </span></div>");
+var ci = /* @__PURE__ */ from_html("<div class=\"p-group-body svelte-n033qi\"></div>");
+var li = /* @__PURE__ */ from_html("<div class=\"p-group svelte-n033qi\"><button class=\"p-group-head svelte-n033qi\"><span><svg width=\"12\" height=\"12\" viewBox=\"0 0 16 16\"><path d=\"M4 6l4 4 4-4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></span> <span class=\"p-group-name svelte-n033qi\"> </span> <span class=\"p-group-count svelte-n033qi\"> </span> <!></button> <!></div>");
+var ui = /* @__PURE__ */ from_html("<div class=\"p-empty svelte-n033qi\"> </div>");
+var di = /* @__PURE__ */ from_html("<div class=\"p-foot-math svelte-n033qi\"> </div>");
+var fi = /* @__PURE__ */ from_html("<div class=\"p-panel svelte-n033qi\"><div class=\"p-head svelte-n033qi\"><div class=\"p-title svelte-n033qi\"><span class=\"p-dot svelte-n033qi\"></span> <span>Cheats</span></div> <label class=\"p-search svelte-n033qi\"><svg width=\"13\" height=\"13\" viewBox=\"0 0 16 16\" aria-hidden=\"true\"><circle cx=\"7\" cy=\"7\" r=\"4.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"></circle><path d=\"M10.5 10.5L14 14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg> <input placeholder=\"Search…\" class=\"svelte-n033qi\"/> <kbd class=\"svelte-n033qi\">/</kbd></label> <div class=\"p-btngroup svelte-n033qi\"><button class=\"p-iconbtn svelte-n033qi\" title=\"Expand all\" aria-label=\"Expand all\"><svg width=\"11\" height=\"11\" viewBox=\"0 0 16 16\"><path d=\"M5 4l3-3 3 3M5 12l3 3 3-3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button> <button class=\"p-iconbtn svelte-n033qi\" title=\"Collapse all\" aria-label=\"Collapse all\"><svg width=\"11\" height=\"11\" viewBox=\"0 0 16 16\"><path d=\"M5 3l3 3 3-3M5 13l3-3 3 3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button></div></div> <div class=\"p-list svelte-n033qi\"><!> <!></div> <div class=\"p-foot svelte-n033qi\"><div class=\"p-foot-status svelte-n033qi\"><div class=\"p-foot-line svelte-n033qi\"><span></span> <span class=\"p-foot-label svelte-n033qi\">APPLIED</span> <span class=\"p-foot-value svelte-n033qi\"> </span></div> <!></div> <div class=\"p-foot-actions svelte-n033qi\"><button class=\"p-btn svelte-n033qi\">Reset</button></div></div></div>");
+var pi = {
 	hash: "svelte-n033qi",
 	code: ".p-panel.svelte-n033qi {--bg: rgb(20, 22, 26);--bg-input: rgb(26, 29, 34);--border: rgb(38, 42, 49);--text: rgb(230, 232, 235);--muted: rgb(110, 116, 128);--foot: rgb(164, 169, 179);--accent: rgb(16, 185, 129);--active-bg: rgb(28, 42, 37);--active-text: rgb(52, 211, 153);position:fixed;top:0;left:0;z-index:99999;display:flex;flex-direction:column;width:300px;height:100vh;background:var(--bg);border-right:1px solid var(--border);box-shadow:6px 0 24px rgba(0, 0, 0, 0.5);color:var(--text);font-family:Geist, system-ui, -apple-system, sans-serif;font-size:16px;overflow:hidden;user-select:none;}.p-head.svelte-n033qi {display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--border);}.p-title.svelte-n033qi {display:flex;align-items:center;gap:6px;font-weight:600;white-space:nowrap;}.p-dot.svelte-n033qi {width:7px;height:7px;border-radius:50%;background:var(--accent);}.p-search.svelte-n033qi {display:flex;align-items:center;gap:6px;flex:1;min-width:0;padding:5px 8px;background:var(--bg-input);border:1px solid var(--border);border-radius:7px;color:var(--muted);}.p-search.svelte-n033qi input:where(.svelte-n033qi) {flex:1;min-width:0;background:none;border:none;outline:none;color:var(--text);font:inherit;}.p-search.svelte-n033qi input:where(.svelte-n033qi)::placeholder {color:var(--muted);}.p-search.svelte-n033qi kbd:where(.svelte-n033qi) {font:inherit;font-size:13px;font-weight:500;line-height:1;color:var(--muted);background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:2px 5px;}.p-btngroup.svelte-n033qi {display:flex;gap:4px;}.p-iconbtn.svelte-n033qi {display:flex;align-items:center;justify-content:center;width:24px;height:24px;background:var(--bg-input);border:1px solid var(--border);border-radius:6px;color:var(--muted);cursor:pointer;}.p-iconbtn.svelte-n033qi:hover {color:var(--text);}.p-list.svelte-n033qi {flex:1;overflow-y:auto;padding:6px;}.p-group.svelte-n033qi {margin-bottom:4px;}.p-group-head.svelte-n033qi {display:flex;align-items:center;gap:6px;width:100%;padding:5px 8px;background:none;border:none;color:var(--text);font:inherit;font-size:15px;font-weight:600;cursor:pointer;border-radius:6px;}.p-group-head.svelte-n033qi:hover {background:rgba(255, 255, 255, 0.03);}.p-chevron.svelte-n033qi {display:flex;color:var(--muted);transition:transform 0.12s ease;transform:rotate(-90deg);}.p-chevron.open.svelte-n033qi {transform:none;}.p-group-name.svelte-n033qi {flex:0 0 auto;}.p-group-count.svelte-n033qi {color:var(--muted);font-size:14px;font-weight:400;}.p-active-tag.svelte-n033qi {display:flex;align-items:center;gap:5px;margin-left:auto;max-width:45%;color:var(--active-text);font-size:14px;font-weight:500;overflow:hidden;}.p-active-name.svelte-n033qi {min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}.p-active-pip.svelte-n033qi,\n	.p-foot-pip.svelte-n033qi {flex:none;width:6px;height:6px;border-radius:50%;}.p-active-pip.svelte-n033qi {background:var(--accent);}.p-group-body.svelte-n033qi {display:flex;flex-direction:column;padding:2px 0 4px 6px;}.p-row.svelte-n033qi {display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:6px;cursor:pointer;outline:none;}.p-row.svelte-n033qi:hover {background:rgba(255, 255, 255, 0.04);}.p-row.active.svelte-n033qi {background:var(--active-bg);color:var(--active-text);}.p-row.svelte-n033qi:focus-visible {box-shadow:inset 0 0 0 1px var(--accent);}.p-radio.svelte-n033qi {flex:none;width:8px;height:8px;border-radius:50%;border:1.5px solid var(--muted);}.p-row.active.svelte-n033qi .p-radio:where(.svelte-n033qi) {border-color:var(--accent);background:radial-gradient(circle, var(--accent) 0 2px, transparent 2.5px);}.p-cheat-name.svelte-n033qi {font-size:15px;}.p-empty.svelte-n033qi {padding:24px 12px;text-align:center;color:var(--muted);}.p-foot.svelte-n033qi {display:flex;align-items:center;gap:8px;padding:10px 12px;border-top:1px solid var(--border);}.p-foot-status.svelte-n033qi {display:flex;flex-direction:column;gap:2px;flex:1;min-width:0;color:var(--foot);font-size:15px;}.p-foot-line.svelte-n033qi {display:flex;align-items:center;gap:6px;min-width:0;}.p-foot-pip.svelte-n033qi {background:var(--muted);}.p-foot-pip.on.svelte-n033qi {background:var(--accent);}.p-foot-label.svelte-n033qi {flex:none;color:var(--muted);font-size:13px;font-weight:700;letter-spacing:0.08em;}.p-foot-value.svelte-n033qi {flex:1;min-width:0;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}.p-foot-math.svelte-n033qi {color:var(--muted);font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}.p-foot-actions.svelte-n033qi {display:flex;gap:6px;}.p-btn.svelte-n033qi {padding:6px 12px;background:var(--bg-input);border:1px solid var(--border);border-radius:7px;color:var(--text);font:inherit;font-weight:500;cursor:pointer;}.p-btn.svelte-n033qi:hover:not(:disabled) {border-color:var(--muted);}.p-btn.svelte-n033qi:disabled {opacity:0.4;cursor:not-allowed;}"
 };
 function CheatPanel(e, t) {
-	push(t, !0), append_styles$1(e, si);
+	push(t, !0), append_styles$1(e, pi);
 	let n = /* @__PURE__ */ state("");
 	let r = proxy({});
 	let i = /* @__PURE__ */ state(null);
@@ -106761,13 +106978,13 @@ function CheatPanel(e, t) {
 		t.host.reset();
 	}
 	function onKeydown(e) {
-		var _get3;
+		var _get5;
 		let t = e.target;
 		let n = (t === null || t === void 0 ? void 0 : t.tagName) === "INPUT" || (t === null || t === void 0 ? void 0 : t.tagName) === "TEXTAREA";
-		e.key === "/" && !n && (e.preventDefault(), (_get3 = get(o)) === null || _get3 === void 0 || _get3.focus());
+		e.key === "/" && !n && (e.preventDefault(), (_get5 = get(o)) === null || _get5 === void 0 || _get5.focus());
 	}
-	var u = oi();
-	event("keydown", gn, onKeydown);
+	var u = fi();
+	event("keydown", pn, onKeydown);
 	var d = child(u);
 	var f = sibling(child(d), 2);
 	var p = sibling(child(f), 2);
@@ -106781,7 +106998,7 @@ function CheatPanel(e, t) {
 	each(v, 17, () => get(c), (e) => e.name, (e, t) => {
 		let n = /* @__PURE__ */ user_derived(() => isExpanded(get(t).name));
 		let r = /* @__PURE__ */ user_derived(() => get(i) !== null && get(t).cheats.some((e) => e.name === get(i)));
-		var a = ri();
+		var a = li();
 		var o = child(a);
 		var s = child(o);
 		let c;
@@ -106793,7 +107010,7 @@ function CheatPanel(e, t) {
 		reset(d);
 		var p = sibling(d, 2);
 		var consequent = (e) => {
-			var t = ei(), n = sibling(child(t), 2), r = child(n, !0);
+			var t = oi(), n = sibling(child(t), 2), r = child(n, !0);
 			reset(n), reset(t), template_effect(() => {
 				set_attribute(t, "title", `Active: ${get(i)}`), set_text(r, get(i));
 			}), append(e, t);
@@ -106803,9 +107020,9 @@ function CheatPanel(e, t) {
 		}), reset(o);
 		var m = sibling(o, 2);
 		var consequent_1 = (e) => {
-			var n = ni();
+			var n = ci();
 			each(n, 21, () => get(t).cheats, (e) => e.name, (e, t) => {
-				var n = ti();
+				var n = si();
 				let r;
 				var a = sibling(child(n), 2), o = child(a, !0);
 				reset(a), reset(n), template_effect(() => {
@@ -106821,45 +107038,45 @@ function CheatPanel(e, t) {
 	});
 	var y = sibling(v, 2);
 	var consequent_2 = (e) => {
-		var t = ii(), r = child(t);
+		var t = ui(), r = child(t);
 		reset(t), template_effect(() => {
-			var _get4;
-			return set_text(r, `No cheats match “${(_get4 = get(n)) !== null && _get4 !== void 0 ? _get4 : ""}”.`);
+			var _get6;
+			return set_text(r, `No cheats match “${(_get6 = get(n)) !== null && _get6 !== void 0 ? _get6 : ""}”.`);
 		}), append(e, t);
 	};
 	if_block(y, (e) => {
 		get(c).length === 0 && e(consequent_2);
 	}), reset(_);
 	var b = sibling(_, 2);
-	var ee = child(b);
-	var x = child(ee);
+	var x = child(b);
 	var S = child(x);
-	let te;
-	var ne = sibling(S, 4);
-	var C = child(ne, !0);
-	reset(ne), reset(x);
-	var re = sibling(x, 2);
+	var C = child(S);
+	let w;
+	var T = sibling(C, 4);
+	var E = child(T, !0);
+	reset(T), reset(S);
+	var ee = sibling(S, 2);
 	var consequent_3 = (e) => {
-		var t = ai(), n = child(t);
+		var t = di(), n = child(t);
 		reset(t), template_effect(() => {
-			var _get5;
-			return set_text(n, `Math ${(_get5 = get(a)) !== null && _get5 !== void 0 ? _get5 : ""}`);
+			var _get7;
+			return set_text(n, `Math ${(_get7 = get(a)) !== null && _get7 !== void 0 ? _get7 : ""}`);
 		}), append(e, t);
 	};
-	if_block(re, (e) => {
+	if_block(ee, (e) => {
 		get(a) && e(consequent_3);
-	}), reset(ee);
-	var ie = sibling(ee, 2);
-	var ae = child(ie);
-	reset(ie), reset(b), reset(u), template_effect(() => {
-		var _get6;
-		te = set_class(S, 1, "p-foot-pip svelte-n033qi", null, te, { on: get(i) }), set_text(C, (_get6 = get(i)) !== null && _get6 !== void 0 ? _get6 : "—"), ae.disabled = !get(l);
-	}), bind_value(p, () => get(n), (e) => set(n, e)), delegated("click", h, () => setAll(!0)), delegated("click", g, () => setAll(!1)), delegated("click", ae, resetCheat), append(e, u), pop();
+	}), reset(x);
+	var te = sibling(x, 2);
+	var ne = child(te);
+	reset(te), reset(b), reset(u), template_effect(() => {
+		var _get8;
+		w = set_class(C, 1, "p-foot-pip svelte-n033qi", null, w, { on: get(i) }), set_text(E, (_get8 = get(i)) !== null && _get8 !== void 0 ? _get8 : "—"), ne.disabled = !get(l);
+	}), bind_value(p, () => get(n), (e) => set(n, e)), delegated("click", h, () => setAll(!0)), delegated("click", g, () => setAll(!1)), delegated("click", ne, resetCheat), append(e, u), pop();
 }
 delegate(["click", "keydown"]);
-var ci = class CheatModule extends P$2 {
-	constructor(..._args39) {
-		super(..._args39);
+var mi = class CheatModule extends L {
+	constructor(..._args40) {
+		super(..._args40);
 		_defineProperty(this, "_groups", []);
 		_defineProperty(this, "_appliedName", null);
 		_defineProperty(this, "_mathVersion", "");
@@ -106885,10 +107102,10 @@ var ci = class CheatModule extends P$2 {
 		return this._listeners.add(e), () => this._listeners.delete(e);
 	}
 	apply(e) {
-		this._appliedName = e.name, Ce$1.value = e.params, this.notify();
+		this._appliedName = e.name, ye$1.value = e.params, this.notify();
 	}
 	reset() {
-		this._appliedName = null, Ce$1.value = void 0, this.notify();
+		this._appliedName = null, ye$1.value = void 0, this.notify();
 	}
 	setMathVersion(e) {
 		this._mathVersion = e, this.notify();
@@ -106906,10 +107123,10 @@ var ci = class CheatModule extends P$2 {
 		e.code === "KeyC" && this._host.toggle();
 	}
 };
-ci = __decorate$1([injectFromBase()], ci);
-var li = class SoundController extends P$2 {
-	constructor(..._args40) {
-		super(..._args40);
+mi = __decorate$1([injectFromBase()], mi);
+var hi = class SoundController extends L {
+	constructor(..._args41) {
+		super(..._args41);
 		_defineProperty(this, "_soundPlayer", void 0);
 		_defineProperty(this, "_hudModule", void 0);
 		_defineProperty(this, "_menuModule", void 0);
@@ -106918,7 +107135,13 @@ var li = class SoundController extends P$2 {
 		super.restore(), this.gameData.isReplayMode && this.forceOffAnySounds();
 	}
 	init(e, t) {
-		super.init(e, t), this._hudModule = this.diContainer.get(Ei), this._hudModule.soundButtonStateSwitched = this.onButtonStateSwitched.bind(this), this._menuModule = this.diContainer.get(pa), this._menuModule.volumeChanged = this.onVolumeChanged.bind(this), this.setButtonStatus();
+		super.init(e, t), this.setupHUDModule(), this.setupMenuModule(), this.setButtonStatus();
+	}
+	setupHUDModule() {
+		this._hudModule = this.diContainer.get(Mi), this._hudModule.soundButtonStateSwitched = this.onButtonStateSwitched.bind(this);
+	}
+	setupMenuModule() {
+		this._menuModule = this.diContainer.get(ya), this._menuModule.volumeChanged = this.onVolumeChanged.bind(this);
 	}
 	setupEvents() {
 		super.setupEvents(), this.on(SettingsEvents.TOGGLE_MUSIC_ON, this.onToggleMusicOn), this.on(SettingsEvents.TOGGLE_MUSIC_OFF, this.onToggleMusicOff), this.on(SettingsEvents.TOGGLE_SOUND_EFFECTS_ON, this.onToggleSoundEffectsOn), this.on(SettingsEvents.TOGGLE_SOUND_EFFECTS_OFF, this.onToggleSoundEffectsOff), this.on(SoundButtonEvents.TOGGLE_ALL_SOUND_ON, this.onSoundButtonOnClicked), this.on(SoundButtonEvents.TOGGLE_ALL_SOUND_OFF, this.onSoundButtonOffClicked);
@@ -106963,8 +107186,8 @@ var li = class SoundController extends P$2 {
 		return this._soundPlayer;
 	}
 };
-__decorate$1([inject(j.SoundPlayer), __decorateMetadata("design:type", Object)], li.prototype, "_soundPlayer", void 0), li = __decorate$1([injectFromBase()], li);
-var ui = {
+__decorate$1([inject(P$2.SoundPlayer), __decorateMetadata("design:type", Object)], hi.prototype, "_soundPlayer", void 0), hi = __decorate$1([injectFromBase()], hi);
+var gi = {
 	autoPlayButton: "autoPlayButton",
 	bankingButton: "bankingButton",
 	menuButton: "menuButton",
@@ -106972,9 +107195,9 @@ var ui = {
 	quickPlayButton: "quickPlayButton",
 	spinButton: "spinButton"
 };
-var di = class KeypadController extends P$2 {
-	constructor(..._args41) {
-		super(..._args41);
+var _i = class KeypadController extends L {
+	constructor(..._args42) {
+		super(..._args42);
 		_defineProperty(this, "_keypad", {});
 		_defineProperty(this, "_buttonLockingReasons", {});
 	}
@@ -107018,10 +107241,10 @@ var di = class KeypadController extends P$2 {
 		this.unlockWithReason("LockReasons::BET_MENU_OPENED");
 	}
 	setupKeypadItems() {
-		this._keypad[ui.autoPlayButton] = this.diContainer.get(Pr), this._keypad[ui.betButton] = this.diContainer.get(Sa), this._keypad[ui.menuButton] = this.diContainer.get(ga), this._keypad[ui.spinButton] = this.diContainer.get(ya), this._keypad[ui.quickPlayButton] = this.diContainer.get(ji);
+		this._keypad[gi.autoPlayButton] = this.diContainer.get(Mr), this._keypad[gi.betButton] = this.diContainer.get(Oa), this._keypad[gi.menuButton] = this.diContainer.get(Sa), this._keypad[gi.spinButton] = this.diContainer.get(Ta), this._keypad[gi.quickPlayButton] = this.diContainer.get(Li);
 	}
 	setupButtonsLockingReasons() {
-		this._buttonLockingReasons[ui.autoPlayButton] = this.getAutoplayButtonLockingReasons(), this._buttonLockingReasons[ui.betButton] = this.getBetButtonLockingReasons(), this._buttonLockingReasons[ui.menuButton] = this.getMenuButtonLockingReasons(), this._buttonLockingReasons[ui.spinButton] = this.getSpinButtonLockingReasons(), this._buttonLockingReasons[ui.quickPlayButton] = this.getQuickPlayButtonLockingReasons();
+		this._buttonLockingReasons[gi.autoPlayButton] = this.getAutoplayButtonLockingReasons(), this._buttonLockingReasons[gi.betButton] = this.getBetButtonLockingReasons(), this._buttonLockingReasons[gi.menuButton] = this.getMenuButtonLockingReasons(), this._buttonLockingReasons[gi.spinButton] = this.getSpinButtonLockingReasons(), this._buttonLockingReasons[gi.quickPlayButton] = this.getQuickPlayButtonLockingReasons();
 	}
 	lockWithReason(e, t) {
 		if (t instanceof Array) t.forEach((t) => {
@@ -107057,22 +107280,22 @@ var di = class KeypadController extends P$2 {
 		return this._buttonLockingReasons[e].includes(t);
 	}
 	getBetButtonLockingReasons() {
-		return ar;
+		return nr;
 	}
 	getAutoplayButtonLockingReasons() {
-		return rr;
+		return er;
 	}
 	getSpinButtonLockingReasons() {
-		return cr;
+		return ar;
 	}
 	getQuickPlayButtonLockingReasons() {
-		return sr;
-	}
-	getBankingButtonLockingReasons() {
 		return ir;
 	}
+	getBankingButtonLockingReasons() {
+		return tr;
+	}
 	getMenuButtonLockingReasons() {
-		return or;
+		return rr;
 	}
 	disableOnWinStarted(e) {
 		this.lockWithReason("LockReasons::WIN_STARTED", e);
@@ -107102,8 +107325,8 @@ var di = class KeypadController extends P$2 {
 		this.unlockWithReason("LockReasons::SPINNING_STARTED", e);
 	}
 };
-di = __decorate$1([injectFromBase()], di);
-var fi = class FreeSpinsInfoModule extends P$2 {
+_i = __decorate$1([injectFromBase()], _i);
+var vi = class FreeSpinsInfoModule extends L {
 	init(e, t) {
 		super.init(e, t), this.view.hide();
 	}
@@ -107138,16 +107361,16 @@ var fi = class FreeSpinsInfoModule extends P$2 {
 		this.view.setRemainingFreeSpins(this.gameData.freespinsTotalAwarded, this.gameData.freeSpinsPlayed + 1);
 	}
 };
-fi = __decorate$1([injectFromBase()], fi);
-var pi = {
+vi = __decorate$1([injectFromBase()], vi);
+var yi = {
 	fontFamily: "Poppins SemiBold",
 	fontSize: 40,
 	fill: "#FFCC00",
 	align: "right"
 };
-var mi = class FreeSpinsInfoView extends G {
-	constructor(..._args42) {
-		super(..._args42);
+var bi = class FreeSpinsInfoView extends q {
+	constructor(..._args43) {
+		super(..._args43);
 		_defineProperty(this, "_infoBox", void 0);
 		_defineProperty(this, "_remainingFreeSpins", void 0);
 		_defineProperty(this, "_freeSpinsLeftText", void 0);
@@ -107177,13 +107400,13 @@ var mi = class FreeSpinsInfoView extends G {
 		} catch (_unused5) {}
 	}
 	initInfoBoxes() {
-		this._infoBox = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_REMAINING_SPINS.json", "IDLE", !0).createAndStart(), this._remainingFreeSpins = new Zr(this.assets, this.getSpinsRemainingNumberPrefix()), this._remainingFreeSpins.numberKerning = this.getConfigValue("freespins.infoBoxKerning", 0), this.spineUtils.addSlotObject(this._infoBox, "FREESPINS_REMAINING_NUMBER", this._remainingFreeSpins), this._remainingFreeSpins.numberAnchor.x = 1, this._remainingFreeSpins.showNumber("15/27"), this._freeSpinsLeftText = new import_lib.Text({
+		this._infoBox = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_REMAINING_SPINS.json", "IDLE", !0).createAndStart(), this._remainingFreeSpins = new ni(this.assets, this.getSpinsRemainingNumberPrefix()), this._remainingFreeSpins.numberKerning = this.getConfigValue("freespins.infoBoxKerning", 0), this.spineUtils.addSlotObject(this._infoBox, "FREESPINS_REMAINING_NUMBER", this._remainingFreeSpins), this._remainingFreeSpins.numberAnchor.x = 1, this._remainingFreeSpins.showNumber("15/27"), this._freeSpinsLeftText = new import_lib.Text({
 			text: "FREE SPINS:",
 			style: new import_lib.TextStyle(this.getFreeSpinsLabelStyle())
 		}), this.spineUtils.addSlotObject(this._infoBox, "FREESPIN_REMAINING_SPINS_TEXT", this._freeSpinsLeftText), this._freeSpinsLeftText.anchor.set(0, .5);
 	}
 	getFreeSpinsLabelStyle() {
-		return pi;
+		return yi;
 	}
 	getSpinsRemainingNumberPrefix() {
 		return "GENERIC_";
@@ -107195,7 +107418,7 @@ var mi = class FreeSpinsInfoView extends G {
 		this.container.alpha = e;
 	}
 };
-mi = __decorate$1([injectFromBase()], mi);
+bi = __decorate$1([injectFromBase()], bi);
 var YellowButton = class {
 	constructor(e, t, n, r) {
 		_defineProperty(this, "_btn", void 0);
@@ -107209,7 +107432,7 @@ var YellowButton = class {
 		e.addSlotObject(this._btn.spineAnimation, "IDLE", i.spine);
 		let a = new import_lib.Text({
 			text: t,
-			style: new import_lib.TextStyle(fe$1)
+			style: new import_lib.TextStyle(ce)
 		});
 		a.anchor.set(.5), e.addSlotObject(this._btn.spineAnimation, "LABEL", a);
 	}
@@ -107217,7 +107440,7 @@ var YellowButton = class {
 		return this._btn;
 	}
 };
-var hi = {
+var xi = {
 	align: "center",
 	fontFamily: "Arial",
 	fontSize: 42,
@@ -107255,15 +107478,15 @@ var hi = {
 	wordWrap: !0,
 	wordWrapWidth: 100
 };
-var gi = {
+var Si = {
 	fontFamily: "Poppins Bold",
 	fontSize: 24,
 	fill: "#FFFFFF"
 };
-var _i;
-var vi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends G {
-	constructor(..._args43) {
-		super(..._args43);
+var Ci;
+var wi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends q {
+	constructor(..._args44) {
+		super(..._args44);
 		_defineProperty(this, "_freeSpinsLeft", void 0);
 		_defineProperty(this, "_freeSpinsNumber", void 0);
 		_defineProperty(this, "_interactionScreen", void 0);
@@ -107279,11 +107502,11 @@ var vi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends G {
 	showAddedFreespins(e) {
 		let t = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_ADDITIONAL_SPINS.json", "ENTER", !1).onComplete(() => {
 			this.emitRetriggerFinished();
-		}).createAndStart(), n = new Zr(this.assets, this.getAddFSWinNumbersPrefix());
+		}).createAndStart(), n = new ni(this.assets, this.getAddFSWinNumbersPrefix());
 		n.showNumber(`+${e}`), this.spineUtils.replaceSlotAttachment(t, "NUMBER", n), this.emitRetriggerStarted();
 	}
 	startFreeSpinsIntro(e) {
-		this._freeSpinsLeft = e, this.killCurrentAnimation(), this.emit(_i.FREE_SPINS_INTRO_STARTED), this._introScreen = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_ENTER_SCREENS.json", "START", !1).onComplete(() => {
+		this._freeSpinsLeft = e, this.killCurrentAnimation(), this.emit(Ci.FREE_SPINS_INTRO_STARTED), this._introScreen = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_ENTER_SCREENS.json", "START", !1).onComplete(() => {
 			this.enableInteraction(), this.onFreeSpinsStartAnimationComplete();
 		}).chainIdleAnimation("IDLE").createAndStart(), this.setupIntroTexts();
 	}
@@ -107294,10 +107517,10 @@ var vi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends G {
 		this._interactionScreen && this._interactionScreen.interactive && this.onStartButtonClicked();
 	}
 	proceedToFreeSpins() {
-		this.emit(_i.FREE_SPINS_INTRO_TRANSITION_FINISHED);
+		this.emit(Ci.FREE_SPINS_INTRO_TRANSITION_FINISHED);
 	}
 	startFreeSpinsOutro(e) {
-		this.emit(_i.FREE_SPINS_OUTRO_STARTED);
+		this.emit(Ci.FREE_SPINS_OUTRO_STARTED);
 	}
 	showWinSummaryScreen(e, t, n = !0) {
 		if (this.killWinSummaryScreen(), this._winSummaryScreenAnimation = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_EXIT_SCREENS.json", "START", !1).chainIdleAnimation("IDLE").onComplete(() => {
@@ -107314,7 +107537,7 @@ var vi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends G {
 				style: new import_lib.TextStyle(this.getResultBigWhiteStyle())
 			});
 			t.anchor.set(.5, .5), this.spineUtils.replaceSlotAttachment(this._winSummaryScreenAnimation, "WIN_TEXT", t);
-			let r = new Zr(this.assets, this.getWinnumberSize(this.device.isMobile));
+			let r = new ni(this.assets, this.getWinnumberSize(this.device.isMobile));
 			r.numberKerning = -10, r.showNumber(this.currencyFormatter.formatCurrency(e, !1)), this.spineUtils.replaceSlotAttachment(this._winSummaryScreenAnimation, "NUMBER", r), this.fitElementIntoScreen(r);
 		}
 	}
@@ -107337,7 +107560,7 @@ var vi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends G {
 	}
 	addInteractionScreen() {
 		this._interactionScreen = new import_lib.Container();
-		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, w$1, T).fill(16711680);
+		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, O$1, k).fill(16711680);
 		this._interactionScreen.pivot.set(960, 960), this._interactionScreen.addChild(e), this._interactionScreen.onclick = this.onStartButtonClicked.bind(this), this._interactionScreen.ontap = this.onStartButtonClicked.bind(this), this.mainUI.insert(this._interactionScreen, "RESULTS");
 	}
 	getAddFSWinNumbersPrefix() {
@@ -107347,16 +107570,16 @@ var vi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends G {
 		this.emitIntroFinished();
 	}
 	emitRetriggerStarted() {
-		this.emit(_i.RETRIGGER_STARTED);
+		this.emit(Ci.RETRIGGER_STARTED);
 	}
 	emitRetriggerFinished() {
-		this.emit(_i.RETRIGGER_FINISHED);
+		this.emit(Ci.RETRIGGER_FINISHED);
 	}
 	emitIntroFinished() {
-		this.emit(_i.FREE_SPINS_INTRO_FINISHED);
+		this.emit(Ci.FREE_SPINS_INTRO_FINISHED);
 	}
 	setupIntroTexts() {
-		this._freeSpinsNumber = new Zr(this.assets, this.getIntroWinNumbersPrefix()), this._freeSpinsNumber.showNumber(`${this._freeSpinsLeft}`), this.spineUtils.replaceSlotAttachment(this._introScreen, "NUMBER_TEXT", this._freeSpinsNumber), this.spineUtils.replaceSlotAttachment(this._introScreen, "FREE_SPINS_FEATURE_1_1_TITLE", this.getLocaleTextImage("FREE_SPINS_FEATURE_1_1_TITLE")), this.spineUtils.replaceSlotAttachment(this._introScreen, "FREE_SPINS_FEATURE_1_2_TITLE", this.getLocaleTextImage("FREE_SPINS_FEATURE_1_2_TITLE"));
+		this._freeSpinsNumber = new ni(this.assets, this.getIntroWinNumbersPrefix()), this._freeSpinsNumber.showNumber(`${this._freeSpinsLeft}`), this.spineUtils.replaceSlotAttachment(this._introScreen, "NUMBER_TEXT", this._freeSpinsNumber), this.spineUtils.replaceSlotAttachment(this._introScreen, "FREE_SPINS_FEATURE_1_1_TITLE", this.getLocaleTextImage("FREE_SPINS_FEATURE_1_1_TITLE")), this.spineUtils.replaceSlotAttachment(this._introScreen, "FREE_SPINS_FEATURE_1_2_TITLE", this.getLocaleTextImage("FREE_SPINS_FEATURE_1_2_TITLE"));
 	}
 	getIntroWinNumbersPrefix() {
 		return "FREE_SPINS_";
@@ -107365,7 +107588,7 @@ var vi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends G {
 		return new import_lib.Sprite(this.assets.getLocaleTextImage(`${e}.png`));
 	}
 	emitShowingWinSummaryScreen() {
-		this.emit(_i.SHOWING_WIN_SUMMARY_SCREEN);
+		this.emit(Ci.SHOWING_WIN_SUMMARY_SCREEN);
 	}
 	setupAndAddFreeSpinsOutroExitButton() {
 		this._exitButton = new YellowButton(this.spineUtils, "CONTINUE", "SPLASH", this.onExitWinSummaryButtonClicked.bind(this)), this._exitButton.btn.enable(), this.spineUtils.replaceSlotAttachment(this._winSummaryScreenAnimation, "CONTINUE_BUTTON", this._exitButton.btn);
@@ -107390,16 +107613,16 @@ var vi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends G {
 		this._featureTextStyle = new import_lib.TextStyle(this.getFeatureTextStyle()), this._featureTextStyle.wordWrapWidth = t;
 	}
 	getFeatureTextStyle() {
-		return hi;
+		return xi;
 	}
 	getResultBigWhiteStyle() {
-		return gi;
+		return Si;
 	}
 	onStartButtonClicked() {
 		this.soundPlayer.play("buttonClick"), this.disableInteraction(), this.emitIntroContinueClicked();
 	}
 	emitIntroContinueClicked() {
-		this.emit(_i.FREE_SPINS_INFO_CONTINUE_CLICKED);
+		this.emit(Ci.FREE_SPINS_INFO_CONTINUE_CLICKED);
 	}
 	killCurrentFeatureAnimation() {
 		this.spineUtils.stopAndDestroyAnimation(this._featureAnimation), this._featureAnimation = null, this.disableInteraction();
@@ -107413,10 +107636,10 @@ var vi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends G {
 		});
 	}
 	emitOutroFinished() {
-		this.emit(_i.FREE_SPINS_OUTRO_FINISHED);
+		this.emit(Ci.FREE_SPINS_OUTRO_FINISHED);
 	}
 	emitOutroContinueClicked() {
-		this.emit(_i.FREE_SPINS_OUTRO_CONTINUE_CLICKED);
+		this.emit(Ci.FREE_SPINS_OUTRO_CONTINUE_CLICKED);
 	}
 	killWinSummaryScreen() {
 		this.spineUtils.stopAndDestroyAnimation(this._winSummaryScreenAnimation), this._winSummaryScreenAnimation = null;
@@ -107424,9 +107647,9 @@ var vi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends G {
 	get numberElementLimit() {
 		return this.resolutionManager.resolution.width * .8;
 	}
-}, _i = _FreeSpinsScreensView, _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INTRO_FINISHED", "FreeSpinsView::FREE_SPINS_INTRO_FINISHED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INTRO_STARTED", "FreeSpinsView::FREE_SPINS_INTRO_STARTED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INFO_CONTINUE_CLICKED", "FreeSpinsView::FREE_SPINS_INFO_CONTINUE_CLICKED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INTRO_TRANSITION_FINISHED", "FreeSpinsView::FREE_SPINS_INTRO_TRANSITION_FINISHED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_OUTRO_STARTED", "FreeSpinsView::FREE_SPINS_OUTRO_STARTED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_OUTRO_CONTINUE_CLICKED", "FreeSpinsView::FREE_SPINS_OUTRO_CONTINUE_CLICKED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_OUTRO_FINISHED", "FreeSpinsView::FREE_SPINS_OUTRO_FINISHED"), _defineProperty(_FreeSpinsScreensView, "SHOWING_WIN_SUMMARY_SCREEN", "FreeSpinsView::SHOWING_WIN_SUMMARY_SCREEN"), _defineProperty(_FreeSpinsScreensView, "RETRIGGER_FINISHED", "FreeSpinsView::RETRIGGER_FINISHED"), _defineProperty(_FreeSpinsScreensView, "RETRIGGER_STARTED", "FreeSpinsView::RETRIGGER_STARTED"), _FreeSpinsScreensView);
-vi = _i = __decorate$1([injectFromBase()], vi);
-var yi = class FreeSpinsScreensModule extends P$2 {
+}, Ci = _FreeSpinsScreensView, _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INTRO_FINISHED", "FreeSpinsView::FREE_SPINS_INTRO_FINISHED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INTRO_STARTED", "FreeSpinsView::FREE_SPINS_INTRO_STARTED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INFO_CONTINUE_CLICKED", "FreeSpinsView::FREE_SPINS_INFO_CONTINUE_CLICKED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INTRO_TRANSITION_FINISHED", "FreeSpinsView::FREE_SPINS_INTRO_TRANSITION_FINISHED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_OUTRO_STARTED", "FreeSpinsView::FREE_SPINS_OUTRO_STARTED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_OUTRO_CONTINUE_CLICKED", "FreeSpinsView::FREE_SPINS_OUTRO_CONTINUE_CLICKED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_OUTRO_FINISHED", "FreeSpinsView::FREE_SPINS_OUTRO_FINISHED"), _defineProperty(_FreeSpinsScreensView, "SHOWING_WIN_SUMMARY_SCREEN", "FreeSpinsView::SHOWING_WIN_SUMMARY_SCREEN"), _defineProperty(_FreeSpinsScreensView, "RETRIGGER_FINISHED", "FreeSpinsView::RETRIGGER_FINISHED"), _defineProperty(_FreeSpinsScreensView, "RETRIGGER_STARTED", "FreeSpinsView::RETRIGGER_STARTED"), _FreeSpinsScreensView);
+wi = Ci = __decorate$1([injectFromBase()], wi);
+var Ti = class FreeSpinsScreensModule extends L {
 	playFSIntro(e) {
 		this.view.startFreeSpinsIntro(e), this.emit(FreeSpinsScreensEvents.FREE_SPINS_INTRO_ANIMATION_STARTED);
 	}
@@ -107440,7 +107663,7 @@ var yi = class FreeSpinsScreensModule extends P$2 {
 		this.view.showAddedFreespins(e);
 	}
 	setupEvents() {
-		super.setupEvents(), this.onView(vi.FREE_SPINS_INFO_CONTINUE_CLICKED, this.onFreeSpinsIntroContinueClicked), this.onView(vi.FREE_SPINS_OUTRO_CONTINUE_CLICKED, this.onFreeSpinsOutroContinueClicked), this.onViewEmitEvent(vi.SHOWING_WIN_SUMMARY_SCREEN, FreeSpinsScreensEvents.SHOWING_WIN_SUMMARY_SCREEN), this.onViewEmitEvent(vi.FREE_SPINS_INTRO_TRANSITION_FINISHED, FreeSpinsScreensEvents.FREE_SPINS_INTRO_FINISHED), this.onViewEmitEvent(vi.RETRIGGER_FINISHED, FreeSpinsScreensEvents.FREE_SPINS_RETRIGGER_FINISHED), this.onViewEmitEvent(vi.RETRIGGER_STARTED, FreeSpinsScreensEvents.FREE_SPINS_RETRIGGER_STARTED), this.onViewEmitEvent(vi.FREE_SPINS_OUTRO_FINISHED, FreeSpinsScreensEvents.FREE_SPINS_OUTRO_FINISHED);
+		super.setupEvents(), this.onView(wi.FREE_SPINS_INFO_CONTINUE_CLICKED, this.onFreeSpinsIntroContinueClicked), this.onView(wi.FREE_SPINS_OUTRO_CONTINUE_CLICKED, this.onFreeSpinsOutroContinueClicked), this.onViewEmitEvent(wi.SHOWING_WIN_SUMMARY_SCREEN, FreeSpinsScreensEvents.SHOWING_WIN_SUMMARY_SCREEN), this.onViewEmitEvent(wi.FREE_SPINS_INTRO_TRANSITION_FINISHED, FreeSpinsScreensEvents.FREE_SPINS_INTRO_FINISHED), this.onViewEmitEvent(wi.RETRIGGER_FINISHED, FreeSpinsScreensEvents.FREE_SPINS_RETRIGGER_FINISHED), this.onViewEmitEvent(wi.RETRIGGER_STARTED, FreeSpinsScreensEvents.FREE_SPINS_RETRIGGER_STARTED), this.onViewEmitEvent(wi.FREE_SPINS_OUTRO_FINISHED, FreeSpinsScreensEvents.FREE_SPINS_OUTRO_FINISHED);
 	}
 	onFreeSpinsIntroContinueClicked() {
 		this.emit(FreeSpinsScreensEvents.FREE_SPINS_CONTINUE_CLICKED), this.gameData.isFreeSpinsStarted = !0, this.view.endFreeSpinsIntro();
@@ -107453,8 +107676,8 @@ var yi = class FreeSpinsScreensModule extends P$2 {
 		return this.gameData.featureBuyActive ? e > this.gameData.featureBuyCost : e > t;
 	}
 };
-yi = __decorate$1([injectFromBase()], yi);
-var bi = class FreeSpinsTotalWinModule extends P$2 {
+Ti = __decorate$1([injectFromBase()], Ti);
+var Ei = class FreeSpinsTotalWinModule extends L {
 	init(e, t) {
 		super.init(e, t), this.view.hide();
 	}
@@ -107474,10 +107697,10 @@ var bi = class FreeSpinsTotalWinModule extends P$2 {
 		this.view.addToTotalWin(e);
 	}
 };
-bi = __decorate$1([injectFromBase()], bi);
-var xi = class FreeSpinsTotalWinView extends G {
-	constructor(..._args44) {
-		super(..._args44);
+Ei = __decorate$1([injectFromBase()], Ei);
+var Di = class FreeSpinsTotalWinView extends q {
+	constructor(..._args45) {
+		super(..._args45);
 		_defineProperty(this, "_totalWinBox", void 0);
 		_defineProperty(this, "_totalWinFreeSpins", void 0);
 		_defineProperty(this, "_totalWinText", void 0);
@@ -107498,13 +107721,13 @@ var xi = class FreeSpinsTotalWinView extends G {
 		this.totalWinFreeSpins = this._totalWinValue + e;
 	}
 	initInfoBoxes() {
-		this._totalWinBox = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_TOTAL_WIN.json", "IDLE", !0).createAndStart(), this._totalWinFreeSpins = new Zr(this.assets, this.getTotalWinNumberPrefix()), this._totalWinFreeSpins.numberKerning = this.getConfigValue("freespins.infoBoxKerning", 0), this._totalWinFreeSpins.numberAnchor.x = 1, this.spineUtils.addSlotObject(this._totalWinBox, "FREESPINS_TOTAL_WIN_NUMBER", this._totalWinFreeSpins), this._totalWinFreeSpins.showNumber("5050"), this._totalWinText = new import_lib.Text({
+		this._totalWinBox = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_TOTAL_WIN.json", "IDLE", !0).createAndStart(), this._totalWinFreeSpins = new ni(this.assets, this.getTotalWinNumberPrefix()), this._totalWinFreeSpins.numberKerning = this.getConfigValue("freespins.infoBoxKerning", 0), this._totalWinFreeSpins.numberAnchor.x = 1, this.spineUtils.addSlotObject(this._totalWinBox, "FREESPINS_TOTAL_WIN_NUMBER", this._totalWinFreeSpins), this._totalWinFreeSpins.showNumber("5050"), this._totalWinText = new import_lib.Text({
 			text: "TOTAL WIN:",
 			style: new import_lib.TextStyle(this.getTotalWinLabelStyle())
 		}), this.spineUtils.addSlotObject(this._totalWinBox, "FREESPINS_TOTAL_WIN_TEXT", this._totalWinText), this._totalWinText.anchor.set(0, .5);
 	}
 	getTotalWinLabelStyle() {
-		return pi;
+		return yi;
 	}
 	getTotalWinNumberPrefix() {
 		return "GENERIC_";
@@ -107516,20 +107739,20 @@ var xi = class FreeSpinsTotalWinView extends G {
 		this._totalWinFreeSpins.showNumber(formatForDisplay(e)), this._totalWinValue = e;
 	}
 };
-xi = __decorate$1([injectFromBase()], xi);
-var Si = class LogoModule extends P$2 {};
-Si = __decorate$1([injectFromBase()], Si);
-var Ci = class LogoView extends G {
+Di = __decorate$1([injectFromBase()], Di);
+var Oi = class LogoModule extends L {};
+Oi = __decorate$1([injectFromBase()], Oi);
+var ki = class LogoView extends q {
 	init() {
 		super.init();
 	}
 };
-Ci = __decorate$1([injectFromBase()], Ci);
-var HUDEvents = (_Class19 = class {}, _defineProperty(_Class19, "WIN_UPDATED", "InfoEvents::WIN_UPDATED"), _defineProperty(_Class19, "BET_UPDATED", "InfoEvents::BET_UPDATED"), _defineProperty(_Class19, "BALANCE_UPDATED", "InfoEvents::BALANCE_UPDATED"), _defineProperty(_Class19, "UPDATE", "InfoEvents::UPDATE"), _defineProperty(_Class19, "TIME_UPDATED", "InfoEvents::TIME_UPDATED"), _Class19);
-var wi;
-var Ti = (_HUDView = class HUDView extends Ar {
-	constructor(..._args45) {
-		super(..._args45);
+ki = __decorate$1([injectFromBase()], ki);
+var HUDEvents = (_Class18 = class {}, _defineProperty(_Class18, "WIN_UPDATED", "InfoEvents::WIN_UPDATED"), _defineProperty(_Class18, "BET_UPDATED", "InfoEvents::BET_UPDATED"), _defineProperty(_Class18, "BALANCE_UPDATED", "InfoEvents::BALANCE_UPDATED"), _defineProperty(_Class18, "UPDATE", "InfoEvents::UPDATE"), _defineProperty(_Class18, "TIME_UPDATED", "InfoEvents::TIME_UPDATED"), _Class18);
+var Ai;
+var ji = (_HUDView = class HUDView extends hr {
+	constructor(..._args46) {
+		super(..._args46);
 		_defineProperty(this, "_bankingButton", void 0);
 		_defineProperty(this, "_soundButton", void 0);
 		_defineProperty(this, "_footer", void 0);
@@ -107627,10 +107850,10 @@ var Ti = (_HUDView = class HUDView extends Ar {
 		((_this$_soundButton$bu = this._soundButton.button.spineAnimation.skeleton.skin) === null || _this$_soundButton$bu === void 0 ? void 0 : _this$_soundButton$bu.name) === "OFF" ? this.emitAllSoundsToggleOn() : this.emitAllSoundsToggleOff();
 	}
 	emitAllSoundsToggleOff() {
-		this.emit(wi.TOGGLE_ALL_SOUND_OFF);
+		this.emit(Ai.TOGGLE_ALL_SOUND_OFF);
 	}
 	emitAllSoundsToggleOn() {
-		this.emit(wi.TOGGLE_ALL_SOUND_ON);
+		this.emit(Ai.TOGGLE_ALL_SOUND_ON);
 	}
 	createSoundButton() {
 		return new GenericButton("SOUND_BUTTON.json", "ON", this.spineUtils, this.onSoundButtonClicked.bind(this));
@@ -107639,16 +107862,16 @@ var Ti = (_HUDView = class HUDView extends Ar {
 		return new GenericButton("BANKING_BUTTON.json", void 0, this.spineUtils, this.onBankingButtonClicked.bind(this));
 	}
 	onBankingButtonClicked() {
-		this.emit(wi.BANKING_BUTTON_CLICKED);
+		this.emit(Ai.BANKING_BUTTON_CLICKED);
 	}
 	emitWinUpdated(e) {
-		this.emit(wi.WIN_UPDATED, e);
+		this.emit(Ai.WIN_UPDATED, e);
 	}
 	emitBalanceUpdated(e) {
-		this.emit(wi.BALANCE_UPDATED, e);
+		this.emit(Ai.BALANCE_UPDATED, e);
 	}
 	emitBetUpdated(e) {
-		this.emit(wi.BET_UPDATED, e);
+		this.emit(Ai.BET_UPDATED, e);
 	}
 	fitHudInfo(e, t = this._numberMaxWidth) {
 		let n = -1;
@@ -107661,7 +107884,7 @@ var Ti = (_HUDView = class HUDView extends Ar {
 		return e.getBounds().width > t || n && e.getBounds().height > n;
 	}
 	emitTimeUpdated(e) {
-		this.emit(wi.TIME_UPDATED, e);
+		this.emit(Ai.TIME_UPDATED, e);
 	}
 	startTimeInterval() {
 		this.updateTime();
@@ -107677,10 +107900,10 @@ var Ti = (_HUDView = class HUDView extends Ar {
 		return this.currencyFormatter.formatCurrency(e, t);
 	}
 	setupLayout() {
-		let e = this.mainUI.layout.getAbsoluteUIPosition("HUD_FOOTER", N$1.LANDSCAPE), t = this.mainUI.layout.getAbsoluteUIPosition("HUD_FOOTER", N$1.PORTRAIT);
+		let e = this.mainUI.layout.getAbsoluteUIPosition("HUD_FOOTER", I$1.LANDSCAPE), t = this.mainUI.layout.getAbsoluteUIPosition("HUD_FOOTER", I$1.PORTRAIT);
 		this._footer = this.spineUtils.startSpineAnimationCreation("HUD_FOOTER.json", "IDLE", !0).skinName("LANDSCAPE").createAndStart();
-		let n = this.mainUI.layout.getAbsoluteUIPosition("HUD_HEADER", N$1.LANDSCAPE), r = this.mainUI.layout.getAbsoluteUIPosition("HUD_HEADER", N$1.PORTRAIT);
-		this._header = this.spineUtils.startSpineAnimationCreation("HUD_HEADER.json", "IDLE", !0).skinName("LANDSCAPE").createAndStart(), this._uiElements.push(new UIElement(this._footer.spine, e, t, [K.BOTTOM])), this._uiElements.push(new UIElement(this._header.spine, n, r, [K.TOP])), this.addLogos();
+		let n = this.mainUI.layout.getAbsoluteUIPosition("HUD_HEADER", I$1.LANDSCAPE), r = this.mainUI.layout.getAbsoluteUIPosition("HUD_HEADER", I$1.PORTRAIT);
+		this._header = this.spineUtils.startSpineAnimationCreation("HUD_HEADER.json", "IDLE", !0).skinName("LANDSCAPE").createAndStart(), this._uiElements.push(new UIElement(this._footer.spine, e, t, [J$1.BOTTOM])), this._uiElements.push(new UIElement(this._header.spine, n, r, [J$1.TOP])), this.addLogos();
 	}
 	addLogos() {
 		this._logo = this.spineUtils.startSpineAnimationCreation("LOGO_GAME.json", "IDLE", !0).createAndStart(), this.spineUtils.replaceSlotAttachment(this._header, "LOGO_GAME", this._logo.spine), this._companyLogo = this.spineUtils.startSpineAnimationCreation("LOGO_COMPANY_SILVERFOX.json", "IDLE", !0).createAndStart(), this.spineUtils.replaceSlotAttachment(this._header, "LOGO_COMPANY", this._companyLogo.spine);
@@ -107689,7 +107912,7 @@ var Ti = (_HUDView = class HUDView extends Ar {
 		this._numberStyle = this.getBalanceTextStyle(), this._textStyle = this.getBalanceTextStyle(), this._winFieldNumberStyle = this.getBalanceTextStyle();
 	}
 	getBalanceTextStyle() {
-		return pi;
+		return yi;
 	}
 	setupValueObjects() {
 		this._clock = new import_lib.Text({
@@ -107710,14 +107933,14 @@ var Ti = (_HUDView = class HUDView extends Ar {
 		this._balanceValue.anchor.set(0, .5), this._winValue.anchor.set(0, .5), this._betValue.anchor.set(1, .5), this._clock.anchor.set(1, .5);
 	}
 	emitTextInitialized() {
-		this.emit(wi.TEXT_INITIALIZED);
+		this.emit(Ai.TEXT_INITIALIZED);
 	}
-}, wi = _HUDView, _defineProperty(_HUDView, "WIN_UPDATED", "InfoView::WIN_UPDATED"), _defineProperty(_HUDView, "BET_UPDATED", "InfoView::BET_UPDATED"), _defineProperty(_HUDView, "BALANCE_UPDATED", "InfoView::BALANCE_UPDATED"), _defineProperty(_HUDView, "TIME_UPDATED", "InfoView::TIME_UPDATED"), _defineProperty(_HUDView, "TEXT_INITIALIZED", "InfoView::TEXT_INITIALIZED"), _defineProperty(_HUDView, "TOGGLE_ALL_SOUND_OFF", "HUDView::TOGGLE_ALL_SOUND_OFF"), _defineProperty(_HUDView, "TOGGLE_ALL_SOUND_ON", "HUDView::TOGGLE_ALL_SOUND_ON"), _defineProperty(_HUDView, "BANKING_BUTTON_CLICKED", "HUDView::BUTTON_CLICKED"), _HUDView);
-Ti = wi = __decorate$1([injectFromBase()], Ti);
-var SoundButtonLockProperties = (_Class20 = class {}, _defineProperty(_Class20, "SWITCHED", "switched"), _Class20);
-var Ei = (_HUDModule = class HUDModule extends Nr {
-	constructor(..._args46) {
-		super(..._args46);
+}, Ai = _HUDView, _defineProperty(_HUDView, "WIN_UPDATED", "InfoView::WIN_UPDATED"), _defineProperty(_HUDView, "BET_UPDATED", "InfoView::BET_UPDATED"), _defineProperty(_HUDView, "BALANCE_UPDATED", "InfoView::BALANCE_UPDATED"), _defineProperty(_HUDView, "TIME_UPDATED", "InfoView::TIME_UPDATED"), _defineProperty(_HUDView, "TEXT_INITIALIZED", "InfoView::TEXT_INITIALIZED"), _defineProperty(_HUDView, "TOGGLE_ALL_SOUND_OFF", "HUDView::TOGGLE_ALL_SOUND_OFF"), _defineProperty(_HUDView, "TOGGLE_ALL_SOUND_ON", "HUDView::TOGGLE_ALL_SOUND_ON"), _defineProperty(_HUDView, "BANKING_BUTTON_CLICKED", "HUDView::BUTTON_CLICKED"), _HUDView);
+ji = Ai = __decorate$1([injectFromBase()], ji);
+var SoundButtonLockProperties = (_Class19 = class {}, _defineProperty(_Class19, "SWITCHED", "switched"), _Class19);
+var Mi = (_HUDModule = class HUDModule extends vr {
+	constructor(..._args47) {
+		super(..._args47);
 		_defineProperty(this, "_delayWinClear", void 0);
 		_defineProperty(this, "_lastWin", void 0);
 		_defineProperty(this, "_shownWin", void 0);
@@ -107767,7 +107990,7 @@ var Ei = (_HUDModule = class HUDModule extends Nr {
 		this.switchOff("SoundButtonLockReasons::SWITCHED_BY_SETTINGS");
 	}
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(Ti.BALANCE_UPDATED, HUDEvents.BALANCE_UPDATED), this.onViewEmitEvent(Ti.BET_UPDATED, HUDEvents.BET_UPDATED), this.onViewEmitEvent(Ti.WIN_UPDATED, HUDEvents.WIN_UPDATED), this.onViewEmitEvent(Ti.TIME_UPDATED, HUDEvents.TIME_UPDATED), this.on(StartScreenEvents.EXIT_FINISHED, this.onStartScreenExitFinished), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitReceived), this.on(BetMenuEvents.BET_CHANGED, this.onBetChange), this.on(FreeSpinsScreensEvents.SHOWING_WIN_SUMMARY_SCREEN, this.onShowingFinalFreeSpinValue), this.on(ScreenEvents.BECAME_VISIBLE, this.onScreenGainedFocus), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponse), this.on(PlatformEvents.FREEZE_BET_CALLBACK_CALLED, this.onFreezeBetCalled), this.on(PlatformEvents.UNFREEZE_BET_CALLBACK_CALLED, this.onUnfreezeBetCalled), this.onViewEmitEvent(Ti.TOGGLE_ALL_SOUND_OFF, SoundButtonEvents.TOGGLE_ALL_SOUND_OFF), this.onViewEmitEvent(Ti.TOGGLE_ALL_SOUND_ON, SoundButtonEvents.TOGGLE_ALL_SOUND_ON), this.onViewEmitEvent(Ti.BANKING_BUTTON_CLICKED, BankingButtonEvents.BANKING_BUTTON_CLICKED);
+		super.setupEvents(), this.onViewEmitEvent(ji.BALANCE_UPDATED, HUDEvents.BALANCE_UPDATED), this.onViewEmitEvent(ji.BET_UPDATED, HUDEvents.BET_UPDATED), this.onViewEmitEvent(ji.WIN_UPDATED, HUDEvents.WIN_UPDATED), this.onViewEmitEvent(ji.TIME_UPDATED, HUDEvents.TIME_UPDATED), this.on(StartScreenEvents.EXIT_FINISHED, this.onStartScreenExitFinished), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitReceived), this.on(BetMenuEvents.BET_CHANGED, this.onBetChange), this.on(FreeSpinsScreensEvents.SHOWING_WIN_SUMMARY_SCREEN, this.onShowingFinalFreeSpinValue), this.on(ScreenEvents.BECAME_VISIBLE, this.onScreenGainedFocus), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponse), this.on(PlatformEvents.FREEZE_BET_CALLBACK_CALLED, this.onFreezeBetCalled), this.on(PlatformEvents.UNFREEZE_BET_CALLBACK_CALLED, this.onUnfreezeBetCalled), this.onViewEmitEvent(ji.TOGGLE_ALL_SOUND_OFF, SoundButtonEvents.TOGGLE_ALL_SOUND_OFF), this.onViewEmitEvent(ji.TOGGLE_ALL_SOUND_ON, SoundButtonEvents.TOGGLE_ALL_SOUND_ON), this.onViewEmitEvent(ji.BANKING_BUTTON_CLICKED, BankingButtonEvents.BANKING_BUTTON_CLICKED);
 	}
 	switchOn(e) {
 		this._keypadLocker.unlock(SoundButtonLockProperties.SWITCHED, e);
@@ -107839,10 +108062,10 @@ var Ei = (_HUDModule = class HUDModule extends Nr {
 		this._soundButtonStateSwitched = e;
 	}
 }, _defineProperty(_HUDModule, "MULTILINES_COUNTER_DURATION", 500), _defineProperty(_HUDModule, "WIN_CLEAR_DELAY", 500), _HUDModule);
-Ei = __decorate$1([injectFromBase()], Ei);
-var SoundButtonEvents = (_Class21 = class {}, _defineProperty(_Class21, "TOGGLE_ALL_SOUND_OFF", "SoundControllerEvents::TOGGLE_ALL_SOUND_OFF"), _defineProperty(_Class21, "TOGGLE_ALL_SOUND_ON", "SoundControllerEvents::TOGGLE_ALL_SOUND_ON"), _Class21);
-var BankingButtonEvents = (_Class22 = class {}, _defineProperty(_Class22, "BANKING_BUTTON_CLICKED", "BankingButtonEvents::BANKING_BUTTON_CLICKED"), _Class22);
-var Di = class SystemMessagesModule extends P$2 {
+Mi = __decorate$1([injectFromBase()], Mi);
+var SoundButtonEvents = (_Class20 = class {}, _defineProperty(_Class20, "TOGGLE_ALL_SOUND_OFF", "SoundControllerEvents::TOGGLE_ALL_SOUND_OFF"), _defineProperty(_Class20, "TOGGLE_ALL_SOUND_ON", "SoundControllerEvents::TOGGLE_ALL_SOUND_ON"), _Class20);
+var BankingButtonEvents = (_Class21 = class {}, _defineProperty(_Class21, "BANKING_BUTTON_CLICKED", "BankingButtonEvents::BANKING_BUTTON_CLICKED"), _Class21);
+var Ni = class SystemMessagesModule extends L {
 	init(e, t) {
 		super.init(e, t), this.view.showLoading();
 	}
@@ -107856,10 +108079,10 @@ var Di = class SystemMessagesModule extends P$2 {
 		this.view.hideMessage();
 	}
 };
-Di = __decorate$1([injectFromBase()], Di);
-var Oi = class SystemMessagesView extends G {
-	constructor(..._args47) {
-		super(..._args47);
+Ni = __decorate$1([injectFromBase()], Ni);
+var Pi = class SystemMessagesView extends q {
+	constructor(..._args48) {
+		super(..._args48);
 		_defineProperty(this, "_messageBackground", void 0);
 		_defineProperty(this, "_messageTxt", void 0);
 	}
@@ -107872,7 +108095,7 @@ var Oi = class SystemMessagesView extends G {
 		}), this._messageTxt.anchor.set(.5), this._messageTxt.position.set(this.resolutionManager.halfResolution.width, this.resolutionManager.halfResolution.width), this._messageBackground.addChild(this._messageTxt), this.container.addChild(this._messageBackground);
 	}
 	getMessageTextStyle() {
-		return pi;
+		return yi;
 	}
 	showLoading() {
 		this._messageTxt.text = "WAITING FOR THE SERVER RESPONSE...", this._messageBackground.visible = !0;
@@ -107884,11 +108107,11 @@ var Oi = class SystemMessagesView extends G {
 		this._messageBackground.visible = !1;
 	}
 };
-Oi = __decorate$1([injectFromBase()], Oi);
-var ki;
-var Ai = (_QuickPlayButtonView = class QuickPlayButtonView extends Ar {
-	constructor(..._args48) {
-		super(..._args48);
+Pi = __decorate$1([injectFromBase()], Pi);
+var Fi;
+var Ii = (_QuickPlayButtonView = class QuickPlayButtonView extends hr {
+	constructor(..._args49) {
+		super(..._args49);
 		_defineProperty(this, "_quickPlayButton", void 0);
 	}
 	init() {
@@ -107904,13 +108127,13 @@ var Ai = (_QuickPlayButtonView = class QuickPlayButtonView extends Ar {
 		this._quickPlayButton.button.enable();
 	}
 	turnOffButton() {
-		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "OFF"), this.emit(ki.QUICK_PLAY_OFF), this.emit(ki.QUICK_PLAY_BUTTON_CLICKED);
+		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "OFF"), this.emit(Fi.QUICK_PLAY_OFF), this.emit(Fi.QUICK_PLAY_BUTTON_CLICKED);
 	}
 	turnOnButton() {
-		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "ON"), this.emit(ki.QUICK_PLAY_ON), this.emit(ki.QUICK_PLAY_BUTTON_CLICKED);
+		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "ON"), this.emit(Fi.QUICK_PLAY_ON), this.emit(Fi.QUICK_PLAY_BUTTON_CLICKED);
 	}
 	turnOnSuperMode() {
-		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "SUPER"), this.emit(ki.QUICK_PLAY_SUPER_MODE), this.emit(ki.QUICK_PLAY_BUTTON_CLICKED);
+		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "SUPER"), this.emit(Fi.QUICK_PLAY_SUPER_MODE), this.emit(Fi.QUICK_PLAY_BUTTON_CLICKED);
 	}
 	setupLayout() {
 		let e = this.mainUI.getBoneFromUI("QUICKPLAY_BUTTON"), t = this.mainUI.getBoneFromPortraitUI("QUICKPLAY_BUTTON");
@@ -107920,7 +108143,7 @@ var Ai = (_QuickPlayButtonView = class QuickPlayButtonView extends Ar {
 		}, {
 			x: 0,
 			y: 0
-		}, [K.RIGHT], [K.BOTTOM], {
+		}, [J$1.RIGHT], [J$1.BOTTOM], {
 			x: e.scaleX,
 			y: e.scaleY
 		}, {
@@ -107938,28 +108161,28 @@ var Ai = (_QuickPlayButtonView = class QuickPlayButtonView extends Ar {
 		var _this$_quickPlayButto, _this$_quickPlayButto2;
 		((_this$_quickPlayButto = this._quickPlayButton.button.spineAnimation.skeleton.skin) === null || _this$_quickPlayButto === void 0 ? void 0 : _this$_quickPlayButto.name) === "OFF" ? this.turnOnButton() : ((_this$_quickPlayButto2 = this._quickPlayButton.button.spineAnimation.skeleton.skin) === null || _this$_quickPlayButto2 === void 0 ? void 0 : _this$_quickPlayButto2.name) === "ON" ? this.turnOnSuperMode() : this.turnOffButton();
 	}
-}, ki = _QuickPlayButtonView, _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_ON", "QuickPlayButtonView::QUICK_PLAY_ON"), _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_OFF", "QuickPlayButtonView::QUICK_PLAY_OFF"), _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_SUPER_MODE", "QuickPlayButtonView::QUICK_PLAY_SUPER_MODE"), _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_BUTTON_CLICKED", "QuickPlayButtonView::QUICK_PLAY_BUTTON_CLICKED"), _QuickPlayButtonView);
-Ai = ki = __decorate$1([injectFromBase()], Ai);
-var ji = class QuickPlayButtonModule extends Nr {
+}, Fi = _QuickPlayButtonView, _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_ON", "QuickPlayButtonView::QUICK_PLAY_ON"), _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_OFF", "QuickPlayButtonView::QUICK_PLAY_OFF"), _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_SUPER_MODE", "QuickPlayButtonView::QUICK_PLAY_SUPER_MODE"), _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_BUTTON_CLICKED", "QuickPlayButtonView::QUICK_PLAY_BUTTON_CLICKED"), _QuickPlayButtonView);
+Ii = Fi = __decorate$1([injectFromBase()], Ii);
+var Li = class QuickPlayButtonModule extends vr {
 	setupEvents() {
-		super.setupEvents(), this.onView(Ai.QUICK_PLAY_ON, this.onQuickPlayOn), this.onView(Ai.QUICK_PLAY_OFF, this.onQuickPlayOff), this.onView(Ai.QUICK_PLAY_SUPER_MODE, this.onSuperQuickPlayOn), this.onViewEmitEvent(Ai.QUICK_PLAY_BUTTON_CLICKED, QuickPlayButtonEvents.QUICK_PLAY_BUTTON_CLICKED);
+		super.setupEvents(), this.onView(Ii.QUICK_PLAY_ON, this.onQuickPlayOn), this.onView(Ii.QUICK_PLAY_OFF, this.onQuickPlayOff), this.onView(Ii.QUICK_PLAY_SUPER_MODE, this.onSuperQuickPlayOn), this.onViewEmitEvent(Ii.QUICK_PLAY_BUTTON_CLICKED, QuickPlayButtonEvents.QUICK_PLAY_BUTTON_CLICKED);
 	}
 	onQuickPlayOn() {
-		this.gameData.settings.fastPlayMode = Me$1.ON;
+		this.gameData.settings.fastPlayMode = Oe$1.ON;
 	}
 	onQuickPlayOff() {
-		this.gameData.settings.fastPlayMode = Me$1.OFF;
+		this.gameData.settings.fastPlayMode = Oe$1.OFF;
 	}
 	onSuperQuickPlayOn() {
-		this.gameData.settings.fastPlayMode = Me$1.SUPER;
+		this.gameData.settings.fastPlayMode = Oe$1.SUPER;
 	}
 };
-ji = __decorate$1([injectFromBase()], ji);
-var QuickPlayButtonEvents = (_Class23 = class {}, _defineProperty(_Class23, "QUICK_PLAY_BUTTON_CLICKED", "QuickPlayButtonEvents::QUICK_PLAY_BUTTON_CLICKED"), _Class23);
-var Ni;
-var Pi = (_RestoreScreenView = class RestoreScreenView extends G {
+Li = __decorate$1([injectFromBase()], Li);
+var QuickPlayButtonEvents = (_Class22 = class {}, _defineProperty(_Class22, "QUICK_PLAY_BUTTON_CLICKED", "QuickPlayButtonEvents::QUICK_PLAY_BUTTON_CLICKED"), _Class22);
+var zi;
+var Bi = (_RestoreScreenView = class RestoreScreenView extends q {
 	showRestoreMessage() {
-		let e = new import_lib.Container(), t = new import_lib.Graphics().rect(-960, -960, w$1, T).fill({
+		let e = new import_lib.Container(), t = new import_lib.Graphics().rect(-960, -960, O$1, k).fill({
 			color: 16711680,
 			alpha: .5
 		});
@@ -107968,33 +108191,33 @@ var Pi = (_RestoreScreenView = class RestoreScreenView extends G {
 		n.anchor.set(.5), e.addChild(n), e.on("tap", this.onPlayerClicked.bind(this)), e.on("click", this.onPlayerClicked.bind(this));
 	}
 	onPlayerClicked() {
-		this.hide(), this.emit(Ni.RESTORE_CLOSED);
+		this.hide(), this.emit(zi.RESTORE_CLOSED);
 	}
-}, Ni = _RestoreScreenView, _defineProperty(_RestoreScreenView, "RESTORE_CLOSED", "RestoreScreenView::RESTORE_CLOSED"), _RestoreScreenView);
-Pi = Ni = __decorate$1([injectFromBase()], Pi);
-var RestoreScreenEvents = (_Class24 = class {}, _defineProperty(_Class24, "RESTORE_CLOSED", "RestoreScreenEvents::RESTORE_CLOSED"), _Class24);
-var Fi = class RestoreScreenModule extends P$2 {
+}, zi = _RestoreScreenView, _defineProperty(_RestoreScreenView, "RESTORE_CLOSED", "RestoreScreenView::RESTORE_CLOSED"), _RestoreScreenView);
+Bi = zi = __decorate$1([injectFromBase()], Bi);
+var RestoreScreenEvents = (_Class23 = class {}, _defineProperty(_Class23, "RESTORE_CLOSED", "RestoreScreenEvents::RESTORE_CLOSED"), _Class23);
+var Vi = class RestoreScreenModule extends L {
 	showRestoreMessage() {
 		this.view.showRestoreMessage();
 	}
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(Pi.RESTORE_CLOSED, RestoreScreenEvents.RESTORE_CLOSED);
+		super.setupEvents(), this.onViewEmitEvent(Bi.RESTORE_CLOSED, RestoreScreenEvents.RESTORE_CLOSED);
 	}
 };
-Fi = __decorate$1([injectFromBase()], Fi);
-var MenuEvents = (_Class25 = class {}, _defineProperty(_Class25, "OPENED", "MenuEvents::OPENED"), _defineProperty(_Class25, "CLOSED", "MenuEvents::CLOSED"), _Class25);
-var Ii = /* @__PURE__ */ function(e) {
+Vi = __decorate$1([injectFromBase()], Vi);
+var MenuEvents = (_Class24 = class {}, _defineProperty(_Class24, "OPENED", "MenuEvents::OPENED"), _defineProperty(_Class24, "CLOSED", "MenuEvents::CLOSED"), _Class24);
+var Hi = /* @__PURE__ */ function(e) {
 	return e.Info = "info", e.Settings = "settings", e.History = "history", e;
 }({});
 var textSection = (e, t = noop) => {
-	var n = Hi(), r = first_child(n), i = child(r), a = child(i, !0);
+	var n = Ji(), r = first_child(n), i = child(r), a = child(i, !0);
 	reset(i), reset(r);
 	var o = sibling(r, 2), s = child(o);
 	each(s, 16, () => {
 		var _t$intro;
 		return (_t$intro = t().intro) !== null && _t$intro !== void 0 ? _t$intro : [];
 	}, (e) => e, (e, t) => {
-		var n = Li(), r = child(n, !0);
+		var n = Ui(), r = child(n, !0);
 		reset(n), template_effect(() => set_text(r, t)), append(e, n);
 	});
 	var c = sibling(s, 2), consequent_1 = (e) => {
@@ -108004,12 +108227,12 @@ var textSection = (e, t = noop) => {
 			var r = comment();
 			each(first_child(r), 17, () => t().bullets, (e) => typeof e == "string" ? e : e.text, (e, t) => {
 				var n = comment(), r = first_child(n), consequent = (e) => {
-					var n = Ri(), r = child(n, !0);
+					var n = Wi(), r = child(n, !0);
 					reset(n), template_effect(() => set_text(r, get(t))), append(e, n);
 				}, alternate = (e) => {
-					var n = Bi(), r = child(n), i = sibling(r);
+					var n = Ki(), r = child(n), i = sibling(r);
 					each(i, 20, () => get(t).sub, (e) => e, (e, t) => {
-						var n = zi(), r = child(n, !0);
+						var n = Gi(), r = child(n, !0);
 						reset(n), template_effect(() => set_text(r, t)), append(e, n);
 					}), reset(i), reset(n), template_effect(() => {
 						var _get$text;
@@ -108028,31 +108251,31 @@ var textSection = (e, t = noop) => {
 		var _t$outro;
 		return (_t$outro = t().outro) !== null && _t$outro !== void 0 ? _t$outro : [];
 	}, (e) => e, (e, t) => {
-		var n = Vi(), r = child(n, !0);
+		var n = qi(), r = child(n, !0);
 		reset(n), template_effect(() => set_text(r, t)), append(e, n);
 	}), reset(o), template_effect(() => set_text(a, t().title)), append(e, n);
 };
-var Li = /* @__PURE__ */ from_html("<p class=\"menu-text-p svelte-pmm4xy\"> </p>");
-var Ri = /* @__PURE__ */ from_html("<li class=\"svelte-pmm4xy\"> </li>");
-var zi = /* @__PURE__ */ from_html("<li class=\"svelte-pmm4xy\"> </li>");
-var Bi = /* @__PURE__ */ from_html("<li class=\"svelte-pmm4xy\"> <ul class=\"menu-text-sublist svelte-pmm4xy\"></ul></li>");
-var Vi = /* @__PURE__ */ from_html("<p class=\"menu-text-p svelte-pmm4xy\"> </p>");
-var Hi = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <div class=\"menu-textsection svelte-pmm4xy\"><!> <!> <!></div>", 1);
-var Ui = /* @__PURE__ */ from_html("<div class=\"menu-pay-row svelte-pmm4xy\"><span class=\"menu-pay-count svelte-pmm4xy\"> </span> <span class=\"menu-pay-val svelte-pmm4xy\"> </span></div>");
-var Wi = /* @__PURE__ */ from_html("<div class=\"menu-symbol svelte-pmm4xy\"><div class=\"menu-symbol-frame svelte-pmm4xy\"><img loading=\"lazy\" class=\"svelte-pmm4xy\"/></div> <div class=\"menu-pays svelte-pmm4xy\"></div></div>");
-var Gi = /* @__PURE__ */ from_html("<h3 class=\"menu-feature-title svelte-pmm4xy\"> </h3> <div class=\"menu-symbols svelte-pmm4xy\"></div>", 1);
-var Ki = /* @__PURE__ */ from_html("<img class=\"menu-feature-image svelte-pmm4xy\" loading=\"lazy\"/>");
-var qi = /* @__PURE__ */ from_html("<section class=\"menu-feature\"><h3 class=\"menu-feature-title svelte-pmm4xy\"> </h3> <!> <p class=\"menu-feature-body svelte-pmm4xy\"> </p></section>");
-var Ji = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <div class=\"menu-features svelte-pmm4xy\"></div>", 1);
-var Yi = /* @__PURE__ */ from_html("<p class=\"menu-muted-block\"> </p>");
-var Xi = /* @__PURE__ */ from_html("<p class=\"menu-version svelte-pmm4xy\"> </p>");
-var Zi = /* @__PURE__ */ from_html("<div class=\"menu-info\"><header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <!> <!> <!> <!> <!> <!></div>");
-var Qi = {
+var Ui = /* @__PURE__ */ from_html("<p class=\"menu-text-p svelte-pmm4xy\"> </p>");
+var Wi = /* @__PURE__ */ from_html("<li class=\"svelte-pmm4xy\"> </li>");
+var Gi = /* @__PURE__ */ from_html("<li class=\"svelte-pmm4xy\"> </li>");
+var Ki = /* @__PURE__ */ from_html("<li class=\"svelte-pmm4xy\"> <ul class=\"menu-text-sublist svelte-pmm4xy\"></ul></li>");
+var qi = /* @__PURE__ */ from_html("<p class=\"menu-text-p svelte-pmm4xy\"> </p>");
+var Ji = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <div class=\"menu-textsection svelte-pmm4xy\"><!> <!> <!></div>", 1);
+var Yi = /* @__PURE__ */ from_html("<div class=\"menu-pay-row svelte-pmm4xy\"><span class=\"menu-pay-count svelte-pmm4xy\"> </span> <span class=\"menu-pay-val svelte-pmm4xy\"> </span></div>");
+var Xi = /* @__PURE__ */ from_html("<div class=\"menu-symbol svelte-pmm4xy\"><div class=\"menu-symbol-frame svelte-pmm4xy\"><img loading=\"lazy\" class=\"svelte-pmm4xy\"/></div> <div class=\"menu-pays svelte-pmm4xy\"></div></div>");
+var Zi = /* @__PURE__ */ from_html("<h3 class=\"menu-feature-title svelte-pmm4xy\"> </h3> <div class=\"menu-symbols svelte-pmm4xy\"></div>", 1);
+var Qi = /* @__PURE__ */ from_html("<img class=\"menu-feature-image svelte-pmm4xy\" loading=\"lazy\"/>");
+var $i = /* @__PURE__ */ from_html("<section class=\"menu-feature\"><h3 class=\"menu-feature-title svelte-pmm4xy\"> </h3> <!> <p class=\"menu-feature-body svelte-pmm4xy\"> </p></section>");
+var ea = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <div class=\"menu-features svelte-pmm4xy\"></div>", 1);
+var ta = /* @__PURE__ */ from_html("<p class=\"menu-muted-block\"> </p>");
+var na = /* @__PURE__ */ from_html("<p class=\"menu-version svelte-pmm4xy\"> </p>");
+var ra = /* @__PURE__ */ from_html("<div class=\"menu-info\"><header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <!> <!> <!> <!> <!> <!></div>");
+var ia = {
 	hash: "svelte-pmm4xy",
 	code: "\n	/* ---- Symbol grid ---------------------------------------------------- */.menu-symbols.svelte-pmm4xy {display:grid;grid-template-columns:repeat(auto-fit, minmax(90px, 1fr));gap:20px 32px;margin-bottom:28px;justify-content:center;}.menu-symbol.svelte-pmm4xy {display:flex;flex-direction:column;align-items:center;}.menu-symbol-frame.svelte-pmm4xy {width:100%;aspect-ratio:1 / 1;display:flex;align-items:center;justify-content:center;}.menu-symbol-frame.svelte-pmm4xy img:where(.svelte-pmm4xy) {width:100%;height:100%;object-fit:contain;}\n\n	/* ---- Pays (count | value, separator drawn via ::after) -------------- */.menu-pays.svelte-pmm4xy {margin-top:8px;display:flex;flex-direction:column;gap:2px;width:100%;max-width:80px;font-family:var(--menu-body);font-size:13px;color:var(--menu-ink);line-height:1.25;}.menu-pay-row.svelte-pmm4xy {display:flex;align-items:center;width:100%;position:relative;}.menu-pay-row.svelte-pmm4xy::after {content:'|';color:#5a4d35;position:absolute;left:50%;transform:translateX(-50%);font-weight:400;}.menu-pay-count.svelte-pmm4xy {color:#9a8a68;font-variant-numeric:tabular-nums;flex:1;text-align:right;padding-right:8px;}.menu-pay-val.svelte-pmm4xy {font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:0.3px;flex:1;text-align:left;padding-left:8px;}\n\n	/* ---- Feature blocks ------------------------------------------------- */.menu-features.svelte-pmm4xy {display:flex;flex-direction:column;gap:28px;max-width:640px;margin:0 auto;}.menu-feature-image.svelte-pmm4xy {display:block;width:100%;max-width:480px;height:auto;margin:8px auto 12px;object-fit:contain;}.menu-feature-title.svelte-pmm4xy {margin:0 0 10px;text-align:center;font-family:var(--menu-display);font-weight:700;letter-spacing:2px;font-size:22px;color:var(--menu-ink);}.menu-feature-body.svelte-pmm4xy {margin:0;color:var(--menu-ink);font-family:var(--menu-body);font-size:15px;line-height:1.6;text-align:left;text-wrap:pretty;}\n\n	/* ---- Text sections (Game Rules / How to Play) ----------------------- */.menu-textsection.svelte-pmm4xy {max-width:640px;margin:0 auto 32px;color:var(--menu-ink);font-family:var(--menu-body);font-size:15px;line-height:1.55;text-wrap:pretty;}.menu-text-p.svelte-pmm4xy {margin:0 0 12px;}.menu-text-list.svelte-pmm4xy {margin:4px 0 12px;padding-left:1.4em;}.menu-text-list.svelte-pmm4xy > li:where(.svelte-pmm4xy) {margin-bottom:8px;}.menu-text-list.svelte-pmm4xy > li:where(.svelte-pmm4xy)::marker {color:var(--menu-gold);}.menu-text-sublist.svelte-pmm4xy {margin:6px 0 4px;padding-left:1.4em;list-style-type:disc;}.menu-text-sublist.svelte-pmm4xy > li:where(.svelte-pmm4xy) {margin-bottom:4px;}.menu-version.svelte-pmm4xy {margin:32px 0 0;text-align:center;font-family:var(--menu-body);font-size:12px;letter-spacing:1px;color:var(--menu-muted);}\n\n	@media (max-width: 559px) {.menu-feature-title.svelte-pmm4xy {font-size:19px;}.menu-symbols.svelte-pmm4xy {gap:16px 24px;margin-bottom:20px;}.menu-pays.svelte-pmm4xy {font-size:14px;max-width:90px;}\n	}"
 };
 function InfoTab(e, t) {
-	push(t, !0), append_styles$1(e, Qi);
+	push(t, !0), append_styles$1(e, ia);
 	let n = /* @__PURE__ */ state(proxy({
 		payCounts: [
 			5,
@@ -108082,22 +108305,22 @@ function InfoTab(e, t) {
 	function formatPay(e) {
 		return Number.isInteger(e) ? e.toString() : e.toFixed(2);
 	}
-	var a = Zi();
+	var a = ra();
 	var o = child(a);
 	var s = child(o);
 	var c = child(s, !0);
 	reset(s), reset(o);
 	var l = sibling(o, 2);
 	var consequent_2 = (e) => {
-		var i = Gi(), a = first_child(i), o = child(a, !0);
+		var i = Zi(), a = first_child(i), o = child(a, !0);
 		reset(a);
 		var s = sibling(a, 2);
 		each(s, 21, () => get(n).symbols, (e) => e.id, (e, t) => {
-			var n = Wi(), i = child(n), a = child(i);
+			var n = Xi(), i = child(n), a = child(i);
 			reset(i);
 			var o = sibling(i, 2);
 			each(o, 21, () => payRows(get(t)), (e) => e.count, (e, t) => {
-				var n = Ui(), r = child(n), i = child(r, !0);
+				var n = Yi(), r = child(n), i = child(r, !0);
 				reset(r);
 				var a = sibling(r, 2), o = child(a, !0);
 				reset(a), reset(n), template_effect((e) => {
@@ -108113,14 +108336,14 @@ function InfoTab(e, t) {
 	});
 	var u = sibling(l, 2);
 	var consequent_4 = (e) => {
-		var i = Ji(), a = first_child(i), o = child(a), s = child(o, !0);
+		var i = ea(), a = first_child(i), o = child(a), s = child(o, !0);
 		reset(o), reset(a);
 		var c = sibling(a, 2);
 		each(c, 21, () => get(n).features, (e) => e.title, (e, t) => {
-			var n = qi(), i = child(n), a = child(i, !0);
+			var n = $i(), i = child(n), a = child(i, !0);
 			reset(i);
 			var o = sibling(i, 2), consequent_3 = (e) => {
-				var n = Ki();
+				var n = Qi();
 				template_effect(() => {
 					set_attribute(n, "src", get(r) + get(t).image), set_attribute(n, "alt", get(t).title);
 				}), append(e, n);
@@ -108153,7 +108376,7 @@ function InfoTab(e, t) {
 	});
 	var p = sibling(f, 2);
 	var consequent_7 = (e) => {
-		var n = Yi(), r = child(n, !0);
+		var n = ta(), r = child(n, !0);
 		reset(n), template_effect((e) => set_text(r, e), [() => t.host.t("menu.info.empty", "No information available.")]), append(e, n);
 	};
 	if_block(p, (e) => {
@@ -108161,7 +108384,7 @@ function InfoTab(e, t) {
 	});
 	var m = sibling(p, 2);
 	var consequent_8 = (e) => {
-		var r = Xi(), i = child(r);
+		var r = na(), i = child(r);
 		reset(r), template_effect((e) => {
 			var _get$version;
 			return set_text(i, `${e !== null && e !== void 0 ? e : ""}: ${(_get$version = get(n).version) !== null && _get$version !== void 0 ? _get$version : ""}`);
@@ -108171,14 +108394,14 @@ function InfoTab(e, t) {
 		get(n).version && e(consequent_8);
 	}), reset(a), template_effect((e) => set_text(c, e), [() => t.host.t("menu.info.paytable", "PAYTABLE")]), append(e, a), pop();
 }
-var $i = /* @__PURE__ */ from_html("<div class=\"menu-row svelte-vahujd\"><span class=\"menu-row-label svelte-vahujd\"> </span> <button role=\"switch\"><span class=\"menu-toggle-knob svelte-vahujd\"></span></button></div>");
-var ea = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <div class=\"menu-settings svelte-vahujd\"><div class=\"menu-row svelte-vahujd\"><span class=\"menu-row-label svelte-vahujd\"> </span> <div class=\"menu-row-control svelte-vahujd\"><input class=\"menu-range svelte-vahujd\" type=\"range\" min=\"0\" max=\"100\" step=\"1\"/> <span class=\"menu-range-value svelte-vahujd\"> </span></div></div> <!></div>", 1);
-var ta = {
+var aa = /* @__PURE__ */ from_html("<div class=\"menu-row svelte-vahujd\"><span class=\"menu-row-label svelte-vahujd\"> </span> <button role=\"switch\"><span class=\"menu-toggle-knob svelte-vahujd\"></span></button></div>");
+var oa = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <div class=\"menu-settings svelte-vahujd\"><div class=\"menu-row svelte-vahujd\"><span class=\"menu-row-label svelte-vahujd\"> </span> <div class=\"menu-row-control svelte-vahujd\"><input class=\"menu-range svelte-vahujd\" type=\"range\" min=\"0\" max=\"100\" step=\"1\"/> <span class=\"menu-range-value svelte-vahujd\"> </span></div></div> <!></div>", 1);
+var sa = {
 	hash: "svelte-vahujd",
 	code: ".menu-settings.svelte-vahujd {max-width:520px;margin:0 auto;}.menu-row.svelte-vahujd {display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 4px;border-bottom:0.5px solid var(--menu-line);font-family:var(--menu-body);font-size:16px;}.menu-row-label.svelte-vahujd {color:var(--menu-ink);}.menu-row-control.svelte-vahujd {display:flex;align-items:center;gap:14px;flex:1;max-width:60%;}.menu-range.svelte-vahujd {flex:1;appearance:none;height:4px;border-radius:999px;background:var(--menu-muted);accent-color:var(--menu-gold);}.menu-range-value.svelte-vahujd {min-width:2.4em;text-align:right;color:var(--menu-muted);font-variant-numeric:tabular-nums;}.menu-toggle.svelte-vahujd {flex:none;width:50px;height:28px;border-radius:999px;background:var(--menu-line);border:1px solid #3a2e1c;position:relative;cursor:pointer;padding:0;transition:background 0.2s, border-color 0.2s;}.menu-toggle.on.svelte-vahujd {background:var(--menu-gold);border-color:var(--menu-gold-bright);}.menu-toggle-knob.svelte-vahujd {position:absolute;top:2px;left:3px;width:22px;height:22px;border-radius:999px;background:var(--menu-gold);transition:left 0.2s, background 0.2s;}.menu-toggle.on.svelte-vahujd .menu-toggle-knob:where(.svelte-vahujd) {left:25px;background:#0a0807;}"
 };
 function SettingsTab(e, t) {
-	push(t, !0), append_styles$1(e, ta);
+	push(t, !0), append_styles$1(e, sa);
 	let n = /* @__PURE__ */ state(0);
 	let r = /* @__PURE__ */ state(!1);
 	let i = /* @__PURE__ */ state(!1);
@@ -108194,7 +108417,7 @@ function SettingsTab(e, t) {
 	function onFastPlayToggle() {
 		t.host.setFastPlay(!get(r));
 	}
-	var a = ea();
+	var a = oa();
 	var o = first_child(a);
 	var s = child(o);
 	var c = child(s, !0);
@@ -108212,7 +108435,7 @@ function SettingsTab(e, t) {
 	reset(h), reset(p), reset(u);
 	var _ = sibling(u, 2);
 	var consequent = (e) => {
-		var n = $i(), i = child(n), a = child(i, !0);
+		var n = aa(), i = child(n), a = child(i, !0);
 		reset(i);
 		var o = sibling(i, 2);
 		let s;
@@ -108232,16 +108455,16 @@ function SettingsTab(e, t) {
 	]), delegated("input", m, onVolumeInput), append(e, a), pop();
 }
 delegate(["input", "click"]);
-var na = /* @__PURE__ */ from_html("<p class=\"menu-muted-block\"> </p>");
-var ra = /* @__PURE__ */ from_html("<article class=\"menu-hrow svelte-zkkne0\"><div class=\"menu-hgrid svelte-zkkne0\"><div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue menu-hvalue-time svelte-zkkne0\"><span> </span> <span class=\"menu-hclock svelte-zkkne0\"> </span></div></div> <div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue svelte-zkkne0\"> </div></div> <div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue svelte-zkkne0\"> </div></div> <div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue svelte-zkkne0\"> </div></div></div> <button class=\"menu-replay svelte-zkkne0\"><svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" aria-hidden=\"true\" class=\"svelte-zkkne0\"><path d=\"M8 5v14l11-7z\" fill=\"currentColor\"></path></svg> <span> </span></button></article>");
-var ia = /* @__PURE__ */ from_html("<div class=\"menu-history svelte-zkkne0\"></div>");
-var aa = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <!>", 1);
-var oa = {
+var ca = /* @__PURE__ */ from_html("<p class=\"menu-muted-block\"> </p>");
+var la = /* @__PURE__ */ from_html("<article class=\"menu-hrow svelte-zkkne0\"><div class=\"menu-hgrid svelte-zkkne0\"><div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue menu-hvalue-time svelte-zkkne0\"><span> </span> <span class=\"menu-hclock svelte-zkkne0\"> </span></div></div> <div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue svelte-zkkne0\"> </div></div> <div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue svelte-zkkne0\"> </div></div> <div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue svelte-zkkne0\"> </div></div></div> <button class=\"menu-replay svelte-zkkne0\"><svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" aria-hidden=\"true\" class=\"svelte-zkkne0\"><path d=\"M8 5v14l11-7z\" fill=\"currentColor\"></path></svg> <span> </span></button></article>");
+var ua = /* @__PURE__ */ from_html("<div class=\"menu-history svelte-zkkne0\"></div>");
+var da = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <!>", 1);
+var fa = {
 	hash: "svelte-zkkne0",
 	code: ".menu-history.svelte-zkkne0 {display:flex;flex-direction:column;gap:14px;max-width:720px;margin:0 auto;}.menu-hrow.svelte-zkkne0 {display:flex;align-items:center;gap:18px;padding:18px 20px;background:rgba(0, 0, 0, 0.45);border-radius:14px;}.menu-hgrid.svelte-zkkne0 {flex:1;display:grid;grid-template-columns:repeat(4, 1fr);gap:10px 18px;}.menu-hcell.svelte-zkkne0 {display:flex;flex-direction:column;gap:4px;min-width:0;}.menu-hlabel.svelte-zkkne0 {font-family:var(--menu-display);font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--menu-muted);}.menu-hvalue.svelte-zkkne0 {font-family:var(--menu-body);font-size:15px;font-weight:400;color:var(--menu-ink);font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}\n	/* Time cell stacks date on top, clock muted below — fits a narrow column. */.menu-hvalue-time.svelte-zkkne0 {display:flex;flex-direction:column;line-height:1.25;white-space:normal;}.menu-hclock.svelte-zkkne0 {font-size:13px;color:var(--menu-muted);}.menu-replay.svelte-zkkne0 {flex:none;display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border:none;border-radius:10px;background:var(--menu-gold-bright);color:#1a1108;font-family:var(--menu-display);font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:filter 0.15s;}.menu-replay.svelte-zkkne0:hover {filter:brightness(1.08);}.menu-replay.svelte-zkkne0 svg:where(.svelte-zkkne0) {display:block;}\n\n	@media (max-width: 559px) {.menu-hrow.svelte-zkkne0 {flex-direction:column;align-items:stretch;gap:14px;padding:14px;}.menu-hgrid.svelte-zkkne0 {grid-template-columns:1fr 1fr;gap:12px 16px;}.menu-replay.svelte-zkkne0 {align-self:flex-start;}\n	}"
 };
 function HistoryTab(e, t) {
-	push(t, !0), append_styles$1(e, oa);
+	push(t, !0), append_styles$1(e, fa);
 	let n = /* @__PURE__ */ state(proxy([]));
 	onMount(() => {
 		let sync = () => {
@@ -108257,21 +108480,21 @@ function HistoryTab(e, t) {
 	function onReplay(e) {
 		t.host.replayRound(e);
 	}
-	var r = aa();
+	var r = da();
 	var i = first_child(r);
 	var a = child(i);
 	var o = child(a, !0);
 	reset(a), reset(i);
 	var s = sibling(i, 2);
 	var consequent = (e) => {
-		var n = na(), r = child(n, !0);
+		var n = ca(), r = child(n, !0);
 		reset(n), template_effect((e) => set_text(r, e), [() => t.host.t("menu.history.placeholder", "History coming soon.")]), append(e, n);
 	};
 	var alternate = (e) => {
-		var r = ia();
+		var r = ua();
 		each(r, 21, () => get(n), (e) => e.gameRoundId, (e, n) => {
 			let r = /* @__PURE__ */ user_derived(() => parseRoundTime(get(n).startTime));
-			var i = ra(), a = child(i), o = child(a), s = child(o), c = child(s, !0);
+			var i = la(), a = child(i), o = child(a), s = child(o), c = child(s, !0);
 			reset(s);
 			var l = sibling(s, 2), u = child(l), d = child(u, !0);
 			reset(u);
@@ -108281,17 +108504,17 @@ function HistoryTab(e, t) {
 			reset(h);
 			var _ = sibling(h, 2), v = child(_, !0);
 			reset(_), reset(m);
-			var y = sibling(m, 2), b = child(y), ee = child(b, !0);
+			var y = sibling(m, 2), b = child(y), x = child(b, !0);
 			reset(b);
-			var x = sibling(b, 2), S = child(x, !0);
-			reset(x), reset(y);
-			var te = sibling(y, 2), ne = child(te), C = child(ne, !0);
-			reset(ne);
-			var re = sibling(ne, 2), ie = child(re, !0);
-			reset(re), reset(te), reset(a);
-			var ae = sibling(a, 2), oe = sibling(child(ae), 2), se = child(oe, !0);
-			reset(oe), reset(ae), reset(i), template_effect((e, t, n, r, i, a, o, s, l, u) => {
-				set_text(c, e), set_text(d, t), set_text(p, n), set_text(g, r), set_text(v, i), set_text(ee, a), set_text(S, o), set_text(C, s), set_text(ie, l), set_text(se, u);
+			var S = sibling(b, 2), C = child(S, !0);
+			reset(S), reset(y);
+			var w = sibling(y, 2), T = child(w), E = child(T, !0);
+			reset(T);
+			var ee = sibling(T, 2), te = child(ee, !0);
+			reset(ee), reset(w), reset(a);
+			var ne = sibling(a, 2), re = sibling(child(ne), 2), ie = child(re, !0);
+			reset(re), reset(ne), reset(i), template_effect((e, t, n, r, i, a, o, s, l, u) => {
+				set_text(c, e), set_text(d, t), set_text(p, n), set_text(g, r), set_text(v, i), set_text(x, a), set_text(C, o), set_text(E, s), set_text(te, l), set_text(ie, u);
 			}, [
 				() => t.host.t("menu.history.time", "Time"),
 				() => get(r) ? get(r).toLocaleDateString(void 0, {
@@ -108310,7 +108533,7 @@ function HistoryTab(e, t) {
 				() => t.host.t("menu.history.balance", "Balance"),
 				() => t.host.formatMoney(get(n).balanceAfter),
 				() => t.host.t("menu.history.replay", "Replay")
-			]), delegated("click", ae, () => onReplay(get(n).gameRoundId)), append(e, i);
+			]), delegated("click", ne, () => onReplay(get(n).gameRoundId)), append(e, i);
 		}), reset(r), append(e, r);
 	};
 	if_block(s, (e) => {
@@ -108319,26 +108542,26 @@ function HistoryTab(e, t) {
 }
 delegate(["click"]);
 var infoIcon = (e) => {
-	append(e, sa());
+	append(e, pa());
 };
 var settingsIcon = (e) => {
-	append(e, ca());
+	append(e, ma());
 };
 var historyIcon = (e) => {
-	append(e, la());
+	append(e, ha());
 };
-var sa = /* @__PURE__ */ from_svg("<svg viewBox=\"0 0 26 26\" fill=\"none\" class=\"svelte-1pu34h4\"><circle cx=\"13\" cy=\"13\" r=\"11.5\" stroke=\"currentColor\" stroke-width=\"1.8\"></circle><circle cx=\"13\" cy=\"7.5\" r=\"1.4\" fill=\"currentColor\"></circle><rect x=\"11.7\" y=\"11\" width=\"2.6\" height=\"9\" rx=\"1.3\" fill=\"currentColor\"></rect></svg>");
-var ca = /* @__PURE__ */ from_svg("<svg viewBox=\"0 0 26 26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" class=\"svelte-1pu34h4\"><line x1=\"3\" y1=\"7\" x2=\"23\" y2=\"7\"></line><circle cx=\"9\" cy=\"7\" r=\"2.4\" fill=\"var(--menu-bg-2)\"></circle><line x1=\"3\" y1=\"13\" x2=\"23\" y2=\"13\"></line><circle cx=\"17\" cy=\"13\" r=\"2.4\" fill=\"var(--menu-bg-2)\"></circle><line x1=\"3\" y1=\"19\" x2=\"23\" y2=\"19\"></line><circle cx=\"11\" cy=\"19\" r=\"2.4\" fill=\"var(--menu-bg-2)\"></circle></svg>");
-var la = /* @__PURE__ */ from_svg("<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svelte-1pu34h4\"><path d=\"M3 12a9 9 0 1 0 9-9 9.7 9.7 0 0 0-6.74 2.74L3 8\"></path><path d=\"M3 3v5h5\"></path><path d=\"M12 7v5l4 2\"></path></svg>");
-var ua = /* @__PURE__ */ from_html("<button><span class=\"menu-tab-icon svelte-1pu34h4\"><!></span></button>");
-var da = /* @__PURE__ */ from_html("<div class=\"menu-overlay svelte-1pu34h4\" role=\"dialog\" aria-modal=\"true\"><button class=\"menu-close svelte-1pu34h4\"><svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" aria-hidden=\"true\"><path d=\"M6 6l12 12M18 6L6 18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></path></svg></button> <div class=\"menu-content svelte-1pu34h4\"><div class=\"menu-content-inner svelte-1pu34h4\"><!></div></div> <nav class=\"menu-tabbar svelte-1pu34h4\"><div class=\"menu-tabbar-rule svelte-1pu34h4\" aria-hidden=\"true\"></div> <div class=\"menu-tabs svelte-1pu34h4\"></div></nav></div>");
-var fa = {
+var pa = /* @__PURE__ */ from_svg("<svg viewBox=\"0 0 26 26\" fill=\"none\" class=\"svelte-1pu34h4\"><circle cx=\"13\" cy=\"13\" r=\"11.5\" stroke=\"currentColor\" stroke-width=\"1.8\"></circle><circle cx=\"13\" cy=\"7.5\" r=\"1.4\" fill=\"currentColor\"></circle><rect x=\"11.7\" y=\"11\" width=\"2.6\" height=\"9\" rx=\"1.3\" fill=\"currentColor\"></rect></svg>");
+var ma = /* @__PURE__ */ from_svg("<svg viewBox=\"0 0 26 26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" class=\"svelte-1pu34h4\"><line x1=\"3\" y1=\"7\" x2=\"23\" y2=\"7\"></line><circle cx=\"9\" cy=\"7\" r=\"2.4\" fill=\"var(--menu-bg-2)\"></circle><line x1=\"3\" y1=\"13\" x2=\"23\" y2=\"13\"></line><circle cx=\"17\" cy=\"13\" r=\"2.4\" fill=\"var(--menu-bg-2)\"></circle><line x1=\"3\" y1=\"19\" x2=\"23\" y2=\"19\"></line><circle cx=\"11\" cy=\"19\" r=\"2.4\" fill=\"var(--menu-bg-2)\"></circle></svg>");
+var ha = /* @__PURE__ */ from_svg("<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svelte-1pu34h4\"><path d=\"M3 12a9 9 0 1 0 9-9 9.7 9.7 0 0 0-6.74 2.74L3 8\"></path><path d=\"M3 3v5h5\"></path><path d=\"M12 7v5l4 2\"></path></svg>");
+var ga = /* @__PURE__ */ from_html("<button><span class=\"menu-tab-icon svelte-1pu34h4\"><!></span></button>");
+var _a = /* @__PURE__ */ from_html("<div class=\"menu-overlay svelte-1pu34h4\" role=\"dialog\" aria-modal=\"true\"><button class=\"menu-close svelte-1pu34h4\"><svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" aria-hidden=\"true\"><path d=\"M6 6l12 12M18 6L6 18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></path></svg></button> <div class=\"menu-content svelte-1pu34h4\"><div class=\"menu-content-inner svelte-1pu34h4\"><!></div></div> <nav class=\"menu-tabbar svelte-1pu34h4\"><div class=\"menu-tabbar-rule svelte-1pu34h4\" aria-hidden=\"true\"></div> <div class=\"menu-tabs svelte-1pu34h4\"></div></nav></div>");
+var va = {
 	hash: "svelte-1pu34h4",
 	code: "\n	@font-face {font-family:'Poppins';src:url('resources/FONTS/Poppins-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;\n	}\n	@font-face {font-family:'Poppins';src:url('resources/FONTS/Poppins-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap;\n	}\n\n	@font-face {font-family:'Poppins';src:url('resources/FONTS/Poppins-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap;\n	}.menu-overlay.svelte-1pu34h4 {\n		/* ---- Design tokens — inherited by child components -------------- */--menu-bg-2: #15100c;--menu-ink: #ffffff;--menu-gold: #caa23a;--menu-gold-bright: #f3d271;--menu-muted: #7a6a48;--menu-line: #2a2218;--menu-display: 'Poppins', system-ui, -apple-system, sans-serif;--menu-body: 'Poppins', system-ui, -apple-system, sans-serif;position:fixed;inset:0;z-index:9000;display:flex;flex-direction:column;overflow:hidden;background:radial-gradient(140% 80% at 50% 0%, rgba(21, 16, 12, 0.92), rgba(10, 8, 7, 0.92) 60%, rgba(5, 4, 2, 0.92));color:var(--menu-ink);font-family:var(--menu-body);user-select:none;-webkit-font-smoothing:antialiased;}.menu-overlay.svelte-1pu34h4 * {box-sizing:border-box;}.menu-overlay.svelte-1pu34h4 *::-webkit-scrollbar {width:0;height:0;}.menu-close.svelte-1pu34h4 {position:absolute;top:18px;right:18px;z-index:10;display:flex;align-items:center;justify-content:center;width:2.1em;height:2.1em;font-size:18px;border-radius:50%;background:rgba(10, 8, 7, 0.7);border:2px solid var(--menu-gold-bright);color:var(--menu-gold-bright);cursor:pointer;backdrop-filter:blur(6px);}.menu-close.svelte-1pu34h4:hover {background:rgba(202, 162, 58, 0.18);}\n\n	/* scroll area fills all space above the pinned tab bar */.menu-content.svelte-1pu34h4 {position:relative;z-index:2;flex:1 1 auto;min-height:0;overflow-y:auto;}.menu-content-inner.svelte-1pu34h4 {max-width:820px;margin:0 auto;padding:40px clamp(24px, 7vw, 80px) 48px;}\n\n	/* ---- Shared utility classes used by child tabs ---------------------- */.menu-overlay.svelte-1pu34h4 .menu-deco-head {text-align:center;padding:8px 0 22px;}.menu-overlay.svelte-1pu34h4 .menu-deco-title {margin:0;font-family:var(--menu-display);font-weight:700;letter-spacing:2px;font-size:28px;color:var(--menu-ink);text-shadow:0 2px 0 rgba(0, 0, 0, 0.5);}.menu-overlay.svelte-1pu34h4 .menu-muted-block {padding:72px 16px;text-align:center;color:var(--menu-muted);letter-spacing:2px;}\n\n	/* ---- Bottom tab bar — pinned to bottom of the full screen ----------- */.menu-tabbar.svelte-1pu34h4 {position:relative;z-index:3;flex:0 0 auto;background:linear-gradient(180deg, rgba(14, 10, 8, 0.96), rgba(6, 4, 3, 0.98));backdrop-filter:blur(14px) saturate(140%);border-top:1px solid rgba(202, 162, 58, 0.25);box-shadow:0 -10px 30px rgba(0, 0, 0, 0.5);}.menu-tabbar-rule.svelte-1pu34h4 {position:absolute;top:0;left:12%;right:12%;height:0.5px;background:linear-gradient(90deg, transparent, rgba(202, 162, 58, 0.53) 30%, rgba(202, 162, 58, 0.53) 70%, transparent);}.menu-tabs.svelte-1pu34h4 {display:grid;grid-template-columns:repeat(3, 1fr);gap:4px;max-width:560px;margin:0 auto;padding:12px 8px calc(12px + env(safe-area-inset-bottom, 0px));}.menu-tab.svelte-1pu34h4 {display:flex;align-items:center;justify-content:center;padding:14px 8px;background:transparent;border:none;cursor:pointer;color:var(--menu-muted);transition:color 0.15s;}.menu-tab.active.svelte-1pu34h4 {color:var(--menu-ink);}.menu-tab-icon.svelte-1pu34h4 {width:40px;height:40px;display:flex;align-items:center;justify-content:center;opacity:0.85;}.menu-tab.active.svelte-1pu34h4 .menu-tab-icon:where(.svelte-1pu34h4) {opacity:1;}.menu-tab-icon.svelte-1pu34h4 svg:where(.svelte-1pu34h4) {width:100%;height:100%;}\n\n	@media (max-width: 559px) {.menu-content-inner.svelte-1pu34h4 {padding:24px 18px 40px;}.menu-overlay.svelte-1pu34h4 .menu-deco-title {font-size:22px;letter-spacing:4px;}\n	}"
 };
 function MenuRoot(e, t) {
-	push(t, !0), append_styles$1(e, fa);
-	let n = /* @__PURE__ */ state(proxy(Ii.Info));
+	push(t, !0), append_styles$1(e, va);
+	let n = /* @__PURE__ */ state(proxy(Hi.Info));
 	onMount(() => {
 		let sync = () => {
 			set(n, t.host.activeView, !0);
@@ -108347,17 +108570,17 @@ function MenuRoot(e, t) {
 	});
 	let r = /* @__PURE__ */ user_derived(() => [
 		{
-			id: Ii.Info,
+			id: Hi.Info,
 			label: t.host.t("menu.tab.info", "Paytable"),
 			icon: infoIcon
 		},
 		{
-			id: Ii.Settings,
+			id: Hi.Settings,
 			label: t.host.t("menu.tab.settings", "Settings"),
 			icon: settingsIcon
 		},
 		{
-			id: Ii.History,
+			id: Hi.History,
 			label: t.host.t("menu.tab.history", "History"),
 			icon: historyIcon
 		}
@@ -108371,8 +108594,8 @@ function MenuRoot(e, t) {
 	function onKeydown(e) {
 		e.key === "Escape" && close();
 	}
-	var i = da();
-	event("keydown", gn, onKeydown);
+	var i = _a();
+	event("keydown", pn, onKeydown);
 	var a = child(i);
 	var o = sibling(a, 2);
 	var s = child(o);
@@ -108393,12 +108616,12 @@ function MenuRoot(e, t) {
 		} });
 	};
 	if_block(c, (e) => {
-		get(n) === Ii.Info ? e(consequent) : get(n) === Ii.Settings ? e(consequent_1, 1) : e(alternate, -1);
+		get(n) === Hi.Info ? e(consequent) : get(n) === Hi.Settings ? e(consequent_1, 1) : e(alternate, -1);
 	}), reset(s), reset(o);
 	var l = sibling(o, 2);
 	var u = sibling(child(l), 2);
 	each(u, 21, () => get(r), (e) => e.id, (e, t) => {
-		var r = ua();
+		var r = ga();
 		let i;
 		var a = child(r);
 		snippet(child(a), () => get(t).icon), reset(a), reset(r), template_effect(() => {
@@ -108407,10 +108630,10 @@ function MenuRoot(e, t) {
 	}), reset(u), reset(l), reset(i), template_effect((e) => set_attribute(a, "aria-label", e), [() => t.host.t("menu.close", "Close")]), delegated("click", a, close), append(e, i), pop();
 }
 delegate(["click"]);
-var pa = class MenuModule extends qn {
-	constructor(..._args49) {
-		super(..._args49);
-		_defineProperty(this, "_activeView", Ii.Info);
+var ya = class MenuModule extends Gn {
+	constructor(..._args50) {
+		super(..._args50);
+		_defineProperty(this, "_activeView", Hi.Info);
 		_defineProperty(this, "_paytable", {
 			payCounts: [
 				5,
@@ -108426,7 +108649,7 @@ var pa = class MenuModule extends qn {
 		_defineProperty(this, "_volumeChanged", void 0);
 	}
 	init(e, t) {
-		super.init(e, t), this._quickPlayButton = this.diContainer.isBound(ji) ? this.diContainer.get(ji) : void 0, this._paytable = this.buildPaytable(), this._imageBase = this._gameConfig.get("paytable.imageBase", this._imageBase), this._history = this._gameConfig.get("menu.history", []);
+		super.init(e, t), this._quickPlayButton = this.diContainer.isBound(Li) ? this.diContainer.get(Li) : void 0, this._paytable = this.buildPaytable(), this._imageBase = this._gameConfig.get("paytable.imageBase", this._imageBase), this._history = this._gameConfig.get("menu.history", []);
 	}
 	afterInit() {
 		super.afterInit(), this._host.mount(MenuRoot, { host: this }, "MenuRoot");
@@ -108466,7 +108689,7 @@ var pa = class MenuModule extends qn {
 		(_this$_quickPlayButto5 = this._quickPlayButton) === null || _this$_quickPlayButto5 === void 0 || _this$_quickPlayButto5.view[e ? "turnOnButton" : "turnOffButton"](), this.notify();
 	}
 	replayRound(e) {
-		E$1.info("[Menu] REPLAY ROUND CALLBACK NOT SET, roundId:", e);
+		A.info("[Menu] REPLAY ROUND CALLBACK NOT SET, roundId:", e);
 	}
 	close() {
 		this._host.hide(), this.emit(MenuEvents.CLOSED);
@@ -108503,12 +108726,12 @@ var pa = class MenuModule extends qn {
 		};
 	}
 };
-pa = __decorate$1([injectFromBase()], pa);
-var MenuButtonEvents = (_Class26 = class {}, _defineProperty(_Class26, "CLICKED", "MenuButtonEvents::CLICKED"), _Class26);
-var ma;
-var ha = (_MenuButtonView = class MenuButtonView extends Ar {
-	constructor(..._args50) {
-		super(..._args50);
+ya = __decorate$1([injectFromBase()], ya);
+var MenuButtonEvents = (_Class25 = class {}, _defineProperty(_Class25, "CLICKED", "MenuButtonEvents::CLICKED"), _Class25);
+var ba;
+var xa = (_MenuButtonView = class MenuButtonView extends hr {
+	constructor(..._args51) {
+		super(..._args51);
 		_defineProperty(this, "_menuButton", void 0);
 	}
 	init() {
@@ -108528,7 +108751,7 @@ var ha = (_MenuButtonView = class MenuButtonView extends Ar {
 		}, {
 			x: 0,
 			y: 0
-		}, [K.RIGHT], [K.BOTTOM], {
+		}, [J$1.RIGHT], [J$1.BOTTOM], {
 			x: e.scaleX,
 			y: e.scaleY
 		}, {
@@ -108543,21 +108766,21 @@ var ha = (_MenuButtonView = class MenuButtonView extends Ar {
 		return new GenericButton("MENU_BUTTON.json", void 0, this.spineUtils, this.onButtonClicked.bind(this));
 	}
 	onButtonClicked() {
-		this.emit(ma.BUTTON_CLICKED);
+		this.emit(ba.BUTTON_CLICKED);
 	}
-}, ma = _MenuButtonView, _defineProperty(_MenuButtonView, "BUTTON_CLICKED", "MenuButtonView::BUTTON_CLICKED"), _MenuButtonView);
-ha = ma = __decorate$1([injectFromBase()], ha);
-var ga = class MenuButtonModule extends Nr {
+}, ba = _MenuButtonView, _defineProperty(_MenuButtonView, "BUTTON_CLICKED", "MenuButtonView::BUTTON_CLICKED"), _MenuButtonView);
+xa = ba = __decorate$1([injectFromBase()], xa);
+var Sa = class MenuButtonModule extends vr {
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(ha.BUTTON_CLICKED, MenuButtonEvents.CLICKED);
+		super.setupEvents(), this.onViewEmitEvent(xa.BUTTON_CLICKED, MenuButtonEvents.CLICKED);
 	}
 };
-ga = __decorate$1([injectFromBase()], ga);
-var SpinButtonEvents = (_Class27 = class {}, _defineProperty(_Class27, "PRE_SPIN_BUTTON_PRESSED", "SpinButtonEvents::PRE_SPIN_BUTTON_PRESSED"), _defineProperty(_Class27, "SPIN_BUTTON_PRESSED", "SpinButtonEvents::__SPIN_BUTTON_PRESSED__"), _defineProperty(_Class27, "QUICKSTOP_PRESSED", "SpinButtonEvents::__QUICKSTOP_PRESSED__"), _defineProperty(_Class27, "SPIN_BUTTON_HOLD", "SpinButtonEvents::__SPIN_BUTTON_HOLD__"), _defineProperty(_Class27, "START_AUTOPLAY_BUTTON_PRESSED", "SpinButtonEvents::START_AUTOPLAY_BUTTON_PRESSED"), _defineProperty(_Class27, "SPIN_PRESSED_NOT_ENOUGH_MONEY", "SpinButtonEvents::__SPIN_PRESSED_NOT_ENOUGH_MONEY__"), _defineProperty(_Class27, "SPACE_BUTTON_CLICKED", "SpinButtonEvents::__SPACE_BUTTON_CLICKED__"), _defineProperty(_Class27, "SPIN_BUTTON_BECOMING_VISIBLE_AND_ENABLED", "SpinButtonEvents::SPIN_BUTTON_BECOMING_VISIBLE_AND_ENABLED"), _defineProperty(_Class27, "REGULATION_SPIN_DELAY_PASSED", "SpinButtonEvents::REGULATION_SPIN_DELAY_PASSED"), _defineProperty(_Class27, "REGULATION_SPIN_DELAY_STARTED", "SpinButtonEvents::REGULATION_SPIN_DELAY_STARTED"), _defineProperty(_Class27, "DISABLE_SPIN_BY_SPIN", "SpinButtonEvents::DISABLE_SPIN_BY_SPIN"), _defineProperty(_Class27, "ENABLE_SPIN_BY_SPIN", "SpinButtonEvents::ENABLE_SPIN_BY_SPIN"), _defineProperty(_Class27, "SKIP_BY_SPIN_BUTTON_PRESSED", "SpinButtonEvents::SKIP_BY_SPIN_BUTTON_PRESSED"), _Class27);
-var _a;
-var va = (_SpinButtonView = class SpinButtonView extends Ar {
-	constructor(..._args51) {
-		super(..._args51);
+Sa = __decorate$1([injectFromBase()], Sa);
+var SpinButtonEvents = (_Class26 = class {}, _defineProperty(_Class26, "PRE_SPIN_BUTTON_PRESSED", "SpinButtonEvents::PRE_SPIN_BUTTON_PRESSED"), _defineProperty(_Class26, "SPIN_BUTTON_PRESSED", "SpinButtonEvents::__SPIN_BUTTON_PRESSED__"), _defineProperty(_Class26, "QUICKSTOP_PRESSED", "SpinButtonEvents::__QUICKSTOP_PRESSED__"), _defineProperty(_Class26, "SPIN_BUTTON_HOLD", "SpinButtonEvents::__SPIN_BUTTON_HOLD__"), _defineProperty(_Class26, "START_AUTOPLAY_BUTTON_PRESSED", "SpinButtonEvents::START_AUTOPLAY_BUTTON_PRESSED"), _defineProperty(_Class26, "SPIN_PRESSED_NOT_ENOUGH_MONEY", "SpinButtonEvents::__SPIN_PRESSED_NOT_ENOUGH_MONEY__"), _defineProperty(_Class26, "SPACE_BUTTON_CLICKED", "SpinButtonEvents::__SPACE_BUTTON_CLICKED__"), _defineProperty(_Class26, "SPIN_BUTTON_BECOMING_VISIBLE_AND_ENABLED", "SpinButtonEvents::SPIN_BUTTON_BECOMING_VISIBLE_AND_ENABLED"), _defineProperty(_Class26, "REGULATION_SPIN_DELAY_PASSED", "SpinButtonEvents::REGULATION_SPIN_DELAY_PASSED"), _defineProperty(_Class26, "REGULATION_SPIN_DELAY_STARTED", "SpinButtonEvents::REGULATION_SPIN_DELAY_STARTED"), _defineProperty(_Class26, "DISABLE_SPIN_BY_SPIN", "SpinButtonEvents::DISABLE_SPIN_BY_SPIN"), _defineProperty(_Class26, "ENABLE_SPIN_BY_SPIN", "SpinButtonEvents::ENABLE_SPIN_BY_SPIN"), _defineProperty(_Class26, "SKIP_BY_SPIN_BUTTON_PRESSED", "SpinButtonEvents::SKIP_BY_SPIN_BUTTON_PRESSED"), _Class26);
+var Ca;
+var wa = (_SpinButtonView = class SpinButtonView extends hr {
+	constructor(..._args52) {
+		super(..._args52);
 		_defineProperty(this, "_spinButton", void 0);
 		_defineProperty(this, "_quickstopCover", void 0);
 	}
@@ -108596,7 +108819,7 @@ var va = (_SpinButtonView = class SpinButtonView extends Ar {
 		}, {
 			x: 0,
 			y: 0
-		}, [K.RIGHT], [K.BOTTOM], {
+		}, [J$1.RIGHT], [J$1.BOTTOM], {
 			x: e.scaleX,
 			y: e.scaleY
 		}, {
@@ -108606,11 +108829,11 @@ var va = (_SpinButtonView = class SpinButtonView extends Ar {
 	}
 	setupQuickstopContainer() {
 		this._quickstopCover = new import_lib.Container();
-		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, w$1, T).fill(16711680);
+		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, O$1, k).fill(16711680);
 		this._quickstopCover.pivot.set(960, 960), this._quickstopCover.addChild(e), this._quickstopCover.interactive = !0, this._quickstopCover.onclick = () => {
-			this.emit(_a.QUICKSTOP_CLICKED);
+			this.emit(Ca.QUICKSTOP_CLICKED);
 		}, this._quickstopCover.ontap = () => {
-			this.emit(_a.QUICKSTOP_CLICKED);
+			this.emit(Ca.QUICKSTOP_CLICKED);
 		}, this.mainUI.insert(this._quickstopCover, "RESULTS"), this._quickstopCover.visible = !1;
 	}
 	setupSpinButton() {
@@ -108620,11 +108843,11 @@ var va = (_SpinButtonView = class SpinButtonView extends Ar {
 		return new GenericButton("SPIN_BUTTON.json", void 0, this.spineUtils, this.onSpinButtonClicked.bind(this));
 	}
 	onSpinButtonClicked() {
-		this.soundPlayer.play("buttonClick"), this.emit(_a.SPIN_BUTTON_CLICKED);
+		this.soundPlayer.play("buttonClick"), this.emit(Ca.SPIN_BUTTON_CLICKED);
 	}
-}, _a = _SpinButtonView, _defineProperty(_SpinButtonView, "SPIN_BUTTON_CLICKED", "SpinButtonView::SPIN_BUTTON_CLICKED"), _defineProperty(_SpinButtonView, "QUICKSTOP_CLICKED", "SpinButtonView::QUICKSTOP_CLICKED"), _SpinButtonView);
-va = _a = __decorate$1([injectFromBase()], va);
-var ya = class SpinButtonModule extends Nr {
+}, Ca = _SpinButtonView, _defineProperty(_SpinButtonView, "SPIN_BUTTON_CLICKED", "SpinButtonView::SPIN_BUTTON_CLICKED"), _defineProperty(_SpinButtonView, "QUICKSTOP_CLICKED", "SpinButtonView::QUICKSTOP_CLICKED"), _SpinButtonView);
+wa = Ca = __decorate$1([injectFromBase()], wa);
+var Ta = class SpinButtonModule extends vr {
 	init(e, t) {
 		super.init(e, t), this.view.hideQuickStop();
 	}
@@ -108650,7 +108873,7 @@ var ya = class SpinButtonModule extends Nr {
 		this.view.enableSpinButton();
 	}
 	setupEvents() {
-		super.setupEvents(), this.onView(va.SPIN_BUTTON_CLICKED, this.onViewSpinButtonClicked), this.onView(va.QUICKSTOP_CLICKED, this.onViewQuickstopClicked);
+		super.setupEvents(), this.onView(wa.SPIN_BUTTON_CLICKED, this.onViewSpinButtonClicked), this.onView(wa.QUICKSTOP_CLICKED, this.onViewQuickstopClicked);
 	}
 	isQuickStopAvailable() {
 		return this.gameData.clientConfig.quickStop || this.gameData.clientConfig.minSpinTime === 0;
@@ -108671,12 +108894,12 @@ var ya = class SpinButtonModule extends Nr {
 		e ? this.enableSpinButton() : this.disableSpinButton();
 	}
 };
-ya = __decorate$1([injectFromBase()], ya);
-var BetButtonEvents = (_Class28 = class {}, _defineProperty(_Class28, "BET_BUTTON_CLICKED", "BetButtonEvents::BET_BUTTON_CLICKED"), _Class28);
-var ba;
-var xa = (_BetButtonView = class BetButtonView extends Ar {
-	constructor(..._args52) {
-		super(..._args52);
+Ta = __decorate$1([injectFromBase()], Ta);
+var BetButtonEvents = (_Class27 = class {}, _defineProperty(_Class27, "BET_BUTTON_CLICKED", "BetButtonEvents::BET_BUTTON_CLICKED"), _Class27);
+var Ea;
+var Da = (_BetButtonView = class BetButtonView extends hr {
+	constructor(..._args53) {
+		super(..._args53);
 		_defineProperty(this, "_betButton", void 0);
 	}
 	init() {
@@ -108696,7 +108919,7 @@ var xa = (_BetButtonView = class BetButtonView extends Ar {
 		}, {
 			x: 0,
 			y: 0
-		}, [K.RIGHT], [K.BOTTOM], {
+		}, [J$1.RIGHT], [J$1.BOTTOM], {
 			x: e.scaleX,
 			y: e.scaleY
 		}, {
@@ -108711,18 +108934,19 @@ var xa = (_BetButtonView = class BetButtonView extends Ar {
 		return new GenericButton("BET_BUTTON.json", void 0, this.spineUtils, this.onButtonClicked.bind(this));
 	}
 	onButtonClicked() {
-		this.emit(ba.BUTTON_CLICKED);
+		this.emit(Ea.BUTTON_CLICKED);
 	}
-}, ba = _BetButtonView, _defineProperty(_BetButtonView, "BUTTON_CLICKED", "BetButtonView::BUTTON_CLICKED"), _BetButtonView);
-xa = ba = __decorate$1([injectFromBase()], xa);
-var Sa = class BetButtonModule extends Nr {
+}, Ea = _BetButtonView, _defineProperty(_BetButtonView, "BUTTON_CLICKED", "BetButtonView::BUTTON_CLICKED"), _BetButtonView);
+Da = Ea = __decorate$1([injectFromBase()], Da);
+var Oa = class BetButtonModule extends vr {
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(xa.BUTTON_CLICKED, BetButtonEvents.BET_BUTTON_CLICKED);
+		super.setupEvents(), this.onViewEmitEvent(Da.BUTTON_CLICKED, BetButtonEvents.BET_BUTTON_CLICKED);
 	}
 };
-Sa = __decorate$1([injectFromBase()], Sa);
-var Ca;
-var wa = {
+Oa = __decorate$1([injectFromBase()], Oa);
+var BetMenuEvents = (_Class28 = class {}, _defineProperty(_Class28, "BET_MENU_OPENED", "BetMenuEvents::BET_MENU_OPENED"), _defineProperty(_Class28, "BET_MENU_CLOSED", "BetMenuEvents::BET_MENU_CLOSED"), _defineProperty(_Class28, "BET_CHANGED", "BetMenuEvents::BET_CHANGED"), _defineProperty(_Class28, "BET_MENU_ACCEPT_CLICKED", "BetMenuEvents::BET_MENU_ACCEPT_CLICKED"), _defineProperty(_Class28, "BET_MENU_DECLINE_CLICKED", "BetMenuEvents::BET_MENU_DECLINE_CLICKED"), _Class28);
+var ka;
+var Aa = {
 	fill: 16777215,
 	fontSize: 40,
 	fontWeight: "bold",
@@ -108734,7 +108958,7 @@ var wa = {
 		angle: 0
 	}
 };
-var Ta = {
+var ja = {
 	color: "#918e8e",
 	hoverColor: "#e4dcdf",
 	pressedColor: "#807879",
@@ -108743,14 +108967,14 @@ var Ta = {
 	panelColor: "#222425",
 	panelBorderColor: "#3e3f40"
 };
-var Ea = {
-	fontColor: Ta.textColor,
-	bgColor: Ta.panelColor,
-	bgBorderColor: Ta.panelBorderColor,
-	buttonColor: Ta.color,
-	hoverButtonColor: Ta.hoverColor,
-	pressedButtonColor: Ta.pressedColor,
-	disabledButtonColor: Ta.disabledColor,
+var Ma = {
+	fontColor: ja.textColor,
+	bgColor: ja.panelColor,
+	bgBorderColor: ja.panelBorderColor,
+	buttonColor: ja.color,
+	hoverButtonColor: ja.hoverColor,
+	pressedButtonColor: ja.pressedColor,
+	disabledButtonColor: ja.disabledColor,
 	width: 705,
 	radius: 20,
 	elementsMargin: 10,
@@ -108760,9 +108984,9 @@ var Ea = {
 	elementsWidth: 100,
 	elementsHeight: 100
 };
-var Da = (_BetMenuView = class BetMenuView extends G {
-	constructor(..._args53) {
-		super(..._args53);
+var Na = (_BetMenuView = class BetMenuView extends q {
+	constructor(..._args54) {
+		super(..._args54);
 		_defineProperty(this, "_currentBetIndex", -1);
 		_defineProperty(this, "_newBetIndex", -1);
 		_defineProperty(this, "_bets", []);
@@ -108791,11 +109015,11 @@ var Da = (_BetMenuView = class BetMenuView extends G {
 		});
 	}
 	initButtons() {
-		let { fontColor: e, bgColor: t, bgBorderColor: n, elementsMargin: r, topPadding: i, leftPadding: o, rightPadding: s, radius: c } = Ea, l = [];
+		let { fontColor: e, bgColor: t, bgBorderColor: n, elementsMargin: r, topPadding: i, leftPadding: o, rightPadding: s, radius: c } = Ma, l = [];
 		for (let t = 0; t < this._bets.length; t++) {
 			let n = new import_lib.Text({
 				text: this.currencyFormatter.formatCurrency(this._bets[t], !0),
-				style: _objectSpread2(_objectSpread2({}, wa), {}, { fill: e })
+				style: _objectSpread2(_objectSpread2({}, Aa), {}, { fill: e })
 			}), r = this.createFancyButton(n);
 			r.label = `Button${t}`, r.onPress.connect(() => {
 				this.resetAllButtons(), this.onBetClicked(t), r.button.enabled = !1, r.setState("disabled");
@@ -108806,14 +109030,14 @@ var Da = (_BetMenuView = class BetMenuView extends G {
 			width: 1
 		}), _ = this.createFancyButton(new import_lib.Text({
 			text: "✕",
-			style: _objectSpread2(_objectSpread2({}, wa), {}, { fill: e })
+			style: _objectSpread2(_objectSpread2({}, Aa), {}, { fill: e })
 		}));
 		_.onPress.connect(() => {
 			this.onDeclineClicked();
 		}), _.position.set(g.width / 2 - _.width, g.height / 2 - _.height / 2);
 		let v = this.createFancyButton(new import_lib.Text({
 			text: "✓",
-			style: _objectSpread2(_objectSpread2({}, wa), {}, { fill: e })
+			style: _objectSpread2(_objectSpread2({}, Aa), {}, { fill: e })
 		}));
 		v.onPress.connect(() => {
 			this.onAcceptClicked();
@@ -108826,7 +109050,7 @@ var Da = (_BetMenuView = class BetMenuView extends G {
 		}), g.addChild(this._buttonsList), this.container.addChild(g, v, _), g.position.set(-(g.width / 2), -(g.height / 2 + _.height / 2)), l.forEach((e) => this._buttonsList.addChild(e));
 	}
 	createFancyButton(e) {
-		let { buttonColor: t, hoverButtonColor: n, pressedButtonColor: r, disabledButtonColor: i, elementsWidth: o, elementsHeight: s, radius: c } = Ea, l = new FancyButton({
+		let { buttonColor: t, hoverButtonColor: n, pressedButtonColor: r, disabledButtonColor: i, elementsWidth: o, elementsHeight: s, radius: c } = Ma, l = new FancyButton({
 			defaultView: new import_lib.Graphics().roundRect(0, 0, o, s, c).fill(t).roundRect(0, 8, o - 3, s - 3, c).stroke({
 				color: t,
 				width: 2
@@ -108852,11 +109076,11 @@ var Da = (_BetMenuView = class BetMenuView extends G {
 		}), l.anchor.set(0), l;
 	}
 	onAcceptClicked() {
-		this._newBetIndex !== -1 && this._newBetIndex !== this._currentBetIndex && (this._currentBetIndex = this._newBetIndex, this.emit(Ca.BET_CHANGED, this._bets[this._currentBetIndex])), this._newBetIndex = -1, this.emit(Ca.ACCEPT_CLICKED);
+		this._newBetIndex !== -1 && this._newBetIndex !== this._currentBetIndex && (this._currentBetIndex = this._newBetIndex, this.emit(ka.BET_CHANGED, this._bets[this._currentBetIndex])), this._newBetIndex = -1, this.emit(ka.ACCEPT_CLICKED);
 	}
 	onDeclineClicked() {
 		let e = this._buttonsList.getChildByLabel(`Button${this._currentBetIndex}`);
-		e && (this.resetAllButtons(), e.button.enabled = !1, e.setState("disabled")), this._newBetIndex = -1, this.emit(Ca.DECLINE_CLICKED);
+		e && (this.resetAllButtons(), e.button.enabled = !1, e.setState("disabled")), this._newBetIndex = -1, this.emit(ka.DECLINE_CLICKED);
 	}
 	onBetClicked(e) {
 		this._newBetIndex = e;
@@ -108864,11 +109088,11 @@ var Da = (_BetMenuView = class BetMenuView extends G {
 	getDefaultOptionsPerRow() {
 		return 6;
 	}
-}, Ca = _BetMenuView, _defineProperty(_BetMenuView, "BET_CHANGED", "BetButtonView::BET_CHANGED"), _defineProperty(_BetMenuView, "ACCEPT_CLICKED", "BetButtonView::ACCEPT_CLICKED"), _defineProperty(_BetMenuView, "DECLINE_CLICKED", "BetButtonView::DECLINE_CLICKED"), _BetMenuView);
-Da = Ca = __decorate$1([injectFromBase()], Da);
-var Oa = class BetMenuModule extends P$2 {
+}, ka = _BetMenuView, _defineProperty(_BetMenuView, "BET_CHANGED", "BetButtonView::BET_CHANGED"), _defineProperty(_BetMenuView, "ACCEPT_CLICKED", "BetButtonView::ACCEPT_CLICKED"), _defineProperty(_BetMenuView, "DECLINE_CLICKED", "BetButtonView::DECLINE_CLICKED"), _BetMenuView);
+Na = ka = __decorate$1([injectFromBase()], Na);
+var Pa = class BetMenuModule extends L {
 	setupEvents() {
-		super.setupEvents(), this.onView(Da.BET_CHANGED, this.onViewBetChanged), this.onView(Da.ACCEPT_CLICKED, this.onViewAcceptClicked), this.onView(Da.DECLINE_CLICKED, this.onViewDeclineClicked), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponseReceived), this.on(BetButtonEvents.BET_BUTTON_CLICKED, this.onBetButtonClicked);
+		super.setupEvents(), this.onView(Na.BET_CHANGED, this.onViewBetChanged), this.onView(Na.ACCEPT_CLICKED, this.onViewAcceptClicked), this.onView(Na.DECLINE_CLICKED, this.onViewDeclineClicked), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponseReceived), this.on(BetButtonEvents.BET_BUTTON_CLICKED, this.onBetButtonClicked);
 	}
 	onBetButtonClicked() {
 		this.view.show(), this.emit(BetMenuEvents.BET_MENU_OPENED);
@@ -108886,18 +109110,18 @@ var Oa = class BetMenuModule extends P$2 {
 		this.view.hide(), this.eventManager.emit(BetMenuEvents.BET_MENU_CLOSED), this.eventManager.emit(BetMenuEvents.BET_MENU_DECLINE_CLICKED);
 	}
 };
-Oa = __decorate$1([injectFromBase()], Oa);
-var ka = /* @__PURE__ */ from_html("<span class=\"bet-sym svelte-15grg4q\"> </span>");
-var Aa = /* @__PURE__ */ from_html("<span class=\"bet-sym svelte-15grg4q\"> </span>");
-var ja = /* @__PURE__ */ from_html("<!><span class=\"bet-num\"> </span><!>", 1);
-var Ma = /* @__PURE__ */ from_html("<button> </button>");
-var Na = /* @__PURE__ */ from_html("<div class=\"bet-overlay svelte-15grg4q\"><button class=\"bet-backdrop svelte-15grg4q\"></button> <div class=\"bet-card svelte-15grg4q\" role=\"dialog\" aria-modal=\"true\"><div class=\"bet-head svelte-15grg4q\"><div class=\"bet-title svelte-15grg4q\"><span class=\"bet-dot svelte-15grg4q\"></span> <h2 class=\"svelte-15grg4q\"> </h2></div> <button class=\"bet-close svelte-15grg4q\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1 1L13 13M13 1L1 13\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg></button></div> <div class=\"bet-amount svelte-15grg4q\"><!></div> <div class=\"bet-slider svelte-15grg4q\"><div role=\"slider\" tabindex=\"0\"><div class=\"bet-track-fill svelte-15grg4q\"></div> <span class=\"bet-thumb svelte-15grg4q\"></span></div> <div class=\"bet-rangelabels svelte-15grg4q\"><span> </span> <span> </span></div></div> <div class=\"bet-grid svelte-15grg4q\"></div> <div class=\"bet-controls svelte-15grg4q\"><button class=\"bet-step svelte-15grg4q\">−</button> <button class=\"bet-step svelte-15grg4q\">+</button> <span class=\"bet-controls-spacer svelte-15grg4q\"></span> <div class=\"bet-jumps svelte-15grg4q\"><button class=\"svelte-15grg4q\"> </button> <button class=\"svelte-15grg4q\"> </button> <button class=\"svelte-15grg4q\"> </button></div></div></div></div>");
-var Pa = {
+Pa = __decorate$1([injectFromBase()], Pa);
+var Fa = /* @__PURE__ */ from_html("<span class=\"bet-sym svelte-15grg4q\"> </span>");
+var Ia = /* @__PURE__ */ from_html("<span class=\"bet-sym svelte-15grg4q\"> </span>");
+var La = /* @__PURE__ */ from_html("<!><span class=\"bet-num\"> </span><!>", 1);
+var Ra = /* @__PURE__ */ from_html("<button> </button>");
+var za = /* @__PURE__ */ from_html("<div class=\"bet-overlay svelte-15grg4q\"><button class=\"bet-backdrop svelte-15grg4q\"></button> <div class=\"bet-card svelte-15grg4q\" role=\"dialog\" aria-modal=\"true\"><div class=\"bet-head svelte-15grg4q\"><div class=\"bet-title svelte-15grg4q\"><span class=\"bet-dot svelte-15grg4q\"></span> <h2 class=\"svelte-15grg4q\"> </h2></div> <button class=\"bet-close svelte-15grg4q\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1 1L13 13M13 1L1 13\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg></button></div> <div class=\"bet-amount svelte-15grg4q\"><!></div> <div class=\"bet-slider svelte-15grg4q\"><div role=\"slider\" tabindex=\"0\"><div class=\"bet-track-fill svelte-15grg4q\"></div> <span class=\"bet-thumb svelte-15grg4q\"></span></div> <div class=\"bet-rangelabels svelte-15grg4q\"><span> </span> <span> </span></div></div> <div class=\"bet-grid svelte-15grg4q\"></div> <div class=\"bet-controls svelte-15grg4q\"><button class=\"bet-step svelte-15grg4q\">−</button> <button class=\"bet-step svelte-15grg4q\">+</button> <span class=\"bet-controls-spacer svelte-15grg4q\"></span> <div class=\"bet-jumps svelte-15grg4q\"><button class=\"svelte-15grg4q\"> </button> <button class=\"svelte-15grg4q\"> </button> <button class=\"svelte-15grg4q\"> </button></div></div></div></div>");
+var Ba = {
 	hash: "svelte-15grg4q",
 	code: ".bet-overlay.svelte-15grg4q {--cream: #ffffff;--muted: #7a6a48;--accent: #caa23a;--accent-2: #f3d271;--accent-soft: rgba(202, 162, 58, 0.14);--accent-ring: rgba(202, 162, 58, 0.20);--accent-shadow: rgba(202, 162, 58, 0.45);--surface-a: #1c150e;--surface-b: #120d08;--fill: rgba(255, 255, 255, 0.03);--fill-strong: rgba(255, 255, 255, 0.08);position:fixed;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;font-family:'Geist', 'Inter', system-ui, -apple-system, sans-serif;color:var(--cream);user-select:none;-webkit-font-smoothing:antialiased;}.bet-overlay.svelte-15grg4q * {box-sizing:border-box;}\n\n	/* Transparent click-catcher: clicking outside the card closes the menu. */.bet-backdrop.svelte-15grg4q {position:absolute;inset:0;border:none;padding:0;background:transparent;cursor:pointer;}.bet-card.svelte-15grg4q {position:relative;z-index:1;width:min(600px, 92vw);max-height:92vh;overflow-y:auto;padding:24px 28px 26px;display:flex;flex-direction:column;gap:20px;border-radius:18px;background:linear-gradient(var(--surface-a) 0%, var(--surface-b) 100%);box-shadow:rgba(0, 0, 0, 0.5) 0 30px 60px 0,\n			rgba(255, 255, 255, 0.06) 0 1px 0 0 inset;}.bet-head.svelte-15grg4q {display:flex;align-items:center;justify-content:space-between;}.bet-title.svelte-15grg4q {display:flex;align-items:center;gap:10px;}.bet-dot.svelte-15grg4q {width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px 0 var(--accent);}.bet-title.svelte-15grg4q h2:where(.svelte-15grg4q) {margin:0;font-size:13px;font-weight:600;letter-spacing:0.32em;text-transform:uppercase;}.bet-close.svelte-15grg4q {display:flex;align-items:center;justify-content:center;width:32px;height:32px;border:none;border-radius:8px;background:var(--fill);color:rgba(255, 255, 255, 0.7);cursor:pointer;}.bet-close.svelte-15grg4q:hover {background:var(--fill-strong);color:var(--cream);}.bet-amount.svelte-15grg4q {text-align:center;font-size:64px;font-weight:600;line-height:1;letter-spacing:-0.02em;}.bet-sym.svelte-15grg4q {color:var(--accent);}.bet-slider.svelte-15grg4q {display:flex;flex-direction:column;gap:12px;}.bet-track.svelte-15grg4q {position:relative;height:28px;margin:0 11px;cursor:pointer;touch-action:none;outline:none;}.bet-track.svelte-15grg4q::before {content:'';position:absolute;left:0;right:0;top:50%;height:4px;transform:translateY(-50%);background:var(--fill-strong);border-radius:4px;pointer-events:none;}.bet-track-fill.svelte-15grg4q {position:absolute;left:0;top:50%;height:4px;transform:translateY(-50%);background:linear-gradient(90deg, var(--accent), var(--accent-2));border-radius:4px;pointer-events:none;}.bet-thumb.svelte-15grg4q {position:absolute;top:50%;width:20px;height:20px;border-radius:50%;background:var(--accent);transform:translate(-50%, -50%);box-shadow:var(--accent-ring) 0 0 0 4px,\n			var(--accent-shadow) 0 4px 12px 0;pointer-events:none;}.bet-track.svelte-15grg4q:focus-visible .bet-thumb:where(.svelte-15grg4q) {box-shadow:var(--accent-ring) 0 0 0 5px,\n			var(--accent-shadow) 0 4px 12px 0;}.bet-track.dragging.svelte-15grg4q .bet-thumb:where(.svelte-15grg4q) {transform:translate(-50%, -50%) scale(1.12);}.bet-rangelabels.svelte-15grg4q {display:flex;justify-content:space-between;font-size:11px;color:var(--muted);}.bet-grid.svelte-15grg4q {display:grid;grid-template-columns:repeat(6, 1fr);gap:8px;}.bet-cell.svelte-15grg4q {padding:12px 4px;border:none;border-radius:9px;background:var(--fill);color:var(--muted);font:inherit;font-size:13px;font-weight:500;cursor:pointer;}.bet-cell.svelte-15grg4q:hover {background:var(--fill-strong);color:var(--cream);}.bet-cell.active.svelte-15grg4q {background:var(--accent-soft);color:var(--cream);box-shadow:inset 0 0 0 1px var(--accent-shadow);}.bet-controls.svelte-15grg4q {display:flex;align-items:center;gap:10px;}.bet-step.svelte-15grg4q {width:44px;height:44px;border:none;border-radius:11px;background:var(--fill);color:var(--cream);font-size:22px;line-height:1;cursor:pointer;}.bet-step.svelte-15grg4q:hover:not(:disabled) {background:var(--fill-strong);}.bet-step.svelte-15grg4q:disabled {opacity:0.35;cursor:not-allowed;}.bet-controls-spacer.svelte-15grg4q {flex:1;}.bet-jumps.svelte-15grg4q {display:flex;gap:4px;}.bet-jumps.svelte-15grg4q button:where(.svelte-15grg4q) {min-width:52px;padding:8px 10px;border:none;border-radius:8px;background:transparent;color:var(--muted);font:inherit;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;}.bet-jumps.svelte-15grg4q button:where(.svelte-15grg4q):hover {background:var(--fill);color:var(--cream);}\n\n	@media (max-width: 520px) {.bet-amount.svelte-15grg4q {font-size:52px;}.bet-card.svelte-15grg4q {gap:16px;padding:20px 18px 22px;}.bet-grid.svelte-15grg4q {grid-template-columns:repeat(4, 1fr);}\n	}"
 };
 function BetMenu(e, t) {
-	push(t, !0), append_styles$1(e, Pa);
+	push(t, !0), append_styles$1(e, Ba);
 	let n = /* @__PURE__ */ state(proxy([]));
 	let r = /* @__PURE__ */ state(0);
 	let i = /* @__PURE__ */ state(0);
@@ -108930,15 +109154,15 @@ function BetMenu(e, t) {
 		return get(n)[Math.round(i * get(u))];
 	}
 	function onTrackPointerDown(e) {
-		var _get7;
-		set(o, !0), (_get7 = get(a)) === null || _get7 === void 0 || _get7.setPointerCapture(e.pointerId), select(valueFromClientX(e.clientX));
+		var _get9;
+		set(o, !0), (_get9 = get(a)) === null || _get9 === void 0 || _get9.setPointerCapture(e.pointerId), select(valueFromClientX(e.clientX));
 	}
 	function onTrackPointerMove(e) {
 		get(o) && select(valueFromClientX(e.clientX));
 	}
 	function onTrackPointerUp(e) {
-		var _get8;
-		set(o, !1), (_get8 = get(a)) === null || _get8 === void 0 || _get8.releasePointerCapture(e.pointerId);
+		var _get10;
+		set(o, !1), (_get10 = get(a)) === null || _get10 === void 0 || _get10.releasePointerCapture(e.pointerId);
 	}
 	function onTrackKeydown(e) {
 		e.key === "ArrowRight" || e.key === "ArrowUp" ? (e.preventDefault(), step(1)) : (e.key === "ArrowLeft" || e.key === "ArrowDown") && (e.preventDefault(), step(-1));
@@ -108946,14 +109170,14 @@ function BetMenu(e, t) {
 	function onKeydown(e) {
 		e.key === "Escape" && close();
 	}
-	var f = Na();
-	event("keydown", gn, onKeydown);
+	var f = za();
+	event("keydown", pn, onKeydown);
 	{
 		let money = (e, t = noop) => {
-			var n = ja();
+			var n = La();
 			var r = first_child(n);
 			var consequent = (e) => {
-				var n = ka(), r = child(n, !0);
+				var n = Fa(), r = child(n, !0);
 				reset(n), template_effect(() => set_text(r, t().pre)), append(e, n);
 			};
 			if_block(r, (e) => {
@@ -108964,7 +109188,7 @@ function BetMenu(e, t) {
 			reset(i);
 			var o = sibling(i);
 			var consequent_1 = (e) => {
-				var n = Aa(), r = child(n, !0);
+				var n = Ia(), r = child(n, !0);
 				reset(n), template_effect(() => set_text(r, t().post)), append(e, n);
 			};
 			if_block(o, (e) => {
@@ -108982,42 +109206,42 @@ function BetMenu(e, t) {
 		reset(h);
 		var b = sibling(h, 2);
 		money(child(b), () => get(d)), reset(b);
-		var ee = sibling(b, 2);
-		var x = child(ee);
-		let e;
+		var x = sibling(b, 2);
 		var S = child(x);
-		var te = sibling(S, 2);
-		reset(x), bind_this(x, (e) => set(a, e), () => get(a));
-		var ne = sibling(x, 2);
-		var C = child(ne);
-		var re = child(C, !0);
-		reset(C);
-		var ie = sibling(C, 2);
-		var ae = child(ie, !0);
-		reset(ie), reset(ne), reset(ee);
-		var oe = sibling(ee, 2);
-		each(oe, 20, () => get(n), (e) => e, (e, n) => {
-			var i = Ma();
+		let e;
+		var C = child(S);
+		var w = sibling(C, 2);
+		reset(S), bind_this(S, (e) => set(a, e), () => get(a));
+		var T = sibling(S, 2);
+		var E = child(T);
+		var ee = child(E, !0);
+		reset(E);
+		var te = sibling(E, 2);
+		var ne = child(te, !0);
+		reset(te), reset(T), reset(x);
+		var re = sibling(x, 2);
+		each(re, 20, () => get(n), (e) => e, (e, n) => {
+			var i = Ra();
 			let a;
 			var o = child(i, !0);
 			reset(i), template_effect((e) => {
 				a = set_class(i, 1, "bet-cell svelte-15grg4q", null, a, { active: n === get(r) }), set_text(o, e);
 			}, [() => t.host.formatMoney(n, !1)]), delegated("click", i, () => select(n)), append(e, i);
-		}), reset(oe);
-		var se = sibling(oe, 2);
-		var ce = child(se);
-		var le = sibling(ce, 2);
-		var ue = sibling(le, 4);
-		var de = child(ue);
-		var fe = child(de, !0);
-		reset(de);
-		var pe = sibling(de, 2);
-		var w = child(pe, !0);
-		reset(pe);
-		var T = sibling(pe, 2);
-		var me = child(T, !0);
-		reset(T), reset(ue), reset(se), reset(m), reset(f), template_effect((t, n, i, a, d, f, m, h, g, _, b) => {
-			set_attribute(p, "aria-label", t), set_text(v, n), set_attribute(y, "aria-label", i), e = set_class(x, 1, "bet-track svelte-15grg4q", null, e, { dragging: get(o) }), set_attribute(x, "aria-label", a), set_attribute(x, "aria-valuemin", get(c)), set_attribute(x, "aria-valuemax", get(l)), set_attribute(x, "aria-valuenow", get(r)), set_style(S, `width:${get(s) / get(u) * 100}%`), set_style(te, `left:${get(s) / get(u) * 100}%`), set_text(re, d), set_text(ae, f), set_attribute(ce, "aria-label", m), ce.disabled = get(s) <= 0, set_attribute(le, "aria-label", h), le.disabled = get(s) >= get(u), set_text(fe, g), set_text(w, _), set_text(me, b);
+		}), reset(re);
+		var ie = sibling(re, 2);
+		var ae = child(ie);
+		var D = sibling(ae, 2);
+		var oe = sibling(D, 4);
+		var se = child(oe);
+		var ce = child(se, !0);
+		reset(se);
+		var le = sibling(se, 2);
+		var O = child(le, !0);
+		reset(le);
+		var k = sibling(le, 2);
+		var ue = child(k, !0);
+		reset(k), reset(oe), reset(ie), reset(m), reset(f), template_effect((t, n, i, a, d, f, m, h, g, _, b) => {
+			set_attribute(p, "aria-label", t), set_text(v, n), set_attribute(y, "aria-label", i), e = set_class(S, 1, "bet-track svelte-15grg4q", null, e, { dragging: get(o) }), set_attribute(S, "aria-label", a), set_attribute(S, "aria-valuemin", get(c)), set_attribute(S, "aria-valuemax", get(l)), set_attribute(S, "aria-valuenow", get(r)), set_style(C, `width:${get(s) / get(u) * 100}%`), set_style(w, `left:${get(s) / get(u) * 100}%`), set_text(ee, d), set_text(ne, f), set_attribute(ae, "aria-label", m), ae.disabled = get(s) <= 0, set_attribute(D, "aria-label", h), D.disabled = get(s) >= get(u), set_text(ce, g), set_text(O, _), set_text(ue, b);
 		}, [
 			() => t.host.t("bet.close", "Close"),
 			() => t.host.t("bet.title", "Bet"),
@@ -109030,7 +109254,7 @@ function BetMenu(e, t) {
 			() => t.host.t("bet.min", "min"),
 			() => t.host.formatMoney(get(i), !1),
 			() => t.host.t("bet.max", "max")
-		]), delegated("click", p, close), delegated("click", y, close), delegated("pointerdown", x, onTrackPointerDown), delegated("pointermove", x, onTrackPointerMove), delegated("pointerup", x, onTrackPointerUp), delegated("keydown", x, onTrackKeydown), delegated("click", ce, () => step(-1)), delegated("click", le, () => step(1)), delegated("click", de, () => select(get(c))), delegated("click", pe, () => select(get(i))), delegated("click", T, () => select(get(l)));
+		]), delegated("click", p, close), delegated("click", y, close), delegated("pointerdown", S, onTrackPointerDown), delegated("pointermove", S, onTrackPointerMove), delegated("pointerup", S, onTrackPointerUp), delegated("keydown", S, onTrackKeydown), delegated("click", ae, () => step(-1)), delegated("click", D, () => step(1)), delegated("click", se, () => select(get(c))), delegated("click", le, () => select(get(i))), delegated("click", k, () => select(get(l)));
 	}
 	append(e, f), pop();
 }
@@ -109041,13 +109265,13 @@ delegate([
 	"pointerup",
 	"keydown"
 ]);
-var Fa = class BetSvelteMenuModule extends qn {
+var Va = class BetSvelteMenuModule extends Gn {
 	afterInit() {
 		super.afterInit(), this._host.mount(BetMenu, { host: this }, "BetSvelteMenuRoot");
 	}
 	get bets() {
-		var _this$gameData$betVal2;
-		return (_this$gameData$betVal2 = this.gameData.betValues) !== null && _this$gameData$betVal2 !== void 0 ? _this$gameData$betVal2 : [];
+		var _this$gameData$betVal3;
+		return (_this$gameData$betVal3 = this.gameData.betValues) !== null && _this$gameData$betVal3 !== void 0 ? _this$gameData$betVal3 : [];
 	}
 	get currentBet() {
 		return this.gameData.betValue;
@@ -109074,10 +109298,10 @@ var Fa = class BetSvelteMenuModule extends qn {
 		this.open(BetMenuEvents.BET_MENU_OPENED);
 	}
 };
-Fa = __decorate$1([injectFromBase()], Fa);
+Va = __decorate$1([injectFromBase()], Va);
 var SpinningReelSymbol = class extends import_lib.Container {
 	constructor(e, t) {
-		var _super18 = (..._args54) => (super(..._args54), _defineProperty(this, "_reelIndex", -1), _defineProperty(this, "_index", void 0), _defineProperty(this, "_symbolType", void 0), _defineProperty(this, "_symbolContainer", void 0), _defineProperty(this, "_animationContainer", void 0), _defineProperty(this, "_overReelsContainer", void 0), _defineProperty(this, "_normalContainer", void 0), _defineProperty(this, "_spineUtils", void 0), _defineProperty(this, "_timerUtils", void 0), _defineProperty(this, "_assets", void 0), _defineProperty(this, "_updateManager", void 0), _defineProperty(this, "_soundPlayer", void 0), _defineProperty(this, "_positionOnReel", void 0), _defineProperty(this, "_size", {
+		var _super18 = (..._args55) => (super(..._args55), _defineProperty(this, "_reelIndex", -1), _defineProperty(this, "_index", void 0), _defineProperty(this, "_symbolType", void 0), _defineProperty(this, "_symbolContainer", void 0), _defineProperty(this, "_animationContainer", void 0), _defineProperty(this, "_overReelsContainer", void 0), _defineProperty(this, "_normalContainer", void 0), _defineProperty(this, "_spineUtils", void 0), _defineProperty(this, "_timerUtils", void 0), _defineProperty(this, "_assets", void 0), _defineProperty(this, "_updateManager", void 0), _defineProperty(this, "_soundPlayer", void 0), _defineProperty(this, "_positionOnReel", void 0), _defineProperty(this, "_size", {
 			width: 1,
 			height: 1
 		}), this);
@@ -109134,9 +109358,9 @@ var SpinningReelSymbol = class extends import_lib.Container {
 		this._size = e;
 	}
 };
-var Ia = (_SpineReelSymbol = class SpineReelSymbol extends SpinningReelSymbol {
-	constructor(..._args55) {
-		super(..._args55);
+var Ha = (_SpineReelSymbol = class SpineReelSymbol extends SpinningReelSymbol {
+	constructor(..._args56) {
+		super(..._args56);
 		_defineProperty(this, "_spineSymbol", void 0);
 		_defineProperty(this, "_spineWinIndication", void 0);
 	}
@@ -109199,15 +109423,15 @@ var Ia = (_SpineReelSymbol = class SpineReelSymbol extends SpinningReelSymbol {
 	}
 	getEnterWinAnimationName(e) {
 		switch (e) {
-			case D$1.ANTE: return SpineReelSymbol.winEnterAnimations.WIN_ANTE;
-			case D$1.SMALL: return SpineReelSymbol.winEnterAnimations.WIN_ENTER_SMALL;
-			case D$1.NICE: return SpineReelSymbol.winEnterAnimations.WIN_ENTER;
+			case j.ANTE: return SpineReelSymbol.winEnterAnimations.WIN_ANTE;
+			case j.SMALL: return SpineReelSymbol.winEnterAnimations.WIN_ENTER_SMALL;
+			case j.NICE: return SpineReelSymbol.winEnterAnimations.WIN_ENTER;
 			default: return SpineReelSymbol.winEnterAnimations.WIN_ENTER_LARGE;
 		}
 	}
 	getWinIdleAnimationName(e) {
 		switch (e) {
-			case D$1.ANTE: return "IDLE";
+			case j.ANTE: return "IDLE";
 			default: return "WIN_IDLE";
 		}
 	}
@@ -109304,9 +109528,9 @@ var Ia = (_SpineReelSymbol = class SpineReelSymbol extends SpinningReelSymbol {
 	DARKEN_EXIT: "DARKEN_EXIT",
 	DARKEN_TOGGLE: "DARKEN_TOGGLE"
 }), _defineProperty(_SpineReelSymbol, "specialSymbols", void 0), _SpineReelSymbol);
-var La = (_SpinningReelView = class SpinningReelView extends UpdateManager {
+var Ua = (_SpinningReelView = class SpinningReelView extends UpdateManager {
 	constructor(e, t, n, r, i, a) {
-		var _super19 = (..._args56) => (super(..._args56), _defineProperty(this, "_symbols", void 0), _defineProperty(this, "_offsets", void 0), _defineProperty(this, "_strip", void 0), _defineProperty(this, "_isSpinning", !1), _defineProperty(this, "_isExpectedToStop", !1), _defineProperty(this, "_hasNearWin", !1), _defineProperty(this, "_currentPosition", void 0), _defineProperty(this, "_stopPosition", void 0), _defineProperty(this, "_symbolsLeftToStop", void 0), _defineProperty(this, "_finalSymbolsLeftToDisappear", void 0), _defineProperty(this, "_movedOffset", 0), _defineProperty(this, "_onReelStopping", void 0), _defineProperty(this, "_onReelStopped", void 0), _defineProperty(this, "_onReelAnimationFinished", void 0), _defineProperty(this, "_onReelPerceivedStop", void 0), _defineProperty(this, "_container", void 0), _defineProperty(this, "_animationContainer", void 0), _defineProperty(this, "_overReelsContainer", void 0), _defineProperty(this, "_reelIndex", void 0), _defineProperty(this, "_resources", void 0), _defineProperty(this, "_spineUtils", void 0), _defineProperty(this, "_timerUtils", void 0), _defineProperty(this, "_soundPlayer", void 0), _defineProperty(this, "_device", void 0), _defineProperty(this, "_currentNearWinSpeed", 2), _defineProperty(this, "_lastSymbolStopTween", void 0), _defineProperty(this, "_nearWinStopTween", void 0), _defineProperty(this, "_currentNearWinDuration", 0), _defineProperty(this, "_isUsingSuperSpeed", !1), _defineProperty(this, "_getConfigValue", void 0), this);
+		var _super19 = (..._args57) => (super(..._args57), _defineProperty(this, "_symbols", void 0), _defineProperty(this, "_offsets", void 0), _defineProperty(this, "_strip", void 0), _defineProperty(this, "_isSpinning", !1), _defineProperty(this, "_isExpectedToStop", !1), _defineProperty(this, "_hasNearWin", !1), _defineProperty(this, "_currentPosition", void 0), _defineProperty(this, "_stopPosition", void 0), _defineProperty(this, "_symbolsLeftToStop", void 0), _defineProperty(this, "_finalSymbolsLeftToDisappear", void 0), _defineProperty(this, "_movedOffset", 0), _defineProperty(this, "_onReelStopping", void 0), _defineProperty(this, "_onReelStopped", void 0), _defineProperty(this, "_onReelAnimationFinished", void 0), _defineProperty(this, "_onReelPerceivedStop", void 0), _defineProperty(this, "_container", void 0), _defineProperty(this, "_animationContainer", void 0), _defineProperty(this, "_overReelsContainer", void 0), _defineProperty(this, "_reelIndex", void 0), _defineProperty(this, "_resources", void 0), _defineProperty(this, "_spineUtils", void 0), _defineProperty(this, "_timerUtils", void 0), _defineProperty(this, "_soundPlayer", void 0), _defineProperty(this, "_device", void 0), _defineProperty(this, "_currentNearWinSpeed", 2), _defineProperty(this, "_lastSymbolStopTween", void 0), _defineProperty(this, "_nearWinStopTween", void 0), _defineProperty(this, "_currentNearWinDuration", 0), _defineProperty(this, "_isUsingSuperSpeed", !1), _defineProperty(this, "_getConfigValue", void 0), this);
 		_super19(), this._symbols = [], this._container = n, this._animationContainer = r, this._overReelsContainer = i, this._currentPosition = t, this._reelIndex = e, this._offsets = a;
 	}
 	setSpinningSpeedToMax() {
@@ -109424,7 +109648,7 @@ var La = (_SpinningReelView = class SpinningReelView extends UpdateManager {
 			previous: 0
 		};
 		this._isSpinning = !1;
-		let r = !1, i = new Tween(n).to({ current: t }, SpinningReelView.FINAL_STOP_TWEEN_DURATION).easing(W.Back.Out).onStart(this.onStartStoppingTween.bind(this)).onUpdate((e, t) => {
+		let r = !1, i = new Tween(n).to({ current: t }, SpinningReelView.FINAL_STOP_TWEEN_DURATION).easing(K.Back.Out).onStart(this.onStartStoppingTween.bind(this)).onUpdate((e, t) => {
 			this._symbols.forEach((e) => {
 				e.y += n.current - n.previous;
 			}), !r && t > .5 && (r = !0, this.onPerceivedStop()), n.previous = n.current;
@@ -109435,7 +109659,7 @@ var La = (_SpinningReelView = class SpinningReelView extends UpdateManager {
 		let e = this._movedOffset % this.getSymbolSlot().height, t = this.getSymbolSlot().height - e, n = {
 			current: 0,
 			previous: 0
-		}, r = W.Cubic.Out, i = er.getDurationForEasingWithEndValue(this, r, t, this._currentNearWinSpeed, 0);
+		}, r = K.Cubic.Out, i = Zn.getDurationForEasingWithEndValue(this, r, t, this._currentNearWinSpeed, 0);
 		this._isSpinning = !1;
 		let a = !1, o = new Tween(n).to({ current: t }, i).easing(r).onStart(this.onStartStoppingTween.bind(this)).onUpdate((e, t) => {
 			this._symbols.forEach((e) => {
@@ -109453,7 +109677,7 @@ var La = (_SpinningReelView = class SpinningReelView extends UpdateManager {
 			previous: 0
 		};
 		this._isSpinning = !1;
-		let r = !1, i = new Tween(n).to({ current: t }, this.getQuickStopTweenDuration()).easing(W.Back.Out).onStart(this.onStartStoppingTween.bind(this)).onUpdate((e, t) => {
+		let r = !1, i = new Tween(n).to({ current: t }, this.getQuickStopTweenDuration()).easing(K.Back.Out).onStart(this.onStartStoppingTween.bind(this)).onUpdate((e, t) => {
 			this._symbols.forEach((e) => {
 				e.y += n.current - n.previous;
 			}), !r && t > .5 && (r = !0, this.onPerceivedStop()), n.previous = n.current;
@@ -109467,7 +109691,7 @@ var La = (_SpinningReelView = class SpinningReelView extends UpdateManager {
 		this._onReelStopping && this._onReelStopping(this._reelIndex);
 	}
 	isSymbolVisible(e) {
-		return e >= q.FIRST_VISIBLE_ROW_ON_STOP && e < q.FIRST_VISIBLE_ROW_ON_STOP + this.getTotalRows(this._reelIndex);
+		return e >= Y$1.FIRST_VISIBLE_ROW_ON_STOP && e < Y$1.FIRST_VISIBLE_ROW_ON_STOP + this.getTotalRows(this._reelIndex);
 	}
 	stopLastSymbolTweenCompleted() {
 		this._symbols.forEach((e) => {
@@ -109487,7 +109711,7 @@ var La = (_SpinningReelView = class SpinningReelView extends UpdateManager {
 		return this._movedOffset >= this.getSymbolSlot().height;
 	}
 	getSymbolSlot() {
-		return q.getSymbolSlot();
+		return Y$1.getSymbolSlot();
 	}
 	reorderSymbols() {
 		let e = this._movedOffset % this.getSymbolSlot().height;
@@ -109519,7 +109743,7 @@ var La = (_SpinningReelView = class SpinningReelView extends UpdateManager {
 		}
 	}
 	createReelSymbol(e) {
-		return new Ia(e);
+		return new Ha(e);
 	}
 	makeSizedSymbol(e, t) {
 		throw Error("ReelView::makeSizedSymbol must be overriden");
@@ -109587,10 +109811,10 @@ var La = (_SpinningReelView = class SpinningReelView extends UpdateManager {
 		}
 	}
 	getTotalReels() {
-		return q.REELS_AMOUNT;
+		return Y$1.REELS_AMOUNT;
 	}
 	getTotalRows(e = -1) {
-		return q.ROW_AMOUNT;
+		return Y$1.ROW_AMOUNT;
 	}
 	getReelOffsetY(e = -1) {
 		return this.getSymbolSlot().height / 2;
@@ -109657,10 +109881,10 @@ var La = (_SpinningReelView = class SpinningReelView extends UpdateManager {
 	}
 }, _defineProperty(_SpinningReelView, "FINAL_STOP_TWEEN_DURATION", 300), _defineProperty(_SpinningReelView, "REEL_SPEED_MULTIPLIER", 2), _defineProperty(_SpinningReelView, "Y_ADDITIONAL_SYMBOLS_OFFSET", -2), _SpinningReelView);
 var SpinningReelsEvents = (_Class29 = class {}, _defineProperty(_Class29, "WIN_PRESENTATION_FINISHED", "SpinningReelsEvents::WIN_PRESENTATION_FINISHED"), _defineProperty(_Class29, "REEL_STOPPED", "SpinningReelsEvents::REEL_STOPPED"), _defineProperty(_Class29, "ALL_REELS_STOPPED", "SpinningReelsEvents::ALL_REELS_STOPPED"), _defineProperty(_Class29, "ALL_REEL_ANIMATIONS_FINISHED", "SpinningReelsEvents::ALL_REEL_ANIMATIONS_FINISHED"), _Class29);
-var Z$1;
-var Q$1 = (_SpinningReelsView = class SpinningReelsView extends G {
-	constructor(..._args57) {
-		super(..._args57);
+var Q$1;
+var Wa = (_SpinningReelsView = class SpinningReelsView extends q {
+	constructor(..._args58) {
+		super(..._args58);
 		_defineProperty(this, "_stopPositions", []);
 		_defineProperty(this, "_reels", []);
 		_defineProperty(this, "_scattersOnReels", void 0);
@@ -109746,7 +109970,7 @@ var Q$1 = (_SpinningReelsView = class SpinningReelsView extends G {
 		_defineProperty(this, "_lastWinningPositions", void 0);
 	}
 	init() {
-		super.init(), q.initializeFromLayout(this.mainUI.layout), q.setReelsOffset(N$1.LANDSCAPE, this.mainUI.layout.getAbsolutePosition("REELS", N$1.LANDSCAPE)), q.setReelsOffset(N$1.PORTRAIT, this.mainUI.layout.getAbsolutePosition("REELS", N$1.PORTRAIT)), this.initLayers();
+		super.init(), Y$1.initializeFromLayout(this.mainUI.layout), Y$1.setReelsOffset(I$1.LANDSCAPE, this.mainUI.layout.getAbsolutePosition("REELS", I$1.LANDSCAPE)), Y$1.setReelsOffset(I$1.PORTRAIT, this.mainUI.layout.getAbsolutePosition("REELS", I$1.PORTRAIT)), this.initLayers();
 	}
 	setSpinningSpeedToMax() {
 		for (let e of this._reels) e.setSpinningSpeedToMax();
@@ -109769,13 +109993,13 @@ var Q$1 = (_SpinningReelsView = class SpinningReelsView extends G {
 		for (let t = 0; t < this._reels.length; t++) for (let n = 0; n < this.getTotalRows(t); n++) e.positions.findIndex((e) => e.x === t && e.y === n) >= 0 ? this._reels[t].getReelSymbol(n).toggleWin() : this._reels[t].getReelSymbol(n).toggleDarken();
 	}
 	playInitialWinPresentation(e, t = 0) {
-		let n = Z$1.getWinningPositionsFromWinLines(e);
+		let n = Q$1.getWinningPositionsFromWinLines(e);
 		this._lastWinningPositions = n;
 		for (let e = 0; e < this._reels.length; e++) for (let r = 0; r < this.getTotalRows(e); r++) n.findIndex((t) => t.x === e && t.y === r) >= 0 ? this._reels[e].getReelSymbol(r).playWin(t) : this._reels[e].getReelSymbol(r).playDarken();
 	}
 	playExitWinAnimation(e = null) {
 		let t = this._lastWinningPositions;
-		e && (t = Z$1.getWinningPositionsFromWinLines(e));
+		e && (t = Q$1.getWinningPositionsFromWinLines(e));
 		for (let e = 0; e < this._reels.length; e++) for (let n = 0; n < this.getTotalRows(e); n++) (t === null || t === void 0 ? void 0 : t.findIndex((t) => t.x === e && t.y === n)) >= 0 ? this._reels[e].getReelSymbol(n).removeWin() : this._reels[e].getReelSymbol(n).removeDarken();
 	}
 	forceKillWinAnimations() {
@@ -109788,20 +110012,20 @@ var Q$1 = (_SpinningReelsView = class SpinningReelsView extends G {
 		this._reelsetContainer.alpha = this._reelSetAnimationContainer.alpha = e;
 	}
 	fadeOutSymbols() {
-		this.emit(Z$1.REELS_FADING_OUT_STARTED);
-		let e = new Tween(this._reelsetContainer).to({ alpha: 0 }, Z$1.FADING_TIMER).onUpdate(() => {
+		this.emit(Q$1.REELS_FADING_OUT_STARTED);
+		let e = new Tween(this._reelsetContainer).to({ alpha: 0 }, Q$1.FADING_TIMER).onUpdate(() => {
 			this._reelSetAnimationContainer.alpha = this._reelsetContainer.alpha;
 		}).onComplete(() => {
-			this._reelSetAnimationContainer.alpha = this._reelsetContainer.alpha, this.emit(Z$1.REELS_FADING_OUT_FINISHED);
+			this._reelSetAnimationContainer.alpha = this._reelsetContainer.alpha, this.emit(Q$1.REELS_FADING_OUT_FINISHED);
 		}).start();
 		this.updateManager.add(e);
 	}
 	fadeInSymbols() {
-		this.emit(Z$1.REELS_FADING_IN_STARTED);
-		let e = new Tween(this._reelsetContainer).to({ alpha: 1 }, Z$1.FADING_TIMER).onUpdate(() => {
+		this.emit(Q$1.REELS_FADING_IN_STARTED);
+		let e = new Tween(this._reelsetContainer).to({ alpha: 1 }, Q$1.FADING_TIMER).onUpdate(() => {
 			this._reelSetAnimationContainer.alpha = this._reelsetContainer.alpha;
 		}).onComplete(() => {
-			this._reelSetAnimationContainer.alpha = this._reelsetContainer.alpha, this.emit(Z$1.REELS_FADING_IN_FINISHED);
+			this._reelSetAnimationContainer.alpha = this._reelsetContainer.alpha, this.emit(Q$1.REELS_FADING_IN_FINISHED);
 		}).start();
 		this.updateManager.add(e);
 	}
@@ -109904,7 +110128,7 @@ var Q$1 = (_SpinningReelsView = class SpinningReelsView extends G {
 		this.container.children.length = 0, this._reels = [], this.container.addChild(this._reelsLayerToBeMasked), this._reelsLayerToBeMasked.addChild(this._reelsetContainer), this.container.addChild(this._reelSetAnimationContainer), this.setupReelSetMaskForStatic();
 		for (let e = 0; e < this.getTotalReels(); e++) {
 			let t = {
-				x: e * q.getSymbolSlot().width,
+				x: e * Y$1.getSymbolSlot().width,
 				y: 0
 			}, n = this.createReel(e, 0, this._reelsetContainer, this._reelSetAnimationContainer, this._overReelsLayer, t);
 			n.resources = this.assets, n.spineUtils = this.spineUtils, n.timerUtils = this.timeUtils, n.updateManager = this.updateManager, n.soundPlayer = this.soundPlayer, n.device = this.device, n.getConfigValue = this.getConfigValue.bind(this), n.strip = this._reelStrips[e], n.init(), n.onReelStopping = this.onReelStopping.bind(this), n.onReelStopped = this.onReelStopped.bind(this), n.onReelPerceivedStop = this.onReelPerceivedStop.bind(this), n.onReelAnimationFinished = this.onReelAnimationFinished.bind(this), this.updateManager.add(n), n.start(), this._reels.push(n), n.hideOutOfBoundsSymbolsInitial();
@@ -109912,49 +110136,49 @@ var Q$1 = (_SpinningReelsView = class SpinningReelsView extends G {
 		this._reels[this.getTotalReels() - 1].onReelStopped = this.onLastReelStopped.bind(this), this._reels[this.getTotalReels() - 1].onReelAnimationFinished = this.onLastReelAnimationFinished.bind(this);
 	}
 	createReel(e, t, n, r, i, a) {
-		return new La(e, t, n, r, i, a);
+		return new Ua(e, t, n, r, i, a);
 	}
 	onReelStopping(e) {
-		this.emit(Z$1.REEL_STOPPING_CALLBACK, e);
+		this.emit(Q$1.REEL_STOPPING_CALLBACK, e);
 	}
 	onReelPerceivedStop(e) {
-		this.emit(Z$1.REEL_PERCEIVED_STOP, e);
+		this.emit(Q$1.REEL_PERCEIVED_STOP, e);
 	}
 	onReelStopped(e) {
-		e === 0 && this.setupReelSetMaskForFirstReelStopped(), this.emit(Z$1.REEL_STOPPED, e), this._reels[e].hideOutOfBoundsSymbols();
+		e === 0 && this.setupReelSetMaskForFirstReelStopped(), this.emit(Q$1.REEL_STOPPED, e), this._reels[e].hideOutOfBoundsSymbols();
 	}
 	onReelAnimationFinished(e) {
-		this.emit(Z$1.REEL_ANIMATION_FINISHED, e);
+		this.emit(Q$1.REEL_ANIMATION_FINISHED, e);
 	}
 	onLastReelStopped(e) {
-		this.emit(Z$1.REEL_STOPPED, e), this.emit(Z$1.ALL_REELS_STOPPED), this._reels[e].hideOutOfBoundsSymbols();
+		this.emit(Q$1.REEL_STOPPED, e), this.emit(Q$1.ALL_REELS_STOPPED), this._reels[e].hideOutOfBoundsSymbols();
 	}
 	showOutOfBordersSymbols() {
 		for (let e = 0; e < this.getTotalReels(); e++) this._reels[e].showOutOfBoundsSymbols();
 	}
 	onLastReelAnimationFinished(e) {
-		this.emit(Z$1.REEL_ANIMATION_FINISHED, e), this.emitDelayed(Z$1.ALL_REEL_ANIMATIONS_FINISHED);
+		this.emit(Q$1.REEL_ANIMATION_FINISHED, e), this.emitDelayed(Q$1.ALL_REEL_ANIMATIONS_FINISHED);
 	}
 	setupReelSetMaskForSpinning() {
 		this._currentMask && this._reelsLayerToBeMasked.children.indexOf(this._currentMask) >= 0 && this._reelsLayerToBeMasked.removeChild(this._currentMask), this._currentMask = new import_lib.Graphics();
-		let e = q.getSymbolSlot();
+		let e = Y$1.getSymbolSlot();
 		this._currentMask.rect(0, 0, e.width * this.getTotalReels(), e.height * this.getTotalRows()), this._currentMask.fill({ color: 16777215 }), this._reelsLayerToBeMasked.addChild(this._currentMask), this._reelsLayerToBeMasked.mask = this._currentMask;
 	}
 	setupReelSetMaskForFirstReelStopped() {
 		this._currentMask && this._reelsLayerToBeMasked.children.indexOf(this._currentMask) >= 0 && this._reelsLayerToBeMasked.removeChild(this._currentMask), this._currentMask = new import_lib.Graphics();
-		let e = q.getSymbolSlot();
+		let e = Y$1.getSymbolSlot();
 		this._currentMask.rect(0, 0, e.width * this.getTotalReels(), e.height * this.getTotalRows()), this._currentMask.fill({ color: 16777215 }), this._reelsLayerToBeMasked.addChild(this._currentMask), this._reelsLayerToBeMasked.mask = this._currentMask;
 	}
 	setupReelSetMaskForStatic() {
 		this._currentMask && this._reelsLayerToBeMasked.children.indexOf(this._currentMask) >= 0 && this._reelsLayerToBeMasked.removeChild(this._currentMask), this._currentMask = new import_lib.Graphics();
-		let e = q.getSymbolSlot();
+		let e = Y$1.getSymbolSlot();
 		this._currentMask.rect(0, 0, e.width * this.getTotalReels(), e.height * this.getTotalRows()), this._currentMask.fill({ color: 16777215 }), this._reelsLayerToBeMasked.addChild(this._currentMask), this._reelsLayerToBeMasked.mask = this._currentMask;
 	}
 	getTotalReels() {
-		return q.REELS_AMOUNT;
+		return Y$1.REELS_AMOUNT;
 	}
 	getTotalRows(e = -1) {
-		return q.ROW_AMOUNT;
+		return Y$1.ROW_AMOUNT;
 	}
 	static getWinningPositionsFromWinLines(e) {
 		let t = [];
@@ -109974,8 +110198,8 @@ var Q$1 = (_SpinningReelsView = class SpinningReelsView extends G {
 			t && (t.strip = this._reelStrips[e]);
 		}
 	}
-}, Z$1 = _SpinningReelsView, _defineProperty(_SpinningReelsView, "REEL_STOPPING_CALLBACK", "SpinningReelsView::REEL_STOPPING_CALLBACK"), _defineProperty(_SpinningReelsView, "REEL_STOPPED", "SpinningReelsView::REEL_STOPPED"), _defineProperty(_SpinningReelsView, "ALL_REELS_STOPPED", "SpinningReelsView::ALL_REELS_STOPPED"), _defineProperty(_SpinningReelsView, "REEL_ANIMATION_FINISHED", "SpinningReelsView::REEL_ANIMATION_FINISHED"), _defineProperty(_SpinningReelsView, "ALL_REEL_ANIMATIONS_FINISHED", "SpinningReelsView::ALL_REEL_ANIMATIONS_FINISHED"), _defineProperty(_SpinningReelsView, "REELS_FADING_OUT_FINISHED", "SpinningReelsView::REELS_FADING_OUT_FINISHED"), _defineProperty(_SpinningReelsView, "REELS_FADING_OUT_STARTED", "SpinningReelsView::REELS_FADING_OUT_STARTED"), _defineProperty(_SpinningReelsView, "REELS_FADING_IN_FINISHED", "SpinningReelsView::REELS_FADING_IN_FINISHED"), _defineProperty(_SpinningReelsView, "REELS_FADING_IN_STARTED", "SpinningReelsView::REELS_FADING_IN_STARTED"), _defineProperty(_SpinningReelsView, "REEL_PERCEIVED_STOP", "SpinningReelsView::REEL_PERCEIVED_STOP"), _defineProperty(_SpinningReelsView, "FADING_TIMER", 500), _SpinningReelsView);
-Q$1 = Z$1 = __decorate$1([injectFromBase()], Q$1);
+}, Q$1 = _SpinningReelsView, _defineProperty(_SpinningReelsView, "REEL_STOPPING_CALLBACK", "SpinningReelsView::REEL_STOPPING_CALLBACK"), _defineProperty(_SpinningReelsView, "REEL_STOPPED", "SpinningReelsView::REEL_STOPPED"), _defineProperty(_SpinningReelsView, "ALL_REELS_STOPPED", "SpinningReelsView::ALL_REELS_STOPPED"), _defineProperty(_SpinningReelsView, "REEL_ANIMATION_FINISHED", "SpinningReelsView::REEL_ANIMATION_FINISHED"), _defineProperty(_SpinningReelsView, "ALL_REEL_ANIMATIONS_FINISHED", "SpinningReelsView::ALL_REEL_ANIMATIONS_FINISHED"), _defineProperty(_SpinningReelsView, "REELS_FADING_OUT_FINISHED", "SpinningReelsView::REELS_FADING_OUT_FINISHED"), _defineProperty(_SpinningReelsView, "REELS_FADING_OUT_STARTED", "SpinningReelsView::REELS_FADING_OUT_STARTED"), _defineProperty(_SpinningReelsView, "REELS_FADING_IN_FINISHED", "SpinningReelsView::REELS_FADING_IN_FINISHED"), _defineProperty(_SpinningReelsView, "REELS_FADING_IN_STARTED", "SpinningReelsView::REELS_FADING_IN_STARTED"), _defineProperty(_SpinningReelsView, "REEL_PERCEIVED_STOP", "SpinningReelsView::REEL_PERCEIVED_STOP"), _defineProperty(_SpinningReelsView, "FADING_TIMER", 500), _SpinningReelsView);
+Wa = Q$1 = __decorate$1([injectFromBase()], Wa);
 var SpinRegulationHandler = class {
 	constructor() {
 		_defineProperty(this, "_spinTimeRegulation", 0);
@@ -109992,17 +110216,17 @@ var SpinRegulationHandler = class {
 		return this._beforeStoppingTime = performance.now() - this._timestamp, this._beforeStoppingTime;
 	}
 	setupSpinDelayConfigForRegulationSpinTime(e) {
-		let t = e.reduce((e, t) => e + t, 0), n = this._spinTimeRegulation * 1e3 - this._beforeStoppingTime - La.FINAL_STOP_TWEEN_DURATION, r = t / Math.max(10, n);
+		let t = e.reduce((e, t) => e + t, 0), n = this._spinTimeRegulation * 1e3 - this._beforeStoppingTime - Ua.FINAL_STOP_TWEEN_DURATION, r = t / Math.max(10, n);
 		return r = Math.min(3, r), e.map((e) => e / r);
 	}
 	setupSpinDelayConfigForNonRegulationSpinTime(e, t) {
-		let n = e.reduce((e, t) => e + t, 0), r = t - this._beforeStoppingTime - La.FINAL_STOP_TWEEN_DURATION, i = n / Math.max(10, r);
+		let n = e.reduce((e, t) => e + t, 0), r = t - this._beforeStoppingTime - Ua.FINAL_STOP_TWEEN_DURATION, i = n / Math.max(10, r);
 		return i = Math.min(3, i), e.map((e) => e / i);
 	}
 };
-var Ra = class SpinningReelsModule extends P$2 {
-	constructor(..._args58) {
-		super(..._args58);
+var Ga = class SpinningReelsModule extends L {
+	constructor(..._args59) {
+		super(..._args59);
 		_defineProperty(this, "_isAllAnimationsFinished", !1);
 		_defineProperty(this, "_isAllReelsStopped", !1);
 		_defineProperty(this, "_canContinueSpin", !1);
@@ -110034,10 +110258,10 @@ var Ra = class SpinningReelsModule extends P$2 {
 		this.view.playExitWinAnimation();
 	}
 	playWinBeforeBigWin() {
-		this.view.playInitialWinPresentation(this.gameData.getCurrentSpinRound().winnings, O$1.getWinSize(this.gameData.getSpinWin(), this.gameData));
+		this.view.playInitialWinPresentation(this.gameData.getCurrentSpinRound().winnings, M$1.getWinSize(this.gameData.getSpinWin(), this.gameData));
 	}
 	playWin() {
-		this.view.playInitialWinPresentation(this.gameData.getCurrentSpinRound().winnings, O$1.getWinSize(this.gameData.getSpinWin(), this.gameData));
+		this.view.playInitialWinPresentation(this.gameData.getCurrentSpinRound().winnings, M$1.getWinSize(this.gameData.getSpinWin(), this.gameData));
 	}
 	playFreeSpinsSymbolsIntro() {
 		var _this23 = this;
@@ -110059,7 +110283,7 @@ var Ra = class SpinningReelsModule extends P$2 {
 	}
 	setupCertificationSettings() {}
 	setupEvents() {
-		super.setupEvents(), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitReceived), this.on(SpinButtonEvents.QUICKSTOP_PRESSED, this.onTryinToQuickStop), this.on(GameControllerEvents.SPIN_RECEIVED, this.onSpinResponseReceived), this.on(GameControllerEvents.FREESPIN_RECEIVED, this.onSpinResponseReceived), this.on(BigWinEvents.FINISHED, this.onBigWinAnimationFinished), this.on(WinAmountPresentationEvents.PLAYING_INDIVIDUAL_WIN_FOR_LINE, this.onPlayingIndividualWinForLine), this.on(BetMenuEvents.BET_CHANGED, this.onBetValueChanged), this.onView(Q$1.REEL_STOPPED, this.onReelStopped), this.onView(Q$1.ALL_REELS_STOPPED, this.onAllReelsStoppedCallback), this.onView(Q$1.ALL_REEL_ANIMATIONS_FINISHED, this.onAllReelAnimationsFinishedCallback), this.onView(Q$1.REEL_STOPPING_CALLBACK, this.onReelStoppingCallback), this.on(FreeSpinsScreensEvents.FREE_SPINS_INTRO_STARTED, this.onFreeSpinsIntroStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_INTRO_FINISHED, this.onFreeSpinsIntroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_RESTORE_INTRO_STARTED, this.onFreeSpinsRestoreIntroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_STARTED, this.onFreeSpinsOutroStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_FINISHED, this.onFreeSpinsOutroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_CONTINUE_CLICKED, this.onFreeSpinsOutroContinueClicked), this.onViewEmitEvent(Q$1.REELS_FADING_OUT_FINISHED, ReelsEvents.REELS_FADING_OUT_FINISHED), this.onViewEmitEvent(Q$1.REELS_FADING_OUT_STARTED, ReelsEvents.REELS_FADING_OUT_STARTED), this.onViewEmitEvent(Q$1.REELS_FADING_IN_FINISHED, ReelsEvents.REELS_FADING_IN_FINISHED), this.onViewEmitEvent(Q$1.REELS_FADING_IN_STARTED, ReelsEvents.REELS_FADING_IN_STARTED), this.onViewEmitEvent(Q$1.REEL_PERCEIVED_STOP, ReelsEvents.REEL_PERCEIVED_STOP), this.on(StartScreenEvents.EXIT_FINISHED, this.onStartScreenExitFinished), this.on(QuickPlayButtonEvents.QUICK_PLAY_BUTTON_CLICKED, this.onQuickPlaySettingChanged);
+		super.setupEvents(), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitReceived), this.on(SpinButtonEvents.QUICKSTOP_PRESSED, this.onTryinToQuickStop), this.on(GameControllerEvents.SPIN_RECEIVED, this.onSpinResponseReceived), this.on(GameControllerEvents.FREESPIN_RECEIVED, this.onSpinResponseReceived), this.on(BigWinEvents.FINISHED, this.onBigWinAnimationFinished), this.on(WinAmountPresentationEvents.PLAYING_INDIVIDUAL_WIN_FOR_LINE, this.onPlayingIndividualWinForLine), this.on(BetMenuEvents.BET_CHANGED, this.onBetValueChanged), this.onView(Wa.REEL_STOPPED, this.onReelStopped), this.onView(Wa.ALL_REELS_STOPPED, this.onAllReelsStoppedCallback), this.onView(Wa.ALL_REEL_ANIMATIONS_FINISHED, this.onAllReelAnimationsFinishedCallback), this.onView(Wa.REEL_STOPPING_CALLBACK, this.onReelStoppingCallback), this.on(FreeSpinsScreensEvents.FREE_SPINS_INTRO_STARTED, this.onFreeSpinsIntroStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_INTRO_FINISHED, this.onFreeSpinsIntroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_RESTORE_INTRO_STARTED, this.onFreeSpinsRestoreIntroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_STARTED, this.onFreeSpinsOutroStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_FINISHED, this.onFreeSpinsOutroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_CONTINUE_CLICKED, this.onFreeSpinsOutroContinueClicked), this.onViewEmitEvent(Wa.REELS_FADING_OUT_FINISHED, ReelsEvents.REELS_FADING_OUT_FINISHED), this.onViewEmitEvent(Wa.REELS_FADING_OUT_STARTED, ReelsEvents.REELS_FADING_OUT_STARTED), this.onViewEmitEvent(Wa.REELS_FADING_IN_FINISHED, ReelsEvents.REELS_FADING_IN_FINISHED), this.onViewEmitEvent(Wa.REELS_FADING_IN_STARTED, ReelsEvents.REELS_FADING_IN_STARTED), this.onViewEmitEvent(Wa.REEL_PERCEIVED_STOP, ReelsEvents.REEL_PERCEIVED_STOP), this.on(StartScreenEvents.EXIT_FINISHED, this.onStartScreenExitFinished), this.on(QuickPlayButtonEvents.QUICK_PLAY_BUTTON_CLICKED, this.onQuickPlaySettingChanged);
 	}
 	onInitReceived() {
 		this.view.reelStrips = this.gameData.currentReelset.symbols, this.view.setupReelStrip(), this.shouldRestoreReels() ? this.view.setRestoresSymbols(this.gameData.currentRoundSymbols) : this.view.setRestoresSymbols(this.gameData.initialReels);
@@ -110092,7 +110316,7 @@ var Ra = class SpinningReelsModule extends P$2 {
 		this.gameData.currentReelset && (this.view.reelStrips = this.gameData.currentReelset.symbols);
 	}
 	onQuickPlaySettingChanged() {
-		this.gameData.settings.fastPlayMode === Me$1.SUPER ? this.view.setSpinningSpeedToMax() : this.view.setSpinningSpeedToNormal();
+		this.gameData.settings.fastPlayMode === Oe$1.SUPER ? this.view.setSpinningSpeedToMax() : this.view.setSpinningSpeedToNormal();
 	}
 	onStartScreenExitFinished() {
 		this.view.fadeInSymbols();
@@ -110107,7 +110331,7 @@ var Ra = class SpinningReelsModule extends P$2 {
 		return this.hasFastPlay() ? this.getConfigValue("spinningReels.timeBeforeStoppingFastPlay", 200) : this.getConfigValue("spinningReels.timeBeforeStopping", 500);
 	}
 	tryInitializeStoppingState() {
-		this.canInitializeStopping() && (this.gameData.settings.fastPlayMode === Me$1.OFF ? this.startSequentialStopping() : this.startQuickStopping());
+		this.canInitializeStopping() && (this.gameData.settings.fastPlayMode === Oe$1.OFF ? this.startSequentialStopping() : this.startQuickStopping());
 	}
 	startQuickStopping() {
 		this.clearStoppingTimer(), this.timeUtils.createTimer(this.onTimedQuickStop.bind(this), this.getSpinQuickStopDelay());
@@ -110128,7 +110352,7 @@ var Ra = class SpinningReelsModule extends P$2 {
 		this._currentStoppingReel = this.getNextReelToStopIndex(), this._currentStoppingReel >= this.getTotalReels() ? this.killOldTimeout() : (this.view.tryStoppingReel(this._currentStoppingReel), this.view.hasReelNearWin(this._currentStoppingReel) || (this.killOldTimeout(), this._betweenReelsStoppingTimer = new Timer(this.stopNextReel.bind(this), this.getBetweenReelsStoppingOffset(this._currentStoppingReel), !0), this.updateManager.add(this._betweenReelsStoppingTimer)));
 	}
 	getTotalReels() {
-		return q.REELS_AMOUNT;
+		return Y$1.REELS_AMOUNT;
 	}
 	setupNearWins() {
 		this.gameData.hasNearWin() && this.view.setReelHasNearWin(this.getBonusNearWinReel());
@@ -110196,23 +110420,23 @@ var Ra = class SpinningReelsModule extends P$2 {
 		return this.getConfigValue("spinningReels.bonusNearWinTime", 2100);
 	}
 };
-Ra = __decorate$1([injectFromBase()], Ra);
-var za = {
+Ga = __decorate$1([injectFromBase()], Ga);
+var Ka = {
 	fontFamily: "Poppins Bold",
 	fontSize: 30,
 	fill: "#FFCC00"
 };
-var Ba = {
+var qa = {
 	fontFamily: "Poppins Regular",
 	fontSize: 24,
 	fill: "#C3C3C3"
 };
-var Va = {
+var Ja = {
 	fontFamily: "Poppins SemiBold",
 	fontSize: 20,
 	fill: "#B72838"
 };
-var Ha = (_StartScreen = class StartScreen {
+var Ya = (_StartScreen = class StartScreen {
 	constructor(e, t, n, _r5, i) {
 		_defineProperty(this, "_eventManager", void 0);
 		_defineProperty(this, "_spineUtils", void 0);
@@ -110259,21 +110483,21 @@ var Ha = (_StartScreen = class StartScreen {
 	createScreen() {
 		this._continueBtn = new YellowButton(this._spineUtils, "CONTINUE", "SPLASH", this.onContinue.bind(this)), this._continueBtn.btn.enable(), this._dontShowNextTimeTxt = new import_lib.Text({
 			text: "Don't show next time",
-			style: new import_lib.TextStyle(Ba)
+			style: new import_lib.TextStyle(qa)
 		}), this._page1Content = new import_lib.Container(), this._page2Content = new import_lib.Container(), this._page3Content = new import_lib.Container();
 		let e = new import_lib.Text({
 			text: "tabula rasa 1",
-			style: new import_lib.TextStyle(gi)
+			style: new import_lib.TextStyle(Si)
 		});
 		e.anchor.set(.5);
 		let t = new import_lib.Text({
 			text: "tabula rasa 2",
-			style: new import_lib.TextStyle(pi)
+			style: new import_lib.TextStyle(yi)
 		});
 		t.anchor.set(.5);
 		let n = new import_lib.Text({
 			text: "tabula rasa but in red",
-			style: new import_lib.TextStyle(Va)
+			style: new import_lib.TextStyle(Ja)
 		});
 		n.anchor.set(.5), this._page1Content.addChild(e), this._page2Content.addChild(t), this._page3Content.addChild(n);
 		for (let e = 0; e < 5; e++) {
@@ -110282,10 +110506,10 @@ var Ha = (_StartScreen = class StartScreen {
 		}
 		this._headerText = new import_lib.Text({
 			text: "PAGE 1",
-			style: new import_lib.TextStyle(za)
+			style: new import_lib.TextStyle(Ka)
 		}), this._headerText.anchor.set(.5), this._nextHeaderText = new import_lib.Text({
 			text: "Next Header",
-			style: new import_lib.TextStyle(za)
+			style: new import_lib.TextStyle(Ka)
 		}), this._nextHeaderText.anchor.set(.5), this._allPages.push(this._page1Content, this._page2Content, this._page3Content), this._currentPage = this._allPages[0], this._arrowLeft = new GenericButton("ARROW_BUTTON.json", void 0, this._spineUtils, this.onArrowLeftClicked.bind(this)), this._arrowRight = new GenericButton("ARROW_BUTTON.json", void 0, this._spineUtils, this.onArrowRightClicked.bind(this)), this._background = new import_lib.Container(), this._spineUtils.startSpineAnimationCreation("START_SCREEN_BACKGROUND.json", "IDLE", !0).container(this._background).createAndStart(), this._container.addChild(this._background), this._screen = this._spineUtils.startSpineAnimationCreation("START_SCREEN.json", "IDLE", !0).skinName("LANDSCAPE").createAndStart(), this._spineUtils.addSlotObject(this._screen, "YELLOW_BUTTON_STARTSCRN", this._preloader), this._spineUtils.addSlotObject(this._screen, "CHECKBOX_TEXT", this._dontShowNextTimeTxt), this._dontShowNextTimeTxt.anchor.set(0, .5), this._spineUtils.addSlotObject(this._screen, "CURRENT_HEADER", this._headerText), this._spineUtils.addSlotObject(this._screen, "NEXT_HEADER", this._nextHeaderText), this._spineUtils.addSlotObject(this._screen, "ARROW_BUTTON2", this._arrowLeft.button), this._spineUtils.addSlotObject(this._screen, "ARROW_BUTTON", this._arrowRight.button), this._spineUtils.addSlotObject(this._screen, "CURRENT_PAGE", this._currentPage);
 		for (let e = 0; e < 5; e++) this._spineUtils.addSlotObject(this._screen, `PAGE_INDICATOR_${e + 1}`, this._pageIndicators[e].spine);
 	}
@@ -110316,10 +110540,10 @@ var Ha = (_StartScreen = class StartScreen {
 		this._arrowRight.button.enable(), this._arrowLeft.button.enable();
 	}
 }, _defineProperty(_StartScreen, "BASIC_RATIO", .5625), _StartScreen);
-var Ua;
-var Wa = (_WinAmountPresentationView = class WinAmountPresentationView extends G {
-	constructor(..._args59) {
-		super(..._args59);
+var Xa;
+var Za = (_WinAmountPresentationView = class WinAmountPresentationView extends q {
+	constructor(..._args60) {
+		super(..._args60);
 		_defineProperty(this, "_meter", void 0);
 		_defineProperty(this, "_winNumber", void 0);
 		_defineProperty(this, "_biggerWinNumber", void 0);
@@ -110349,7 +110573,7 @@ var Wa = (_WinAmountPresentationView = class WinAmountPresentationView extends G
 		let a = new import_lib.Container();
 		if (a.addChild(this._currentWinNumbers), this.spineUtils.replaceSlotAttachment(this._currentWinNumberAnimation, "NUMBER", a), this._isCounting) {
 			let e = this.currencyFormatter.formatCurrency(0, !1);
-			this._currentWinNumbers.showNumber(e), this.emit(Ua.COUNTUP_ANIMATION_STARTED);
+			this._currentWinNumbers.showNumber(e), this.emit(Xa.COUNTUP_ANIMATION_STARTED);
 		} else {
 			let e = this.currencyFormatter.formatCurrency(this._currentFinalNumber, !1);
 			this._currentWinNumbers.showNumber(e), this._meter.snapToFinalValue(), this._currentScalingUpdateTimer = this.timeUtils.createRepeatingTimer(() => {
@@ -110367,8 +110591,8 @@ var Wa = (_WinAmountPresentationView = class WinAmountPresentationView extends G
 				var _this$_meter2;
 				this._currentWinNumberAnimation = this.makeWinNumberEndAnimation();
 				let e = new import_lib.Container();
-				e.addChild(this._currentWinNumbers), this.spineUtils.replaceSlotAttachment(this._currentWinNumberAnimation, "NUMBER", e), (_this$_meter2 = this._meter) === null || _this$_meter2 === void 0 || _this$_meter2.forceUpdate(), this.emit(Ua.COUNTUP_ANIMATION_FINISHED);
-			} else this._currentWinNumberAnimation = null, this.emit(Ua.COUNTUP_ANIMATION_FINISHED), this.emit(Ua.WIN_ANIMATION_EXIT_FINISHED);
+				e.addChild(this._currentWinNumbers), this.spineUtils.replaceSlotAttachment(this._currentWinNumberAnimation, "NUMBER", e), (_this$_meter2 = this._meter) === null || _this$_meter2 === void 0 || _this$_meter2.forceUpdate(), this.emit(Xa.COUNTUP_ANIMATION_FINISHED);
+			} else this._currentWinNumberAnimation = null, this.emit(Xa.COUNTUP_ANIMATION_FINISHED), this.emit(Xa.WIN_ANIMATION_EXIT_FINISHED);
 			this.killWinPresentationCounting();
 		}
 	}
@@ -110385,7 +110609,7 @@ var Wa = (_WinAmountPresentationView = class WinAmountPresentationView extends G
 		return this.spineUtils.getAnimationDuration("WIN_NUMBERS.json", e, "ms");
 	}
 	shouldMakeWinNumbersEndAnimation() {
-		return this._currentWinType >= D$1.ANTE;
+		return this._currentWinType >= j.ANTE;
 	}
 	addExtraToWinNumbers(e) {}
 	makeWinNumberAnimation() {
@@ -110394,7 +110618,7 @@ var Wa = (_WinAmountPresentationView = class WinAmountPresentationView extends G
 			this.onStartAnimationFinished();
 		}, this.getWinStartFinished("ANTE_WIN")), e = this.spineUtils.startSpineAnimationCreation("WIN_NUMBERS.json", "ANTE_WIN", !1).skinName(this.getCurrentWinAnimationSkin(this._currentWinType)).container(this._countupLayer).onComplete(() => {
 			this.disableInput(), this.emitWinNumberShownToPlayer();
-		}).createAndStart()) : e = this._currentWinType === D$1.SMALL ? this.spineUtils.startSpineAnimationCreation("WIN_NUMBERS.json", "START", !1).skinName(this.getCurrentWinAnimationSkin(this._currentWinType)).chainIdleAnimation("IDLE").container(this._countupLayer).onComplete(() => {
+		}).createAndStart()) : e = this._currentWinType === j.SMALL ? this.spineUtils.startSpineAnimationCreation("WIN_NUMBERS.json", "START", !1).skinName(this.getCurrentWinAnimationSkin(this._currentWinType)).chainIdleAnimation("IDLE").container(this._countupLayer).onComplete(() => {
 			this.emitWinNumberBounceFinished(), this.timeUtils.createTimer(() => {
 				this.emitWinNumberShownToPlayer();
 			}, 400);
@@ -110406,27 +110630,27 @@ var Wa = (_WinAmountPresentationView = class WinAmountPresentationView extends G
 		}).createAndStart();
 	}
 	onWinNumberEndAnimationCompleted() {
-		this._currentWinNumberAnimation = null, this.emit(Ua.WIN_ANIMATION_EXIT_FINISHED);
+		this._currentWinNumberAnimation = null, this.emit(Xa.WIN_ANIMATION_EXIT_FINISHED);
 	}
 	isAnteWin(e) {
-		return e === D$1.ANTE;
+		return e === j.ANTE;
 	}
 	getCurrentWinAnimationSkin(e) {
 		switch (e) {
-			case D$1.ANTE: return "ANTE";
-			case D$1.EXCELLENT: return "EXCELLENT";
-			case D$1.NICE: return "MEDIUM";
-			case D$1.SMALL: return "SMALL";
+			case j.ANTE: return "ANTE";
+			case j.EXCELLENT: return "EXCELLENT";
+			case j.NICE: return "MEDIUM";
+			case j.SMALL: return "SMALL";
 			default: throw Error(`getCurrentWinAnimationSkin impossible WinType - ${e}`);
 		}
 	}
 	setupInput() {
 		this._hiddenInputBox = new import_lib.Container();
-		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, w$1, T).fill(16711680);
+		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, O$1, k).fill(16711680);
 		this._hiddenInputBox.pivot.set(960, 960), this._hiddenInputBox.addChild(e), this._hiddenInputBox.interactive = !0, this._hiddenInputBox.onclick = this.onPlayerClicked.bind(this), this._hiddenInputBox.ontap = this.onPlayerClicked.bind(this), this._skipLayer.addChild(this._hiddenInputBox), this._hiddenInputBox.visible = !1;
 	}
 	onPlayerClicked() {
-		this.disableInput(), this.emit(Ua.PLAYER_CLICKED_DURING_WIN_PRESENTATION);
+		this.disableInput(), this.emit(Xa.PLAYER_CLICKED_DURING_WIN_PRESENTATION);
 	}
 	shouldPlayEndAnimation() {
 		return !!this._currentWinNumberAnimation && this._currentWinNumberAnimation.isPlaying;
@@ -110435,19 +110659,19 @@ var Wa = (_WinAmountPresentationView = class WinAmountPresentationView extends G
 		this.emitWinNumberBounceFinished(), this._isCounting || this.emitWinNumberShownToPlayer();
 	}
 	emitWinNumberBounceFinished() {
-		this.emit(Ua.WIN_NUMBER_BOUNCE_FINISHED);
+		this.emit(Xa.WIN_NUMBER_BOUNCE_FINISHED);
 	}
 	emitWinNumberShownToPlayer() {
-		this.emit(Ua.WIN_NUMBER_SHOWN_TO_PLAYER);
+		this.emit(Xa.WIN_NUMBER_SHOWN_TO_PLAYER);
 	}
 	getCountingTime() {
-		return this._currentWinType === D$1.EXCELLENT ? this.getConfigValue("win.excellentCountingTime", 3e3) : this.getConfigValue("win.niceCountingTime", 1500);
+		return this._currentWinType === j.EXCELLENT ? this.getConfigValue("win.excellentCountingTime", 3e3) : this.getConfigValue("win.niceCountingTime", 1500);
 	}
 	startMeter() {
 		this._meter.from(0).to(this._currentFinalNumber, this.getCountingTime()), this.playWinCountingSound(), this._meter.start(), this.updateManager.add(this._meter);
 	}
 	initMeter() {
-		this._meter = new WinMeter(this._currentWinNumbers, W.Linear.None, this.currencyFormatter), this._meter.onCompleteCallback = this.onMeterFinished.bind(this), this._meter.resolutionPadding = 100, this._meter.resolutionWidth = this.resolutionManager.resolution.width - 50;
+		this._meter = new WinMeter(this._currentWinNumbers, K.Linear.None, this.currencyFormatter), this._meter.onCompleteCallback = this.onMeterFinished.bind(this), this._meter.resolutionPadding = 100, this._meter.resolutionWidth = this.resolutionManager.resolution.width - 50;
 	}
 	onMeterFinished() {
 		this.stopWinCountingSound(), this.emitWinNumberShownToPlayer();
@@ -110463,9 +110687,9 @@ var Wa = (_WinAmountPresentationView = class WinAmountPresentationView extends G
 	}
 	setupWinNumbers() {
 		let e = this.getWinnumberResource(this.device.isMobile, !1);
-		this._winNumber = new Zr(this.assets, e), this._winNumber.numberKerning = this.getWinNumberKerning(), this.container.addChild(this._winNumber), this._winNumber.visible = !1;
+		this._winNumber = new ni(this.assets, e), this._winNumber.numberKerning = this.getWinNumberKerning(), this.container.addChild(this._winNumber), this._winNumber.visible = !1;
 		let t = this.getWinnumberResource(this.device.isMobile, !0);
-		this._biggerWinNumber = new Zr(this.assets, t), this._biggerWinNumber.numberKerning = this.getBiggerWinNumberKerning(), this.container.addChild(this._biggerWinNumber), this._biggerWinNumber.visible = !1;
+		this._biggerWinNumber = new ni(this.assets, t), this._biggerWinNumber.numberKerning = this.getBiggerWinNumberKerning(), this.container.addChild(this._biggerWinNumber), this._biggerWinNumber.visible = !1;
 	}
 	getWinNumberKerning() {
 		return this.getConfigValue(this.device.isMobile ? "win.numberKerningMobile" : "win.numberKerning", 0);
@@ -110478,11 +110702,11 @@ var Wa = (_WinAmountPresentationView = class WinAmountPresentationView extends G
 	}
 	playWinCountingSound() {}
 	stopWinCountingSound() {}
-}, Ua = _WinAmountPresentationView, _defineProperty(_WinAmountPresentationView, "COUNTUP_ANIMATION_FINISHED", "WinAmountPresentationView::COUNTUP_ANIMATION_FINISHED"), _defineProperty(_WinAmountPresentationView, "COUNTUP_ANIMATION_STARTED", "WinAmountPresentationView::COUNTUP_ANIMATION_STARTED"), _defineProperty(_WinAmountPresentationView, "WIN_NUMBER_SHOWN_TO_PLAYER", "WinAmountPresentationView::WIN_NUMBER_SHOWN_TO_PLAYER"), _defineProperty(_WinAmountPresentationView, "WIN_NUMBER_BOUNCE_FINISHED", "WinAmountPresentationView::NUMBER_BOUNCE_FINISHED"), _defineProperty(_WinAmountPresentationView, "WIN_ANIMATION_EXIT_FINISHED", "WinAmountPresentationView::WIN_ANIMATION_EXIT_FINISHED"), _defineProperty(_WinAmountPresentationView, "PLAYER_CLICKED_DURING_WIN_PRESENTATION", "WinAmountPresentationView::PLAYER_CLICKED_DURING_WIN_PRESENTATION"), _WinAmountPresentationView);
-Wa = Ua = __decorate$1([injectFromBase()], Wa);
-var Ga = class WinAmountPresentationModule extends P$2 {
-	constructor(..._args60) {
-		super(..._args60);
+}, Xa = _WinAmountPresentationView, _defineProperty(_WinAmountPresentationView, "COUNTUP_ANIMATION_FINISHED", "WinAmountPresentationView::COUNTUP_ANIMATION_FINISHED"), _defineProperty(_WinAmountPresentationView, "COUNTUP_ANIMATION_STARTED", "WinAmountPresentationView::COUNTUP_ANIMATION_STARTED"), _defineProperty(_WinAmountPresentationView, "WIN_NUMBER_SHOWN_TO_PLAYER", "WinAmountPresentationView::WIN_NUMBER_SHOWN_TO_PLAYER"), _defineProperty(_WinAmountPresentationView, "WIN_NUMBER_BOUNCE_FINISHED", "WinAmountPresentationView::NUMBER_BOUNCE_FINISHED"), _defineProperty(_WinAmountPresentationView, "WIN_ANIMATION_EXIT_FINISHED", "WinAmountPresentationView::WIN_ANIMATION_EXIT_FINISHED"), _defineProperty(_WinAmountPresentationView, "PLAYER_CLICKED_DURING_WIN_PRESENTATION", "WinAmountPresentationView::PLAYER_CLICKED_DURING_WIN_PRESENTATION"), _WinAmountPresentationView);
+Za = Xa = __decorate$1([injectFromBase()], Za);
+var Qa = class WinAmountPresentationModule extends L {
+	constructor(..._args61) {
+		super(..._args61);
 		_defineProperty(this, "_beforeInitialTimer", void 0);
 		_defineProperty(this, "_finalShowingTimer", void 0);
 		_defineProperty(this, "_currentLineIndex", void 0);
@@ -110493,7 +110717,7 @@ var Ga = class WinAmountPresentationModule extends P$2 {
 		}, this.getBeforeInitialWinDelay());
 	}
 	playFinalWin(e) {
-		this.view.playWinNumberCounter(e, O$1.isWinNumberExcellentWin(this.gameData, e), O$1.isWinNumberExcellentWin(this.gameData, e), this.getWinTypeForWin(e)), this.view.enableInput();
+		this.view.playWinNumberCounter(e, M$1.isWinNumberExcellentWin(this.gameData, e), M$1.isWinNumberExcellentWin(this.gameData, e), this.getWinTypeForWin(e)), this.view.enableInput();
 	}
 	playIndividualWin() {
 		this.startShowingIndividualWinlines();
@@ -110502,7 +110726,7 @@ var Ga = class WinAmountPresentationModule extends P$2 {
 		this.stopWinPresentation();
 	}
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(Wa.WIN_NUMBER_SHOWN_TO_PLAYER, WinAmountPresentationEvents.WIN_NUMBER_SHOWN_TO_PLAYER), this.onViewEmitEvent(Wa.WIN_ANIMATION_EXIT_FINISHED, WinAmountPresentationEvents.WIN_ANIMATION_EXIT_FINISHED), this.onViewEmitEvent(Wa.COUNTUP_ANIMATION_FINISHED, WinAmountPresentationEvents.COUNTUP_ANIMATION_FINISHED), this.onViewEmitEvent(Wa.COUNTUP_ANIMATION_STARTED, WinAmountPresentationEvents.COUNTUP_ANIMATION_STARTED), this.on(ReelsEvents.REELS_SPINNING_STARTED, this.onReelSpinningStarted), this.on(WinAmountPresentationEvents.WIN_ANIMATION_EXIT_FINISHED, this.onWinAnimationFinished), this.on(WinAmountPresentationEvents.WIN_NUMBER_SHOWN_TO_PLAYER, this.onFinalWinNumberOnScreen), this.onView(Wa.PLAYER_CLICKED_DURING_WIN_PRESENTATION, this.onPlayerClicked);
+		super.setupEvents(), this.onViewEmitEvent(Za.WIN_NUMBER_SHOWN_TO_PLAYER, WinAmountPresentationEvents.WIN_NUMBER_SHOWN_TO_PLAYER), this.onViewEmitEvent(Za.WIN_ANIMATION_EXIT_FINISHED, WinAmountPresentationEvents.WIN_ANIMATION_EXIT_FINISHED), this.onViewEmitEvent(Za.COUNTUP_ANIMATION_FINISHED, WinAmountPresentationEvents.COUNTUP_ANIMATION_FINISHED), this.onViewEmitEvent(Za.COUNTUP_ANIMATION_STARTED, WinAmountPresentationEvents.COUNTUP_ANIMATION_STARTED), this.on(ReelsEvents.REELS_SPINNING_STARTED, this.onReelSpinningStarted), this.on(WinAmountPresentationEvents.WIN_ANIMATION_EXIT_FINISHED, this.onWinAnimationFinished), this.on(WinAmountPresentationEvents.WIN_NUMBER_SHOWN_TO_PLAYER, this.onFinalWinNumberOnScreen), this.onView(Za.PLAYER_CLICKED_DURING_WIN_PRESENTATION, this.onPlayerClicked);
 	}
 	stopWinPresentation() {
 		this.view.killWinPresentationCounting(), this.view.forceKillWinNumbers();
@@ -110543,14 +110767,14 @@ var Ga = class WinAmountPresentationModule extends P$2 {
 		this.view.killWinPresentationCounting(), this.timeUtils.killTimer(this._beforeInitialTimer), this._beforeInitialTimer = null, this.timeUtils.killTimer(this._finalShowingTimer), this._finalShowingTimer = null;
 	}
 	startInitialWinPresentation(e) {
-		e > 0 && (this.view.playWinNumberCounter(e, O$1.isWinNumberExcellentWin(this.gameData, e), O$1.isWinNumberExcellentWin(this.gameData, e), this.getWinTypeForWin(e)), this.view.enableInput()), this.emit(WinAmountPresentationEvents.INITIAL_ANIMATION_STARTED);
+		e > 0 && (this.view.playWinNumberCounter(e, M$1.isWinNumberExcellentWin(this.gameData, e), M$1.isWinNumberExcellentWin(this.gameData, e), this.getWinTypeForWin(e)), this.view.enableInput()), this.emit(WinAmountPresentationEvents.INITIAL_ANIMATION_STARTED);
 	}
 	getWinTypeForWin(e) {
-		return O$1.getWinSize(e, this.gameData);
+		return M$1.getWinSize(e, this.gameData);
 	}
 };
-Ga = __decorate$1([injectFromBase()], Ga);
-var Ka = class IndividualSpinningReelsModule extends Ra {
+Qa = __decorate$1([injectFromBase()], Qa);
+var $a = class IndividualSpinningReelsModule extends Ga {
 	onReelStopped(e, t, n) {
 		super.onReelStopped(e, t, n), this.emit(IndividualSpinningReelsEvents.REEL_STOPPED, t, n);
 	}
@@ -110589,11 +110813,11 @@ var Ka = class IndividualSpinningReelsModule extends Ra {
 		throw Error("IndividualSpinningReelsModule::getResultSymbols Not implemented");
 	}
 };
-Ka = __decorate$1([injectFromBase()], Ka);
+$a = __decorate$1([injectFromBase()], $a);
 var IndividualSpinningReelsEvents = (_Class30 = class {}, _defineProperty(_Class30, "REEL_STOPPED", "IndividualSpinningReelsEvents::REEL_STOPPED"), _defineProperty(_Class30, "ALL_REELS_STOPPED", "IndividualSpinningReelsEvents::ALL_REELS_STOPPED"), _Class30);
-var qa = class IndividualSpinningReelsView extends Q$1 {
-	constructor(..._args61) {
-		super(..._args61);
+var eo = class IndividualSpinningReelsView extends Wa {
+	constructor(..._args62) {
+		super(..._args62);
 		_defineProperty(this, "_reelsContainers", []);
 	}
 	init() {
@@ -110601,7 +110825,7 @@ var qa = class IndividualSpinningReelsView extends Q$1 {
 	}
 	playExitWinAnimation(e = null) {
 		let t = this._lastWinningPositions;
-		e && (t = Q$1.getWinningPositionsFromWinLines(e));
+		e && (t = Wa.getWinningPositionsFromWinLines(e));
 		for (let e = 0; e < this.getTotalReels(); e++) for (let n = 0; n < this.getTotalRows(e); n++) (t === null || t === void 0 ? void 0 : t.findIndex((t) => t.x === e && t.y === n)) >= 0 ? this._reels[e * this.getTotalReels() + n].getReelSymbol(0).removeWin() : this._reels[e * this.getTotalReels() + n].getReelSymbol(0).removeDarken();
 	}
 	forceKillWinAnimations() {
@@ -110660,7 +110884,7 @@ var qa = class IndividualSpinningReelsView extends Q$1 {
 		return n;
 	}
 	createReelSet() {
-		this.container.children.length = 0, this._reels = [], $$1.setReelsOffset(N$1.LANDSCAPE, this.mainUI.layout.getAbsolutePosition(this.getReelsPositionBone(), N$1.LANDSCAPE)), $$1.setReelsOffset(N$1.PORTRAIT, this.mainUI.layout.getAbsolutePosition(this.getReelsPositionBone(), N$1.PORTRAIT)), this.container.addChild(this._reelsLayerToBeMasked), this._reelsLayerToBeMasked.addChild(this._reelsetContainer), this.container.addChild(this._reelSetAnimationContainer);
+		this.container.children.length = 0, this._reels = [], $$1.setReelsOffset(I$1.LANDSCAPE, this.mainUI.layout.getAbsolutePosition(this.getReelsPositionBone(), I$1.LANDSCAPE)), $$1.setReelsOffset(I$1.PORTRAIT, this.mainUI.layout.getAbsolutePosition(this.getReelsPositionBone(), I$1.PORTRAIT)), this.container.addChild(this._reelsLayerToBeMasked), this._reelsLayerToBeMasked.addChild(this._reelsetContainer), this.container.addChild(this._reelSetAnimationContainer);
 		for (let e = 0; e < this.getTotalReels(); e++) for (let t = 0; t < this.getTotalRows(); t++) {
 			let n = {
 				x: e * $$1.getSymbolSlot().width,
@@ -110685,10 +110909,10 @@ var qa = class IndividualSpinningReelsView extends Q$1 {
 		return $$1.ROW_AMOUNT;
 	}
 };
-qa = __decorate$1([injectFromBase()], qa);
-var IndividualSpinningReelView = class extends La {
-	constructor(..._args62) {
-		super(..._args62);
+eo = __decorate$1([injectFromBase()], eo);
+var IndividualSpinningReelView = class extends Ua {
+	constructor(..._args63) {
+		super(..._args63);
 		_defineProperty(this, "_mask", void 0);
 		_defineProperty(this, "_rowIndex", void 0);
 	}
@@ -110708,7 +110932,7 @@ var IndividualSpinningReelView = class extends La {
 		return e;
 	}
 	createReelSymbol(e) {
-		return new Ia(e);
+		return new Ha(e);
 	}
 	getTotalRows(e) {
 		return 1;
@@ -110772,28 +110996,28 @@ var $$1 = (_IndividualReelConstants = class IndividualReelConstants {
 		};
 	}
 	static manualInit(e, t) {
-		IndividualReelConstants.SYMBOL_SLOT[N$1.LANDSCAPE] = {
+		IndividualReelConstants.SYMBOL_SLOT[I$1.LANDSCAPE] = {
 			width: e.width,
 			height: e.height
-		}, IndividualReelConstants.SYMBOL_SLOT[N$1.PORTRAIT] = {
+		}, IndividualReelConstants.SYMBOL_SLOT[I$1.PORTRAIT] = {
 			width: t.width,
 			height: t.height
-		}, IndividualReelConstants.recalculateNumbers(N$1.LANDSCAPE), IndividualReelConstants.recalculateNumbers(N$1.PORTRAIT);
+		}, IndividualReelConstants.recalculateNumbers(I$1.LANDSCAPE), IndividualReelConstants.recalculateNumbers(I$1.PORTRAIT);
 	}
 	static initializeFromLayout(e, t) {
 		IndividualReelConstants.initializeFromLayoutCustomResourceNames(e, t);
 	}
 	static initializeFromLayoutCustomResourceNames(e, t) {
-		let n = e.getSize(t, N$1.PORTRAIT), r = e.getSize(t, N$1.LANDSCAPE);
-		IndividualReelConstants.SYMBOL_SLOT[N$1.PORTRAIT] = {
+		let n = e.getSize(t, I$1.PORTRAIT), r = e.getSize(t, I$1.LANDSCAPE);
+		IndividualReelConstants.SYMBOL_SLOT[I$1.PORTRAIT] = {
 			width: n.width,
 			height: n.height
-		}, IndividualReelConstants.SYMBOL_SLOT[N$1.LANDSCAPE] = {
+		}, IndividualReelConstants.SYMBOL_SLOT[I$1.LANDSCAPE] = {
 			width: r.width,
 			height: r.height
-		}, IndividualReelConstants.recalculateNumbers(N$1.PORTRAIT), IndividualReelConstants.recalculateNumbers(N$1.LANDSCAPE);
+		}, IndividualReelConstants.recalculateNumbers(I$1.PORTRAIT), IndividualReelConstants.recalculateNumbers(I$1.LANDSCAPE);
 	}
-	static getSymbolSlot(e = N$1.PORTRAIT) {
+	static getSymbolSlot(e = I$1.PORTRAIT) {
 		return IndividualReelConstants.SYMBOL_SLOT[e];
 	}
 	static getReelsCenter(e) {
@@ -110808,7 +111032,7 @@ var $$1 = (_IndividualReelConstants = class IndividualReelConstants {
 	static getReels() {
 		return IndividualReelConstants.REELS;
 	}
-	static getSymbolPosition(e, t = N$1.PORTRAIT) {
+	static getSymbolPosition(e, t = I$1.PORTRAIT) {
 		return {
 			x: IndividualReelConstants.getSymbolSlot(t).width * e.x + IndividualReelConstants.getSymbolSlot(t).width / 2,
 			y: IndividualReelConstants.getSymbolSlot(t).height * e.y + IndividualReelConstants.getSymbolSlot(t).height / 2
@@ -110825,8 +111049,8 @@ var $$1 = (_IndividualReelConstants = class IndividualReelConstants {
 		return IndividualReelConstants.REELS_OFFSET[e];
 	}
 }, _defineProperty(_IndividualReelConstants, "REELS_AMOUNT", 3), _defineProperty(_IndividualReelConstants, "ROW_AMOUNT", 3), _defineProperty(_IndividualReelConstants, "SYMBOL_SLOT", []), _defineProperty(_IndividualReelConstants, "REELS", []), _defineProperty(_IndividualReelConstants, "REELS_CENTER", []), _defineProperty(_IndividualReelConstants, "REELS_OFFSET", []), _defineProperty(_IndividualReelConstants, "ROWS_ON_REEL", []), _IndividualReelConstants);
-var Ya;
-var Xa = class BaseSoundManager {
+var no;
+var ro = class BaseSoundManager {
 	constructor() {
 		_defineProperty(this, "_gameConfig", void 0);
 		_defineProperty(this, "_volumes", {});
@@ -110947,7 +111171,7 @@ var Xa = class BaseSoundManager {
 		return this._globalMusicVolume;
 	}
 };
-__decorate$1([inject(j.GameConfig), __decorateMetadata("design:type", typeof (Ya = GameConfig !== void 0 && GameConfig) == "function" ? Ya : Object)], Xa.prototype, "_gameConfig", void 0), Xa = __decorate$1([injectable()], Xa);
+__decorate$1([inject(P$2.GameConfig), __decorateMetadata("design:type", typeof (no = GameConfig !== void 0 && GameConfig) == "function" ? no : Object)], ro.prototype, "_gameConfig", void 0), ro = __decorate$1([injectable()], ro);
 var SoundsDuckingConfig = class {
 	constructor() {
 		_defineProperty(this, "_duckingConfig", {});
@@ -111000,10 +111224,10 @@ var SoundsDuckingConfig = class {
 		};
 	}
 };
-var Za;
-var Qa;
-var $a;
-var eo = class BaseSoundPlayer {
+var io;
+var ao;
+var oo;
+var so = class BaseSoundPlayer {
 	constructor() {
 		_defineProperty(this, "_soundManager", void 0);
 		_defineProperty(this, "_updateManager", void 0);
@@ -111028,7 +111252,7 @@ var eo = class BaseSoundPlayer {
 		this.setupSoundsDuckingConfig(), window.soundPlayer = this, window.enableSoundLogs = !0;
 	}
 	init() {
-		if (this._timeUtils = new TimerUtils(this._updateManager), this._visibilityManager.onVisibleCallback = this.onPageShow.bind(this), this._visibilityManager.onInvisibleCallback = this.onPageHide.bind(this), sound.disableAutoPause = !0, this._device.isMobile && this._device.os === Le$1.IOS) {
+		if (this._timeUtils = new TimerUtils(this._updateManager), this._visibilityManager.onVisibleCallback = this.onPageShow.bind(this), this._visibilityManager.onInvisibleCallback = this.onPageHide.bind(this), sound.disableAutoPause = !0, this._device.isMobile && this._device.os === Ne$1.IOS) {
 			let e = sound.context.audioContext;
 			e.onstatechange = () => {
 				let t = e.state === "suspended", n = e.state === "interrupted";
@@ -111066,26 +111290,26 @@ var eo = class BaseSoundPlayer {
 	play(e, t, n, r) {
 		var _this26 = this;
 		return _asyncToGenerator(function* () {
-			_this26.removeFromFadings(e), _this26._soundManager.getSoundDelay(e) > 0 && (yield _this26._timeUtils.wait(_this26._soundManager.getSoundDelay(e))), _this26.playSound(e, t), window.enableSoundLogs && E$1.info(`sound: ${e}`);
+			_this26.removeFromFadings(e), _this26._soundManager.getSoundDelay(e) > 0 && (yield _this26._timeUtils.wait(_this26._soundManager.getSoundDelay(e))), _this26.playSound(e, t), window.enableSoundLogs && A.info(`sound: ${e}`);
 		})();
 	}
 	stop(e) {
-		this.stopSound(e), window.enableSoundLogs && E$1.info(`stop sound: ${e}`);
+		this.stopSound(e), window.enableSoundLogs && A.info(`stop sound: ${e}`);
 	}
 	pause(e) {
-		this.pauseSound(e), window.enableSoundLogs && E$1.info(`pause sound: ${e}`);
+		this.pauseSound(e), window.enableSoundLogs && A.info(`pause sound: ${e}`);
 	}
 	resume(e) {
-		this.resumeSound(e), window.enableSoundLogs && E$1.info(`resume sound: ${e}`);
+		this.resumeSound(e), window.enableSoundLogs && A.info(`resume sound: ${e}`);
 	}
 	fadeCurrentMusicTo(e, t = 4e3) {
-		window.enableSoundLogs && E$1.info(`fade music to: ${this._currentMusicID} - ${e}`), this._soundManager.hasSound(e) && this.setupMusicPlaying(e, t);
+		window.enableSoundLogs && A.info(`fade music to: ${this._currentMusicID} - ${e}`), this._soundManager.hasSound(e) && this.setupMusicPlaying(e, t);
 	}
 	stopAllSoundIdInstances(e) {
 		this._soundManager.stopAllSoundInstances(e);
 	}
 	fadeOutCurrentMusic(e = 4e3) {
-		window.enableSoundLogs && E$1.info(`fade out music:${this._currentMusicID}`);
+		window.enableSoundLogs && A.info(`fade out music:${this._currentMusicID}`);
 		let t = this._soundManager.getSound(this._currentMusicID), n = this._soundManager.getAllSoundInstances(this._currentMusicID);
 		if (t && n[0]) {
 			this.killCurrentEffectsDuckingTween(), this.killCurrentNewMusicTween();
@@ -111095,7 +111319,7 @@ var eo = class BaseSoundPlayer {
 		this._isMusicPlaying = !1, this._currentMusicID = null;
 	}
 	fadeInCurrentMusic(e = 4e3) {
-		window.enableSoundLogs && E$1.info(`fade in music:${this._currentMusicID}`);
+		window.enableSoundLogs && A.info(`fade in music:${this._currentMusicID}`);
 		let t = this._soundManager.getSound(this._currentMusicID), n = this._soundManager.getAllSoundInstances(this._currentMusicID);
 		t && n.length && (this.killCurrentEffectsDuckingTween(), this.killCurrentNewMusicTween(), this._currentFadingMusicTween = this.makeMusicTween(this._currentMusicID, 0, 1, e)), this._isMusicPlaying = !0;
 	}
@@ -111161,7 +111385,7 @@ var eo = class BaseSoundPlayer {
 		return this._updateManager.add(o), o;
 	}
 	playMusicByID(e) {
-		if (window.enableSoundLogs && E$1.info(`music: ${e}`), !this._soundManager.isMusic(e)) throw Error(`BaseSoundPlayer::playMusicByID no music with the name ${e}`);
+		if (window.enableSoundLogs && A.info(`music: ${e}`), !this._soundManager.isMusic(e)) throw Error(`BaseSoundPlayer::playMusicByID no music with the name ${e}`);
 		if (this.stopMusic(), this._soundManager.hasSound(e)) {
 			let t = this._soundManager.getSound(e), n = this._soundManager.getSoundVolume(e);
 			this._soundManager.stopAllSoundInstances(e), t.loop = !0, t.play(), this._soundManager.setAllMusicVolume(n), this._isMusicPlaying = !0, this._currentMusicID = e;
@@ -111270,8 +111494,8 @@ var eo = class BaseSoundPlayer {
 		this._allSoundsStatusChangedCallback = e;
 	}
 };
-__decorate$1([inject(j.SoundManager), __decorateMetadata("design:type", Object)], eo.prototype, "_soundManager", void 0), __decorate$1([inject(A.UpdateManager), __decorateMetadata("design:type", typeof (Za = UpdateManager !== void 0 && UpdateManager) == "function" ? Za : Object)], eo.prototype, "_updateManager", void 0), __decorate$1([inject(A.Device), __decorateMetadata("design:type", typeof (Qa = k !== void 0 && k) == "function" ? Qa : Object)], eo.prototype, "_device", void 0), __decorate$1([inject(A.VisibilityManager), __decorateMetadata("design:type", typeof ($a = Qe$1 !== void 0 && Qe$1) == "function" ? $a : Object)], eo.prototype, "_visibilityManager", void 0), __decorate$1([inject(A.Game), __decorateMetadata("design:type", Object)], eo.prototype, "_game", void 0), eo = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], eo);
-var to = class SoundManager extends Xa {
+__decorate$1([inject(P$2.SoundManager), __decorateMetadata("design:type", Object)], so.prototype, "_soundManager", void 0), __decorate$1([inject(N$1.UpdateManager), __decorateMetadata("design:type", typeof (io = UpdateManager !== void 0 && UpdateManager) == "function" ? io : Object)], so.prototype, "_updateManager", void 0), __decorate$1([inject(N$1.Device), __decorateMetadata("design:type", typeof (ao = Ie$1 !== void 0 && Ie$1) == "function" ? ao : Object)], so.prototype, "_device", void 0), __decorate$1([inject(N$1.VisibilityManager), __decorateMetadata("design:type", typeof (oo = Ye !== void 0 && Ye) == "function" ? oo : Object)], so.prototype, "_visibilityManager", void 0), __decorate$1([inject(N$1.Game), __decorateMetadata("design:type", Object)], so.prototype, "_game", void 0), so = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], so);
+var co = class SoundManager extends ro {
 	init() {
 		this.initEffects(), this.initMusic();
 	}
@@ -111291,13 +111515,13 @@ var to = class SoundManager extends Xa {
 		this.initVolumeFor(e), this.initDelaysFor(e);
 	}
 };
-to = __decorate$1([injectable(), injectFromBase()], to);
-var no = class SoundPlayer extends eo {
+co = __decorate$1([injectable(), injectFromBase()], co);
+var lo = class SoundPlayer extends so {
 	init() {
 		this._game.onSoundsLoaded = this.onAllSoundsLoaded.bind(this), super.init();
 	}
 	onAllSoundsLoaded() {
-		if (this._game.diContainer.get(j.GameData).isReplayMode) {
+		if (this._game.diContainer.get(P$2.GameData).isReplayMode) {
 			this.disableAllSound();
 			return;
 		}
@@ -111315,15 +111539,15 @@ var no = class SoundPlayer extends eo {
 		}).apply(this, arguments);
 	}
 };
-no = __decorate$1([injectable(), injectFromBase()], no);
-var ro;
-var io;
-var ao;
-var oo;
-var so;
-var co;
-var lo;
-var uo = class MainContainer {
+lo = __decorate$1([injectable(), injectFromBase()], lo);
+var uo;
+var fo;
+var po;
+var mo;
+var ho;
+var _o;
+var vo;
+var yo = class MainContainer {
 	constructor() {
 		_defineProperty(this, "_parent", void 0);
 		_defineProperty(this, "_assets", void 0);
@@ -111340,7 +111564,7 @@ var uo = class MainContainer {
 		_defineProperty(this, "_containers", /* @__PURE__ */ new Map());
 	}
 	init(e) {
-		this._spineUtils = e, this._eventManager.on(ScreenEvents.SCREEN_RESIZED, this.onScreenResized.bind(this), this, 0), this._backgroundContainer = new import_lib.Container(), this._backgroundContainer.position.set(this._resolutionManager.halfResolution.width, this._resolutionManager.halfResolution.height), this._parent.addChild(this._backgroundContainer), this._ui = this._spineUtils.startSpineAnimationCreation("SLOT_MAIN_UI.json", "IDLE", !0).container(this._parent).position(this._resolutionManager.halfResolution.width, this._resolutionManager.halfResolution.height).createAndStart(), this._uiPortrait = this._spineUtils.startSpineAnimationCreation("SLOT_MAIN_UI_PORTRAIT.json", "IDLE", !0).container(this._parent).position(this._resolutionManager.halfResolution.width, this._resolutionManager.halfResolution.height).createAndStart(), this._uiPortrait.spine.visible = !1, this._ui.spine.visible = !1, this._layout.loadLayout("SLOT_MAIN_UI_PORTRAIT.json", N$1.PORTRAIT), this._layout.loadLayout("SLOT_MAIN_UI.json", N$1.LANDSCAPE);
+		this._spineUtils = e, this._eventManager.on(ScreenEvents.SCREEN_RESIZED, this.onScreenResized.bind(this), this, 0), this._backgroundContainer = new import_lib.Container(), this._backgroundContainer.position.set(this._resolutionManager.halfResolution.width, this._resolutionManager.halfResolution.height), this._parent.addChild(this._backgroundContainer), this._ui = this._spineUtils.startSpineAnimationCreation(`${this.getMainUIContainerName()}.json`, "IDLE", !0).container(this._parent).position(this._resolutionManager.halfResolution.width, this._resolutionManager.halfResolution.height).createAndStart(), this._uiPortrait = this._spineUtils.startSpineAnimationCreation(`${this.getMainUIContainerName()}_PORTRAIT.json`, "IDLE", !0).container(this._parent).position(this._resolutionManager.halfResolution.width, this._resolutionManager.halfResolution.height).createAndStart(), this._uiPortrait.spine.visible = !1, this._ui.spine.visible = !1, this._layout.loadLayout(`${this.getMainUIContainerName()}_PORTRAIT.json`, I$1.PORTRAIT), this._layout.loadLayout(`${this.getMainUIContainerName()}.json`, I$1.LANDSCAPE);
 		for (let e of this._uiPortrait.skeleton.drawOrder) if (!e.attachment) {
 			let t = new import_lib.Container(), n = this.uiPosToGamePos({
 				x: e.bone.worldX,
@@ -111386,6 +111610,9 @@ var uo = class MainContainer {
 	getBoneFromPortraitUI(e) {
 		return this._spineUtils.findBone(this._uiPortrait, e);
 	}
+	getMainUIContainerName() {
+		return "SLOT_MAIN_UI";
+	}
 	onScreenResized(e) {
 		e.isPortrait ? this.onPortrait() : this.onLandscape();
 	}
@@ -111417,7 +111644,7 @@ var uo = class MainContainer {
 		return this._layout;
 	}
 };
-__decorate$1([inject(j.PixiStageContainer), __decorateMetadata("design:type", typeof (ro = import_lib.Container !== void 0 && import_lib.Container) == "function" ? ro : Object)], uo.prototype, "_parent", void 0), __decorate$1([inject(j.AssetsManager), __decorateMetadata("design:type", typeof (io = ur !== void 0 && ur) == "function" ? io : Object)], uo.prototype, "_assets", void 0), __decorate$1([inject(A.UpdateManager), __decorateMetadata("design:type", typeof (ao = UpdateManager !== void 0 && UpdateManager) == "function" ? ao : Object)], uo.prototype, "_updateManager", void 0), __decorate$1([inject(A.ResolutionManager), __decorateMetadata("design:type", typeof (oo = qe$1 !== void 0 && qe$1) == "function" ? oo : Object)], uo.prototype, "_resolutionManager", void 0), __decorate$1([inject(A.IEventManager), __decorateMetadata("design:type", Object)], uo.prototype, "_eventManager", void 0), __decorate$1([inject(A.FullscreenManager), __decorateMetadata("design:type", typeof (so = We$1 !== void 0 && We$1) == "function" ? so : Object)], uo.prototype, "_fullscreenManager", void 0), __decorate$1([inject(A.ScreenLayoutManager), __decorateMetadata("design:type", typeof (co = Xe !== void 0 && Xe) == "function" ? co : Object)], uo.prototype, "_screenLayoutManager", void 0), __decorate$1([inject(j.Layout), __decorateMetadata("design:type", typeof (lo = rt$1 !== void 0 && rt$1) == "function" ? lo : Object)], uo.prototype, "_layout", void 0), uo = __decorate$1([injectable()], uo);
+__decorate$1([inject(P$2.PixiStageContainer), __decorateMetadata("design:type", typeof (uo = import_lib.Container !== void 0 && import_lib.Container) == "function" ? uo : Object)], yo.prototype, "_parent", void 0), __decorate$1([inject(P$2.AssetsManager), __decorateMetadata("design:type", typeof (fo = or !== void 0 && or) == "function" ? fo : Object)], yo.prototype, "_assets", void 0), __decorate$1([inject(N$1.UpdateManager), __decorateMetadata("design:type", typeof (po = UpdateManager !== void 0 && UpdateManager) == "function" ? po : Object)], yo.prototype, "_updateManager", void 0), __decorate$1([inject(N$1.ResolutionManager), __decorateMetadata("design:type", typeof (mo = We$1 !== void 0 && We$1) == "function" ? mo : Object)], yo.prototype, "_resolutionManager", void 0), __decorate$1([inject(N$1.IEventManager), __decorateMetadata("design:type", Object)], yo.prototype, "_eventManager", void 0), __decorate$1([inject(N$1.FullscreenManager), __decorateMetadata("design:type", typeof (ho = Ve$1 !== void 0 && Ve$1) == "function" ? ho : Object)], yo.prototype, "_fullscreenManager", void 0), __decorate$1([inject(N$1.ScreenLayoutManager), __decorateMetadata("design:type", typeof (_o = qe$1 !== void 0 && qe$1) == "function" ? _o : Object)], yo.prototype, "_screenLayoutManager", void 0), __decorate$1([inject(P$2.Layout), __decorateMetadata("design:type", typeof (vo = et !== void 0 && et) == "function" ? vo : Object)], yo.prototype, "_layout", void 0), yo = __decorate$1([injectable()], yo);
 var Preloader = class extends import_lib.Container {
 	constructor(e) {
 		super();
@@ -111463,7 +111690,7 @@ var TickerSpeedOverlay = class {
 		this._element.remove();
 	}
 };
-var fo = (_TickerSpeedController = class TickerSpeedController {
+var bo = (_TickerSpeedController = class TickerSpeedController {
 	constructor() {
 		_defineProperty(this, "_multiplier", 1);
 		_defineProperty(this, "_enabled", !1);
@@ -111519,7 +111746,7 @@ var fo = (_TickerSpeedController = class TickerSpeedController {
 		this._overlay.update(this._multiplier, this._enabled);
 	}
 }, _defineProperty(_TickerSpeedController, "STEP_DEFAULT", .1), _defineProperty(_TickerSpeedController, "STEP_COARSE", 1), _defineProperty(_TickerSpeedController, "STEP_HUGE", 10), _TickerSpeedController);
-var po = class Game {
+var xo = class Game {
 	constructor() {
 		_defineProperty(this, "_diContainer", void 0);
 		_defineProperty(this, "_viewport", void 0);
@@ -111534,41 +111761,39 @@ var po = class Game {
 		_defineProperty(this, "_gameContainer", void 0);
 		_defineProperty(this, "_startScreen", void 0);
 		_defineProperty(this, "_onSoundsLoaded", void 0);
-		this._diContainer = new Container$7(), this._urlParams = this.parseUrlParams(), this._viewport = new RectangleArea(), window.game = this;
+		this._diContainer = new Container$8(), this._urlParams = this.parseUrlParams(), this._viewport = new RectangleArea(), window.game = this;
 	}
 	init() {
 		var _this29 = this;
 		return _asyncToGenerator(function* () {
-			_this29._device = new k(), _this29.diContainer.bind(j.Layout).to(rt$1).inSingletonScope(), _this29.diContainer.bind(j.CurrencyFormatter).toConstantValue(_this29.createCurrencyFormatter()), _this29.diContainer.bind(A.ResolutionManager).toConstantValue(new qe$1(_this29._viewport, _this29._device)), _this29._updateManager = new UpdateManager(), _this29.diContainer.bind(A.UpdateManager).toConstantValue(_this29._updateManager), _this29.diContainer.bind(j.Translator).to(Zn).inSingletonScope(), _this29.diContainer.get(j.Translator).init(_this29.getLocale()), _this29.diContainer.bind(A.Device).toConstantValue(_this29._device), _this29.diContainer.bind(A.VisibilityManager).to(Qe$1).inSingletonScope();
+			_this29._device = new Ie$1(), _this29.diContainer.bind(P$2.Layout).to(et).inSingletonScope(), _this29.diContainer.bind(P$2.CurrencyFormatter).toConstantValue(_this29.createCurrencyFormatter()), _this29.diContainer.bind(N$1.ResolutionManager).toConstantValue(new We$1(_this29._viewport, _this29._device)), _this29._updateManager = new UpdateManager(), _this29.diContainer.bind(N$1.UpdateManager).toConstantValue(_this29._updateManager), _this29.diContainer.bind(P$2.Translator).to(Jn).inSingletonScope(), _this29.diContainer.get(P$2.Translator).init(_this29.getLocale()), _this29.diContainer.bind(N$1.Device).toConstantValue(_this29._device), _this29.diContainer.bind(N$1.VisibilityManager).to(Ye).inSingletonScope();
 			let t = _this29.createGameSpecificData();
-			_this29.diContainer.bind(j.GameData).toConstantValue(t), t.initParamsFromURL(_this29._urlParams), _this29.initViewport(_this29._device, _this29._viewport), _this29._app = new import_lib.Application(), yield _this29._app.init({
+			_this29.diContainer.bind(P$2.GameData).toConstantValue(t), t.initParamsFromURL(_this29._urlParams), _this29.initViewport(_this29._device, _this29._viewport), _this29._app = new import_lib.Application(), yield _this29._app.init({
 				resizeTo: window,
 				autoDensity: !0,
 				resolution: window.devicePixelRatio || 1,
 				preference: "webgl",
 				backgroundAlpha: .1,
 				backgroundColor: 0
-			}), _this29._tickerSpeedController = new fo(), _this29._app.ticker.add(_this29.onTickerUpdate.bind(_this29));
+			}), _this29._tickerSpeedController = new bo(), _this29._app.ticker.add(_this29.onTickerUpdate.bind(_this29));
 			let n = new import_lib.Container();
-			_this29._gameContainer = n, _this29._app.stage.addChild(n), _this29.diContainer.bind(j.PixiStageContainer).toConstantValue(n), _this29.diContainer.bind(j.Application).toConstantValue(_this29._app), _this29.diContainer.bind(A.IEventManager).to(He$1).inSingletonScope();
-			let i = new we$1();
-			yield i.initialize(_this29._device, _this29, _this29.diContainer.get(A.IEventManager)), _this29.diContainer.bind(j.GameController).toConstantValue(i);
-			let a = new Preloader(_this29.diContainer.get(A.IEventManager));
-			_this29._assetsManager = _this29.createGameAssetsManager(), _this29._assetsManager.init(a, _this29._device), _this29.diContainer.bind(j.AssetsManager).toConstantValue(_this29._assetsManager);
-			let o = _this29.diContainer.get(A.IEventManager);
-			_this29.diContainer.bind(A.FullscreenManager).toConstantValue(new We$1(_this29._device, o)), _this29._screenLayoutManager = new Xe(_this29._app, n, o), _this29.diContainer.bind(A.ScreenLayoutManager).toConstantValue(_this29._screenLayoutManager), _this29.diContainer.bind(j.MainUI).to(uo).inSingletonScope(), _this29.bindSoundManagers();
-			let s = document.getElementById("gameContainer");
-			_this29._app.canvas.id = "gameCanvas", _this29._app.canvas.addEventListener("contextmenu", (e) => e.preventDefault()), _this29._app.canvas.addEventListener("touchstart", (e) => e.preventDefault(), { passive: !1 }), s.appendChild(_this29._app.canvas), _this29._screenLayoutManager.forceScreenUpdate(), yield _this29.loadInitialResources(), _this29.initStartScreen(a);
+			_this29._gameContainer = n, _this29._app.stage.addChild(n), _this29.diContainer.bind(P$2.PixiStageContainer).toConstantValue(n), _this29.diContainer.bind(P$2.Application).toConstantValue(_this29._app), _this29.diContainer.bind(N$1.IEventManager).to(ze$1).inSingletonScope(), yield _this29.setupGameContainer();
+			let i = new Preloader(_this29.diContainer.get(N$1.IEventManager));
+			_this29._assetsManager = _this29.createGameAssetsManager(), _this29._assetsManager.init(i, _this29._device), _this29.diContainer.bind(P$2.AssetsManager).toConstantValue(_this29._assetsManager);
+			let a = _this29.diContainer.get(N$1.IEventManager);
+			_this29.diContainer.bind(N$1.FullscreenManager).toConstantValue(new Ve$1(_this29._device, a)), _this29._screenLayoutManager = new qe$1(_this29._app, n, a), _this29.diContainer.bind(N$1.ScreenLayoutManager).toConstantValue(_this29._screenLayoutManager), _this29.bindSlotMainUiClass(), _this29.bindSoundManagers();
+			let o = document.getElementById("gameContainer");
+			_this29._app.canvas.id = "gameCanvas", _this29._app.canvas.addEventListener("contextmenu", (e) => e.preventDefault()), _this29._app.canvas.addEventListener("touchstart", (e) => e.preventDefault(), { passive: !1 }), o.appendChild(_this29._app.canvas), _this29._screenLayoutManager.forceScreenUpdate(), yield _this29.loadInitialResources(), _this29.initStartScreen(i);
 		})();
 	}
 	loadResources() {
 		var _this30 = this;
 		return _asyncToGenerator(function* () {
-			_this30._assetsManager.calculateLoadExpectation(), yield _this30._assetsManager.loadConfigFiles(), yield _this30._assetsManager.loadStyleSheets(), yield _this30._assetsManager.loadTextures(), yield _this30._assetsManager.loadSpineAtlases(), yield _this30._assetsManager.loadParticles(), yield _this30._assetsManager.loadSpriteSheets(), yield _this30._assetsManager.loadHtmlFiles(), yield _this30._assetsManager.loadSounds(), _this30.diContainer.bind(j.GameConfig).toConstantValue(new GameConfig(_this30._assetsManager.getConfig("config.json"))), _this30.diContainer.get(j.SoundPlayer).init(), _this30.diContainer.get(j.SoundManager).init(), _this30._onSoundsLoaded && _this30._onSoundsLoaded(), yield _this30._assetsManager.loadFonts(_this30.getLocale());
+			_this30._assetsManager.calculateLoadExpectation(), yield _this30._assetsManager.loadConfigFiles(), yield _this30._assetsManager.loadStyleSheets(), yield _this30._assetsManager.loadTextures(), yield _this30._assetsManager.loadSpineAtlases(), yield _this30._assetsManager.loadParticles(), yield _this30._assetsManager.loadSpriteSheets(), yield _this30._assetsManager.loadHtmlFiles(), yield _this30._assetsManager.loadSounds(), _this30.diContainer.bind(P$2.GameConfig).toConstantValue(new GameConfig(_this30._assetsManager.getConfig("config.json"))), _this30.diContainer.get(P$2.SoundPlayer).init(), _this30.diContainer.get(P$2.SoundManager).init(), _this30._onSoundsLoaded && _this30._onSoundsLoaded(), yield _this30._assetsManager.loadFonts(_this30.getLocale());
 		})();
 	}
 	onReady() {
-		this.diContainer.get(j.MainUI).init(new SpineUtils(this._assetsManager, this._updateManager, this._gameContainer, this._app)), this._startScreen.finishLoading();
+		this.diContainer.get(P$2.MainUI).init(new SpineUtils(this._assetsManager, this._updateManager, this._gameContainer, this._app)), this._startScreen.finishLoading();
 	}
 	addModules(...e) {
 		for (let t of e) {
@@ -111587,15 +111812,25 @@ var po = class Game {
 		this._screenLayoutManager.forceScreenUpdate();
 	}
 	restoreModules() {
-		if (this.diContainer.get(j.GameData).hasRestore) for (let e of this._registeredModules) e.instance.restore();
+		if (this.diContainer.get(P$2.GameData).hasRestore) for (let e of this._registeredModules) e.instance.restore();
 	}
 	initStartScreen(e) {
-		this._startScreen = new Ha(this.gameContainer, e, this._assetsManager, this._updateManager, this.diContainer.get(A.IEventManager));
+		this._startScreen = new Ya(this.gameContainer, e, this._assetsManager, this._updateManager, this.diContainer.get(N$1.IEventManager));
 	}
-	loadInitialResources() {
+	setupGameContainer() {
 		var _this31 = this;
 		return _asyncToGenerator(function* () {
-			yield _this31._assetsManager.loadInitialResources();
+			let e = new be$1();
+			yield e.initialize(_this31._device, _this31, _this31.diContainer.get(N$1.IEventManager)), _this31.diContainer.bind(P$2.GameController).toConstantValue(e);
+		})();
+	}
+	bindSlotMainUiClass() {
+		this.diContainer.bind(P$2.MainUI).to(yo).inSingletonScope();
+	}
+	loadInitialResources() {
+		var _this32 = this;
+		return _asyncToGenerator(function* () {
+			yield _this32._assetsManager.loadInitialResources();
 		})();
 	}
 	getLocale() {
@@ -111603,10 +111838,10 @@ var po = class Game {
 		return (_this$_urlParams$lang = this._urlParams.language) !== null && _this$_urlParams$lang !== void 0 ? _this$_urlParams$lang : "en";
 	}
 	createCurrencyFormatter() {
-		return new Xn();
+		return new qn();
 	}
 	bindSoundManagers() {
-		this.diContainer.bind(j.SoundManager).to(to).inSingletonScope(), this.diContainer.bind(j.SoundPlayer).to(no).inSingletonScope();
+		this.diContainer.bind(P$2.SoundManager).to(co).inSingletonScope(), this.diContainer.bind(P$2.SoundPlayer).to(lo).inSingletonScope();
 	}
 	createGameAssetsManager() {
 		throw Error("Game::createGameAssetsManager must be overridden");
@@ -111615,7 +111850,7 @@ var po = class Game {
 		throw Error("Game::createGameSpecificData must be overridden");
 	}
 	initViewport(e, t) {
-		t.width = w$1, t.height = T;
+		t.width = O$1, t.height = k;
 	}
 	parseUrlParams() {
 		return Object.fromEntries(new URLSearchParams(window.location.search));
@@ -111635,30 +111870,7 @@ var po = class Game {
 		return this._diContainer;
 	}
 };
-po = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], po);
-//#endregion
-//#region src/modules/globalstate/states/GlobalStateIdle.ts
-var GlobalStateIdle = class extends GlobalModuleState {
-	constructor(module, name, eventManager) {
-		super(module, name, eventManager);
-		this._keypadController = module.diContainer.get(di);
-	}
-	onEnterState() {
-		this._keypadController.enableOnSpinningFinished();
-		this._keypadController.enableOnIdleStarted();
-	}
-	onLeaveState() {}
-	setupEvents() {
-		this.on(SpinButtonEvents.SPIN_BUTTON_PRESSED, this.onSpinButtonPressed);
-		this.on(AutoplayHandlerEvents.START_AUTOPLAY_SPIN, this.onAutospinStarted);
-	}
-	onAutospinStarted() {
-		this.module.gotoState(GlobalStateSpinModule.STEP);
-	}
-	onSpinButtonPressed() {
-		this.module.gotoState(GlobalStateSpinModule.STEP);
-	}
-};
+xo = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], xo);
 //#endregion
 //#region node_modules/@inversifyjs/common/lib/esm/index.js
 init_defineProperty();
@@ -113562,19 +113774,398 @@ function __decorate(decorators, target, key, desc) {
 	return c > 3 && r && Object.defineProperty(target, key, r), r;
 }
 //#endregion
+//#region src/modules/movingUI/cashout/CashoutButtonView.ts
+var _CashoutButtonView2;
+var _CashoutButtonView;
+var CashoutButtonView = (_CashoutButtonView2 = class CashoutButtonView extends hr {
+	init() {
+		super.init();
+		this.setupButtons();
+		this.setupLayout();
+	}
+	disableButton() {
+		this._cashOutButton.button.visible = false;
+	}
+	enableButton() {
+		this._cashOutButton.button.visible = true;
+	}
+	setupButtons() {
+		this._cashOutButton = this.createSpineCashOutButton();
+		this.container.addChild(this._cashOutButton.button);
+	}
+	createSpineCashOutButton() {
+		return new GenericButton("SPIN_BUTTON2.json", void 0, this.spineUtils, this.onCashOutButtonClicked.bind(this));
+	}
+	onCashOutButtonClicked() {
+		this.soundPlayer.play("buttonClick");
+		this.emit(_CashoutButtonView.CASHOUT_BUTTON_CLICKED);
+	}
+	setupLayout() {
+		const bone = this.mainUI.getBoneFromUI("CASHOUT_BUTTON");
+		const pmBone = this.mainUI.getBoneFromPortraitUI("CASHOUT_BUTTON");
+		this._uiElements.push(new UIElement(this._cashOutButton.button, {
+			x: 0,
+			y: 0
+		}, {
+			x: 0,
+			y: 0
+		}, [J$1.RIGHT], [J$1.BOTTOM], {
+			x: bone.scaleX,
+			y: bone.scaleY
+		}, {
+			x: pmBone.scaleX,
+			y: pmBone.scaleY
+		}));
+	}
+}, _CashoutButtonView = _CashoutButtonView2, _CashoutButtonView2.CASHOUT_BUTTON_CLICKED = "SpinButtonView::CASHOUT_BUTTON_CLICKED", _CashoutButtonView2);
+CashoutButtonView = _CashoutButtonView = __decorate([Z()], CashoutButtonView);
+//#endregion
+//#region src/modules/movingUI/cashout/CashoutButtonEvents.ts
+var _CashoutButtonEvents;
+var CashoutButtonEvents = class {};
+_CashoutButtonEvents = CashoutButtonEvents;
+_CashoutButtonEvents.CASHOUT_BUTTON_CLICKED = "CashoutButtonEvents::CASHOUT_BUTTON_CLICKED";
+//#endregion
+//#region src/modules/movingUI/cashout/CashoutButtonModule.ts
+var CashoutButtonModule = class CashoutButtonModule extends vr {
+	init(view, viewScreenName) {
+		super.init(view, viewScreenName);
+		this.view.disableButton();
+	}
+	hideButton() {
+		this.view.disableButton();
+	}
+	setupEvents() {
+		super.setupEvents();
+		this.onViewEmitEvent(CashoutButtonView.CASHOUT_BUTTON_CLICKED, CashoutButtonEvents.CASHOUT_BUTTON_CLICKED);
+		this.on(CashoutButtonEvents.CASHOUT_BUTTON_CLICKED, this.onCashOutClicked);
+	}
+	onCashOutClicked() {
+		this.view.disableButton();
+	}
+};
+CashoutButtonModule = __decorate([Z()], CashoutButtonModule);
+//#endregion
+//#region src/modules/movingUI/go/GoButtonView.ts
+var _GoButtonView2;
+var _GoButtonView;
+var GoButtonView = (_GoButtonView2 = class GoButtonView extends hr {
+	init() {
+		super.init();
+		this.setupButtons();
+		this.setupLayout();
+	}
+	disableButton() {
+		this._goButton.button.disable();
+	}
+	enableButton() {
+		this._goButton.button.enable();
+	}
+	hideGoButton() {
+		this._goButton.button.visible = false;
+	}
+	showGoButton() {
+		this._goButton.button.visible = true;
+	}
+	setupButtons() {
+		this._goButton = this.createSpineGoButton();
+		this.container.addChild(this._goButton.button);
+	}
+	createSpineGoButton() {
+		return new GenericButton("SPIN_BUTTON.json", void 0, this.spineUtils, this.onGoButtonClicked.bind(this));
+	}
+	onGoButtonClicked() {
+		this.soundPlayer.play("buttonClick");
+		this.emit(_GoButtonView.GO_BUTTON_CLICKED);
+	}
+	setupLayout() {
+		const bone = this.mainUI.getBoneFromUI("GO_BUTTON");
+		const pmBone = this.mainUI.getBoneFromPortraitUI("GO_BUTTON");
+		this._uiElements.push(new UIElement(this._goButton.button, {
+			x: 0,
+			y: 0
+		}, {
+			x: 0,
+			y: 0
+		}, [J$1.RIGHT], [J$1.BOTTOM], {
+			x: bone.scaleX,
+			y: bone.scaleY
+		}, {
+			x: pmBone.scaleX,
+			y: pmBone.scaleY
+		}));
+	}
+}, _GoButtonView = _GoButtonView2, _GoButtonView2.GO_BUTTON_CLICKED = "GoButtonView::GO_BUTTON_CLICKED", _GoButtonView2);
+GoButtonView = _GoButtonView = __decorate([Z()], GoButtonView);
+//#endregion
+//#region src/modules/movingUI/go/GoButtonEvents.ts
+var _GoButtonEvents;
+var GoButtonEvents = class {};
+_GoButtonEvents = GoButtonEvents;
+_GoButtonEvents.GO_BUTTON_CLICKED = "GoButtonEvents::GO_BUTTON_CLICKED";
+//#endregion
+//#region src/modules/movingUI/go/GoButtonModule.ts
+var GoButtonModule = class GoButtonModule extends vr {
+	init(view, viewScreenName) {
+		super.init(view, viewScreenName);
+		this.resetGame();
+	}
+	resetGame() {
+		this.view.showGoButton();
+	}
+	setupEvents() {
+		super.setupEvents();
+		this.onViewEmitEvent(GoButtonView.GO_BUTTON_CLICKED, GoButtonEvents.GO_BUTTON_CLICKED);
+	}
+};
+GoButtonModule = __decorate([Z()], GoButtonModule);
+//#endregion
+//#region src/keypadController/ChickenKeypadController.ts
+var KeypadButtons = {
+	autoPlayButton: "autoPlayButton",
+	bankingButton: "bankingButton",
+	menuButton: "menuButton",
+	betButton: "betButton",
+	quickPlayButton: "quickPlayButton",
+	goButton: "goButton",
+	cashOutButton: "cashOutButton"
+};
+var goButtonLockReasons = Qn.filter((reason) => reason !== "LockReasons::BET_FROZEN" && reason !== "LockReasons::ROUND_STARTED");
+var cashOutButtonLockReasons = Qn.filter((reason) => reason !== "LockReasons::BET_FROZEN" && reason !== "LockReasons::ROUND_STARTED" && reason !== "LockReasons::WIN_STARTED");
+var chickenBetButtonLockReasons = Qn.filter((reason) => reason !== "LockReasons::IDLE_STATE_ENTERED" && reason !== "LockReasons::SPINNING_STARTED");
+var chickenAutoplayButtonLockReasons = Qn.filter((reason) => reason !== "LockReasons::IDLE_STATE_ENTERED" && reason !== "LockReasons::SPINNING_STARTED");
+var ChickenKeypadController = class ChickenKeypadController extends L {
+	constructor(..._args) {
+		super(..._args);
+		this._keypad = {};
+		this._buttonLockingReasons = {};
+	}
+	restore() {
+		super.restore();
+		this.lockWithReason("LockReasons::RESTORE_STARTED");
+	}
+	init(view, viewScreenName) {
+		super.init(view, viewScreenName);
+		this.setupKeypadItems();
+		this.setupButtonsLockingReasons();
+	}
+	setupEvents() {
+		super.setupEvents();
+		this.on(BetMenuEvents.BET_MENU_OPENED, this.onBetPopupOpened);
+		this.on(BetMenuEvents.BET_MENU_CLOSED, this.onBetPopupClosed);
+		this.on(AutoplayHandlerEvents.AUTOPLAY_STARTED, this.onAutoplayStarted);
+		this.on(AutoplayHandlerEvents.AUTOPLAY_STOPPED, this.onAutoplayStopped);
+		this.on(AutoplayMenuEvents.AUTOPLAY_MENU_OPENED, this.onAutoplayMenusOpened);
+		this.on(AutoplayMenuEvents.AUTOPLAY_MENU_CLOSED, this.onAutoplayMenusClosed);
+		this.on(MenuEvents.OPENED, this.onGameMenuOpened);
+		this.on(MenuEvents.CLOSED, this.onGameMenuClosed);
+		this.on(PlatformEvents.FREEZE_BET_CALLBACK_CALLED, this.onFreezeBetCalled);
+		this.on(PlatformEvents.UNFREEZE_BET_CALLBACK_CALLED, this.onUnfreezeBetCalled);
+		this.on(RestoreScreenEvents.RESTORE_CLOSED, this.onRestoreClosed);
+	}
+	onRestoreClosed() {
+		this.unlockWithReason("LockReasons::RESTORE_STARTED");
+		this.disableOnRoundStarted();
+		this.disableOnStepStarted();
+		this.enableOnStepFinished();
+	}
+	onGameMenuOpened() {
+		this.lockWithReason("LockReasons::MAIN_MENU_OPENED");
+	}
+	onGameMenuClosed() {
+		this.unlockWithReason("LockReasons::MAIN_MENU_OPENED");
+	}
+	onAutoplayMenusOpened() {
+		this.lockWithReason("LockReasons::AUTOPLAY_MENU_OPENED");
+	}
+	onAutoplayMenusClosed() {
+		this.unlockWithReason("LockReasons::AUTOPLAY_MENU_OPENED");
+	}
+	onAutoplayStarted() {
+		this.lockWithReason("LockReasons::AUTOPLAY_STARTED");
+	}
+	onAutoplayStopped() {
+		this.unlockWithReason("LockReasons::AUTOPLAY_STARTED");
+	}
+	onFreezeBetCalled() {
+		this.lockWithReason("LockReasons::BET_FROZEN");
+	}
+	onUnfreezeBetCalled() {
+		this.unlockWithReason("LockReasons::BET_FROZEN");
+	}
+	onBetPopupOpened() {
+		this.lockWithReason("LockReasons::BET_MENU_OPENED");
+	}
+	onBetPopupClosed() {
+		this.unlockWithReason("LockReasons::BET_MENU_OPENED");
+	}
+	setupKeypadItems() {
+		this._keypad[KeypadButtons.autoPlayButton] = this.diContainer.get(Mr);
+		this._keypad[KeypadButtons.betButton] = this.diContainer.get(Oa);
+		this._keypad[KeypadButtons.goButton] = this.diContainer.get(GoButtonModule);
+		this._keypad[KeypadButtons.cashOutButton] = this.diContainer.get(CashoutButtonModule);
+		this._keypad[KeypadButtons.quickPlayButton] = this.diContainer.get(Li);
+	}
+	setupButtonsLockingReasons() {
+		this._buttonLockingReasons[KeypadButtons.autoPlayButton] = this.getAutoplayButtonLockingReasons();
+		this._buttonLockingReasons[KeypadButtons.betButton] = this.getBetButtonLockingReasons();
+		this._buttonLockingReasons[KeypadButtons.goButton] = this.getGoButtonLockingReasons();
+		this._buttonLockingReasons[KeypadButtons.cashOutButton] = this.getCashOutButtonLockingReasons();
+		this._buttonLockingReasons[KeypadButtons.quickPlayButton] = this.getQuickPlayButtonLockingReasons();
+	}
+	/**
+	* We can DISABLE each button separately by configure it with KeypadButtonConfig, or we can set the same
+	* behaviour for every button: hide: true, disable: true
+	*/
+	lockWithReason(reason, config) {
+		if (config instanceof Array) config.forEach((key) => {
+			if (this._keypad[key.buttonName] && this.isValidLockingReasonForButton(key.buttonName, reason)) this._keypad[key.buttonName].lockWithReason(reason, key.lockProperties ? key.lockProperties : {
+				hide: true,
+				disable: true
+			});
+		});
+		else for (const key in this._keypad) {
+			const button = this._keypad[key];
+			if (this.isValidLockingReasonForButton(key, reason)) button.lockWithReason(reason, config ? config : {
+				hide: true,
+				disable: true
+			});
+		}
+	}
+	/**
+	* We can ENABLE each button separately by configure it with KeypadButtonConfig, or we can use default
+	* behaviour for every button: show: true, enable: true
+	*/
+	unlockWithReason(reason, config) {
+		if (config instanceof Array) config.forEach((key) => {
+			if (this._keypad[key.buttonName] && this.isValidLockingReasonForButton(key.buttonName, reason)) this._keypad[key.buttonName].unlockWithReason(reason, key.unlockProperties ? key.unlockProperties : {
+				show: true,
+				enable: true
+			});
+		});
+		else for (const key in this._keypad) {
+			const button = this._keypad[key];
+			if (this.isValidLockingReasonForButton(key, reason)) button.unlockWithReason(reason, config ? config : {
+				show: true,
+				enable: true
+			});
+		}
+	}
+	isValidLockingReasonForButton(buttonName, reason) {
+		return this._buttonLockingReasons[buttonName].includes(reason);
+	}
+	/**
+	* Some buttons should not be blocked for each reason, below we will define these rules for each button
+	* ovveride if needed to slice unnecessary reason
+	*/
+	getBetButtonLockingReasons() {
+		return chickenBetButtonLockReasons;
+	}
+	getAutoplayButtonLockingReasons() {
+		return chickenAutoplayButtonLockReasons;
+	}
+	getGoButtonLockingReasons() {
+		return goButtonLockReasons;
+	}
+	getCashOutButtonLockingReasons() {
+		return cashOutButtonLockReasons;
+	}
+	getQuickPlayButtonLockingReasons() {
+		return ir;
+	}
+	getBankingButtonLockingReasons() {
+		return tr;
+	}
+	getMenuButtonLockingReasons() {
+		return rr;
+	}
+	disableOnWinStarted(config) {
+		this.lockWithReason("LockReasons::WIN_STARTED", config);
+	}
+	enableOnWinFinished(config) {
+		this.unlockWithReason("LockReasons::WIN_STARTED", config);
+	}
+	disableOnFeatureStarted(config) {
+		this.lockWithReason("LockReasons::FEATURE_STARTED", config);
+	}
+	enableOnFeatureFinished(config) {
+		this.unlockWithReason("LockReasons::FEATURE_STARTED", config);
+	}
+	disableOnStepStarted(config) {
+		this.lockWithReason("LockReasons::SPINNING_STARTED", config);
+	}
+	enableOnStepFinished(config) {
+		this.unlockWithReason("LockReasons::SPINNING_STARTED", config);
+	}
+	disableOnRoundStarted(config) {
+		this.lockWithReason("LockReasons::ROUND_STARTED", config);
+	}
+	enableOnRoundFinished(config) {
+		this.unlockWithReason("LockReasons::ROUND_STARTED", config);
+	}
+};
+ChickenKeypadController = __decorate([Z()], ChickenKeypadController);
+//#endregion
+//#region src/autoplay/GameAutoplayHandlerEvents.ts
+var _GameAutoplayHandlerEvents;
+var GameAutoplayHandlerEvents = class {};
+_GameAutoplayHandlerEvents = GameAutoplayHandlerEvents;
+_GameAutoplayHandlerEvents.AUTOPLAY_STEP = "GameAutoplayHandlerEvents::AUTOPLAY_STEP";
+_GameAutoplayHandlerEvents.AUTOPLAY_CASHOUT = "GameAutoplayHandlerEvents::AUTOPLAY_CASHOUT";
+//#endregion
+//#region src/modules/globalstate/states/GlobalStateIdle.ts
+var GlobalStateIdle = class extends GlobalModuleState {
+	constructor(module, name, eventManager) {
+		super(module, name, eventManager);
+		this._keypadController = module.diContainer.get(ChickenKeypadController);
+		this._goButtonModule = module.diContainer.get(GoButtonModule);
+		this._cashoutButtonModule = module.diContainer.get(CashoutButtonModule);
+	}
+	onEnterState() {
+		this._keypadController.enableOnStepFinished();
+		this._keypadController.enableOnRoundFinished();
+		this._cashoutButtonModule.hideButton();
+		this._goButtonModule.resetGame();
+	}
+	onLeaveState() {}
+	setupEvents() {
+		this.on(GoButtonEvents.GO_BUTTON_CLICKED, this.onSpinButtonPressed);
+		this.on(GameAutoplayHandlerEvents.AUTOPLAY_STEP, this.onAutostepStarted);
+	}
+	onAutostepStarted() {
+		this.module.gotoState(GlobalStateSpinModule.STEP);
+	}
+	onSpinButtonPressed() {
+		this.module.gotoState(GlobalStateSpinModule.STEP);
+	}
+	get chickenGameController() {
+		return this.gameController;
+	}
+};
+//#endregion
+//#region src/modules/chicken/ChickenEvents.ts
+var _ChickenEvents;
+var ChickenEvents = class {};
+_ChickenEvents = ChickenEvents;
+_ChickenEvents.FIRST_STEP_STARTED = "ChickenEvents::FIRST_STEP_STARTED";
+_ChickenEvents.STEP_STARTED = "ChickenEvents::STEP_STARTED";
+//#endregion
 //#region src/modules/chicken/ChickenModule.ts
 init_asyncToGenerator();
-var ChickenModule = class ChickenModule extends P$2 {
+var ChickenModule = class ChickenModule extends L {
 	makeFirstStep() {
 		var _this = this;
 		return _asyncToGenerator(function* () {
-			yield _this.view.makeFirstStep();
+			_this.emit(ChickenEvents.FIRST_STEP_STARTED);
+			_this.emit(ChickenEvents.STEP_STARTED);
+			yield _this.view.makeStep();
 		})();
 	}
 	makeStep() {
 		var _this2 = this;
 		return _asyncToGenerator(function* () {
 			yield _this2.view.makeStep();
+			_this2.emit(ChickenEvents.STEP_STARTED);
 		})();
 	}
 	resetRound() {
@@ -113593,7 +114184,7 @@ ChickenModule = __decorate([Z()], ChickenModule);
 init_asyncToGenerator();
 var _RoadView2;
 var _RoadView;
-var RoadView = (_RoadView2 = class RoadView extends G {
+var RoadView = (_RoadView2 = class RoadView extends q {
 	constructor(..._args) {
 		super(..._args);
 		this._laneTopY = 0;
@@ -113604,6 +114195,8 @@ var RoadView = (_RoadView2 = class RoadView extends G {
 		this._roadWidth = 0;
 		this._totalLanes = 0;
 		this._laneAngle = 0;
+		this._cars = [];
+		this._barriers = [];
 	}
 	init() {
 		var _superprop_getInit = () => super.init;
@@ -113616,16 +114209,45 @@ var RoadView = (_RoadView2 = class RoadView extends G {
 			_this._roadMainContainer = new import_lib.Container();
 			_this._roadMainContainer.position.set(0, -9e3);
 			_this.container.addChild(_this._roadMainContainer);
+			_this._barriersContainer = new import_lib.Container();
+			_this._barriersContainer.position.set(0, -9e3);
+			_this.container.addChild(_this._barriersContainer);
 			const apexOffsetY = Math.abs(_this._roadMainContainer.position.y);
-			const apexDistance = apexOffsetY + T;
-			_this._laneAngle = Math.atan(_this._roadWidth / apexDistance);
-			_this._laneTopY = apexOffsetY - T / 2 - _RoadView.CAR_OFFSCREEN_BUFFER;
-			_this._laneBottomY = apexOffsetY + T / 2 + _RoadView.CAR_OFFSCREEN_BUFFER;
-			_this._roadElements.push(_this.createLane(-1, `START`, false));
+			const apexDistance = apexOffsetY + k;
+			_this._laneAngle = Math.atan(_this._roadWidth / apexDistance) * 1.072;
+			_this._laneTopY = apexOffsetY - k / 2 - _RoadView.CAR_OFFSCREEN_BUFFER;
+			_this._laneBottomY = apexOffsetY + k / 2 + _RoadView.CAR_OFFSCREEN_BUFFER;
+			_this.createStartLane();
 			for (let i = 0; i < _this._totalLanes; i++) _this._roadElements.push(_this.createLane(i, `${1 + i % 5}`));
+			_this.createFinishLane(_this._totalLanes);
 			_this._currentOffset = 0;
 			_this._roadMainContainer.rotation = -_this._currentOffset * _this._laneAngle;
 			_this.spawnCarsLoop();
+		})();
+	}
+	restoreToPosition(laneIndex) {
+		this._currentOffset = laneIndex;
+		this._roadMainContainer.rotation = this._currentOffset * this._laneAngle;
+	}
+	spawnBarrier(laneIndex) {
+		const laneHeight = 1e4;
+		const barrierContainer = new import_lib.Container();
+		const barrier = this.spineUtils.startSpineAnimationCreation("BARRIER.json", "APPEAR", false).chainIdleAnimation("IDLE").position(0, laneHeight - 1920 / 2 - 400).container(barrierContainer).createAndStart();
+		barrierContainer.rotation = laneIndex * this._laneAngle * -1;
+		this._barriersContainer.addChild(barrierContainer);
+		this._barriers.push(barrier);
+	}
+	spawnBarrierCar(laneIndex) {
+		var _this2 = this;
+		return _asyncToGenerator(function* () {
+			const lane = _this2._roadElements[laneIndex];
+			const car = _this2.createCar(lane);
+			_this2._cars.push(car);
+			yield Zn.targetTween(car.spine, {
+				x: 0,
+				y: 8400
+			}, _this2.updateManager, _RoadView.CAR_DRIVE_DURATION)[0].getPromise();
+			car.play("STOP", 0, true);
 		})();
 	}
 	spawnFatalCar(laneIndex) {
@@ -113633,7 +114255,7 @@ var RoadView = (_RoadView2 = class RoadView extends G {
 		const car = this.createCar(lane);
 		const fatalPositionY = this._laneTopY + (this._laneBottomY - this._laneTopY) / 2;
 		let shouldCheckFatal = true;
-		er.targetTween(car.spine, {
+		Zn.targetTween(car.spine, {
 			x: 0,
 			y: this._laneBottomY
 		}, this.updateManager, _RoadView.CAR_DRIVE_DURATION)[0].onUpdate(() => {
@@ -113646,6 +114268,10 @@ var RoadView = (_RoadView2 = class RoadView extends G {
 	resetRound() {
 		this._currentOffset = 0;
 		this._roadMainContainer.rotation = this._currentOffset * this._laneAngle;
+		for (const car of this._cars) this.spineUtils.stopAndDestroyAnimation(car);
+		for (const barrier of this._barriers) this.spineUtils.stopAndDestroyAnimation(barrier);
+		this._cars = [];
+		this._barriers = [];
 	}
 	moveLanesOneStep() {
 		this._currentOffset++;
@@ -113654,6 +114280,8 @@ var RoadView = (_RoadView2 = class RoadView extends G {
 	tweenToCurrentOffset() {
 		const tween = new Tween(this._roadMainContainer).to({ rotation: this._currentOffset * this._laneAngle }, _RoadView.LANE_SHIFT_DURATION).start();
 		this.updateManager.add(tween);
+		const barrierTween = new Tween(this._barriersContainer).to({ rotation: this._currentOffset * this._laneAngle }, _RoadView.LANE_SHIFT_DURATION).start();
+		this.updateManager.add(barrierTween);
 	}
 	spawnCarsLoop() {
 		this.timeUtils.createTimer(() => {
@@ -113665,7 +114293,7 @@ var RoadView = (_RoadView2 = class RoadView extends G {
 		const laneIndex = Math.min(GameUtils.randomInt(this._currentOffset + 1, this._currentOffset + 4), this._totalLanes - 1);
 		const lane = this._roadElements[laneIndex];
 		const car = this.createCar(lane);
-		er.targetTween(car.spine, {
+		Zn.targetTween(car.spine, {
 			x: 0,
 			y: this._laneBottomY
 		}, this.updateManager, _RoadView.CAR_DRIVE_DURATION)[0].getPromise().then(() => this.spineUtils.stopAndDestroyAnimation(car));
@@ -113679,7 +114307,28 @@ var RoadView = (_RoadView2 = class RoadView extends G {
 		this.spineUtils.startSpineAnimationCreation("LANES.json", "IDLE", true).skinName(skinName).position(0, laneHeight - 1920 / 2).container(laneContainer).createAndStart();
 		laneContainer.rotation = index * this._laneAngle * -1;
 		this._roadMainContainer.addChild(laneContainer);
-		if (hasCoin) this.spineUtils.startSpineAnimationCreation("COIN.json", "IDLE", true).position(0, laneHeight - T / 2).container(laneContainer).createAndStart();
+		if (hasCoin) {
+			const coin = this.spineUtils.startSpineAnimationCreation("COIN.json", "IDLE", true).position(0, laneHeight - k / 2).container(laneContainer).createAndStart();
+			const coinValue = new ni(this.assets, "BIG_WINS_");
+			coin.spine.addChild(coinValue);
+			coinValue.showNumber(`${index + 1}`);
+		}
+		return laneContainer;
+	}
+	createStartLane() {
+		const laneHeight = 1e4;
+		const laneContainer = new import_lib.Container();
+		this.spineUtils.startSpineAnimationCreation("BCKGR_START.json", "IDLE", true).position(0, laneHeight - 1920 / 2).container(laneContainer).createAndStart();
+		laneContainer.rotation = -1 * this._laneAngle * -1;
+		this._roadMainContainer.addChild(laneContainer);
+		return laneContainer;
+	}
+	createFinishLane(totalPositions) {
+		const laneHeight = 1e4;
+		const laneContainer = new import_lib.Container();
+		this.spineUtils.startSpineAnimationCreation("BCKGR_FINISH.json", "IDLE", true).position(0, laneHeight - 1920 / 2).container(laneContainer).createAndStart();
+		laneContainer.rotation = totalPositions * this._laneAngle * -1;
+		this._roadMainContainer.addChild(laneContainer);
 		return laneContainer;
 	}
 	onResized(screenParams) {
@@ -113695,7 +114344,11 @@ _RoadEvents = RoadEvents;
 _RoadEvents.FATAL_CAR_REACHED_CHICKEN = "RoadEvents::FATAL_CAR_REACHED_CHICKEN";
 //#endregion
 //#region src/modules/road/RoadModule.ts
-var RoadModule = class RoadModule extends P$2 {
+var RoadModule = class RoadModule extends L {
+	restore() {
+		super.restore();
+		this.view.restoreToPosition(this.gameData.currentStep + 1);
+	}
 	makeStep() {
 		this.view.moveLanesOneStep();
 	}
@@ -113705,6 +114358,10 @@ var RoadModule = class RoadModule extends P$2 {
 	spawnFatalCar(laneIndex) {
 		this.view.spawnFatalCar(laneIndex);
 	}
+	spawnBarrier(laneIndex) {
+		this.view.spawnBarrier(laneIndex);
+		this.view.spawnBarrierCar(laneIndex);
+	}
 	setupEvents() {
 		super.setupEvents();
 		this.onViewEmitEvent(RoadView.FATAL_CAR_REACHED_CHICKEN, RoadEvents.FATAL_CAR_REACHED_CHICKEN);
@@ -113712,30 +114369,78 @@ var RoadModule = class RoadModule extends P$2 {
 };
 RoadModule = __decorate([Z()], RoadModule);
 //#endregion
+//#region src/hud/GameHUDView.ts
+var _GameHUDView2;
+var _GameHUDView;
+var GameHUDView = (_GameHUDView2 = class GameHUDView extends ji {
+	setupButtons() {
+		super.setupButtons();
+		this._menuButton = new GenericButton("MENU_BUTTON.json", void 0, this.spineUtils, this.onMenuButtonClicked.bind(this));
+		this.spineUtils.replaceSlotAttachment(this._footer, "MENU_BUTTON", this._menuButton.button);
+		this.container.addChild(this._menuButton.button);
+	}
+	onMenuButtonClicked() {
+		this.emit(_GameHUDView.MENU_BUTTON_CLICKED);
+	}
+}, _GameHUDView = _GameHUDView2, _GameHUDView2.MENU_BUTTON_CLICKED = "MenuButtonView::BUTTON_CLICKED", _GameHUDView2);
+GameHUDView = _GameHUDView = __decorate([Z()], GameHUDView);
+//#endregion
+//#region src/hud/GameHUDModule.ts
+var GameHUDModule = class GameHUDModule extends Mi {
+	setupEvents() {
+		super.setupEvents();
+		this.onViewEmitEvent(GameHUDView.MENU_BUTTON_CLICKED, MenuButtonEvents.CLICKED);
+	}
+};
+GameHUDModule = __decorate([Z()], GameHUDModule);
+//#endregion
 //#region src/modules/globalstate/states/GlobalStateStep.ts
 init_asyncToGenerator();
 var GlobalStateStep = class extends GlobalModuleState {
 	constructor(module, name, eventManager) {
 		super(module, name, eventManager);
-		this._hudModule = module.diContainer.get(Ei);
-		this._spinButtonModule = module.diContainer.get(ya);
-		this._keypadController = module.diContainer.get(di);
+		this._hudModule = module.diContainer.get(GameHUDModule);
+		this._spinButtonModule = module.diContainer.get(CashoutButtonModule);
+		this._keypadController = module.diContainer.get(ChickenKeypadController);
 		this._chickenModule = module.diContainer.get(ChickenModule);
 		this._roadModule = module.diContainer.get(RoadModule);
+		this._goButtonModule = module.diContainer.get(GoButtonModule);
+		this._cashoutButtonModule = module.diContainer.get(CashoutButtonModule);
 	}
 	onEnterState() {
 		var _this = this;
 		return _asyncToGenerator(function* () {
+			_this._keypadController.disableOnStepStarted();
+			_this._keypadController.disableOnRoundStarted();
 			_this.gameData.spinStartCleanup();
-			_this._keypadController.disableOnSpinningStarted();
-			_this.gameData.makeStep();
 			_this._roadModule.makeStep();
-			yield _this._chickenModule.makeStep();
+			const awaitStuff = [];
+			if (_this.gameData.currentStep === -1) {
+				awaitStuff.push(_this._chickenModule.makeFirstStep());
+				awaitStuff.push(_this.chickenGameController.roundStart((result) => {
+					_this.gameData.reactOnStep(result);
+					_this.handleFirstStep();
+				}, _this.gameData.getTotalBet()));
+			} else {
+				awaitStuff.push(_this._chickenModule.makeStep());
+				awaitStuff.push(_this.chickenGameController.step((result) => {
+					result.currentStep = result.result.currentStep;
+					result.isDead = result.result.isDead;
+					_this.gameData.reactOnStep(result);
+				}));
+			}
+			yield Promise.all(awaitStuff);
 			if (_this.gameData.isDead) {
 				yield _this.playFatalCarSequence();
 				_this._roadModule.resetRound();
 				_this._chickenModule.resetRound();
-			}
+				_this.gameData.resetSteps();
+				_this.module.gotoState(GlobalStateSpinModule.LOSE);
+				return;
+			} else if (_this.gameData.hasReachedFinalPosition()) {
+				_this.module.gotoState(GlobalStateSpinModule.WIN);
+				return;
+			} else _this._roadModule.spawnBarrier(_this.gameData.currentStep);
 			yield _this.timeUtils.wait(500);
 			_this.module.gotoState(GlobalStateSpinModule.STEP_IDLE);
 		})();
@@ -113746,10 +114451,18 @@ var GlobalStateStep = class extends GlobalModuleState {
 			_this2._roadModule.spawnFatalCar(_this2.gameData.currentStep);
 			yield _this2.queueEvents.getEventPromise(RoadEvents.FATAL_CAR_REACHED_CHICKEN);
 			yield _this2._chickenModule.playDead();
+			_this2._goButtonModule.resetGame();
 		})();
 	}
 	onLeaveState() {}
 	setupEvents() {}
+	handleFirstStep() {
+		this._hudModule.clearWin();
+		this._hudModule.updateBalance();
+	}
+	get chickenGameController() {
+		return this.gameController;
+	}
 };
 //#endregion
 //#region src/modules/globalstate/states/GlobalStateWin.ts
@@ -113757,23 +114470,25 @@ init_asyncToGenerator();
 var GlobalStateWin = class extends GlobalModuleState {
 	constructor(module, name, eventManager) {
 		super(module, name, eventManager);
-		this._winAmountModule = module.diContainer.get(Ga);
-		this._bigWinModule = module.diContainer.get($r);
-		this._spinButtonModule = module.diContainer.get(ya);
-		this._hudModule = module.diContainer.get(Ei);
-		this._keypadController = module.diContainer.get(di);
+		this._winAmountModule = module.diContainer.get(Qa);
+		this._bigWinModule = module.diContainer.get(ai);
+		this._spinButtonModule = module.diContainer.get(CashoutButtonModule);
+		this._hudModule = module.diContainer.get(GameHUDModule);
+		this._keypadController = module.diContainer.get(ChickenKeypadController);
+		this._chickenModule = module.diContainer.get(ChickenModule);
+		this._roadModule = module.diContainer.get(RoadModule);
 	}
 	onEnterState() {
 		var _this = this;
 		return _asyncToGenerator(function* () {
 			_this._keypadController.disableOnWinStarted();
-			if (_this.gameData.isNumberBigWin(_this.gameData.getSpinWin())) {
-				_this._bigWinModule.play(_this.gameData.getSpinWin());
+			if (_this.gameData.isNumberBigWin(_this.gameData.getTotalWin())) {
+				_this._bigWinModule.play(_this.gameData.getTotalWin());
 				_this.queueEvents.addFunctionCallingEventToWaitingList(BigWinEvents.FINISHED, _this.onBigWinFinished.bind(_this));
-			} else if (_this.gameData.getSpinWin() > 0) {
-				_this._winAmountModule.playWin(_this.gameData.getSpinWin());
+			} else if (_this.gameData.getTotalWin() > 0) {
+				_this._winAmountModule.playWin(_this.gameData.getTotalWin());
 				_this.queueEvents.addFunctionCallingEventToWaitingList(WinAmountPresentationEvents.WIN_NUMBER_SHOWN_TO_PLAYER, _this.onWinPresentationFinished.bind(_this));
-			} else _this.actionAfterWinPresentation();
+			} else throw new Error("GlobalStateWin win is 0 shoould not be possible");
 		})();
 	}
 	onLeaveState() {}
@@ -113787,8 +114502,7 @@ var GlobalStateWin = class extends GlobalModuleState {
 		var _this2 = this;
 		return _asyncToGenerator(function* () {
 			_this2._hudModule.updateWin(_this2.gameData.getSpinWin());
-			if (!_this2.gameData.isFreeSpinsJustWon()) yield _this2.sendComplete();
-			_this2._keypadController.enableOnSpinningFinished();
+			yield _this2.sendComplete();
 			_this2.decideOnNextStateAfterWinPresentation();
 		})();
 	}
@@ -113799,12 +114513,15 @@ var GlobalStateWin = class extends GlobalModuleState {
 				_this3.gameData.reactOnComplete(data);
 			});
 			_this3._hudModule.updateBalance();
+			_this3.emit(GlobalStateEvents.CAN_SPIN);
 		})();
 	}
 	decideOnNextStateAfterWinPresentation() {
 		this._keypadController.enableOnWinFinished();
+		this.gameData.resetSteps();
+		this._roadModule.resetRound();
+		this._chickenModule.resetRound();
 		this.gotoState(GlobalStateSpinModule.IDLE);
-		this.emit(GlobalStateEvents.CAN_SPIN);
 	}
 	setupEvents() {}
 };
@@ -113814,10 +114531,10 @@ init_asyncToGenerator();
 var GlobalStateInit = class extends GlobalModuleState {
 	constructor(module, name, eventManager) {
 		super(module, name, eventManager);
-		this._hudModule = module.diContainer.get(Ei);
-		this._spinButtonModule = module.diContainer.get(ya);
-		this._restoreScreenModule = module.diContainer.get(Fi);
-		this._currencyFormatter = module.diContainer.get(j.CurrencyFormatter);
+		this._hudModule = module.diContainer.get(GameHUDModule);
+		this._spinButtonModule = module.diContainer.get(CashoutButtonModule);
+		this._restoreScreenModule = module.diContainer.get(Vi);
+		this._currencyFormatter = module.diContainer.get(P$2.CurrencyFormatter);
 	}
 	onEnterState() {
 		var _this = this;
@@ -113849,13 +114566,132 @@ var GlobalStateInit = class extends GlobalModuleState {
 	}
 };
 //#endregion
+//#region src/modules/globalstate/GameGlobalEvents.ts
+var _GameGlobalEvents;
+var GameGlobalEvents = class {};
+_GameGlobalEvents = GameGlobalEvents;
+_GameGlobalEvents.CHICKEN_STEP_FINISHED = "GameGlobalEvents::CHICKEN_STEP_FINISHED";
+_GameGlobalEvents.CHICKEN_CAN_START_NEW_ROUND = "GameGlobalEvents::CHICKEN_CAN_START_NEW_ROUND";
+//#endregion
 //#region src/modules/globalstate/states/GlobalStateStepIdle.ts
-var GlobalStateStepIdle = class extends GlobalStateIdle {};
+init_asyncToGenerator();
+var GlobalStateStepIdle = class extends GlobalStateIdle {
+	onEnterState() {
+		this._keypadController.enableOnStepFinished();
+		this.emit(GameGlobalEvents.CHICKEN_STEP_FINISHED);
+	}
+	setupEvents() {
+		super.setupEvents();
+		this.on(CashoutButtonEvents.CASHOUT_BUTTON_CLICKED, this.onCashOutPressed);
+		this.on(GameAutoplayHandlerEvents.AUTOPLAY_CASHOUT, this.onCashOutPressed);
+	}
+	onCashOutPressed() {
+		var _this = this;
+		return _asyncToGenerator(function* () {
+			yield _this.chickenGameController.payout((result) => {
+				_this.gameData.reactOnCashOut(result);
+			});
+			_this.module.gotoState(GlobalStateSpinModule.WIN);
+		})();
+	}
+};
+//#endregion
+//#region src/modules/losepresentation/LosePresentationView.ts
+var _LosePresentationView2;
+var _LosePresentationView;
+var LosePresentationView = (_LosePresentationView2 = class LosePresentationView extends q {
+	showPresentation() {
+		const parentContainer = new import_lib.Container();
+		const back = new import_lib.Graphics().rect(-960, -960, O$1, k).fill({
+			color: 0,
+			alpha: .5
+		});
+		parentContainer.addChild(back);
+		parentContainer.interactive = true;
+		const text = new import_lib.Text({ text: "YOU LOSE\nClick to continue" });
+		text.anchor.set(.5);
+		parentContainer.addChild(text);
+		parentContainer.on("tap", this.hidePresentation.bind(this));
+		parentContainer.on("click", this.hidePresentation.bind(this));
+		this._currentTimer = this.timeUtils.createTimer(() => {
+			this.hidePresentation();
+		}, 1e3);
+		this.container.addChild(parentContainer);
+	}
+	hidePresentation() {
+		this._currentTimer.stop();
+		this.container.removeChildren();
+		this.emit(_LosePresentationView.LOSE_PRESENTATION_FINISHED);
+	}
+}, _LosePresentationView = _LosePresentationView2, _LosePresentationView2.LOSE_PRESENTATION_FINISHED = "LosePresentationView::LOSE_PRESENTATION_FINISHED", _LosePresentationView2);
+LosePresentationView = _LosePresentationView = __decorate([Z()], LosePresentationView);
+//#endregion
+//#region src/modules/losepresentation/LosePresentationEvents.ts
+var _LosePresentationEvents;
+var LosePresentationEvents = class {};
+_LosePresentationEvents = LosePresentationEvents;
+_LosePresentationEvents.LOSE_PRESENTATION_STARTED = "LosePresentationEvents::LOSE_PRESENTATION_STARTED";
+_LosePresentationEvents.LOSE_PRESENTATION_FINISHED = "LosePresentationEvents::LOSE_PRESENTATION_FINISHED";
+//#endregion
+//#region src/modules/losepresentation/LosePresentationModule.ts
+var LosePresentationModule = class LosePresentationModule extends L {
+	showPresentation() {
+		this.view.showPresentation();
+		this.emit(LosePresentationEvents.LOSE_PRESENTATION_STARTED);
+	}
+	setupEvents() {
+		super.setupEvents();
+		this.onViewEmitEvent(LosePresentationView.LOSE_PRESENTATION_FINISHED, LosePresentationEvents.LOSE_PRESENTATION_FINISHED);
+	}
+};
+LosePresentationModule = __decorate([Z()], LosePresentationModule);
+//#endregion
+//#region src/modules/globalstate/states/GlobalStateLose.ts
+init_asyncToGenerator();
+var GlobalStateLose = class extends GlobalModuleState {
+	constructor(module, name, eventManager) {
+		super(module, name, eventManager);
+		this._losePresentationModule = module.diContainer.get(LosePresentationModule);
+		this._hudModule = module.diContainer.get(GameHUDModule);
+		this._keypadController = module.diContainer.get(ChickenKeypadController);
+		this._chickenModule = module.diContainer.get(ChickenModule);
+		this._roadModule = module.diContainer.get(RoadModule);
+	}
+	onEnterState() {
+		var _this = this;
+		return _asyncToGenerator(function* () {
+			_this._keypadController.disableOnWinStarted();
+			_this._losePresentationModule.showPresentation();
+		})();
+	}
+	onLeaveState() {}
+	setupEvents() {
+		this.on(LosePresentationEvents.LOSE_PRESENTATION_FINISHED, this.onLosePresentationFinished);
+	}
+	onLosePresentationFinished() {
+		var _this2 = this;
+		return _asyncToGenerator(function* () {
+			yield _this2.sendComplete();
+			_this2.gotoState(GlobalStateSpinModule.IDLE);
+		})();
+	}
+	sendComplete() {
+		var _this3 = this;
+		return _asyncToGenerator(function* () {
+			yield _this3.gameController.complete((data) => {
+				_this3.gameData.reactOnComplete(data);
+			});
+			_this3._keypadController.enableOnWinFinished();
+			_this3._hudModule.updateBalance();
+			_this3.emit(GlobalStateEvents.CAN_SPIN);
+		})();
+	}
+};
 //#endregion
 //#region src/modules/globalstate/GlobalStateSpinModule.ts
 var _GlobalStateSpinModule2;
 var _GlobalStateSpinModule;
-var GlobalStateSpinModule = (_GlobalStateSpinModule2 = class GlobalStateSpinModule extends st$1 {
+var GlobalStateSpinModule = (_GlobalStateSpinModule2 = class GlobalStateSpinModule extends it$1 {
 	onStateHandle(event) {
 		this.onCurrentStateHandle(event);
 	}
@@ -113869,12 +114705,13 @@ var GlobalStateSpinModule = (_GlobalStateSpinModule2 = class GlobalStateSpinModu
 		this.addState(new GlobalStateStep(this, _GlobalStateSpinModule.STEP, this.eventManager));
 		this.addState(new GlobalStateStepIdle(this, _GlobalStateSpinModule.STEP_IDLE, this.eventManager));
 		this.addState(new GlobalStateWin(this, _GlobalStateSpinModule.WIN, this.eventManager));
+		this.addState(new GlobalStateLose(this, _GlobalStateSpinModule.LOSE, this.eventManager));
 	}
-}, _GlobalStateSpinModule = _GlobalStateSpinModule2, _GlobalStateSpinModule2.INIT = "GlobalStateModule::INIT", _GlobalStateSpinModule2.IDLE = "GlobalStateModule::IDLE", _GlobalStateSpinModule2.STEP = "GlobalStateModule::STEP", _GlobalStateSpinModule2.STEP_IDLE = "GlobalStateModule::STEP_IDLE", _GlobalStateSpinModule2.WIN = "GlobalStateModule::WIN", _GlobalStateSpinModule2);
+}, _GlobalStateSpinModule = _GlobalStateSpinModule2, _GlobalStateSpinModule2.INIT = "GlobalStateModule::INIT", _GlobalStateSpinModule2.IDLE = "GlobalStateModule::IDLE", _GlobalStateSpinModule2.STEP = "GlobalStateModule::STEP", _GlobalStateSpinModule2.STEP_IDLE = "GlobalStateModule::STEP_IDLE", _GlobalStateSpinModule2.WIN = "GlobalStateModule::WIN", _GlobalStateSpinModule2.LOSE = "GlobalStateModule::LOSE", _GlobalStateSpinModule2);
 GlobalStateSpinModule = _GlobalStateSpinModule = __decorate([Z()], GlobalStateSpinModule);
 //#endregion
 //#region src/BasicSlotAssetsManager.ts
-var BasicSlotAssetsManager = class extends ur {
+var BasicSlotAssetsManager = class extends or {
 	getSpineAtlasesPaths() {
 		return [
 			"AUTOPLAY_BUTTON.json",
@@ -113882,6 +114719,9 @@ var BasicSlotAssetsManager = class extends ur {
 			"BACKGROUND.json",
 			"BANKING_BUTTON.json",
 			"BET_BUTTON.json",
+			"BARRIER.json",
+			"BCKGR_START.json",
+			"BCKGR_FINISH.json",
 			"BIG_WINS_EFFECT.json",
 			"BIG_WINS.json",
 			"BN.json",
@@ -113920,11 +114760,12 @@ var BasicSlotAssetsManager = class extends ur {
 			"PAGE_INDICATOR.json",
 			"PLAY_BUTTON.json",
 			"QUICKPLAY_BUTTON.json",
-			"SLOT_MAIN_UI.json",
-			"SLOT_MAIN_UI_PORTRAIT.json",
+			"MAIN_UI.json",
+			"MAIN_UI_PORTRAIT.json",
 			"SOUND_BUTTON.json",
 			"START_SCREEN.json",
 			"SPIN_BUTTON.json",
+			"SPIN_BUTTON2.json",
 			"WR.json",
 			"WIN_INDICATIONS.json",
 			"WIN_NUMBERS.json",
@@ -113976,25 +114817,55 @@ var BasicSlotAssetsManager = class extends ur {
 };
 //#endregion
 //#region src/gamedata/GameSpecificData.ts
-var GameSpecificData = class extends Ne$1 {
+var GameSpecificData = class extends ke$1 {
 	constructor(..._args) {
 		super(..._args);
-		this._currentStep = 0;
+		this._currentStep = -1;
 		this._isDead = false;
-	}
-	makeStep() {
-		this._currentStep++;
-		this._isDead = GameUtils.randomInt(0, 100) > 90;
+		this._multipliers = [];
 	}
 	resetSteps() {
-		this._currentStep = 0;
+		this._currentStep = -1;
 		this._isDead = false;
+	}
+	hasReachedFinalPosition() {
+		return this._currentStep >= 20;
+	}
+	reactOnCashOut(data) {
+		this._lastSpinResponse = data;
+		if ((data === null || data === void 0 ? void 0 : data.hasOwnProperty("balance")) && typeof (data === null || data === void 0 ? void 0 : data.balance) === "number") this._balance = data.balance;
+		if (data === null || data === void 0 ? void 0 : data.roundId) this._roundID = data.roundId;
+		this._totalWin = this._currentWin = data.win;
+		A.info("step data:");
+		A.info(data);
+	}
+	reactOnStep(data) {
+		this._lastSpinResponse = data;
+		if ((data === null || data === void 0 ? void 0 : data.hasOwnProperty("balance")) && typeof (data === null || data === void 0 ? void 0 : data.balance) === "number") this._balance = data.balance;
+		if (data === null || data === void 0 ? void 0 : data.roundId) this._roundID = data.roundId;
+		this._isDead = data.isDead;
+		this._currentStep = data.currentStep;
+		A.info("step data:");
+		A.info(data);
+	}
+	reactOnPayout(data) {
+		this._lastSpinResponse = data;
+		A.info("payout data:");
+		A.info(data);
 	}
 	setupGameFacts() {}
 	initializeServerSymbols() {}
-	parseOtherData(spinData, data) {
-		super.parseOtherData(spinData, data);
+	afterInitRestoreSetup(data) {
+		if (this.hasRestore) {}
 	}
+	parseState(stateData) {
+		if (stateData) this._currentStep = stateData.currentStep;
+	}
+	parseOtherInitData(data) {
+		super.parseOtherInitData(data);
+		this._multipliers = [...data.config.multipliers];
+	}
+	parseConfigReelgrid(data) {}
 	parseConfigPaytable(data) {}
 	get currentStep() {
 		return this._currentStep;
@@ -114002,31 +114873,119 @@ var GameSpecificData = class extends Ne$1 {
 	get isDead() {
 		return this._isDead;
 	}
+	get multipliers() {
+		return this._multipliers;
+	}
+};
+//#endregion
+//#region src/ChickenMainContainer.ts
+var ChickenMainContainer = class ChickenMainContainer extends yo {
+	getMainUIContainerName() {
+		return "MAIN_UI";
+	}
+};
+ChickenMainContainer = __decorate([Z()], ChickenMainContainer);
+//#endregion
+//#region src/ChickenGameControllerEvents.ts
+var _ChickenGameControllerEvents;
+var ChickenGameControllerEvents = class {};
+_ChickenGameControllerEvents = ChickenGameControllerEvents;
+_ChickenGameControllerEvents.STEP_RECEIVED = "ChickenGameControllerEvents::STEP_RECEIVED";
+_ChickenGameControllerEvents.PAYOUT_RECEIVED = "ChickenGameControllerEvents::PAYOUT_RECEIVED";
+//#endregion
+//#region src/ChickenGameController.ts
+init_objectSpread2();
+init_asyncToGenerator();
+var ChickenGameController = class extends be$1 {
+	roundStart(cb, bet) {
+		var _this = this;
+		return _asyncToGenerator(function* () {
+			var _result$action;
+			var _result$action2;
+			const cheat = _this.getCheatValue();
+			const result = yield _this._playBridge.play({
+				bet,
+				cheat,
+				action: "main"
+			});
+			if (result.hasOwnProperty("error")) {
+				_this._eventManager.emit(GameControllerEvents.ERROR_RECEIVED, result);
+				return;
+			}
+			const allowedActions = (result === null || result === void 0 || (_result$action = result.action) === null || _result$action === void 0 ? void 0 : _result$action.allowedActions) ? [...result.action.allowedActions] : [];
+			const state = _objectSpread2({}, (_result$action2 = result.action) === null || _result$action2 === void 0 ? void 0 : _result$action2.state);
+			const resObject = _objectSpread2(_objectSpread2({
+				balance: result.balance,
+				roundId: result.roundId
+			}, result.action.result), {}, {
+				allowedActions,
+				state
+			});
+			cb && cb(resObject);
+			_this._eventManager.emit(ChickenGameControllerEvents.STEP_RECEIVED);
+		})();
+	}
+	step(cb) {
+		var _this2 = this;
+		return _asyncToGenerator(function* () {
+			const result = yield _this2._playBridge.play({ action: "nextStep" });
+			if (result.hasOwnProperty("error")) {
+				_this2._eventManager.emit(GameControllerEvents.ERROR_RECEIVED, result);
+				return;
+			}
+			const resObject = _objectSpread2({
+				balance: result.balance,
+				roundId: result.roundId
+			}, result.action);
+			cb && cb(resObject);
+			_this2._eventManager.emit(ChickenGameControllerEvents.STEP_RECEIVED);
+		})();
+	}
+	payout(cb) {
+		var _this3 = this;
+		return _asyncToGenerator(function* () {
+			const result = yield _this3._playBridge.play({ action: "payout" });
+			if (result.hasOwnProperty("error")) {
+				_this3._eventManager.emit(GameControllerEvents.ERROR_RECEIVED, result);
+				return;
+			}
+			const resObject = _objectSpread2({
+				balance: result.balance,
+				roundId: result.roundId
+			}, result.action);
+			cb && cb(resObject);
+			_this3._eventManager.emit(ChickenGameControllerEvents.PAYOUT_RECEIVED);
+		})();
+	}
 };
 //#endregion
 //#region src/BasicSlotGame.ts
-var BasicSlotGame = class extends po {
+init_asyncToGenerator();
+var BasicSlotGame = class extends xo {
 	createGameAssetsManager() {
 		return new BasicSlotAssetsManager();
 	}
 	createGameSpecificData() {
 		return new GameSpecificData();
 	}
-};
-//#endregion
-//#region src/modules/spinbutton/GameSpinButtonView.ts
-var GameSpinButtonView = class GameSpinButtonView extends va {
-	setupSpinButton() {
-		super.setupSpinButton();
+	bindSlotMainUiClass() {
+		this.diContainer.bind(P$2.MainUI).to(ChickenMainContainer).inSingletonScope();
+	}
+	setupGameContainer() {
+		var _this = this;
+		return _asyncToGenerator(function* () {
+			const gameController = new ChickenGameController();
+			yield gameController.initialize(_this._device, _this, _this.diContainer.get(N$1.IEventManager));
+			_this.diContainer.bind(P$2.GameController).toConstantValue(gameController);
+		})();
 	}
 };
-GameSpinButtonView = __decorate([Z()], GameSpinButtonView);
 //#endregion
 //#region src/modules/chicken/ChickenView.ts
 init_asyncToGenerator();
 var _ChickenView2;
 var _ChickenView;
-var ChickenView = (_ChickenView2 = class ChickenView extends G {
+var ChickenView = (_ChickenView2 = class ChickenView extends q {
 	init() {
 		super.init();
 		window.ChickenView = this;
@@ -114063,11 +115022,82 @@ var ChickenView = (_ChickenView2 = class ChickenView extends G {
 }, _ChickenView = _ChickenView2, _ChickenView2.FIRST_STEP_DURATION = 500, _ChickenView2);
 ChickenView = _ChickenView = __decorate([Z()], ChickenView);
 //#endregion
+//#region src/sounds/GameSoundController.ts
+var GameSoundController = class GameSoundController extends hi {
+	setupHUDModule() {
+		this._hudModule = this.diContainer.get(GameHUDModule);
+		this._hudModule.soundButtonStateSwitched = this.onButtonStateSwitched.bind(this);
+	}
+	setupMenuModule() {}
+};
+GameSoundController = __decorate([Z()], GameSoundController);
+//#endregion
+//#region src/autoplay/states/GameAutoplayBasicState.ts
+var GameAutoplayBasicState = class extends AutoplayBasicState {
+	setupEvents() {
+		this.on(AutoplayMenuEvents.AUTOPLAY_MENU_ACCEPTED, this.onAutoStepsSettingsAccepted);
+		this.on(GlobalStateEvents.CAN_SPIN, this.onGameRoundFinished);
+	}
+	onAutoStepsSettingsAccepted(eventID, spinsLeft, cashoutStep) {
+		this.module.startChickenAutoplay(spinsLeft, cashoutStep);
+		this.emit(AutoplayHandlerEvents.AUTOPLAY_STARTED, spinsLeft, cashoutStep);
+		this.emit(GameAutoplayHandlerEvents.AUTOPLAY_STEP);
+		this.module.gotoState(Tr.IN_PROGRESS);
+	}
+};
+//#endregion
+//#region src/autoplay/states/GameAutoplayInProgressState.ts
+init_asyncToGenerator();
+var GameAutoplayInProgressState = class extends AutoplayInProgressState {
+	setupEvents() {
+		super.setupEvents();
+		this.on(GameGlobalEvents.CHICKEN_STEP_FINISHED, this.onStepFinished);
+	}
+	onStepFinished() {
+		var _this = this;
+		return _asyncToGenerator(function* () {
+			if (_this.gameData.isDead) return;
+			yield _this.timeUtils.wait(100);
+			if (_this.gameData.currentStep >= _this.module.cashoutOnStep) _this.emit(GameAutoplayHandlerEvents.AUTOPLAY_CASHOUT);
+			else _this.emit(GameAutoplayHandlerEvents.AUTOPLAY_STEP);
+		})();
+	}
+};
+//#endregion
+//#region src/autoplay/GameAutoplayHandlerModule.ts
+var GameAutoplayHandlerModule = class GameAutoplayHandlerModule extends Tr {
+	constructor(..._args) {
+		super(..._args);
+		this._cashoutOnStep = 0;
+	}
+	startChickenAutoplay(spinsLeft, cashoutOnStep) {
+		this._cashoutOnStep = cashoutOnStep;
+		this.startAutoplay(spinsLeft);
+	}
+	setupStates() {
+		super.setupStates();
+		this.addState(new GameAutoplayBasicState(this, Tr.BASIC));
+		this.addState(new GameAutoplayInProgressState(this, Tr.IN_PROGRESS));
+	}
+	setupEvents() {
+		super.setupEvents();
+		this.on(ChickenEvents.STEP_STARTED, this.onSpinStarted);
+	}
+	startAutoplaySpin() {
+		super.startAutoplaySpin();
+		this.eventManager.emit(GameAutoplayHandlerEvents.AUTOPLAY_STEP);
+	}
+	get cashoutOnStep() {
+		return this._cashoutOnStep;
+	}
+};
+GameAutoplayHandlerModule = __decorate([Z()], GameAutoplayHandlerModule);
+//#endregion
 //#region src/app.ts
 init_asyncToGenerator();
 window.addEventListener("DOMContentLoaded", () => {
 	const game = new BasicSlotGame();
-	game.diContainer.bind(A.Game).toConstantValue(game);
+	game.diContainer.bind(N$1.Game).toConstantValue(game);
 	gameReady(game);
 });
 function gameReady(_x) {
@@ -114078,63 +115108,67 @@ function _gameReady() {
 		yield game.init();
 		yield game.loadResources();
 		game.addModules({ module: GlobalStateSpinModule }, {
-			module: Di,
-			view: Oi,
+			module: Ni,
+			view: Pi,
 			viewScreen: "SYSTEM_MESSAGE"
 		}, {
-			module: Jn,
-			view: yr
+			module: yr,
+			view: xr
 		}, {
-			module: Ei,
-			view: Ti
+			module: GameHUDModule,
+			view: GameHUDView
 		}, {
-			module: Xr,
-			view: Yr,
+			module: ti,
+			view: ei,
 			viewScreen: "BACKGROUND"
 		}, {
-			module: ya,
-			view: GameSpinButtonView,
-			viewScreen: "SPIN_BUTTON"
+			module: GoButtonModule,
+			view: GoButtonView,
+			viewScreen: "GO_BUTTON"
 		}, {
-			module: Sa,
-			view: xa,
+			module: CashoutButtonModule,
+			view: CashoutButtonView,
+			viewScreen: "CASHOUT_BUTTON"
+		}, {
+			module: Oa,
+			view: Da,
 			viewScreen: "BET_BUTTON"
-		}, { module: Fa }, { module: Gr }, {
-			module: Pr,
-			view: Mr,
+		}, { module: Va }, { module: Xr }, {
+			module: Mr,
+			view: _r,
 			viewScreen: "AUTOPLAY_BUTTON"
 		}, {
-			module: Fr,
-			view: Rr,
+			module: Nr,
+			view: Ir,
 			viewScreen: "AUTOPLAY_STOP_BUTTON"
-		}, {
-			module: ga,
-			view: ha,
-			viewScreen: "MENU_BUTTON"
-		}, { module: pa }, { module: li }, { module: di }, {
-			module: ji,
-			view: Ai,
+		}, { module: ya }, { module: GameSoundController }, { module: ChickenKeypadController }, {
+			module: Li,
+			view: Ii,
 			viewScreen: "QUICKPLAY_BUTTON"
 		}, {
-			module: Ga,
-			view: Wa,
+			module: Qa,
+			view: Za,
 			viewScreen: "WIN_PRESENTATION"
 		}, {
-			module: $r,
-			view: X$1,
+			module: LosePresentationModule,
+			view: LosePresentationView,
+			viewScreen: "WIN_SYMBOLS"
+		}, {
+			module: ai,
+			view: ii,
 			viewScreen: "BIG_WIN"
-		}, { module: ci }, { module: Cr }, {
-			module: Fi,
-			view: Pi,
+		}, { module: mi }, { module: GameAutoplayHandlerModule }, {
+			module: Vi,
+			view: Bi,
 			viewScreen: "SYSTEM_MESSAGE"
 		}, {
 			module: RoadModule,
 			view: RoadView,
-			viewScreen: "FS_SCREENS"
+			viewScreen: "LANES"
 		}, {
 			module: ChickenModule,
 			view: ChickenView,
-			viewScreen: "FS_ENTER"
+			viewScreen: "CHICKEN"
 		});
 		game.onReady();
 		game.initModules();

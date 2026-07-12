@@ -1,12 +1,12 @@
 {
 "skeleton": {
-	"hash": "c0Wf4zAGNzI",
-	"spine": "4.3.39-beta",
+	"hash": "td3GGeLZQBE",
+	"spine": "4.2-from-4.3.39-beta",
 	"x": -977.0999,
 	"y": -54,
 	"width": 1958.3999,
 	"height": 104,
-	"images": "../GRAPHIC_ASSETS/",
+	"images": "../../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
 "bones": [
@@ -20,7 +20,8 @@
 	{ "name": "WIN_VALUE_LANDSCAPE", "parent": "HUD_FOOTER_ROOT", "x": -2, "scaleX": 0.8, "scaleY": 0.8 },
 	{ "name": "BET_VALUE_LANDSCAPE", "parent": "HUD_FOOTER_ROOT", "x": 413, "scaleX": 0.8, "scaleY": 0.8 },
 	{ "name": "BALANCE_VALUE_LANDSCAPE", "parent": "HUD_FOOTER_ROOT", "x": -413, "scaleX": 0.8, "scaleY": 0.8 },
-	{ "name": "BALANCE_ICON", "parent": "HUD_FOOTER_ROOT", "x": -468 }
+	{ "name": "BALANCE_ICON", "parent": "HUD_FOOTER_ROOT", "x": -468 },
+	{ "name": "MENU_BUTTON", "parent": "HUD_FOOTER_ROOT", "x": -788, "scaleX": 1.3, "scaleY": 1.3 }
 ],
 "slots": [
 	{ "name": "FOOTER", "bone": "FOOTER", "color": "ffffffcb", "attachment": "GUI/HUD/HUD_FOOTER_BCKGR" },
@@ -32,7 +33,8 @@
 	{ "name": "BET_VALUE_LANDSCAPE", "bone": "BET_VALUE_LANDSCAPE" },
 	{ "name": "WIN_ICON", "bone": "WIN_ICON", "attachment": "WIN_ICON_SKIN" },
 	{ "name": "WIN_VALUE_PORTRAIT", "bone": "WIN_VALUE_PORTRAIT" },
-	{ "name": "WIN_VALUE_LANDSCAPE", "bone": "WIN_VALUE_LANDSCAPE" }
+	{ "name": "WIN_VALUE_LANDSCAPE", "bone": "WIN_VALUE_LANDSCAPE" },
+	{ "name": "MENU_BUTTON", "bone": "MENU_BUTTON" }
 ],
 "skins": [
 	{

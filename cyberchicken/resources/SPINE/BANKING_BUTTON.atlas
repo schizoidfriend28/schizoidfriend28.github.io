@@ -2,5 +2,5 @@ BANKING_BUTTON.png
 size:101,100
 filter:Linear,Linear
 pma:true
-HUD/BANKING_BUTTON
+GUI/HUD/BANKING_BUTTON
 bounds:0,0,101,100

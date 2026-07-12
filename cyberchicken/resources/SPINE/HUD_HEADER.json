@@ -1,12 +1,12 @@
 {
 "skeleton": {
-	"hash": "edXEBSwmjKk",
-	"spine": "4.3.39-beta",
+	"hash": "Wr8ENi++XCI",
+	"spine": "4.2-from-4.3.39-beta",
 	"x": -861,
 	"y": -22.5,
 	"width": 1722,
 	"height": 45,
-	"images": "../GRAPHIC_ASSETS/",
+	"images": "../../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
 "bones": [
@@ -17,8 +17,11 @@
 	{ "name": "TIME_LANDSCAPE", "parent": "HUD_HEADER_ROOT", "x": 177, "scaleX": 0.6, "scaleY": 0.6 },
 	{ "name": "SOUND_BUTTON", "parent": "HUD_HEADER_ROOT", "x": 416, "scaleX": 0.22555, "scaleY": 0.22555 },
 	{ "name": "BANKING_BUTTON", "parent": "HUD_HEADER_ROOT", "x": 478, "y": -0.85224, "scaleX": 0.36111, "scaleY": 0.36111 },
-	{ "name": "LOGO_GAME", "parent": "HUD_HEADER_ROOT", "x": -336, "y": -48 },
-	{ "name": "LOGO_COMPANY", "parent": "HUD_HEADER_ROOT", "x": 322, "y": -36, "scaleX": 0.9, "scaleY": 0.9 }
+	{ "name": "LOGO_GAME_LANDSCAPE", "parent": "HUD_HEADER_ROOT", "x": -617, "y": -75 },
+	{ "name": "LOGO_COMPANY", "parent": "HUD_HEADER_ROOT", "x": 322, "y": -36, "scaleX": 0.9, "scaleY": 0.9 },
+	{ "name": "LOGO_GAME_PORTRAIT", "parent": "HUD_HEADER_ROOT", "x": -607.70667, "y": -37.33358 },
+	{ "name": "LOGO_GAME", "parent": "HUD_HEADER_ROOT", "x": -617, "y": -75 },
+	{ "name": "STEP_NUMBER", "parent": "HUD_HEADER_ROOT", "y": -70 }
 ],
 "slots": [
 	{ "name": "HEADER", "bone": "HEADER", "color": "ffffffcb", "attachment": "GUI/HUD/HUD_HEADER_BCKGR" },
@@ -27,8 +30,11 @@
 	{ "name": "TIME_ICON", "bone": "TIME_ICON", "color": "ffffff7e", "attachment": "TIME_ICON" },
 	{ "name": "SOUND_BUTTON", "bone": "SOUND_BUTTON" },
 	{ "name": "BANKING_BUTTON", "bone": "BANKING_BUTTON" },
+	{ "name": "LOGO_GAME_LANDSCAPE", "bone": "LOGO_GAME_LANDSCAPE" },
 	{ "name": "LOGO_GAME", "bone": "LOGO_GAME" },
-	{ "name": "LOGO_COMPANY", "bone": "LOGO_COMPANY" }
+	{ "name": "LOGO_GAME_PORTRAIT", "bone": "LOGO_GAME_PORTRAIT" },
+	{ "name": "LOGO_COMPANY", "bone": "LOGO_COMPANY" },
+	{ "name": "STEP_NUMBER", "bone": "STEP_NUMBER" }
 ],
 "skins": [
 	{
