@@ -1,5 +1,27 @@
 {
   "gameplay": {
+    "freespins": {
+      "infoBoxKerning": -8
+    },
+    "game": {
+      "totalRoads": 20,
+      "roadWidth": 384
+    },
+    "avalanche": {
+      "beforeNewSymbolsComingDelay": 1,
+      "beforeAddingSymbolsDelay": 1,
+      "beforeSlidingDelay": 1,
+      "beforeDroppingOutDelay": 1,
+      "dropOutBetweenReelsDelay": 40,
+      "dropOutBetweenSymbolsDelay": 1,
+      "dropNewBetweenReelsDelay": 50,
+      "dropNewBetweenSymbolsDelay": 30,
+      "dropNewTime": 350,
+      "slidingOneSymbolTime": 100,
+      "addingNewDuration": 550,
+      "addingNewBetweenReelsDelay": 100,
+      "addingNewExpectedWinAdditionalDelay": 700
+    },
     "win": {
       "beforeInitialAmountDelay": 200,
       "finalShowingDelay": 500,
@@ -19,96 +41,221 @@
       "epicCountingTime": 18000,
       "numberKerning": -18
     },
-    "game": {
-      "totalRoads": 20,
-      "roadWidth": 384
+    "spinningReels": {
+      "quickStopFinalTweenDuration": 100,
+      "quickStopReelsOffset": 1,
+      "timeBeforeStoppingFastPlay": 1,
+      "timeBeforeStopping": 100,
+      "speedMultiplierBasic": 1.7,
+      "speedMultiplierSuper": 5
+    },
+    "nearWin": {
+      "symbolsLeftToStop": 15,
+      "slowDownDuration": 1500,
+      "lowestSpinSpeed": 0.5
     }
   },
   "cheats": {
-    "No Win": {
-      "maxWin": 0,
-      "maxCoinWin": 0,
-      "freeSpinsTrigger": false
-    },
-    "Ante Win (0-1]": {
-      "maxWin": 1,
-      "minWin": 0.1
-    },
-    "Normal Win (1-4.9)": {
-      "maxWin": 4.9,
-      "minWin": 1.1
-    },
-    "Excellent Win [5-15)": {
-      "maxWin": 14.9,
-      "minWin": 5
-    },
-    "BIG WIN": {
-      "maxWin": 39.9,
-      "minWin": 15
-    },
-    "SUPER WIN": {
-      "maxWin": 69.9,
-      "minWin": 40
-    },
-    "MEGA WIN": {
-      "maxWin": 99.9,
-      "minWin": 70
-    },
-    "EPIC WIN": {
-      "minWin": 100
-    },
-    "Coin Cheats": "title",
-    "Any Coin Win": {
-      "minCoinWin": 0.1
-    },
-    "Any Coin Win + mult": {
-      "hasMultiplier": true
-    },
-    "Any Coin Win + JP": {
-      "hasCoinWithJackpot": true
-    },
-    "Any Coin Win + normal win": {
-      "minCoinWin": 0.1,
-      "maxWin": 4.9,
-      "minWin": 1.1
-    },
-    "BIG COIN WIN": {
-      "maxCoinWin": 39.9,
-      "minCoinWin": 15
-    },
-    "Free Spins Cheats": "title",
-    "Free Spins (Near win)": {
-      "freeSpinsNearWin": true
-    },
-    "Free Spins (10)": {
-      "freeSpins": 10
-    },
-    "Free Spins w multipliers": {
-      "hasFSMultiplier": true
-    },
-    "Free Spins (25)": {
-      "freeSpins": 25
-    },
-    "Free Spins (10) + otherWin": {
-      "freeSpins": 10,
-      "minWin": 0.1
-    },
-    "Free Spins (15)": {
-      "freeSpins": 15
-    },
-    "Free Spins (Min Single Coin Win 5x)": {
-      "freeSpins": 10,
-      "fsMinCoinWin": 5
-    },
-    "Free Spins (3 Coin Features)": {
-      "freeSpins": 10,
-      "nFsCoinFeature": 3
+    "Wins": {
+      "die": {
+        "deathNextStep": true
+      },
+      "dont die": {
+        "deathNextStep": false
+      }
     }
   },
   "buildDate": {
-    "timestamp": "2026-07-12"
+    "timestamp": "2026-07-13"
   },
   "gameVersion": {
     "version": "0.0.2"
+  },
+  "menu": {
+    "history": [
+      {
+        "gameRoundId": 18705220795,
+        "startTime": "2026-05-21 09:52:08",
+        "totalBet": 2,
+        "totalWin": 0,
+        "balanceAfter": 1.7
+      },
+      {
+        "gameRoundId": 18705220731,
+        "startTime": "2026-05-21 09:52:03",
+        "totalBet": 2,
+        "totalWin": 0,
+        "balanceAfter": 3.7
+      },
+      {
+        "gameRoundId": 18705209854,
+        "startTime": "2026-05-21 09:50:52",
+        "totalBet": 2,
+        "totalWin": 0.3,
+        "balanceAfter": 5.7
+      }
+    ]
+  },
+  "paytable": {
+    "payCounts": [
+      5,
+      4,
+      3
+    ],
+    "symbols": [
+      {
+        "id": "H1",
+        "name": "High 1",
+        "image": "M1.png",
+        "pays": [
+          80,
+          40,
+          20
+        ]
+      },
+      {
+        "id": "H2",
+        "name": "High 2",
+        "image": "M2.png",
+        "pays": [
+          60,
+          30,
+          15
+        ]
+      },
+      {
+        "id": "H3",
+        "name": "High 3",
+        "image": "M1.png",
+        "pays": [
+          40,
+          20,
+          10
+        ]
+      },
+      {
+        "id": "H4",
+        "name": "High 4",
+        "image": "M2.png",
+        "pays": [
+          30,
+          15,
+          8
+        ]
+      },
+      {
+        "id": "H5",
+        "name": "High 5",
+        "image": "M1.png",
+        "pays": [
+          25,
+          12,
+          6
+        ]
+      },
+      {
+        "id": "L1",
+        "name": "Low 1",
+        "image": "F5.png",
+        "pays": [
+          12,
+          6,
+          3
+        ]
+      },
+      {
+        "id": "L2",
+        "name": "Low 2",
+        "image": "F7.png",
+        "pays": [
+          10,
+          4,
+          2
+        ]
+      },
+      {
+        "id": "L3",
+        "name": "Low 3",
+        "image": "F8.png",
+        "pays": [
+          10,
+          4,
+          2
+        ]
+      },
+      {
+        "id": "L4",
+        "name": "Low 4",
+        "image": "F5.png",
+        "pays": [
+          8,
+          4,
+          2
+        ]
+      },
+      {
+        "id": "L5",
+        "name": "Low 5",
+        "image": "F7.png",
+        "pays": [
+          8,
+          4,
+          2
+        ]
+      }
+    ],
+    "features": [
+      {
+        "title": "FREE SPINS",
+        "image": "PAYTABLE_FREESPINS.png",
+        "body": "Land three or more Free Spins symbols anywhere on the reels to trigger Free Spins. Additional Free Spins symbols re-trigger and add to your remaining count."
+      },
+      {
+        "title": "SANTAS JACKPOT WHEEL",
+        "image": "PAYTABLE_SANTASJACKPOTWHEEL.png",
+        "body": "Land the Bonus symbol on the reels to spin Santa’s Jackpot Wheel for a chance to win one of four progressive jackpots."
+      }
+    ],
+    "gameRules": {
+      "title": "GAME RULES",
+      "bullets": [
+        "\"Imperial Gold\" is a 5-reel, 3-row slot game.",
+        "The game offers a minimum of 243 ways to win.",
+        "The game caps maximum wins at 20,000× the bet (or 20,000× the base bet for feature buys).",
+        "Ways wins form with matching symbols on adjacent reels from left to right.",
+        "Only the longest matching combination per symbol pays.",
+        "Multiple matching symbols on a reel multiply the winnings.",
+        "Winning combinations are displayed in the Paytable and reflect the current bet configuration.",
+        "Bet size locks once a bet has been made.",
+        "The theoretical return to player (RTP) is 96.0%.",
+        "Winnings display in your currency.",
+        "Incomplete games resolve automatically after 24 hours, with any winnings paid to your account.",
+        "Any game events or outcomes not explicitly covered by these rules will be governed by the logic and functionality as defined within the game code.",
+        "Malfunction voids all pays and plays.",
+        "The English version of these rules prevails."
+      ]
+    },
+    "howToPlay": {
+      "title": "HOW TO PLAY",
+      "ordered": true,
+      "bullets": [
+        "Choose a Bet Level.",
+        {
+          "text": "Spin the reels by:",
+          "sub": [
+            "Clicking/tapping the Spin button.",
+            "Clicking/tapping the Spacebar (Desktop mode only).",
+            "Starting a set number of spins using the AutoPlay menu."
+          ]
+        }
+      ],
+      "outro": [
+        "While the reels are spinning, you can quick stop the game by pressing the Spin button.",
+        "The Fast Play increases the reel spin speed to display the spin results quicker without affecting them.",
+        "Open the settings to activate/deactivate the Fast Play.",
+        "Some of these settings may not be available in the game you are playing.",
+        "All bets and payouts are in the user’s currency."
+      ]
+    }
   }
 }

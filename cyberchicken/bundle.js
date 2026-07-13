@@ -114228,6 +114228,17 @@ var RoadView = (_RoadView2 = class RoadView extends q {
 	restoreToPosition(laneIndex) {
 		this._currentOffset = laneIndex;
 		this._roadMainContainer.rotation = this._currentOffset * this._laneAngle;
+		this._barriersContainer.rotation = this._currentOffset * this._laneAngle;
+	}
+	restoreBarriersTill(laneIndex) {
+		const laneHeight = 1e4;
+		for (let i = 0; i < laneIndex; i++) {
+			const barrierContainer = new import_lib.Container();
+			const barrier = this.spineUtils.startSpineAnimationCreation("BARRIER.json", "IDLE", true).position(0, laneHeight - 1920 / 2 - 400).container(barrierContainer).createAndStart();
+			barrierContainer.rotation = i * this._laneAngle * -1;
+			this._barriersContainer.addChild(barrierContainer);
+			this._barriers.push(barrier);
+		}
 	}
 	spawnBarrier(laneIndex) {
 		const laneHeight = 1e4;
@@ -114348,6 +114359,7 @@ var RoadModule = class RoadModule extends L {
 	restore() {
 		super.restore();
 		this.view.restoreToPosition(this.gameData.currentStep + 1);
+		this.view.restoreBarriersTill(this.gameData.currentStep + 1);
 	}
 	makeStep() {
 		this.view.moveLanesOneStep();
@@ -114360,7 +114372,7 @@ var RoadModule = class RoadModule extends L {
 	}
 	spawnBarrier(laneIndex) {
 		this.view.spawnBarrier(laneIndex);
-		this.view.spawnBarrierCar(laneIndex);
+		if (GameUtils.randomInt(1, 10) > 7) this.view.spawnBarrierCar(laneIndex);
 	}
 	setupEvents() {
 		super.setupEvents();
@@ -114562,7 +114574,8 @@ var GlobalStateInit = class extends GlobalModuleState {
 		this.on(GameControllerEvents.INIT_RECEIVED, this.onInitReceived);
 	}
 	onInitReceived() {
-		this.gotoState(GlobalStateSpinModule.IDLE);
+		if (this.gameData.hasRestore) this.gotoState(GlobalStateSpinModule.STEP_IDLE);
+		else this.gotoState(GlobalStateSpinModule.IDLE);
 	}
 };
 //#endregion
@@ -114829,7 +114842,7 @@ var GameSpecificData = class extends ke$1 {
 		this._isDead = false;
 	}
 	hasReachedFinalPosition() {
-		return this._currentStep >= 20;
+		return this._currentStep + 1 >= 20;
 	}
 	reactOnCashOut(data) {
 		this._lastSpinResponse = data;
@@ -114843,6 +114856,7 @@ var GameSpecificData = class extends ke$1 {
 		this._lastSpinResponse = data;
 		if ((data === null || data === void 0 ? void 0 : data.hasOwnProperty("balance")) && typeof (data === null || data === void 0 ? void 0 : data.balance) === "number") this._balance = data.balance;
 		if (data === null || data === void 0 ? void 0 : data.roundId) this._roundID = data.roundId;
+		this._totalWin = this._currentWin = data.win;
 		this._isDead = data.isDead;
 		this._currentStep = data.currentStep;
 		A.info("step data:");
@@ -114928,7 +114942,11 @@ var ChickenGameController = class extends be$1 {
 	step(cb) {
 		var _this2 = this;
 		return _asyncToGenerator(function* () {
-			const result = yield _this2._playBridge.play({ action: "nextStep" });
+			const cheat = _this2.getCheatValue();
+			const result = yield _this2._playBridge.play({
+				cheat,
+				action: "nextStep"
+			});
 			if (result.hasOwnProperty("error")) {
 				_this2._eventManager.emit(GameControllerEvents.ERROR_RECEIVED, result);
 				return;

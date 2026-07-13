@@ -1,0 +1,71 @@
+.AnimationPlayerHTMLElement {
+    font-family: monospace;
+    color: #d4d4cd;
+    user-select: none;
+}
+
+.TweakUtilsHeader {
+    top: 0px
+}
+
+.DraggableHeader {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    background: #204420;
+    font-family: monospace;
+    color: #d4d4cd;
+}
+
+.LineEdit {
+    text-align: center;
+}
+
+.SmallLabel {
+    padding-left: 6px;
+}
+
+input.AnimationPlayerHTMLElement {
+    background: rgba(33,33,33,0.5);
+    color: #c3d0ce;
+    font-weight: 900;
+    border-radius: 5px;
+    flex-shrink: 1;
+}
+
+textarea.AnimationPlayerHTMLElement {
+    background: rgba(33,33,33,0.5);
+    color: #9ddaae;
+    border-radius: 5px;
+}
+
+label.ZOrderLabel {
+    width: 150px;
+}
+
+select.AnimationPlayerHTMLElement {
+    background: rgba(33,33,33,0.5);
+    color: #97ffe8;
+    border-radius: 5px;
+}
+
+button.AnimationPlayerHTMLElement {
+    background: rgba(33,33,33,0.5);
+    color: #f6f5f5;
+}
+
+info-tag {
+    color: aqua;
+}
+
+.hidden {
+    display: none;
+}
+
+.dataTag {
+    color: orange;
+}
+
+[type=radio]:checked + img {
+    outline: 2px solid #fff;
+}
