@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "Wr8ENi++XCI",
+	"hash": "ZnRLDmXhNSg",
 	"spine": "4.2-from-4.3.39-beta",
 	"x": -861,
 	"y": -22.5,
@@ -18,10 +18,11 @@
 	{ "name": "SOUND_BUTTON", "parent": "HUD_HEADER_ROOT", "x": 416, "scaleX": 0.22555, "scaleY": 0.22555 },
 	{ "name": "BANKING_BUTTON", "parent": "HUD_HEADER_ROOT", "x": 478, "y": -0.85224, "scaleX": 0.36111, "scaleY": 0.36111 },
 	{ "name": "LOGO_GAME_LANDSCAPE", "parent": "HUD_HEADER_ROOT", "x": -617, "y": -75 },
-	{ "name": "LOGO_COMPANY", "parent": "HUD_HEADER_ROOT", "x": 322, "y": -36, "scaleX": 0.9, "scaleY": 0.9 },
+	{ "name": "LOGO_COMPANY", "parent": "HUD_HEADER_ROOT", "x": 315, "y": -14, "scaleX": 0.5, "scaleY": 0.5 },
 	{ "name": "LOGO_GAME_PORTRAIT", "parent": "HUD_HEADER_ROOT", "x": -607.70667, "y": -37.33358 },
-	{ "name": "LOGO_GAME", "parent": "HUD_HEADER_ROOT", "x": -617, "y": -75 },
-	{ "name": "STEP_NUMBER", "parent": "HUD_HEADER_ROOT", "y": -70 }
+	{ "name": "LOGO_GAME", "parent": "HUD_HEADER_ROOT", "x": -330, "y": -32, "scaleX": 0.8, "scaleY": 0.8 },
+	{ "name": "STEP_NUMBER", "parent": "HUD_HEADER_ROOT", "x": 310, "y": -100, "scaleX": 1.0074347, "scaleY": 1.0074347 },
+	{ "name": "GAME_NAME_TXT", "parent": "HUD_HEADER_ROOT", "x": 385, "y": -34 }
 ],
 "slots": [
 	{ "name": "HEADER", "bone": "HEADER", "color": "ffffffcb", "attachment": "GUI/HUD/HUD_HEADER_BCKGR" },
@@ -34,6 +35,7 @@
 	{ "name": "LOGO_GAME", "bone": "LOGO_GAME" },
 	{ "name": "LOGO_GAME_PORTRAIT", "bone": "LOGO_GAME_PORTRAIT" },
 	{ "name": "LOGO_COMPANY", "bone": "LOGO_COMPANY" },
+	{ "name": "GAME_NAME_TXT", "bone": "GAME_NAME_TXT" },
 	{ "name": "STEP_NUMBER", "bone": "STEP_NUMBER" }
 ],
 "skins": [

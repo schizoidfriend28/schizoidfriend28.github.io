@@ -1,5 +1,5 @@
 {
-"skeleton": { "hash": "aWA9plSDxLw", "spine": "4.2-from-4.3.39-beta", "images": "../../GRAPHIC_ASSETS/", "audio": "./audio" },
+"skeleton": { "hash": "eAFrnQghU4c", "spine": "4.2-from-4.3.39-beta", "images": "../../GRAPHIC_ASSETS/", "audio": "./audio" },
 "bones": [
 	{ "name": "root" },
 	{ "name": "BET_WINDOW", "parent": "root" },
@@ -28,13 +28,11 @@
 	{ "name": "HTML_HEIGHT", "parent": "root", "x": -300, "y": -120 },
 	{ "name": "DIFFICULTY_BUTTON", "parent": "root", "x": 822, "y": 380, "scaleX": 0.5, "scaleY": 0.5 },
 	{ "name": "COLLECT_PROJECTILES", "parent": "root" },
-	{ "name": "GAME_NAME_TXT", "parent": "root" },
 	{ "name": "BARRIERS", "parent": "root", "y": 149 },
 	{ "name": "CARS", "parent": "root", "y": 291 },
 	{ "name": "CHICKEN", "parent": "root", "y": -71 },
 	{ "name": "LANES", "parent": "root", "y": 1 },
 	{ "name": "CASHOUT_BUTTON", "parent": "root", "x": 745, "y": 40 },
-	{ "name": "CURRENT_MULTIPLIER", "parent": "root", "y": -100 },
 	{ "name": "LOOTBOX", "parent": "root", "x": 552, "y": 323 }
 ],
 "slots": [
@@ -49,7 +47,6 @@
 	{ "name": "COINS", "bone": "COINS" },
 	{ "name": "CARS", "bone": "CARS" },
 	{ "name": "BARRIERS", "bone": "BARRIERS" },
-	{ "name": "CURRENT_MULTIPLIER", "bone": "CURRENT_MULTIPLIER" },
 	{ "name": "CHICKEN", "bone": "CHICKEN" },
 	{ "name": "LOOTBOX", "bone": "LOOTBOX" },
 	{ "name": "PROGRESS_METER", "bone": "PROGRESS_METER" },
@@ -70,8 +67,7 @@
 	{ "name": "MENU", "bone": "MENU", "color": "ffffff00" },
 	{ "name": "POPUP_MENU", "bone": "POPUP_MENU", "color": "ffffff00" },
 	{ "name": "SYSTEM_MESSAGE", "bone": "SYSTEM_MESSAGE" },
-	{ "name": "HTML_HEIGHT", "bone": "HTML_HEIGHT" },
-	{ "name": "GAME_NAME_TXT", "bone": "GAME_NAME_TXT" }
+	{ "name": "HTML_HEIGHT", "bone": "HTML_HEIGHT" }
 ],
 "skins": [
 	{

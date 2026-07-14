@@ -1,11 +1,11 @@
 {
 "skeleton": {
-	"hash": "Znvsmhnx5AQ",
+	"hash": "TPL9kGpWIX8",
 	"spine": "4.2-from-4.3.39-beta",
-	"x": -159.5,
-	"y": -245.5,
-	"width": 319,
-	"height": 491,
+	"x": -143,
+	"y": -244,
+	"width": 286,
+	"height": 494,
 	"images": "../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
@@ -13,34 +13,119 @@
 	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
 	{ "name": "SYMBOL_ANCHOR", "parent": "MAIN_ROOT", "color": "ff0000ff", "icon": "square" },
 	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_ROOT", "color": "fff900ff", "icon": "circle" },
 	{ "name": "WIN_INDICATIONS", "parent": "MAIN_ROOT", "color": "ffbf00ff", "icon": "diamond" },
-	{ "name": "SYMBOL_ICON_SHADOW", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON_SHADOW2", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" }
+	{ "name": "SYMBOL_SHADOWS", "parent": "SYMBOL_ROOT", "color": "121212ff", "icon": "suiteDiamonds" },
+	{ "name": "SYMBOL_ICON_SHADOW", "parent": "SYMBOL_SHADOWS", "y": 3, "color": "121212ff", "icon": "suiteDiamonds" },
+	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_ROOT", "color": "ffffffff", "icon": "particles" },
+	{ "name": "SYMBOL_ICON_SHADOW2", "parent": "SYMBOL_SHADOWS", "y": 3, "color": "121212ff", "icon": "suiteDiamonds" },
+	{ "name": "LIGHTS_ON", "parent": "SYMBOL_ROOT", "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "HEADLIGHTS_ON_LOW", "parent": "LIGHTS_ON", "color": "ffffffff" },
+	{ "name": "HEADLIGHTS_ON_DAYTIME", "parent": "LIGHTS_ON", "color": "ffffffff" },
+	{ "name": "HEADLIGHTS_ON_HIGH", "parent": "LIGHTS_ON", "color": "ffffffff" },
+	{ "name": "HAZARD_LIGHTS_ON", "parent": "LIGHTS_ON", "color": "ffffffff" },
+	{ "name": "CAR_HEADLIGHT_ON_LOW2", "parent": "HEADLIGHTS_ON_LOW", "x": -17, "y": -85, "shearX": 178.9076, "color": "ffffffff" },
+	{ "name": "CAR_HEADLIGHT_ON_LOW", "parent": "HEADLIGHTS_ON_LOW", "x": 17, "y": -82, "color": "ffffffff" },
+	{ "name": "CAR_HEADLIGHT_ON_HIGH2", "parent": "HEADLIGHTS_ON_HIGH", "x": -17, "y": -83, "shearX": 179.77321, "color": "ffffffff" },
+	{ "name": "CAR_HEADLIGHT_ON_HIGH", "parent": "HEADLIGHTS_ON_HIGH", "x": 18, "y": -84, "color": "ffffffff" },
+	{ "name": "CAR_HEADLIGHT_ON_DAYTIME2", "parent": "HEADLIGHTS_ON_DAYTIME", "x": -47, "y": -83, "shearX": 180, "color": "ffffffff" },
+	{ "name": "CAR_HEADLIGHT_ON_DAYTIME", "parent": "HEADLIGHTS_ON_DAYTIME", "x": 48, "y": -83, "color": "ffffffff" },
+	{ "name": "HAZARD_ON1", "parent": "HAZARD_LIGHTS_ON", "x": -130, "y": -50, "color": "ffffffff" },
+	{ "name": "HAZARD_ON2", "parent": "HAZARD_LIGHTS_ON", "x": 130, "y": -50, "shearX": 180, "color": "ffffffff" },
+	{
+		"name": "HAZARD_ON3",
+		"parent": "HAZARD_LIGHTS_ON",
+		"rotation": 30,
+		"x": 99,
+		"y": 178,
+		"shearX": 180,
+		"color": "ffffffff"
+	},
+	{ "name": "HAZARD_ON4", "parent": "HAZARD_LIGHTS_ON", "rotation": -31, "x": -102, "y": 178, "color": "ffffffff" }
 ],
 "slots": [
-	{ "name": "WIN_INDICATIONS", "bone": "WIN_INDICATIONS" },
 	{ "name": "SYMBOL_ICON_SHADOW", "bone": "SYMBOL_ICON_SHADOW", "attachment": "CAR/CAR_SHADOW" },
-	{ "name": "SYMBOL_ICON_SHADOW2", "bone": "SYMBOL_ICON_SHADOW2", "attachment": "CAR/CAR_SHADOW" },
-	{ "name": "SYMBOL_ICON", "bone": "SYMBOL_ICON", "attachment": "CAR/CAR" },
-	{ "name": "SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a400ff", "blend": "additive" }
+	{ "name": "SYMBOL_ICON_SHADOW2", "bone": "SYMBOL_ICON_SHADOW2" },
+	{ "name": "SYMBOL_ICON", "bone": "SYMBOL_ICON", "attachment": "SYMBOL_ICON" },
+	{ "name": "SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a400ff", "blend": "additive" },
+	{ "name": "CAR_HEADLIGHT_ON_LOW", "bone": "CAR_HEADLIGHT_ON_LOW" },
+	{ "name": "CAR_HEADLIGHT_ON_LOW2", "bone": "CAR_HEADLIGHT_ON_LOW2" },
+	{ "name": "CAR_HEADLIGHT_ON_HIGH", "bone": "CAR_HEADLIGHT_ON_HIGH" },
+	{ "name": "CAR_HEADLIGHT_ON_HIGH2", "bone": "CAR_HEADLIGHT_ON_HIGH2" },
+	{ "name": "CAR_HEADLIGHT_ON_DAYTIME", "bone": "CAR_HEADLIGHT_ON_DAYTIME" },
+	{ "name": "CAR_HEADLIGHT_ON_DAYTIME2", "bone": "CAR_HEADLIGHT_ON_DAYTIME2" },
+	{ "name": "HAZARD_ON1", "bone": "HAZARD_ON1", "color": "ffa400ff" },
+	{ "name": "HAZARD_ON4", "bone": "HAZARD_ON4", "color": "ffa400ff" },
+	{ "name": "HAZARD_ON2", "bone": "HAZARD_ON2", "color": "ffa400ff" },
+	{ "name": "HAZARD_ON3", "bone": "HAZARD_ON3", "color": "ffa400ff" },
+	{ "name": "WIN_INDICATIONS", "bone": "WIN_INDICATIONS" }
 ],
 "skins": [
 	{
 		"name": "default",
 		"attachments": {
-			"SYMBOL_ICON": {
-				"CAR/CAR": { "width": 319, "height": 433 }
+			"CAR_HEADLIGHT_ON_DAYTIME": {
+				"CAR/CAR_HEADLIGHT_ON_DAYTIME": { "width": 255, "height": 325 }
+			},
+			"CAR_HEADLIGHT_ON_DAYTIME2": {
+				"CAR/CAR_HEADLIGHT_ON_DAYTIME": { "width": 255, "height": 325 }
+			},
+			"CAR_HEADLIGHT_ON_HIGH": {
+				"CAR/CAR_HEADLIGHT_ON_HIGH": { "width": 291, "height": 325 }
+			},
+			"CAR_HEADLIGHT_ON_HIGH2": {
+				"CAR/CAR_HEADLIGHT_ON_HIGH": { "width": 291, "height": 325 }
+			},
+			"CAR_HEADLIGHT_ON_LOW": {
+				"CAR/CAR_HEADLIGHT_ON_LOW": { "width": 312, "height": 325 }
+			},
+			"CAR_HEADLIGHT_ON_LOW2": {
+				"CAR/CAR_HEADLIGHT_ON_LOW": { "width": 312, "height": 325 }
+			},
+			"HAZARD_ON1": {
+				"CAR/CAR_HEADLIGHT_ON_DAYTIME": { "scaleX": 0.1, "scaleY": 0.3, "width": 255, "height": 325 }
+			},
+			"HAZARD_ON2": {
+				"CAR/CAR_HEADLIGHT_ON_DAYTIME": { "scaleX": 0.1, "scaleY": 0.3, "width": 255, "height": 325 }
+			},
+			"HAZARD_ON3": {
+				"CAR/CAR_HEADLIGHT_ON_DAYTIME": { "scaleX": 0.1, "scaleY": 0.3, "width": 255, "height": 325 }
+			},
+			"HAZARD_ON4": {
+				"CAR/CAR_HEADLIGHT_ON_DAYTIME": { "scaleX": 0.1, "scaleY": 0.3, "width": 255, "height": 325 }
 			},
 			"SYMBOL_ICON_GLOW": {
-				"CAR/CAR_GLOW": { "width": 319, "height": 437 }
+				"CAR/CAR_GLOW": { "width": 293, "height": 440 }
 			},
 			"SYMBOL_ICON_SHADOW": {
-				"CAR/CAR_SHADOW": { "width": 313, "height": 491 }
+				"CAR/CAR_SHADOW": { "width": 286, "height": 494 }
 			},
 			"SYMBOL_ICON_SHADOW2": {
-				"CAR/CAR_SHADOW": { "width": 313, "height": 491 }
+				"CAR/CAR_SHADOW": { "width": 286, "height": 494 }
+			}
+		}
+	},
+	{
+		"name": "BLACK",
+		"attachments": {
+			"SYMBOL_ICON": {
+				"SYMBOL_ICON": { "name": "CAR/CAR_ICON_BLACK", "width": 258, "height": 404 }
+			}
+		}
+	},
+	{
+		"name": "GREEN",
+		"attachments": {
+			"SYMBOL_ICON": {
+				"SYMBOL_ICON": { "name": "CAR/CAR_ICON_GREEN", "width": 258, "height": 404 }
+			}
+		}
+	},
+	{
+		"name": "RED",
+		"attachments": {
+			"SYMBOL_ICON": {
+				"SYMBOL_ICON": { "name": "CAR/CAR_ICON_RED", "width": 258, "height": 404 }
 			}
 		}
 	}
@@ -48,9 +133,28 @@
 "animations": {
 	"DRIVING": {
 		"slots": {
+			"CAR_HEADLIGHT_ON_DAYTIME": {
+				"rgba": [
+					{ "color": "ffffffaa" }
+				],
+				"attachment": [
+					{ "name": "CAR/CAR_HEADLIGHT_ON_DAYTIME" }
+				]
+			},
+			"CAR_HEADLIGHT_ON_DAYTIME2": {
+				"rgba": [
+					{ "color": "ffffffaa" }
+				],
+				"attachment": [
+					{ "name": "CAR/CAR_HEADLIGHT_ON_DAYTIME" }
+				]
+			},
 			"SYMBOL_ICON_SHADOW2": {
 				"alpha": [
 					{ "value": 0.44009998 }
+				],
+				"attachment": [
+					{ "name": "CAR/CAR_SHADOW" }
 				]
 			}
 		},
@@ -67,66 +171,148 @@
 	},
 	"STOP": {
 		"slots": {
-			"SYMBOL_ICON_GLOW": {
+			"CAR_HEADLIGHT_ON_HIGH": {
 				"alpha": [
 					{ "value": 0 },
-					{ "time": 0.23333335, "value": 0.78599995 },
-					{ "time": 0.6, "value": 0 }
+					{ "time": 0.10000001, "value": 1, "curve": "stepped" },
+					{ "time": 1.0666667, "value": 1 },
+					{ "time": 1.4666667, "value": 0 }
 				],
 				"attachment": [
-					{ "name": "CAR/CAR_GLOW" }
+					{ "name": "CAR/CAR_HEADLIGHT_ON_HIGH" }
+				]
+			},
+			"CAR_HEADLIGHT_ON_HIGH2": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.10000001, "value": 1, "curve": "stepped" },
+					{ "time": 1.0666667, "value": 1 },
+					{ "time": 1.4666667, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "CAR/CAR_HEADLIGHT_ON_HIGH" }
+				]
+			},
+			"HAZARD_ON3": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.10000001, "value": 1, "curve": "stepped" },
+					{ "time": 1.0666667, "value": 1 },
+					{ "time": 1.4666667, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "ff0000" }
+				],
+				"attachment": [
+					{ "name": "CAR/CAR_HEADLIGHT_ON_DAYTIME" }
+				]
+			},
+			"HAZARD_ON4": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.10000001, "value": 1, "curve": "stepped" },
+					{ "time": 1.0666667, "value": 1 },
+					{ "time": 1.4666667, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "ff0000" }
+				],
+				"attachment": [
+					{ "name": "CAR/CAR_HEADLIGHT_ON_DAYTIME" }
 				]
 			},
 			"SYMBOL_ICON_SHADOW2": {
 				"alpha": [
 					{ "value": 0.43919998 }
+				],
+				"attachment": [
+					{ "name": "CAR/CAR_SHADOW" }
 				]
 			}
 		},
 		"bones": {
-			"SYMBOL_ICON": {
+			"SYMBOL_ROOT": {
 				"translate": [
 					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 }
+					{ "time": 0.6, "y": 30 },
+					{ "time": 1.2333333, "y": 50 }
 				],
 				"scale": [
 					{},
 					{ "time": 0.23333335, "y": 0.9 },
 					{ "time": 0.3 }
 				]
-			},
-			"SYMBOL_ICON_SHADOW": {
-				"translate": [
-					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 }
+			}
+		}
+	},
+	"STOPPED_IDLE": {
+		"slots": {
+			"HAZARD_ON1": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.033333335, "value": 0.9989, "curve": "stepped" },
+					{ "time": 0.5, "value": 0.99908334 },
+					{ "time": 0.53333336, "value": 0, "curve": "stepped" },
+					{ "time": 1, "value": 0 },
+					{ "time": 1.0333334, "value": 1, "curve": "stepped" },
+					{ "time": 1.5000001, "value": 0.99908334 },
+					{ "time": 1.5333334, "value": 0, "curve": "stepped" },
+					{ "time": 2, "value": 0 },
+					{ "time": 2.0333335, "value": 1 }
 				],
-				"scale": [
-					{},
-					{ "time": 0.23333335, "y": 0.9 },
-					{ "time": 0.3 }
+				"attachment": [
+					{ "name": "CAR/CAR_HEADLIGHT_ON_DAYTIME" }
 				]
 			},
-			"SYMBOL_ICON_GLOW": {
-				"translate": [
-					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 }
+			"HAZARD_ON2": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.033333335, "value": 0.9989, "curve": "stepped" },
+					{ "time": 0.5, "value": 0.99908334 },
+					{ "time": 0.53333336, "value": 0, "curve": "stepped" },
+					{ "time": 1, "value": 0 },
+					{ "time": 1.0333334, "value": 1, "curve": "stepped" },
+					{ "time": 1.5000001, "value": 0.99908334 },
+					{ "time": 1.5333334, "value": 0, "curve": "stepped" },
+					{ "time": 2, "value": 0 },
+					{ "time": 2.0333335, "value": 1 }
 				],
-				"scale": [
-					{},
-					{ "time": 0.23333335, "y": 0.9 },
-					{ "time": 0.3 }
+				"attachment": [
+					{ "name": "CAR/CAR_HEADLIGHT_ON_DAYTIME" }
 				]
 			},
-			"SYMBOL_ICON_SHADOW2": {
-				"translate": [
-					{ "y": 70 },
-					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 }
+			"HAZARD_ON3": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.033333335, "value": 0.9989, "curve": "stepped" },
+					{ "time": 0.5, "value": 0.99908334 },
+					{ "time": 0.53333336, "value": 0, "curve": "stepped" },
+					{ "time": 1, "value": 0 },
+					{ "time": 1.0333334, "value": 1, "curve": "stepped" },
+					{ "time": 1.5000001, "value": 0.99908334 },
+					{ "time": 1.5333334, "value": 0, "curve": "stepped" },
+					{ "time": 2, "value": 0 },
+					{ "time": 2.0333335, "value": 1 }
 				],
-				"scale": [
-					{ "y": 1.088 },
-					{ "time": 0.10000001, "y": 0.9 },
-					{ "time": 0.3 }
+				"attachment": [
+					{ "name": "CAR/CAR_HEADLIGHT_ON_DAYTIME" }
+				]
+			},
+			"HAZARD_ON4": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.033333335, "value": 0.9989, "curve": "stepped" },
+					{ "time": 0.5, "value": 0.99908334 },
+					{ "time": 0.53333336, "value": 0, "curve": "stepped" },
+					{ "time": 1, "value": 0 },
+					{ "time": 1.0333334, "value": 1, "curve": "stepped" },
+					{ "time": 1.5000001, "value": 0.99908334 },
+					{ "time": 1.5333334, "value": 0, "curve": "stepped" },
+					{ "time": 2, "value": 0 },
+					{ "time": 2.0333335, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "CAR/CAR_HEADLIGHT_ON_DAYTIME" }
 				]
 			}
 		}

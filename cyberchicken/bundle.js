@@ -103901,6 +103901,8 @@ var hr = class UIView extends q {
 	updateUIElements(e) {
 		for (let t of this._uiElements) t.updatePosition(e);
 	}
+	disableButton() {}
+	enableButton() {}
 };
 hr = __decorate$1([injectFromBase()], hr);
 var gr;
@@ -107906,7 +107908,7 @@ var ji = (_HUDView = class HUDView extends hr {
 		this._header = this.spineUtils.startSpineAnimationCreation("HUD_HEADER.json", "IDLE", !0).skinName("LANDSCAPE").createAndStart(), this._uiElements.push(new UIElement(this._footer.spine, e, t, [J$1.BOTTOM])), this._uiElements.push(new UIElement(this._header.spine, n, r, [J$1.TOP])), this.addLogos();
 	}
 	addLogos() {
-		this._logo = this.spineUtils.startSpineAnimationCreation("LOGO_GAME.json", "IDLE", !0).createAndStart(), this.spineUtils.replaceSlotAttachment(this._header, "LOGO_GAME", this._logo.spine), this._companyLogo = this.spineUtils.startSpineAnimationCreation("LOGO_COMPANY_SILVERFOX.json", "IDLE", !0).createAndStart(), this.spineUtils.replaceSlotAttachment(this._header, "LOGO_COMPANY", this._companyLogo.spine);
+		this._logo = this.spineUtils.startSpineAnimationCreation("LOGO_GAME.json", "IDLE", !0).createAndStart(), this.spineUtils.replaceSlotAttachment(this._header, "LOGO_GAME", this._logo.spine), this._companyLogo = this.spineUtils.startSpineAnimationCreation("LOGO_COMPANY.json", "IDLE", !0).createAndStart(), this.spineUtils.replaceSlotAttachment(this._header, "LOGO_COMPANY", this._companyLogo.spine);
 	}
 	setupTextStyles() {
 		this._numberStyle = this.getBalanceTextStyle(), this._textStyle = this.getBalanceTextStyle(), this._winFieldNumberStyle = this.getBalanceTextStyle();
@@ -113774,78 +113776,6 @@ function __decorate(decorators, target, key, desc) {
 	return c > 3 && r && Object.defineProperty(target, key, r), r;
 }
 //#endregion
-//#region src/modules/movingUI/cashout/CashoutButtonView.ts
-var _CashoutButtonView2;
-var _CashoutButtonView;
-var CashoutButtonView = (_CashoutButtonView2 = class CashoutButtonView extends hr {
-	init() {
-		super.init();
-		this.setupButtons();
-		this.setupLayout();
-	}
-	disableButton() {
-		this._cashOutButton.button.visible = false;
-	}
-	enableButton() {
-		this._cashOutButton.button.visible = true;
-	}
-	setupButtons() {
-		this._cashOutButton = this.createSpineCashOutButton();
-		this.container.addChild(this._cashOutButton.button);
-	}
-	createSpineCashOutButton() {
-		return new GenericButton("SPIN_BUTTON2.json", void 0, this.spineUtils, this.onCashOutButtonClicked.bind(this));
-	}
-	onCashOutButtonClicked() {
-		this.soundPlayer.play("buttonClick");
-		this.emit(_CashoutButtonView.CASHOUT_BUTTON_CLICKED);
-	}
-	setupLayout() {
-		const bone = this.mainUI.getBoneFromUI("CASHOUT_BUTTON");
-		const pmBone = this.mainUI.getBoneFromPortraitUI("CASHOUT_BUTTON");
-		this._uiElements.push(new UIElement(this._cashOutButton.button, {
-			x: 0,
-			y: 0
-		}, {
-			x: 0,
-			y: 0
-		}, [J$1.RIGHT], [J$1.BOTTOM], {
-			x: bone.scaleX,
-			y: bone.scaleY
-		}, {
-			x: pmBone.scaleX,
-			y: pmBone.scaleY
-		}));
-	}
-}, _CashoutButtonView = _CashoutButtonView2, _CashoutButtonView2.CASHOUT_BUTTON_CLICKED = "SpinButtonView::CASHOUT_BUTTON_CLICKED", _CashoutButtonView2);
-CashoutButtonView = _CashoutButtonView = __decorate([Z()], CashoutButtonView);
-//#endregion
-//#region src/modules/movingUI/cashout/CashoutButtonEvents.ts
-var _CashoutButtonEvents;
-var CashoutButtonEvents = class {};
-_CashoutButtonEvents = CashoutButtonEvents;
-_CashoutButtonEvents.CASHOUT_BUTTON_CLICKED = "CashoutButtonEvents::CASHOUT_BUTTON_CLICKED";
-//#endregion
-//#region src/modules/movingUI/cashout/CashoutButtonModule.ts
-var CashoutButtonModule = class CashoutButtonModule extends vr {
-	init(view, viewScreenName) {
-		super.init(view, viewScreenName);
-		this.view.disableButton();
-	}
-	hideButton() {
-		this.view.disableButton();
-	}
-	setupEvents() {
-		super.setupEvents();
-		this.onViewEmitEvent(CashoutButtonView.CASHOUT_BUTTON_CLICKED, CashoutButtonEvents.CASHOUT_BUTTON_CLICKED);
-		this.on(CashoutButtonEvents.CASHOUT_BUTTON_CLICKED, this.onCashOutClicked);
-	}
-	onCashOutClicked() {
-		this.view.disableButton();
-	}
-};
-CashoutButtonModule = __decorate([Z()], CashoutButtonModule);
-//#endregion
 //#region src/modules/movingUI/go/GoButtonView.ts
 var _GoButtonView2;
 var _GoButtonView;
@@ -113923,26 +113853,29 @@ GoButtonModule = __decorate([Z()], GoButtonModule);
 //#region src/keypadController/ChickenKeypadController.ts
 var KeypadButtons = {
 	autoPlayButton: "autoPlayButton",
-	bankingButton: "bankingButton",
-	menuButton: "menuButton",
 	betButton: "betButton",
-	quickPlayButton: "quickPlayButton",
-	goButton: "goButton",
-	cashOutButton: "cashOutButton"
+	goButton: "goButton"
 };
-var goButtonLockReasons = Qn.filter((reason) => reason !== "LockReasons::BET_FROZEN" && reason !== "LockReasons::ROUND_STARTED");
-var cashOutButtonLockReasons = Qn.filter((reason) => reason !== "LockReasons::BET_FROZEN" && reason !== "LockReasons::ROUND_STARTED" && reason !== "LockReasons::WIN_STARTED");
-var chickenBetButtonLockReasons = Qn.filter((reason) => reason !== "LockReasons::IDLE_STATE_ENTERED" && reason !== "LockReasons::SPINNING_STARTED");
-var chickenAutoplayButtonLockReasons = Qn.filter((reason) => reason !== "LockReasons::IDLE_STATE_ENTERED" && reason !== "LockReasons::SPINNING_STARTED");
+var goButtonLockReasons = [
+	"LockReasons::STEP_STARTED",
+	"LockReasons::AUTOPLAY_STARTED",
+	"LockReasons::LOCKED_BY_REPLAY"
+];
+var chickenBetButtonLockReasons = [
+	...goButtonLockReasons,
+	"LockReasons::BET_FROZEN",
+	"LockReasons::ROUND_STARTED"
+];
+var chickenAutoplayButtonLockReasons = [
+	...goButtonLockReasons,
+	"LockReasons::LOCKED_BY_REGULATION",
+	"LockReasons::ROUND_STARTED"
+];
 var ChickenKeypadController = class ChickenKeypadController extends L {
 	constructor(..._args) {
 		super(..._args);
 		this._keypad = {};
 		this._buttonLockingReasons = {};
-	}
-	restore() {
-		super.restore();
-		this.lockWithReason("LockReasons::RESTORE_STARTED");
 	}
 	init(view, viewScreenName) {
 		super.init(view, viewScreenName);
@@ -113951,35 +113884,14 @@ var ChickenKeypadController = class ChickenKeypadController extends L {
 	}
 	setupEvents() {
 		super.setupEvents();
-		this.on(BetMenuEvents.BET_MENU_OPENED, this.onBetPopupOpened);
-		this.on(BetMenuEvents.BET_MENU_CLOSED, this.onBetPopupClosed);
 		this.on(AutoplayHandlerEvents.AUTOPLAY_STARTED, this.onAutoplayStarted);
 		this.on(AutoplayHandlerEvents.AUTOPLAY_STOPPED, this.onAutoplayStopped);
-		this.on(AutoplayMenuEvents.AUTOPLAY_MENU_OPENED, this.onAutoplayMenusOpened);
-		this.on(AutoplayMenuEvents.AUTOPLAY_MENU_CLOSED, this.onAutoplayMenusClosed);
-		this.on(MenuEvents.OPENED, this.onGameMenuOpened);
-		this.on(MenuEvents.CLOSED, this.onGameMenuClosed);
 		this.on(PlatformEvents.FREEZE_BET_CALLBACK_CALLED, this.onFreezeBetCalled);
 		this.on(PlatformEvents.UNFREEZE_BET_CALLBACK_CALLED, this.onUnfreezeBetCalled);
 		this.on(RestoreScreenEvents.RESTORE_CLOSED, this.onRestoreClosed);
 	}
 	onRestoreClosed() {
-		this.unlockWithReason("LockReasons::RESTORE_STARTED");
 		this.disableOnRoundStarted();
-		this.disableOnStepStarted();
-		this.enableOnStepFinished();
-	}
-	onGameMenuOpened() {
-		this.lockWithReason("LockReasons::MAIN_MENU_OPENED");
-	}
-	onGameMenuClosed() {
-		this.unlockWithReason("LockReasons::MAIN_MENU_OPENED");
-	}
-	onAutoplayMenusOpened() {
-		this.lockWithReason("LockReasons::AUTOPLAY_MENU_OPENED");
-	}
-	onAutoplayMenusClosed() {
-		this.unlockWithReason("LockReasons::AUTOPLAY_MENU_OPENED");
 	}
 	onAutoplayStarted() {
 		this.lockWithReason("LockReasons::AUTOPLAY_STARTED");
@@ -113993,25 +113905,15 @@ var ChickenKeypadController = class ChickenKeypadController extends L {
 	onUnfreezeBetCalled() {
 		this.unlockWithReason("LockReasons::BET_FROZEN");
 	}
-	onBetPopupOpened() {
-		this.lockWithReason("LockReasons::BET_MENU_OPENED");
-	}
-	onBetPopupClosed() {
-		this.unlockWithReason("LockReasons::BET_MENU_OPENED");
-	}
 	setupKeypadItems() {
 		this._keypad[KeypadButtons.autoPlayButton] = this.diContainer.get(Mr);
 		this._keypad[KeypadButtons.betButton] = this.diContainer.get(Oa);
 		this._keypad[KeypadButtons.goButton] = this.diContainer.get(GoButtonModule);
-		this._keypad[KeypadButtons.cashOutButton] = this.diContainer.get(CashoutButtonModule);
-		this._keypad[KeypadButtons.quickPlayButton] = this.diContainer.get(Li);
 	}
 	setupButtonsLockingReasons() {
 		this._buttonLockingReasons[KeypadButtons.autoPlayButton] = this.getAutoplayButtonLockingReasons();
 		this._buttonLockingReasons[KeypadButtons.betButton] = this.getBetButtonLockingReasons();
 		this._buttonLockingReasons[KeypadButtons.goButton] = this.getGoButtonLockingReasons();
-		this._buttonLockingReasons[KeypadButtons.cashOutButton] = this.getCashOutButtonLockingReasons();
-		this._buttonLockingReasons[KeypadButtons.quickPlayButton] = this.getQuickPlayButtonLockingReasons();
 	}
 	/**
 	* We can DISABLE each button separately by configure it with KeypadButtonConfig, or we can set the same
@@ -114067,44 +113969,107 @@ var ChickenKeypadController = class ChickenKeypadController extends L {
 	getGoButtonLockingReasons() {
 		return goButtonLockReasons;
 	}
-	getCashOutButtonLockingReasons() {
-		return cashOutButtonLockReasons;
-	}
-	getQuickPlayButtonLockingReasons() {
-		return ir;
-	}
-	getBankingButtonLockingReasons() {
-		return tr;
-	}
-	getMenuButtonLockingReasons() {
-		return rr;
-	}
-	disableOnWinStarted(config) {
-		this.lockWithReason("LockReasons::WIN_STARTED", config);
-	}
-	enableOnWinFinished(config) {
-		this.unlockWithReason("LockReasons::WIN_STARTED", config);
-	}
-	disableOnFeatureStarted(config) {
-		this.lockWithReason("LockReasons::FEATURE_STARTED", config);
-	}
-	enableOnFeatureFinished(config) {
-		this.unlockWithReason("LockReasons::FEATURE_STARTED", config);
-	}
-	disableOnStepStarted(config) {
-		this.lockWithReason("LockReasons::SPINNING_STARTED", config);
-	}
-	enableOnStepFinished(config) {
-		this.unlockWithReason("LockReasons::SPINNING_STARTED", config);
-	}
 	disableOnRoundStarted(config) {
 		this.lockWithReason("LockReasons::ROUND_STARTED", config);
 	}
 	enableOnRoundFinished(config) {
 		this.unlockWithReason("LockReasons::ROUND_STARTED", config);
 	}
+	disableOnStepStarted(config) {
+		this.lockWithReason("LockReasons::STEP_STARTED", config);
+	}
+	enableOnStepFinished(config) {
+		this.unlockWithReason("LockReasons::STEP_STARTED", config);
+	}
 };
 ChickenKeypadController = __decorate([Z()], ChickenKeypadController);
+//#endregion
+//#region src/modules/movingUI/cashout/CashoutButtonView.ts
+var _CashoutButtonView2;
+var _CashoutButtonView;
+var CashoutButtonView = (_CashoutButtonView2 = class CashoutButtonView extends hr {
+	init() {
+		super.init();
+		this.setupButtons();
+		this.setupLayout();
+	}
+	disableButton() {
+		this._cashOutButton.button.visible = false;
+	}
+	enableButton() {
+		this._cashOutButton.button.visible = true;
+	}
+	setupButtons() {
+		this._cashOutButton = this.createSpineCashOutButton();
+		this.container.addChild(this._cashOutButton.button);
+	}
+	createSpineCashOutButton() {
+		return new GenericButton("SPIN_BUTTON2.json", void 0, this.spineUtils, this.onCashOutButtonClicked.bind(this));
+	}
+	onCashOutButtonClicked() {
+		this.soundPlayer.play("buttonClick");
+		this.emit(_CashoutButtonView.CASHOUT_BUTTON_CLICKED);
+	}
+	setupLayout() {
+		const bone = this.mainUI.getBoneFromUI("CASHOUT_BUTTON");
+		const pmBone = this.mainUI.getBoneFromPortraitUI("CASHOUT_BUTTON");
+		this._uiElements.push(new UIElement(this._cashOutButton.button, {
+			x: 0,
+			y: 0
+		}, {
+			x: 0,
+			y: 0
+		}, [J$1.RIGHT], [J$1.BOTTOM], {
+			x: bone.scaleX,
+			y: bone.scaleY
+		}, {
+			x: pmBone.scaleX,
+			y: pmBone.scaleY
+		}));
+	}
+}, _CashoutButtonView = _CashoutButtonView2, _CashoutButtonView2.CASHOUT_BUTTON_CLICKED = "SpinButtonView::CASHOUT_BUTTON_CLICKED", _CashoutButtonView2);
+CashoutButtonView = _CashoutButtonView = __decorate([Z()], CashoutButtonView);
+//#endregion
+//#region src/modules/movingUI/cashout/CashoutButtonEvents.ts
+var _CashoutButtonEvents;
+var CashoutButtonEvents = class {};
+_CashoutButtonEvents = CashoutButtonEvents;
+_CashoutButtonEvents.CASHOUT_BUTTON_CLICKED = "CashoutButtonEvents::CASHOUT_BUTTON_CLICKED";
+//#endregion
+//#region src/modules/movingUI/cashout/CashoutButtonModule.ts
+var CashoutButtonModule = class CashoutButtonModule extends vr {
+	constructor(..._args) {
+		super(..._args);
+		this._isAutoplayOn = false;
+	}
+	init(view, viewScreenName) {
+		super.init(view, viewScreenName);
+		this.view.disableButton();
+	}
+	hideButton() {
+		this.view.disableButton();
+	}
+	showButton() {
+		if (!this._isAutoplayOn) this.view.enableButton();
+	}
+	setupEvents() {
+		super.setupEvents();
+		this.onViewEmitEvent(CashoutButtonView.CASHOUT_BUTTON_CLICKED, CashoutButtonEvents.CASHOUT_BUTTON_CLICKED);
+		this.on(CashoutButtonEvents.CASHOUT_BUTTON_CLICKED, this.onCashOutClicked);
+		this.on(AutoplayHandlerEvents.AUTOPLAY_STARTED, this.onAutplayStarted);
+		this.on(AutoplayHandlerEvents.AUTOPLAY_STOPPED, this.onAutplayStopped);
+	}
+	onAutplayStarted() {
+		this._isAutoplayOn = true;
+	}
+	onAutplayStopped() {
+		this._isAutoplayOn = false;
+	}
+	onCashOutClicked() {
+		this.view.disableButton();
+	}
+};
+CashoutButtonModule = __decorate([Z()], CashoutButtonModule);
 //#endregion
 //#region src/autoplay/GameAutoplayHandlerEvents.ts
 var _GameAutoplayHandlerEvents;
@@ -114113,35 +114078,68 @@ _GameAutoplayHandlerEvents = GameAutoplayHandlerEvents;
 _GameAutoplayHandlerEvents.AUTOPLAY_STEP = "GameAutoplayHandlerEvents::AUTOPLAY_STEP";
 _GameAutoplayHandlerEvents.AUTOPLAY_CASHOUT = "GameAutoplayHandlerEvents::AUTOPLAY_CASHOUT";
 //#endregion
-//#region src/modules/globalstate/states/GlobalStateIdle.ts
-var GlobalStateIdle = class extends GlobalModuleState {
-	constructor(module, name, eventManager) {
-		super(module, name, eventManager);
-		this._keypadController = module.diContainer.get(ChickenKeypadController);
-		this._goButtonModule = module.diContainer.get(GoButtonModule);
-		this._cashoutButtonModule = module.diContainer.get(CashoutButtonModule);
+//#region src/hud/GameHUDView.ts
+init_asyncToGenerator();
+var _GameHUDView2;
+var _GameHUDView;
+var gameNameTextStyle = {
+	fontFamily: "Poppins SemiBold",
+	fontSize: 20,
+	fill: "#FFCC00",
+	align: "left"
+};
+var GameHUDView = (_GameHUDView2 = class GameHUDView extends ji {
+	setNewStepNumber(value) {
+		var _this = this;
+		return _asyncToGenerator(function* () {
+			_this._stepsCounter.play("NUMBER_CHANGE", 0, false, "IDLE");
+			_this._nextStepNumber.showNumber(`${value}`);
+			yield _this._stepsCounter.getPromise(0);
+			_this._currentValue = value;
+			_this._currentStepNumber.showNumber(`${value}`);
+		})();
 	}
-	onEnterState() {
-		this._keypadController.enableOnStepFinished();
-		this._keypadController.enableOnRoundFinished();
-		this._cashoutButtonModule.hideButton();
-		this._goButtonModule.resetGame();
+	setupButtons() {
+		super.setupButtons();
+		this._menuButton = new GenericButton("MENU_BUTTON.json", void 0, this.spineUtils, this.onMenuButtonClicked.bind(this));
+		this.spineUtils.replaceSlotAttachment(this._footer, "MENU_BUTTON", this._menuButton.button);
+		this._stepsCounter = this.spineUtils.startSpineAnimationCreation("STEP_NUMBER.json", "IDLE", true).createAndStart();
+		this.spineUtils.replaceSlotAttachment(this._header, "STEP_NUMBER", this._stepsCounter.spine);
+		this._currentStepNumber = new ni(this.assets, "COINS_");
+		this._currentStepNumber.showNumber("0123");
+		this.spineUtils.replaceSlotAttachment(this._stepsCounter, "SYMBOL_NUMBER", this._currentStepNumber);
+		this._nextStepNumber = new ni(this.assets, "COINS_");
+		this._nextStepNumber.showNumber("3210");
+		this.spineUtils.replaceSlotAttachment(this._stepsCounter, "SYMBOL_NUMBER_NEW", this._nextStepNumber);
 	}
-	onLeaveState() {}
+	setupGameObjects() {
+		super.setupGameObjects();
+		const gameName = new import_lib.Text({
+			text: _GameHUDView.GAMENAME,
+			style: gameNameTextStyle
+		});
+		this.spineUtils.replaceSlotAttachment(this._header, "GAME_NAME_TXT", gameName);
+	}
+	onMenuButtonClicked() {
+		this.emit(_GameHUDView.MENU_BUTTON_CLICKED);
+	}
+}, _GameHUDView = _GameHUDView2, _GameHUDView2.MENU_BUTTON_CLICKED = "MenuButtonView::BUTTON_CLICKED", _GameHUDView2.GAMENAME = "Cyberchicken", _GameHUDView2);
+GameHUDView = _GameHUDView = __decorate([Z()], GameHUDView);
+//#endregion
+//#region src/hud/GameHUDModule.ts
+var GameHUDModule = class GameHUDModule extends Mi {
+	setNewCounterNumber(value) {
+		this.view.setNewStepNumber(value);
+	}
+	resetCounterNumber() {
+		this.view.setNewStepNumber(0);
+	}
 	setupEvents() {
-		this.on(GoButtonEvents.GO_BUTTON_CLICKED, this.onSpinButtonPressed);
-		this.on(GameAutoplayHandlerEvents.AUTOPLAY_STEP, this.onAutostepStarted);
-	}
-	onAutostepStarted() {
-		this.module.gotoState(GlobalStateSpinModule.STEP);
-	}
-	onSpinButtonPressed() {
-		this.module.gotoState(GlobalStateSpinModule.STEP);
-	}
-	get chickenGameController() {
-		return this.gameController;
+		super.setupEvents();
+		this.onViewEmitEvent(GameHUDView.MENU_BUTTON_CLICKED, MenuButtonEvents.CLICKED);
 	}
 };
+GameHUDModule = __decorate([Z()], GameHUDModule);
 //#endregion
 //#region src/modules/chicken/ChickenEvents.ts
 var _ChickenEvents;
@@ -114153,6 +114151,13 @@ _ChickenEvents.STEP_STARTED = "ChickenEvents::STEP_STARTED";
 //#region src/modules/chicken/ChickenModule.ts
 init_asyncToGenerator();
 var ChickenModule = class ChickenModule extends L {
+	showMultiplier(value) {
+		this.view.showCurrentMultiplier();
+		this.view.setMultiplierValue(value);
+	}
+	hideCurrentMultiplier() {
+		this.view.hideCurrentMultiplier();
+	}
 	makeFirstStep() {
 		var _this = this;
 		return _asyncToGenerator(function* () {
@@ -114179,6 +114184,41 @@ var ChickenModule = class ChickenModule extends L {
 	}
 };
 ChickenModule = __decorate([Z()], ChickenModule);
+//#endregion
+//#region src/modules/globalstate/states/GlobalStateIdle.ts
+var GlobalStateIdle = class extends GlobalModuleState {
+	constructor(module, name, eventManager) {
+		super(module, name, eventManager);
+		this._keypadController = module.diContainer.get(ChickenKeypadController);
+		this._goButtonModule = module.diContainer.get(GoButtonModule);
+		this._cashoutButtonModule = module.diContainer.get(CashoutButtonModule);
+		this._hudModule = module.diContainer.get(GameHUDModule);
+		this._chickenModule = module.diContainer.get(ChickenModule);
+	}
+	onEnterState() {
+		this._keypadController.enableOnRoundFinished();
+		this._keypadController.enableOnStepFinished();
+		this._hudModule.resetCounterNumber();
+		this._chickenModule.hideCurrentMultiplier();
+		this._cashoutButtonModule.hideButton();
+		this._goButtonModule.resetGame();
+	}
+	onLeaveState() {}
+	setupEvents() {
+		this.on(GoButtonEvents.GO_BUTTON_CLICKED, this.onSpinButtonPressed);
+		this.on(GameAutoplayHandlerEvents.AUTOPLAY_STEP, this.onAutostepStarted);
+	}
+	onAutostepStarted() {
+		this.module.gotoState(GlobalStateSpinModule.STEP);
+	}
+	onSpinButtonPressed() {
+		this._keypadController.disableOnRoundStarted();
+		this.module.gotoState(GlobalStateSpinModule.STEP);
+	}
+	get chickenGameController() {
+		return this.gameController;
+	}
+};
 //#endregion
 //#region src/modules/road/RoadView.ts
 init_asyncToGenerator();
@@ -114258,7 +114298,7 @@ var RoadView = (_RoadView2 = class RoadView extends q {
 				x: 0,
 				y: 8400
 			}, _this2.updateManager, _RoadView.CAR_DRIVE_DURATION)[0].getPromise();
-			car.play("STOP", 0, true);
+			car.play("STOP", 0, false, "STOPPED_IDLE");
 		})();
 	}
 	spawnFatalCar(laneIndex) {
@@ -114310,7 +114350,7 @@ var RoadView = (_RoadView2 = class RoadView extends q {
 		}, this.updateManager, _RoadView.CAR_DRIVE_DURATION)[0].getPromise().then(() => this.spineUtils.stopAndDestroyAnimation(car));
 	}
 	createCar(parentLane) {
-		return this.spineUtils.startSpineAnimationCreation("CAR.json", "DRIVING", true).position(0, this._laneTopY).container(parentLane).createAndStart();
+		return this.spineUtils.startSpineAnimationCreation("CAR.json", "DRIVING", true).position(0, this._laneTopY).skinName(_RoadView.CAR_SKINS[GameUtils.randomInt(0, _RoadView.CAR_SKINS.length - 1)]).container(parentLane).createAndStart();
 	}
 	createLane(index, skinName, hasCoin = true) {
 		const laneHeight = 1e4;
@@ -114345,7 +114385,11 @@ var RoadView = (_RoadView2 = class RoadView extends q {
 	onResized(screenParams) {
 		super.onResized(screenParams);
 	}
-}, _RoadView = _RoadView2, _RoadView2.FATAL_CAR_REACHED_CHICKEN = "RoadView::FATAL_CAR_REACHED_CHICKEN", _RoadView2.CAR_SPAWN_MIN_DELAY = 1e3, _RoadView2.CAR_SPAWN_MAX_DELAY = 4e3, _RoadView2.CAR_DRIVE_DURATION = 1e3, _RoadView2.CAR_OFFSCREEN_BUFFER = 400, _RoadView2.LANE_SHIFT_DURATION = 500, _RoadView2);
+}, _RoadView = _RoadView2, _RoadView2.CAR_SKINS = [
+	"BLACK",
+	"GREEN",
+	"RED"
+], _RoadView2.FATAL_CAR_REACHED_CHICKEN = "RoadView::FATAL_CAR_REACHED_CHICKEN", _RoadView2.CAR_SPAWN_MIN_DELAY = 1e3, _RoadView2.CAR_SPAWN_MAX_DELAY = 4e3, _RoadView2.CAR_DRIVE_DURATION = 1e3, _RoadView2.CAR_OFFSCREEN_BUFFER = 400, _RoadView2.LANE_SHIFT_DURATION = 500, _RoadView2);
 RoadView = _RoadView = __decorate([Z()], RoadView);
 //#endregion
 //#region src/modules/road/RoadEvents.ts
@@ -114381,31 +114425,6 @@ var RoadModule = class RoadModule extends L {
 };
 RoadModule = __decorate([Z()], RoadModule);
 //#endregion
-//#region src/hud/GameHUDView.ts
-var _GameHUDView2;
-var _GameHUDView;
-var GameHUDView = (_GameHUDView2 = class GameHUDView extends ji {
-	setupButtons() {
-		super.setupButtons();
-		this._menuButton = new GenericButton("MENU_BUTTON.json", void 0, this.spineUtils, this.onMenuButtonClicked.bind(this));
-		this.spineUtils.replaceSlotAttachment(this._footer, "MENU_BUTTON", this._menuButton.button);
-		this.container.addChild(this._menuButton.button);
-	}
-	onMenuButtonClicked() {
-		this.emit(_GameHUDView.MENU_BUTTON_CLICKED);
-	}
-}, _GameHUDView = _GameHUDView2, _GameHUDView2.MENU_BUTTON_CLICKED = "MenuButtonView::BUTTON_CLICKED", _GameHUDView2);
-GameHUDView = _GameHUDView = __decorate([Z()], GameHUDView);
-//#endregion
-//#region src/hud/GameHUDModule.ts
-var GameHUDModule = class GameHUDModule extends Mi {
-	setupEvents() {
-		super.setupEvents();
-		this.onViewEmitEvent(GameHUDView.MENU_BUTTON_CLICKED, MenuButtonEvents.CLICKED);
-	}
-};
-GameHUDModule = __decorate([Z()], GameHUDModule);
-//#endregion
 //#region src/modules/globalstate/states/GlobalStateStep.ts
 init_asyncToGenerator();
 var GlobalStateStep = class extends GlobalModuleState {
@@ -114422,8 +114441,10 @@ var GlobalStateStep = class extends GlobalModuleState {
 	onEnterState() {
 		var _this = this;
 		return _asyncToGenerator(function* () {
-			_this._keypadController.disableOnStepStarted();
 			_this._keypadController.disableOnRoundStarted();
+			_this._keypadController.disableOnStepStarted();
+			_this._cashoutButtonModule.hideButton();
+			_this._chickenModule.hideCurrentMultiplier();
 			_this.gameData.spinStartCleanup();
 			_this._roadModule.makeStep();
 			const awaitStuff = [];
@@ -114442,6 +114463,8 @@ var GlobalStateStep = class extends GlobalModuleState {
 				}));
 			}
 			yield Promise.all(awaitStuff);
+			_this._chickenModule.showMultiplier(_this.gameData.multipliers[_this.gameData.currentStep]);
+			_this._hudModule.setNewCounterNumber(_this.gameData.currentStep + 1);
 			if (_this.gameData.isDead) {
 				yield _this.playFatalCarSequence();
 				_this._roadModule.resetRound();
@@ -114462,6 +114485,7 @@ var GlobalStateStep = class extends GlobalModuleState {
 		return _asyncToGenerator(function* () {
 			_this2._roadModule.spawnFatalCar(_this2.gameData.currentStep);
 			yield _this2.queueEvents.getEventPromise(RoadEvents.FATAL_CAR_REACHED_CHICKEN);
+			_this2._chickenModule.hideCurrentMultiplier();
 			yield _this2._chickenModule.playDead();
 			_this2._goButtonModule.resetGame();
 		})();
@@ -114471,6 +114495,9 @@ var GlobalStateStep = class extends GlobalModuleState {
 	handleFirstStep() {
 		this._hudModule.clearWin();
 		this._hudModule.updateBalance();
+	}
+	onSpinButtonPressed() {
+		this.module.gotoState(GlobalStateSpinModule.STEP);
 	}
 	get chickenGameController() {
 		return this.gameController;
@@ -114486,14 +114513,13 @@ var GlobalStateWin = class extends GlobalModuleState {
 		this._bigWinModule = module.diContainer.get(ai);
 		this._spinButtonModule = module.diContainer.get(CashoutButtonModule);
 		this._hudModule = module.diContainer.get(GameHUDModule);
-		this._keypadController = module.diContainer.get(ChickenKeypadController);
 		this._chickenModule = module.diContainer.get(ChickenModule);
 		this._roadModule = module.diContainer.get(RoadModule);
 	}
 	onEnterState() {
 		var _this = this;
 		return _asyncToGenerator(function* () {
-			_this._keypadController.disableOnWinStarted();
+			_this._chickenModule.hideCurrentMultiplier();
 			if (_this.gameData.isNumberBigWin(_this.gameData.getTotalWin())) {
 				_this._bigWinModule.play(_this.gameData.getTotalWin());
 				_this.queueEvents.addFunctionCallingEventToWaitingList(BigWinEvents.FINISHED, _this.onBigWinFinished.bind(_this));
@@ -114529,7 +114555,6 @@ var GlobalStateWin = class extends GlobalModuleState {
 		})();
 	}
 	decideOnNextStateAfterWinPresentation() {
-		this._keypadController.enableOnWinFinished();
 		this.gameData.resetSteps();
 		this._roadModule.resetRound();
 		this._chickenModule.resetRound();
@@ -114590,8 +114615,9 @@ _GameGlobalEvents.CHICKEN_CAN_START_NEW_ROUND = "GameGlobalEvents::CHICKEN_CAN_S
 init_asyncToGenerator();
 var GlobalStateStepIdle = class extends GlobalStateIdle {
 	onEnterState() {
-		this._keypadController.enableOnStepFinished();
 		this.emit(GameGlobalEvents.CHICKEN_STEP_FINISHED);
+		this._keypadController.enableOnStepFinished();
+		this._cashoutButtonModule.showButton();
 	}
 	setupEvents() {
 		super.setupEvents();
@@ -114666,15 +114692,14 @@ var GlobalStateLose = class extends GlobalModuleState {
 		super(module, name, eventManager);
 		this._losePresentationModule = module.diContainer.get(LosePresentationModule);
 		this._hudModule = module.diContainer.get(GameHUDModule);
-		this._keypadController = module.diContainer.get(ChickenKeypadController);
 		this._chickenModule = module.diContainer.get(ChickenModule);
 		this._roadModule = module.diContainer.get(RoadModule);
 	}
 	onEnterState() {
 		var _this = this;
 		return _asyncToGenerator(function* () {
-			_this._keypadController.disableOnWinStarted();
 			_this._losePresentationModule.showPresentation();
+			_this._chickenModule.hideCurrentMultiplier();
 		})();
 	}
 	onLeaveState() {}
@@ -114694,7 +114719,6 @@ var GlobalStateLose = class extends GlobalModuleState {
 			yield _this3.gameController.complete((data) => {
 				_this3.gameData.reactOnComplete(data);
 			});
-			_this3._keypadController.enableOnWinFinished();
 			_this3._hudModule.updateBalance();
 			_this3.emit(GlobalStateEvents.CAN_SPIN);
 		})();
@@ -114740,6 +114764,7 @@ var BasicSlotAssetsManager = class extends or {
 			"BN.json",
 			"CHECKBOX.json",
 			"CLOSE_MENU_BUTTON.json",
+			"CURRENT_MULTIPLIER.json",
 			"FREE_SPINS_ADDITIONAL_SPINS.json",
 			"FREE_SPINS_ENTER_SCREENS.json",
 			"FREE_SPINS_EXIT_SCREENS.json",
@@ -114751,7 +114776,7 @@ var BasicSlotAssetsManager = class extends or {
 			"HUD_HEADER.json",
 			"HUD_FOOTER.json",
 			"HOME_BUTTON.json",
-			"LOGO_COMPANY_SILVERFOX.json",
+			"LOGO_COMPANY.json",
 			"LOGO_GAME.json",
 			"M1.json",
 			"M2.json",
@@ -114777,6 +114802,7 @@ var BasicSlotAssetsManager = class extends or {
 			"MAIN_UI_PORTRAIT.json",
 			"SOUND_BUTTON.json",
 			"START_SCREEN.json",
+			"STEP_NUMBER.json",
 			"SPIN_BUTTON.json",
 			"SPIN_BUTTON2.json",
 			"WR.json",
@@ -115009,6 +115035,21 @@ var ChickenView = (_ChickenView2 = class ChickenView extends q {
 		window.ChickenView = this;
 		const roadWidth = this.getConfigValue("game.roadWidth");
 		this._chicken = this.spineUtils.startSpineAnimationCreation("CHICKEN.json", "IDLE", true).position(-roadWidth, 0).createAndStart();
+		this._currentMultiplier = this.spineUtils.startSpineAnimationCreation("CURRENT_MULTIPLIER.json", "IDLE", true).createAndStart();
+		this._multiplierValue = new ni(this.assets, "COINS_");
+		this._multiplierValue.showNumber("0");
+		this.spineUtils.replaceSlotAttachment(this._currentMultiplier, "SYMBOL_NUMBER", this._multiplierValue);
+		this.spineUtils.replaceSlotAttachment(this._chicken, "CURRENT_MULTIPLIER", this._currentMultiplier.spine);
+		this.hideCurrentMultiplier();
+	}
+	showCurrentMultiplier() {
+		this._currentMultiplier.play("IDLE", 0, true);
+	}
+	hideCurrentMultiplier() {
+		this._currentMultiplier.play("INVISIBLE", 0, true);
+	}
+	setMultiplierValue(value) {
+		this._multiplierValue.showNumber(`x${value}`);
 	}
 	playDead() {
 		var _this = this;

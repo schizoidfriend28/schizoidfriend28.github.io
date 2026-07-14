@@ -1,0 +1,258 @@
+{
+"skeleton": {
+	"hash": "i5nYqg2x//g",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -120.5,
+	"y": -101,
+	"width": 241,
+	"height": 202,
+	"images": "../../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "GO_BUTTON", "parent": "root" }
+],
+"slots": [
+	{ "name": "GO_BUTTON_BACKPLATE", "bone": "GO_BUTTON", "attachment": "GUI/BUTTONS/RECTANGULAR_BUTTON_BASE" },
+	{ "name": "GO_BUTTON_ICON", "bone": "GO_BUTTON", "attachment": "GUI/BUTTONS/GO_BUTTON" },
+	{ "name": "GO_BUTTON_ICON_GLOW", "bone": "GO_BUTTON", "attachment": "GUI/BUTTONS/GO_BUTTON_GLOW" },
+	{ "name": "GO_BUTTON_BACKPLATE_GLOW", "bone": "GO_BUTTON", "attachment": "GUI/BUTTONS/RECTANGULAR_BUTTON_GLOW" },
+	{ "name": "GO_BUTTON_HITBOX", "bone": "GO_BUTTON", "attachment": "GO_BUTTON_HITBOX" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"GO_BUTTON_BACKPLATE": {
+				"GUI/BUTTONS/RECTANGULAR_BUTTON_BASE": { "width": 239, "height": 194 }
+			},
+			"GO_BUTTON_BACKPLATE_GLOW": {
+				"GUI/BUTTONS/RECTANGULAR_BUTTON_GLOW": { "width": 241, "height": 202 }
+			},
+			"GO_BUTTON_HITBOX": {
+				"GO_BUTTON_HITBOX": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -123.73, 120.15, 120.73, 123.06, 122.18, -120.67, -120.82, -124.3 ]
+				}
+			},
+			"GO_BUTTON_ICON": {
+				"GUI/BUTTONS/GO_BUTTON": { "width": 178, "height": 75 }
+			},
+			"GO_BUTTON_ICON_GLOW": {
+				"GUI/BUTTONS/GO_BUTTON_GLOW": { "width": 224, "height": 123 }
+			}
+		}
+	}
+],
+"animations": {
+	"DISABLED": {
+		"slots": {
+			"GO_BUTTON_BACKPLATE_GLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"GO_BUTTON_ICON": {
+				"rgb": [
+					{ "color": "000000" }
+				],
+				"alpha": [
+					{ "value": 0.3333 }
+				]
+			},
+			"GO_BUTTON_ICON_GLOW": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"ENTER": {
+		"slots": {
+			"GO_BUTTON_BACKPLATE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.33333334, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/RECTANGULAR_BUTTON_BASE" }
+				]
+			},
+			"GO_BUTTON_BACKPLATE_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.33333334, "value": 1 }
+				]
+			},
+			"GO_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 0.0011 },
+					{ "time": 0.33333334, "value": 0.9989 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/GO_BUTTON" }
+				]
+			},
+			"GO_BUTTON_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0.0011 },
+					{ "time": 0.33333334, "value": 1 }
+				]
+			}
+		}
+	},
+	"EXIT": {
+		"slots": {
+			"GO_BUTTON_BACKPLATE": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/RECTANGULAR_BUTTON_BASE" }
+				]
+			},
+			"GO_BUTTON_BACKPLATE_GLOW": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0 }
+				]
+			},
+			"GO_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0.0011 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/GO_BUTTON" }
+				]
+			},
+			"GO_BUTTON_ICON_GLOW": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0 }
+				]
+			}
+		}
+	},
+	"HOVER": {
+		"slots": {
+			"GO_BUTTON_BACKPLATE_GLOW": {
+				"attachment": [
+					{ "name": "GUI/BUTTONS/RECTANGULAR_BUTTON_GLOW" }
+				]
+			},
+			"GO_BUTTON_ICON": {
+				"attachment": [
+					{ "name": "GUI/BUTTONS/GO_BUTTON" }
+				]
+			},
+			"GO_BUTTON_ICON_GLOW": {
+				"attachment": [
+					{ "name": "GUI/BUTTONS/GO_BUTTON_GLOW" }
+				]
+			}
+		},
+		"bones": {
+			"GO_BUTTON": {
+				"scale": [
+					{ "x": 1.01, "y": 1.01 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"GO_BUTTON_BACKPLATE_GLOW": {
+				"alpha": [
+					{ "value": 0.39609998, "curve": "stepped" },
+					{ "time": 0.53333336, "value": 0.39609998 },
+					{ "time": 1.3333334, "value": 1 },
+					{ "time": 2.5000002, "value": 0.39609998, "curve": "stepped" },
+					{ "time": 2.6666667, "value": 0.39609998 }
+				],
+				"rgb": [
+					{ "color": "ffffff", "curve": "stepped" },
+					{ "time": 0.53333336, "color": "ffffff", "curve": "stepped" },
+					{ "time": 2.5000002, "color": "ffffff", "curve": "stepped" },
+					{ "time": 2.6666667, "color": "ffffff" }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/RECTANGULAR_BUTTON_GLOW" }
+				]
+			},
+			"GO_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 1 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/GO_BUTTON" }
+				]
+			},
+			"GO_BUTTON_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0.4978, "curve": "stepped" },
+					{ "time": 0.53333336, "value": 0.498 },
+					{ "time": 1.3333334, "value": 1 },
+					{ "time": 2.5000002, "value": 0.498, "curve": "stepped" },
+					{ "time": 2.6666667, "value": 0.498 }
+				],
+				"rgb": [
+					{ "time": 0.53333336, "color": "ffffff", "curve": "stepped" },
+					{ "time": 2.5000002, "color": "ffffff", "curve": "stepped" },
+					{ "time": 2.6666667, "color": "ffffff" }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/GO_BUTTON_GLOW" }
+				]
+			}
+		},
+		"bones": {
+			"GO_BUTTON": {
+				"scale": [
+					{},
+					{ "time": 1.3333334, "x": 1.05, "y": 1.05 },
+					{ "time": 2.6666667 }
+				]
+			}
+		}
+	},
+	"PRESSED": {
+		"slots": {
+			"GO_BUTTON_BACKPLATE_GLOW": {
+				"attachment": [
+					{ "name": "GUI/BUTTONS/RECTANGULAR_BUTTON_GLOW" }
+				]
+			},
+			"GO_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 1 }
+				],
+				"rgb": [
+					{ "color": "cccccc" }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/GO_BUTTON" }
+				]
+			},
+			"GO_BUTTON_ICON_GLOW": {
+				"rgb": [
+					{ "color": "cccaca" }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/GO_BUTTON_GLOW" }
+				]
+			}
+		},
+		"bones": {
+			"GO_BUTTON": {
+				"scale": [
+					{ "x": 0.98, "y": 0.98 }
+				]
+			}
+		}
+	}
+}
+}

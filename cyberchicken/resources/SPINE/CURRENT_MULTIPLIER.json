@@ -1,0 +1,71 @@
+{
+"skeleton": {
+	"hash": "pgTDpEUBGKk",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -72,
+	"y": -27.5,
+	"width": 204,
+	"height": 55,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "SYMBOL_MAIN", "parent": "root", "x": 30 },
+	{ "name": "SYMBOL_NUMBER", "parent": "SYMBOL_MAIN" },
+	{ "name": "SYMBOL_BACKPLATE", "parent": "SYMBOL_MAIN", "scaleX": 1.5 }
+],
+"slots": [
+	{ "name": "SYMBOL_BACKPLATE", "bone": "SYMBOL_BACKPLATE", "color": "474747a6", "attachment": "GENERIC/STEP_NUMBER_BACKPLATE", "blend": "multiply" },
+	{ "name": "SYMBOL_NUMBER", "bone": "SYMBOL_NUMBER", "attachment": "GENERIC/INVISIBLE_PLACEHOLDER" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"SYMBOL_BACKPLATE": {
+				"GENERIC/STEP_NUMBER_BACKPLATE": { "width": 136, "height": 55 }
+			},
+			"SYMBOL_NUMBER": {
+				"GENERIC/INVISIBLE_PLACEHOLDER": { "width": 1, "height": 1 }
+			}
+		}
+	}
+],
+"animations": {
+	"IDLE": {
+		"slots": {
+			"SYMBOL_BACKPLATE": {
+				"attachment": [
+					{ "name": "GENERIC/STEP_NUMBER_BACKPLATE" }
+				]
+			},
+			"SYMBOL_NUMBER": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"INVISIBLE": {
+		"slots": {
+			"SYMBOL_BACKPLATE": {
+				"alpha": [
+					{ "value": 0 }
+				],
+				"attachment": [
+					{}
+				]
+			},
+			"SYMBOL_NUMBER": {
+				"alpha": [
+					{ "value": 0 }
+				],
+				"attachment": [
+					{}
+				]
+			}
+		}
+	}
+}
+}

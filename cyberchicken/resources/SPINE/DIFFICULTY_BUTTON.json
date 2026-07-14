@@ -1,32 +1,32 @@
 {
 "skeleton": {
-	"hash": "79sZC2CLWFk",
+	"hash": "2YIrMlomVNo",
 	"spine": "4.2-from-4.3.39-beta",
-	"x": -87,
-	"y": -71.5,
-	"width": 174,
-	"height": 143,
+	"x": -117.5,
+	"y": -117.5,
+	"width": 235,
+	"height": 235,
 	"images": "../../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
 "bones": [
 	{ "name": "root" },
-	{ "name": "SOUND_BUTTON", "parent": "root" }
+	{ "name": "DIFFICULTY_BUTTON", "parent": "root" }
 ],
 "slots": [
-	{ "name": "SOUND_BUTTON_BACKPLATE", "bone": "SOUND_BUTTON" },
-	{ "name": "SOUND_BUTTON_ICON", "bone": "SOUND_BUTTON", "attachment": "SOUND_BUTTON_ICON" },
-	{ "name": "SOUND_BUTTON_HITBOX", "bone": "SOUND_BUTTON", "attachment": "SOUND_BUTTON_HITBOX" }
+	{ "name": "DIFFICULTY_BUTTON_BACKPLATE", "bone": "DIFFICULTY_BUTTON", "attachment": "GUI/BUTTONS/ROUND_BUTTON_BASE" },
+	{ "name": "DIFFICULTY_BUTTON_ICON", "bone": "DIFFICULTY_BUTTON", "attachment": "DIFFICULTY_BUTTON_ICON" },
+	{ "name": "DIFFICULTY_BUTTON_HITBOX", "bone": "DIFFICULTY_BUTTON", "attachment": "DIFFICULTY_BUTTON_HITBOX" }
 ],
 "skins": [
 	{
 		"name": "default",
 		"attachments": {
-			"SOUND_BUTTON_BACKPLATE": {
+			"DIFFICULTY_BUTTON_BACKPLATE": {
 				"GUI/BUTTONS/ROUND_BUTTON_BASE": { "width": 235, "height": 235 }
 			},
-			"SOUND_BUTTON_HITBOX": {
-				"SOUND_BUTTON_HITBOX": {
+			"DIFFICULTY_BUTTON_HITBOX": {
+				"DIFFICULTY_BUTTON_HITBOX": {
 					"type": "boundingbox",
 					"vertexCount": 4,
 					"vertices": [ -126.63, 122.33, 122.9, 123.06, 122.9, -125.75, -123.73, -124.3 ]
@@ -35,18 +35,26 @@
 		}
 	},
 	{
-		"name": "OFF",
+		"name": "HARD",
 		"attachments": {
-			"SOUND_BUTTON_ICON": {
-				"SOUND_BUTTON_ICON": { "name": "GUI/BUTTONS/SOUND_BUTTON_OFF", "color": "202020ff", "width": 174, "height": 143 }
+			"DIFFICULTY_BUTTON_ICON": {
+				"DIFFICULTY_BUTTON_ICON": { "name": "GUI/BUTTONS/DIFFICULTY_BUTTON_HARD", "width": 138, "height": 112 }
 			}
 		}
 	},
 	{
-		"name": "ON",
+		"name": "LOW",
 		"attachments": {
-			"SOUND_BUTTON_ICON": {
-				"SOUND_BUTTON_ICON": { "name": "GUI/BUTTONS/SOUND_BUTTON", "width": 174, "height": 143 }
+			"DIFFICULTY_BUTTON_ICON": {
+				"DIFFICULTY_BUTTON_ICON": { "name": "GUI/BUTTONS/DIFFICULTY_BUTTON_LOW", "width": 138, "height": 112 }
+			}
+		}
+	},
+	{
+		"name": "MEDIUM",
+		"attachments": {
+			"DIFFICULTY_BUTTON_ICON": {
+				"DIFFICULTY_BUTTON_ICON": { "name": "GUI/BUTTONS/DIFFICULTY_BUTTON_MEDIUM", "width": 138, "height": 112 }
 			}
 		}
 	}
@@ -54,7 +62,7 @@
 "animations": {
 	"DISABLED": {
 		"slots": {
-			"SOUND_BUTTON_BACKPLATE": {
+			"DIFFICULTY_BUTTON_BACKPLATE": {
 				"rgb": [
 					{ "color": "000000" }
 				],
@@ -62,7 +70,7 @@
 					{ "value": 0.3333 }
 				]
 			},
-			"SOUND_BUTTON_ICON": {
+			"DIFFICULTY_BUTTON_ICON": {
 				"rgb": [
 					{ "color": "000000" }
 				],
@@ -74,13 +82,13 @@
 	},
 	"ENTER": {
 		"slots": {
-			"SOUND_BUTTON_BACKPLATE": {
+			"DIFFICULTY_BUTTON_BACKPLATE": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.33333334, "value": 1 }
 				]
 			},
-			"SOUND_BUTTON_ICON": {
+			"DIFFICULTY_BUTTON_ICON": {
 				"alpha": [
 					{ "value": 0.0011 },
 					{ "time": 0.33333334, "value": 0.9989 }
@@ -89,20 +97,20 @@
 					{ "color": "e5e5e5" }
 				],
 				"attachment": [
-					{ "name": "SOUND_BUTTON_ICON" }
+					{ "name": "DIFFICULTY_BUTTON_ICON" }
 				]
 			}
 		}
 	},
 	"EXIT": {
 		"slots": {
-			"SOUND_BUTTON_BACKPLATE": {
+			"DIFFICULTY_BUTTON_BACKPLATE": {
 				"alpha": [
 					{ "value": 1 },
 					{ "time": 0.33333334, "value": 0 }
 				]
 			},
-			"SOUND_BUTTON_ICON": {
+			"DIFFICULTY_BUTTON_ICON": {
 				"alpha": [
 					{ "value": 1 },
 					{ "time": 0.33333334, "value": 0.0011 }
@@ -111,21 +119,21 @@
 					{ "color": "e5e5e5" }
 				],
 				"attachment": [
-					{ "name": "SOUND_BUTTON_ICON" }
+					{ "name": "DIFFICULTY_BUTTON_ICON" }
 				]
 			}
 		}
 	},
 	"HOVER": {
 		"slots": {
-			"SOUND_BUTTON_ICON": {
+			"DIFFICULTY_BUTTON_ICON": {
 				"attachment": [
-					{ "name": "SOUND_BUTTON_ICON" }
+					{ "name": "DIFFICULTY_BUTTON_ICON" }
 				]
 			}
 		},
 		"bones": {
-			"SOUND_BUTTON": {
+			"DIFFICULTY_BUTTON": {
 				"scale": [
 					{ "x": 1.03, "y": 1.03 }
 				]
@@ -134,7 +142,7 @@
 	},
 	"IDLE": {
 		"slots": {
-			"SOUND_BUTTON_ICON": {
+			"DIFFICULTY_BUTTON_ICON": {
 				"alpha": [
 					{ "value": 1 }
 				],
@@ -142,14 +150,14 @@
 					{ "color": "e5e5e5" }
 				],
 				"attachment": [
-					{ "name": "SOUND_BUTTON_ICON" }
+					{ "name": "DIFFICULTY_BUTTON_ICON" }
 				]
 			}
 		}
 	},
 	"PRESSED": {
 		"slots": {
-			"SOUND_BUTTON_ICON": {
+			"DIFFICULTY_BUTTON_ICON": {
 				"alpha": [
 					{ "value": 1 }
 				],
@@ -157,12 +165,12 @@
 					{ "color": "cccccc" }
 				],
 				"attachment": [
-					{ "name": "SOUND_BUTTON_ICON" }
+					{ "name": "DIFFICULTY_BUTTON_ICON" }
 				]
 			}
 		},
 		"bones": {
-			"SOUND_BUTTON": {
+			"DIFFICULTY_BUTTON": {
 				"scale": [
 					{ "x": 0.97, "y": 0.97 }
 				]

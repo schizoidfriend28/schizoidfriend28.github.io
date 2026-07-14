@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "td3GGeLZQBE",
+	"hash": "iu29UEAMfkM",
 	"spine": "4.2-from-4.3.39-beta",
 	"x": -977.0999,
 	"y": -54,
@@ -11,17 +11,17 @@
 },
 "bones": [
 	{ "name": "HUD_FOOTER_ROOT" },
-	{ "name": "BALANCE_VALUE_PORTRAIT", "parent": "HUD_FOOTER_ROOT", "x": -413, "scaleX": 0.8, "scaleY": 0.8 },
+	{ "name": "BALANCE_VALUE_PORTRAIT", "parent": "HUD_FOOTER_ROOT", "x": -173, "scaleX": 0.8, "scaleY": 0.8 },
 	{ "name": "FOOTER", "parent": "HUD_FOOTER_ROOT" },
-	{ "name": "WIN_ICON", "parent": "HUD_FOOTER_ROOT", "x": -60 },
-	{ "name": "WIN_VALUE_PORTRAIT", "parent": "HUD_FOOTER_ROOT", "x": -2, "scaleX": 0.8, "scaleY": 0.8 },
+	{ "name": "WIN_ICON", "parent": "HUD_FOOTER_ROOT", "x": 80 },
+	{ "name": "WIN_VALUE_PORTRAIT", "parent": "HUD_FOOTER_ROOT", "x": 138, "scaleX": 0.8, "scaleY": 0.8 },
 	{ "name": "BET_VALUE_PORTRAIT", "parent": "HUD_FOOTER_ROOT", "x": 413, "scaleX": 0.8, "scaleY": 0.8 },
 	{ "name": "BET_ICON", "parent": "HUD_FOOTER_ROOT", "x": 468 },
-	{ "name": "WIN_VALUE_LANDSCAPE", "parent": "HUD_FOOTER_ROOT", "x": -2, "scaleX": 0.8, "scaleY": 0.8 },
+	{ "name": "WIN_VALUE_LANDSCAPE", "parent": "HUD_FOOTER_ROOT", "x": 138, "scaleX": 0.8, "scaleY": 0.8 },
 	{ "name": "BET_VALUE_LANDSCAPE", "parent": "HUD_FOOTER_ROOT", "x": 413, "scaleX": 0.8, "scaleY": 0.8 },
-	{ "name": "BALANCE_VALUE_LANDSCAPE", "parent": "HUD_FOOTER_ROOT", "x": -413, "scaleX": 0.8, "scaleY": 0.8 },
-	{ "name": "BALANCE_ICON", "parent": "HUD_FOOTER_ROOT", "x": -468 },
-	{ "name": "MENU_BUTTON", "parent": "HUD_FOOTER_ROOT", "x": -788, "scaleX": 1.3, "scaleY": 1.3 }
+	{ "name": "BALANCE_VALUE_LANDSCAPE", "parent": "HUD_FOOTER_ROOT", "x": -173, "scaleX": 0.8, "scaleY": 0.8 },
+	{ "name": "BALANCE_ICON", "parent": "HUD_FOOTER_ROOT", "x": -228 },
+	{ "name": "MENU_BUTTON", "parent": "HUD_FOOTER_ROOT", "x": -428, "y": -4.6402893, "scaleX": 0.8, "scaleY": 0.8 }
 ],
 "slots": [
 	{ "name": "FOOTER", "bone": "FOOTER", "color": "ffffffcb", "attachment": "GUI/HUD/HUD_FOOTER_BCKGR" },

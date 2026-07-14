@@ -1,17 +1,17 @@
 {
 "skeleton": {
-	"hash": "RngI+fSS71U",
+	"hash": "Vjp4ks7DEoc",
 	"spine": "4.2-from-4.3.39-beta",
-	"x": -175,
+	"x": -78.04692,
 	"y": -72.045975,
-	"width": 350,
+	"width": 158.85957,
 	"height": 157.56662,
-	"images": "../../GRAPHIC_ASSETS/",
+	"images": "../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
 "bones": [
 	{ "name": "root" },
-	{ "name": "LOGO_GAME_MAIN", "parent": "root" },
+	{ "name": "LOGO_COMPANY_MAIN", "parent": "root" },
 	{ "name": "FX", "parent": "root" },
 	{ "name": "SHIMMER_01", "parent": "FX", "x": -88.45699, "y": 43.999702, "scaleX": 0.3, "scaleY": 0.6 },
 	{ "name": "SHIMMER_02", "parent": "FX", "x": 107.56827, "y": 27.923494, "scaleX": 0.3, "scaleY": 0.3 },
@@ -22,25 +22,25 @@
 	{ "name": "SHIMMER_07", "parent": "FX", "x": -65.54692, "y": -53.295975, "scaleX": 0.2, "scaleY": 0.3 }
 ],
 "slots": [
-	{ "name": "LOGO_GAME_MAIN", "bone": "LOGO_GAME_MAIN", "attachment": "GENERIC/LOGO_GAME_TXT_ALT1" },
-	{ "name": "LOGO_GAME_MAIN_SHINE", "bone": "LOGO_GAME_MAIN", "blend": "additive" },
-	{ "name": "SHIMMER_01", "bone": "SHIMMER_01", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
-	{ "name": "SHIMMER_02", "bone": "SHIMMER_02", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
-	{ "name": "SHIMMER_03", "bone": "SHIMMER_03", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
-	{ "name": "SHIMMER_06", "bone": "SHIMMER_06", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
-	{ "name": "SHIMMER_07", "bone": "SHIMMER_07", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
-	{ "name": "SHIMMER_04", "bone": "SHIMMER_04", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
-	{ "name": "SHIMMER_05", "bone": "SHIMMER_05", "attachment": "FX/BASE_SHINE_2", "blend": "screen" }
+	{ "name": "LOGO_COMPANY_MAIN", "bone": "LOGO_COMPANY_MAIN", "attachment": "GENERIC/LOGO_COMPANY" },
+	{ "name": "LOGO_COMPANY_MAIN_SHINE", "bone": "LOGO_COMPANY_MAIN", "blend": "additive" },
+	{ "name": "SHIMMER_01", "bone": "SHIMMER_01", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
+	{ "name": "SHIMMER_02", "bone": "SHIMMER_02", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
+	{ "name": "SHIMMER_03", "bone": "SHIMMER_03", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
+	{ "name": "SHIMMER_06", "bone": "SHIMMER_06", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
+	{ "name": "SHIMMER_07", "bone": "SHIMMER_07", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
+	{ "name": "SHIMMER_04", "bone": "SHIMMER_04", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
+	{ "name": "SHIMMER_05", "bone": "SHIMMER_05", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" }
 ],
 "skins": [
 	{
 		"name": "default",
 		"attachments": {
-			"LOGO_GAME_MAIN": {
-				"GENERIC/LOGO_GAME_TXT_ALT1": { "width": 350, "height": 98 }
+			"LOGO_COMPANY_MAIN": {
+				"GENERIC/LOGO_COMPANY": { "width": 133, "height": 133 }
 			},
-			"LOGO_GAME_MAIN_SHINE": {
-				"GENERIC/LOGO_GAME": { "width": 391, "height": 425 }
+			"LOGO_COMPANY_MAIN_SHINE": {
+				"GENERIC/LOGO_COMPANY": { "width": 133, "height": 133 }
 			},
 			"SHIMMER_01": {
 				"FX/BASE_SHINE_2": { "x": 115.35841, "y": 6.701576, "width": 125, "height": 125 }
@@ -69,7 +69,7 @@
 "animations": {
 	"ENTER": {
 		"slots": {
-			"LOGO_GAME_MAIN": {
+			"LOGO_COMPANY_MAIN": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.33333334, "value": 1 }
@@ -79,7 +79,7 @@
 	},
 	"EXIT": {
 		"slots": {
-			"LOGO_GAME_MAIN": {
+			"LOGO_COMPANY_MAIN": {
 				"alpha": [
 					{ "value": 1 },
 					{ "time": 0.33333334, "value": 0 }
@@ -89,17 +89,17 @@
 	},
 	"IDLE": {
 		"slots": {
-			"LOGO_GAME_MAIN": {
+			"LOGO_COMPANY_MAIN": {
 				"attachment": [
-					{ "name": "GENERIC/LOGO_GAME_TXT_ALT1" }
+					{ "name": "GENERIC/LOGO_COMPANY" }
 				]
 			},
-			"LOGO_GAME_MAIN_SHINE": {
+			"LOGO_COMPANY_MAIN_SHINE": {
 				"alpha": [
 					{ "value": 0 }
 				],
 				"attachment": [
-					{ "name": "GENERIC/LOGO_GAME" }
+					{ "name": "GENERIC/LOGO_COMPANY" }
 				]
 			},
 			"SHIMMER_01": {

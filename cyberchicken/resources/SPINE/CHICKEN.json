@@ -1,11 +1,11 @@
 {
 "skeleton": {
-	"hash": "HSIEvY7O8V0",
+	"hash": "T0g6FFXaWok",
 	"spine": "4.2-from-4.3.39-beta",
-	"x": -204,
-	"y": -245,
-	"width": 422.5,
-	"height": 472.5,
+	"x": -165,
+	"y": -196.5,
+	"width": 348,
+	"height": 380.5,
 	"images": "../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
@@ -13,35 +13,270 @@
 	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
 	{ "name": "SYMBOL_ANCHOR", "parent": "MAIN_ROOT", "color": "ff0000ff", "icon": "square" },
 	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_MAIN", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_ICON_MAIN", "color": "1eff00ff", "icon": "square" },
 	{ "name": "WIN_INDICATIONS", "parent": "MAIN_ROOT", "color": "ffbf00ff", "icon": "diamond" },
-	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_ICON", "color": "1eff00ff", "icon": "square" },
 	{ "name": "SYMBOL_SHADOWS", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON_SHADOW3", "parent": "SYMBOL_SHADOWS", "x": 13, "y": -15, "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON_SHADOW4", "parent": "SYMBOL_SHADOWS", "x": 13, "y": -15, "color": "1eff00ff", "icon": "square" }
+	{ "name": "SYMBOL_ICON_SHADOW3", "parent": "SYMBOL_SHADOWS", "x": 13, "y": -145, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_SHADOW4", "parent": "SYMBOL_SHADOWS", "x": 13, "y": -145, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_ICON_MAIN", "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_PARTS", "parent": "SYMBOL_ICON_MAIN", "color": "1eff00ff", "icon": "square" },
+	{ "name": "BODY", "parent": "SYMBOL_ICON_PARTS", "color": "1eff00ff", "icon": "square" },
+	{ "name": "HEAD", "parent": "SYMBOL_ICON_PARTS", "color": "1eff00ff", "icon": "square" },
+	{ "name": "LEG_RIGHT", "parent": "SYMBOL_ICON_PARTS", "color": "1eff00ff", "icon": "square" },
+	{ "name": "LEG_LEFT", "parent": "SYMBOL_ICON_PARTS", "color": "1eff00ff", "icon": "square" },
+	{ "name": "TAIL", "parent": "SYMBOL_ICON_PARTS", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_BODY_CORPUS_BOTTOM", "parent": "BODY", "x": -3, "y": -39, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_BODY_GEAR", "parent": "BODY", "x": 39, "y": -8, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_BODY_PLATE1", "parent": "BODY", "x": -31, "y": -37, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_BODY_PLATE2", "parent": "BODY", "x": -20, "y": -55, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_BODY_CORPUS_TOP", "parent": "BODY", "x": 68, "y": 1, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_COMB", "parent": "HEAD", "x": 81, "y": 134, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_EYE", "parent": "HEAD", "x": 100, "y": 88, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_HEAD", "parent": "HEAD", "x": 105, "y": 84, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_LEG_HOCK_LEFT", "parent": "LEG_LEFT", "x": 51, "y": -53, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_LEG_HOCK_RIGHT", "parent": "LEG_RIGHT", "x": 5, "y": -66, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_LEG_SHANK_LEFT", "parent": "LEG_LEFT", "x": 35, "y": -120, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_LEG_SHANK_RIGHT", "parent": "LEG_RIGHT", "x": -11, "y": -137, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_LEG_TOES_LEFT", "parent": "LEG_LEFT", "x": 57, "y": -140, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_LEG_TOES_RIGHT", "parent": "LEG_RIGHT", "x": 11, "y": -158, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_NECK", "parent": "SYMBOL_ICON_PARTS", "x": 77, "y": 46, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_TAIL_FEATHER1", "parent": "TAIL", "x": -86, "y": 40, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_TAIL_FEATHER2", "parent": "TAIL", "x": -89, "y": 21, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_TAIL_FEATHER3", "parent": "TAIL", "x": -92, "y": -7, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_WATTLES", "parent": "HEAD", "x": 118, "y": 49, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_WING", "parent": "SYMBOL_ICON_PARTS", "x": 14, "y": -21, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_GLOW_PARTS", "parent": "SYMBOL_ICON_GLOW", "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_WING", "parent": "SYMBOL_ICON_GLOW_PARTS", "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "GLOWS_TAIL", "parent": "SYMBOL_ICON_GLOW_PARTS", "color": "ffffffff" },
+	{ "name": "SYMBOL_ICON_GLOW_TAIL_FEATHER1", "parent": "GLOWS_TAIL", "x": -90, "y": 40, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_TAIL_FEATHER2", "parent": "GLOWS_TAIL", "x": -109, "y": 52, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_TAIL_FEATHER3", "parent": "GLOWS_TAIL", "x": -90, "y": -7, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 10, "y": -36, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_BODY_CORPUS_TOP", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 10, "y": -36, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_NECK", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 65, "y": 61, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_BODY_GEAR", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 39, "y": -6, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_COMB", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 65, "y": 61, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_WATTLES", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 65, "y": 61, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "GLOWS_LEG_RIGHT", "parent": "SYMBOL_ICON_GLOW_PARTS", "color": "ffffffff" },
+	{ "name": "SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT", "parent": "GLOWS_LEG_RIGHT", "x": -10, "y": -57, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT", "parent": "GLOWS_LEG_RIGHT", "x": -42, "y": -115, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_BODY_PLATE2", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": -21, "y": -55, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_BODY_PLATE1", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": -21, "y": -55, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_HEAD", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 86, "y": 77, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_GLOW_EYE", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 86, "y": 77, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "CURRENT_MULTIPLIER", "parent": "SYMBOL_ROOT", "y": -220, "color": "1eff00ff", "icon": "romanX" }
 ],
 "slots": [
+	{ "name": "SYMBOL_ICON_SHADOW3", "bone": "SYMBOL_ICON_SHADOW3", "color": "ffffff5f", "attachment": "CHICKEN/CHICKEN_SHADOW", "blend": "multiply" },
+	{ "name": "SYMBOL_ICON_SHADOW4", "bone": "SYMBOL_ICON_SHADOW4", "color": "ffffff5f", "attachment": "CHICKEN/CHICKEN_SHADOW", "blend": "multiply" },
+	{ "name": "ICON/SYMBOL_ICON", "bone": "SYMBOL_ICON" },
+	{ "name": "ICON/SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a40000", "attachment": "CHICKEN/CHICKEN_ICON_GLOW", "blend": "additive" },
+	{ "name": "ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER2", "bone": "SYMBOL_ICON_TAIL_FEATHER2", "attachment": "CHICKEN/CHICKEN_ICON_TAIL_FEATHER2" },
+	{ "name": "ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER3", "bone": "SYMBOL_ICON_TAIL_FEATHER3", "attachment": "CHICKEN/CHICKEN_ICON_TAIL_FEATHER3" },
+	{ "name": "ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER1", "bone": "SYMBOL_ICON_TAIL_FEATHER1", "attachment": "CHICKEN/CHICKEN_ICON_TAIL_FEATHER1" },
+	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE", "bone": "SYMBOL_ICON_GLOW_TAIL_FEATHER2", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER2_BLUE", "blend": "screen" },
+	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_YELLOW", "bone": "SYMBOL_ICON_GLOW_TAIL_FEATHER2", "color": "f95700ff", "blend": "additive" },
+	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE", "bone": "SYMBOL_ICON_GLOW_TAIL_FEATHER3", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER3_BLUE", "blend": "screen" },
+	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_YELLOW", "bone": "SYMBOL_ICON_GLOW_TAIL_FEATHER3", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER3_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_BLUE2", "bone": "SYMBOL_ICON_GLOW_TAIL_FEATHER1", "color": "00cbffff", "blend": "screen" },
+	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW", "bone": "SYMBOL_ICON_GLOW_TAIL_FEATHER1", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER1_YELLOW", "blend": "additive" },
+	{ "name": "ICON/LEG_LEFT/SYMBOL_ICON_LEG_SHANK_LEFT", "bone": "SYMBOL_ICON_LEG_SHANK_LEFT", "attachment": "CHICKEN/CHICKEN_ICON_LEG_SHANK_LEFT" },
+	{ "name": "ICON/LEG_LEFT/SYMBOL_ICON_LEG_TOES_LEFT", "bone": "SYMBOL_ICON_LEG_TOES_LEFT", "attachment": "CHICKEN/CHICKEN_ICON_LEG_TOES_LEFT" },
+	{ "name": "ICON/LEG_LEFT/SYMBOL_ICON_LEG_HOCK_LEFT", "bone": "SYMBOL_ICON_LEG_HOCK_LEFT", "attachment": "CHICKEN/CHICKEN_ICON_LEG_HOCK_LEFT" },
+	{ "name": "ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_GEAR", "bone": "SYMBOL_ICON_BODY_GEAR", "attachment": "CHICKEN/CHICKEN_ICON_BODY_GEAR" },
+	{ "name": "ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_CORPUS_BOTTOM", "bone": "SYMBOL_ICON_BODY_CORPUS_BOTTOM", "attachment": "CHICKEN/CHICKEN_ICON_BODY_CORPUS_BOTTOM" },
+	{ "name": "ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW", "bone": "SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_BOTTOM_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE", "bone": "SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_BOTTOM_BLUE", "blend": "screen" },
+	{ "name": "ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE", "bone": "SYMBOL_ICON_GLOW_BODY_GEAR", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_BLUE", "blend": "screen" },
+	{ "name": "ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW", "bone": "SYMBOL_ICON_GLOW_BODY_GEAR", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_YELLOW", "blend": "additive" },
+	{ "name": "ICON/LEG_RIGHT/SYMBOL_ICON_LEG_SHANK_RIGHT", "bone": "SYMBOL_ICON_LEG_SHANK_RIGHT", "attachment": "CHICKEN/CHICKEN_ICON_LEG_SHANK_RIGHT" },
+	{ "name": "ICON/LEG_RIGHT/SYMBOL_ICON_LEG_TOES_RIGHT", "bone": "SYMBOL_ICON_LEG_TOES_RIGHT", "attachment": "CHICKEN/CHICKEN_ICON_LEG_TOES_RIGHT" },
+	{ "name": "ICON/LEG_RIGHT/SYMBOL_ICON_LEG_HOCK_RIGHT", "bone": "SYMBOL_ICON_LEG_HOCK_RIGHT", "attachment": "CHICKEN/CHICKEN_ICON_LEG_HOCK_RIGHT" },
+	{ "name": "ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_BLUE", "bone": "SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT", "color": "00cbffff", "blend": "screen" },
+	{ "name": "ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_BLUE", "bone": "SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT", "color": "00cbffff", "blend": "screen" },
+	{ "name": "ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW", "bone": "SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_LEG_HOCK_RIGHT_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW", "bone": "SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_LEG_SHANK_RIGHT_YELLOW", "blend": "additive" },
+	{ "name": "ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE1", "bone": "SYMBOL_ICON_BODY_PLATE1", "attachment": "CHICKEN/CHICKEN_ICON_BODY_PLATE1" },
+	{ "name": "ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE2", "bone": "SYMBOL_ICON_BODY_PLATE2", "attachment": "CHICKEN/CHICKEN_ICON_BODY_PLATE2" },
+	{ "name": "ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW", "bone": "SYMBOL_ICON_GLOW_BODY_PLATE2", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_PLATE2_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW", "bone": "SYMBOL_ICON_GLOW_BODY_PLATE1", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_PLATE1_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE", "bone": "SYMBOL_ICON_GLOW_BODY_PLATE2", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_BLUE", "blend": "screen" },
+	{ "name": "ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE", "bone": "SYMBOL_ICON_GLOW_BODY_PLATE1", "color": "00cbffff", "blend": "screen" },
+	{ "name": "ICON/SYMBOL_ICON_BODY_CORPUS_TOP", "bone": "SYMBOL_ICON_BODY_CORPUS_TOP", "attachment": "CHICKEN/CHICKEN_ICON_BODY_CORPUS_TOP" },
+	{ "name": "ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW", "bone": "SYMBOL_ICON_GLOW_BODY_CORPUS_TOP", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_TOP_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE", "bone": "SYMBOL_ICON_GLOW_BODY_CORPUS_TOP", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_TOP_BLUE", "blend": "screen" },
+	{ "name": "ICON/SYMBOL_ICON_NECK", "bone": "SYMBOL_ICON_NECK", "attachment": "CHICKEN/CHICKEN_ICON_NECK" },
+	{ "name": "ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW", "bone": "SYMBOL_ICON_GLOW_NECK", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_NECK_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE", "bone": "SYMBOL_ICON_GLOW_NECK", "color": "00cbffff", "blend": "screen" },
+	{ "name": "ICON/COMB_WATTLES/SYMBOL_ICON_WATTLES", "bone": "SYMBOL_ICON_WATTLES", "attachment": "CHICKEN/CHICKEN_ICON_WATTLES" },
+	{ "name": "ICON/COMB_WATTLES/SYMBOL_ICON_COMB", "bone": "SYMBOL_ICON_COMB", "attachment": "CHICKEN/CHICKEN_ICON_COMB" },
+	{ "name": "ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE", "bone": "SYMBOL_ICON_GLOW_COMB", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_COMB_FILL_BLUE", "blend": "additive" },
+	{ "name": "ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE", "bone": "SYMBOL_ICON_GLOW_WATTLES", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_WATTLES_FILL_BLUE", "blend": "additive" },
+	{ "name": "ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE", "bone": "SYMBOL_ICON_GLOW_COMB", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_COMB_CONTOUR_BLUE", "blend": "screen" },
+	{ "name": "ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE", "bone": "SYMBOL_ICON_GLOW_WATTLES", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_WATTLES_CONTOUR_BLUE", "blend": "screen" },
+	{ "name": "ICON/HEAD/SYMBOL_ICON_EYE", "bone": "SYMBOL_ICON_EYE", "attachment": "CHICKEN/CHICKEN_ICON_EYE" },
+	{ "name": "ICON/HEAD/SYMBOL_ICON_HEAD", "bone": "SYMBOL_ICON_HEAD", "attachment": "CHICKEN/CHICKEN_ICON_HEAD" },
+	{ "name": "ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW", "bone": "SYMBOL_ICON_GLOW_HEAD", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_HEAD_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_BLUE", "bone": "SYMBOL_ICON_GLOW_HEAD", "color": "00cbffff", "blend": "screen" },
+	{ "name": "ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW", "bone": "SYMBOL_ICON_GLOW_EYE", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_EYE_IRIS_YELLOW", "blend": "screen" },
+	{ "name": "ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW", "bone": "SYMBOL_ICON_GLOW_EYE", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_EYE_PUPIL_YELLOW", "blend": "additive" },
+	{ "name": "ICON/SYMBOL_ICON_WING", "bone": "SYMBOL_ICON_WING", "attachment": "CHICKEN/CHICKEN_ICON_WING" },
+	{ "name": "ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW", "bone": "SYMBOL_ICON_GLOW_WING", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_WING_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE", "bone": "SYMBOL_ICON_GLOW_WING", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_WING_BLUE", "blend": "screen" },
 	{ "name": "WIN_INDICATIONS", "bone": "WIN_INDICATIONS" },
-	{ "name": "SYMBOL_ICON_SHADOW3", "bone": "SYMBOL_ICON_SHADOW3", "attachment": "CHICKEN/CHICKEN_SHADOW", "blend": "multiply" },
-	{ "name": "SYMBOL_ICON_SHADOW4", "bone": "SYMBOL_ICON_SHADOW4", "attachment": "CHICKEN/CHICKEN_SHADOW", "blend": "multiply" },
-	{ "name": "SYMBOL_ICON", "bone": "SYMBOL_ICON", "attachment": "CHICKEN/CHICKEN" },
-	{ "name": "SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a40000", "attachment": "CHICKEN/CHICKEN_GLOW", "blend": "additive" }
+	{ "name": "CURRENT_MULTIPLIER", "bone": "CURRENT_MULTIPLIER" }
 ],
 "skins": [
 	{
 		"name": "default",
 		"attachments": {
-			"SYMBOL_ICON": {
-				"CHICKEN/CHICKEN": { "width": 374, "height": 420 }
-			},
-			"SYMBOL_ICON_GLOW": {
-				"CHICKEN/CHICKEN_GLOW": { "width": 408, "height": 455 }
-			},
 			"SYMBOL_ICON_SHADOW3": {
-				"CHICKEN/CHICKEN_SHADOW": { "width": 411, "height": 460 }
+				"CHICKEN/CHICKEN_SHADOW": { "width": 340, "height": 103 }
 			},
 			"SYMBOL_ICON_SHADOW4": {
-				"CHICKEN/CHICKEN_SHADOW": { "width": 411, "height": 460 }
+				"CHICKEN/CHICKEN_SHADOW": { "width": 340, "height": 103 }
+			},
+			"ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_CORPUS_BOTTOM": {
+				"CHICKEN/CHICKEN_ICON_BODY_CORPUS_BOTTOM": { "width": 150, "height": 120 }
+			},
+			"ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_GEAR": {
+				"CHICKEN/CHICKEN_ICON_BODY_GEAR": { "width": 59, "height": 61 }
+			},
+			"ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE1": {
+				"CHICKEN/CHICKEN_ICON_BODY_PLATE1": { "width": 96, "height": 103 }
+			},
+			"ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE2": {
+				"CHICKEN/CHICKEN_ICON_BODY_PLATE2": { "width": 65, "height": 65 }
+			},
+			"ICON/COMB_WATTLES/SYMBOL_ICON_COMB": {
+				"CHICKEN/CHICKEN_ICON_COMB": { "width": 94, "height": 73 }
+			},
+			"ICON/COMB_WATTLES/SYMBOL_ICON_WATTLES": {
+				"CHICKEN/CHICKEN_ICON_WATTLES": { "width": 28, "height": 54 }
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_BOTTOM_BLUE": { "x": 17, "y": -44, "width": 66, "height": 30 }
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_BOTTOM_YELLOW": { "x": 20, "y": -6, "width": 63, "height": 114 }
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_BLUE": { "width": 25, "height": 25 }
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_YELLOW": { "width": 43, "height": 43 }
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_TOP_BLUE": { "x": 61, "y": 24, "width": 73, "height": 121 }
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_TOP_YELLOW": { "x": 67, "y": 42, "width": 79, "height": 147 }
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_PLATE1_YELLOW": { "x": -27, "y": 32, "width": 48, "height": 56 }
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_BLUE": { "width": 25, "height": 25 }
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_PLATE2_YELLOW": { "width": 43, "height": 43 }
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_COMB_CONTOUR_BLUE": { "x": 17, "y": 73, "width": 95, "height": 74 }
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_COMB_FILL_BLUE": { "x": 17, "y": 71, "width": 88, "height": 68 }
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_WATTLES_CONTOUR_BLUE": { "x": 53, "y": -12, "width": 31, "height": 57 }
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_WATTLES_FILL_BLUE": { "x": 53, "y": -12, "width": 25, "height": 53 }
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_EYE_IRIS_YELLOW": { "x": 15, "y": 11, "width": 34, "height": 34 }
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_EYE_PUPIL_YELLOW": { "x": 15, "y": 12, "width": 43, "height": 43 }
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_HEAD_YELLOW": { "x": 18, "y": -8, "width": 21, "height": 21 }
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_LEG_HOCK_RIGHT_YELLOW": { "x": 18, "y": -8, "width": 70, "height": 101 }
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_LEG_SHANK_RIGHT_YELLOW": { "x": 18, "y": -8, "width": 13, "height": 13 }
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_NECK_YELLOW": { "x": 18, "y": -8, "width": 45, "height": 105 }
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER1_YELLOW": { "x": 18, "y": -8, "width": 91, "height": 106 }
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER2_BLUE": { "x": 26, "y": -30, "width": 112, "height": 61 }
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER3_BLUE": { "x": -22, "y": 14, "width": 26, "height": 24 }
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER3_YELLOW": { "x": 18, "y": -8, "width": 53, "height": 30 }
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_WING_BLUE": { "x": 26, "y": -30, "width": 82, "height": 42 }
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_WING_YELLOW": { "x": 18, "y": -8, "width": 96, "height": 64 }
+			},
+			"ICON/HEAD/SYMBOL_ICON_EYE": {
+				"CHICKEN/CHICKEN_ICON_EYE": { "width": 20, "height": 20 }
+			},
+			"ICON/HEAD/SYMBOL_ICON_HEAD": {
+				"CHICKEN/CHICKEN_ICON_HEAD": { "width": 93, "height": 66 }
+			},
+			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_HOCK_LEFT": {
+				"CHICKEN/CHICKEN_ICON_LEG_HOCK_LEFT": { "width": 69, "height": 104 }
+			},
+			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_SHANK_LEFT": {
+				"CHICKEN/CHICKEN_ICON_LEG_SHANK_LEFT": { "width": 47, "height": 51 }
+			},
+			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_TOES_LEFT": {
+				"CHICKEN/CHICKEN_ICON_LEG_TOES_LEFT": { "width": 88, "height": 23 }
+			},
+			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_HOCK_RIGHT": {
+				"CHICKEN/CHICKEN_ICON_LEG_HOCK_RIGHT": { "width": 78, "height": 111 }
+			},
+			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_SHANK_RIGHT": {
+				"CHICKEN/CHICKEN_ICON_LEG_SHANK_RIGHT": { "width": 49, "height": 54 }
+			},
+			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_TOES_RIGHT": {
+				"CHICKEN/CHICKEN_ICON_LEG_TOES_RIGHT": { "width": 92, "height": 24 }
+			},
+			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER1": {
+				"CHICKEN/CHICKEN_ICON_TAIL_FEATHER1": { "width": 114, "height": 120 }
+			},
+			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER2": {
+				"CHICKEN/CHICKEN_ICON_TAIL_FEATHER2": { "width": 124, "height": 82 }
+			},
+			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER3": {
+				"CHICKEN/CHICKEN_ICON_TAIL_FEATHER3": { "width": 94, "height": 59 }
+			},
+			"ICON/SYMBOL_ICON": {
+				"CHICKEN/CHICKEN_ICON": { "width": 302, "height": 340 }
+			},
+			"ICON/SYMBOL_ICON_BODY_CORPUS_TOP": {
+				"CHICKEN/CHICKEN_ICON_BODY_CORPUS_TOP": { "width": 101, "height": 167 }
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
+				"CHICKEN/CHICKEN_ICON_GLOW": { "width": 330, "height": 368 }
+			},
+			"ICON/SYMBOL_ICON_NECK": {
+				"CHICKEN/CHICKEN_ICON_NECK": { "width": 86, "height": 127 }
+			},
+			"ICON/SYMBOL_ICON_WING": {
+				"CHICKEN/CHICKEN_ICON_WING": { "width": 110, "height": 92 }
 			}
 		}
 	}
@@ -49,12 +284,461 @@
 "animations": {
 	"DEATH1": {
 		"slots": {
-			"SYMBOL_ICON": {
+			"SYMBOL_ICON_SHADOW4": {
+				"alpha": [
+					{ "value": 0.43919998, "curve": "stepped" },
+					{ "time": 0.36666667, "value": 0.43919998 },
+					{ "time": 0.73333335, "value": 0 }
+				]
+			},
+			"ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_CORPUS_BOTTOM": {
 				"rgb": [
 					{ "time": 0.73333335, "color": "797979" }
 				]
 			},
-			"SYMBOL_ICON_GLOW": {
+			"ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_GEAR": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE1": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE2": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/COMB_WATTLES/SYMBOL_ICON_COMB": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/COMB_WATTLES/SYMBOL_ICON_WATTLES": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_BLUE2": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/HEAD/SYMBOL_ICON_EYE": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/HEAD/SYMBOL_ICON_HEAD": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_HOCK_LEFT": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_SHANK_LEFT": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_TOES_LEFT": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_HOCK_RIGHT": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_SHANK_RIGHT": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_TOES_RIGHT": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER1": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER2": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER3": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/SYMBOL_ICON_BODY_CORPUS_TOP": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
@@ -65,11 +749,14 @@
 					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
-			"SYMBOL_ICON_SHADOW4": {
-				"alpha": [
-					{ "value": 0.43919998, "curve": "stepped" },
-					{ "time": 0.36666667, "value": 0.43919998 },
-					{ "time": 0.73333335, "value": 0 }
+			"ICON/SYMBOL_ICON_NECK": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
+				]
+			},
+			"ICON/SYMBOL_ICON_WING": {
+				"rgb": [
+					{ "time": 0.73333335, "color": "797979" }
 				]
 			}
 		},
@@ -78,18 +765,6 @@
 				"translate": [
 					{ "time": 0.23333335 },
 					{ "time": 0.6, "y": 30 }
-				],
-				"scale": [
-					{},
-					{ "time": 0.23333335, "y": 0.9 },
-					{ "time": 0.3 }
-				]
-			},
-			"SYMBOL_ICON_GLOW": {
-				"translate": [
-					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 },
-					{ "time": 0.73333335, "y": -30 }
 				],
 				"scale": [
 					{},
@@ -125,38 +800,8 @@
 					{ "time": 0.53333336 },
 					{ "time": 0.73333335, "x": 0.3, "y": 0.3 }
 				]
-			}
-		}
-	},
-	"DEATH2": {
-		"slots": {
-			"SYMBOL_ICON": {
-				"rgb": [
-					{ "color": "ffffff" },
-					{ "time": 0.73333335, "color": "ff0000" }
-				]
 			},
-			"SYMBOL_ICON_GLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
-				],
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				]
-			},
-			"SYMBOL_ICON_SHADOW4": {
-				"alpha": [
-					{ "value": 0.43919998, "curve": "stepped" },
-					{ "time": 0.36666667, "value": 0.43919998 },
-					{ "time": 0.73333335, "value": 0 }
-				]
-			}
-		},
-		"bones": {
-			"SYMBOL_ICON": {
+			"SYMBOL_ICON_MAIN": {
 				"translate": [
 					{ "time": 0.23333335 },
 					{ "time": 0.6, "y": 30 }
@@ -172,6 +817,597 @@
 					{ "time": 0.23333335 },
 					{ "time": 0.6, "y": 30 },
 					{ "time": 0.73333335, "y": -30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_PARTS": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"BODY": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"HEAD": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"LEG_RIGHT": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"LEG_LEFT": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"TAIL": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_GLOW_PARTS": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 },
+					{ "time": 0.73333335, "y": -30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			}
+		}
+	},
+	"DEATH2": {
+		"slots": {
+			"SYMBOL_ICON_SHADOW4": {
+				"alpha": [
+					{ "value": 0.43919998, "curve": "stepped" },
+					{ "time": 0.36666667, "value": 0.43919998 },
+					{ "time": 0.73333335, "value": 0 }
+				]
+			},
+			"ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_CORPUS_BOTTOM": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_GEAR": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE1": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE2": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/COMB_WATTLES/SYMBOL_ICON_COMB": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/COMB_WATTLES/SYMBOL_ICON_WATTLES": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_BLUE2": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/HEAD/SYMBOL_ICON_EYE": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/HEAD/SYMBOL_ICON_HEAD": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_HOCK_LEFT": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_SHANK_LEFT": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_TOES_LEFT": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_HOCK_RIGHT": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_SHANK_RIGHT": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_TOES_RIGHT": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER1": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER2": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER3": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/SYMBOL_ICON_BODY_CORPUS_TOP": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				]
+			},
+			"ICON/SYMBOL_ICON_NECK": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/SYMBOL_ICON_WING": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
 				],
 				"scale": [
 					{},
@@ -214,48 +1450,8 @@
 					{ "time": 1.2 },
 					{ "time": 1.3666668, "x": 0.6, "y": 0.6 }
 				]
-			}
-		}
-	},
-	"DEATH3": {
-		"slots": {
-			"SYMBOL_ICON": {
-				"alpha": [
-					{ "time": 1.5000001, "value": 1 },
-					{ "time": 1.6000001, "value": 0.0011 }
-				],
-				"rgb": [
-					{ "color": "ffffff" },
-					{ "time": 0.73333335, "color": "ff0000" }
-				]
 			},
-			"SYMBOL_ICON_GLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
-				],
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				]
-			},
-			"SYMBOL_ICON_SHADOW3": {
-				"alpha": [
-					{ "time": 1.5000001, "value": 1 },
-					{ "time": 1.6000001, "value": 0 }
-				]
-			},
-			"SYMBOL_ICON_SHADOW4": {
-				"alpha": [
-					{ "value": 0.43919998, "curve": "stepped" },
-					{ "time": 0.36666667, "value": 0.43919998 },
-					{ "time": 0.73333335, "value": 0 }
-				]
-			}
-		},
-		"bones": {
-			"SYMBOL_ICON": {
+			"SYMBOL_ICON_MAIN": {
 				"translate": [
 					{ "time": 0.23333335 },
 					{ "time": 0.6, "y": 30 }
@@ -271,6 +1467,687 @@
 					{ "time": 0.23333335 },
 					{ "time": 0.6, "y": 30 },
 					{ "time": 0.73333335, "y": -30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_PARTS": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"BODY": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"HEAD": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"LEG_RIGHT": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"LEG_LEFT": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"TAIL": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_GLOW_PARTS": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 },
+					{ "time": 0.73333335, "y": -30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			}
+		}
+	},
+	"DEATH3": {
+		"slots": {
+			"SYMBOL_ICON_SHADOW3": {
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0 }
+				]
+			},
+			"SYMBOL_ICON_SHADOW4": {
+				"alpha": [
+					{ "value": 0.43919998, "curve": "stepped" },
+					{ "time": 0.36666667, "value": 0.43919998 },
+					{ "time": 0.73333335, "value": 0 }
+				]
+			},
+			"ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_CORPUS_BOTTOM": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_GEAR": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE1": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE2": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/COMB_WATTLES/SYMBOL_ICON_COMB": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/COMB_WATTLES/SYMBOL_ICON_WATTLES": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_BLUE2": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				],
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				]
+			},
+			"ICON/HEAD/SYMBOL_ICON_EYE": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/HEAD/SYMBOL_ICON_HEAD": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_HOCK_LEFT": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_SHANK_LEFT": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_TOES_LEFT": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_HOCK_RIGHT": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_SHANK_RIGHT": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_TOES_RIGHT": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER1": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER2": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER3": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				],
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				]
+			},
+			"ICON/SYMBOL_ICON_BODY_CORPUS_TOP": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				]
+			},
+			"ICON/SYMBOL_ICON_NECK": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			},
+			"ICON/SYMBOL_ICON_WING": {
+				"rgb": [
+					{ "color": "ffffff" },
+					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"alpha": [
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 1.6000001, "value": 0.0011 }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
 				],
 				"scale": [
 					{},
@@ -314,12 +2191,342 @@
 					{ "time": 1.2 },
 					{ "time": 1.3666668, "x": 5, "y": 5 }
 				]
+			},
+			"SYMBOL_ICON_MAIN": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_GLOW": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 },
+					{ "time": 0.73333335, "y": -30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_PARTS": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"BODY": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"HEAD": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"LEG_RIGHT": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"LEG_LEFT": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"TAIL": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
+			},
+			"SYMBOL_ICON_GLOW_PARTS": {
+				"translate": [
+					{ "time": 0.23333335 },
+					{ "time": 0.6, "y": 30 },
+					{ "time": 0.73333335, "y": -30 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.23333335, "y": 0.9 },
+					{ "time": 0.3 }
+				]
 			}
 		}
 	},
 	"IDLE": {
 		"slots": {
-			"SYMBOL_ICON_GLOW": {
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_BLUE2": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"attachment": [
+					{ "name": "CHICKEN/CHICKEN_ICON" }
+				]
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 1.5000001, "value": 0.1563 },
@@ -329,6 +2536,13 @@
 		}
 	},
 	"IDLE_RAND1": {
+		"slots": {
+			"ICON/SYMBOL_ICON": {
+				"attachment": [
+					{ "name": "CHICKEN/CHICKEN_ICON" }
+				]
+			}
+		},
 		"bones": {
 			"SYMBOL_ROOT": {
 				"translate": [
@@ -345,6 +2559,13 @@
 		}
 	},
 	"IDLE_RAND2": {
+		"slots": {
+			"ICON/SYMBOL_ICON": {
+				"attachment": [
+					{ "name": "CHICKEN/CHICKEN_ICON" }
+				]
+			}
+		},
 		"bones": {
 			"SYMBOL_ROOT": {
 				"translate": [
@@ -370,7 +2591,460 @@
 	},
 	"IDLE_RAND3": {
 		"slots": {
-			"SYMBOL_ICON_GLOW": {
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_BLUE2": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				],
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"attachment": [
+					{ "name": "CHICKEN/CHICKEN_ICON" }
+				]
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
 				"alpha": [
 					{ "time": 1.2666668, "value": 0.0011 },
 					{ "time": 1.6333334, "value": 0.5288 },
@@ -409,12 +3083,22 @@
 	},
 	"RUNNING": {
 		"slots": {
+			"SYMBOL_ICON_SHADOW3": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
 			"SYMBOL_ICON_SHADOW4": {
 				"alpha": [
 					{ "value": 0.44009998 }
 				],
 				"attachment": [
 					{}
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"attachment": [
+					{ "name": "CHICKEN/CHICKEN_ICON" }
 				]
 			}
 		},
@@ -445,12 +3129,22 @@
 	},
 	"WALKING": {
 		"slots": {
+			"SYMBOL_ICON_SHADOW3": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
 			"SYMBOL_ICON_SHADOW4": {
 				"alpha": [
 					{ "value": 0.44009998 }
 				],
 				"attachment": [
 					{}
+				]
+			},
+			"ICON/SYMBOL_ICON": {
+				"attachment": [
+					{ "name": "CHICKEN/CHICKEN_ICON" }
 				]
 			}
 		},

@@ -1,0 +1,249 @@
+{
+"skeleton": {
+	"hash": "uFCuvviD3KY",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -120.5,
+	"y": -101,
+	"width": 241,
+	"height": 202,
+	"images": "../../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "CASHOUT_BUTTON", "parent": "root" }
+],
+"slots": [
+	{ "name": "CASHOUT_BUTTON_BACKPLATE", "bone": "CASHOUT_BUTTON", "attachment": "GUI/BUTTONS/RECTANGULAR_BUTTON_BASE" },
+	{ "name": "CASHOUT_BUTTON_ICON", "bone": "CASHOUT_BUTTON", "attachment": "GUI/BUTTONS/CASHOUT_BUTTON" },
+	{ "name": "CASHOUT_BUTTON_ICON_GLOW", "bone": "CASHOUT_BUTTON", "color": "ffffff00", "attachment": "GUI/BUTTONS/CASHOUT_BUTTON_GLOW" },
+	{ "name": "CASHOUT_BUTTON_BACKPLATE_GLOW", "bone": "CASHOUT_BUTTON", "attachment": "GUI/BUTTONS/RECTANGULAR_BUTTON_GLOW" },
+	{ "name": "CASHOUT_BUTTON_HITBOX", "bone": "CASHOUT_BUTTON", "attachment": "CASHOUT_BUTTON_HITBOX" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"CASHOUT_BUTTON_BACKPLATE": {
+				"GUI/BUTTONS/RECTANGULAR_BUTTON_BASE": { "width": 239, "height": 194 }
+			},
+			"CASHOUT_BUTTON_BACKPLATE_GLOW": {
+				"GUI/BUTTONS/RECTANGULAR_BUTTON_GLOW": { "width": 241, "height": 202 }
+			},
+			"CASHOUT_BUTTON_HITBOX": {
+				"CASHOUT_BUTTON_HITBOX": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -123.73, 120.15, 120.73, 123.06, 122.18, -120.67, -120.82, -124.3 ]
+				}
+			},
+			"CASHOUT_BUTTON_ICON": {
+				"GUI/BUTTONS/CASHOUT_BUTTON": { "width": 97, "height": 141 }
+			},
+			"CASHOUT_BUTTON_ICON_GLOW": {
+				"GUI/BUTTONS/CASHOUT_BUTTON_GLOW": { "width": 127, "height": 171 }
+			}
+		}
+	}
+],
+"animations": {
+	"DISABLED": {
+		"slots": {
+			"CASHOUT_BUTTON_BACKPLATE_GLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"CASHOUT_BUTTON_ICON": {
+				"rgb": [
+					{ "color": "000000" }
+				],
+				"alpha": [
+					{ "value": 0.3333 }
+				]
+			},
+			"CASHOUT_BUTTON_ICON_GLOW": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"ENTER": {
+		"slots": {
+			"CASHOUT_BUTTON_BACKPLATE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.33333334, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/RECTANGULAR_BUTTON_BASE" }
+				]
+			},
+			"CASHOUT_BUTTON_BACKPLATE_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.33333334, "value": 1 }
+				]
+			},
+			"CASHOUT_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 0.0011 },
+					{ "time": 0.33333334, "value": 0.9989 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/CASHOUT_BUTTON" }
+				]
+			},
+			"CASHOUT_BUTTON_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0.0011 },
+					{ "time": 0.33333334, "value": 1 }
+				],
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"EXIT": {
+		"slots": {
+			"CASHOUT_BUTTON_BACKPLATE": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/RECTANGULAR_BUTTON_BASE" }
+				]
+			},
+			"CASHOUT_BUTTON_BACKPLATE_GLOW": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0 }
+				]
+			},
+			"CASHOUT_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0.0011 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/CASHOUT_BUTTON" }
+				]
+			},
+			"CASHOUT_BUTTON_ICON_GLOW": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.33333334, "value": 0 }
+				],
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"HOVER": {
+		"slots": {
+			"CASHOUT_BUTTON_BACKPLATE_GLOW": {
+				"attachment": [
+					{ "name": "GUI/BUTTONS/RECTANGULAR_BUTTON_GLOW" }
+				]
+			},
+			"CASHOUT_BUTTON_ICON": {
+				"attachment": [
+					{ "name": "GUI/BUTTONS/CASHOUT_BUTTON" }
+				]
+			},
+			"CASHOUT_BUTTON_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0.6885 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/CASHOUT_BUTTON_GLOW" }
+				]
+			}
+		},
+		"bones": {
+			"CASHOUT_BUTTON": {
+				"scale": [
+					{ "x": 1.01, "y": 1.01 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"CASHOUT_BUTTON_BACKPLATE_GLOW": {
+				"alpha": [
+					{ "value": 0.39609998 }
+				],
+				"rgb": [
+					{ "color": "ffffff" }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/RECTANGULAR_BUTTON_GLOW" }
+				]
+			},
+			"CASHOUT_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 1 }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/CASHOUT_BUTTON" }
+				]
+			},
+			"CASHOUT_BUTTON_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0.4978 }
+				],
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"bones": {
+			"CASHOUT_BUTTON": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"PRESSED": {
+		"slots": {
+			"CASHOUT_BUTTON_BACKPLATE_GLOW": {
+				"attachment": [
+					{ "name": "GUI/BUTTONS/RECTANGULAR_BUTTON_GLOW" }
+				]
+			},
+			"CASHOUT_BUTTON_ICON": {
+				"alpha": [
+					{ "value": 1 }
+				],
+				"rgb": [
+					{ "color": "cccccc" }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/CASHOUT_BUTTON" }
+				]
+			},
+			"CASHOUT_BUTTON_ICON_GLOW": {
+				"rgb": [
+					{ "color": "cccaca" }
+				],
+				"attachment": [
+					{ "name": "GUI/BUTTONS/CASHOUT_BUTTON_GLOW" }
+				]
+			}
+		},
+		"bones": {
+			"CASHOUT_BUTTON": {
+				"scale": [
+					{ "x": 0.98, "y": 0.98 }
+				]
+			}
+		}
+	}
+}
+}

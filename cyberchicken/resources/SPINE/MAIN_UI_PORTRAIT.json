@@ -1,5 +1,5 @@
 {
-"skeleton": { "hash": "XyD0yX378r0", "spine": "4.2-from-4.3.39-beta", "images": "../../GRAPHIC_ASSETS/", "audio": "./audio" },
+"skeleton": { "hash": "5h5J2s9NoAA", "spine": "4.2-from-4.3.39-beta", "images": "../../GRAPHIC_ASSETS/", "audio": "./audio" },
 "bones": [
 	{ "name": "root" },
 	{ "name": "BET_WINDOW", "parent": "root" },
@@ -33,7 +33,6 @@
 	{ "name": "CHICKEN", "parent": "root", "y": -71 },
 	{ "name": "LANES", "parent": "root" },
 	{ "name": "CASHOUT_BUTTON", "parent": "root", "x": -330, "y": -667 },
-	{ "name": "CURRENT_MULTIPLIER", "parent": "root", "y": -100 },
 	{ "name": "LOOTBOX", "parent": "root", "x": 352, "y": 323, "scaleX": 0.8, "scaleY": 0.8 }
 ],
 "slots": [
@@ -48,7 +47,6 @@
 	{ "name": "COINS", "bone": "COINS" },
 	{ "name": "CARS", "bone": "CARS" },
 	{ "name": "BARRIERS", "bone": "BARRIERS" },
-	{ "name": "CURRENT_MULTIPLIER", "bone": "CURRENT_MULTIPLIER" },
 	{ "name": "CHICKEN", "bone": "CHICKEN" },
 	{ "name": "LOOTBOX", "bone": "LOOTBOX" },
 	{ "name": "PROGRESS_METER", "bone": "PROGRESS_METER" },

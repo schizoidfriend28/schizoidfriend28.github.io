@@ -1,0 +1,83 @@
+{
+"skeleton": {
+	"hash": "0YLo8Uh/XZk",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -136,
+	"y": -41.25,
+	"width": 272,
+	"height": 82.5,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "SYMBOL_MAIN", "parent": "root" },
+	{ "name": "SYMBOL_NUMBER_NEW", "parent": "SYMBOL_MAIN" },
+	{ "name": "SYMBOL_NUMBER", "parent": "SYMBOL_MAIN" },
+	{ "name": "SYMBOL_BACKPLATE", "parent": "SYMBOL_MAIN", "scaleX": 2, "scaleY": 1.5 }
+],
+"slots": [
+	{ "name": "SYMBOL_BACKPLATE", "bone": "SYMBOL_BACKPLATE", "color": "474747a6", "attachment": "GENERIC/STEP_NUMBER_BACKPLATE", "blend": "multiply" },
+	{ "name": "SYMBOL_NUMBER", "bone": "SYMBOL_NUMBER", "attachment": "GENERIC/INVISIBLE_PLACEHOLDER" },
+	{ "name": "SYMBOL_NUMBER_NEW", "bone": "SYMBOL_NUMBER_NEW", "attachment": "GENERIC/INVISIBLE_PLACEHOLDER" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"SYMBOL_BACKPLATE": {
+				"GENERIC/STEP_NUMBER_BACKPLATE": { "width": 136, "height": 55 }
+			},
+			"SYMBOL_NUMBER": {
+				"GENERIC/INVISIBLE_PLACEHOLDER": { "width": 1, "height": 1 }
+			},
+			"SYMBOL_NUMBER_NEW": {
+				"GENERIC/INVISIBLE_PLACEHOLDER": { "width": 1, "height": 1 }
+			}
+		}
+	}
+],
+"animations": {
+	"IDLE": {
+		"slots": {
+			"SYMBOL_BACKPLATE": {
+				"attachment": [
+					{ "name": "GENERIC/STEP_NUMBER_BACKPLATE" }
+				]
+			},
+			"SYMBOL_NUMBER": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"NUMBER_CHANGE": {
+		"slots": {
+			"SYMBOL_BACKPLATE": {
+				"attachment": [
+					{ "name": "GENERIC/STEP_NUMBER_BACKPLATE" }
+				]
+			},
+			"SYMBOL_NUMBER": {
+				"alpha": [
+					{ "value": 1 },
+					{ "time": 0.16666667, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "GENERIC/INVISIBLE_PLACEHOLDER" }
+				]
+			},
+			"SYMBOL_NUMBER_NEW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.16666667, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "GENERIC/INVISIBLE_PLACEHOLDER" }
+				]
+			}
+		}
+	}
+}
+}
