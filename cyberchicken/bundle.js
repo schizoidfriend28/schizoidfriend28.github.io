@@ -95686,8 +95686,8 @@ var _WinAmountPresentationView;
 var _Class30;
 var _IndividualReelConstants;
 var _TickerSpeedController;
-var ae = Object.defineProperty;
-var __name = (e, t) => ae(e, "name", {
+var oe = Object.defineProperty;
+var __name = (e, t) => oe(e, "name", {
 	value: t,
 	configurable: !0
 });
@@ -95708,7 +95708,7 @@ var GenericButton = class {
 		return this._button;
 	}
 };
-var ce = {
+var ue$1 = {
 	fontFamily: "Poppins Bold",
 	fontSize: 30,
 	fill: "#000000"
@@ -95736,35 +95736,35 @@ var GameConfig = class {
 		return n !== void 0;
 	}
 };
-var O$1 = 1920;
-var k = 1920;
-var ue$1 = 1080;
-var me = "color:#fff;padding:2px 6px;border-radius:3px;font-weight:bold;";
-var he = `${me}background:#6b7280;`;
-var ge = `${me}background:#2563eb;`;
-var _e$1 = `${me}background:#d97706;`;
-var ve = `${me}background:#dc2626;`;
+var E$1 = 1920;
+var D$1 = 1920;
+var fe$1 = 1080;
+var ge = "color:#fff;padding:2px 6px;border-radius:3px;font-weight:bold;";
+var _e$1 = `${ge}background:#6b7280;`;
+var ve = `${ge}background:#2563eb;`;
+var ye$1 = `${ge}background:#d97706;`;
+var be$1 = `${ge}background:#dc2626;`;
 var Logger = class {
 	log(e, ...t) {
-		console.log("%cLOG", he, e, ...t);
+		console.log("%cLOG", _e$1, e, ...t);
 	}
 	info(e, ...t) {
-		console.info("%cINFO", ge, e, ...t);
+		console.info("%cINFO", ve, e, ...t);
 	}
 	warn(e, ...t) {
-		console.warn("%cWARN", _e$1, e, ...t);
+		console.warn("%cWARN", ye$1, e, ...t);
 	}
 	error(e, ...t) {
-		console.error("%cERROR", ve, e, ...t);
+		console.error("%cERROR", be$1, e, ...t);
 	}
 };
-var A = new Logger();
+var O$1 = new Logger();
 var CheatState = class {
 	constructor() {
 		_defineProperty(this, "value", void 0);
 	}
 };
-var ye$1 = new CheatState();
+var xe$1 = new CheatState();
 var QuerystringHandler = class {
 	constructor() {
 		_defineProperty(this, "_queryString", void 0);
@@ -95811,7 +95811,7 @@ function __decorate$1(e, t, n, r) {
 	return i > 3 && a && Object.defineProperty(t, n, a), a;
 }
 __name$1(__decorate$1, "__decorate");
-var be$1 = class GameController {
+var Se$1 = class GameController {
 	constructor() {
 		_defineProperty(this, "_queryStringHandler", void 0);
 		_defineProperty(this, "_device", void 0);
@@ -95918,26 +95918,26 @@ var be$1 = class GameController {
 		this._queryStringHandler = new QuerystringHandler();
 	}
 	getCheatValue() {
-		return ye$1.value;
+		return xe$1.value;
 	}
 };
-be$1 = __decorate$1([injectable()], be$1);
-var xe$1 = /* @__PURE__ */ function(e) {
+Se$1 = __decorate$1([injectable()], Se$1);
+var Ce$1 = /* @__PURE__ */ function(e) {
 	return e[e.SPINNING = 0] = "SPINNING", e[e.AVALANCHE = 1] = "AVALANCHE", e[e.INDIVIDUAL = 2] = "INDIVIDUAL", e[e.MIXED = 3] = "MIXED", e[e.SPECIAL = 4] = "SPECIAL", e;
 }({});
-var Se$1 = /* @__PURE__ */ function(e) {
+var we$1 = /* @__PURE__ */ function(e) {
 	return e[e.LINES = 0] = "LINES", e[e.WAYS = 1] = "WAYS", e[e.CLUSTERS = 2] = "CLUSTERS", e[e.EVERYWHERE = 3] = "EVERYWHERE", e[e.SPECIAL = 4] = "SPECIAL", e;
 }({});
-var j = /* @__PURE__ */ function(e) {
+var k = /* @__PURE__ */ function(e) {
 	return e[e.ANTE = 0] = "ANTE", e[e.SMALL = 1] = "SMALL", e[e.NICE = 2] = "NICE", e[e.EXCELLENT = 3] = "EXCELLENT", e;
 }({});
-var Ce$1 = /* @__PURE__ */ function(e) {
+var Te$1 = /* @__PURE__ */ function(e) {
 	return e[e.LEFT_TO_RIGHT = 0] = "LEFT_TO_RIGHT", e[e.RIGHT_TO_LEFT = 1] = "RIGHT_TO_LEFT", e[e.BOTH_WAYS = 2] = "BOTH_WAYS", e[e.OTHER = 3] = "OTHER", e;
 }({});
-var Te$1 = /* @__PURE__ */ function(e) {
+var De$1 = /* @__PURE__ */ function(e) {
 	return e[e.BIG = 0] = "BIG", e[e.SUPER = 1] = "SUPER", e[e.MEGA = 2] = "MEGA", e[e.EPIC = 3] = "EPIC", e;
 }({});
-var M$1 = (_WinUtils = class WinUtils {
+var A = (_WinUtils = class WinUtils {
 	static updateThresholdsFromConfig(e) {
 		WinUtils.BIG_WIN_THRESHOLD = e.get("gameplay.bigwin.threshold", WinUtils.BIG_WIN_THRESHOLD), WinUtils.SUPER_WIN_THRESHOLD = e.get("gameplay.bigwin.superThreshold", WinUtils.SUPER_WIN_THRESHOLD), WinUtils.MEGA_WIN_THRESHOLD = e.get("gameplay.bigwin.megaThreshold", WinUtils.MEGA_WIN_THRESHOLD), WinUtils.EPIC_WIN_THRESHOLD = e.get("gameplay.bigwin.epicThreshold", WinUtils.EPIC_WIN_THRESHOLD), WinUtils.NICE_WIN_ONE_ROUND_THRESHOLD_LOW = e.get("gameplay.win.niceOneRoundThresholdLow", WinUtils.NICE_WIN_ONE_ROUND_THRESHOLD_LOW), WinUtils.NICE_WIN_ONE_ROUND_THRESHOLD_HIGH = e.get("gameplay.win.niceOneRoundThresholdHigh", WinUtils.NICE_WIN_ONE_ROUND_THRESHOLD_HIGH), WinUtils.SMALL_WIN_ONE_ROUND_THRESHOLD_LOW = e.get("gameplay.win.smallOneRoundThresholdLow", WinUtils.SMALL_WIN_ONE_ROUND_THRESHOLD_LOW);
 	}
@@ -95970,16 +95970,16 @@ var M$1 = (_WinUtils = class WinUtils {
 	}
 	static getWinSize(e, t) {
 		if (e <= 0) throw Error("WinUtils::getWinType win can not be 0 or less");
-		return WinUtils.isWinNumberAnteWin(t, e) ? j.ANTE : WinUtils.isWinNumberExcellentWin(t, e) ? j.EXCELLENT : WinUtils.isWinNumberNiceWin(t, e) ? j.NICE : j.SMALL;
+		return WinUtils.isWinNumberAnteWin(t, e) ? k.ANTE : WinUtils.isWinNumberExcellentWin(t, e) ? k.EXCELLENT : WinUtils.isWinNumberNiceWin(t, e) ? k.NICE : k.SMALL;
 	}
 	static getBigWinType(e, t) {
 		if (e <= 0) throw Error("WinUtils::getWinType win can not be 0 or less");
 		if (WinUtils.isWinNumberBigWin(t, e)) {
-			if (WinUtils.isWinNumberEpicWin(t, e)) return Te$1.EPIC;
-			if (WinUtils.isWinNumberMegaWin(t, e)) return Te$1.MEGA;
-			if (WinUtils.isWinNumberSuperWin(t, e)) return Te$1.SUPER;
+			if (WinUtils.isWinNumberEpicWin(t, e)) return De$1.EPIC;
+			if (WinUtils.isWinNumberMegaWin(t, e)) return De$1.MEGA;
+			if (WinUtils.isWinNumberSuperWin(t, e)) return De$1.SUPER;
 		}
-		return Te$1.BIG;
+		return De$1.BIG;
 	}
 	static formatWinAsSI(e, t) {
 		let n = e / 100, r = n < 100 ? 2 : 1;
@@ -96009,13 +96009,13 @@ var M$1 = (_WinUtils = class WinUtils {
 function __decorateMetadata(e, t) {
 	if (typeof Reflect == "object" && typeof Reflect.metadata == "function") return Reflect.metadata(e, t);
 }
-var Ee$1 = /* @__PURE__ */ function(e) {
+var Oe$1 = /* @__PURE__ */ function(e) {
 	return e[e.NONE = 0] = "NONE", e[e.INIT = 1] = "INIT", e[e.SPIN = 2] = "SPIN", e[e.FREESPIN = 3] = "FREESPIN", e[e.RESPIN = 4] = "RESPIN", e[e.PICK = 5] = "PICK", e[e.SKIPPICK = 6] = "SKIPPICK", e[e.AVALANCHE = 7] = "AVALANCHE", e[e.SCATTER_AND_AVALANCHE = 8] = "SCATTER_AND_AVALANCHE", e[e.EXPLOSION = 9] = "EXPLOSION", e[e.REMOVAL = 10] = "REMOVAL", e[e.TRANSFORM = 11] = "TRANSFORM", e[e.CROSS = 12] = "CROSS", e[e.SPARKLE = 13] = "SPARKLE", e[e.SUPER_FREESPINS = 14] = "SUPER_FREESPINS", e[e.WILD_EXPANSION = 15] = "WILD_EXPANSION", e;
 }({});
-var Oe$1 = /* @__PURE__ */ function(e) {
+var Ae$1 = /* @__PURE__ */ function(e) {
 	return e[e.OFF = 0] = "OFF", e[e.ON = 1] = "ON", e[e.SUPER = 2] = "SUPER", e;
 }({});
-var ke$1 = (_GameData = class GameData {
+var je$1 = (_GameData = class GameData {
 	constructor() {
 		_defineProperty(this, "_currentBetValue", 1);
 		_defineProperty(this, "_betValues", void 0);
@@ -96081,9 +96081,9 @@ var ke$1 = (_GameData = class GameData {
 		_defineProperty(this, "_allReelsets", void 0);
 		_defineProperty(this, "_currentReelset", void 0);
 		_defineProperty(this, "_gameFacts", {
-			evaluation: Ce$1.OTHER,
-			reelsMechanics: xe$1.SPECIAL,
-			winType: Se$1.SPECIAL
+			evaluation: Te$1.OTHER,
+			reelsMechanics: Ce$1.SPECIAL,
+			winType: we$1.SPECIAL
 		});
 		_defineProperty(this, "_mathVersion", "0.0.0");
 		_defineProperty(this, "_serverVersion", "0.0.0");
@@ -96124,16 +96124,16 @@ var ke$1 = (_GameData = class GameData {
 		this.hasRestore = !1, this._balance = e.balance;
 	}
 	reactOnInit(e) {
-		this.onceBeforeSpinSetup(), this._lastInitResponse = e, this.parseState(e.state), this.parseInit(e), this.afterInitRestoreSetup(e), A.info("init:"), A.info(e);
+		this.onceBeforeSpinSetup(), this._lastInitResponse = e, this.parseState(e.state), this.parseInit(e), this.afterInitRestoreSetup(e), O$1.info("init:"), O$1.info(e);
 	}
 	plusOneFreeSpin() {
 		this._currentFreeSpin++;
 	}
 	reactOnFreeSpin(e) {
-		this.parseSpin(e), A.info("freespin:"), A.info(e);
+		this.parseSpin(e), O$1.info("freespin:"), O$1.info(e);
 	}
 	reactOnSpin(e) {
-		this.onceBeforeSpinSetup(), this._lastSpinResponse = e, this.parseState(e.state), this.parseSpin(e.baseSpin, e), A.info("spin:"), A.info(e);
+		this.onceBeforeSpinSetup(), this._lastSpinResponse = e, this.parseState(e.state), this.parseSpin(e.baseSpin, e), O$1.info("spin:"), O$1.info(e);
 	}
 	startNextRound() {
 		this._currentRoundIndex < this._totalRounds - 1 && this._currentRoundIndex++;
@@ -96142,7 +96142,7 @@ var ke$1 = (_GameData = class GameData {
 		return !1;
 	}
 	isInNoWinRound() {
-		return !this._isFreeSpinsStarted && this.nextAction === Ee$1.SPIN && !this.isFreeSpinsJustWon() && this.isNoWin();
+		return !this._isFreeSpinsStarted && this.nextAction === Oe$1.SPIN && !this.isFreeSpinsJustWon() && this.isNoWin();
 	}
 	isFreeSpinsJustWon() {
 		return this._freeSpinsLeft === this._freespinsTotalAwarded && this._freeSpinsLeft > 0;
@@ -96159,8 +96159,8 @@ var ke$1 = (_GameData = class GameData {
 		return this._allReelsets[t];
 	}
 	getRestoreSymbols() {
-		if (this.gameFacts.reelsMechanics === xe$1.AVALANCHE) return this._avalanches[0].initialSymbols;
-		if (this.gameFacts.reelsMechanics === xe$1.SPINNING) return this._spinRounds[0].initialSymbols;
+		if (this.gameFacts.reelsMechanics === Ce$1.AVALANCHE) return this._avalanches[0].initialSymbols;
+		if (this.gameFacts.reelsMechanics === Ce$1.SPINNING) return this._spinRounds[0].initialSymbols;
 		throw Error("GameData::getRestoreSymbols need to define restore symbols");
 	}
 	getTotalWin() {
@@ -96176,10 +96176,10 @@ var ke$1 = (_GameData = class GameData {
 		return this._avalanches[this._currentRoundIndex];
 	}
 	isBigWin() {
-		return this.getSpinWin() / this.getTotalBet() >= M$1.BIG_WIN_THRESHOLD;
+		return this.getSpinWin() / this.getTotalBet() >= A.BIG_WIN_THRESHOLD;
 	}
 	isNumberBigWin(e) {
-		return e / this.getTotalBet() >= M$1.BIG_WIN_THRESHOLD;
+		return e / this.getTotalBet() >= A.BIG_WIN_THRESHOLD;
 	}
 	isWin() {
 		return this.getSpinWin() > 0;
@@ -96198,7 +96198,7 @@ var ke$1 = (_GameData = class GameData {
 	}
 	initializeDefaultSettings() {
 		this._settings = {
-			fastPlayMode: Oe$1.OFF,
+			fastPlayMode: Ae$1.OFF,
 			musicActive: !0,
 			musicVolume: 1,
 			quickStopActive: !0,
@@ -96231,7 +96231,7 @@ var ke$1 = (_GameData = class GameData {
 	}
 	parseState(e) {}
 	parseSpin(e, t = null) {
-		!(t === null || t === void 0) && t.hasOwnProperty("balance") && typeof (t === null || t === void 0 ? void 0 : t.balance) == "number" && (this._balance = t.balance), !(t === null || t === void 0) && t.roundId && (this._roundID = t.roundId), this._roundTypes.push(Ee$1.SPIN), e.generations ? this.parseAvalanches(e) : this.parseSpinRounds(e), e.grid && this.changeCurrentReelset(e.grid), this.parseSymbolsReplacements(e), this.parseOriginalSymbols(e), this.parseMultiplier(e), this.parseOtherData(e, t), this.parseWinCap(e), this.parseFreeSpinsData(t, e), this.parseFreeSpinsTotalWin(t), this.parseFreeSpinsEndingTotalWin(t), this.parseFreeSpinsRunningTotal(e), this.parseTotalWin(t, e);
+		!(t === null || t === void 0) && t.hasOwnProperty("balance") && typeof (t === null || t === void 0 ? void 0 : t.balance) == "number" && (this._balance = t.balance), !(t === null || t === void 0) && t.roundId && (this._roundID = t.roundId), this._roundTypes.push(Oe$1.SPIN), e.generations ? this.parseAvalanches(e) : this.parseSpinRounds(e), e.grid && this.changeCurrentReelset(e.grid), this.parseSymbolsReplacements(e), this.parseOriginalSymbols(e), this.parseMultiplier(e), this.parseOtherData(e, t), this.parseWinCap(e), this.parseFreeSpinsData(t, e), this.parseFreeSpinsTotalWin(t), this.parseFreeSpinsEndingTotalWin(t), this.parseFreeSpinsRunningTotal(e), this.parseTotalWin(t, e);
 	}
 	parseWinCap(e) {
 		this._hasReachedWinCap = !1, e.hasOwnProperty("hasWinCap") && (this._hasReachedWinCap = e.hasWinCap);
@@ -96283,7 +96283,7 @@ var ke$1 = (_GameData = class GameData {
 		this.hasFreeSpins(e) && !this.hasRestore ? this.initializeFreeSpinsFromData(e, !1) : this.isFreeSpinData(t) && this.initializeFreeSpinFromData(t);
 	}
 	initializeFreeSpinFromData(e) {
-		this.isFreeSpinData(e) && (this._currentFreeSpin === this._freeSpins.length - 1 ? this._roundTypes.push(Ee$1.SPIN) : this._roundTypes.push(Ee$1.FREESPIN), this._isFreeSpinsStarted && this.hasExtraFreeSpins(e) ? (this._hasFreeSpinsRetrigger = !0, this._freeSpinsAdded = this.getExtraFreeSpins(e), this._freespinsTotalAwarded += this._freeSpinsAdded) : (this._hasFreeSpinsRetrigger = !1, this._freeSpinsAdded = 0), this._freeSpinsLeft = this._freespinsTotalAwarded - this._currentFreeSpin - 1);
+		this.isFreeSpinData(e) && (this._currentFreeSpin === this._freeSpins.length - 1 ? this._roundTypes.push(Oe$1.SPIN) : this._roundTypes.push(Oe$1.FREESPIN), this._isFreeSpinsStarted && this.hasExtraFreeSpins(e) ? (this._hasFreeSpinsRetrigger = !0, this._freeSpinsAdded = this.getExtraFreeSpins(e), this._freespinsTotalAwarded += this._freeSpinsAdded) : (this._hasFreeSpinsRetrigger = !1, this._freeSpinsAdded = 0), this._freeSpinsLeft = this._freespinsTotalAwarded - this._currentFreeSpin - 1);
 	}
 	getExtraFreeSpins(e) {
 		return e.extraFS;
@@ -96327,7 +96327,7 @@ var ke$1 = (_GameData = class GameData {
 		};
 	}
 	setAvalancheRoundType(e) {
-		e.winnings.length > 0 && this._roundTypes.push(Ee$1.AVALANCHE);
+		e.winnings.length > 0 && this._roundTypes.push(Oe$1.AVALANCHE);
 	}
 	parseAvalancheSymbols(e, t) {
 		let n = 0;
@@ -96467,7 +96467,7 @@ var ke$1 = (_GameData = class GameData {
 		if (this._freespinsTotalAwarded = 0, this.hasFreeSpins(e)) {
 			var _e$state2;
 			for (let t of e.freeSpins.spins) this._freeSpins.push(t);
-			this._roundTypes.push(Ee$1.FREESPIN), this._freeSpinsLeft = this._freespinsTotalAwarded = this.getTotalFreeSpinsFromData(e), this._currentFreeSpin = -1, t && (e === null || e === void 0 || (_e$state2 = e.state) === null || _e$state2 === void 0 ? void 0 : _e$state2.currentFreeSpin) > 0 && (this._currentFreeSpin = e.state.currentFreeSpin - 1, this._freespinsTotalAwarded = this.getTotalFreeSpinsFromData(this._freeSpins[this._currentFreeSpin]), this._freeSpinsLeft = this._freespinsTotalAwarded - this._currentFreeSpin), this._beforeFSReels = [];
+			this._roundTypes.push(Oe$1.FREESPIN), this._freeSpinsLeft = this._freespinsTotalAwarded = this.getTotalFreeSpinsFromData(e), this._currentFreeSpin = -1, t && (e === null || e === void 0 || (_e$state2 = e.state) === null || _e$state2 === void 0 ? void 0 : _e$state2.currentFreeSpin) > 0 && (this._currentFreeSpin = e.state.currentFreeSpin - 1, this._freespinsTotalAwarded = this.getTotalFreeSpinsFromData(this._freeSpins[this._currentFreeSpin]), this._freeSpinsLeft = this._freespinsTotalAwarded - this._currentFreeSpin), this._beforeFSReels = [];
 			for (let e of this._initialReels) this._beforeFSReels.push({
 				symbolID: e.symbolID,
 				size: {
@@ -96532,7 +96532,7 @@ var ke$1 = (_GameData = class GameData {
 					r.symbols.push([]), r.symbolsIDs.push([]), i++;
 					for (let t of e) {
 						let e = this.isRandomSymbol(this._serverSymbols[t]) ? this.getTotallyRandomOf(this._serverSymbols[t]) : this._serverSymbols[t];
-						e === null ? A.error(`Logic::parseConfigReelgrid no symbol ${t} in the list`) : (r.symbols[i].push(e), r.symbolsIDs[i].push(t));
+						e === null ? O$1.error(`Logic::parseConfigReelgrid no symbol ${t} in the list`) : (r.symbols[i].push(e), r.symbolsIDs[i].push(t));
 					}
 				}
 				this._allReelsets.push(r);
@@ -96644,7 +96644,7 @@ var ke$1 = (_GameData = class GameData {
 		this._hasRestore = e;
 	}
 	get nextAction() {
-		return this._currentRoundIndex > this._roundTypes.length - 1 ? Ee$1.NONE : this._roundTypes[this._currentRoundIndex];
+		return this._currentRoundIndex > this._roundTypes.length - 1 ? Oe$1.NONE : this._roundTypes[this._currentRoundIndex];
 	}
 	get isReplayMode() {
 		return this._isReplayMode;
@@ -96791,7 +96791,7 @@ var ke$1 = (_GameData = class GameData {
 		return this._beforeFSReels;
 	}
 }, _defineProperty(_GameData, "CENT_TO_A_DOLLAR", .01), _defineProperty(_GameData, "DOLLAR_TO_A_CENT", 100), _GameData);
-ke$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], ke$1);
+je$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], je$1);
 var PlatformEvents = (_Class2 = class {}, _defineProperty(_Class2, "FREEZE_BET_CALLBACK_CALLED", "PlatformEvents::FREEZE_BET_CALLBACK_CALLED"), _defineProperty(_Class2, "UNFREEZE_BET_CALLBACK_CALLED", "PlatformEvents::UNFREEZE_BET_CALLBACK_CALLED"), _Class2);
 Object.freeze({
 	115: "115",
@@ -96986,7 +96986,7 @@ Object.freeze({
 	X86: "ia32",
 	X86_64: "amd64"
 });
-var je$1 = Object.freeze({
+var Ne$1 = Object.freeze({
 	CONSOLE: "console",
 	DESKTOP: "desktop",
 	EMBEDDED: "embedded",
@@ -97097,7 +97097,7 @@ Object.freeze({
 	W3M: "w3m",
 	WEBKIT: "WebKit"
 });
-var Me$1 = Object.freeze({
+var Pe$1 = Object.freeze({
 	AIX: "AIX",
 	AMIGA_OS: "Amiga OS",
 	ANDROID: "Android",
@@ -97551,22 +97551,22 @@ Object.freeze({
 		VOLVO: "Volvo"
 	} }
 });
-var Ne$1 = Me$1;
-var Fe$1 = je$1;
-var Ie$1 = class Device {
+var Fe$1 = Pe$1;
+var Le$1 = Ne$1;
+var j = class Device {
 	constructor() {
 		_defineProperty(this, "os", void 0);
 		_defineProperty(this, "type", void 0);
 		_defineProperty(this, "browser", void 0);
 		let e = new UAParser(navigator.userAgent).getResult(), t = e.os.name, n = e.device.type;
-		navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1 && (t = Ne$1.IOS, n = Fe$1.TABLET), this.os = t, this.type = n, this.browser = e.browser.name;
+		navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1 && (t = Fe$1.IOS, n = Le$1.TABLET), this.os = t, this.type = n, this.browser = e.browser.name;
 	}
 	get isMobile() {
-		return this.type === Fe$1.MOBILE || this.type === Fe$1.TABLET;
+		return this.type === Le$1.MOBILE || this.type === Le$1.TABLET;
 	}
 };
-Ie$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], Ie$1);
-var N$1 = {
+j = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], j);
+var M$1 = {
 	Game: Symbol("Game"),
 	System: Symbol("System"),
 	UpdateManager: Symbol("UpdateManager"),
@@ -97580,7 +97580,7 @@ var N$1 = {
 	Resources: Symbol("Resources"),
 	APIModule: Symbol("APIModule")
 };
-var P$2 = {
+var N$1 = {
 	ISettings: Symbol("ISettings"),
 	IModule: Symbol("IModule"),
 	IView: Symbol("IView"),
@@ -97610,7 +97610,7 @@ var P$2 = {
 	MainUI: Symbol("MainUI"),
 	GlobalGameState: Symbol("GlobalGameState")
 };
-var F = /* @__PURE__ */ function(e) {
+var P$2 = /* @__PURE__ */ function(e) {
 	return e[e.IDLE = 0] = "IDLE", e[e.UP = 1] = "UP", e[e.DOWN = 2] = "DOWN", e[e.OVER = 3] = "OVER", e[e.DISABLED = 4] = "DISABLED", e;
 }({});
 var Button = class extends import_lib.Container {
@@ -97619,29 +97619,29 @@ var Button = class extends import_lib.Container {
 		_super(), this._callback = e, this.setupInputCallbacks();
 	}
 	enable() {
-		this._over ? this.setState(F.OVER) : this.setState(F.UP), this.interactive = !0, this.cursor = "pointer";
+		this._over ? this.setState(P$2.OVER) : this.setState(P$2.UP), this.interactive = !0, this.cursor = "pointer";
 	}
 	disable() {
-		this.setState(F.DISABLED), this.interactive = !1, this.cursor = "none";
+		this.setState(P$2.DISABLED), this.interactive = !1, this.cursor = "none";
 	}
 	setupInputCallbacks() {
 		this.on("mousedown", this.onMouseDown), this.on("mouseup", this.onMouseUp), this.on("mouseover", this.onMouseOver), this.on("mouseout", this.onMouseOut), this.on("click", this.onClick), this.on("tap", this.onClick), this.on("touchstart", this.onMouseDown), this.on("touchendoutside", this.onMouseOut), this.on("touchend", this.onMouseUp);
 	}
 	updateFrame() {}
 	onMouseUp() {
-		this.setState(F.UP);
+		this.setState(P$2.UP);
 	}
 	onMouseDown() {
-		this.setState(F.DOWN), this._tapDownCallback && this._tapDownCallback();
+		this.setState(P$2.DOWN), this._tapDownCallback && this._tapDownCallback();
 	}
 	onMouseOver() {
-		this._over = !0, this.setState(F.OVER);
+		this._over = !0, this.setState(P$2.OVER);
 	}
 	onMouseOut() {
-		this._mouseOutCallback && this._mouseOutCallback(), this._over = !1, this.setState(F.UP);
+		this._mouseOutCallback && this._mouseOutCallback(), this._over = !1, this.setState(P$2.UP);
 	}
 	onClick() {
-		this.setState(F.OVER), this._callback ? this._callback(this._callbackParams) : A.warn("There is no a callback.");
+		this.setState(P$2.OVER), this._callback ? this._callback(this._callbackParams) : O$1.warn("There is no a callback.");
 	}
 	cleanFrame() {}
 	setState(e, t = !1) {
@@ -97663,12 +97663,12 @@ var Button = class extends import_lib.Container {
 		return this._state;
 	}
 };
-var Le$1 = /* @__PURE__ */ function(e) {
+var Re$1 = /* @__PURE__ */ function(e) {
 	return e[e.SPINE = 0] = "SPINE", e[e.SPINE_ANIMATION = 1] = "SPINE_ANIMATION", e[e.SPINE_ANIMATION_MULTITRACK = 2] = "SPINE_ANIMATION_MULTITRACK", e[e.ANIMATIION = 3] = "ANIMATIION", e[e.TWEEN = 4] = "TWEEN", e[e.UPDATABLE = 5] = "UPDATABLE", e;
 }({});
 var Updatable = class {
 	constructor(e = !1) {
-		_defineProperty(this, "type", Le$1.UPDATABLE);
+		_defineProperty(this, "type", Re$1.UPDATABLE);
 		_defineProperty(this, "_updateManager", void 0);
 		_defineProperty(this, "_isPlaying", void 0);
 		e && this.start();
@@ -97691,7 +97691,7 @@ var Updatable = class {
 };
 var SpineAnimation = class extends Updatable {
 	constructor(e) {
-		var _super2 = (..._args2) => (super(..._args2), _defineProperty(this, "type", Le$1.SPINE_ANIMATION), _defineProperty(this, "_spine", void 0), _defineProperty(this, "_completedTracks", /* @__PURE__ */ new Set()), _defineProperty(this, "_completeCallbackMap", {}), _defineProperty(this, "_eventsMap", {}), this);
+		var _super2 = (..._args2) => (super(..._args2), _defineProperty(this, "type", Re$1.SPINE_ANIMATION), _defineProperty(this, "_spine", void 0), _defineProperty(this, "_completedTracks", /* @__PURE__ */ new Set()), _defineProperty(this, "_completeCallbackMap", {}), _defineProperty(this, "_eventsMap", {}), this);
 		_super2(), this._spine = e;
 	}
 	play(e, t = 0, n = !1, r) {
@@ -97862,19 +97862,19 @@ var SpineButton = class extends Button {
 		this._skin = n, this._spineAnimation = new SpineAnimation(e), this.addChild(this._spineAnimation.spine), t.add(this._spineAnimation), this.setSkinOnAnimation(), this._spineAnimation.play("IDLE", 0, !0);
 	}
 	setAnimations(e, t, n, r) {
-		this._animation[F.UP] = e, this._animation[F.DOWN] = t || e, this._animation[F.OVER] = n || e, this._animation[F.DISABLED] = r || e, this.generateNewHitArea();
+		this._animation[P$2.UP] = e, this._animation[P$2.DOWN] = t || e, this._animation[P$2.OVER] = n || e, this._animation[P$2.DISABLED] = r || e, this.generateNewHitArea();
 	}
 	enable() {
 		super.enable(), this.generateNewHitArea();
 	}
 	setAnimationsLoop(e, t, n, r) {
-		this._animationLoop[F.UP] = e, this._animationLoop[F.DOWN] = t !== null && t !== void 0 ? t : e, this._animationLoop[F.OVER] = n !== null && n !== void 0 ? n : e, this._animationLoop[F.DISABLED] = r !== null && r !== void 0 ? r : e;
+		this._animationLoop[P$2.UP] = e, this._animationLoop[P$2.DOWN] = t !== null && t !== void 0 ? t : e, this._animationLoop[P$2.OVER] = n !== null && n !== void 0 ? n : e, this._animationLoop[P$2.DISABLED] = r !== null && r !== void 0 ? r : e;
 	}
 	setCustomHitArea(e) {
 		this._customHitArea = e, this.hitArea = e;
 	}
 	resetState() {
-		this._over = !1, this.setState(F.UP, !0);
+		this._over = !1, this.setState(P$2.UP, !0);
 	}
 	hasSlotHitBox() {
 		return this.spine.skeleton.findSlot("HIT_BOX") !== null;
@@ -97899,10 +97899,10 @@ var SpineButton = class extends Button {
 		if (this._onClickIsOverState) if (this._callback) {
 			let e = this._spineAnimation.getTrackAnimationName(0) === "PRESSED" || this._spineAnimation.getTrackAnimationName(1) === "PRESSED";
 			this._spineAnimation.isPlaying && e ? this._spineAnimation.setOnComplete(() => {
-				this.setState(F.OVER), this._callback(this._callbackParams);
-			}) : (this.setState(F.OVER), this._callback(this._callbackParams));
-		} else A.warn("There is no a callback.");
-		else this._callback ? this._callback() : A.warn("There is no a callback.");
+				this.setState(P$2.OVER), this._callback(this._callbackParams);
+			}) : (this.setState(P$2.OVER), this._callback(this._callbackParams));
+		} else O$1.warn("There is no a callback.");
+		else this._callback ? this._callback() : O$1.warn("There is no a callback.");
 	}
 	updateFrame() {
 		this._animation[this._state] && this._spineAnimation.play(this._animation[this._state], 0, this._animationLoop[this._state]);
@@ -97947,10 +97947,10 @@ var LocalizedSpineButton = class extends SpineButton {
 		_super3(e), this._spineUtils = t, this._resources = n;
 	}
 	setupLocales(e, t, n, r) {
-		this._locales[F.UP] = e, this._locales[F.DOWN] = t !== null && t !== void 0 ? t : e, this._locales[F.OVER] = n !== null && n !== void 0 ? n : e, this._locales[F.DISABLED] = r !== null && r !== void 0 ? r : e;
+		this._locales[P$2.UP] = e, this._locales[P$2.DOWN] = t !== null && t !== void 0 ? t : e, this._locales[P$2.OVER] = n !== null && n !== void 0 ? n : e, this._locales[P$2.DISABLED] = r !== null && r !== void 0 ? r : e;
 	}
 	setupButtonSlots(e, t, n, r) {
-		this._slots[F.UP] = e, this._slots[F.DOWN] = t !== null && t !== void 0 ? t : e, this._slots[F.OVER] = n !== null && n !== void 0 ? n : e, this._slots[F.DISABLED] = r !== null && r !== void 0 ? r : e;
+		this._slots[P$2.UP] = e, this._slots[P$2.DOWN] = t !== null && t !== void 0 ? t : e, this._slots[P$2.OVER] = n !== null && n !== void 0 ? n : e, this._slots[P$2.DISABLED] = r !== null && r !== void 0 ? r : e;
 	}
 	updateFrame() {
 		this._animation[this._state] && (this._spineAnimation.play(this._animation[this._state], 0, this._animationLoop[this._state]), this._spineAnimation.spine.getSlotObject(this._slots[this._state]) || this._spineUtils.addSlotObject(this._spineAnimation, this._slots[this._state], new import_lib.Sprite(this._resources.getLocaleTextImage(this._locales[this._state]))));
@@ -98134,7 +98134,7 @@ var GameUtils = class {
 		}
 	}
 	static printTimestamp(e) {
-		A.error(`${e} ${performance.now()}`);
+		O$1.error(`${e} ${performance.now()}`);
 	}
 };
 var SpineThumb = class extends SpineButton {
@@ -98179,7 +98179,7 @@ var SpineThumb = class extends SpineButton {
 		this._generatedHitArea = new import_lib.Rectangle(900 * -.5, 900 * -.5, 900, 900), this.hitArea = this._generatedHitArea;
 	}
 };
-var ze$1 = class EventManager {
+var Be$1 = class EventManager {
 	constructor() {
 		_defineProperty(this, "_eventMap", {});
 	}
@@ -98220,7 +98220,7 @@ var ze$1 = class EventManager {
 		return this._eventMap[e].some((e) => e.owner === t);
 	}
 };
-ze$1 = __decorate$1([injectable()], ze$1);
+Be$1 = __decorate$1([injectable()], Be$1);
 var RectangleArea = class {
 	constructor(e = 0, t = 0) {
 		_defineProperty(this, "_width", void 0);
@@ -98359,8 +98359,8 @@ function isIframe() {
 		return !0;
 	}
 }
-var Be$1;
-var Ve$1 = class FullscreenManager {
+var Ve$1;
+var He$1 = class FullscreenManager {
 	constructor(e, t) {
 		_defineProperty(this, "_device", void 0);
 		_defineProperty(this, "_eventManager", void 0);
@@ -98396,16 +98396,16 @@ var Ve$1 = class FullscreenManager {
 		e !== this._wasFullscreen && (this._eventManager.emit(ScreenEvents.FULLSCREEN_STATUS_CHANGED), this._eventManager.emit(e ? ScreenEvents.FULLSCREEN_ENTERED : ScreenEvents.FULLSCREEN_EXITED)), this._wasFullscreen = e;
 	}
 };
-Ve$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [typeof (Be$1 = Ie$1 !== void 0 && Ie$1) == "function" ? Be$1 : Object, Object])], Ve$1);
-var He$1;
+He$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [typeof (Ve$1 = j !== void 0 && j) == "function" ? Ve$1 : Object, Object])], He$1);
 var Ue$1;
-var We$1 = class ResolutionManager {
+var We$1;
+var Ge = class ResolutionManager {
 	constructor(e, t) {
 		_defineProperty(this, "_resolution", void 0);
 		_defineProperty(this, "_halfResolution", void 0);
 		_defineProperty(this, "_viewportResolution", void 0);
 		_defineProperty(this, "_device", void 0);
-		this._resolution = new RectangleArea(O$1, k), this._halfResolution = new RectangleArea(960, 960), this._device = t, this.initViewPortResolution(e);
+		this._resolution = new RectangleArea(E$1, D$1), this._halfResolution = new RectangleArea(960, 960), this._device = t, this.initViewPortResolution(e);
 	}
 	updateViewPortResolution(e, t) {
 		this._viewportResolution = {
@@ -98432,10 +98432,10 @@ var We$1 = class ResolutionManager {
 		return this._device;
 	}
 };
-We$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [typeof (He$1 = RectangleArea !== void 0 && RectangleArea) == "function" ? He$1 : Object, typeof (Ue$1 = Ie$1 !== void 0 && Ie$1) == "function" ? Ue$1 : Object])], We$1);
+Ge = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [typeof (Ue$1 = RectangleArea !== void 0 && RectangleArea) == "function" ? Ue$1 : Object, typeof (We$1 = j !== void 0 && j) == "function" ? We$1 : Object])], Ge);
 var Spine = class extends Spine$1 {
 	constructor(e) {
-		var _super9 = (..._args11) => (super(..._args11), _defineProperty(this, "type", Le$1.SPINE), _defineProperty(this, "_updateManager", void 0), _defineProperty(this, "_isPlaying", void 0), this);
+		var _super9 = (..._args11) => (super(..._args11), _defineProperty(this, "type", Re$1.SPINE), _defineProperty(this, "_updateManager", void 0), _defineProperty(this, "_isPlaying", void 0), this);
 		_super9({
 			skeletonData: e,
 			autoUpdate: !1
@@ -98460,12 +98460,12 @@ var Spine = class extends Spine$1 {
 		return this._isPlaying;
 	}
 };
-var I$1 = /* @__PURE__ */ function(e) {
+var F = /* @__PURE__ */ function(e) {
 	return e[e.PORTRAIT = 0] = "PORTRAIT", e[e.LANDSCAPE = 1] = "LANDSCAPE", e;
 }({});
-var Ge;
 var Ke$1;
-var qe$1 = class ScreenLayoutManager {
+var qe$1;
+var Je$1 = class ScreenLayoutManager {
 	constructor(e, t, n) {
 		_defineProperty(this, "_orientation", void 0);
 		_defineProperty(this, "_app", void 0);
@@ -98484,7 +98484,7 @@ var qe$1 = class ScreenLayoutManager {
 		return this._screenParams;
 	}
 	resizeGameContainer() {
-		let e = this._orientation === I$1.PORTRAIT, t = this._app.screen.width, n = this._app.screen.height, r = e ? Math.min(t / ue$1, n / k) : Math.min(t / O$1, n / ue$1), i = (t - O$1 * r) * .5, a = (n - k * r) * .5;
+		let e = this._orientation === F.PORTRAIT, t = this._app.screen.width, n = this._app.screen.height, r = e ? Math.min(t / fe$1, n / D$1) : Math.min(t / E$1, n / fe$1), i = (t - E$1 * r) * .5, a = (n - D$1 * r) * .5;
 		this._gameContainer.scale.set(r), this._gameContainer.position.set(i, a), this._screenParams = {
 			width: t,
 			height: n,
@@ -98496,22 +98496,22 @@ var qe$1 = class ScreenLayoutManager {
 	}
 	onResized() {
 		let e = this._orientation;
-		this._orientation = this._app.screen.height <= this._app.screen.width ? I$1.LANDSCAPE : I$1.PORTRAIT, this.resizeGameContainer(), this._eventManager.emit(ScreenEvents.SCREEN_RESIZED, _objectSpread2({}, this._screenParams)), e !== this._orientation && this.onOrientationChanged();
+		this._orientation = this._app.screen.height <= this._app.screen.width ? F.LANDSCAPE : F.PORTRAIT, this.resizeGameContainer(), this._eventManager.emit(ScreenEvents.SCREEN_RESIZED, _objectSpread2({}, this._screenParams)), e !== this._orientation && this.onOrientationChanged();
 	}
 	onOrientationChanged() {
-		this._orientation === I$1.PORTRAIT ? this._eventManager.emit(ScreenEvents.PORTRAIT_MODE) : this._eventManager.emit(ScreenEvents.LANDSCAPE_MODE), this._eventManager.emit(ScreenEvents.ORIENTATION_CHANGED, this._orientation);
+		this._orientation === F.PORTRAIT ? this._eventManager.emit(ScreenEvents.PORTRAIT_MODE) : this._eventManager.emit(ScreenEvents.LANDSCAPE_MODE), this._eventManager.emit(ScreenEvents.ORIENTATION_CHANGED, this._orientation);
 	}
 	applyIframeBackground() {
 		document.body.style.background = isIframe() ? "" : "black";
 	}
 };
-qe$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [
-	typeof (Ge = import_lib.Application !== void 0 && import_lib.Application) == "function" ? Ge : Object,
-	typeof (Ke$1 = import_lib.Container !== void 0 && import_lib.Container) == "function" ? Ke$1 : Object,
+Je$1 = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [
+	typeof (Ke$1 = import_lib.Application !== void 0 && import_lib.Application) == "function" ? Ke$1 : Object,
+	typeof (qe$1 = import_lib.Container !== void 0 && import_lib.Container) == "function" ? qe$1 : Object,
 	Object
-])], qe$1);
-var Je$1;
-var Ye = class VisibilityManager {
+])], Je$1);
+var Ye;
+var Xe = class VisibilityManager {
 	constructor() {
 		_defineProperty(this, "_eventManager", void 0);
 		_defineProperty(this, "_device", void 0);
@@ -98536,12 +98536,12 @@ var Ye = class VisibilityManager {
 		this._onInvisibleCallback = e;
 	}
 };
-__decorate$1([inject(N$1.IEventManager), __decorateMetadata("design:type", Object)], Ye.prototype, "_eventManager", void 0), __decorate$1([inject(N$1.Device), __decorateMetadata("design:type", typeof (Je$1 = Ie$1 !== void 0 && Ie$1) == "function" ? Je$1 : Object)], Ye.prototype, "_device", void 0), Ye = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], Ye);
-var Xe;
+__decorate$1([inject(M$1.IEventManager), __decorateMetadata("design:type", Object)], Xe.prototype, "_eventManager", void 0), __decorate$1([inject(M$1.Device), __decorateMetadata("design:type", typeof (Ye = j !== void 0 && j) == "function" ? Ye : Object)], Xe.prototype, "_device", void 0), Xe = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], Xe);
 var Ze;
 var Qe$1;
 var $e$1;
-var et = $e$1 = class Layout {
+var et;
+var tt = et = class Layout {
 	constructor() {
 		_defineProperty(this, "_device", void 0);
 		_defineProperty(this, "_resources", void 0);
@@ -98558,13 +98558,13 @@ var et = $e$1 = class Layout {
 		for (let e of r.bones) {
 			let t = n + e.name;
 			if (this._layoutObjects[t]) {
-				A.warn(`Bone data for ${t} already exists / has already been added. Ignoring.`);
+				O$1.warn(`Bone data for ${t} already exists / has already been added. Ignoring.`);
 				continue;
 			}
 			this._layoutPositions[t] = {
 				x: e.x,
 				y: e.y * -1
-			}, this._layoutAbsolutePositions[t] = $e$1.calculateAbsolutePositions(e);
+			}, this._layoutAbsolutePositions[t] = et.calculateAbsolutePositions(e);
 			let r = i.skeleton.findSlot(e.name);
 			if (r) {
 				var _r$getAttachment;
@@ -98602,7 +98602,7 @@ var et = $e$1 = class Layout {
 			x: this._layoutPositions[e].x,
 			y: this._layoutPositions[e].y
 		} : null;
-		return n || A.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
+		return n || O$1.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
 	}
 	getAbsolutePosition(e, t) {
 		e = this.getViewPrefix(t) + e;
@@ -98610,11 +98610,11 @@ var et = $e$1 = class Layout {
 			x: this._layoutAbsolutePositions[e].x,
 			y: this._layoutAbsolutePositions[e].y
 		} : null;
-		return n || A.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
+		return n || O$1.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
 	}
 	getAbsoluteTopLeftPosition(e, t) {
 		let n = this.getAbsolutePosition(e, t);
-		return n.x += t === I$1.PORTRAIT ? 540 : 960, n.y += t === I$1.PORTRAIT ? 960 : 540, n;
+		return n.x += t === F.PORTRAIT ? 540 : 960, n.y += t === F.PORTRAIT ? 960 : 540, n;
 	}
 	getAbsoluteUIPosition(e, t) {
 		e = this.getViewPrefix(t) + e;
@@ -98622,7 +98622,7 @@ var et = $e$1 = class Layout {
 			x: this._layoutAbsolutePositions[e].x,
 			y: this._layoutAbsolutePositions[e].y
 		} : null;
-		return n || A.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), {
+		return n || O$1.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), {
 			x: n.x + 960,
 			y: n.y + 960
 		};
@@ -98633,7 +98633,7 @@ var et = $e$1 = class Layout {
 			width: this._layoutRegionObjects[e].width,
 			height: this._layoutRegionObjects[e].height
 		} : null;
-		return n || A.error(`NO ATTACHMENT NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
+		return n || O$1.error(`NO ATTACHMENT NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
 	}
 	getSize(e, t) {
 		e = this.getViewPrefix(t) + e;
@@ -98641,7 +98641,7 @@ var et = $e$1 = class Layout {
 			width: this._layoutObjects[e].width,
 			height: this._layoutObjects[e].height
 		} : null;
-		return n || A.error(`NO OBJECT WITH VALID SIZE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
+		return n || O$1.error(`NO OBJECT WITH VALID SIZE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
 	}
 	getScale(e, t) {
 		e = this.getViewPrefix(t) + e;
@@ -98649,7 +98649,7 @@ var et = $e$1 = class Layout {
 			x: this._layoutObjects[e].scale.x,
 			y: this._layoutObjects[e].scale.y
 		} : null;
-		return n || A.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
+		return n || O$1.error(`NO BONE NAMED: ${e} IN LAYOUT_TEMPLATE.`), n;
 	}
 	getCenterOfScreen() {
 		return {
@@ -98661,8 +98661,8 @@ var et = $e$1 = class Layout {
 		return this._isLoaded;
 	}
 	getViewPrefix(e) {
-		if (e === I$1.PORTRAIT) return "portrait_";
-		if (e === I$1.LANDSCAPE) return "landscape_";
+		if (e === F.PORTRAIT) return "portrait_";
+		if (e === F.LANDSCAPE) return "landscape_";
 	}
 	static calculateAbsolutePositions(e) {
 		let t = {
@@ -98673,7 +98673,7 @@ var et = $e$1 = class Layout {
 		return t.y *= -1, t;
 	}
 };
-__decorate$1([inject(N$1.Device), __decorateMetadata("design:type", typeof (Xe = Ie$1 !== void 0 && Ie$1) == "function" ? Xe : Object)], et.prototype, "_device", void 0), __decorate$1([inject(P$2.AssetsManager), __decorateMetadata("design:type", Object)], et.prototype, "_resources", void 0), __decorate$1([inject(N$1.FullscreenManager), __decorateMetadata("design:type", typeof (Ze = Ve$1 !== void 0 && Ve$1) == "function" ? Ze : Object)], et.prototype, "_fullscreenManager", void 0), __decorate$1([inject(N$1.ResolutionManager), __decorateMetadata("design:type", typeof (Qe$1 = We$1 !== void 0 && We$1) == "function" ? Qe$1 : Object)], et.prototype, "_resolutionManager", void 0), et = $e$1 = __decorate$1([injectable()], et);
+__decorate$1([inject(M$1.Device), __decorateMetadata("design:type", typeof (Ze = j !== void 0 && j) == "function" ? Ze : Object)], tt.prototype, "_device", void 0), __decorate$1([inject(N$1.AssetsManager), __decorateMetadata("design:type", Object)], tt.prototype, "_resources", void 0), __decorate$1([inject(M$1.FullscreenManager), __decorateMetadata("design:type", typeof (Qe$1 = He$1 !== void 0 && He$1) == "function" ? Qe$1 : Object)], tt.prototype, "_fullscreenManager", void 0), __decorate$1([inject(M$1.ResolutionManager), __decorateMetadata("design:type", typeof ($e$1 = Ge !== void 0 && Ge) == "function" ? $e$1 : Object)], tt.prototype, "_resolutionManager", void 0), tt = et = __decorate$1([injectable()], tt);
 var ModuleState = class {
 	constructor(e, t) {
 		_defineProperty(this, "_events", {});
@@ -98727,17 +98727,17 @@ var QueueEventsHandler = class {
 		this._eventManager = e;
 	}
 	printData() {
-		A.log("_eventsQueue:");
-		for (let e in this._eventsQueue) A.log(`${e}`);
-		A.log("_eventsFunctionsQueue:");
-		for (let e in this._eventsFunctionsQueue) A.log(`${e}`);
-		A.log("_eventsListBeforeCallback:");
+		O$1.log("_eventsQueue:");
+		for (let e in this._eventsQueue) O$1.log(`${e}`);
+		O$1.log("_eventsFunctionsQueue:");
+		for (let e in this._eventsFunctionsQueue) O$1.log(`${e}`);
+		O$1.log("_eventsListBeforeCallback:");
 		for (let e of this._eventsListBeforeCallback) {
-			A.log("waitingForEvents:");
-			for (let t of e.waitingForEvents) A.log(`${t}`);
+			O$1.log("waitingForEvents:");
+			for (let t of e.waitingForEvents) O$1.log(`${t}`);
 		}
-		A.log("_eventsFlowPairs:");
-		for (let e of this._eventsFlowPairs) A.log(`start: ${e.start} end: ${e.end}`);
+		O$1.log("_eventsFlowPairs:");
+		for (let e of this._eventsFlowPairs) O$1.log(`start: ${e.start} end: ${e.end}`);
 	}
 	getEventPromise(e) {
 		return new Promise((t) => {
@@ -98794,7 +98794,7 @@ var QueueEventsHandler = class {
 var GlobalModuleState = class extends ModuleState {
 	constructor(e, t, n) {
 		var _super10 = (..._args12) => (super(..._args12), _defineProperty(this, "_queueEvents", void 0), _defineProperty(this, "_gameController", void 0), this);
-		_super10(e, t), n && (this._queueEvents = new QueueEventsHandler(n)), this._gameController = e.diContainer.get(P$2.GameController), this.setupQueueEvents();
+		_super10(e, t), n && (this._queueEvents = new QueueEventsHandler(n)), this._gameController = e.diContainer.get(N$1.GameController), this.setupQueueEvents();
 	}
 	setupQueueEvents() {}
 	on(e, t) {
@@ -98816,7 +98816,7 @@ var StatedDebug = class {
 		this._states[e] = t;
 	}
 	drawModulesMap() {
-		for (let e in this._states) this._states.hasOwnProperty(e) && A.log(`${e} - ${this._states[e]}`);
+		for (let e in this._states) this._states.hasOwnProperty(e) && O$1.log(`${e} - ${this._states[e]}`);
 	}
 	keyboardInput(e) {
 		e.code === "ArrowLeft" && this.drawModulesMap();
@@ -98931,10 +98931,10 @@ var UpdateManager = class extends Updatable {
 		this._timeScale = e;
 	}
 };
-var tt;
 var nt$1;
 var rt$1;
-var L = (_Module = class Module {
+var it$1;
+var I$1 = (_Module = class Module {
 	constructor() {
 		_defineProperty(this, "_eventManager", void 0);
 		_defineProperty(this, "_updateManager", void 0);
@@ -98957,7 +98957,7 @@ var L = (_Module = class Module {
 	gotoPreviousState() {
 		if (this._previousStateName && this._previousStateName.length > 0) {
 			let e = this._currentState ? this._currentState.name : "";
-			this._currentState && this._currentState.onLeaveState(), this._currentState = this._states[this._previousStateName], this._previousStateName = e, rt$1._debugInfo.setModuleState(this.constructor.name, this._currentState.name), A.log(`${this.constructor.name}: ${e} -> ${this.currentState.name}`);
+			this._currentState && this._currentState.onLeaveState(), this._currentState = this._states[this._previousStateName], this._previousStateName = e, it$1._debugInfo.setModuleState(this.constructor.name, this._currentState.name), O$1.log(`${this.constructor.name}: ${e} -> ${this.currentState.name}`);
 		} else throw Error("Module::gotoPreviousState previous state does not exist");
 	}
 	hasConfigValue(e) {
@@ -98985,7 +98985,7 @@ var L = (_Module = class Module {
 	}
 	changeStateTo(e) {
 		let t = this._currentState ? this._currentState.name : "";
-		this._previousStateName = t, this._currentState && this._currentState.onLeaveState(), this._currentState = this._states[e], this._currentState.onEnterState(), rt$1._debugInfo.setModuleState(this.constructor.name, this._currentState.name), A.log(`${this.constructor.name}: ${t} -> ${this.currentState.name}`);
+		this._previousStateName = t, this._currentState && this._currentState.onLeaveState(), this._currentState = this._states[e], this._currentState.onEnterState(), it$1._debugInfo.setModuleState(this.constructor.name, this._currentState.name), O$1.log(`${this.constructor.name}: ${t} -> ${this.currentState.name}`);
 	}
 	setupEvents() {
 		this._view && (this.eventManager.on(ScreenEvents.LANDSCAPE_MODE, this._view.onLandscape.bind(this.view), this), this.eventManager.on(ScreenEvents.PORTRAIT_MODE, this._view.onPortrait.bind(this.view), this), this.eventManager.on(ScreenEvents.SCREEN_RESIZED, this._view.onResized.bind(this.view), this), this.eventManager.on(ScreenEvents.FULLSCREEN_ENTERED, this._view.onFullscreenEntered.bind(this.view), this), this.eventManager.on(ScreenEvents.FULLSCREEN_EXITED, this._view.onFullscreenExited.bind(this.view), this));
@@ -99040,9 +99040,9 @@ var L = (_Module = class Module {
 	get diContainer() {
 		return this._game.diContainer;
 	}
-}, rt$1 = _Module, _defineProperty(_Module, "_debugInfo", new StatedDebug()), _Module);
-__decorate$1([inject(N$1.IEventManager), __decorateMetadata("design:type", Object)], L.prototype, "_eventManager", void 0), __decorate$1([inject(N$1.UpdateManager), __decorateMetadata("design:type", typeof (tt = UpdateManager !== void 0 && UpdateManager) == "function" ? tt : Object)], L.prototype, "_updateManager", void 0), __decorate$1([inject(N$1.Game), __decorateMetadata("design:type", Object)], L.prototype, "_game", void 0), __decorate$1([inject(P$2.GameData), __decorateMetadata("design:type", Object)], L.prototype, "_gameData", void 0), __decorate$1([inject(P$2.GameConfig), __decorateMetadata("design:type", typeof (nt$1 = GameConfig !== void 0 && GameConfig) == "function" ? nt$1 : Object)], L.prototype, "_gameConfig", void 0), L = rt$1 = __decorate$1([injectable()], L);
-var it$1 = class GlobalStateModule extends L {
+}, it$1 = _Module, _defineProperty(_Module, "_debugInfo", new StatedDebug()), _Module);
+__decorate$1([inject(M$1.IEventManager), __decorateMetadata("design:type", Object)], I$1.prototype, "_eventManager", void 0), __decorate$1([inject(M$1.UpdateManager), __decorateMetadata("design:type", typeof (nt$1 = UpdateManager !== void 0 && UpdateManager) == "function" ? nt$1 : Object)], I$1.prototype, "_updateManager", void 0), __decorate$1([inject(M$1.Game), __decorateMetadata("design:type", Object)], I$1.prototype, "_game", void 0), __decorate$1([inject(N$1.GameData), __decorateMetadata("design:type", Object)], I$1.prototype, "_gameData", void 0), __decorate$1([inject(N$1.GameConfig), __decorateMetadata("design:type", typeof (rt$1 = GameConfig !== void 0 && GameConfig) == "function" ? rt$1 : Object)], I$1.prototype, "_gameConfig", void 0), I$1 = it$1 = __decorate$1([injectable()], I$1);
+var at$1 = class GlobalStateModule extends I$1 {
 	onStateHandle(e) {
 		this.onCurrentStateHandle(e);
 	}
@@ -99050,19 +99050,19 @@ var it$1 = class GlobalStateModule extends L {
 		return this._gameData;
 	}
 };
-it$1 = __decorate$1([injectFromBase()], it$1);
+at$1 = __decorate$1([injectFromBase()], at$1);
 var GlobalStateEvents = (_Class4 = class {}, _defineProperty(_Class4, "CAN_SPIN", "GlobalStateEvents::CAN_SPIN"), _Class4);
-var at$1 = Array.isArray;
-var ot$1 = Array.prototype.indexOf;
-var st$1 = Array.prototype.includes;
-var ct$1 = Array.from;
-var lt$1 = Object.defineProperty;
-var ut$1 = Object.getOwnPropertyDescriptor;
-var dt$1 = Object.getOwnPropertyDescriptors;
-var ft$1 = Object.prototype;
-var pt$1 = Array.prototype;
-var mt$1 = Object.getPrototypeOf;
-var ht$1 = Object.isExtensible;
+var ot$1 = Array.isArray;
+var st$1 = Array.prototype.indexOf;
+var ct$1 = Array.prototype.includes;
+var lt$1 = Array.from;
+var ut$1 = Object.defineProperty;
+var dt$1 = Object.getOwnPropertyDescriptor;
+var ft$1 = Object.getOwnPropertyDescriptors;
+var pt$1 = Object.prototype;
+var mt$1 = Array.prototype;
+var ht$1 = Object.getPrototypeOf;
+var gt$1 = Object.isExtensible;
 var noop = () => {};
 function run_all(e) {
 	for (var t = 0; t < e.length; t++) e[t]();
@@ -99078,36 +99078,36 @@ function deferred() {
 		reject: t
 	};
 }
-var gt$1 = 1024;
-var _t = 2048;
-var vt$1 = 4096;
-var yt$1 = 8192;
-var bt$1 = 16384;
-var xt = 32768;
-var St$1 = 1 << 25;
-var Ct$1 = 65536;
-var wt$1 = 1 << 19;
-var Tt = 1 << 20;
-var Et = 1 << 25;
-var Dt = 65536;
-var Ot = 1 << 21;
-var kt = 1 << 22;
-var At$1 = 1 << 23;
-var jt = Symbol("$state");
-var Mt$1 = Symbol("");
-var Nt = Symbol("attributes");
-var Pt$1 = Symbol("class");
-var Ft = Symbol("style");
-var It$1 = Symbol("text");
-var Lt = Symbol("form reset");
-var Rt = new class StaleReactionError extends Error {
+var _t = 1024;
+var vt$1 = 2048;
+var yt$1 = 4096;
+var bt$1 = 8192;
+var xt = 16384;
+var St$1 = 32768;
+var Ct$1 = 1 << 25;
+var wt$1 = 65536;
+var Tt = 1 << 19;
+var Et = 1 << 20;
+var Dt = 1 << 25;
+var Ot = 65536;
+var kt = 1 << 21;
+var At$1 = 1 << 22;
+var jt = 1 << 23;
+var Mt$1 = Symbol("$state");
+var Nt = Symbol("");
+var Pt$1 = Symbol("attributes");
+var Ft = Symbol("class");
+var It$1 = Symbol("style");
+var Lt = Symbol("text");
+var Rt = Symbol("form reset");
+var zt = new class StaleReactionError extends Error {
 	constructor(..._args15) {
 		super(..._args15);
 		_defineProperty(this, "name", "StaleReactionError");
 		_defineProperty(this, "message", "The reaction that called `getAbortSignal()` was re-run or destroyed");
 	}
 }();
-var zt = !!((_globalThis$document = globalThis.document) === null || _globalThis$document === void 0 ? void 0 : _globalThis$document.contentType) && /* @__PURE__ */ globalThis.document.contentType.includes("xml");
+var Bt = !!((_globalThis$document = globalThis.document) === null || _globalThis$document === void 0 ? void 0 : _globalThis$document.contentType) && /* @__PURE__ */ globalThis.document.contentType.includes("xml");
 function lifecycle_outside_component(e) {
 	throw Error("https://svelte.dev/e/lifecycle_outside_component");
 }
@@ -99141,10 +99141,10 @@ function state_unsafe_mutation() {
 function svelte_boundary_reset_onerror() {
 	throw Error("https://svelte.dev/e/svelte_boundary_reset_onerror");
 }
-var Bt = {};
-var R = Symbol();
-var Vt = "http://www.w3.org/1999/xhtml";
-var Ht = "http://www.w3.org/2000/svg";
+var Vt = {};
+var L = Symbol();
+var Ht = "http://www.w3.org/1999/xhtml";
+var Ut = "http://www.w3.org/2000/svg";
 function derived_inert() {
 	console.warn("https://svelte.dev/e/derived_inert");
 }
@@ -99154,32 +99154,32 @@ function hydration_mismatch(e) {
 function svelte_boundary_reset_noop() {
 	console.warn("https://svelte.dev/e/svelte_boundary_reset_noop");
 }
-var z = !1;
+var R = !1;
 function set_hydrating(e) {
-	z = e;
+	R = e;
 }
-var B;
+var z;
 function set_hydrate_node(e) {
-	if (e === null) throw hydration_mismatch(), Bt;
-	return B = e;
+	if (e === null) throw hydration_mismatch(), Vt;
+	return z = e;
 }
 function hydrate_next() {
-	return set_hydrate_node(/* @__PURE__ */ get_next_sibling(B));
+	return set_hydrate_node(/* @__PURE__ */ get_next_sibling(z));
 }
 function reset(e) {
-	if (z) {
-		if (/* @__PURE__ */ get_next_sibling(B) !== null) throw hydration_mismatch(), Bt;
-		B = e;
+	if (R) {
+		if (/* @__PURE__ */ get_next_sibling(z) !== null) throw hydration_mismatch(), Vt;
+		z = e;
 	}
 }
 function next(e = 1) {
-	if (z) {
-		for (var t = e, n = B; t--;) n = /* @__PURE__ */ get_next_sibling(n);
-		B = n;
+	if (R) {
+		for (var t = e, n = z; t--;) n = /* @__PURE__ */ get_next_sibling(n);
+		z = n;
 	}
 }
 function skip_nodes(e = !0) {
-	for (var t = 0, n = B;;) {
+	for (var t = 0, n = z;;) {
 		if (n.nodeType === 8) {
 			var r = n.data;
 			if (r === "]") {
@@ -99192,7 +99192,7 @@ function skip_nodes(e = !0) {
 	}
 }
 function read_hydration_instruction(e) {
-	if (!e || e.nodeType !== 8) throw hydration_mismatch(), Bt;
+	if (!e || e.nodeType !== 8) throw hydration_mismatch(), Vt;
 	return e.data;
 }
 function equals(e) {
@@ -99204,22 +99204,22 @@ function safe_not_equal(e, t) {
 function safe_equals(e) {
 	return !safe_not_equal(e, this.v);
 }
-var Ut = !1;
 var Wt = !1;
-var V$1 = null;
+var Gt = !1;
+var B = null;
 function set_component_context(e) {
-	V$1 = e;
+	B = e;
 }
 function push(e, t = !1, n) {
-	V$1 = {
-		p: V$1,
+	B = {
+		p: B,
 		i: !1,
 		c: null,
 		e: null,
 		s: e,
 		x: null,
-		r: G,
-		l: Wt && !t ? {
+		r: W,
+		l: Gt && !t ? {
 			s: null,
 			u: null,
 			$: []
@@ -99227,37 +99227,37 @@ function push(e, t = !1, n) {
 	};
 }
 function pop(e) {
-	var t = V$1;
+	var t = B;
 	var n = t.e;
 	if (n !== null) {
 		t.e = null;
 		for (var r of n) create_user_effect(r);
 	}
-	return e !== void 0 && (t.x = e), t.i = !0, V$1 = t.p, e !== null && e !== void 0 ? e : {};
+	return e !== void 0 && (t.x = e), t.i = !0, B = t.p, e !== null && e !== void 0 ? e : {};
 }
 function is_runes() {
-	return !Wt || V$1 !== null && V$1.l === null;
+	return !Gt || B !== null && B.l === null;
 }
-var Gt = [];
+var Kt = [];
 function run_micro_tasks() {
-	var e = Gt;
-	Gt = [], run_all(e);
+	var e = Kt;
+	Kt = [], run_all(e);
 }
 function queue_micro_task(e) {
-	if (Gt.length === 0 && !Qt) {
-		var t = Gt;
+	if (Kt.length === 0 && !$t) {
+		var t = Kt;
 		queueMicrotask(() => {
-			t === Gt && run_micro_tasks();
+			t === Kt && run_micro_tasks();
 		});
 	}
-	Gt.push(e);
+	Kt.push(e);
 }
 function flush_tasks() {
-	for (; Gt.length > 0;) run_micro_tasks();
+	for (; Kt.length > 0;) run_micro_tasks();
 }
 function handle_error(e) {
-	var t = G;
-	if (t === null) return W.f |= At$1, e;
+	var t = W;
+	if (t === null) return U.f |= jt, e;
 	if (!(t.f & 32768) && !(t.f & 4)) throw e;
 	invoke_error_boundary(e, t);
 }
@@ -99276,36 +99276,36 @@ function invoke_error_boundary(e, t) {
 	}
 	throw e;
 }
-var Kt = ~(_t | vt$1 | gt$1);
+var qt = ~(vt$1 | yt$1 | _t);
 function set_signal_status(e, t) {
-	e.f = e.f & Kt | t;
+	e.f = e.f & qt | t;
 }
 function update_derived_status(e) {
-	e.f & 512 || e.deps === null ? set_signal_status(e, gt$1) : set_signal_status(e, vt$1);
+	e.f & 512 || e.deps === null ? set_signal_status(e, _t) : set_signal_status(e, yt$1);
 }
 function clear_marked(e) {
-	if (e !== null) for (let t of e) !(t.f & 2) || !(t.f & 65536) || (t.f ^= Dt, clear_marked(t.deps));
+	if (e !== null) for (let t of e) !(t.f & 2) || !(t.f & 65536) || (t.f ^= Ot, clear_marked(t.deps));
 }
 function defer_effect(e, t, n) {
-	e.f & 2048 ? t.add(e) : e.f & 4096 && n.add(e), clear_marked(e.deps), set_signal_status(e, gt$1);
+	e.f & 2048 ? t.add(e) : e.f & 4096 && n.add(e), clear_marked(e.deps), set_signal_status(e, _t);
 }
-var qt = !1;
-var Jt = null;
+var Jt = !1;
 var Yt = null;
-var H$1 = null;
 var Xt = null;
-var U = null;
+var V$1 = null;
 var Zt = null;
-var Qt = !1;
+var H$1 = null;
+var Qt = null;
 var $t = !1;
-var en = null;
+var en = !1;
 var tn = null;
-var nn = 0;
-var rn = 1;
-var an = (_e2 = /* @__PURE__ */ new WeakMap(), _t2 = /* @__PURE__ */ new WeakMap(), _n2 = /* @__PURE__ */ new WeakMap(), _r2 = /* @__PURE__ */ new WeakMap(), _i2 = /* @__PURE__ */ new WeakMap(), _a2 = /* @__PURE__ */ new WeakMap(), _o2 = /* @__PURE__ */ new WeakMap(), _s = /* @__PURE__ */ new WeakMap(), _c = /* @__PURE__ */ new WeakMap(), _l = /* @__PURE__ */ new WeakMap(), _u = /* @__PURE__ */ new WeakMap(), _d = /* @__PURE__ */ new WeakMap(), _f = /* @__PURE__ */ new WeakMap(), _p = /* @__PURE__ */ new WeakMap(), _m = /* @__PURE__ */ new WeakMap(), _h = /* @__PURE__ */ new WeakMap(), _Batch_brand = /* @__PURE__ */ new WeakSet(), _Batch = class Batch {
+var nn = null;
+var rn = 0;
+var an = 1;
+var on = (_e2 = /* @__PURE__ */ new WeakMap(), _t2 = /* @__PURE__ */ new WeakMap(), _n2 = /* @__PURE__ */ new WeakMap(), _r2 = /* @__PURE__ */ new WeakMap(), _i2 = /* @__PURE__ */ new WeakMap(), _a2 = /* @__PURE__ */ new WeakMap(), _o2 = /* @__PURE__ */ new WeakMap(), _s = /* @__PURE__ */ new WeakMap(), _c = /* @__PURE__ */ new WeakMap(), _l = /* @__PURE__ */ new WeakMap(), _u = /* @__PURE__ */ new WeakMap(), _d = /* @__PURE__ */ new WeakMap(), _f = /* @__PURE__ */ new WeakMap(), _p = /* @__PURE__ */ new WeakMap(), _m = /* @__PURE__ */ new WeakMap(), _h = /* @__PURE__ */ new WeakMap(), _Batch_brand = /* @__PURE__ */ new WeakSet(), _Batch = class Batch {
 	constructor() {
 		_classPrivateMethodInitSpec(this, _Batch_brand);
-		_defineProperty(this, "id", rn++);
+		_defineProperty(this, "id", an++);
 		_classPrivateFieldInitSpec(this, _e2, !1);
 		_defineProperty(this, "linked", !0);
 		_classPrivateFieldInitSpec(this, _t2, null);
@@ -99339,25 +99339,25 @@ var an = (_e2 = /* @__PURE__ */ new WeakMap(), _t2 = /* @__PURE__ */ new WeakMap
 		var n = _classPrivateFieldGet2(_p, this).get(e);
 		if (n) {
 			_classPrivateFieldGet2(_p, this).delete(e);
-			for (var r of n.d) set_signal_status(r, _t), t(r);
-			for (r of n.m) set_signal_status(r, vt$1), t(r);
+			for (var r of n.d) set_signal_status(r, vt$1), t(r);
+			for (r of n.m) set_signal_status(r, yt$1), t(r);
 		}
 		_classPrivateFieldGet2(_m, this).add(e);
 	}
 	capture(e, t, n = !1) {
-		e.v !== R && !this.previous.has(e) && this.previous.set(e, e.v), e.f & 8388608 || (this.current.set(e, [t, n]), U === null || U === void 0 || U.set(e, t)), this.is_fork || (e.v = t);
+		e.v !== L && !this.previous.has(e) && this.previous.set(e, e.v), e.f & 8388608 || (this.current.set(e, [t, n]), H$1 === null || H$1 === void 0 || H$1.set(e, t)), this.is_fork || (e.v = t);
 	}
 	activate() {
-		H$1 = this;
+		V$1 = this;
 	}
 	deactivate() {
-		H$1 = null, U = null;
+		V$1 = null, H$1 = null;
 	}
 	flush() {
 		try {
-			$t = !0, H$1 = this, _assertClassBrand(_Batch_brand, this, _2).call(this);
+			en = !0, V$1 = this, _assertClassBrand(_Batch_brand, this, _2).call(this);
 		} finally {
-			nn = 0, Zt = null, en = null, tn = null, $t = !1, H$1 = null, U = null, un.clear();
+			rn = 0, Qt = null, tn = null, nn = null, en = !1, V$1 = null, H$1 = null, dn.clear();
 		}
 	}
 	discard() {
@@ -99408,22 +99408,22 @@ var an = (_e2 = /* @__PURE__ */ new WeakMap(), _t2 = /* @__PURE__ */ new WeakMap
 		return ((_classPrivateFieldGet3 = _classPrivateFieldGet2(_c, this)) !== null && _classPrivateFieldGet3 !== void 0 ? _classPrivateFieldGet3 : _classPrivateFieldSet2(_c, this, deferred())).promise;
 	}
 	static ensure() {
-		if (H$1 === null) {
-			let e = H$1 = new Batch();
-			_assertClassBrand(_Batch_brand, e, _C$1).call(e), !$t && !Qt && queue_micro_task(() => {
+		if (V$1 === null) {
+			let e = V$1 = new Batch();
+			_assertClassBrand(_Batch_brand, e, _C$1).call(e), !en && !$t && queue_micro_task(() => {
 				_classPrivateFieldGet2(_e2, e) || e.flush();
 			});
 		}
-		return H$1;
+		return V$1;
 	}
 	apply() {
-		if (!Ut || !this.is_fork && _classPrivateFieldGet2(_t2, this) === null && _classPrivateFieldGet2(_n2, this) === null) {
-			U = null;
+		if (!Wt || !this.is_fork && _classPrivateFieldGet2(_t2, this) === null && _classPrivateFieldGet2(_n2, this) === null) {
+			H$1 = null;
 			return;
 		}
-		U = /* @__PURE__ */ new Map();
-		for (let [e, [t]] of this.current) U.set(e, t);
-		for (let t = Jt; t !== null; t = _classPrivateFieldGet2(_n2, t)) if (!(t === this || t.is_fork)) {
+		H$1 = /* @__PURE__ */ new Map();
+		for (let [e, [t]] of this.current) H$1.set(e, t);
+		for (let t = Yt; t !== null; t = _classPrivateFieldGet2(_n2, t)) if (!(t === this || t.is_fork)) {
 			var e = !1;
 			if (t.id < this.id) {
 				for (let [n, [, r]] of t.current) if (!r && this.current.has(n)) {
@@ -99431,22 +99431,22 @@ var an = (_e2 = /* @__PURE__ */ new WeakMap(), _t2 = /* @__PURE__ */ new WeakMap
 					break;
 				}
 			}
-			if (!e) for (let [e, n] of t.previous) U.has(e) || U.set(e, n);
+			if (!e) for (let [e, n] of t.previous) H$1.has(e) || H$1.set(e, n);
 		}
 	}
 	schedule(e) {
 		var _e$b;
-		if (Zt = e, ((_e$b = e.b) === null || _e$b === void 0 ? void 0 : _e$b.is_pending) && e.f & 16777228 && !(e.f & 32768)) {
+		if (Qt = e, ((_e$b = e.b) === null || _e$b === void 0 ? void 0 : _e$b.is_pending) && e.f & 16777228 && !(e.f & 32768)) {
 			e.b.defer_effect(e);
 			return;
 		}
 		for (var t = e; t.parent !== null;) {
 			t = t.parent;
 			var n = t.f;
-			if (en !== null && t === G && (Ut || (W === null || !(W.f & 2)) && !qt)) return;
+			if (tn !== null && t === W && (Wt || (U === null || !(U.f & 2)) && !Jt)) return;
 			if (n & 96) {
 				if (!(n & 1024)) return;
-				t.f ^= gt$1;
+				t.f ^= _t;
 			}
 		}
 		_classPrivateFieldGet2(_l, this).push(t);
@@ -99468,28 +99468,28 @@ function _g() {
 }
 function _2() {
 	var _classPrivateFieldGet2$2;
-	if (_classPrivateFieldSet2(_e2, this, !0), nn++ > 1e3 && (_assertClassBrand(_Batch_brand, this, _w$1).call(this), infinite_loop_guard()), !_assertClassBrand(_Batch_brand, this, _g).call(this)) {
-		for (let e of _classPrivateFieldGet2(_d, this)) _classPrivateFieldGet2(_f, this).delete(e), set_signal_status(e, _t), this.schedule(e);
-		for (let e of _classPrivateFieldGet2(_f, this)) set_signal_status(e, vt$1), this.schedule(e);
+	if (_classPrivateFieldSet2(_e2, this, !0), rn++ > 1e3 && (_assertClassBrand(_Batch_brand, this, _w$1).call(this), infinite_loop_guard()), !_assertClassBrand(_Batch_brand, this, _g).call(this)) {
+		for (let e of _classPrivateFieldGet2(_d, this)) _classPrivateFieldGet2(_f, this).delete(e), set_signal_status(e, vt$1), this.schedule(e);
+		for (let e of _classPrivateFieldGet2(_f, this)) set_signal_status(e, yt$1), this.schedule(e);
 	}
 	let e = _classPrivateFieldGet2(_l, this);
 	_classPrivateFieldSet2(_l, this, []), this.apply();
-	var t = en = [];
+	var t = tn = [];
 	var n = [];
-	var r = tn = [];
+	var r = nn = [];
 	for (let r of e) try {
 		_assertClassBrand(_Batch_brand, this, _v).call(this, r, t, n);
 	} catch (e) {
 		throw reset_all(r), e;
 	}
-	if (H$1 = null, r.length > 0) {
+	if (V$1 = null, r.length > 0) {
 		var i = _Batch.ensure();
 		for (let e of r) i.schedule(e);
 	}
-	if (en = null, tn = null, _assertClassBrand(_Batch_brand, this, _g).call(this)) {
+	if (tn = null, nn = null, _assertClassBrand(_Batch_brand, this, _g).call(this)) {
 		_assertClassBrand(_Batch_brand, this, _x).call(this, n), _assertClassBrand(_Batch_brand, this, _x).call(this, t);
 		for (let [e, t] of _classPrivateFieldGet2(_p, this)) reset_branch(e, t);
-		r.length > 0 && _assertClassBrand(_Batch_brand, H$1, _2).call(H$1);
+		r.length > 0 && _assertClassBrand(_Batch_brand, V$1, _2).call(V$1);
 		return;
 	}
 	let a = _assertClassBrand(_Batch_brand, this, _y).call(this);
@@ -99499,9 +99499,9 @@ function _2() {
 	}
 	_classPrivateFieldGet2(_d, this).clear(), _classPrivateFieldGet2(_f, this).clear();
 	for (let e of _classPrivateFieldGet2(_r2, this)) e(this);
-	_classPrivateFieldGet2(_r2, this).clear(), Xt = this, flush_queued_effects(n), flush_queued_effects(t), Xt = null, (_classPrivateFieldGet2$2 = _classPrivateFieldGet2(_c, this)) === null || _classPrivateFieldGet2$2 === void 0 || _classPrivateFieldGet2$2.resolve();
-	var o = H$1;
-	if (this.linked && _classPrivateFieldGet2(_o2, this) === 0 && _assertClassBrand(_Batch_brand, this, _w$1).call(this), Ut && !this.linked && (_assertClassBrand(_Batch_brand, this, _S$1).call(this), H$1 = o), _classPrivateFieldGet2(_l, this).length > 0) {
+	_classPrivateFieldGet2(_r2, this).clear(), Zt = this, flush_queued_effects(n), flush_queued_effects(t), Zt = null, (_classPrivateFieldGet2$2 = _classPrivateFieldGet2(_c, this)) === null || _classPrivateFieldGet2$2 === void 0 || _classPrivateFieldGet2$2.resolve();
+	var o = V$1;
+	if (this.linked && _classPrivateFieldGet2(_o2, this) === 0 && _assertClassBrand(_Batch_brand, this, _w$1).call(this), Wt && !this.linked && (_assertClassBrand(_Batch_brand, this, _S$1).call(this), V$1 = o), _classPrivateFieldGet2(_l, this).length > 0) {
 		o === null && (o = this, _assertClassBrand(_Batch_brand, this, _C$1).call(this));
 		let e = o;
 		_classPrivateFieldGet2(_l, e).push(..._classPrivateFieldGet2(_l, this).filter((t) => !_classPrivateFieldGet2(_l, e).includes(t)));
@@ -99509,12 +99509,12 @@ function _2() {
 	o !== null && _assertClassBrand(_Batch_brand, o, _2).call(o);
 }
 function _v(e, t, n) {
-	e.f ^= gt$1;
+	e.f ^= _t;
 	for (var r = e.first; r !== null;) {
 		var i = r.f;
 		var a = (i & 96) != 0;
 		if (!(a && i & 1024 || i & 8192 || _classPrivateFieldGet2(_p, this).has(r)) && r.fn !== null) {
-			a ? r.f ^= gt$1 : i & 4 ? t.push(r) : Ut && i & 16777224 ? n.push(r) : is_dirty(r) && (i & 16 && _classPrivateFieldGet2(_f, this).add(r), update_effect(r));
+			a ? r.f ^= _t : i & 4 ? t.push(r) : Wt && i & 16777224 ? n.push(r) : is_dirty(r) && (i & 16 && _classPrivateFieldGet2(_f, this).add(r), update_effect(r));
 			var o = r.first;
 			if (o !== null) {
 				r = o;
@@ -99553,12 +99553,12 @@ function _b$1(e) {
 			if (n & 2) mark(e);
 			else {
 				var r = e;
-				n & 4194320 && !this.async_deriveds.has(r) && (_classPrivateFieldGet2(_f, this).delete(r), set_signal_status(r, _t), this.schedule(r));
+				n & 4194320 && !this.async_deriveds.has(r) && (_classPrivateFieldGet2(_f, this).delete(r), set_signal_status(r, vt$1), this.schedule(r));
 			}
 		}
 	};
 	for (let e of this.current.keys()) mark(e);
-	this.oncommit(() => e.discard()), _assertClassBrand(_Batch_brand, e, _w$1).call(e), H$1 = this, _assertClassBrand(_Batch_brand, this, _2).call(this);
+	this.oncommit(() => e.discard()), _assertClassBrand(_Batch_brand, e, _w$1).call(e), V$1 = this, _assertClassBrand(_Batch_brand, this, _2).call(this);
 }
 __name$1(_b$1, "_b");
 function _x(e) {
@@ -99566,7 +99566,7 @@ function _x(e) {
 }
 function _S$1() {
 	_assertClassBrand(_Batch_brand, this, _w$1).call(this);
-	for (let l = Jt; l !== null; l = _classPrivateFieldGet2(_n2, l)) {
+	for (let l = Yt; l !== null; l = _classPrivateFieldGet2(_n2, l)) {
 		var e = l.id < this.id;
 		var t = [];
 		for (let [r, [i, a]] of this.current) {
@@ -99594,7 +99594,7 @@ function _S$1() {
 				for (var o of t) mark_effects(o, r, i, a);
 				a = /* @__PURE__ */ new Map();
 				var s = [...l.current.keys()].filter((e) => this.current.has(e) ? this.current.get(e)[0] !== e.v : !0);
-				if (s.length > 0) for (let e of _classPrivateFieldGet2(_u, this)) !(e.f & 155648) && depends_on(e, s, a) && (e.f & 4194320 ? (set_signal_status(e, _t), l.schedule(e)) : _classPrivateFieldGet2(_d, l).add(e));
+				if (s.length > 0) for (let e of _classPrivateFieldGet2(_u, this)) !(e.f & 155648) && depends_on(e, s, a) && (e.f & 4194320 ? (set_signal_status(e, vt$1), l.schedule(e)) : _classPrivateFieldGet2(_d, l).add(e));
 				if (_classPrivateFieldGet2(_l, l).length > 0) {
 					l.apply();
 					for (var c of _classPrivateFieldGet2(_l, l)) _assertClassBrand(_Batch_brand, l, _v).call(l, c, [], []);
@@ -99607,85 +99607,85 @@ function _S$1() {
 }
 __name$1(_S$1, "_S");
 function _C$1() {
-	Yt === null ? Jt = Yt = this : (_classPrivateFieldSet2(_n2, Yt, this), _classPrivateFieldSet2(_t2, this, Yt)), Yt = this;
+	Xt === null ? Yt = Xt = this : (_classPrivateFieldSet2(_n2, Xt, this), _classPrivateFieldSet2(_t2, this, Xt)), Xt = this;
 }
 __name$1(_C$1, "_C");
 function _w$1() {
 	var e = _classPrivateFieldGet2(_t2, this);
 	var t = _classPrivateFieldGet2(_n2, this);
-	e === null ? Jt = t : _classPrivateFieldSet2(_n2, e, t), t === null ? Yt = e : _classPrivateFieldSet2(_t2, t, e), this.linked = !1;
+	e === null ? Yt = t : _classPrivateFieldSet2(_n2, e, t), t === null ? Xt = e : _classPrivateFieldSet2(_t2, t, e), this.linked = !1;
 }
 __name$1(_w$1, "_w");
 function flushSync(e) {
-	var t = Qt;
-	Qt = !0;
+	var t = $t;
+	$t = !0;
 	try {
 		var n;
-		for (e && (H$1 !== null && !H$1.is_fork && H$1.flush(), n = e());;) {
-			if (flush_tasks(), H$1 === null) return n;
-			H$1.flush();
+		for (e && (V$1 !== null && !V$1.is_fork && V$1.flush(), n = e());;) {
+			if (flush_tasks(), V$1 === null) return n;
+			V$1.flush();
 		}
 	} finally {
-		Qt = t;
+		$t = t;
 	}
 }
 function infinite_loop_guard() {
 	try {
 		effect_update_depth_exceeded();
 	} catch (e) {
-		invoke_error_boundary(e, Zt);
+		invoke_error_boundary(e, Qt);
 	}
 }
-var on = null;
+var sn = null;
 function flush_queued_effects(e) {
 	var t = e.length;
 	if (t !== 0) {
 		for (var n = 0; n < t;) {
 			var r = e[n++];
-			if (!(r.f & 24576) && is_dirty(r) && (on = /* @__PURE__ */ new Set(), update_effect(r), r.deps === null && r.first === null && r.nodes === null && r.teardown === null && r.ac === null && unlink_effect(r), (on === null || on === void 0 ? void 0 : on.size) > 0)) {
-				un.clear();
-				for (let e of on) {
+			if (!(r.f & 24576) && is_dirty(r) && (sn = /* @__PURE__ */ new Set(), update_effect(r), r.deps === null && r.first === null && r.nodes === null && r.teardown === null && r.ac === null && unlink_effect(r), (sn === null || sn === void 0 ? void 0 : sn.size) > 0)) {
+				dn.clear();
+				for (let e of sn) {
 					if (e.f & 24576) continue;
 					let t = [e];
 					let n = e.parent;
-					for (; n !== null;) on.has(n) && (on.delete(n), t.push(n)), n = n.parent;
+					for (; n !== null;) sn.has(n) && (sn.delete(n), t.push(n)), n = n.parent;
 					for (let e = t.length - 1; e >= 0; e--) {
 						let n = t[e];
 						n.f & 24576 || update_effect(n);
 					}
 				}
-				on.clear();
+				sn.clear();
 			}
 		}
-		on = null;
+		sn = null;
 	}
 }
 function mark_effects(e, t, n, r) {
 	if (!n.has(e) && (n.add(e), e.reactions !== null)) for (let i of e.reactions) {
 		let e = i.f;
-		e & 2 ? mark_effects(i, t, n, r) : e & 4194320 && !(e & 2048) && depends_on(i, t, r) && (set_signal_status(i, _t), schedule_effect(i));
+		e & 2 ? mark_effects(i, t, n, r) : e & 4194320 && !(e & 2048) && depends_on(i, t, r) && (set_signal_status(i, vt$1), schedule_effect(i));
 	}
 }
 function depends_on(e, t, n) {
 	let r = n.get(e);
 	if (r !== void 0) return r;
 	if (e.deps !== null) for (let r of e.deps) {
-		if (st$1.call(t, r)) return !0;
+		if (ct$1.call(t, r)) return !0;
 		if (r.f & 2 && depends_on(r, t, n)) return n.set(r, !0), !0;
 	}
 	return n.set(e, !1), !1;
 }
 function schedule_effect(e) {
-	H$1.schedule(e);
+	V$1.schedule(e);
 }
 function reset_branch(e, t) {
 	if (!(e.f & 32 && e.f & 1024)) {
-		e.f & 2048 ? t.d.push(e) : e.f & 4096 && t.m.push(e), set_signal_status(e, gt$1);
+		e.f & 2048 ? t.d.push(e) : e.f & 4096 && t.m.push(e), set_signal_status(e, _t);
 		for (var n = e.first; n !== null;) reset_branch(n, t), n = n.next;
 	}
 }
 function reset_all(e) {
-	set_signal_status(e, gt$1);
+	set_signal_status(e, _t);
 	for (var t = e.first; t !== null;) reset_all(t), t = t.next;
 }
 function createSubscriber(e) {
@@ -99700,7 +99700,7 @@ function createSubscriber(e) {
 		})));
 	};
 }
-var sn = Ct$1 | wt$1;
+var cn = wt$1 | Tt;
 function boundary(e, t, n, r) {
 	new Boundary(e, t, n, r);
 }
@@ -99713,7 +99713,7 @@ var Boundary = (_e3 = /* @__PURE__ */ new WeakMap(), _t3 = /* @__PURE__ */ new W
 		_defineProperty(this, "is_pending", !1);
 		_defineProperty(this, "transform_error", void 0);
 		_classPrivateFieldInitSpec(this, _e3, void 0);
-		_classPrivateFieldInitSpec(this, _t3, z ? B : null);
+		_classPrivateFieldInitSpec(this, _t3, R ? z : null);
 		_classPrivateFieldInitSpec(this, _n3, void 0);
 		_classPrivateFieldInitSpec(this, _r3, void 0);
 		_classPrivateFieldInitSpec(this, _i3, void 0);
@@ -99731,10 +99731,10 @@ var Boundary = (_e3 = /* @__PURE__ */ new WeakMap(), _t3 = /* @__PURE__ */ new W
 			_classPrivateFieldSet2(_m2, this, null);
 		})));
 		_classPrivateFieldSet2(_e3, this, e), _classPrivateFieldSet2(_n3, this, t), _classPrivateFieldSet2(_r3, this, (e) => {
-			var t = G;
+			var t = W;
 			t.b = this, t.f |= 128, n(e);
-		}), this.parent = G.b, this.transform_error = (_ref = r !== null && r !== void 0 ? r : (_this$parent = this.parent) === null || _this$parent === void 0 ? void 0 : _this$parent.transform_error) !== null && _ref !== void 0 ? _ref : ((e) => e), _classPrivateFieldSet2(_i3, this, block(() => {
-			if (z) {
+		}), this.parent = W.b, this.transform_error = (_ref = r !== null && r !== void 0 ? r : (_this$parent = this.parent) === null || _this$parent === void 0 ? void 0 : _this$parent.transform_error) !== null && _ref !== void 0 ? _ref : ((e) => e), _classPrivateFieldSet2(_i3, this, block(() => {
+			if (R) {
 				let e = _classPrivateFieldGet2(_t3, this);
 				hydrate_next();
 				let t = e.data === "[!";
@@ -99743,7 +99743,7 @@ var Boundary = (_e3 = /* @__PURE__ */ new WeakMap(), _t3 = /* @__PURE__ */ new W
 					_assertClassBrand(_Class_brand, this, _3).call(this, t);
 				} else t ? _assertClassBrand(_Class_brand, this, _v2).call(this) : _assertClassBrand(_Class_brand, this, _g2).call(this);
 			} else _assertClassBrand(_Class_brand, this, _y2).call(this);
-		}, sn)), z && _classPrivateFieldSet2(_e3, this, B);
+		}, cn)), R && _classPrivateFieldSet2(_e3, this, z);
 	}
 	defer_effect(e) {
 		defer_effect(e, _classPrivateFieldGet2(_f2, this), _classPrivateFieldGet2(_p2, this));
@@ -99764,7 +99764,7 @@ var Boundary = (_e3 = /* @__PURE__ */ new WeakMap(), _t3 = /* @__PURE__ */ new W
 	}
 	error(e) {
 		if (!_classPrivateFieldGet2(_n3, this).onerror && !_classPrivateFieldGet2(_n3, this).failed) throw e;
-		(H$1 === null || H$1 === void 0 ? void 0 : H$1.is_fork) ? (_classPrivateFieldGet2(_a3, this) && H$1.skip_effect(_classPrivateFieldGet2(_a3, this)), _classPrivateFieldGet2(_o3, this) && H$1.skip_effect(_classPrivateFieldGet2(_o3, this)), _classPrivateFieldGet2(_s2, this) && H$1.skip_effect(_classPrivateFieldGet2(_s2, this)), H$1.on_fork_commit(() => {
+		(V$1 === null || V$1 === void 0 ? void 0 : V$1.is_fork) ? (_classPrivateFieldGet2(_a3, this) && V$1.skip_effect(_classPrivateFieldGet2(_a3, this)), _classPrivateFieldGet2(_o3, this) && V$1.skip_effect(_classPrivateFieldGet2(_o3, this)), _classPrivateFieldGet2(_s2, this) && V$1.skip_effect(_classPrivateFieldGet2(_s2, this)), V$1.on_fork_commit(() => {
 			_assertClassBrand(_Class_brand, this, _C2).call(this, e);
 		})) : _assertClassBrand(_Class_brand, this, _C2).call(this, e);
 	}
@@ -99789,7 +99789,7 @@ function _v2() {
 		var t = create_text();
 		e.append(t), _classPrivateFieldSet2(_a3, this, _assertClassBrand(_Class_brand, this, _x2).call(this, () => branch(() => _classPrivateFieldGet2(_r3, this).call(this, t)))), _classPrivateFieldGet2(_u2, this) === 0 && (_classPrivateFieldGet2(_e3, this).before(e), _classPrivateFieldSet2(_c2, this, null), pause_effect(_classPrivateFieldGet2(_o3, this), () => {
 			_classPrivateFieldSet2(_o3, this, null);
-		}), _assertClassBrand(_Class_brand, this, _b2).call(this, H$1));
+		}), _assertClassBrand(_Class_brand, this, _b2).call(this, V$1));
 	}));
 }
 function _y2() {
@@ -99801,7 +99801,7 @@ function _y2() {
 			move_effect(_classPrivateFieldGet2(_a3, this), e);
 			let t = _classPrivateFieldGet2(_n3, this).pending;
 			_classPrivateFieldSet2(_o3, this, branch(() => t(_classPrivateFieldGet2(_e3, this))));
-		} else _assertClassBrand(_Class_brand, this, _b2).call(this, H$1);
+		} else _assertClassBrand(_Class_brand, this, _b2).call(this, V$1);
 	} catch (e) {
 		this.error(e);
 	}
@@ -99810,12 +99810,12 @@ function _b2(e) {
 	this.is_pending = !1, e.transfer_effects(_classPrivateFieldGet2(_f2, this), _classPrivateFieldGet2(_p2, this));
 }
 function _x2(e) {
-	var t = G;
-	var n = W;
-	var r = V$1;
+	var t = W;
+	var n = U;
+	var r = B;
 	set_active_effect(_classPrivateFieldGet2(_i3, this)), set_active_reaction(_classPrivateFieldGet2(_i3, this)), set_component_context(_classPrivateFieldGet2(_i3, this).ctx);
 	try {
-		return an.ensure(), e();
+		return on.ensure(), e();
 	} catch (e) {
 		return handle_error(e), null;
 	} finally {
@@ -99833,7 +99833,7 @@ function _S2(e, t) {
 	}), _classPrivateFieldGet2(_c2, this) && _classPrivateFieldSet2(_c2, this, (_classPrivateFieldGet2(_e3, this).before(_classPrivateFieldGet2(_c2, this)), null)));
 }
 function _C2(e) {
-	_classPrivateFieldGet2(_a3, this) && _classPrivateFieldSet2(_a3, this, (destroy_effect(_classPrivateFieldGet2(_a3, this)), null)), _classPrivateFieldGet2(_o3, this) && _classPrivateFieldSet2(_o3, this, (destroy_effect(_classPrivateFieldGet2(_o3, this)), null)), _classPrivateFieldGet2(_s2, this) && _classPrivateFieldSet2(_s2, this, (destroy_effect(_classPrivateFieldGet2(_s2, this)), null)), z && (set_hydrate_node(_classPrivateFieldGet2(_t3, this)), next(), set_hydrate_node(skip_nodes()));
+	_classPrivateFieldGet2(_a3, this) && _classPrivateFieldSet2(_a3, this, (destroy_effect(_classPrivateFieldGet2(_a3, this)), null)), _classPrivateFieldGet2(_o3, this) && _classPrivateFieldSet2(_o3, this, (destroy_effect(_classPrivateFieldGet2(_o3, this)), null)), _classPrivateFieldGet2(_s2, this) && _classPrivateFieldSet2(_s2, this, (destroy_effect(_classPrivateFieldGet2(_s2, this)), null)), R && (set_hydrate_node(_classPrivateFieldGet2(_t3, this)), next(), set_hydrate_node(skip_nodes()));
 	var t = _classPrivateFieldGet2(_n3, this).onerror;
 	let n = _classPrivateFieldGet2(_n3, this).failed;
 	var r = !1;
@@ -99858,7 +99858,7 @@ function _C2(e) {
 		n && _classPrivateFieldSet2(_s2, this, _assertClassBrand(_Class_brand, this, _x2).call(this, () => {
 			try {
 				return branch(() => {
-					var t = G;
+					var t = W;
 					t.b = this, t.f |= 128, n(_classPrivateFieldGet2(_e3, this), () => e, () => reset);
 				});
 			} catch (e) {
@@ -99884,7 +99884,7 @@ function flatten$1(e, t, n, r) {
 		r(t.map(i));
 		return;
 	}
-	var o = G;
+	var o = W;
 	var s = capture();
 	var c = a.length === 1 ? a[0].promise : a.length > 1 ? Promise.all(a.map((e) => e.promise)) : null;
 	function finish(e) {
@@ -99912,21 +99912,21 @@ function flatten$1(e, t, n, r) {
 }
 __name(flatten$1, "flatten");
 function capture() {
-	var e = G;
-	var t = W;
-	var n = V$1;
-	var r = H$1;
+	var e = W;
+	var t = U;
+	var n = B;
+	var r = V$1;
 	return function restore(i = !0) {
 		set_active_effect(e), set_active_reaction(t), set_component_context(n), i && !(e.f & 16384) && (r === null || r === void 0 || r.activate(), r === null || r === void 0 || r.apply());
 	};
 }
 function unset_context(e = !0) {
-	set_active_effect(null), set_active_reaction(null), set_component_context(null), e && (H$1 === null || H$1 === void 0 || H$1.deactivate());
+	set_active_effect(null), set_active_reaction(null), set_component_context(null), e && (V$1 === null || V$1 === void 0 || V$1.deactivate());
 }
 function increment_pending() {
-	var e = G;
+	var e = W;
 	var t = e.b;
-	var n = H$1;
+	var n = V$1;
 	var r = t.is_rendered();
 	return t.update_pending_count(1, n), n.increment(r, e), () => {
 		t.update_pending_count(-1, n), n.decrement(r, e);
@@ -99934,9 +99934,9 @@ function increment_pending() {
 }
 /* @__NO_SIDE_EFFECTS__ */
 function derived(e) {
-	var t = 2 | _t;
-	return G !== null && (G.f |= wt$1), {
-		ctx: V$1,
+	var t = 2 | vt$1;
+	return W !== null && (W.f |= Tt), {
+		ctx: B,
 		deps: null,
 		effects: null,
 		equals,
@@ -99944,46 +99944,46 @@ function derived(e) {
 		fn: e,
 		reactions: null,
 		rv: 0,
-		v: R,
+		v: L,
 		wv: 0,
-		parent: G,
+		parent: W,
 		ac: null
 	};
 }
-var cn = Symbol("obsolete");
+var ln = Symbol("obsolete");
 /* @__NO_SIDE_EFFECTS__ */
 function async_derived(e, t, n) {
-	let r = G;
+	let r = W;
 	r === null && async_derived_orphan();
 	var i = void 0;
-	var a = source(R);
-	var o = !W;
+	var a = source(L);
+	var o = !U;
 	var s = /* @__PURE__ */ new Set();
 	return async_effect(() => {
-		var t = G;
+		var t = W;
 		var n = deferred();
 		i = n.promise;
 		try {
 			Promise.resolve(e()).then(n.resolve, (e) => {
-				e !== Rt && n.reject(e);
+				e !== zt && n.reject(e);
 			}).finally(unset_context);
 		} catch (e) {
 			n.reject(e), unset_context();
 		}
-		var c = H$1;
+		var c = V$1;
 		if (o) {
 			var _c$async_deriveds$get;
 			if (t.f & 32768) var l = increment_pending();
-			if (r.b.is_rendered()) (_c$async_deriveds$get = c.async_deriveds.get(t)) === null || _c$async_deriveds$get === void 0 || _c$async_deriveds$get.reject(cn);
-			else for (let e of s.values()) e.reject(cn);
+			if (r.b.is_rendered()) (_c$async_deriveds$get = c.async_deriveds.get(t)) === null || _c$async_deriveds$get === void 0 || _c$async_deriveds$get.reject(ln);
+			else for (let e of s.values()) e.reject(ln);
 			s.add(n), c.async_deriveds.set(t, n);
 		}
 		let handler = (e, t = void 0) => {
-			l === null || l === void 0 || l(), s.delete(n), t !== cn && (c.activate(), t ? (a.f |= At$1, internal_set(a, t)) : (a.f & 8388608 && (a.f ^= At$1), internal_set(a, e)), c.deactivate());
+			l === null || l === void 0 || l(), s.delete(n), t !== ln && (c.activate(), t ? (a.f |= jt, internal_set(a, t)) : (a.f & 8388608 && (a.f ^= jt), internal_set(a, e)), c.deactivate());
 		};
 		n.promise.then(handler, (e) => handler(null, e || "unknown"));
 	}), teardown(() => {
-		for (let e of s) e.reject(cn);
+		for (let e of s) e.reject(ln);
 	}), new Promise((e) => {
 		function next(t) {
 			function go() {
@@ -99997,7 +99997,7 @@ function async_derived(e, t, n) {
 /* @__NO_SIDE_EFFECTS__ */
 function user_derived(e) {
 	let t = /* @__PURE__ */ derived(e);
-	return Ut || push_reaction_value(t), t;
+	return Wt || push_reaction_value(t), t;
 }
 /* @__NO_SIDE_EFFECTS__ */
 function derived_safe_equal(e) {
@@ -100013,12 +100013,12 @@ function destroy_derived_effects(e) {
 }
 function execute_derived(e) {
 	var t;
-	var n = G;
+	var n = W;
 	var r = e.parent;
-	if (!bn && r !== null && r.f & 24576) return derived_inert(), e.v;
+	if (!xn && r !== null && r.f & 24576) return derived_inert(), e.v;
 	set_active_effect(r);
 	try {
-		e.f &= ~Dt, destroy_derived_effects(e), t = update_reaction(e);
+		e.f &= ~Ot, destroy_derived_effects(e), t = update_reaction(e);
 	} finally {
 		set_active_effect(n);
 	}
@@ -100026,23 +100026,23 @@ function execute_derived(e) {
 }
 function update_derived(e) {
 	var t = execute_derived(e);
-	if (!e.equals(t) && (e.wv = increment_write_version(), (!(H$1 === null || H$1 === void 0 ? void 0 : H$1.is_fork) || e.deps === null) && (H$1 === null ? e.v = t : (H$1.capture(e, t, !0), Xt === null || Xt === void 0 || Xt.capture(e, t, !0)), e.deps === null))) {
-		set_signal_status(e, gt$1);
+	if (!e.equals(t) && (e.wv = increment_write_version(), (!(V$1 === null || V$1 === void 0 ? void 0 : V$1.is_fork) || e.deps === null) && (V$1 === null ? e.v = t : (V$1.capture(e, t, !0), Zt === null || Zt === void 0 || Zt.capture(e, t, !0)), e.deps === null))) {
+		set_signal_status(e, _t);
 		return;
 	}
-	bn || (U === null ? update_derived_status(e) : (effect_tracking() || !(H$1 === null || H$1 === void 0) && H$1.is_fork) && U.set(e, t));
+	xn || (H$1 === null ? update_derived_status(e) : (effect_tracking() || !(V$1 === null || V$1 === void 0) && V$1.is_fork) && H$1.set(e, t));
 }
 function freeze_derived_effects(e) {
 	var _t$teardown;
 	var _t$ac;
-	if (e.effects !== null) for (let t of e.effects) (t.teardown || t.ac) && ((_t$teardown = t.teardown) === null || _t$teardown === void 0 || _t$teardown.call(t), (_t$ac = t.ac) === null || _t$ac === void 0 || _t$ac.abort(Rt), t.teardown = noop, t.ac = null, remove_reactions(t, 0), destroy_effect_children(t));
+	if (e.effects !== null) for (let t of e.effects) (t.teardown || t.ac) && ((_t$teardown = t.teardown) === null || _t$teardown === void 0 || _t$teardown.call(t), (_t$ac = t.ac) === null || _t$ac === void 0 || _t$ac.abort(zt), t.teardown = noop, t.ac = null, remove_reactions(t, 0), destroy_effect_children(t));
 }
 function unfreeze_derived_effects(e) {
 	if (e.effects !== null) for (let t of e.effects) t.teardown && update_effect(t);
 }
-var ln = /* @__PURE__ */ new Set();
-var un = /* @__PURE__ */ new Map();
-var dn = !1;
+var un = /* @__PURE__ */ new Set();
+var dn = /* @__PURE__ */ new Map();
+var pn = !1;
 function source(e, t) {
 	return {
 		f: 0,
@@ -100060,30 +100060,30 @@ function state(e, t) {
 }
 /* @__NO_SIDE_EFFECTS__ */
 function mutable_source(e, t = !1, n = !0) {
-	var _V$l;
-	var _V$l$s;
+	var _B$l;
+	var _B$l$s;
 	let r = source(e);
-	return t || (r.equals = safe_equals), Wt && n && V$1 !== null && V$1.l !== null && ((_V$l$s = (_V$l = V$1.l).s) !== null && _V$l$s !== void 0 ? _V$l$s : _V$l.s = []).push(r), r;
+	return t || (r.equals = safe_equals), Gt && n && B !== null && B.l !== null && ((_B$l$s = (_B$l = B.l).s) !== null && _B$l$s !== void 0 ? _B$l$s : _B$l.s = []).push(r), r;
 }
 function set(e, t, n = !1) {
-	return W !== null && (!xn || W.f & 131072) && is_runes() && W.f & 4325394 && (Sn === null || !st$1.call(Sn, e)) && state_unsafe_mutation(), internal_set(e, n ? proxy(t) : t, tn);
+	return U !== null && (!Sn || U.f & 131072) && is_runes() && U.f & 4325394 && (Cn === null || !ct$1.call(Cn, e)) && state_unsafe_mutation(), internal_set(e, n ? proxy(t) : t, nn);
 }
 function internal_set(e, t, n = null) {
 	if (!e.equals(t)) {
-		un.set(e, bn ? t : e.v);
-		var r = an.ensure();
+		dn.set(e, xn ? t : e.v);
+		var r = on.ensure();
 		if (r.capture(e, t), e.f & 2) {
 			let t = e;
-			e.f & 2048 && execute_derived(t), U === null && update_derived_status(t);
+			e.f & 2048 && execute_derived(t), H$1 === null && update_derived_status(t);
 		}
-		e.wv = increment_write_version(), mark_reactions(e, _t, n), is_runes() && G !== null && G.f & 1024 && !(G.f & 96) && (Tn === null ? set_untracked_writes([e]) : Tn.push(e)), !r.is_fork && ln.size > 0 && !dn && flush_eager_effects();
+		e.wv = increment_write_version(), mark_reactions(e, vt$1, n), is_runes() && W !== null && W.f & 1024 && !(W.f & 96) && (Tn === null ? set_untracked_writes([e]) : Tn.push(e)), !r.is_fork && un.size > 0 && !pn && flush_eager_effects();
 	}
 	return t;
 }
 function flush_eager_effects() {
-	dn = !1;
-	for (let e of ln) {
-		e.f & 1024 && set_signal_status(e, vt$1);
+	pn = !1;
+	for (let e of un) {
+		e.f & 1024 && set_signal_status(e, yt$1);
 		let t;
 		try {
 			t = is_dirty(e);
@@ -100092,7 +100092,7 @@ function flush_eager_effects() {
 		}
 		t && update_effect(e);
 	}
-	ln.clear();
+	un.clear();
 }
 function increment(e) {
 	set(e, e.v + 1);
@@ -100102,31 +100102,31 @@ function mark_reactions(e, t, n) {
 	if (r !== null) for (var i = is_runes(), a = r.length, o = 0; o < a; o++) {
 		var s = r[o];
 		var c = s.f;
-		if (!(!i && s === G)) {
-			var l = (c & _t) === 0;
-			if (l && set_signal_status(s, t), c & 131072) ln.add(s);
+		if (!(!i && s === W)) {
+			var l = (c & vt$1) === 0;
+			if (l && set_signal_status(s, t), c & 131072) un.add(s);
 			else if (c & 2) {
 				var u = s;
-				U === null || U === void 0 || U.delete(u), c & 65536 || (c & 512 && (G === null || !(G.f & 2097152)) && (s.f |= Dt), mark_reactions(u, vt$1, n));
+				H$1 === null || H$1 === void 0 || H$1.delete(u), c & 65536 || (c & 512 && (W === null || !(W.f & 2097152)) && (s.f |= Ot), mark_reactions(u, yt$1, n));
 			} else if (l) {
 				var d = s;
-				c & 16 && on !== null && on.add(d), n === null ? schedule_effect(d) : n.push(d);
+				c & 16 && sn !== null && sn.add(d), n === null ? schedule_effect(d) : n.push(d);
 			}
 		}
 	}
 }
 function proxy(e) {
-	if (typeof e != "object" || !e || jt in e) return e;
-	let t = mt$1(e);
-	if (t !== ft$1 && t !== pt$1) return e;
+	if (typeof e != "object" || !e || Mt$1 in e) return e;
+	let t = ht$1(e);
+	if (t !== pt$1 && t !== mt$1) return e;
 	var n = /* @__PURE__ */ new Map();
-	var r = at$1(e);
+	var r = ot$1(e);
 	var i = /* @__PURE__ */ state(0);
 	var a = null;
 	var o = On;
 	var with_parent = (e) => {
 		if (On === o) return e();
-		var t = W, n = On;
+		var t = U, n = On;
 		set_active_reaction(null), set_update_version(o);
 		var r = e();
 		return set_active_reaction(t), set_update_version(n), r;
@@ -100144,20 +100144,20 @@ function proxy(e) {
 			var r = n.get(t);
 			if (r === void 0) {
 				if (t in e) {
-					let e = with_parent(() => /* @__PURE__ */ state(R, a));
+					let e = with_parent(() => /* @__PURE__ */ state(L, a));
 					n.set(t, e), increment(i);
 				}
-			} else set(r, R), increment(i);
+			} else set(r, L), increment(i);
 			return !0;
 		},
 		get(t, r, i) {
-			var _ut;
-			if (r === jt) return e;
+			var _dt;
+			if (r === Mt$1) return e;
 			var o = n.get(r);
 			var s = r in t;
-			if (o === void 0 && (!s || !((_ut = ut$1(t, r)) === null || _ut === void 0) && _ut.writable) && (o = with_parent(() => /* @__PURE__ */ state(proxy(s ? t[r] : R), a)), n.set(r, o)), o !== void 0) {
+			if (o === void 0 && (!s || !((_dt = dt$1(t, r)) === null || _dt === void 0) && _dt.writable) && (o = with_parent(() => /* @__PURE__ */ state(proxy(s ? t[r] : L), a)), n.set(r, o)), o !== void 0) {
 				var c = get(o);
-				return c === R ? void 0 : c;
+				return c === L ? void 0 : c;
 			}
 			return Reflect.get(t, r, i);
 		},
@@ -100169,7 +100169,7 @@ function proxy(e) {
 			} else if (r === void 0) {
 				var a = n.get(t);
 				var o = a === null || a === void 0 ? void 0 : a.v;
-				if (a !== void 0 && o !== R) return {
+				if (a !== void 0 && o !== L) return {
 					enumerable: !0,
 					configurable: !0,
 					value: o,
@@ -100179,23 +100179,23 @@ function proxy(e) {
 			return r;
 		},
 		has(e, t) {
-			var _ut2;
-			if (t === jt) return !0;
+			var _dt2;
+			if (t === Mt$1) return !0;
 			var r = n.get(t);
-			var i = r !== void 0 && r.v !== R || Reflect.has(e, t);
-			return (r !== void 0 || G !== null && (!i || ((_ut2 = ut$1(e, t)) === null || _ut2 === void 0 ? void 0 : _ut2.writable))) && (r === void 0 && (r = with_parent(() => /* @__PURE__ */ state(i ? proxy(e[t]) : R, a)), n.set(t, r)), get(r) === R) ? !1 : i;
+			var i = r !== void 0 && r.v !== L || Reflect.has(e, t);
+			return (r !== void 0 || W !== null && (!i || ((_dt2 = dt$1(e, t)) === null || _dt2 === void 0 ? void 0 : _dt2.writable))) && (r === void 0 && (r = with_parent(() => /* @__PURE__ */ state(i ? proxy(e[t]) : L, a)), n.set(t, r)), get(r) === L) ? !1 : i;
 		},
 		set(e, t, o, s) {
-			var _ut3;
+			var _dt3;
 			var c = n.get(t);
 			var l = t in e;
 			if (r && t === "length") for (var u = o; u < c.v; u += 1) {
 				var d = n.get(u + "");
-				d === void 0 ? u in e && (d = with_parent(() => /* @__PURE__ */ state(R, a)), n.set(u + "", d)) : set(d, R);
+				d === void 0 ? u in e && (d = with_parent(() => /* @__PURE__ */ state(L, a)), n.set(u + "", d)) : set(d, L);
 			}
-			if (c === void 0) (!l || !((_ut3 = ut$1(e, t)) === null || _ut3 === void 0) && _ut3.writable) && (c = with_parent(() => /* @__PURE__ */ state(void 0, a)), set(c, proxy(o)), n.set(t, c));
+			if (c === void 0) (!l || !((_dt3 = dt$1(e, t)) === null || _dt3 === void 0) && _dt3.writable) && (c = with_parent(() => /* @__PURE__ */ state(void 0, a)), set(c, proxy(o)), n.set(t, c));
 			else {
-				l = c.v !== R;
+				l = c.v !== L;
 				var f = with_parent(() => proxy(o));
 				set(c, f);
 			}
@@ -100214,9 +100214,9 @@ function proxy(e) {
 			get(i);
 			var t = Reflect.ownKeys(e).filter((e) => {
 				var t = n.get(e);
-				return t === void 0 || t.v !== R;
+				return t === void 0 || t.v !== L;
 			});
-			for (var [r, a] of n) a.v !== R && !(r in e) && t.push(r);
+			for (var [r, a] of n) a.v !== L && !(r in e) && t.push(r);
 			return t;
 		},
 		setPrototypeOf() {
@@ -100224,17 +100224,17 @@ function proxy(e) {
 		}
 	});
 }
-var pn;
 var mn;
 var hn;
 var gn;
+var _n;
 function init_operations() {
-	if (pn === void 0) {
-		pn = window, mn = /Firefox/.test(navigator.userAgent);
+	if (mn === void 0) {
+		mn = window, hn = /Firefox/.test(navigator.userAgent);
 		var e = Element.prototype;
 		var t = Node.prototype;
 		var n = Text.prototype;
-		hn = ut$1(t, "firstChild").get, gn = ut$1(t, "nextSibling").get, ht$1(e) && (e[Pt$1] = void 0, e[Nt] = null, e[Ft] = void 0, e.__e = void 0), ht$1(n) && (n[It$1] = void 0);
+		gn = dt$1(t, "firstChild").get, _n = dt$1(t, "nextSibling").get, gt$1(e) && (e[Ft] = void 0, e[Pt$1] = null, e[It$1] = void 0, e.__e = void 0), gt$1(n) && (n[Lt] = void 0);
 	}
 }
 function create_text(e = "") {
@@ -100242,16 +100242,16 @@ function create_text(e = "") {
 }
 /* @__NO_SIDE_EFFECTS__ */
 function get_first_child(e) {
-	return hn.call(e);
+	return gn.call(e);
 }
 /* @__NO_SIDE_EFFECTS__ */
 function get_next_sibling(e) {
-	return gn.call(e);
+	return _n.call(e);
 }
 function child(e, t) {
-	if (!z) return /* @__PURE__ */ get_first_child(e);
-	var n = /* @__PURE__ */ get_first_child(B);
-	if (n === null) n = B.appendChild(create_text());
+	if (!R) return /* @__PURE__ */ get_first_child(e);
+	var n = /* @__PURE__ */ get_first_child(z);
+	if (n === null) n = z.appendChild(create_text());
 	else if (t && n.nodeType !== 3) {
 		var r = create_text();
 		return n === null || n === void 0 || n.before(r), set_hydrate_node(r), r;
@@ -100259,23 +100259,23 @@ function child(e, t) {
 	return t && merge_text_nodes(n), set_hydrate_node(n), n;
 }
 function first_child(e, t = !1) {
-	if (!z) {
+	if (!R) {
 		var n = /* @__PURE__ */ get_first_child(e);
 		return n instanceof Comment && n.data === "" ? /* @__PURE__ */ get_next_sibling(n) : n;
 	}
 	if (t) {
-		if ((B === null || B === void 0 ? void 0 : B.nodeType) !== 3) {
+		if ((z === null || z === void 0 ? void 0 : z.nodeType) !== 3) {
 			var r = create_text();
-			return B === null || B === void 0 || B.before(r), set_hydrate_node(r), r;
+			return z === null || z === void 0 || z.before(r), set_hydrate_node(r), r;
 		}
-		merge_text_nodes(B);
+		merge_text_nodes(z);
 	}
-	return B;
+	return z;
 }
 function sibling(e, t = 1, n = !1) {
-	let r = z ? B : e;
+	let r = R ? z : e;
 	for (var i; t--;) i = r, r = /* @__PURE__ */ get_next_sibling(r);
-	if (!z) return r;
+	if (!R) return r;
 	if (n) {
 		if ((r === null || r === void 0 ? void 0 : r.nodeType) !== 3) {
 			var a = create_text();
@@ -100289,7 +100289,7 @@ function clear_text_content(e) {
 	e.textContent = "";
 }
 function should_defer_append() {
-	return !Ut || on !== null ? !1 : (G.f & xt) !== 0;
+	return !Wt || sn !== null ? !1 : (W.f & St$1) !== 0;
 }
 function create_element(e, t, n) {
 	let r = n ? { is: n } : void 0;
@@ -100300,12 +100300,12 @@ function merge_text_nodes(e) {
 	let t = e.nextSibling;
 	for (; t !== null && t.nodeType === 3;) t.remove(), e.nodeValue += t.nodeValue, t = e.nextSibling;
 }
-var _n = !1;
+var vn = !1;
 function add_form_reset_listener() {
-	_n || (_n = !0, document.addEventListener("reset", (e) => {
+	vn || (vn = !0, document.addEventListener("reset", (e) => {
 		Promise.resolve().then(() => {
-			var _t$Lt;
-			if (!e.defaultPrevented) for (let t of e.target.elements) (_t$Lt = t[Lt]) === null || _t$Lt === void 0 || _t$Lt.call(t);
+			var _t$Rt;
+			if (!e.defaultPrevented) for (let t of e.target.elements) (_t$Rt = t[Rt]) === null || _t$Rt === void 0 || _t$Rt.call(t);
 		});
 	}, { capture: !0 }));
 }
@@ -100317,8 +100317,8 @@ function listen(e, t, n, r = !0) {
 	});
 }
 function without_reactive_context(e) {
-	var t = W;
-	var n = G;
+	var t = U;
+	var n = W;
 	set_active_reaction(null), set_active_effect(null);
 	try {
 		return e();
@@ -100328,26 +100328,26 @@ function without_reactive_context(e) {
 }
 function listen_to_event_and_reset_event(e, t, n, r = n) {
 	e.addEventListener(t, () => without_reactive_context(n));
-	let i = e[Lt];
-	i ? e[Lt] = () => {
+	let i = e[Rt];
+	i ? e[Rt] = () => {
 		i(), r(!0);
-	} : e[Lt] = () => r(!0), add_form_reset_listener();
+	} : e[Rt] = () => r(!0), add_form_reset_listener();
 }
 function validate_effect(e) {
-	G === null && (W === null && effect_orphan(e), effect_in_unowned_derived()), bn && effect_in_teardown(e);
+	W === null && (U === null && effect_orphan(e), effect_in_unowned_derived()), xn && effect_in_teardown(e);
 }
 function push_effect(e, t) {
 	var n = t.last;
 	n === null ? t.last = t.first = e : (n.next = e, e.prev = n, t.last = e);
 }
 function create_effect(e, t) {
-	var n = G;
-	n !== null && n.f & 8192 && (e |= yt$1);
+	var n = W;
+	n !== null && n.f & 8192 && (e |= bt$1);
 	var r = {
-		ctx: V$1,
+		ctx: B,
 		deps: null,
 		nodes: null,
-		f: e | _t | 512,
+		f: e | vt$1 | 512,
 		first: null,
 		fn: t,
 		last: null,
@@ -100359,46 +100359,46 @@ function create_effect(e, t) {
 		wv: 0,
 		ac: null
 	};
-	H$1 === null || H$1 === void 0 || H$1.register_created_effect(r);
+	V$1 === null || V$1 === void 0 || V$1.register_created_effect(r);
 	var i = r;
-	if (e & 4) en === null ? an.ensure().schedule(r) : en.push(r);
+	if (e & 4) tn === null ? on.ensure().schedule(r) : tn.push(r);
 	else if (t !== null) {
 		try {
 			update_effect(r);
 		} catch (e) {
 			throw destroy_effect(r), e;
 		}
-		i.deps === null && i.teardown === null && i.nodes === null && i.first === i.last && !(i.f & 524288) && (i = i.first, e & 16 && e & 65536 && i !== null && (i.f |= Ct$1));
+		i.deps === null && i.teardown === null && i.nodes === null && i.first === i.last && !(i.f & 524288) && (i = i.first, e & 16 && e & 65536 && i !== null && (i.f |= wt$1));
 	}
-	if (i !== null && (i.parent = n, n !== null && push_effect(i, n), W !== null && W.f & 2 && !(e & 64))) {
+	if (i !== null && (i.parent = n, n !== null && push_effect(i, n), U !== null && U.f & 2 && !(e & 64))) {
 		var _a$effects;
-		var a = W;
+		var a = U;
 		((_a$effects = a.effects) !== null && _a$effects !== void 0 ? _a$effects : a.effects = []).push(i);
 	}
 	return r;
 }
 function effect_tracking() {
-	return W !== null && !xn;
+	return U !== null && !Sn;
 }
 function teardown(e) {
 	let t = create_effect(8, null);
-	return set_signal_status(t, gt$1), t.teardown = e, t;
+	return set_signal_status(t, _t), t.teardown = e, t;
 }
 function user_effect(e) {
 	validate_effect("$effect");
-	var t = G.f;
-	if (!W && t & 32 && !(t & 32768)) {
+	var t = W.f;
+	if (!U && t & 32 && !(t & 32768)) {
 		var _n$e;
-		var n = V$1;
+		var n = B;
 		((_n$e = n.e) !== null && _n$e !== void 0 ? _n$e : n.e = []).push(e);
 	} else return create_user_effect(e);
 }
 function create_user_effect(e) {
-	return create_effect(4 | Tt, e);
+	return create_effect(4 | Et, e);
 }
 function component_root(e) {
-	an.ensure();
-	let t = create_effect(64 | wt$1, e);
+	on.ensure();
+	let t = create_effect(64 | Tt, e);
 	return (e = {}) => new Promise((n) => {
 		e.outro ? pause_effect(t, () => {
 			destroy_effect(t), n(void 0);
@@ -100409,7 +100409,7 @@ function effect(e) {
 	return create_effect(4, e);
 }
 function async_effect(e) {
-	return create_effect(kt | wt$1, e);
+	return create_effect(At$1 | Tt, e);
 }
 function render_effect(e, t = 0) {
 	return create_effect(8 | t, e);
@@ -100423,13 +100423,13 @@ function block(e, t = 0) {
 	return create_effect(16 | t, e);
 }
 function branch(e) {
-	return create_effect(32 | wt$1, e);
+	return create_effect(32 | Tt, e);
 }
 function execute_effect_teardown(e) {
 	var t = e.teardown;
 	if (t !== null) {
-		let e = bn;
-		let n = W;
+		let e = xn;
+		let n = U;
 		set_is_destroying_effect(!0), set_active_reaction(null);
 		try {
 			t.call(null);
@@ -100443,7 +100443,7 @@ function destroy_effect_children(e, t = !1) {
 	for (e.first = e.last = null; n !== null;) {
 		let e = n.ac;
 		e !== null && without_reactive_context(() => {
-			e.abort(Rt);
+			e.abort(zt);
 		});
 		var r = n.next;
 		n.f & 64 ? n.parent = null : destroy_effect(n, t), n = r;
@@ -100457,10 +100457,10 @@ function destroy_block_effect_children(e) {
 }
 function destroy_effect(e, t = !0) {
 	var n = !1;
-	(t || e.f & 262144) && e.nodes !== null && e.nodes.end !== null && (remove_effect_dom(e.nodes.start, e.nodes.end), n = !0), set_signal_status(e, St$1), destroy_effect_children(e, t && !n), remove_reactions(e, 0);
+	(t || e.f & 262144) && e.nodes !== null && e.nodes.end !== null && (remove_effect_dom(e.nodes.start, e.nodes.end), n = !0), set_signal_status(e, Ct$1), destroy_effect_children(e, t && !n), remove_reactions(e, 0);
 	var r = e.nodes && e.nodes.t;
 	if (r !== null) for (let e of r) e.stop();
-	execute_effect_teardown(e), e.f ^= St$1, e.f |= bt$1;
+	execute_effect_teardown(e), e.f ^= Ct$1, e.f |= xt;
 	var i = e.parent;
 	i !== null && i.first !== null && unlink_effect(e), e.next = e.prev = e.teardown = e.ctx = e.deps = e.fn = e.nodes = e.ac = e.b = null;
 }
@@ -100490,7 +100490,7 @@ function pause_effect(e, t, n = !0) {
 }
 function pause_children(e, t, n) {
 	if (!(e.f & 8192)) {
-		e.f ^= yt$1;
+		e.f ^= bt$1;
 		var r = e.nodes && e.nodes.t;
 		if (r !== null) for (let e of r) (e.is_global || n) && t.push(e);
 		for (var i = e.first; i !== null;) {
@@ -100508,7 +100508,7 @@ function resume_effect(e) {
 }
 function resume_children(e, t) {
 	if (e.f & 8192) {
-		e.f ^= yt$1, e.f & 1024 || (set_signal_status(e, _t), an.ensure().schedule(e));
+		e.f ^= bt$1, e.f & 1024 || (set_signal_status(e, vt$1), on.ensure().schedule(e));
 		for (var n = e.first; n !== null;) {
 			var r = n.next;
 			var i = (n.f & 65536) != 0 || (n.f & 32) != 0;
@@ -100524,26 +100524,26 @@ function move_effect(e, t) {
 		t.append(n), n = i;
 	}
 }
-var vn = null;
-var yn = !1;
+var yn = null;
 var bn = !1;
+var xn = !1;
 function set_is_destroying_effect(e) {
-	bn = e;
+	xn = e;
+}
+var U = null;
+var Sn = !1;
+function set_active_reaction(e) {
+	U = e;
 }
 var W = null;
-var xn = !1;
-function set_active_reaction(e) {
+function set_active_effect(e) {
 	W = e;
 }
-var G = null;
-function set_active_effect(e) {
-	G = e;
-}
-var Sn = null;
-function push_reaction_value(e) {
-	W !== null && (!Ut || W.f & 2) && (Sn === null ? Sn = [e] : Sn.push(e));
-}
 var Cn = null;
+function push_reaction_value(e) {
+	U !== null && (!Wt || U.f & 2) && (Cn === null ? Cn = [e] : Cn.push(e));
+}
+var G = null;
 var wn = 0;
 var Tn = null;
 function set_untracked_writes(e) {
@@ -100561,75 +100561,75 @@ function increment_write_version() {
 function is_dirty(e) {
 	var t = e.f;
 	if (t & 2048) return !0;
-	if (t & 2 && (e.f &= ~Dt), t & 4096) {
+	if (t & 2 && (e.f &= ~Ot), t & 4096) {
 		for (var n = e.deps, r = n.length, i = 0; i < r; i++) {
 			var a = n[i];
 			if (is_dirty(a) && update_derived(a), a.wv > e.wv) return !0;
 		}
-		t & 512 && U === null && set_signal_status(e, gt$1);
+		t & 512 && H$1 === null && set_signal_status(e, _t);
 	}
 	return !1;
 }
 function schedule_possible_effect_self_invalidation(e, t, n = !0) {
 	var r = e.reactions;
-	if (r !== null && !(!Ut && Sn !== null && st$1.call(Sn, e))) for (var i = 0; i < r.length; i++) {
+	if (r !== null && !(!Wt && Cn !== null && ct$1.call(Cn, e))) for (var i = 0; i < r.length; i++) {
 		var a = r[i];
-		a.f & 2 ? schedule_possible_effect_self_invalidation(a, t, !1) : t === a && (n ? set_signal_status(a, _t) : a.f & 1024 && set_signal_status(a, vt$1), schedule_effect(a));
+		a.f & 2 ? schedule_possible_effect_self_invalidation(a, t, !1) : t === a && (n ? set_signal_status(a, vt$1) : a.f & 1024 && set_signal_status(a, yt$1), schedule_effect(a));
 	}
 }
 function update_reaction(e) {
-	var t = Cn;
+	var t = G;
 	var n = wn;
 	var r = Tn;
-	var i = W;
-	var a = Sn;
-	var o = V$1;
-	var s = xn;
+	var i = U;
+	var a = Cn;
+	var o = B;
+	var s = Sn;
 	var c = On;
 	var l = e.f;
-	Cn = null, wn = 0, Tn = null, W = l & 96 ? null : e, Sn = null, set_component_context(e.ctx), xn = !1, On = ++Dn, e.ac !== null && (without_reactive_context(() => {
-		e.ac.abort(Rt);
+	G = null, wn = 0, Tn = null, U = l & 96 ? null : e, Cn = null, set_component_context(e.ctx), Sn = !1, On = ++Dn, e.ac !== null && (without_reactive_context(() => {
+		e.ac.abort(zt);
 	}), e.ac = null);
 	try {
-		e.f |= Ot;
+		e.f |= kt;
 		var u = e.fn;
 		var d = u();
-		e.f |= xt;
+		e.f |= St$1;
 		var f = e.deps;
-		var p = H$1 === null || H$1 === void 0 ? void 0 : H$1.is_fork;
-		if (Cn !== null) {
+		var p = V$1 === null || V$1 === void 0 ? void 0 : V$1.is_fork;
+		if (G !== null) {
 			var _f$m;
 			var _f$m$reactions;
 			var m;
-			if (p || remove_reactions(e, wn), f !== null && wn > 0) for (f.length = wn + Cn.length, m = 0; m < Cn.length; m++) f[wn + m] = Cn[m];
-			else e.deps = f = Cn;
+			if (p || remove_reactions(e, wn), f !== null && wn > 0) for (f.length = wn + G.length, m = 0; m < G.length; m++) f[wn + m] = G[m];
+			else e.deps = f = G;
 			if (effect_tracking() && e.f & 512) for (m = wn; m < f.length; m++) ((_f$m$reactions = (_f$m = f[m]).reactions) !== null && _f$m$reactions !== void 0 ? _f$m$reactions : _f$m.reactions = []).push(e);
 		} else !p && f !== null && wn < f.length && (remove_reactions(e, wn), f.length = wn);
-		if (is_runes() && Tn !== null && !xn && f !== null && !(e.f & 6146)) for (m = 0; m < Tn.length; m++) schedule_possible_effect_self_invalidation(Tn[m], e);
+		if (is_runes() && Tn !== null && !Sn && f !== null && !(e.f & 6146)) for (m = 0; m < Tn.length; m++) schedule_possible_effect_self_invalidation(Tn[m], e);
 		if (i !== null && i !== e) {
 			if (Dn++, i.deps !== null) for (let e = 0; e < n; e += 1) i.deps[e].rv = Dn;
 			if (t !== null) for (let e of t) e.rv = Dn;
 			Tn !== null && (r === null ? r = Tn : r.push(...Tn));
 		}
-		return e.f & 8388608 && (e.f ^= At$1), d;
+		return e.f & 8388608 && (e.f ^= jt), d;
 	} catch (e) {
 		return handle_error(e);
 	} finally {
-		e.f ^= Ot, Cn = t, wn = n, Tn = r, W = i, Sn = a, set_component_context(o), xn = s, On = c;
+		e.f ^= kt, G = t, wn = n, Tn = r, U = i, Cn = a, set_component_context(o), Sn = s, On = c;
 	}
 }
 function remove_reaction(e, t) {
 	let n = t.reactions;
 	if (n !== null) {
-		var r = ot$1.call(n, e);
+		var r = st$1.call(n, e);
 		if (r !== -1) {
 			var i = n.length - 1;
 			i === 0 ? n = t.reactions = null : (n[r] = n[i], n.pop());
 		}
 	}
-	if (n === null && t.f & 2 && (Cn === null || !st$1.call(Cn, t))) {
+	if (n === null && t.f & 2 && (G === null || !ct$1.call(G, t))) {
 		var a = t;
-		a.f & 512 && (a.f ^= 512, a.f &= ~Dt), a.v !== R && update_derived_status(a), freeze_derived_effects(a), remove_reactions(a, 0);
+		a.f & 512 && (a.f ^= 512, a.f &= ~Ot), a.v !== L && update_derived_status(a), freeze_derived_effects(a), remove_reactions(a, 0);
 	}
 }
 function remove_reactions(e, t) {
@@ -100639,16 +100639,16 @@ function remove_reactions(e, t) {
 function update_effect(e) {
 	var t = e.f;
 	if (!(t & 16384)) {
-		set_signal_status(e, gt$1);
-		var n = G;
-		var r = yn;
-		G = e, yn = !0;
+		set_signal_status(e, _t);
+		var n = W;
+		var r = bn;
+		W = e, bn = !0;
 		try {
 			t & 16777232 ? destroy_block_effect_children(e) : destroy_effect_children(e), execute_effect_teardown(e);
 			var i = update_reaction(e);
 			e.teardown = typeof i == "function" ? i : null, e.wv = En;
 		} finally {
-			yn = r, G = n;
+			bn = r, W = n;
 		}
 	}
 }
@@ -100657,7 +100657,7 @@ function tick() {
 }
 function _tick() {
 	_tick = _asyncToGenerator(function* () {
-		if (Ut) return new Promise((e) => {
+		if (Wt) return new Promise((e) => {
 			requestAnimationFrame(() => e()), setTimeout(() => e());
 		});
 		yield Promise.resolve(), flushSync();
@@ -100666,29 +100666,29 @@ function _tick() {
 }
 function get(e) {
 	var t = (e.f & 2) != 0;
-	if (vn === null || vn === void 0 || vn.add(e), W !== null && !xn && !(G !== null && G.f & 16384) && (Sn === null || !st$1.call(Sn, e))) {
-		var n = W.deps;
-		if (W.f & 2097152) e.rv < Dn && (e.rv = Dn, Cn === null && n !== null && n[wn] === e ? wn++ : Cn === null ? Cn = [e] : Cn.push(e));
+	if (yn === null || yn === void 0 || yn.add(e), U !== null && !Sn && !(W !== null && W.f & 16384) && (Cn === null || !ct$1.call(Cn, e))) {
+		var n = U.deps;
+		if (U.f & 2097152) e.rv < Dn && (e.rv = Dn, G === null && n !== null && n[wn] === e ? wn++ : G === null ? G = [e] : G.push(e));
 		else {
-			var _W;
-			var _W$deps;
-			((_W$deps = (_W = W).deps) !== null && _W$deps !== void 0 ? _W$deps : _W.deps = []).push(e);
+			var _U;
+			var _U$deps;
+			((_U$deps = (_U = U).deps) !== null && _U$deps !== void 0 ? _U$deps : _U.deps = []).push(e);
 			var r = e.reactions;
-			r === null ? e.reactions = [W] : st$1.call(r, W) || r.push(W);
+			r === null ? e.reactions = [U] : ct$1.call(r, U) || r.push(U);
 		}
 	}
-	if (bn && un.has(e)) return un.get(e);
+	if (xn && dn.has(e)) return dn.get(e);
 	if (t) {
 		var i = e;
-		if (bn) {
+		if (xn) {
 			var a = i.v;
-			return (!(i.f & 1024) && i.reactions !== null || depends_on_old_values(i)) && (a = execute_derived(i)), un.set(i, a), a;
+			return (!(i.f & 1024) && i.reactions !== null || depends_on_old_values(i)) && (a = execute_derived(i)), dn.set(i, a), a;
 		}
-		var o = (i.f & 512) == 0 && !xn && W !== null && (yn || (W.f & 512) != 0);
-		var s = (i.f & xt) === 0;
+		var o = (i.f & 512) == 0 && !Sn && U !== null && (bn || (U.f & 512) != 0);
+		var s = (i.f & St$1) === 0;
 		is_dirty(i) && (o && (i.f |= 512), update_derived(i)), o && !s && (unfreeze_derived_effects(i), reconnect(i));
 	}
-	if (U === null || U === void 0 ? void 0 : U.has(e)) return U.get(e);
+	if (H$1 === null || H$1 === void 0 ? void 0 : H$1.has(e)) return H$1.get(e);
 	if (e.f & 8388608) throw e.v;
 	return e.v;
 }
@@ -100697,17 +100697,17 @@ function reconnect(e) {
 	if (e.f |= 512, e.deps !== null) for (let t of e.deps) ((_t$reactions = t.reactions) !== null && _t$reactions !== void 0 ? _t$reactions : t.reactions = []).push(e), t.f & 2 && !(t.f & 512) && (unfreeze_derived_effects(t), reconnect(t));
 }
 function depends_on_old_values(e) {
-	if (e.v === R) return !0;
+	if (e.v === L) return !0;
 	if (e.deps === null) return !1;
-	for (let t of e.deps) if (un.has(t) || t.f & 2 && depends_on_old_values(t)) return !0;
+	for (let t of e.deps) if (dn.has(t) || t.f & 2 && depends_on_old_values(t)) return !0;
 	return !1;
 }
 function untrack(e) {
-	var t = xn;
+	var t = Sn;
 	try {
-		return xn = !0, e();
+		return Sn = !0, e();
 	} finally {
-		xn = t;
+		Sn = t;
 	}
 }
 [.../* @__PURE__ */ "allowfullscreen.async.autofocus.autoplay.checked.controls.default.disabled.formnovalidate.indeterminate.inert.ismap.loop.multiple.muted.nomodule.novalidate.open.playsinline.readonly.required.reversed.seamless.selected.webkitdirectory.defer.disablepictureinpicture.disableremoteplayback".split(".")];
@@ -100775,14 +100775,14 @@ function handle_event_propagation(e) {
 		c <= l && (o = c);
 	}
 	if (a = i[o] || e.target, a !== t) {
-		lt$1(e, "currentTarget", {
+		ut$1(e, "currentTarget", {
 			configurable: !0,
 			get() {
 				return a || n;
 			}
 		});
-		var u = W;
-		var d = G;
+		var u = U;
+		var d = W;
 		set_active_reaction(null), set_active_effect(null);
 		try {
 			for (var f, p = []; a !== null;) {
@@ -100818,7 +100818,7 @@ function create_fragment_from_html(e) {
 	return t.innerHTML = create_trusted_html(e.replaceAll("<!>", "<!---->")), t.content;
 }
 function assign_nodes(e, t) {
-	var n = G;
+	var n = W;
 	n.nodes === null && (n.nodes = {
 		start: e,
 		end: t,
@@ -100833,9 +100833,9 @@ function from_html(e, t) {
 	var i;
 	var a = !e.startsWith("<!>");
 	return () => {
-		if (z) return assign_nodes(B, null), B;
+		if (R) return assign_nodes(z, null), z;
 		i === void 0 && (i = create_fragment_from_html(a ? e : "<!>" + e), n || (i = /* @__PURE__ */ get_first_child(i)));
-		var t = r || mn ? document.importNode(i, !0) : i.cloneNode(!0);
+		var t = r || hn ? document.importNode(i, !0) : i.cloneNode(!0);
 		if (n) {
 			var o = /* @__PURE__ */ get_first_child(t);
 			var s = t.lastChild;
@@ -100851,7 +100851,7 @@ function from_namespace(e, t, n = "svg") {
 	var a = `<${n}>${r ? e : "<!>" + e}</${n}>`;
 	var o;
 	return () => {
-		if (z) return assign_nodes(B, null), B;
+		if (R) return assign_nodes(z, null), z;
 		if (!o) {
 			var e = /* @__PURE__ */ get_first_child(create_fragment_from_html(a));
 			if (i) for (o = document.createDocumentFragment(); /* @__PURE__ */ get_first_child(e);) o.appendChild(/* @__PURE__ */ get_first_child(e));
@@ -100871,24 +100871,24 @@ function from_svg(e, t) {
 	return /* @__PURE__ */ from_namespace(e, t, "svg");
 }
 function comment() {
-	if (z) return assign_nodes(B, null), B;
+	if (R) return assign_nodes(z, null), z;
 	var e = document.createDocumentFragment();
 	var t = document.createComment("");
 	var n = create_text();
 	return e.append(t, n), assign_nodes(t, n), e;
 }
 function append(e, t) {
-	if (z) {
-		var n = G;
-		(!(n.f & 32768) || n.nodes.end === null) && (n.nodes.end = B), hydrate_next();
+	if (R) {
+		var n = W;
+		(!(n.f & 32768) || n.nodes.end === null) && (n.nodes.end = z), hydrate_next();
 		return;
 	}
 	e !== null && e.before(t);
 }
 function set_text(e, t) {
-	var _e$It;
+	var _e$Lt;
 	var n = t == null ? "" : typeof t == "object" ? `${t}` : t;
-	n !== ((_e$It = e[It$1]) !== null && _e$It !== void 0 ? _e$It : e[It$1] = e.nodeValue) && (e[It$1] = n, e.nodeValue = `${n}`);
+	n !== ((_e$Lt = e[Lt]) !== null && _e$Lt !== void 0 ? _e$Lt : e[Lt] = e.nodeValue) && (e[Lt] = n, e.nodeValue = `${n}`);
 }
 function mount(e, t) {
 	return _mount(e, t);
@@ -100901,8 +100901,8 @@ function _mount(e, { target: t, anchor: n, props: r = {}, events: i, context: a,
 		var o = n !== null && n !== void 0 ? n : t.appendChild(create_text());
 		boundary(o, { pending: () => {} }, (t) => {
 			push({});
-			var n = V$1;
-			if (a && (n.c = a), i && (r.$$events = i), z && assign_nodes(t, null), c = e(t, r) || {}, z && (G.nodes.end = B, B === null || B.nodeType !== 8 || B.data !== "]")) throw hydration_mismatch(), Bt;
+			var n = B;
+			if (a && (n.c = a), i && (r.$$events = i), R && assign_nodes(t, null), c = e(t, r) || {}, R && (W.nodes.end = z, z === null || z.nodeType !== 8 || z.data !== "]")) throw hydration_mismatch(), Vt;
 			pop();
 		}, s);
 		var l = /* @__PURE__ */ new Set(), event_handle = (e) => {
@@ -100920,7 +100920,7 @@ function _mount(e, { target: t, anchor: n, props: r = {}, events: i, context: a,
 				}
 			}
 		};
-		return event_handle(ct$1(Mn)), Nn.add(event_handle), () => {
+		return event_handle(lt$1(Mn)), Nn.add(event_handle), () => {
 			var _o$parentNode;
 			for (var e of l) for (let n of [t, document]) {
 				var r = In.get(n), i = r.get(e);
@@ -100982,7 +100982,7 @@ var BranchManager = (_e4 = /* @__PURE__ */ new WeakMap(), _t4 = /* @__PURE__ */ 
 		this.anchor = e, _classPrivateFieldSet2(_i4, this, t);
 	}
 	ensure(e, t) {
-		var n = H$1;
+		var n = V$1;
 		var r = should_defer_append();
 		if (t && !_classPrivateFieldGet2(_t4, this).has(e) && !_classPrivateFieldGet2(_n4, this).has(e)) if (r) {
 			var i = document.createDocumentFragment();
@@ -100996,16 +100996,16 @@ var BranchManager = (_e4 = /* @__PURE__ */ new WeakMap(), _t4 = /* @__PURE__ */ 
 			for (let [t, r] of _classPrivateFieldGet2(_t4, this)) t === e ? n.unskip_effect(r) : n.skip_effect(r);
 			for (let [t, r] of _classPrivateFieldGet2(_n4, this)) t === e ? n.unskip_effect(r.effect) : n.skip_effect(r.effect);
 			n.oncommit(_classPrivateFieldGet2(_a4, this)), n.ondiscard(_classPrivateFieldGet2(_o4, this));
-		} else z && (this.anchor = B), _classPrivateFieldGet2(_a4, this).call(this, n);
+		} else R && (this.anchor = z), _classPrivateFieldGet2(_a4, this).call(this, n);
 	}
 });
 function if_block(e, t, n = !1) {
 	var r;
-	z && (r = B, hydrate_next());
+	R && (r = z, hydrate_next());
 	var i = new BranchManager(e);
-	var a = n ? Ct$1 : 0;
+	var a = n ? wt$1 : 0;
 	function update_branch(e, t) {
-		if (z) {
+		if (R) {
 			var n = read_hydration_instruction(r);
 			if (e !== parseInt(n.substring(1))) {
 				var a = skip_nodes();
@@ -101030,7 +101030,7 @@ function pause_effects(e, t, n) {
 			if (a) {
 				if (a.pending.delete(n), a.done.add(n), a.pending.size === 0) {
 					var t = e.outrogroups;
-					destroy_effects(e, ct$1(a.done)), t.delete(a), t.size === 0 && (e.outrogroups = null);
+					destroy_effects(e, lt$1(a.done)), t.delete(a), t.size === 0 && (e.outrogroups = null);
 				}
 			} else --o;
 		}, !1);
@@ -101056,7 +101056,7 @@ function destroy_effects(e, t, n = !0) {
 	}
 	for (var i = 0; i < t.length; i++) {
 		var a = t[i];
-		(r === null || r === void 0 ? void 0 : r.has(a)) ? (a.f |= Et, move_effect(a, document.createDocumentFragment())) : destroy_effect(t[i], n);
+		(r === null || r === void 0 ? void 0 : r.has(a)) ? (a.f |= Dt, move_effect(a, document.createDocumentFragment())) : destroy_effect(t[i], n);
 	}
 }
 var Rn;
@@ -101065,19 +101065,19 @@ function each(e, t, n, r, i, a = null) {
 	var s = /* @__PURE__ */ new Map();
 	if (t & 4) {
 		var c = e;
-		o = z ? set_hydrate_node(/* @__PURE__ */ get_first_child(c)) : c.appendChild(create_text());
+		o = R ? set_hydrate_node(/* @__PURE__ */ get_first_child(c)) : c.appendChild(create_text());
 	}
-	z && hydrate_next();
+	R && hydrate_next();
 	var l = null;
 	var u = /* @__PURE__ */ derived_safe_equal(() => {
 		var e = n();
-		return at$1(e) ? e : e == null ? [] : ct$1(e);
+		return ot$1(e) ? e : e == null ? [] : lt$1(e);
 	});
 	var d;
 	var f = /* @__PURE__ */ new Map();
 	var p = !0;
 	function commit(e) {
-		m.effect.f & 16384 || (m.pending.delete(e), m.fallback = l, reconcile(m, d, o, t, r), l !== null && (d.length === 0 ? l.f & 33554432 ? (l.f ^= Et, move(l, null, o)) : resume_effect(l) : pause_effect(l, () => {
+		m.effect.f & 16384 || (m.pending.delete(e), m.fallback = l, reconcile(m, d, o, t, r), l !== null && (d.length === 0 ? l.f & 33554432 ? (l.f ^= Dt, move(l, null, o)) : resume_effect(l) : pause_effect(l, () => {
 			l = null;
 		})));
 	}
@@ -101089,19 +101089,19 @@ function each(e, t, n, r, i, a = null) {
 			d = get(u);
 			var e = d.length;
 			let c = !1;
-			z && read_hydration_instruction(o) === "[!" != (e === 0) && (o = skip_nodes(), set_hydrate_node(o), set_hydrating(!1), c = !0);
-			for (var m = /* @__PURE__ */ new Set(), h = H$1, g = should_defer_append(), _ = 0; _ < e; _ += 1) {
+			R && read_hydration_instruction(o) === "[!" != (e === 0) && (o = skip_nodes(), set_hydrate_node(o), set_hydrating(!1), c = !0);
+			for (var m = /* @__PURE__ */ new Set(), h = V$1, g = should_defer_append(), _ = 0; _ < e; _ += 1) {
 				var _Rn;
-				z && B.nodeType === 8 && B.data === "]" && (o = B, c = !0, set_hydrating(!1));
+				R && z.nodeType === 8 && z.data === "]" && (o = z, c = !0, set_hydrating(!1));
 				var v = d[_];
 				var y = r(v, _);
 				var b = p ? null : s.get(y);
-				b ? (b.v && internal_set(b.v, v), b.i && internal_set(b.i, _), g && h.unskip_effect(b.e)) : (b = create_item(s, p ? o : (_Rn = Rn) !== null && _Rn !== void 0 ? _Rn : Rn = create_text(), v, y, _, i, t, n), p || (b.e.f |= Et), s.set(y, b)), m.add(y);
+				b ? (b.v && internal_set(b.v, v), b.i && internal_set(b.i, _), g && h.unskip_effect(b.e)) : (b = create_item(s, p ? o : (_Rn = Rn) !== null && _Rn !== void 0 ? _Rn : Rn = create_text(), v, y, _, i, t, n), p || (b.e.f |= Dt), s.set(y, b)), m.add(y);
 			}
 			if (e === 0 && a && !l && (p ? l = branch(() => a(o)) : (l = branch(() => {
 				var _Rn2;
 				return a((_Rn2 = Rn) !== null && _Rn2 !== void 0 ? _Rn2 : Rn = create_text());
-			}), l.f |= Et)), e > m.size && each_key_duplicate("", "", ""), z && e > 0 && set_hydrate_node(skip_nodes()), !p) if (f.set(h, m), g) {
+			}), l.f |= Dt)), e > m.size && each_key_duplicate("", "", ""), R && e > 0 && set_hydrate_node(skip_nodes()), !p) if (f.set(h, m), g) {
 				for (let [e, t] of s) m.has(e) || h.skip_effect(t.e);
 				h.oncommit(commit), h.ondiscard(discard);
 			} else commit(h);
@@ -101113,7 +101113,7 @@ function each(e, t, n, r, i, a = null) {
 		outrogroups: null,
 		fallback: l
 	};
-	p = !1, z && (o = B);
+	p = !1, R && (o = z);
 }
 function skip_to_branch(e) {
 	for (; e !== null && !(e.f & 32);) e = e.next;
@@ -101140,7 +101140,7 @@ function reconcile(e, t, n, r, i) {
 		var _g$nodes2;
 		var _d4;
 		if (m = t[_], h = i(m, _), g = s.get(h).e, e.outrogroups !== null) for (let t of e.outrogroups) t.pending.delete(g), t.done.delete(g);
-		if (g.f & 8192 && (resume_effect(g), a && ((_g$nodes2 = g.nodes) === null || _g$nodes2 === void 0 || (_g$nodes2 = _g$nodes2.a) === null || _g$nodes2 === void 0 || _g$nodes2.unfix(), ((_d4 = d) !== null && _d4 !== void 0 ? _d4 : d = /* @__PURE__ */ new Set()).delete(g))), g.f & 33554432) if (g.f ^= Et, g === c) move(g, null, n);
+		if (g.f & 8192 && (resume_effect(g), a && ((_g$nodes2 = g.nodes) === null || _g$nodes2 === void 0 || (_g$nodes2 = _g$nodes2.a) === null || _g$nodes2 === void 0 || _g$nodes2.unfix(), ((_d4 = d) !== null && _d4 !== void 0 ? _d4 : d = /* @__PURE__ */ new Set()).delete(g))), g.f & 33554432) if (g.f ^= Dt, g === c) move(g, null, n);
 		else {
 			var v = u ? u.next : c;
 			g === e.effect.last && (e.effect.last = g.prev), g.prev && (g.prev.next = g.next), g.next && (g.next.prev = g.prev), link(e, u, g), link(e, g, v), move(g, v, n), u = g, f = [], p = [], c = skip_to_branch(u.next);
@@ -101168,23 +101168,23 @@ function reconcile(e, t, n, r, i) {
 	}
 	if (e.outrogroups !== null) {
 		var _e$outrogroups2;
-		for (let t of e.outrogroups) t.pending.size === 0 && (destroy_effects(e, ct$1(t.done)), (_e$outrogroups2 = e.outrogroups) === null || _e$outrogroups2 === void 0 || _e$outrogroups2.delete(t));
+		for (let t of e.outrogroups) t.pending.size === 0 && (destroy_effects(e, lt$1(t.done)), (_e$outrogroups2 = e.outrogroups) === null || _e$outrogroups2 === void 0 || _e$outrogroups2.delete(t));
 		e.outrogroups.size === 0 && (e.outrogroups = null);
 	}
 	if (c !== null || l !== void 0) {
 		var C = [];
 		if (l !== void 0) for (g of l) g.f & 8192 || C.push(g);
 		for (; c !== null;) !(c.f & 8192) && c !== e.fallback && C.push(c), c = skip_to_branch(c.next);
-		var w = C.length;
-		if (w > 0) {
-			var T = r & 4 && o === 0 ? n : null;
+		var ee = C.length;
+		if (ee > 0) {
+			var w = r & 4 && o === 0 ? n : null;
 			if (a) {
 				var _C$_$nodes;
 				var _C$_$nodes2;
-				for (_ = 0; _ < w; _ += 1) (_C$_$nodes = C[_].nodes) === null || _C$_$nodes === void 0 || (_C$_$nodes = _C$_$nodes.a) === null || _C$_$nodes === void 0 || _C$_$nodes.measure();
-				for (_ = 0; _ < w; _ += 1) (_C$_$nodes2 = C[_].nodes) === null || _C$_$nodes2 === void 0 || (_C$_$nodes2 = _C$_$nodes2.a) === null || _C$_$nodes2 === void 0 || _C$_$nodes2.fix();
+				for (_ = 0; _ < ee; _ += 1) (_C$_$nodes = C[_].nodes) === null || _C$_$nodes === void 0 || (_C$_$nodes = _C$_$nodes.a) === null || _C$_$nodes === void 0 || _C$_$nodes.measure();
+				for (_ = 0; _ < ee; _ += 1) (_C$_$nodes2 = C[_].nodes) === null || _C$_$nodes2 === void 0 || (_C$_$nodes2 = _C$_$nodes2.a) === null || _C$_$nodes2 === void 0 || _C$_$nodes2.fix();
 			}
-			pause_effects(e, C, T);
+			pause_effects(e, C, w);
 		}
 	}
 	a && queue_micro_task(() => {
@@ -101219,34 +101219,34 @@ function snippet(e, t, ...n) {
 		var _t5;
 		let e = (_t5 = t()) !== null && _t5 !== void 0 ? _t5 : null;
 		r.ensure(e, e && ((t) => e(t, ...n)));
-	}, Ct$1);
+	}, wt$1);
 }
 function element(e, t, n, r, i, a) {
-	let o = z;
-	z && hydrate_next();
+	let o = R;
+	R && hydrate_next();
 	var s = null;
-	z && B.nodeType === 1 && (s = B, hydrate_next());
-	var c = z ? B : e;
+	R && z.nodeType === 1 && (s = z, hydrate_next());
+	var c = R ? z : e;
 	var l = new BranchManager(c, !1);
 	block(() => {
 		let e = t() || null;
-		var a = i ? i() : n || e === "svg" ? Ht : void 0;
+		var a = i ? i() : n || e === "svg" ? Ut : void 0;
 		if (e === null) {
 			l.ensure(null, null);
 			return;
 		}
 		return l.ensure(e, (t) => {
 			if (e) {
-				if (s = z ? s : create_element(e, a), assign_nodes(s, s), r) {
-					z && is_raw_text_element(e) && s.append(document.createComment(""));
-					var n = z ? /* @__PURE__ */ get_first_child(s) : s.appendChild(create_text());
-					z && (n === null ? set_hydrating(!1) : set_hydrate_node(n)), r(s, n);
+				if (s = R ? s : create_element(e, a), assign_nodes(s, s), r) {
+					R && is_raw_text_element(e) && s.append(document.createComment(""));
+					var n = R ? /* @__PURE__ */ get_first_child(s) : s.appendChild(create_text());
+					R && (n === null ? set_hydrating(!1) : set_hydrate_node(n)), r(s, n);
 				}
-				G.nodes.end = s, t.before(s);
+				W.nodes.end = s, t.before(s);
 			}
-			z && set_hydrate_node(t);
+			R && set_hydrate_node(t);
 		}), () => {};
-	}, Ct$1), teardown(() => {}), o && (set_hydrating(!0), set_hydrate_node(c));
+	}, wt$1), teardown(() => {}), o && (set_hydrating(!0), set_hydrate_node(c));
 }
 function append_styles$1(e, t) {
 	effect(() => {
@@ -101322,10 +101322,10 @@ function to_style(e, t) {
 	return e == null ? null : String(e);
 }
 function set_class(e, t, n, r, i, a) {
-	var o = e[Pt$1];
-	if (z || o !== n || o === void 0) {
+	var o = e[Ft];
+	if (R || o !== n || o === void 0) {
 		var s = to_class(n, r, a);
-		(!z || s !== e.getAttribute("class")) && (s == null ? e.removeAttribute("class") : t ? e.className = s : e.setAttribute("class", s)), e[Pt$1] = n;
+		(!R || s !== e.getAttribute("class")) && (s == null ? e.removeAttribute("class") : t ? e.className = s : e.setAttribute("class", s)), e[Ft] = n;
 	} else if (a && i !== a) for (var c in a) {
 		var l = !!a[c];
 		(i == null || l !== !!i[c]) && e.classList.toggle(c, l);
@@ -101339,19 +101339,19 @@ function update_styles(e, t = {}, n, r) {
 	}
 }
 function set_style(e, t, n, r) {
-	var i = e[Ft];
-	if (z || i !== t) {
+	var i = e[It$1];
+	if (R || i !== t) {
 		var a = to_style(t, r);
-		(!z || a !== e.getAttribute("style")) && (a == null ? e.removeAttribute("style") : e.style.cssText = a), e[Ft] = t;
+		(!R || a !== e.getAttribute("style")) && (a == null ? e.removeAttribute("style") : e.style.cssText = a), e[It$1] = t;
 	} else r && (Array.isArray(r) ? (update_styles(e, n === null || n === void 0 ? void 0 : n[0], r[0]), update_styles(e, n === null || n === void 0 ? void 0 : n[1], r[1], "important")) : update_styles(e, n, r));
 	return r;
 }
 var Bn = Symbol("is custom element");
 var Vn = Symbol("is html");
-var Hn = zt ? "link" : "LINK";
-var Un = zt ? "progress" : "PROGRESS";
+var Hn = Bt ? "link" : "LINK";
+var Un = Bt ? "progress" : "PROGRESS";
 function remove_input_defaults(e) {
-	if (z) {
+	if (R) {
 		var t = !1;
 		var remove_defaults = () => {
 			if (!t) {
@@ -101365,7 +101365,7 @@ function remove_input_defaults(e) {
 				}
 			}
 		};
-		e[Lt] = remove_defaults, queue_micro_task(remove_defaults), add_form_reset_listener();
+		e[Rt] = remove_defaults, queue_micro_task(remove_defaults), add_form_reset_listener();
 	}
 }
 function set_value(e, t) {
@@ -101374,13 +101374,13 @@ function set_value(e, t) {
 }
 function set_attribute(e, t, n, r) {
 	var i = get_attributes(e);
-	z && (i[t] = e.getAttribute(t), t === "src" || t === "srcset" || t === "href" && e.nodeName === Hn) || i[t] !== (i[t] = n) && (t === "loading" && (e[Mt$1] = n), n == null ? e.removeAttribute(t) : typeof n != "string" && get_setters(e).includes(t) ? e[t] = n : e.setAttribute(t, n));
+	R && (i[t] = e.getAttribute(t), t === "src" || t === "srcset" || t === "href" && e.nodeName === Hn) || i[t] !== (i[t] = n) && (t === "loading" && (e[Nt] = n), n == null ? e.removeAttribute(t) : typeof n != "string" && get_setters(e).includes(t) ? e[t] = n : e.setAttribute(t, n));
 }
 function get_attributes(e) {
-	var _e$Nt;
-	return (_e$Nt = e[Nt]) !== null && _e$Nt !== void 0 ? _e$Nt : e[Nt] = {
+	var _e$Pt;
+	return (_e$Pt = e[Pt$1]) !== null && _e$Pt !== void 0 ? _e$Pt : e[Pt$1] = {
 		[Bn]: e.nodeName.includes("-"),
-		[Vn]: e.namespaceURI === Vt
+		[Vn]: e.namespaceURI === Ht
 	};
 }
 var Wn = /* @__PURE__ */ new Map();
@@ -101390,8 +101390,8 @@ function get_setters(e) {
 	if (n) return n;
 	Wn.set(t, n = []);
 	for (var r, i = e, a = Element.prototype; a !== i;) {
-		for (var o in r = dt$1(i), r) r[o].set && o !== "innerHTML" && o !== "textContent" && o !== "innerText" && n.push(o);
-		i = mt$1(i);
+		for (var o in r = ft$1(i), r) r[o].set && o !== "innerHTML" && o !== "textContent" && o !== "innerText" && n.push(o);
+		i = ht$1(i);
 	}
 	return n;
 }
@@ -101400,7 +101400,7 @@ function bind_value(e, t, n = t) {
 	listen_to_event_and_reset_event(e, "input", function() {
 		var _ref2 = _asyncToGenerator(function* (i) {
 			var a = i ? e.defaultValue : e.value;
-			if (a = is_numberlike_input(e) ? to_number(a) : a, n(a), H$1 !== null && r.add(H$1), yield tick(), a !== (a = t())) {
+			if (a = is_numberlike_input(e) ? to_number(a) : a, n(a), V$1 !== null && r.add(V$1), yield tick(), a !== (a = t())) {
 				var _a5;
 				var o = e.selectionStart;
 				var s = e.selectionEnd;
@@ -101414,10 +101414,10 @@ function bind_value(e, t, n = t) {
 		return function(_x3) {
 			return _ref2.apply(this, arguments);
 		};
-	}()), (z && e.defaultValue !== e.value || untrack(t) == null && e.value) && (n(is_numberlike_input(e) ? to_number(e.value) : e.value), H$1 !== null && r.add(H$1)), render_effect(() => {
+	}()), (R && e.defaultValue !== e.value || untrack(t) == null && e.value) && (n(is_numberlike_input(e) ? to_number(e.value) : e.value), V$1 !== null && r.add(V$1)), render_effect(() => {
 		var n = t();
 		if (e === document.activeElement) {
-			var i = Ut ? Xt : H$1;
+			var i = Wt ? Zt : V$1;
 			if (r.has(i)) return;
 		}
 		is_numberlike_input(e) && n === to_number(e.value) || e.type === "date" && !n && !e.value || n !== e.value && (e.value = n !== null && n !== void 0 ? n : "");
@@ -101431,11 +101431,11 @@ function to_number(e) {
 	return e === "" ? null : +e;
 }
 function is_bound_this(e, t) {
-	return e === t || (e === null || e === void 0 ? void 0 : e[jt]) === t;
+	return e === t || (e === null || e === void 0 ? void 0 : e[Mt$1]) === t;
 }
 function bind_this(e = {}, t, n, r) {
-	var i = V$1.r;
-	var a = G;
+	var i = B.r;
+	var a = W;
 	return effect(() => {
 		var o;
 		var s;
@@ -101460,7 +101460,7 @@ function bind_window_size(e, t) {
 	listen(window, ["resize"], () => without_reactive_context(() => t(window[e])));
 }
 function onMount(e) {
-	V$1 === null && lifecycle_outside_component("onMount"), Wt && V$1.l !== null ? init_update_callbacks(V$1).m.push(e) : user_effect(() => {
+	B === null && lifecycle_outside_component("onMount"), Gt && B.l !== null ? init_update_callbacks(B).m.push(e) : user_effect(() => {
 		let t = untrack(e);
 		if (typeof t == "function") return t;
 	});
@@ -101503,7 +101503,7 @@ var SvelteHost = class {
 		this._instance && (this._instance = (unmount(this._instance), null)), (_this$_root = this._root) === null || _this$_root === void 0 || _this$_root.remove(), this._root = null;
 	}
 };
-var Gn = class SvelteMenuModule extends L {
+var Gn = class SvelteMenuModule extends I$1 {
 	constructor(..._args16) {
 		super(..._args16);
 		_defineProperty(this, "_translator", void 0);
@@ -101512,7 +101512,7 @@ var Gn = class SvelteMenuModule extends L {
 		_defineProperty(this, "_host", new SvelteHost());
 	}
 	init(e, t) {
-		super.init(e, t), this._translator = this.diContainer.get(P$2.Translator), this._currencyFormatter = this.diContainer.get(P$2.CurrencyFormatter);
+		super.init(e, t), this._translator = this.diContainer.get(N$1.Translator), this._currencyFormatter = this.diContainer.get(N$1.CurrencyFormatter);
 	}
 	destroy() {
 		this._host.destroy();
@@ -102784,7 +102784,7 @@ var Xn = {
 };
 var Tween = class extends Updatable {
 	constructor(e) {
-		var _super12 = (..._args17) => (super(..._args17), _defineProperty(this, "type", Le$1.TWEEN), _defineProperty(this, "_currentTime", void 0), _defineProperty(this, "_startTime", null), _defineProperty(this, "_isPlaying", !1), _defineProperty(this, "_path", void 0), _defineProperty(this, "_pathFrom", void 0), _defineProperty(this, "_pathTo", void 0), _defineProperty(this, "_repeat", 0), _defineProperty(this, "_duration", 1e3), _defineProperty(this, "_object", void 0), _defineProperty(this, "_valuesStart", {}), _defineProperty(this, "_valuesEnd", {}), _defineProperty(this, "_valuesStartRepeat", {}), _defineProperty(this, "_yoyo", !1), _defineProperty(this, "_reversed", !1), _defineProperty(this, "_delayTime", 0), _defineProperty(this, "_easingFunction", K.Linear.None), _defineProperty(this, "_interpolationFunction", Xn.Linear), _defineProperty(this, "_chainedTweens", []), _defineProperty(this, "_onStartCallback", null), _defineProperty(this, "_onStartCalledCallback", null), _defineProperty(this, "_onStartCallbackFired", !1), _defineProperty(this, "_onUpdateCallback", null), _defineProperty(this, "_onRepeatCallback", null), _defineProperty(this, "_onCompleteCallback", null), _defineProperty(this, "_onStopCallback", null), _defineProperty(this, "_onCompletePromiseCallback", null), _defineProperty(this, "_skipFirstUpdate", void 0), _defineProperty(this, "_shouldCorrectValuesOnStart", !1), this);
+		var _super12 = (..._args17) => (super(..._args17), _defineProperty(this, "type", Re$1.TWEEN), _defineProperty(this, "_currentTime", void 0), _defineProperty(this, "_startTime", null), _defineProperty(this, "_isPlaying", !1), _defineProperty(this, "_path", void 0), _defineProperty(this, "_pathFrom", void 0), _defineProperty(this, "_pathTo", void 0), _defineProperty(this, "_repeat", 0), _defineProperty(this, "_duration", 1e3), _defineProperty(this, "_object", void 0), _defineProperty(this, "_valuesStart", {}), _defineProperty(this, "_valuesEnd", {}), _defineProperty(this, "_valuesStartRepeat", {}), _defineProperty(this, "_yoyo", !1), _defineProperty(this, "_reversed", !1), _defineProperty(this, "_delayTime", 0), _defineProperty(this, "_easingFunction", K.Linear.None), _defineProperty(this, "_interpolationFunction", Xn.Linear), _defineProperty(this, "_chainedTweens", []), _defineProperty(this, "_onStartCallback", null), _defineProperty(this, "_onStartCalledCallback", null), _defineProperty(this, "_onStartCallbackFired", !1), _defineProperty(this, "_onUpdateCallback", null), _defineProperty(this, "_onRepeatCallback", null), _defineProperty(this, "_onCompleteCallback", null), _defineProperty(this, "_onStopCallback", null), _defineProperty(this, "_onCompletePromiseCallback", null), _defineProperty(this, "_skipFirstUpdate", void 0), _defineProperty(this, "_shouldCorrectValuesOnStart", !1), this);
 		_super12(), e && (this._object = e);
 	}
 	path(e, t) {
@@ -102796,7 +102796,7 @@ var Tween = class extends Updatable {
 		return t !== void 0 && (this._duration = t), this;
 	}
 	to(e, t) {
-		return t !== void 0 && (t <= 0 && A.error("Attempting to start a Tween with 0 or lower duration: ", t), this._duration = t), this._valuesEnd = e, this.parseStartValues(e), this;
+		return t !== void 0 && (t <= 0 && O$1.error("Attempting to start a Tween with 0 or lower duration: ", t), this._duration = t), this._valuesEnd = e, this.parseStartValues(e), this;
 	}
 	force() {
 		for (let e in this._valuesEnd) this._valuesEnd.hasOwnProperty(e) && (this._object[e] = this._valuesEnd[e]);
@@ -102928,7 +102928,7 @@ var Tween = class extends Updatable {
 		for (let t in e) if (e.hasOwnProperty(t)) try {
 			this._valuesStart[t] = parseFloat(this.object[t]);
 		} catch (e) {
-			A.error(e);
+			O$1.error(e);
 		}
 	}
 	get chainedTweens() {
@@ -103219,7 +103219,7 @@ var KeypadLocker = class {
 		_defineProperty(this, "locks", /* @__PURE__ */ new Map());
 	}
 	add(e, t) {
-		return this.locks.has(e) && A.error(`KeypadController: element '${e}' already added...`), this.locks.set(e, new Lock(t)), this;
+		return this.locks.has(e) && O$1.error(`KeypadController: element '${e}' already added...`), this.locks.set(e, new Lock(t)), this;
 	}
 	delete(e) {
 		return this.locks.delete(e), this;
@@ -103232,11 +103232,11 @@ var KeypadLocker = class {
 	}
 	unlock(e, t) {
 		let n = this.locks.get(e);
-		n ? n.unlock(t) : A.error(`Error: try to unlock unknown item: ${e}`);
+		n ? n.unlock(t) : O$1.error(`Error: try to unlock unknown item: ${e}`);
 	}
 	lock(e, t) {
 		let n = this.locks.get(e);
-		n ? n.lock(t) : A.error(`Error: try to lock unknown item: ${e}`);
+		n ? n.lock(t) : O$1.error(`Error: try to lock unknown item: ${e}`);
 	}
 	getLock(e) {
 		return this.locks.get(e);
@@ -103264,7 +103264,7 @@ var SpineUtils = class {
 		this._resources = e, this._app = r, this._defaultUpdateManager = t, this._defaultContainer = n;
 	}
 	startSpineAnimationCreation(e, t, n = !1, r) {
-		if (this._isCreationStarted) throw A.error(`Spine: ${this._spineName} : Skin: ${this._skinName} Animation: ${this._animationName}`), Error("SpineUtils last object creation was not finished properly. Maybe createAndStart was not called");
+		if (this._isCreationStarted) throw O$1.error(`Spine: ${this._spineName} : Skin: ${this._skinName} Animation: ${this._animationName}`), Error("SpineUtils last object creation was not finished properly. Maybe createAndStart was not called");
 		return this._isCreationStarted = !0, this._spineName = e, this._animationName = t, this._loop = n, this._position = {
 			x: 0,
 			y: 0
@@ -103819,19 +103819,19 @@ var q = class BasicView {
 		return this.mainUI.screenLayoutManager.orientation;
 	}
 };
-__decorate$1([inject(P$2.PixiStageContainer), __decorateMetadata("design:type", typeof (sr = import_lib.Container !== void 0 && import_lib.Container) == "function" ? sr : Object)], q.prototype, "_pixiStage", void 0), __decorate$1([inject(P$2.AssetsManager), __decorateMetadata("design:type", typeof (cr = or !== void 0 && or) == "function" ? cr : Object)], q.prototype, "_assets", void 0), __decorate$1([inject(P$2.CurrencyFormatter), __decorateMetadata("design:type", typeof (lr = qn !== void 0 && qn) == "function" ? lr : Object)], q.prototype, "_currencyFormatter", void 0), __decorate$1([inject(P$2.MainUI), __decorateMetadata("design:type", Object)], q.prototype, "_mainUI", void 0), __decorate$1([inject(N$1.UpdateManager), __decorateMetadata("design:type", typeof (ur = UpdateManager !== void 0 && UpdateManager) == "function" ? ur : Object)], q.prototype, "_updateManager", void 0), __decorate$1([inject(N$1.ResolutionManager), __decorateMetadata("design:type", typeof (dr = We$1 !== void 0 && We$1) == "function" ? dr : Object)], q.prototype, "_resolutionManager", void 0), __decorate$1([inject(P$2.SoundPlayer), __decorateMetadata("design:type", Object)], q.prototype, "_soundPlayer", void 0), __decorate$1([inject(P$2.Application), __decorateMetadata("design:type", typeof (fr = import_lib.Application !== void 0 && import_lib.Application) == "function" ? fr : Object)], q.prototype, "_app", void 0), __decorate$1([inject(P$2.GameConfig), __decorateMetadata("design:type", typeof (pr = GameConfig !== void 0 && GameConfig) == "function" ? pr : Object)], q.prototype, "_gameConfig", void 0), __decorate$1([inject(P$2.Translator), __decorateMetadata("design:type", typeof (mr = Jn !== void 0 && Jn) == "function" ? mr : Object)], q.prototype, "_translator", void 0), q = __decorate$1([injectable()], q);
+__decorate$1([inject(N$1.PixiStageContainer), __decorateMetadata("design:type", typeof (sr = import_lib.Container !== void 0 && import_lib.Container) == "function" ? sr : Object)], q.prototype, "_pixiStage", void 0), __decorate$1([inject(N$1.AssetsManager), __decorateMetadata("design:type", typeof (cr = or !== void 0 && or) == "function" ? cr : Object)], q.prototype, "_assets", void 0), __decorate$1([inject(N$1.CurrencyFormatter), __decorateMetadata("design:type", typeof (lr = qn !== void 0 && qn) == "function" ? lr : Object)], q.prototype, "_currencyFormatter", void 0), __decorate$1([inject(N$1.MainUI), __decorateMetadata("design:type", Object)], q.prototype, "_mainUI", void 0), __decorate$1([inject(M$1.UpdateManager), __decorateMetadata("design:type", typeof (ur = UpdateManager !== void 0 && UpdateManager) == "function" ? ur : Object)], q.prototype, "_updateManager", void 0), __decorate$1([inject(M$1.ResolutionManager), __decorateMetadata("design:type", typeof (dr = Ge !== void 0 && Ge) == "function" ? dr : Object)], q.prototype, "_resolutionManager", void 0), __decorate$1([inject(N$1.SoundPlayer), __decorateMetadata("design:type", Object)], q.prototype, "_soundPlayer", void 0), __decorate$1([inject(N$1.Application), __decorateMetadata("design:type", typeof (fr = import_lib.Application !== void 0 && import_lib.Application) == "function" ? fr : Object)], q.prototype, "_app", void 0), __decorate$1([inject(N$1.GameConfig), __decorateMetadata("design:type", typeof (pr = GameConfig !== void 0 && GameConfig) == "function" ? pr : Object)], q.prototype, "_gameConfig", void 0), __decorate$1([inject(N$1.Translator), __decorateMetadata("design:type", typeof (mr = Jn !== void 0 && Jn) == "function" ? mr : Object)], q.prototype, "_translator", void 0), q = __decorate$1([injectable()], q);
 var UIUtils = class {
 	static getXOffsetForHorizontalAlignmentPM(e) {
-		return (e - ue$1) / 2;
+		return (e - fe$1) / 2;
 	}
 	static getScreenHeight(e, t) {
-		return k / (e / t);
+		return D$1 / (e / t);
 	}
 	static getYOffsetForVerticalAlignmentLandscape(e) {
-		return (e - ue$1) / 2;
+		return (e - fe$1) / 2;
 	}
 	static getScreenWidth(e, t) {
-		return e / t * O$1;
+		return e / t * E$1;
 	}
 };
 var J$1 = /* @__PURE__ */ function(e) {
@@ -103889,7 +103889,7 @@ var hr = class UIView extends q {
 	}
 	applyOrientation() {}
 	addUIElementToParent(e, t, n, r, i, a, o) {
-		let s = this.mainUI.layout.getAbsoluteUIPosition(i, I$1.LANDSCAPE), c = this.mainUI.layout.getAbsoluteUIPosition(i, I$1.PORTRAIT), l = this.spineUtils.getBoneAbsolutePosition(r.skeleton.data, t), u = this.spineUtils.getBoneAbsolutePosition(r.skeleton.data, n);
+		let s = this.mainUI.layout.getAbsoluteUIPosition(i, F.LANDSCAPE), c = this.mainUI.layout.getAbsoluteUIPosition(i, F.PORTRAIT), l = this.spineUtils.getBoneAbsolutePosition(r.skeleton.data, t), u = this.spineUtils.getBoneAbsolutePosition(r.skeleton.data, n);
 		this._uiElements.push(new UIElement(e, {
 			x: l.x + s.x,
 			y: l.y + s.y
@@ -103948,7 +103948,7 @@ var _r = (_AutoplayButtonView = class AutoplayButtonView extends hr {
 }, gr = _AutoplayButtonView, _defineProperty(_AutoplayButtonView, "BUTTON_CLICKED", "AutoplayButtonView::BUTTON_CLICKED"), _AutoplayButtonView);
 _r = gr = __decorate$1([injectFromBase()], _r);
 var KeypadLockProperties = (_Class6 = class {}, _defineProperty(_Class6, "ENABLED", "enabled"), _defineProperty(_Class6, "VISIBLE", "visible"), _Class6);
-var vr = class KeypadModule extends L {
+var vr = class KeypadModule extends I$1 {
 	constructor(..._args20) {
 		super(..._args20);
 		_defineProperty(this, "_keypadLocker", new KeypadLocker());
@@ -103997,7 +103997,7 @@ var vr = class KeypadModule extends L {
 	}
 };
 vr = __decorate$1([injectFromBase()], vr);
-var yr = class AnimationPlayerModule extends L {
+var yr = class AnimationPlayerModule extends I$1 {
 	constructor() {
 		super();
 	}
@@ -104037,7 +104037,7 @@ var TrackLoopHTLMPick = class {
 		this._layout = HTMLUtils.makeVerticalContainer(), this._layout.style.flexGrow = "1";
 		let e = HTMLUtils.createHtmlElement("button", null, "➕");
 		e.onclick = () => {
-			A.info("Add another animation to track!"), this.addTrack();
+			O$1.info("Add another animation to track!"), this.addTrack();
 		}, this._tracksLayout = HTMLUtils.makeVerticalContainer(), this._layout.appendChild(this._tracksLayout), this.addTrack(), this._layout.appendChild(e);
 	}
 	addTrack() {
@@ -104045,7 +104045,7 @@ var TrackLoopHTLMPick = class {
 		n.type = "checkbox";
 		let r = HTMLUtils.makeHorizontalContainer(n, t, e), i = this._currentIndex;
 		e.onclick = () => {
-			A.info("Remove!"), r.parentNode.removeChild(r), this._trackOptions[i] = null;
+			O$1.info("Remove!"), r.parentNode.removeChild(r), this._trackOptions[i] = null;
 		}, HTMLUtils.addOptionsToDropdownList(t, this._animations), this._trackOptions[i] = {
 			track: t,
 			loop: n,
@@ -104326,7 +104326,7 @@ var AnimationPlayerBase = class extends import_lib.Container {
 		});
 		r.anchor.set(.5), Zn.snackBarResolutionTween(r, this.updateManager, this.resolutionManager, !1, 100, t)[0].getPromise().then(() => {
 			Zn.fadeOutTween(r, this.updateManager);
-		}), A.info(e), this.addChild(r);
+		}), O$1.info(e), this.addChild(r);
 	}
 	getSnackbarPosition() {
 		return {
@@ -104388,7 +104388,7 @@ var AnimationPlayerHtmlView = class extends AnimationPlayerBase {
 		this._mainContainer.style.display = "none";
 	}
 	onRemoveClicked() {
-		A.info("Remove Clicked"), this.cleanup(), this.parent.removeChild(this);
+		O$1.info("Remove Clicked"), this.cleanup(), this.parent.removeChild(this);
 	}
 	getDefaultMixDuration() {
 		let e = Number(this._mixDurationSelection.value);
@@ -104476,19 +104476,19 @@ var AnimationPlayerHtmlView = class extends AnimationPlayerBase {
 		this._multiTrackAnimationSetup.visible = e, e ? (this._animationSelection.style.display = "none", this.changeMixingHTMLElementsDisplay(this._isMixingCheckbox.checked)) : (this._animationSelection.style.display = "flex", this.changeMixingHTMLElementsDisplay(this._isMixingCheckbox.checked));
 	}
 	onSkeletonChanged(e) {
-		A.info(e), HTMLUtils.clearDropdownList(this._animationSelection), HTMLUtils.clearDropdownList(this._mixWithAnimationSelection), HTMLUtils.clearDropdownList(this._skinSelection), HTMLUtils.clearDropdownList(this._mixDurationSelection), this.spineName && (this._slotsReplacementHTML.slots = this.getAllSlotsInSpine(this.spineName), HTMLUtils.addOptionsToDropdownList(this._animationSelection, this.getAllAnimationsFrom(this.spineName), null), HTMLUtils.addOptionsToDropdownList(this._mixWithAnimationSelection, this.getAllAnimationsFrom(this.spineName), null, "Mix with animation"), HTMLUtils.addOptionsToDropdownList(this._skinSelection, this.getSkinsInSpine(this.spineName), null), HTMLUtils.addOptionsToDropdownList(this._mixDurationSelection, this.getDefaultMixDurationVariants(), null, "Default Mix: number ms"), this._multiTrackAnimationSetup.animations = this.getAllAnimationsFrom(this.spineName)), this.playAgain();
+		O$1.info(e), HTMLUtils.clearDropdownList(this._animationSelection), HTMLUtils.clearDropdownList(this._mixWithAnimationSelection), HTMLUtils.clearDropdownList(this._skinSelection), HTMLUtils.clearDropdownList(this._mixDurationSelection), this.spineName && (this._slotsReplacementHTML.slots = this.getAllSlotsInSpine(this.spineName), HTMLUtils.addOptionsToDropdownList(this._animationSelection, this.getAllAnimationsFrom(this.spineName), null), HTMLUtils.addOptionsToDropdownList(this._mixWithAnimationSelection, this.getAllAnimationsFrom(this.spineName), null, "Mix with animation"), HTMLUtils.addOptionsToDropdownList(this._skinSelection, this.getSkinsInSpine(this.spineName), null), HTMLUtils.addOptionsToDropdownList(this._mixDurationSelection, this.getDefaultMixDurationVariants(), null, "Default Mix: number ms"), this._multiTrackAnimationSetup.animations = this.getAllAnimationsFrom(this.spineName)), this.playAgain();
 	}
 	onPlayClicked() {
-		A.info("Play Clicked"), this.playAgain();
+		O$1.info("Play Clicked"), this.playAgain();
 	}
 	onStopClicked() {
-		A.info("Stop Clicked"), this.kill();
+		O$1.info("Stop Clicked"), this.kill();
 	}
 	onStopWithMix() {
-		A.info("Stop With Mix Clicked"), this.stopWithMix();
+		O$1.info("Stop With Mix Clicked"), this.stopWithMix();
 	}
 	onPauseResumeClicked() {
-		A.info("Pause/Resume Clicked"), this._currentAnimation && (this._currentAnimation.isPlaying ? this._currentAnimation.stop() : this._currentAnimation.resume());
+		O$1.info("Pause/Resume Clicked"), this._currentAnimation && (this._currentAnimation.isPlaying ? this._currentAnimation.stop() : this._currentAnimation.resume());
 	}
 	cleanup() {
 		super.cleanup(), this._mainContainer.parentElement.removeChild(this._mainContainer), this._mainContainer = null, this._removeCallback(), this.kill();
@@ -104513,11 +104513,11 @@ var AnimationPlayerHtmlView = class extends AnimationPlayerBase {
 			x: this.resolutionManager.halfResolution.width,
 			y: this.resolutionManager.halfResolution.height
 		}).container(this).skinName(this.skinName).createAndStart(), this.processTextureSlotReplacements(), this.setDefaultMixDuration(), this._currentAnimation.state.addListener({ event: (e, t) => {
-			A.error(t.data.name), this.showSnackBar(`EVENT: ${t.data.name}`);
+			O$1.error(t.data.name), this.showSnackBar(`EVENT: ${t.data.name}`);
 		} }));
 	}
 	playMultiTrackAnimation() {
-		A.info(this._multiTrackAnimationSetup.tracks);
+		O$1.info(this._multiTrackAnimationSetup.tracks);
 		let e = this._multiTrackAnimationSetup.tracks, t = e.find(((e) => e.trackIndex === 0));
 		if (!(t === null || t === void 0 ? void 0 : t.options.length)) {
 			this.showSnackBar("Cannot start without animation on Track 0 selected.");
@@ -104782,7 +104782,7 @@ var AutoplayPausedState = class extends ModuleState {
 };
 var ReelsEvents = (_Class10 = class {}, _defineProperty(_Class10, "SPIN_ENDED", "ReelsEvents::__SPIN_ENDED__"), _defineProperty(_Class10, "REELS_SPINNING_STARTED", "ReelsEvents::__REELS_SPINNING_STARTED__"), _defineProperty(_Class10, "REELS_AVALANCHE_STARTED", "ReelsEvents::__REELS_AVALANCHE_STARTED__"), _defineProperty(_Class10, "REEL_STOPPED", "ReelsEvents::__REEL_STOPPED__"), _defineProperty(_Class10, "ALL_REELS_STOPPED", "ReelsEvents::__ALL_REELS_STOPPED__"), _defineProperty(_Class10, "REEL_PERCEIVED_STOP", "ReelsEvents::REEL_PERCEIVED_STOP"), _defineProperty(_Class10, "REELS_FADING_OUT_FINISHED", "ReelsEvents::REELS_FADING_OUT_FINISHED"), _defineProperty(_Class10, "REELS_FADING_OUT_STARTED", "ReelsEvents::REELS_FADING_OUT_STARTED"), _defineProperty(_Class10, "REELS_FADING_IN_FINISHED", "ReelsEvents::REELS_FADING_IN_FINISHED"), _defineProperty(_Class10, "REELS_FADING_IN_STARTED", "ReelsEvents::REELS_FADING_IN_STARTED"), _Class10);
 var Sr;
-var Tr = (_AutoplayHandlerModule = class AutoplayHandlerModule extends L {
+var Tr = (_AutoplayHandlerModule = class AutoplayHandlerModule extends I$1 {
 	constructor(..._args25) {
 		super(..._args25);
 		_defineProperty(this, "_requiredSettings", void 0);
@@ -104826,7 +104826,7 @@ var Tr = (_AutoplayHandlerModule = class AutoplayHandlerModule extends L {
 	}
 	tryToStartAutoplay() {
 		this.gameData.isAutoplayInProgress = !0, this.timeUtils.killTimer(this._currentTimer);
-		let e = this.gameData.settings.fastPlayMode === Oe$1.SUPER ? 0 : Sr.BEFORE_SPIN_TIMER;
+		let e = this.gameData.settings.fastPlayMode === Ae$1.SUPER ? 0 : Sr.BEFORE_SPIN_TIMER;
 		this._currentTimer = this.timeUtils.createTimer(this.startAutoplaySpin.bind(this), e);
 	}
 	stopAutoplayAndEmitRoundsFinished() {
@@ -104923,7 +104923,7 @@ var Tr = (_AutoplayHandlerModule = class AutoplayHandlerModule extends L {
 Tr = Sr = __decorate$1([injectFromBase()], Tr);
 var AutoplayHandlerEvents = (_Class11 = class {}, _defineProperty(_Class11, "START_AUTOPLAY_SPIN", "AutoplayHandlerEvents::START_AUTOPLAY_SPIN"), _defineProperty(_Class11, "AUTOPLAY_ROUNDS_FINISHED", "AutoplayHandlerEvents::AUTOPLAY_ROUNDS_FINISHED"), _defineProperty(_Class11, "AUTOPLAY_STOPPED", "AutoplayHandlerEvents::AUTOPLAY_STOPPED"), _defineProperty(_Class11, "AUTOPLAY_STOPPED_ON_WIN_LIMIT", "AutoplayHandlerEvents::AUTOPLAY_STOPPED_ON_WIN_LIMIT"), _defineProperty(_Class11, "AUTOPLAY_STOPPED_ON_LOSE_LIMIT", "AutoplayHandlerEvents::AUTOPLAY_STOPPED_ON_LOSE_LIMIT"), _defineProperty(_Class11, "AUTOPLAY_STOPPED_ON_SINGLE_WIN_LIMIT", "AutoplayHandlerEvents::AUTOPLAY_STOPPED_ON_SINGLE_WIN_LIMIT"), _defineProperty(_Class11, "AUTOPLAY_STARTED", "AutoplayHandlerEvents::AUTOPLAY_STARTED"), _Class11);
 var AutoplayMenuEvents = (_Class12 = class {}, _defineProperty(_Class12, "UPDATE_AUTOPLAY_SPINS", "AutoplayMenuEvents::UPDATE_AUTOPLAY_SPINS"), _defineProperty(_Class12, "AUTOPLAY_MENU_ACCEPTED", "AutoplayMenuEvents::AUTOPLAY_MENU_ACCEPTED"), _defineProperty(_Class12, "AUTOPLAY_MENU_DECLINED", "AutoplayMenuEvents::AUTOPLAY_MENU_CANCELLED"), _defineProperty(_Class12, "BUTTON_PRESSED", "AutoplayMenuEvents::BUTTON_PRESSED"), _defineProperty(_Class12, "AUTOPLAY_MENU_OPENED", "AutoplayMenuEvents::AUTOPLAY_MENU_OPENED"), _defineProperty(_Class12, "AUTOPLAY_MENU_CLOSED", "AutoplayMenuEvents::AUTOPLAY_MENU_CLOSED"), _defineProperty(_Class12, "AUTOPLAY_MENU_VALUES_UPDATED", "AutoplayMenuEvent::AUTOPLAY_MENU_VALUES_UPDATED"), _defineProperty(_Class12, "TRIGGER_BET_MENU", "AutoplayMenuEvents::TRIGGER_BET_MENU"), _Class12);
-var Er = class AutoplayMenuModule extends L {
+var Er = class AutoplayMenuModule extends I$1 {
 	setupEvents() {
 		super.setupEvents(), this.onView(jr.ACCEPT_CLICKED, this.onViewAcceptClicked), this.onView(jr.DECLINE_CLICKED, this.onViewDeclineClicked), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponseReceived), this.on(AutoplayButtonEvents.AUTOPLAY_BUTTON_CLICKED, this.onAutoplayButtonClicked);
 	}
@@ -105104,7 +105104,7 @@ var Mr = class AutoplayButtonModule extends vr {
 };
 Mr = __decorate$1([injectFromBase()], Mr);
 var AutoplayStopButtonEvents = (_Class13 = class {}, _defineProperty(_Class13, "AUTOPLAY_STOP_BUTTON_CLICKED", "AutoplayStopButtonEvents::AUTOPLAY_STOP_BUTTON_CLICKED"), _Class13);
-var Nr = class AutoplayStopButtonModule extends L {
+var Nr = class AutoplayStopButtonModule extends I$1 {
 	setupEvents() {
 		super.setupEvents(), this.onView(Ir.STOP_BUTTON_CLICKED, this.onViewStopButtonClicked), this.on(AutoplayHandlerEvents.AUTOPLAY_STARTED, this.onAutoplayStarted), this.on(AutoplayHandlerEvents.AUTOPLAY_STOPPED, this.onAutoplayStopped), this.on(AutoplayHandlerEvents.START_AUTOPLAY_SPIN, this.onAutoplaySpinStarted);
 	}
@@ -105218,7 +105218,7 @@ function AutoplayMenu(e, t) {
 		e.key === "Escape" ? close() : e.key === "Enter" && start();
 	}
 	var h = Vr();
-	event("keydown", pn, onKeydown);
+	event("keydown", mn, onKeydown);
 	{
 		let money = (e, t = noop) => {
 			var n = zr();
@@ -105250,48 +105250,48 @@ function AutoplayMenu(e, t) {
 		var S = sibling(y, 2);
 		reset(v);
 		var C = sibling(v, 2);
-		var w = child(C);
-		var T = child(w);
-		var E = child(T, !0);
-		reset(T);
-		var ee = sibling(T, 2);
-		var te = child(ee, !0);
-		reset(ee), reset(w);
-		var ne = sibling(w, 4);
-		var re = child(ne);
-		var ie = child(re, !0);
-		reset(re);
-		var ae = sibling(re, 2);
-		money(child(ae), () => get(u)), reset(ae), reset(ne), reset(C);
-		var D = sibling(C, 2);
-		var oe = child(D);
-		var se = child(oe, !0);
-		reset(oe);
-		var ce = sibling(oe, 2);
-		each(ce, 20, () => get(n), (e) => e, (e, t) => {
+		var ee = child(C);
+		var w = child(ee);
+		var T = child(w, !0);
+		reset(w);
+		var te = sibling(w, 2);
+		var ne = child(te, !0);
+		reset(te), reset(ee);
+		var re = sibling(ee, 4);
+		var ie = child(re);
+		var ae = child(ie, !0);
+		reset(ie);
+		var oe = sibling(ie, 2);
+		money(child(oe), () => get(u)), reset(oe), reset(re), reset(C);
+		var se = sibling(C, 2);
+		var ce = child(se);
+		var le = child(ce, !0);
+		reset(ce);
+		var ue = sibling(ce, 2);
+		each(ue, 20, () => get(n), (e) => e, (e, t) => {
 			var n = Br();
 			let i;
 			var a = child(n, !0);
 			reset(n), template_effect(() => {
 				i = set_class(n, 1, "ap-round svelte-1ufu24w", null, i, { active: t === get(r) }), set_text(a, t);
 			}), delegated("click", n, () => selectRounds(t)), append(e, n);
-		}), reset(ce), reset(D);
-		var le = sibling(D, 2);
-		var O = child(le);
-		var k = child(O, !0);
-		reset(O);
-		var ue = sibling(O, 2);
-		var de = child(ue);
-		var fe = sibling(de, 2);
-		money(child(fe), () => get(d)), reset(fe);
-		var pe = sibling(fe, 2);
-		reset(ue), reset(le);
-		var me = sibling(le, 2);
-		var he = child(me);
-		reset(me), reset(_), reset(h), template_effect((e, t, n, i, a, o, s, u, d, f) => {
+		}), reset(ue), reset(se);
+		var de = sibling(se, 2);
+		var E = child(de);
+		var D = child(E, !0);
+		reset(E);
+		var fe = sibling(E, 2);
+		var pe = child(fe);
+		var me = sibling(pe, 2);
+		money(child(me), () => get(d)), reset(me);
+		var he = sibling(me, 2);
+		reset(fe), reset(de);
+		var ge = sibling(de, 2);
+		var _e = child(ge);
+		reset(ge), reset(_), reset(h), template_effect((e, t, n, i, a, o, s, u, d, f) => {
 			var _get;
 			var _get2;
-			set_attribute(g, "aria-label", e), set_text(x, t), set_attribute(S, "aria-label", n), set_text(E, i), set_style(ee, `font-size:${(_get = get(p)) !== null && _get !== void 0 ? _get : ""}px`), set_text(te, get(r)), set_text(ie, a), set_style(ae, `font-size:${(_get2 = get(m)) !== null && _get2 !== void 0 ? _get2 : ""}px`), set_text(se, o), set_text(k, s), set_attribute(de, "aria-label", u), de.disabled = !get(c), set_attribute(pe, "aria-label", d), pe.disabled = !get(l), set_text(he, `${f !== null && f !== void 0 ? f : ""} ▸`);
+			set_attribute(g, "aria-label", e), set_text(x, t), set_attribute(S, "aria-label", n), set_text(T, i), set_style(te, `font-size:${(_get = get(p)) !== null && _get !== void 0 ? _get : ""}px`), set_text(ne, get(r)), set_text(ae, a), set_style(oe, `font-size:${(_get2 = get(m)) !== null && _get2 !== void 0 ? _get2 : ""}px`), set_text(le, o), set_text(D, s), set_attribute(pe, "aria-label", u), pe.disabled = !get(c), set_attribute(he, "aria-label", d), he.disabled = !get(l), set_text(_e, `${f !== null && f !== void 0 ? f : ""} ▸`);
 		}, [
 			() => t.host.t("autoplay.close", "Close"),
 			() => t.host.t("autoplay.title", "Autoplay"),
@@ -105303,7 +105303,7 @@ function AutoplayMenu(e, t) {
 			() => t.host.t("bet.decrease", "Decrease"),
 			() => t.host.t("bet.increase", "Increase"),
 			() => t.host.t("autoplay.start", "Start")
-		]), delegated("click", g, close), delegated("click", S, close), delegated("click", de, () => step(-1)), delegated("click", pe, () => step(1)), delegated("click", me, start);
+		]), delegated("click", g, close), delegated("click", S, close), delegated("click", pe, () => step(-1)), delegated("click", he, () => step(1)), delegated("click", ge, start);
 	}
 	bind_window_size("innerWidth", (e) => set(f, e, !0)), append(e, h), pop();
 }
@@ -105366,39 +105366,58 @@ var Wr = /* @__PURE__ */ from_html("<span class=\"ap-sym svelte-9rxfxa\"> </span
 var Gr = /* @__PURE__ */ from_html("<span class=\"ap-sym svelte-9rxfxa\"> </span>");
 var Kr = /* @__PURE__ */ from_html("<!> <!>", 1);
 var qr = /* @__PURE__ */ from_html("<button> </button>");
-var Jr = /* @__PURE__ */ from_html("<div class=\"ap-overlay svelte-9rxfxa\"><button class=\"ap-backdrop svelte-9rxfxa\"></button> <div class=\"ap-card svelte-9rxfxa\" role=\"dialog\" aria-modal=\"true\"><div class=\"ap-head svelte-9rxfxa\"><div class=\"ap-title svelte-9rxfxa\"><span class=\"ap-dot svelte-9rxfxa\"></span> <h2 class=\"svelte-9rxfxa\"> </h2></div> <button class=\"ap-close svelte-9rxfxa\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1 1L13 13M13 1L1 13\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg></button></div> <div class=\"ap-stats svelte-9rxfxa\"><div class=\"ap-stat svelte-9rxfxa\"><span class=\"ap-stat-label svelte-9rxfxa\"> </span> <span class=\"ap-stat-value svelte-9rxfxa\"> </span></div> <span class=\"ap-stat-divider svelte-9rxfxa\" aria-hidden=\"true\"></span> <div class=\"ap-stat svelte-9rxfxa\"><span class=\"ap-stat-label svelte-9rxfxa\"> </span> <span class=\"ap-stat-value svelte-9rxfxa\"><!></span></div></div> <div class=\"ap-field svelte-9rxfxa\"><span class=\"ap-field-label svelte-9rxfxa\"> </span> <div class=\"ap-rounds svelte-9rxfxa\"></div></div> <div class=\"ap-field svelte-9rxfxa\"><span class=\"ap-field-label svelte-9rxfxa\"> </span> <div class=\"ap-stepper svelte-9rxfxa\"><button class=\"ap-step svelte-9rxfxa\">−</button> <span class=\"ap-stepper-value svelte-9rxfxa\"><!></span> <button class=\"ap-step svelte-9rxfxa\">+</button></div></div> <div class=\"ap-field svelte-9rxfxa\"><span class=\"ap-field-label svelte-9rxfxa\"> </span> <div class=\"ap-slider-row svelte-9rxfxa\"><input class=\"ap-slider svelte-9rxfxa\" type=\"range\" min=\"1\" max=\"20\" step=\"1\"/> <span class=\"ap-slider-value svelte-9rxfxa\"> </span></div></div> <button class=\"ap-start svelte-9rxfxa\"> </button></div></div>");
-var Yr = {
+var Jr = /* @__PURE__ */ from_html("<button role=\"radio\"> </button>");
+var Yr = /* @__PURE__ */ from_html("<div class=\"ap-overlay svelte-9rxfxa\"><button class=\"ap-backdrop svelte-9rxfxa\"></button> <div class=\"ap-card svelte-9rxfxa\" role=\"dialog\" aria-modal=\"true\"><div class=\"ap-head svelte-9rxfxa\"><div class=\"ap-title svelte-9rxfxa\"><span class=\"ap-dot svelte-9rxfxa\"></span> <h2 class=\"svelte-9rxfxa\"> </h2></div> <button class=\"ap-close svelte-9rxfxa\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1 1L13 13M13 1L1 13\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg></button></div> <div class=\"ap-stats svelte-9rxfxa\"><div class=\"ap-stat svelte-9rxfxa\"><span class=\"ap-stat-label svelte-9rxfxa\"> </span> <span class=\"ap-stat-value svelte-9rxfxa\"> </span></div> <span class=\"ap-stat-divider svelte-9rxfxa\" aria-hidden=\"true\"></span> <div class=\"ap-stat svelte-9rxfxa\"><span class=\"ap-stat-label svelte-9rxfxa\"> </span> <span class=\"ap-stat-value svelte-9rxfxa\"><!></span></div></div> <div class=\"ap-field svelte-9rxfxa\"><span class=\"ap-field-label svelte-9rxfxa\"> </span> <div class=\"ap-rounds svelte-9rxfxa\"></div></div> <div class=\"ap-field svelte-9rxfxa\"><span class=\"ap-field-label svelte-9rxfxa\"> </span> <div class=\"ap-stepper svelte-9rxfxa\"><button class=\"ap-step svelte-9rxfxa\">−</button> <span class=\"ap-stepper-value svelte-9rxfxa\"><!></span> <button class=\"ap-step svelte-9rxfxa\">+</button></div></div> <div class=\"ap-field svelte-9rxfxa\"><span class=\"ap-field-label svelte-9rxfxa\"> </span> <div class=\"ap-slider-row svelte-9rxfxa\"><input class=\"ap-slider svelte-9rxfxa\" type=\"range\" min=\"1\" max=\"20\" step=\"1\"/> <span class=\"ap-slider-value svelte-9rxfxa\"> </span></div></div> <div class=\"ap-field svelte-9rxfxa\"><span class=\"ap-field-label svelte-9rxfxa\"> </span> <div class=\"ap-difficulty svelte-9rxfxa\" role=\"radiogroup\"></div></div> <button class=\"ap-start svelte-9rxfxa\"> </button></div></div>");
+var Xr = {
 	hash: "svelte-9rxfxa",
-	code: ".ap-overlay.svelte-9rxfxa {--cream: #ffffff;--muted: #7a6a48;--accent: #caa23a;--start-top: #f4cf45;--start-bottom: #d9aa28;--accent-soft: rgba(202, 162, 58, 0.14);--accent-shadow: rgba(202, 162, 58, 0.45);--surface-a: #1c150e;--surface-b: #120d08;--fill: rgba(255, 255, 255, 0.03);--fill-strong: rgba(255, 255, 255, 0.08);position:fixed;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;font-family:'Geist', 'Inter', system-ui, -apple-system, sans-serif;color:var(--cream);user-select:none;-webkit-font-smoothing:antialiased;}.ap-overlay.svelte-9rxfxa * {box-sizing:border-box;}\n\n    /* Transparent click-catcher: clicking outside the card closes the menu. */.ap-backdrop.svelte-9rxfxa {position:absolute;inset:0;border:none;padding:0;background:transparent;cursor:pointer;}.ap-card.svelte-9rxfxa {position:relative;z-index:1;width:min(600px, 92vw);padding:28px;display:flex;flex-direction:column;gap:24px;border-radius:18px;background:linear-gradient(var(--surface-a) 0%, var(--surface-b) 100%);box-shadow:rgba(0, 0, 0, 0.5) 0 30px 60px 0,\n                rgba(255, 255, 255, 0.06) 0 1px 0 0 inset;}.ap-head.svelte-9rxfxa {display:flex;align-items:center;justify-content:space-between;}.ap-title.svelte-9rxfxa {display:flex;align-items:center;gap:10px;}.ap-dot.svelte-9rxfxa {width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px 0 var(--accent);}.ap-title.svelte-9rxfxa h2:where(.svelte-9rxfxa) {margin:0;font-size:13px;font-weight:600;letter-spacing:0.32em;text-transform:uppercase;}.ap-close.svelte-9rxfxa {display:flex;align-items:center;justify-content:center;width:32px;height:32px;border:none;border-radius:8px;background:var(--fill);color:rgba(255, 255, 255, 0.7);cursor:pointer;}.ap-close.svelte-9rxfxa:hover {background:var(--fill-strong);color:var(--cream);}.ap-stats.svelte-9rxfxa {display:grid;grid-template-columns:1fr 1px 1fr;align-items:center;}.ap-stat.svelte-9rxfxa {display:flex;flex-direction:column;align-items:center;gap:8px;min-width:0;text-align:center;}.ap-stat-label.svelte-9rxfxa {font-size:10px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--muted);}.ap-stat-value.svelte-9rxfxa {display:flex;align-items:center;justify-content:center;height:50px;max-width:100%;font-size:50px;font-weight:600;line-height:1;white-space:nowrap;}.ap-stat-divider.svelte-9rxfxa {width:1px;height:64px;background:rgba(255, 255, 255, 0.08);}.ap-sym.svelte-9rxfxa {color:var(--accent);}.ap-field.svelte-9rxfxa {display:flex;flex-direction:column;gap:12px;}.ap-field-label.svelte-9rxfxa {font-size:10px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--muted);}.ap-rounds.svelte-9rxfxa {display:grid;grid-template-columns:repeat(auto-fit, minmax(0, 1fr));gap:8px;}.ap-round.svelte-9rxfxa {padding:13px 0;border:none;border-radius:10px;background:var(--fill);color:var(--muted);font:inherit;font-size:14px;font-weight:500;cursor:pointer;}.ap-round.svelte-9rxfxa:hover {background:var(--fill-strong);color:var(--cream);}.ap-round.active.svelte-9rxfxa {background:var(--accent-soft);color:var(--cream);box-shadow:inset 0 0 0 1px var(--accent-shadow);}.ap-stepper.svelte-9rxfxa {display:flex;align-items:center;gap:8px;padding:12px;border-radius:12px;background:var(--fill);}.ap-step.svelte-9rxfxa {flex:none;width:44px;height:44px;border:none;border-radius:11px;background:var(--fill-strong);color:var(--cream);font-size:22px;line-height:1;cursor:pointer;}.ap-step.svelte-9rxfxa:hover:not(:disabled) {background:rgba(255, 255, 255, 0.14);}.ap-step.svelte-9rxfxa:disabled {opacity:0.35;cursor:not-allowed;}.ap-stepper-value.svelte-9rxfxa {flex:1;text-align:center;font-size:28px;font-weight:600;}.ap-slider-row.svelte-9rxfxa {display:flex;align-items:center;gap:14px;padding:12px;border-radius:12px;background:var(--fill);}.ap-slider.svelte-9rxfxa {flex:1;appearance:none;height:4px;border-radius:999px;background:var(--fill-strong);accent-color:var(--accent);}.ap-slider-value.svelte-9rxfxa {min-width:2ch;text-align:right;font-size:16px;font-weight:600;font-variant-numeric:tabular-nums;}.ap-start.svelte-9rxfxa {padding:16px 0;border:none;border-radius:12px;background:linear-gradient(var(--start-top), var(--start-bottom));box-shadow:var(--accent-shadow) 0 8px 20px 0,\n                rgba(255, 255, 255, 0.2) 0 1px 0 0 inset;color:rgb(255, 255, 255);font:inherit;font-size:14px;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;cursor:pointer;}.ap-start.svelte-9rxfxa:hover {filter:brightness(1.06);}.ap-start.svelte-9rxfxa:active {filter:brightness(0.96);}\n\n    @media (max-width: 520px) {.ap-card.svelte-9rxfxa {gap:18px;padding:20px;}.ap-stat-value.svelte-9rxfxa {height:38px;}.ap-stat-divider.svelte-9rxfxa {height:46px;}\n    }"
+	code: ".ap-overlay.svelte-9rxfxa {--cream: #ffffff;--muted: #7a6a48;--accent: #caa23a;--start-top: #f4cf45;--start-bottom: #d9aa28;--accent-soft: rgba(202, 162, 58, 0.14);--accent-shadow: rgba(202, 162, 58, 0.45);--surface-a: #1c150e;--surface-b: #120d08;--fill: rgba(255, 255, 255, 0.03);--fill-strong: rgba(255, 255, 255, 0.08);position:fixed;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;font-family:'Geist', 'Inter', system-ui, -apple-system, sans-serif;color:var(--cream);user-select:none;-webkit-font-smoothing:antialiased;}.ap-overlay.svelte-9rxfxa * {box-sizing:border-box;}\n\n    /* Transparent click-catcher: clicking outside the card closes the menu. */.ap-backdrop.svelte-9rxfxa {position:absolute;inset:0;border:none;padding:0;background:transparent;cursor:pointer;}.ap-card.svelte-9rxfxa {position:relative;z-index:1;width:min(600px, 92vw);padding:28px;display:flex;flex-direction:column;gap:24px;border-radius:18px;background:linear-gradient(var(--surface-a) 0%, var(--surface-b) 100%);box-shadow:rgba(0, 0, 0, 0.5) 0 30px 60px 0,\n                rgba(255, 255, 255, 0.06) 0 1px 0 0 inset;}.ap-head.svelte-9rxfxa {display:flex;align-items:center;justify-content:space-between;}.ap-title.svelte-9rxfxa {display:flex;align-items:center;gap:10px;}.ap-dot.svelte-9rxfxa {width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px 0 var(--accent);}.ap-title.svelte-9rxfxa h2:where(.svelte-9rxfxa) {margin:0;font-size:13px;font-weight:600;letter-spacing:0.32em;text-transform:uppercase;}.ap-close.svelte-9rxfxa {display:flex;align-items:center;justify-content:center;width:32px;height:32px;border:none;border-radius:8px;background:var(--fill);color:rgba(255, 255, 255, 0.7);cursor:pointer;}.ap-close.svelte-9rxfxa:hover {background:var(--fill-strong);color:var(--cream);}.ap-stats.svelte-9rxfxa {display:grid;grid-template-columns:1fr 1px 1fr;align-items:center;}.ap-stat.svelte-9rxfxa {display:flex;flex-direction:column;align-items:center;gap:8px;min-width:0;text-align:center;}.ap-stat-label.svelte-9rxfxa {font-size:10px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--muted);}.ap-stat-value.svelte-9rxfxa {display:flex;align-items:center;justify-content:center;height:50px;max-width:100%;font-size:50px;font-weight:600;line-height:1;white-space:nowrap;}.ap-stat-divider.svelte-9rxfxa {width:1px;height:64px;background:rgba(255, 255, 255, 0.08);}.ap-sym.svelte-9rxfxa {color:var(--accent);}.ap-field.svelte-9rxfxa {display:flex;flex-direction:column;gap:12px;}.ap-field-label.svelte-9rxfxa {font-size:10px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--muted);}.ap-rounds.svelte-9rxfxa,\n    .ap-difficulty.svelte-9rxfxa {display:grid;grid-template-columns:repeat(auto-fit, minmax(0, 1fr));gap:8px;}.ap-round.svelte-9rxfxa {padding:13px 0;border:none;border-radius:10px;background:var(--fill);color:var(--muted);font:inherit;font-size:14px;font-weight:500;cursor:pointer;}.ap-round.svelte-9rxfxa:hover {background:var(--fill-strong);color:var(--cream);}.ap-round.active.svelte-9rxfxa {background:var(--accent-soft);color:var(--cream);box-shadow:inset 0 0 0 1px var(--accent-shadow);}.ap-stepper.svelte-9rxfxa {display:flex;align-items:center;gap:8px;padding:12px;border-radius:12px;background:var(--fill);}.ap-step.svelte-9rxfxa {flex:none;width:44px;height:44px;border:none;border-radius:11px;background:var(--fill-strong);color:var(--cream);font-size:22px;line-height:1;cursor:pointer;}.ap-step.svelte-9rxfxa:hover:not(:disabled) {background:rgba(255, 255, 255, 0.14);}.ap-step.svelte-9rxfxa:disabled {opacity:0.35;cursor:not-allowed;}.ap-stepper-value.svelte-9rxfxa {flex:1;text-align:center;font-size:28px;font-weight:600;}.ap-slider-row.svelte-9rxfxa {display:flex;align-items:center;gap:14px;padding:12px;border-radius:12px;background:var(--fill);}.ap-slider.svelte-9rxfxa {flex:1;appearance:none;height:4px;border-radius:999px;background:var(--fill-strong);accent-color:var(--accent);}.ap-slider-value.svelte-9rxfxa {min-width:2ch;text-align:right;font-size:16px;font-weight:600;font-variant-numeric:tabular-nums;}.ap-start.svelte-9rxfxa {padding:16px 0;border:none;border-radius:12px;background:linear-gradient(var(--start-top), var(--start-bottom));box-shadow:var(--accent-shadow) 0 8px 20px 0,\n                rgba(255, 255, 255, 0.2) 0 1px 0 0 inset;color:rgb(255, 255, 255);font:inherit;font-size:14px;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;cursor:pointer;}.ap-start.svelte-9rxfxa:hover {filter:brightness(1.06);}.ap-start.svelte-9rxfxa:active {filter:brightness(0.96);}\n\n    @media (max-width: 520px) {.ap-card.svelte-9rxfxa {gap:18px;padding:20px;}.ap-stat-value.svelte-9rxfxa {height:38px;}.ap-stat-divider.svelte-9rxfxa {height:46px;}\n    }"
 };
 function ChickenAutoplayMenu(e, t) {
-	push(t, !0), append_styles$1(e, Yr);
+	push(t, !0), append_styles$1(e, Xr);
 	let n = /* @__PURE__ */ state(proxy([]));
 	let r = /* @__PURE__ */ state(0);
 	let i = /* @__PURE__ */ state(proxy([]));
 	let a = /* @__PURE__ */ state(0);
 	let o = /* @__PURE__ */ state(0);
 	let s = /* @__PURE__ */ state(1);
+	let c = /* @__PURE__ */ state(2);
+	let l = [
+		{
+			value: 0,
+			key: "autoplay.easy",
+			fallback: "Easy"
+		},
+		{
+			value: 1,
+			key: "autoplay.medium",
+			fallback: "Medium"
+		},
+		{
+			value: 2,
+			key: "autoplay.hard",
+			fallback: "Hard"
+		}
+	];
 	onMount(() => {
 		let sync = () => {
-			set(n, t.host.rounds, !0), set(r, t.host.selectedRounds, !0), set(i, t.host.bets, !0), set(a, t.host.betPerRound, !0), set(o, t.host.totalStake, !0), set(s, t.host.selectedCashOutStep, !0);
+			set(n, t.host.rounds, !0), set(r, t.host.selectedRounds, !0), set(i, t.host.bets, !0), set(a, t.host.betPerRound, !0), set(o, t.host.totalStake, !0), set(s, t.host.selectedCashOutStep, !0), set(c, t.host.selectedDifficulty, !0);
 		};
 		return sync(), t.host.subscribe(sync);
 	});
-	let c = /* @__PURE__ */ user_derived(() => Math.max(0, get(i).indexOf(get(a))));
-	let l = /* @__PURE__ */ user_derived(() => get(c) > 0);
-	let u = /* @__PURE__ */ user_derived(() => get(i).length > 0 && get(c) < get(i).length - 1);
-	let d = /* @__PURE__ */ user_derived(() => t.host.formatMoneyParts(get(o)));
-	let f = /* @__PURE__ */ user_derived(() => t.host.formatMoneyParts(get(a)));
-	let p = /* @__PURE__ */ state(proxy(typeof window < "u" ? window.innerWidth : 1024));
+	let u = /* @__PURE__ */ user_derived(() => Math.max(0, get(i).indexOf(get(a))));
+	let d = /* @__PURE__ */ user_derived(() => get(u) > 0);
+	let f = /* @__PURE__ */ user_derived(() => get(i).length > 0 && get(u) < get(i).length - 1);
+	let p = /* @__PURE__ */ user_derived(() => t.host.formatMoneyParts(get(o)));
+	let m = /* @__PURE__ */ user_derived(() => t.host.formatMoneyParts(get(a)));
+	let h = /* @__PURE__ */ state(proxy(typeof window < "u" ? window.innerWidth : 1024));
 	function fitFontSize(e) {
-		let t = get(p) <= 520;
+		let t = get(h) <= 520;
 		let n = t ? 36 : 50;
 		let r = t ? 6 : 7;
 		return e.length <= r ? n : Math.max(16, Math.round(n * r / e.length));
 	}
-	let m = /* @__PURE__ */ user_derived(() => fitFontSize(String(get(r))));
-	let h = /* @__PURE__ */ user_derived(() => fitFontSize(t.host.formatMoney(get(o), !0)));
+	let g = /* @__PURE__ */ user_derived(() => fitFontSize(String(get(r))));
+	let _ = /* @__PURE__ */ user_derived(() => fitFontSize(t.host.formatMoney(get(o), !0)));
 	function selectRounds(e) {
 		t.host.selectRounds(e);
 	}
@@ -105407,6 +105426,9 @@ function ChickenAutoplayMenu(e, t) {
 	}
 	function onCashOutStepInput(e) {
 		t.host.selectCashOutStep(Number(e.currentTarget.value));
+	}
+	function selectDifficulty(e) {
+		t.host.selectDifficulty(e);
 	}
 	function start() {
 		t.host.start();
@@ -105417,8 +105439,8 @@ function ChickenAutoplayMenu(e, t) {
 	function onKeydown(e) {
 		e.key === "Escape" ? close() : e.key === "Enter" && start();
 	}
-	var g = Jr();
-	event("keydown", pn, onKeydown);
+	var v = Yr();
+	event("keydown", mn, onKeydown);
 	{
 		let money = (e, t = noop) => {
 			var n = Kr();
@@ -105440,68 +105462,81 @@ function ChickenAutoplayMenu(e, t) {
 				t().post && e(consequent_1);
 			}), template_effect(() => set_text(i, t().num)), append(e, n);
 		};
-		var _ = child(g);
-		var v = sibling(_, 2);
 		var y = child(v);
-		var b = child(y);
-		var x = sibling(child(b), 2);
-		var S = child(x, !0);
-		reset(x), reset(b);
-		var C = sibling(b, 2);
-		reset(y);
-		var w = sibling(y, 2);
-		var T = child(w);
-		var E = child(T);
-		var ee = child(E, !0);
-		reset(E);
-		var te = sibling(E, 2);
-		var ne = child(te, !0);
-		reset(te), reset(T);
-		var re = sibling(T, 4);
-		var ie = child(re);
+		var b = sibling(y, 2);
+		var x = child(b);
+		var S = child(x);
+		var C = sibling(child(S), 2);
+		var ee = child(C, !0);
+		reset(C), reset(S);
+		var w = sibling(S, 2);
+		reset(x);
+		var T = sibling(x, 2);
+		var te = child(T);
+		var ne = child(te);
+		var re = child(ne, !0);
+		reset(ne);
+		var ie = sibling(ne, 2);
 		var ae = child(ie, !0);
-		reset(ie);
-		var D = sibling(ie, 2);
-		money(child(D), () => get(d)), reset(D), reset(re), reset(w);
-		var oe = sibling(w, 2);
+		reset(ie), reset(te);
+		var oe = sibling(te, 4);
 		var se = child(oe);
 		var ce = child(se, !0);
 		reset(se);
 		var le = sibling(se, 2);
-		each(le, 20, () => get(n), (e) => e, (e, t) => {
+		money(child(le), () => get(p)), reset(le), reset(oe), reset(T);
+		var ue = sibling(T, 2);
+		var de = child(ue);
+		var E = child(de, !0);
+		reset(de);
+		var D = sibling(de, 2);
+		each(D, 20, () => get(n), (e) => e, (e, t) => {
 			var n = qr();
 			let i;
 			var a = child(n, !0);
 			reset(n), template_effect(() => {
 				i = set_class(n, 1, "ap-round svelte-9rxfxa", null, i, { active: t === get(r) }), set_text(a, t);
 			}), delegated("click", n, () => selectRounds(t)), append(e, n);
-		}), reset(le), reset(oe);
-		var O = sibling(oe, 2);
-		var k = child(O);
-		var ue = child(k, !0);
-		reset(k);
-		var de = sibling(k, 2);
-		var fe = child(de);
-		var pe = sibling(fe, 2);
-		money(child(pe), () => get(f)), reset(pe);
-		var me = sibling(pe, 2);
-		reset(de), reset(O);
-		var he = sibling(O, 2);
+		}), reset(D), reset(ue);
+		var fe = sibling(ue, 2);
+		var pe = child(fe);
+		var me = child(pe, !0);
+		reset(pe);
+		var he = sibling(pe, 2);
 		var ge = child(he);
-		var _e = child(ge, !0);
-		reset(ge);
-		var ve = sibling(ge, 2);
-		var A = child(ve);
-		remove_input_defaults(A);
-		var ye = sibling(A, 2);
-		var be = child(ye, !0);
-		reset(ye), reset(ve), reset(he);
-		var xe = sibling(he, 2);
+		var _e = sibling(ge, 2);
+		money(child(_e), () => get(m)), reset(_e);
+		var ve = sibling(_e, 2);
+		reset(he), reset(fe);
+		var ye = sibling(fe, 2);
+		var be = child(ye);
+		var O = child(be, !0);
+		reset(be);
+		var xe = sibling(be, 2);
 		var Se = child(xe);
-		reset(xe), reset(v), reset(g), template_effect((e, t, n, i, a, o, c, d, f, p, g, v) => {
+		remove_input_defaults(Se);
+		var Ce = sibling(Se, 2);
+		var we = child(Ce, !0);
+		reset(Ce), reset(xe), reset(ye);
+		var k = sibling(ye, 2);
+		var Te = child(k);
+		var Ee = child(Te, !0);
+		reset(Te);
+		var De = sibling(Te, 2);
+		each(De, 21, () => l, (e) => e.value, (e, n) => {
+			var r = Jr();
+			let i;
+			var a = child(r, !0);
+			reset(r), template_effect((e) => {
+				i = set_class(r, 1, "ap-round svelte-9rxfxa", null, i, { active: get(n).value === get(c) }), set_attribute(r, "aria-checked", get(n).value === get(c)), set_text(a, e);
+			}, [() => t.host.t(get(n).key, get(n).fallback)]), delegated("click", r, () => selectDifficulty(get(n).value)), append(e, r);
+		}), reset(De), reset(k);
+		var A = sibling(k, 2);
+		var Oe = child(A);
+		reset(A), reset(b), reset(v), template_effect((e, t, n, i, a, o, c, l, u, p, m, h, v, b) => {
 			var _get3;
 			var _get4;
-			set_attribute(_, "aria-label", e), set_text(S, t), set_attribute(C, "aria-label", n), set_text(ee, i), set_style(te, `font-size:${(_get3 = get(m)) !== null && _get3 !== void 0 ? _get3 : ""}px`), set_text(ne, get(r)), set_text(ae, a), set_style(D, `font-size:${(_get4 = get(h)) !== null && _get4 !== void 0 ? _get4 : ""}px`), set_text(ce, o), set_text(ue, c), set_attribute(fe, "aria-label", d), fe.disabled = !get(l), set_attribute(me, "aria-label", f), me.disabled = !get(u), set_text(_e, p), set_value(A, get(s)), set_attribute(A, "aria-label", g), set_text(be, get(s)), set_text(Se, `${v !== null && v !== void 0 ? v : ""} ▸`);
+			set_attribute(y, "aria-label", e), set_text(ee, t), set_attribute(w, "aria-label", n), set_text(re, i), set_style(ie, `font-size:${(_get3 = get(g)) !== null && _get3 !== void 0 ? _get3 : ""}px`), set_text(ae, get(r)), set_text(ce, a), set_style(le, `font-size:${(_get4 = get(_)) !== null && _get4 !== void 0 ? _get4 : ""}px`), set_text(E, o), set_text(me, c), set_attribute(ge, "aria-label", l), ge.disabled = !get(d), set_attribute(ve, "aria-label", u), ve.disabled = !get(f), set_text(O, p), set_value(Se, get(s)), set_attribute(Se, "aria-label", m), set_text(we, get(s)), set_text(Ee, h), set_attribute(De, "aria-label", v), set_text(Oe, `${b !== null && b !== void 0 ? b : ""} ▸`);
 		}, [
 			() => t.host.t("autoplay.close", "Close"),
 			() => t.host.t("autoplay.title", "Cyberchicken Autoplay"),
@@ -105514,17 +105549,20 @@ function ChickenAutoplayMenu(e, t) {
 			() => t.host.t("bet.increase", "Increase"),
 			() => t.host.t("autoplay.cashOutAfterSteps", "Cash out after steps:"),
 			() => t.host.t("autoplay.cashOutAfterSteps", "Cash out after steps:"),
+			() => t.host.t("autoplay.difficulty", "Difficulty"),
+			() => t.host.t("autoplay.difficulty", "Difficulty"),
 			() => t.host.t("autoplay.start", "Start")
-		]), delegated("click", _, close), delegated("click", C, close), delegated("click", fe, () => step(-1)), delegated("click", me, () => step(1)), delegated("input", A, onCashOutStepInput), delegated("click", xe, start);
+		]), delegated("click", y, close), delegated("click", w, close), delegated("click", ge, () => step(-1)), delegated("click", ve, () => step(1)), delegated("input", Se, onCashOutStepInput), delegated("click", A, start);
 	}
-	bind_window_size("innerWidth", (e) => set(p, e, !0)), append(e, g), pop();
+	bind_window_size("innerWidth", (e) => set(h, e, !0)), append(e, v), pop();
 }
 delegate(["click", "input"]);
-var Xr = class ChickenAutoplayMenuSvelteModule extends Gn {
+var Zr = class ChickenAutoplayMenuSvelteModule extends Gn {
 	constructor(..._args30) {
 		super(..._args30);
 		_defineProperty(this, "_selectedRounds", 0);
 		_defineProperty(this, "_selectedCashOutStep", 1);
+		_defineProperty(this, "_selectedDifficulty", 2);
 	}
 	init(e, t) {
 		super.init(e, t), this._selectedRounds = this.gameData.autoplayDefault;
@@ -105552,11 +105590,17 @@ var Xr = class ChickenAutoplayMenuSvelteModule extends Gn {
 	get selectedCashOutStep() {
 		return this._selectedCashOutStep;
 	}
+	get selectedDifficulty() {
+		return this._selectedDifficulty;
+	}
 	selectRounds(e) {
 		this._selectedRounds = e, this.notify();
 	}
 	selectCashOutStep(e) {
 		this._selectedCashOutStep = e, this.notify();
+	}
+	selectDifficulty(e) {
+		this._selectedDifficulty = e, this.notify();
 	}
 	stepBet(e) {
 		let t = this.bets;
@@ -105565,7 +105609,7 @@ var Xr = class ChickenAutoplayMenuSvelteModule extends Gn {
 		t[n] !== this.gameData.betValue && (this.gameData.betValue = t[n], this.emit(BetMenuEvents.BET_CHANGED, t[n]), this.notify());
 	}
 	start() {
-		this._host.hide(), this.emit(AutoplayMenuEvents.AUTOPLAY_MENU_CLOSED), this.emit(AutoplayMenuEvents.AUTOPLAY_MENU_ACCEPTED, this._selectedRounds, this._selectedCashOutStep);
+		this._host.hide(), this.emit(AutoplayMenuEvents.AUTOPLAY_MENU_CLOSED), this.emit(AutoplayMenuEvents.AUTOPLAY_MENU_ACCEPTED, this._selectedRounds, this._selectedCashOutStep, this._selectedDifficulty);
 	}
 	close() {
 		this._host.hide(), this.emit(AutoplayMenuEvents.AUTOPLAY_MENU_CLOSED), this.emit(AutoplayMenuEvents.AUTOPLAY_MENU_DECLINED);
@@ -105580,7 +105624,7 @@ var Xr = class ChickenAutoplayMenuSvelteModule extends Gn {
 		this.open(AutoplayMenuEvents.AUTOPLAY_MENU_OPENED);
 	}
 };
-Xr = __decorate$1([injectFromBase()], Xr);
+Zr = __decorate$1([injectFromBase()], Zr);
 var AvalancheReelsEvents = (_Class14 = class {}, _defineProperty(_Class14, "REEL_SYMBOL_PERCEIVED_STOP", "Avalanche2Events::REEL_SYMBOL_PERCEIVED_STOP"), _defineProperty(_Class14, "DROPPING_OUT_FINISHED", "Avalanche2Events::DROPPING_OUT_FINISHED"), _defineProperty(_Class14, "REEL_DROPPING_NEW_FINISHED", "Avalanche2Events::REEL_DROPPING_FINISHED"), _defineProperty(_Class14, "ALL_REELS_DROPPING_NEW_STARTED", "Avalanche2Events::ALL_REELS_DROPPING_NEW_STARTED"), _defineProperty(_Class14, "ALL_REELS_DROPPING_NEW_FINISHED", "Avalanche2Events::ALL_REELS_DROPPING_NEW_FINISHED"), _defineProperty(_Class14, "REMOVING_WIN_STARTED", "Avalanche2Events::REMOVING_WIN_STARTED"), _defineProperty(_Class14, "REMOVING_WIN_FINISHED", "Avalanche2Events::REMOVING_WIN_FINISHED"), _defineProperty(_Class14, "SLIDING_STARTED", "Avalanche2Events::SLIDING_STARTED"), _defineProperty(_Class14, "SLIDING_FINISHED", "Avalanche2Events::SLIDING_FINISHED"), _defineProperty(_Class14, "ADDING_STARTED", "Avalanche2Events::ADDING_STARTED"), _defineProperty(_Class14, "ADDING_FINISHED", "Avalanche2Events::ADDING_FINISHED"), _defineProperty(_Class14, "STARTED_ADDING_NEW_SYMBOLS_ON_REEL", "Avalanche2Events::STARTED_ADDING_NEW_SYMBOLS_ON_REEL"), _defineProperty(_Class14, "REELS_FADING_OUT_FINISHED", "Avalanche2Events::REELS_FADING_OUT_FINISHED"), _defineProperty(_Class14, "REELS_FADING_IN_FINISHED", "Avalanche2Events::REELS_FADING_IN_FINISHED"), _defineProperty(_Class14, "REELS_FADING_OUT_STARTED", "Avalanche2Events::REELS_FADING_OUT_STARTED"), _defineProperty(_Class14, "REELS_FADING_IN_STARTED", "Avalanche2Events::REELS_FADING_IN_STARTED"), _defineProperty(_Class14, "SPIN_SPEED_CHANGES_APPLIED", "Avalanche2Events::SPIN_SPEED_CHANGES_APPLIED"), _defineProperty(_Class14, "AVALANCHE_FINISHED", "AvalancheReelsEvents::AVALANCHE_FINISHED"), _Class14);
 var Y$1 = (_ReelConstants = class ReelConstants {
 	static setReelsOffset(e, t) {
@@ -105614,28 +105658,28 @@ var Y$1 = (_ReelConstants = class ReelConstants {
 		};
 	}
 	static manualInit(e, t) {
-		ReelConstants.SYMBOL_SLOT[I$1.LANDSCAPE] = {
+		ReelConstants.SYMBOL_SLOT[F.LANDSCAPE] = {
 			width: e.width,
 			height: e.height
-		}, ReelConstants.SYMBOL_SLOT[I$1.PORTRAIT] = {
+		}, ReelConstants.SYMBOL_SLOT[F.PORTRAIT] = {
 			width: t.width,
 			height: t.height
-		}, ReelConstants.recalculateNumbers(I$1.LANDSCAPE), ReelConstants.recalculateNumbers(I$1.PORTRAIT);
+		}, ReelConstants.recalculateNumbers(F.LANDSCAPE), ReelConstants.recalculateNumbers(F.PORTRAIT);
 	}
 	static initializeFromLayout(e) {
 		ReelConstants.initializeFromLayoutCustomResourceNames(e, "SYMBOL");
 	}
 	static initializeFromLayoutCustomResourceNames(e, t) {
-		let n = e.getSize(t, I$1.PORTRAIT), r = e.getSize(t, I$1.LANDSCAPE);
-		ReelConstants.SYMBOL_SLOT[I$1.PORTRAIT] = {
+		let n = e.getSize(t, F.PORTRAIT), r = e.getSize(t, F.LANDSCAPE);
+		ReelConstants.SYMBOL_SLOT[F.PORTRAIT] = {
 			width: n.width,
 			height: n.height
-		}, ReelConstants.SYMBOL_SLOT[I$1.LANDSCAPE] = {
+		}, ReelConstants.SYMBOL_SLOT[F.LANDSCAPE] = {
 			width: r.width,
 			height: r.height
-		}, ReelConstants.recalculateNumbers(I$1.PORTRAIT), ReelConstants.recalculateNumbers(I$1.LANDSCAPE);
+		}, ReelConstants.recalculateNumbers(F.PORTRAIT), ReelConstants.recalculateNumbers(F.LANDSCAPE);
 	}
-	static getSymbolSlot(e = I$1.PORTRAIT) {
+	static getSymbolSlot(e = F.PORTRAIT) {
 		return ReelConstants.SYMBOL_SLOT[e];
 	}
 	static getReelsCenter(e) {
@@ -105650,7 +105694,7 @@ var Y$1 = (_ReelConstants = class ReelConstants {
 	static getReels() {
 		return ReelConstants.REELS;
 	}
-	static getSymbolPosition(e, t = I$1.PORTRAIT) {
+	static getSymbolPosition(e, t = F.PORTRAIT) {
 		return {
 			x: ReelConstants.getSymbolSlot(t).width * e.x + ReelConstants.getSymbolSlot(t).width / 2,
 			y: ReelConstants.getSymbolSlot(t).height * e.y + ReelConstants.getSymbolSlot(t).height / 2
@@ -105754,7 +105798,7 @@ var AvalancheSymbol = class extends import_lib.Container {
 		return this._isSymbolHidden;
 	}
 };
-var Zr = (_SpineAvalancheSymbol = class SpineAvalancheSymbol extends AvalancheSymbol {
+var Qr = (_SpineAvalancheSymbol = class SpineAvalancheSymbol extends AvalancheSymbol {
 	constructor(..._args32) {
 		super(..._args32);
 		_defineProperty(this, "_spineSymbol", void 0);
@@ -106173,7 +106217,7 @@ var Z$1 = (_AvalancheReelsView = class AvalancheReelsView extends q {
 		return e;
 	}
 	createReelSymbol() {
-		return new Zr();
+		return new Qr();
 	}
 	getRowsAmount(e) {
 		return Y$1.MAX_ROW_AMOUNT;
@@ -106218,7 +106262,7 @@ var Z$1 = (_AvalancheReelsView = class AvalancheReelsView extends q {
 Z$1 = X$1 = __decorate$1([injectFromBase()], Z$1);
 var StartScreenEvents = (_Class16 = class {}, _defineProperty(_Class16, "INTRO_STARTED", "StartScreenEvents::GAME_INTRO_STARTED"), _defineProperty(_Class16, "EXIT_FINISHED", "StartScreenEvents::GAME_INTRO_EXIT_FINISHED"), _Class16);
 var SettingsEvents = (_Class17 = class {}, _defineProperty(_Class17, "TOGGLE_SOUND_EFFECTS_OFF", "SettingsEvents::TOGGLE_SOUND_OFF"), _defineProperty(_Class17, "TOGGLE_SOUND_EFFECTS_ON", "SettingsEvents::TOGGLE_SOUND_ON"), _defineProperty(_Class17, "TOGGLE_MUSIC_OFF", "SettingsEvents::TOGGLE_MUSIC_OFF"), _defineProperty(_Class17, "TOGGLE_MUSIC_ON", "SettingsEvents::TOGGLE_MUSIC_ON"), _defineProperty(_Class17, "TOGGLE_FAST_PLAY_ON", "SettingsEvents::TOGGLE_FAST_PLAY_ON"), _defineProperty(_Class17, "TOGGLE_FAST_PLAY_OFF", "SettingsEvents::TOGGLE_FAST_PLAY_OFF"), _Class17);
-var Qr = class AvalancheReelsModule extends L {
+var $r = class AvalancheReelsModule extends I$1 {
 	constructor(..._args34) {
 		super(..._args34);
 		_defineProperty(this, "_basicInitialReels", [
@@ -106374,9 +106418,9 @@ var Qr = class AvalancheReelsModule extends L {
 		return this.getConfigValue("avalanche.beforeDroppingOutDelay", 0);
 	}
 };
-Qr = __decorate$1([injectFromBase()], Qr);
-var $r;
-var ei = (_BackgroundView = class BackgroundView extends q {
+$r = __decorate$1([injectFromBase()], $r);
+var ei;
+var ti = (_BackgroundView = class BackgroundView extends q {
 	constructor(..._args35) {
 		super(..._args35);
 		_defineProperty(this, "_background", void 0);
@@ -106391,12 +106435,12 @@ var ei = (_BackgroundView = class BackgroundView extends q {
 		e ? this._background.play("EXIT_FS", 0, !1, "IDLE") : this._background.play("IDLE");
 	}
 	onResized(e) {
-		let { width: t, height: n, isPortrait: r } = this.mainUI.screenLayoutManager.screenParams, i = r ? t / n : n / t, a = i < $r.BASIC_RATIO ? $r.BASIC_RATIO / i : 1;
+		let { width: t, height: n, isPortrait: r } = this.mainUI.screenLayoutManager.screenParams, i = r ? t / n : n / t, a = i < ei.BASIC_RATIO ? ei.BASIC_RATIO / i : 1;
 		this._background.spine.scale.set(a);
 	}
-}, $r = _BackgroundView, _defineProperty(_BackgroundView, "BASIC_RATIO", .5625), _BackgroundView);
-ei = $r = __decorate$1([injectFromBase()], ei);
-var ti = class BackgroundModule extends L {
+}, ei = _BackgroundView, _defineProperty(_BackgroundView, "BASIC_RATIO", .5625), _BackgroundView);
+ti = ei = __decorate$1([injectFromBase()], ti);
+var ni = class BackgroundModule extends I$1 {
 	restore() {
 		super.restore(), this.gameData.isFreeSpinsStarted && this.restoreToFS();
 	}
@@ -106410,7 +106454,7 @@ var ti = class BackgroundModule extends L {
 		this.view.exitFS();
 	}
 };
-ti = __decorate$1([injectFromBase()], ti);
+ni = __decorate$1([injectFromBase()], ni);
 var Meter = class extends UpdateManager {
 	constructor(e, t = K.Linear.None, n) {
 		var _super15 = (..._args36) => (super(..._args36), _defineProperty(this, "_textObject", void 0), _defineProperty(this, "_tween", void 0), _defineProperty(this, "_valueWrapper", {
@@ -106490,7 +106534,7 @@ var WinMeter = class extends Meter {
 		this._resolutionPadding = e;
 	}
 };
-var ni = (_AtlasNumbers = class AtlasNumbers extends import_lib.Container {
+var ri = (_AtlasNumbers = class AtlasNumbers extends import_lib.Container {
 	constructor(e, t, n = "NUMBERS.json", i) {
 		var _super17 = (..._args38) => (super(..._args38), _defineProperty(this, "_resources", void 0), _defineProperty(this, "_numbersContainer", void 0), _defineProperty(this, "_numberKerning", 0), _defineProperty(this, "_autoCenterMyself", !0), _defineProperty(this, "_numberAnchor", void 0), _defineProperty(this, "_tintValue", 16777215), _defineProperty(this, "_shouldTintNumbers", void 0), _defineProperty(this, "_shouldAddShadow", !1), _defineProperty(this, "_shadowTint", 0), _defineProperty(this, "_shadowOffset", {
 			x: 0,
@@ -106540,7 +106584,7 @@ var ni = (_AtlasNumbers = class AtlasNumbers extends import_lib.Container {
 		return t.width = this._resources.getSpriteSheetTexture(this._atlas, `${this._symbolIDPrefix}DOT.png`).width, t;
 	}
 	validatePrefix(e) {
-		this._resources.hasSpriteSpriteSheetTexture(this._atlas, `${e}0.png`) || A.error(`${this._atlas}: No resource found: ${e}0.png`);
+		this._resources.hasSpriteSpriteSheetTexture(this._atlas, `${e}0.png`) || O$1.error(`${this._atlas}: No resource found: ${e}0.png`);
 	}
 	static isValidCharacter(e) {
 		return AtlasNumbers.characterImageMap[e] !== void 0;
@@ -106625,8 +106669,8 @@ var ni = (_AtlasNumbers = class AtlasNumbers extends import_lib.Container {
 	["=", "EQUALSIGN"],
 	["%", "PCT"]
 ])), _AtlasNumbers);
-var ri;
-var ii = (_BigWinView = class BigWinView extends q {
+var ii;
+var ai = (_BigWinView = class BigWinView extends q {
 	constructor(..._args39) {
 		super(..._args39);
 		_defineProperty(this, "_meter", void 0);
@@ -106658,7 +106702,7 @@ var ii = (_BigWinView = class BigWinView extends q {
 	}
 	setupQuickstopContainer() {
 		this._skipCover = new import_lib.Container();
-		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, O$1, k).fill(16711680);
+		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, E$1, D$1).fill(16711680);
 		this._skipCover.pivot.set(960, 960), this._skipCover.addChild(e), this._skipCover.interactive = !0, this._skipCover.onclick = () => {
 			this._isPlayingEndingEnd || this.skip();
 		}, this._skipCover.ontap = () => {
@@ -106712,8 +106756,8 @@ var ii = (_BigWinView = class BigWinView extends q {
 		this.hideSkipCover(), this._finishingTimer && (this._finishingTimer = (this.updateManager.remove(this._finishingTimer), this._finishingTimer.stop(), null)), this._hasFinishedBigWinsExitAnimation = !1, this.killCurrentAnimation(), this.killEffectsAnimations(), this._currentAnimation = this.spineUtils.startSpineAnimationCreation("BIG_WINS.json", `EXIT${this.getCurrentLevelAnimationPostfix()}`, !1).container(this.getMainAnimationContainer()).onComplete(() => {
 			this.killCurrentAnimation(), this._hasFinishedBigWinsExitAnimation = !0, this.tryEmitBigWinFinished();
 		}).onEvent("COINS_END", () => {
-			this.emit(ri.COINS_END);
-		}).createAndStart(), this.playEndingEndAnimationEffects(), this._isPlayingEndingEnd = !0, this.emit(ri.END_ANIMATION_STARTED);
+			this.emit(ii.COINS_END);
+		}).createAndStart(), this.playEndingEndAnimationEffects(), this._isPlayingEndingEnd = !0, this.emit(ii.END_ANIMATION_STARTED);
 	}
 	startCounting() {
 		this._meter.start(), this.updateManager.add(this._meter);
@@ -106743,7 +106787,7 @@ var ii = (_BigWinView = class BigWinView extends q {
 		};
 	}
 	tryEmitBigWinFinished() {
-		this.isAllBigWinEndingAnimationsDone() && this.emit(ri.END_ANIMATION_FINISHED);
+		this.isAllBigWinEndingAnimationsDone() && this.emit(ii.END_ANIMATION_FINISHED);
 	}
 	isAllBigWinEndingAnimationsDone() {
 		return this._hasFinishedBigWinsExitAnimation;
@@ -106759,7 +106803,7 @@ var ii = (_BigWinView = class BigWinView extends q {
 	}
 	setupWinNumber() {
 		let e = this.getFontSize(this.device.isMobile);
-		this._winNumber = new ni(this.assets, e), this._winNumber.numberKerning = this.getBigWinNumberKerning(), this.container.addChild(this._winNumber);
+		this._winNumber = new ri(this.assets, e), this._winNumber.numberKerning = this.getBigWinNumberKerning(), this.container.addChild(this._winNumber);
 	}
 	getBigWinNumberKerning() {
 		return this.getConfigValue(this.device.isMobile ? "bigwin.numberKerningMobile" : "bigwin.numberKerning", 0);
@@ -106777,8 +106821,8 @@ var ii = (_BigWinView = class BigWinView extends q {
 		}).onEvent("START_COUNTUP", () => {
 			this.showNumber("0"), this.startCounting();
 		}).onEvent("COINS_START", () => {
-			this.emit(ri.COINS_START);
-		}).createAndStart(), this.startInitialAnimationsEffects(e), this.emit(ri.BIG_WIN_STARTED);
+			this.emit(ii.COINS_START);
+		}).createAndStart(), this.startInitialAnimationsEffects(e), this.emit(ii.BIG_WIN_STARTED);
 	}
 	startInitialAnimationsEffects(e = !1) {
 		let t = this.spineUtils.startSpineAnimationCreation("BIG_WINS_EFFECT.json", e ? "START_MULTIPLIER" : "START", !1).chainIdleAnimation(`IDLE${this.getCurrentLevelAnimationPostfix()}`).container(this.getEffectContainer()).createAndStart();
@@ -106845,16 +106889,16 @@ var ii = (_BigWinView = class BigWinView extends q {
 		return this.getConfigValue("bigwin.epicCountingEasing", K.Linear.None);
 	}
 	onMeterFinished() {
-		this.emit(ri.METER_FINISHED), this.emit(ri.EXPLOSION_STARTED), this.startFinishingTimer();
+		this.emit(ii.METER_FINISHED), this.emit(ii.EXPLOSION_STARTED), this.startFinishingTimer();
 	}
 	startFinishingTimer() {
 		this._finishingTimer = new Timer(() => {
 			this._isPlayingEndingEnd || this.playEndingEndAnimation();
-		}, ri.FINISHING_TIMER_VALUE, !0), this.updateManager.add(this._finishingTimer);
+		}, ii.FINISHING_TIMER_VALUE, !0), this.updateManager.add(this._finishingTimer);
 	}
 	playBigWinLoop() {
 		this.addMeterInto(), this._currentLevel < this._bigWinLevel && (this._transitionTimer = new Timer(() => {
-			this.playTransitionToNextLevel(), this.emit(ri.TRANSITION_STARTED, this._currentLevel);
+			this.playTransitionToNextLevel(), this.emit(ii.TRANSITION_STARTED, this._currentLevel);
 		}, this.getTimerValueUntilNextLevel(), !0), this.updateManager.add(this._transitionTimer));
 	}
 	getTimerValueUntilNextLevel() {
@@ -106892,16 +106936,16 @@ var ii = (_BigWinView = class BigWinView extends q {
 		for (let e of this._effectAnimation) this.spineUtils.stopAndDestroyAnimation(e);
 		this._effectAnimation = [];
 	}
-}, ri = _BigWinView, _defineProperty(_BigWinView, "FINISHING_TIMER_VALUE", 3e3), _defineProperty(_BigWinView, "METER_FINISHED", "BigWinView::METER_FINISHED"), _defineProperty(_BigWinView, "END_ANIMATION_FINISHED", "BigWinView::END_ANIMATION_FINISHED"), _defineProperty(_BigWinView, "END_ANIMATION_STARTED", "BigWinView::END_ANIMATION_STARTED"), _defineProperty(_BigWinView, "SKIP_CLICKED", "BigWinView::SKIP_CLICKED"), _defineProperty(_BigWinView, "EXPLOSION_STARTED", "BigWinView::EXPLOSION_START"), _defineProperty(_BigWinView, "BIG_WIN_STARTED", "BigWinView::BIG_WIN_START"), _defineProperty(_BigWinView, "TRANSITION_STARTED", "BigWinView::TRANSITION_START"), _defineProperty(_BigWinView, "TRANSITION_ENDED", "BigWinView::TRANSITION_END"), _defineProperty(_BigWinView, "COINS_START", "BigWinView::COINS_START"), _defineProperty(_BigWinView, "COINS_END", "BigWinView::COINS_END"), _defineProperty(_BigWinView, "START_COUNTUP", "BigWinView::START_COUNTUP"), _BigWinView);
-ii = ri = __decorate$1([injectFromBase()], ii);
-var ai = class BigWinModule extends L {
+}, ii = _BigWinView, _defineProperty(_BigWinView, "FINISHING_TIMER_VALUE", 3e3), _defineProperty(_BigWinView, "METER_FINISHED", "BigWinView::METER_FINISHED"), _defineProperty(_BigWinView, "END_ANIMATION_FINISHED", "BigWinView::END_ANIMATION_FINISHED"), _defineProperty(_BigWinView, "END_ANIMATION_STARTED", "BigWinView::END_ANIMATION_STARTED"), _defineProperty(_BigWinView, "SKIP_CLICKED", "BigWinView::SKIP_CLICKED"), _defineProperty(_BigWinView, "EXPLOSION_STARTED", "BigWinView::EXPLOSION_START"), _defineProperty(_BigWinView, "BIG_WIN_STARTED", "BigWinView::BIG_WIN_START"), _defineProperty(_BigWinView, "TRANSITION_STARTED", "BigWinView::TRANSITION_START"), _defineProperty(_BigWinView, "TRANSITION_ENDED", "BigWinView::TRANSITION_END"), _defineProperty(_BigWinView, "COINS_START", "BigWinView::COINS_START"), _defineProperty(_BigWinView, "COINS_END", "BigWinView::COINS_END"), _defineProperty(_BigWinView, "START_COUNTUP", "BigWinView::START_COUNTUP"), _BigWinView);
+ai = ii = __decorate$1([injectFromBase()], ai);
+var oi = class BigWinModule extends I$1 {
 	play(e) {
 		this.emit(BigWinEvents.ON_BEFORE_BIG_WIN), this.timeUtils.createTimer(() => {
 			this.view.start(e, this.getBigWinLevelFromWinNumber(e)), this.emit(BigWinEvents.STARTED), this.emit(BigWinEvents.COUNTUP_STARTED);
 		}, this.getBeforeBigWinPause());
 	}
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(ii.EXPLOSION_STARTED, BigWinEvents.EXPLOSION_STARTED), this.onViewEmitEvent(ii.TRANSITION_STARTED, BigWinEvents.TRANSITION_STARTED), this.onViewEmitEvent(ii.BIG_WIN_STARTED, BigWinEvents.BIG_WIN_STARTED), this.onViewEmitEvent(ii.TRANSITION_ENDED, BigWinEvents.TRANSITION_ENDED), this.onViewEmitEvent(ii.END_ANIMATION_STARTED, BigWinEvents.END_ANIMATION_STARTED), this.onViewEmitEvent(ii.COINS_START, BigWinEvents.COINS_START), this.onViewEmitEvent(ii.COINS_END, BigWinEvents.COINS_END), this.onViewEmitEvent(ii.START_COUNTUP, BigWinEvents.START_COUNTING), this.onViewEmitEvent(ii.SKIP_CLICKED, BigWinEvents.SKIP_CLICKED), this.onView(ii.METER_FINISHED, this.onMeterFinished), this.onView(ii.END_ANIMATION_FINISHED, this.onEndAnimationFinished);
+		super.setupEvents(), this.onViewEmitEvent(ai.EXPLOSION_STARTED, BigWinEvents.EXPLOSION_STARTED), this.onViewEmitEvent(ai.TRANSITION_STARTED, BigWinEvents.TRANSITION_STARTED), this.onViewEmitEvent(ai.BIG_WIN_STARTED, BigWinEvents.BIG_WIN_STARTED), this.onViewEmitEvent(ai.TRANSITION_ENDED, BigWinEvents.TRANSITION_ENDED), this.onViewEmitEvent(ai.END_ANIMATION_STARTED, BigWinEvents.END_ANIMATION_STARTED), this.onViewEmitEvent(ai.COINS_START, BigWinEvents.COINS_START), this.onViewEmitEvent(ai.COINS_END, BigWinEvents.COINS_END), this.onViewEmitEvent(ai.START_COUNTUP, BigWinEvents.START_COUNTING), this.onViewEmitEvent(ai.SKIP_CLICKED, BigWinEvents.SKIP_CLICKED), this.onView(ai.METER_FINISHED, this.onMeterFinished), this.onView(ai.END_ANIMATION_FINISHED, this.onEndAnimationFinished);
 	}
 	onMeterFinished() {
 		this.emit(BigWinEvents.COUNTUP_FINISHED), this.view.playBigWinEnd();
@@ -106913,10 +106957,10 @@ var ai = class BigWinModule extends L {
 		return this.getConfigValue("bigwin.beforePause", 800);
 	}
 	getBigWinLevelFromWinNumber(e) {
-		return e >= this.gameData.getTotalBet() * M$1.EPIC_WIN_THRESHOLD ? 4 : e >= this.gameData.getTotalBet() * M$1.MEGA_WIN_THRESHOLD && e < this.gameData.getTotalBet() * M$1.EPIC_WIN_THRESHOLD ? 3 : e >= this.gameData.getTotalBet() * M$1.SUPER_WIN_THRESHOLD && e < this.gameData.getTotalBet() * M$1.MEGA_WIN_THRESHOLD ? 2 : 1;
+		return e >= this.gameData.getTotalBet() * A.EPIC_WIN_THRESHOLD ? 4 : e >= this.gameData.getTotalBet() * A.MEGA_WIN_THRESHOLD && e < this.gameData.getTotalBet() * A.EPIC_WIN_THRESHOLD ? 3 : e >= this.gameData.getTotalBet() * A.SUPER_WIN_THRESHOLD && e < this.gameData.getTotalBet() * A.MEGA_WIN_THRESHOLD ? 2 : 1;
 	}
 };
-ai = __decorate$1([injectFromBase()], ai);
+oi = __decorate$1([injectFromBase()], oi);
 function parseCheatGroups(e) {
 	if (!e || typeof e != "object") return [];
 	let t = [];
@@ -106934,19 +106978,19 @@ function parseCheatGroups(e) {
 	}
 	return t;
 }
-var oi = /* @__PURE__ */ from_html("<span class=\"p-active-tag svelte-n033qi\"><span class=\"p-active-pip svelte-n033qi\"></span> <span class=\"p-active-name svelte-n033qi\"> </span></span>");
-var si = /* @__PURE__ */ from_html("<div role=\"radio\" tabindex=\"0\"><span class=\"p-radio svelte-n033qi\" aria-hidden=\"true\"></span> <span class=\"p-cheat-name svelte-n033qi\"> </span></div>");
-var ci = /* @__PURE__ */ from_html("<div class=\"p-group-body svelte-n033qi\"></div>");
-var li = /* @__PURE__ */ from_html("<div class=\"p-group svelte-n033qi\"><button class=\"p-group-head svelte-n033qi\"><span><svg width=\"12\" height=\"12\" viewBox=\"0 0 16 16\"><path d=\"M4 6l4 4 4-4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></span> <span class=\"p-group-name svelte-n033qi\"> </span> <span class=\"p-group-count svelte-n033qi\"> </span> <!></button> <!></div>");
-var ui = /* @__PURE__ */ from_html("<div class=\"p-empty svelte-n033qi\"> </div>");
-var di = /* @__PURE__ */ from_html("<div class=\"p-foot-math svelte-n033qi\"> </div>");
-var fi = /* @__PURE__ */ from_html("<div class=\"p-panel svelte-n033qi\"><div class=\"p-head svelte-n033qi\"><div class=\"p-title svelte-n033qi\"><span class=\"p-dot svelte-n033qi\"></span> <span>Cheats</span></div> <label class=\"p-search svelte-n033qi\"><svg width=\"13\" height=\"13\" viewBox=\"0 0 16 16\" aria-hidden=\"true\"><circle cx=\"7\" cy=\"7\" r=\"4.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"></circle><path d=\"M10.5 10.5L14 14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg> <input placeholder=\"Search…\" class=\"svelte-n033qi\"/> <kbd class=\"svelte-n033qi\">/</kbd></label> <div class=\"p-btngroup svelte-n033qi\"><button class=\"p-iconbtn svelte-n033qi\" title=\"Expand all\" aria-label=\"Expand all\"><svg width=\"11\" height=\"11\" viewBox=\"0 0 16 16\"><path d=\"M5 4l3-3 3 3M5 12l3 3 3-3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button> <button class=\"p-iconbtn svelte-n033qi\" title=\"Collapse all\" aria-label=\"Collapse all\"><svg width=\"11\" height=\"11\" viewBox=\"0 0 16 16\"><path d=\"M5 3l3 3 3-3M5 13l3-3 3 3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button></div></div> <div class=\"p-list svelte-n033qi\"><!> <!></div> <div class=\"p-foot svelte-n033qi\"><div class=\"p-foot-status svelte-n033qi\"><div class=\"p-foot-line svelte-n033qi\"><span></span> <span class=\"p-foot-label svelte-n033qi\">APPLIED</span> <span class=\"p-foot-value svelte-n033qi\"> </span></div> <!></div> <div class=\"p-foot-actions svelte-n033qi\"><button class=\"p-btn svelte-n033qi\">Reset</button></div></div></div>");
-var pi = {
+var si = /* @__PURE__ */ from_html("<span class=\"p-active-tag svelte-n033qi\"><span class=\"p-active-pip svelte-n033qi\"></span> <span class=\"p-active-name svelte-n033qi\"> </span></span>");
+var ci = /* @__PURE__ */ from_html("<div role=\"radio\" tabindex=\"0\"><span class=\"p-radio svelte-n033qi\" aria-hidden=\"true\"></span> <span class=\"p-cheat-name svelte-n033qi\"> </span></div>");
+var li = /* @__PURE__ */ from_html("<div class=\"p-group-body svelte-n033qi\"></div>");
+var ui = /* @__PURE__ */ from_html("<div class=\"p-group svelte-n033qi\"><button class=\"p-group-head svelte-n033qi\"><span><svg width=\"12\" height=\"12\" viewBox=\"0 0 16 16\"><path d=\"M4 6l4 4 4-4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></span> <span class=\"p-group-name svelte-n033qi\"> </span> <span class=\"p-group-count svelte-n033qi\"> </span> <!></button> <!></div>");
+var di = /* @__PURE__ */ from_html("<div class=\"p-empty svelte-n033qi\"> </div>");
+var fi = /* @__PURE__ */ from_html("<div class=\"p-foot-math svelte-n033qi\"> </div>");
+var pi = /* @__PURE__ */ from_html("<div class=\"p-panel svelte-n033qi\"><div class=\"p-head svelte-n033qi\"><div class=\"p-title svelte-n033qi\"><span class=\"p-dot svelte-n033qi\"></span> <span>Cheats</span></div> <label class=\"p-search svelte-n033qi\"><svg width=\"13\" height=\"13\" viewBox=\"0 0 16 16\" aria-hidden=\"true\"><circle cx=\"7\" cy=\"7\" r=\"4.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"></circle><path d=\"M10.5 10.5L14 14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg> <input placeholder=\"Search…\" class=\"svelte-n033qi\"/> <kbd class=\"svelte-n033qi\">/</kbd></label> <div class=\"p-btngroup svelte-n033qi\"><button class=\"p-iconbtn svelte-n033qi\" title=\"Expand all\" aria-label=\"Expand all\"><svg width=\"11\" height=\"11\" viewBox=\"0 0 16 16\"><path d=\"M5 4l3-3 3 3M5 12l3 3 3-3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button> <button class=\"p-iconbtn svelte-n033qi\" title=\"Collapse all\" aria-label=\"Collapse all\"><svg width=\"11\" height=\"11\" viewBox=\"0 0 16 16\"><path d=\"M5 3l3 3 3-3M5 13l3-3 3 3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button></div></div> <div class=\"p-list svelte-n033qi\"><!> <!></div> <div class=\"p-foot svelte-n033qi\"><div class=\"p-foot-status svelte-n033qi\"><div class=\"p-foot-line svelte-n033qi\"><span></span> <span class=\"p-foot-label svelte-n033qi\">APPLIED</span> <span class=\"p-foot-value svelte-n033qi\"> </span></div> <!></div> <div class=\"p-foot-actions svelte-n033qi\"><button class=\"p-btn svelte-n033qi\">Reset</button></div></div></div>");
+var mi = {
 	hash: "svelte-n033qi",
 	code: ".p-panel.svelte-n033qi {--bg: rgb(20, 22, 26);--bg-input: rgb(26, 29, 34);--border: rgb(38, 42, 49);--text: rgb(230, 232, 235);--muted: rgb(110, 116, 128);--foot: rgb(164, 169, 179);--accent: rgb(16, 185, 129);--active-bg: rgb(28, 42, 37);--active-text: rgb(52, 211, 153);position:fixed;top:0;left:0;z-index:99999;display:flex;flex-direction:column;width:300px;height:100vh;background:var(--bg);border-right:1px solid var(--border);box-shadow:6px 0 24px rgba(0, 0, 0, 0.5);color:var(--text);font-family:Geist, system-ui, -apple-system, sans-serif;font-size:16px;overflow:hidden;user-select:none;}.p-head.svelte-n033qi {display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--border);}.p-title.svelte-n033qi {display:flex;align-items:center;gap:6px;font-weight:600;white-space:nowrap;}.p-dot.svelte-n033qi {width:7px;height:7px;border-radius:50%;background:var(--accent);}.p-search.svelte-n033qi {display:flex;align-items:center;gap:6px;flex:1;min-width:0;padding:5px 8px;background:var(--bg-input);border:1px solid var(--border);border-radius:7px;color:var(--muted);}.p-search.svelte-n033qi input:where(.svelte-n033qi) {flex:1;min-width:0;background:none;border:none;outline:none;color:var(--text);font:inherit;}.p-search.svelte-n033qi input:where(.svelte-n033qi)::placeholder {color:var(--muted);}.p-search.svelte-n033qi kbd:where(.svelte-n033qi) {font:inherit;font-size:13px;font-weight:500;line-height:1;color:var(--muted);background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:2px 5px;}.p-btngroup.svelte-n033qi {display:flex;gap:4px;}.p-iconbtn.svelte-n033qi {display:flex;align-items:center;justify-content:center;width:24px;height:24px;background:var(--bg-input);border:1px solid var(--border);border-radius:6px;color:var(--muted);cursor:pointer;}.p-iconbtn.svelte-n033qi:hover {color:var(--text);}.p-list.svelte-n033qi {flex:1;overflow-y:auto;padding:6px;}.p-group.svelte-n033qi {margin-bottom:4px;}.p-group-head.svelte-n033qi {display:flex;align-items:center;gap:6px;width:100%;padding:5px 8px;background:none;border:none;color:var(--text);font:inherit;font-size:15px;font-weight:600;cursor:pointer;border-radius:6px;}.p-group-head.svelte-n033qi:hover {background:rgba(255, 255, 255, 0.03);}.p-chevron.svelte-n033qi {display:flex;color:var(--muted);transition:transform 0.12s ease;transform:rotate(-90deg);}.p-chevron.open.svelte-n033qi {transform:none;}.p-group-name.svelte-n033qi {flex:0 0 auto;}.p-group-count.svelte-n033qi {color:var(--muted);font-size:14px;font-weight:400;}.p-active-tag.svelte-n033qi {display:flex;align-items:center;gap:5px;margin-left:auto;max-width:45%;color:var(--active-text);font-size:14px;font-weight:500;overflow:hidden;}.p-active-name.svelte-n033qi {min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}.p-active-pip.svelte-n033qi,\n	.p-foot-pip.svelte-n033qi {flex:none;width:6px;height:6px;border-radius:50%;}.p-active-pip.svelte-n033qi {background:var(--accent);}.p-group-body.svelte-n033qi {display:flex;flex-direction:column;padding:2px 0 4px 6px;}.p-row.svelte-n033qi {display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:6px;cursor:pointer;outline:none;}.p-row.svelte-n033qi:hover {background:rgba(255, 255, 255, 0.04);}.p-row.active.svelte-n033qi {background:var(--active-bg);color:var(--active-text);}.p-row.svelte-n033qi:focus-visible {box-shadow:inset 0 0 0 1px var(--accent);}.p-radio.svelte-n033qi {flex:none;width:8px;height:8px;border-radius:50%;border:1.5px solid var(--muted);}.p-row.active.svelte-n033qi .p-radio:where(.svelte-n033qi) {border-color:var(--accent);background:radial-gradient(circle, var(--accent) 0 2px, transparent 2.5px);}.p-cheat-name.svelte-n033qi {font-size:15px;}.p-empty.svelte-n033qi {padding:24px 12px;text-align:center;color:var(--muted);}.p-foot.svelte-n033qi {display:flex;align-items:center;gap:8px;padding:10px 12px;border-top:1px solid var(--border);}.p-foot-status.svelte-n033qi {display:flex;flex-direction:column;gap:2px;flex:1;min-width:0;color:var(--foot);font-size:15px;}.p-foot-line.svelte-n033qi {display:flex;align-items:center;gap:6px;min-width:0;}.p-foot-pip.svelte-n033qi {background:var(--muted);}.p-foot-pip.on.svelte-n033qi {background:var(--accent);}.p-foot-label.svelte-n033qi {flex:none;color:var(--muted);font-size:13px;font-weight:700;letter-spacing:0.08em;}.p-foot-value.svelte-n033qi {flex:1;min-width:0;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}.p-foot-math.svelte-n033qi {color:var(--muted);font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}.p-foot-actions.svelte-n033qi {display:flex;gap:6px;}.p-btn.svelte-n033qi {padding:6px 12px;background:var(--bg-input);border:1px solid var(--border);border-radius:7px;color:var(--text);font:inherit;font-weight:500;cursor:pointer;}.p-btn.svelte-n033qi:hover:not(:disabled) {border-color:var(--muted);}.p-btn.svelte-n033qi:disabled {opacity:0.4;cursor:not-allowed;}"
 };
 function CheatPanel(e, t) {
-	push(t, !0), append_styles$1(e, pi);
+	push(t, !0), append_styles$1(e, mi);
 	let n = /* @__PURE__ */ state("");
 	let r = proxy({});
 	let i = /* @__PURE__ */ state(null);
@@ -106985,8 +107029,8 @@ function CheatPanel(e, t) {
 		let n = (t === null || t === void 0 ? void 0 : t.tagName) === "INPUT" || (t === null || t === void 0 ? void 0 : t.tagName) === "TEXTAREA";
 		e.key === "/" && !n && (e.preventDefault(), (_get5 = get(o)) === null || _get5 === void 0 || _get5.focus());
 	}
-	var u = fi();
-	event("keydown", pn, onKeydown);
+	var u = pi();
+	event("keydown", mn, onKeydown);
 	var d = child(u);
 	var f = sibling(child(d), 2);
 	var p = sibling(child(f), 2);
@@ -107000,7 +107044,7 @@ function CheatPanel(e, t) {
 	each(v, 17, () => get(c), (e) => e.name, (e, t) => {
 		let n = /* @__PURE__ */ user_derived(() => isExpanded(get(t).name));
 		let r = /* @__PURE__ */ user_derived(() => get(i) !== null && get(t).cheats.some((e) => e.name === get(i)));
-		var a = li();
+		var a = ui();
 		var o = child(a);
 		var s = child(o);
 		let c;
@@ -107012,7 +107056,7 @@ function CheatPanel(e, t) {
 		reset(d);
 		var p = sibling(d, 2);
 		var consequent = (e) => {
-			var t = oi(), n = sibling(child(t), 2), r = child(n, !0);
+			var t = si(), n = sibling(child(t), 2), r = child(n, !0);
 			reset(n), reset(t), template_effect(() => {
 				set_attribute(t, "title", `Active: ${get(i)}`), set_text(r, get(i));
 			}), append(e, t);
@@ -107022,9 +107066,9 @@ function CheatPanel(e, t) {
 		}), reset(o);
 		var m = sibling(o, 2);
 		var consequent_1 = (e) => {
-			var n = ci();
+			var n = li();
 			each(n, 21, () => get(t).cheats, (e) => e.name, (e, t) => {
-				var n = si();
+				var n = ci();
 				let r;
 				var a = sibling(child(n), 2), o = child(a, !0);
 				reset(a), reset(n), template_effect(() => {
@@ -107040,7 +107084,7 @@ function CheatPanel(e, t) {
 	});
 	var y = sibling(v, 2);
 	var consequent_2 = (e) => {
-		var t = ui(), r = child(t);
+		var t = di(), r = child(t);
 		reset(t), template_effect(() => {
 			var _get6;
 			return set_text(r, `No cheats match “${(_get6 = get(n)) !== null && _get6 !== void 0 ? _get6 : ""}”.`);
@@ -107053,30 +107097,30 @@ function CheatPanel(e, t) {
 	var x = child(b);
 	var S = child(x);
 	var C = child(S);
-	let w;
-	var T = sibling(C, 4);
-	var E = child(T, !0);
-	reset(T), reset(S);
-	var ee = sibling(S, 2);
+	let ee;
+	var w = sibling(C, 4);
+	var T = child(w, !0);
+	reset(w), reset(S);
+	var te = sibling(S, 2);
 	var consequent_3 = (e) => {
-		var t = di(), n = child(t);
+		var t = fi(), n = child(t);
 		reset(t), template_effect(() => {
 			var _get7;
 			return set_text(n, `Math ${(_get7 = get(a)) !== null && _get7 !== void 0 ? _get7 : ""}`);
 		}), append(e, t);
 	};
-	if_block(ee, (e) => {
+	if_block(te, (e) => {
 		get(a) && e(consequent_3);
 	}), reset(x);
-	var te = sibling(x, 2);
-	var ne = child(te);
-	reset(te), reset(b), reset(u), template_effect(() => {
+	var ne = sibling(x, 2);
+	var re = child(ne);
+	reset(ne), reset(b), reset(u), template_effect(() => {
 		var _get8;
-		w = set_class(C, 1, "p-foot-pip svelte-n033qi", null, w, { on: get(i) }), set_text(E, (_get8 = get(i)) !== null && _get8 !== void 0 ? _get8 : "—"), ne.disabled = !get(l);
-	}), bind_value(p, () => get(n), (e) => set(n, e)), delegated("click", h, () => setAll(!0)), delegated("click", g, () => setAll(!1)), delegated("click", ne, resetCheat), append(e, u), pop();
+		ee = set_class(C, 1, "p-foot-pip svelte-n033qi", null, ee, { on: get(i) }), set_text(T, (_get8 = get(i)) !== null && _get8 !== void 0 ? _get8 : "—"), re.disabled = !get(l);
+	}), bind_value(p, () => get(n), (e) => set(n, e)), delegated("click", h, () => setAll(!0)), delegated("click", g, () => setAll(!1)), delegated("click", re, resetCheat), append(e, u), pop();
 }
 delegate(["click", "keydown"]);
-var mi = class CheatModule extends L {
+var hi = class CheatModule extends I$1 {
 	constructor(..._args40) {
 		super(..._args40);
 		_defineProperty(this, "_groups", []);
@@ -107104,10 +107148,10 @@ var mi = class CheatModule extends L {
 		return this._listeners.add(e), () => this._listeners.delete(e);
 	}
 	apply(e) {
-		this._appliedName = e.name, ye$1.value = e.params, this.notify();
+		this._appliedName = e.name, xe$1.value = e.params, this.notify();
 	}
 	reset() {
-		this._appliedName = null, ye$1.value = void 0, this.notify();
+		this._appliedName = null, xe$1.value = void 0, this.notify();
 	}
 	setMathVersion(e) {
 		this._mathVersion = e, this.notify();
@@ -107125,8 +107169,8 @@ var mi = class CheatModule extends L {
 		e.code === "KeyC" && this._host.toggle();
 	}
 };
-mi = __decorate$1([injectFromBase()], mi);
-var hi = class SoundController extends L {
+hi = __decorate$1([injectFromBase()], hi);
+var gi = class SoundController extends I$1 {
 	constructor(..._args41) {
 		super(..._args41);
 		_defineProperty(this, "_soundPlayer", void 0);
@@ -107140,10 +107184,10 @@ var hi = class SoundController extends L {
 		super.init(e, t), this.setupHUDModule(), this.setupMenuModule(), this.setButtonStatus();
 	}
 	setupHUDModule() {
-		this._hudModule = this.diContainer.get(Mi), this._hudModule.soundButtonStateSwitched = this.onButtonStateSwitched.bind(this);
+		this._hudModule = this.diContainer.get(Ni), this._hudModule.soundButtonStateSwitched = this.onButtonStateSwitched.bind(this);
 	}
 	setupMenuModule() {
-		this._menuModule = this.diContainer.get(ya), this._menuModule.volumeChanged = this.onVolumeChanged.bind(this);
+		this._menuModule = this.diContainer.get(ba), this._menuModule.volumeChanged = this.onVolumeChanged.bind(this);
 	}
 	setupEvents() {
 		super.setupEvents(), this.on(SettingsEvents.TOGGLE_MUSIC_ON, this.onToggleMusicOn), this.on(SettingsEvents.TOGGLE_MUSIC_OFF, this.onToggleMusicOff), this.on(SettingsEvents.TOGGLE_SOUND_EFFECTS_ON, this.onToggleSoundEffectsOn), this.on(SettingsEvents.TOGGLE_SOUND_EFFECTS_OFF, this.onToggleSoundEffectsOff), this.on(SoundButtonEvents.TOGGLE_ALL_SOUND_ON, this.onSoundButtonOnClicked), this.on(SoundButtonEvents.TOGGLE_ALL_SOUND_OFF, this.onSoundButtonOffClicked);
@@ -107188,8 +107232,8 @@ var hi = class SoundController extends L {
 		return this._soundPlayer;
 	}
 };
-__decorate$1([inject(P$2.SoundPlayer), __decorateMetadata("design:type", Object)], hi.prototype, "_soundPlayer", void 0), hi = __decorate$1([injectFromBase()], hi);
-var gi = {
+__decorate$1([inject(N$1.SoundPlayer), __decorateMetadata("design:type", Object)], gi.prototype, "_soundPlayer", void 0), gi = __decorate$1([injectFromBase()], gi);
+var _i = {
 	autoPlayButton: "autoPlayButton",
 	bankingButton: "bankingButton",
 	menuButton: "menuButton",
@@ -107197,7 +107241,7 @@ var gi = {
 	quickPlayButton: "quickPlayButton",
 	spinButton: "spinButton"
 };
-var _i = class KeypadController extends L {
+var vi = class KeypadController extends I$1 {
 	constructor(..._args42) {
 		super(..._args42);
 		_defineProperty(this, "_keypad", {});
@@ -107243,10 +107287,10 @@ var _i = class KeypadController extends L {
 		this.unlockWithReason("LockReasons::BET_MENU_OPENED");
 	}
 	setupKeypadItems() {
-		this._keypad[gi.autoPlayButton] = this.diContainer.get(Mr), this._keypad[gi.betButton] = this.diContainer.get(Oa), this._keypad[gi.menuButton] = this.diContainer.get(Sa), this._keypad[gi.spinButton] = this.diContainer.get(Ta), this._keypad[gi.quickPlayButton] = this.diContainer.get(Li);
+		this._keypad[_i.autoPlayButton] = this.diContainer.get(Mr), this._keypad[_i.betButton] = this.diContainer.get(ka), this._keypad[_i.menuButton] = this.diContainer.get(Ca), this._keypad[_i.spinButton] = this.diContainer.get(Ea), this._keypad[_i.quickPlayButton] = this.diContainer.get(Ri);
 	}
 	setupButtonsLockingReasons() {
-		this._buttonLockingReasons[gi.autoPlayButton] = this.getAutoplayButtonLockingReasons(), this._buttonLockingReasons[gi.betButton] = this.getBetButtonLockingReasons(), this._buttonLockingReasons[gi.menuButton] = this.getMenuButtonLockingReasons(), this._buttonLockingReasons[gi.spinButton] = this.getSpinButtonLockingReasons(), this._buttonLockingReasons[gi.quickPlayButton] = this.getQuickPlayButtonLockingReasons();
+		this._buttonLockingReasons[_i.autoPlayButton] = this.getAutoplayButtonLockingReasons(), this._buttonLockingReasons[_i.betButton] = this.getBetButtonLockingReasons(), this._buttonLockingReasons[_i.menuButton] = this.getMenuButtonLockingReasons(), this._buttonLockingReasons[_i.spinButton] = this.getSpinButtonLockingReasons(), this._buttonLockingReasons[_i.quickPlayButton] = this.getQuickPlayButtonLockingReasons();
 	}
 	lockWithReason(e, t) {
 		if (t instanceof Array) t.forEach((t) => {
@@ -107327,8 +107371,8 @@ var _i = class KeypadController extends L {
 		this.unlockWithReason("LockReasons::SPINNING_STARTED", e);
 	}
 };
-_i = __decorate$1([injectFromBase()], _i);
-var vi = class FreeSpinsInfoModule extends L {
+vi = __decorate$1([injectFromBase()], vi);
+var yi = class FreeSpinsInfoModule extends I$1 {
 	init(e, t) {
 		super.init(e, t), this.view.hide();
 	}
@@ -107363,14 +107407,14 @@ var vi = class FreeSpinsInfoModule extends L {
 		this.view.setRemainingFreeSpins(this.gameData.freespinsTotalAwarded, this.gameData.freeSpinsPlayed + 1);
 	}
 };
-vi = __decorate$1([injectFromBase()], vi);
-var yi = {
+yi = __decorate$1([injectFromBase()], yi);
+var bi = {
 	fontFamily: "Poppins SemiBold",
 	fontSize: 40,
 	fill: "#FFCC00",
 	align: "right"
 };
-var bi = class FreeSpinsInfoView extends q {
+var xi = class FreeSpinsInfoView extends q {
 	constructor(..._args43) {
 		super(..._args43);
 		_defineProperty(this, "_infoBox", void 0);
@@ -107402,13 +107446,13 @@ var bi = class FreeSpinsInfoView extends q {
 		} catch (_unused5) {}
 	}
 	initInfoBoxes() {
-		this._infoBox = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_REMAINING_SPINS.json", "IDLE", !0).createAndStart(), this._remainingFreeSpins = new ni(this.assets, this.getSpinsRemainingNumberPrefix()), this._remainingFreeSpins.numberKerning = this.getConfigValue("freespins.infoBoxKerning", 0), this.spineUtils.addSlotObject(this._infoBox, "FREESPINS_REMAINING_NUMBER", this._remainingFreeSpins), this._remainingFreeSpins.numberAnchor.x = 1, this._remainingFreeSpins.showNumber("15/27"), this._freeSpinsLeftText = new import_lib.Text({
+		this._infoBox = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_REMAINING_SPINS.json", "IDLE", !0).createAndStart(), this._remainingFreeSpins = new ri(this.assets, this.getSpinsRemainingNumberPrefix()), this._remainingFreeSpins.numberKerning = this.getConfigValue("freespins.infoBoxKerning", 0), this.spineUtils.addSlotObject(this._infoBox, "FREESPINS_REMAINING_NUMBER", this._remainingFreeSpins), this._remainingFreeSpins.numberAnchor.x = 1, this._remainingFreeSpins.showNumber("15/27"), this._freeSpinsLeftText = new import_lib.Text({
 			text: "FREE SPINS:",
 			style: new import_lib.TextStyle(this.getFreeSpinsLabelStyle())
 		}), this.spineUtils.addSlotObject(this._infoBox, "FREESPIN_REMAINING_SPINS_TEXT", this._freeSpinsLeftText), this._freeSpinsLeftText.anchor.set(0, .5);
 	}
 	getFreeSpinsLabelStyle() {
-		return yi;
+		return bi;
 	}
 	getSpinsRemainingNumberPrefix() {
 		return "GENERIC_";
@@ -107420,7 +107464,7 @@ var bi = class FreeSpinsInfoView extends q {
 		this.container.alpha = e;
 	}
 };
-bi = __decorate$1([injectFromBase()], bi);
+xi = __decorate$1([injectFromBase()], xi);
 var YellowButton = class {
 	constructor(e, t, n, r) {
 		_defineProperty(this, "_btn", void 0);
@@ -107434,7 +107478,7 @@ var YellowButton = class {
 		e.addSlotObject(this._btn.spineAnimation, "IDLE", i.spine);
 		let a = new import_lib.Text({
 			text: t,
-			style: new import_lib.TextStyle(ce)
+			style: new import_lib.TextStyle(ue$1)
 		});
 		a.anchor.set(.5), e.addSlotObject(this._btn.spineAnimation, "LABEL", a);
 	}
@@ -107442,7 +107486,7 @@ var YellowButton = class {
 		return this._btn;
 	}
 };
-var xi = {
+var Si = {
 	align: "center",
 	fontFamily: "Arial",
 	fontSize: 42,
@@ -107480,13 +107524,13 @@ var xi = {
 	wordWrap: !0,
 	wordWrapWidth: 100
 };
-var Si = {
+var Ci = {
 	fontFamily: "Poppins Bold",
 	fontSize: 24,
 	fill: "#FFFFFF"
 };
-var Ci;
-var wi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends q {
+var wi;
+var Ti = (_FreeSpinsScreensView = class FreeSpinsScreensView extends q {
 	constructor(..._args44) {
 		super(..._args44);
 		_defineProperty(this, "_freeSpinsLeft", void 0);
@@ -107504,11 +107548,11 @@ var wi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends q {
 	showAddedFreespins(e) {
 		let t = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_ADDITIONAL_SPINS.json", "ENTER", !1).onComplete(() => {
 			this.emitRetriggerFinished();
-		}).createAndStart(), n = new ni(this.assets, this.getAddFSWinNumbersPrefix());
+		}).createAndStart(), n = new ri(this.assets, this.getAddFSWinNumbersPrefix());
 		n.showNumber(`+${e}`), this.spineUtils.replaceSlotAttachment(t, "NUMBER", n), this.emitRetriggerStarted();
 	}
 	startFreeSpinsIntro(e) {
-		this._freeSpinsLeft = e, this.killCurrentAnimation(), this.emit(Ci.FREE_SPINS_INTRO_STARTED), this._introScreen = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_ENTER_SCREENS.json", "START", !1).onComplete(() => {
+		this._freeSpinsLeft = e, this.killCurrentAnimation(), this.emit(wi.FREE_SPINS_INTRO_STARTED), this._introScreen = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_ENTER_SCREENS.json", "START", !1).onComplete(() => {
 			this.enableInteraction(), this.onFreeSpinsStartAnimationComplete();
 		}).chainIdleAnimation("IDLE").createAndStart(), this.setupIntroTexts();
 	}
@@ -107519,10 +107563,10 @@ var wi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends q {
 		this._interactionScreen && this._interactionScreen.interactive && this.onStartButtonClicked();
 	}
 	proceedToFreeSpins() {
-		this.emit(Ci.FREE_SPINS_INTRO_TRANSITION_FINISHED);
+		this.emit(wi.FREE_SPINS_INTRO_TRANSITION_FINISHED);
 	}
 	startFreeSpinsOutro(e) {
-		this.emit(Ci.FREE_SPINS_OUTRO_STARTED);
+		this.emit(wi.FREE_SPINS_OUTRO_STARTED);
 	}
 	showWinSummaryScreen(e, t, n = !0) {
 		if (this.killWinSummaryScreen(), this._winSummaryScreenAnimation = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_EXIT_SCREENS.json", "START", !1).chainIdleAnimation("IDLE").onComplete(() => {
@@ -107539,7 +107583,7 @@ var wi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends q {
 				style: new import_lib.TextStyle(this.getResultBigWhiteStyle())
 			});
 			t.anchor.set(.5, .5), this.spineUtils.replaceSlotAttachment(this._winSummaryScreenAnimation, "WIN_TEXT", t);
-			let r = new ni(this.assets, this.getWinnumberSize(this.device.isMobile));
+			let r = new ri(this.assets, this.getWinnumberSize(this.device.isMobile));
 			r.numberKerning = -10, r.showNumber(this.currencyFormatter.formatCurrency(e, !1)), this.spineUtils.replaceSlotAttachment(this._winSummaryScreenAnimation, "NUMBER", r), this.fitElementIntoScreen(r);
 		}
 	}
@@ -107562,7 +107606,7 @@ var wi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends q {
 	}
 	addInteractionScreen() {
 		this._interactionScreen = new import_lib.Container();
-		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, O$1, k).fill(16711680);
+		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, E$1, D$1).fill(16711680);
 		this._interactionScreen.pivot.set(960, 960), this._interactionScreen.addChild(e), this._interactionScreen.onclick = this.onStartButtonClicked.bind(this), this._interactionScreen.ontap = this.onStartButtonClicked.bind(this), this.mainUI.insert(this._interactionScreen, "RESULTS");
 	}
 	getAddFSWinNumbersPrefix() {
@@ -107572,16 +107616,16 @@ var wi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends q {
 		this.emitIntroFinished();
 	}
 	emitRetriggerStarted() {
-		this.emit(Ci.RETRIGGER_STARTED);
+		this.emit(wi.RETRIGGER_STARTED);
 	}
 	emitRetriggerFinished() {
-		this.emit(Ci.RETRIGGER_FINISHED);
+		this.emit(wi.RETRIGGER_FINISHED);
 	}
 	emitIntroFinished() {
-		this.emit(Ci.FREE_SPINS_INTRO_FINISHED);
+		this.emit(wi.FREE_SPINS_INTRO_FINISHED);
 	}
 	setupIntroTexts() {
-		this._freeSpinsNumber = new ni(this.assets, this.getIntroWinNumbersPrefix()), this._freeSpinsNumber.showNumber(`${this._freeSpinsLeft}`), this.spineUtils.replaceSlotAttachment(this._introScreen, "NUMBER_TEXT", this._freeSpinsNumber), this.spineUtils.replaceSlotAttachment(this._introScreen, "FREE_SPINS_FEATURE_1_1_TITLE", this.getLocaleTextImage("FREE_SPINS_FEATURE_1_1_TITLE")), this.spineUtils.replaceSlotAttachment(this._introScreen, "FREE_SPINS_FEATURE_1_2_TITLE", this.getLocaleTextImage("FREE_SPINS_FEATURE_1_2_TITLE"));
+		this._freeSpinsNumber = new ri(this.assets, this.getIntroWinNumbersPrefix()), this._freeSpinsNumber.showNumber(`${this._freeSpinsLeft}`), this.spineUtils.replaceSlotAttachment(this._introScreen, "NUMBER_TEXT", this._freeSpinsNumber), this.spineUtils.replaceSlotAttachment(this._introScreen, "FREE_SPINS_FEATURE_1_1_TITLE", this.getLocaleTextImage("FREE_SPINS_FEATURE_1_1_TITLE")), this.spineUtils.replaceSlotAttachment(this._introScreen, "FREE_SPINS_FEATURE_1_2_TITLE", this.getLocaleTextImage("FREE_SPINS_FEATURE_1_2_TITLE"));
 	}
 	getIntroWinNumbersPrefix() {
 		return "FREE_SPINS_";
@@ -107590,7 +107634,7 @@ var wi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends q {
 		return new import_lib.Sprite(this.assets.getLocaleTextImage(`${e}.png`));
 	}
 	emitShowingWinSummaryScreen() {
-		this.emit(Ci.SHOWING_WIN_SUMMARY_SCREEN);
+		this.emit(wi.SHOWING_WIN_SUMMARY_SCREEN);
 	}
 	setupAndAddFreeSpinsOutroExitButton() {
 		this._exitButton = new YellowButton(this.spineUtils, "CONTINUE", "SPLASH", this.onExitWinSummaryButtonClicked.bind(this)), this._exitButton.btn.enable(), this.spineUtils.replaceSlotAttachment(this._winSummaryScreenAnimation, "CONTINUE_BUTTON", this._exitButton.btn);
@@ -107615,16 +107659,16 @@ var wi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends q {
 		this._featureTextStyle = new import_lib.TextStyle(this.getFeatureTextStyle()), this._featureTextStyle.wordWrapWidth = t;
 	}
 	getFeatureTextStyle() {
-		return xi;
+		return Si;
 	}
 	getResultBigWhiteStyle() {
-		return Si;
+		return Ci;
 	}
 	onStartButtonClicked() {
 		this.soundPlayer.play("buttonClick"), this.disableInteraction(), this.emitIntroContinueClicked();
 	}
 	emitIntroContinueClicked() {
-		this.emit(Ci.FREE_SPINS_INFO_CONTINUE_CLICKED);
+		this.emit(wi.FREE_SPINS_INFO_CONTINUE_CLICKED);
 	}
 	killCurrentFeatureAnimation() {
 		this.spineUtils.stopAndDestroyAnimation(this._featureAnimation), this._featureAnimation = null, this.disableInteraction();
@@ -107638,10 +107682,10 @@ var wi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends q {
 		});
 	}
 	emitOutroFinished() {
-		this.emit(Ci.FREE_SPINS_OUTRO_FINISHED);
+		this.emit(wi.FREE_SPINS_OUTRO_FINISHED);
 	}
 	emitOutroContinueClicked() {
-		this.emit(Ci.FREE_SPINS_OUTRO_CONTINUE_CLICKED);
+		this.emit(wi.FREE_SPINS_OUTRO_CONTINUE_CLICKED);
 	}
 	killWinSummaryScreen() {
 		this.spineUtils.stopAndDestroyAnimation(this._winSummaryScreenAnimation), this._winSummaryScreenAnimation = null;
@@ -107649,9 +107693,9 @@ var wi = (_FreeSpinsScreensView = class FreeSpinsScreensView extends q {
 	get numberElementLimit() {
 		return this.resolutionManager.resolution.width * .8;
 	}
-}, Ci = _FreeSpinsScreensView, _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INTRO_FINISHED", "FreeSpinsView::FREE_SPINS_INTRO_FINISHED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INTRO_STARTED", "FreeSpinsView::FREE_SPINS_INTRO_STARTED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INFO_CONTINUE_CLICKED", "FreeSpinsView::FREE_SPINS_INFO_CONTINUE_CLICKED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INTRO_TRANSITION_FINISHED", "FreeSpinsView::FREE_SPINS_INTRO_TRANSITION_FINISHED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_OUTRO_STARTED", "FreeSpinsView::FREE_SPINS_OUTRO_STARTED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_OUTRO_CONTINUE_CLICKED", "FreeSpinsView::FREE_SPINS_OUTRO_CONTINUE_CLICKED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_OUTRO_FINISHED", "FreeSpinsView::FREE_SPINS_OUTRO_FINISHED"), _defineProperty(_FreeSpinsScreensView, "SHOWING_WIN_SUMMARY_SCREEN", "FreeSpinsView::SHOWING_WIN_SUMMARY_SCREEN"), _defineProperty(_FreeSpinsScreensView, "RETRIGGER_FINISHED", "FreeSpinsView::RETRIGGER_FINISHED"), _defineProperty(_FreeSpinsScreensView, "RETRIGGER_STARTED", "FreeSpinsView::RETRIGGER_STARTED"), _FreeSpinsScreensView);
-wi = Ci = __decorate$1([injectFromBase()], wi);
-var Ti = class FreeSpinsScreensModule extends L {
+}, wi = _FreeSpinsScreensView, _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INTRO_FINISHED", "FreeSpinsView::FREE_SPINS_INTRO_FINISHED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INTRO_STARTED", "FreeSpinsView::FREE_SPINS_INTRO_STARTED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INFO_CONTINUE_CLICKED", "FreeSpinsView::FREE_SPINS_INFO_CONTINUE_CLICKED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_INTRO_TRANSITION_FINISHED", "FreeSpinsView::FREE_SPINS_INTRO_TRANSITION_FINISHED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_OUTRO_STARTED", "FreeSpinsView::FREE_SPINS_OUTRO_STARTED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_OUTRO_CONTINUE_CLICKED", "FreeSpinsView::FREE_SPINS_OUTRO_CONTINUE_CLICKED"), _defineProperty(_FreeSpinsScreensView, "FREE_SPINS_OUTRO_FINISHED", "FreeSpinsView::FREE_SPINS_OUTRO_FINISHED"), _defineProperty(_FreeSpinsScreensView, "SHOWING_WIN_SUMMARY_SCREEN", "FreeSpinsView::SHOWING_WIN_SUMMARY_SCREEN"), _defineProperty(_FreeSpinsScreensView, "RETRIGGER_FINISHED", "FreeSpinsView::RETRIGGER_FINISHED"), _defineProperty(_FreeSpinsScreensView, "RETRIGGER_STARTED", "FreeSpinsView::RETRIGGER_STARTED"), _FreeSpinsScreensView);
+Ti = wi = __decorate$1([injectFromBase()], Ti);
+var Ei = class FreeSpinsScreensModule extends I$1 {
 	playFSIntro(e) {
 		this.view.startFreeSpinsIntro(e), this.emit(FreeSpinsScreensEvents.FREE_SPINS_INTRO_ANIMATION_STARTED);
 	}
@@ -107665,7 +107709,7 @@ var Ti = class FreeSpinsScreensModule extends L {
 		this.view.showAddedFreespins(e);
 	}
 	setupEvents() {
-		super.setupEvents(), this.onView(wi.FREE_SPINS_INFO_CONTINUE_CLICKED, this.onFreeSpinsIntroContinueClicked), this.onView(wi.FREE_SPINS_OUTRO_CONTINUE_CLICKED, this.onFreeSpinsOutroContinueClicked), this.onViewEmitEvent(wi.SHOWING_WIN_SUMMARY_SCREEN, FreeSpinsScreensEvents.SHOWING_WIN_SUMMARY_SCREEN), this.onViewEmitEvent(wi.FREE_SPINS_INTRO_TRANSITION_FINISHED, FreeSpinsScreensEvents.FREE_SPINS_INTRO_FINISHED), this.onViewEmitEvent(wi.RETRIGGER_FINISHED, FreeSpinsScreensEvents.FREE_SPINS_RETRIGGER_FINISHED), this.onViewEmitEvent(wi.RETRIGGER_STARTED, FreeSpinsScreensEvents.FREE_SPINS_RETRIGGER_STARTED), this.onViewEmitEvent(wi.FREE_SPINS_OUTRO_FINISHED, FreeSpinsScreensEvents.FREE_SPINS_OUTRO_FINISHED);
+		super.setupEvents(), this.onView(Ti.FREE_SPINS_INFO_CONTINUE_CLICKED, this.onFreeSpinsIntroContinueClicked), this.onView(Ti.FREE_SPINS_OUTRO_CONTINUE_CLICKED, this.onFreeSpinsOutroContinueClicked), this.onViewEmitEvent(Ti.SHOWING_WIN_SUMMARY_SCREEN, FreeSpinsScreensEvents.SHOWING_WIN_SUMMARY_SCREEN), this.onViewEmitEvent(Ti.FREE_SPINS_INTRO_TRANSITION_FINISHED, FreeSpinsScreensEvents.FREE_SPINS_INTRO_FINISHED), this.onViewEmitEvent(Ti.RETRIGGER_FINISHED, FreeSpinsScreensEvents.FREE_SPINS_RETRIGGER_FINISHED), this.onViewEmitEvent(Ti.RETRIGGER_STARTED, FreeSpinsScreensEvents.FREE_SPINS_RETRIGGER_STARTED), this.onViewEmitEvent(Ti.FREE_SPINS_OUTRO_FINISHED, FreeSpinsScreensEvents.FREE_SPINS_OUTRO_FINISHED);
 	}
 	onFreeSpinsIntroContinueClicked() {
 		this.emit(FreeSpinsScreensEvents.FREE_SPINS_CONTINUE_CLICKED), this.gameData.isFreeSpinsStarted = !0, this.view.endFreeSpinsIntro();
@@ -107678,8 +107722,8 @@ var Ti = class FreeSpinsScreensModule extends L {
 		return this.gameData.featureBuyActive ? e > this.gameData.featureBuyCost : e > t;
 	}
 };
-Ti = __decorate$1([injectFromBase()], Ti);
-var Ei = class FreeSpinsTotalWinModule extends L {
+Ei = __decorate$1([injectFromBase()], Ei);
+var Di = class FreeSpinsTotalWinModule extends I$1 {
 	init(e, t) {
 		super.init(e, t), this.view.hide();
 	}
@@ -107699,8 +107743,8 @@ var Ei = class FreeSpinsTotalWinModule extends L {
 		this.view.addToTotalWin(e);
 	}
 };
-Ei = __decorate$1([injectFromBase()], Ei);
-var Di = class FreeSpinsTotalWinView extends q {
+Di = __decorate$1([injectFromBase()], Di);
+var Oi = class FreeSpinsTotalWinView extends q {
 	constructor(..._args45) {
 		super(..._args45);
 		_defineProperty(this, "_totalWinBox", void 0);
@@ -107723,13 +107767,13 @@ var Di = class FreeSpinsTotalWinView extends q {
 		this.totalWinFreeSpins = this._totalWinValue + e;
 	}
 	initInfoBoxes() {
-		this._totalWinBox = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_TOTAL_WIN.json", "IDLE", !0).createAndStart(), this._totalWinFreeSpins = new ni(this.assets, this.getTotalWinNumberPrefix()), this._totalWinFreeSpins.numberKerning = this.getConfigValue("freespins.infoBoxKerning", 0), this._totalWinFreeSpins.numberAnchor.x = 1, this.spineUtils.addSlotObject(this._totalWinBox, "FREESPINS_TOTAL_WIN_NUMBER", this._totalWinFreeSpins), this._totalWinFreeSpins.showNumber("5050"), this._totalWinText = new import_lib.Text({
+		this._totalWinBox = this.spineUtils.startSpineAnimationCreation("FREE_SPINS_TOTAL_WIN.json", "IDLE", !0).createAndStart(), this._totalWinFreeSpins = new ri(this.assets, this.getTotalWinNumberPrefix()), this._totalWinFreeSpins.numberKerning = this.getConfigValue("freespins.infoBoxKerning", 0), this._totalWinFreeSpins.numberAnchor.x = 1, this.spineUtils.addSlotObject(this._totalWinBox, "FREESPINS_TOTAL_WIN_NUMBER", this._totalWinFreeSpins), this._totalWinFreeSpins.showNumber("5050"), this._totalWinText = new import_lib.Text({
 			text: "TOTAL WIN:",
 			style: new import_lib.TextStyle(this.getTotalWinLabelStyle())
 		}), this.spineUtils.addSlotObject(this._totalWinBox, "FREESPINS_TOTAL_WIN_TEXT", this._totalWinText), this._totalWinText.anchor.set(0, .5);
 	}
 	getTotalWinLabelStyle() {
-		return yi;
+		return bi;
 	}
 	getTotalWinNumberPrefix() {
 		return "GENERIC_";
@@ -107741,18 +107785,18 @@ var Di = class FreeSpinsTotalWinView extends q {
 		this._totalWinFreeSpins.showNumber(formatForDisplay(e)), this._totalWinValue = e;
 	}
 };
-Di = __decorate$1([injectFromBase()], Di);
-var Oi = class LogoModule extends L {};
 Oi = __decorate$1([injectFromBase()], Oi);
-var ki = class LogoView extends q {
+var ki = class LogoModule extends I$1 {};
+ki = __decorate$1([injectFromBase()], ki);
+var Ai = class LogoView extends q {
 	init() {
 		super.init();
 	}
 };
-ki = __decorate$1([injectFromBase()], ki);
+Ai = __decorate$1([injectFromBase()], Ai);
 var HUDEvents = (_Class18 = class {}, _defineProperty(_Class18, "WIN_UPDATED", "InfoEvents::WIN_UPDATED"), _defineProperty(_Class18, "BET_UPDATED", "InfoEvents::BET_UPDATED"), _defineProperty(_Class18, "BALANCE_UPDATED", "InfoEvents::BALANCE_UPDATED"), _defineProperty(_Class18, "UPDATE", "InfoEvents::UPDATE"), _defineProperty(_Class18, "TIME_UPDATED", "InfoEvents::TIME_UPDATED"), _Class18);
-var Ai;
-var ji = (_HUDView = class HUDView extends hr {
+var ji;
+var Mi = (_HUDView = class HUDView extends hr {
 	constructor(..._args46) {
 		super(..._args46);
 		_defineProperty(this, "_bankingButton", void 0);
@@ -107852,10 +107896,10 @@ var ji = (_HUDView = class HUDView extends hr {
 		((_this$_soundButton$bu = this._soundButton.button.spineAnimation.skeleton.skin) === null || _this$_soundButton$bu === void 0 ? void 0 : _this$_soundButton$bu.name) === "OFF" ? this.emitAllSoundsToggleOn() : this.emitAllSoundsToggleOff();
 	}
 	emitAllSoundsToggleOff() {
-		this.emit(Ai.TOGGLE_ALL_SOUND_OFF);
+		this.emit(ji.TOGGLE_ALL_SOUND_OFF);
 	}
 	emitAllSoundsToggleOn() {
-		this.emit(Ai.TOGGLE_ALL_SOUND_ON);
+		this.emit(ji.TOGGLE_ALL_SOUND_ON);
 	}
 	createSoundButton() {
 		return new GenericButton("SOUND_BUTTON.json", "ON", this.spineUtils, this.onSoundButtonClicked.bind(this));
@@ -107864,16 +107908,16 @@ var ji = (_HUDView = class HUDView extends hr {
 		return new GenericButton("BANKING_BUTTON.json", void 0, this.spineUtils, this.onBankingButtonClicked.bind(this));
 	}
 	onBankingButtonClicked() {
-		this.emit(Ai.BANKING_BUTTON_CLICKED);
+		this.emit(ji.BANKING_BUTTON_CLICKED);
 	}
 	emitWinUpdated(e) {
-		this.emit(Ai.WIN_UPDATED, e);
+		this.emit(ji.WIN_UPDATED, e);
 	}
 	emitBalanceUpdated(e) {
-		this.emit(Ai.BALANCE_UPDATED, e);
+		this.emit(ji.BALANCE_UPDATED, e);
 	}
 	emitBetUpdated(e) {
-		this.emit(Ai.BET_UPDATED, e);
+		this.emit(ji.BET_UPDATED, e);
 	}
 	fitHudInfo(e, t = this._numberMaxWidth) {
 		let n = -1;
@@ -107886,7 +107930,7 @@ var ji = (_HUDView = class HUDView extends hr {
 		return e.getBounds().width > t || n && e.getBounds().height > n;
 	}
 	emitTimeUpdated(e) {
-		this.emit(Ai.TIME_UPDATED, e);
+		this.emit(ji.TIME_UPDATED, e);
 	}
 	startTimeInterval() {
 		this.updateTime();
@@ -107902,9 +107946,9 @@ var ji = (_HUDView = class HUDView extends hr {
 		return this.currencyFormatter.formatCurrency(e, t);
 	}
 	setupLayout() {
-		let e = this.mainUI.layout.getAbsoluteUIPosition("HUD_FOOTER", I$1.LANDSCAPE), t = this.mainUI.layout.getAbsoluteUIPosition("HUD_FOOTER", I$1.PORTRAIT);
+		let e = this.mainUI.layout.getAbsoluteUIPosition("HUD_FOOTER", F.LANDSCAPE), t = this.mainUI.layout.getAbsoluteUIPosition("HUD_FOOTER", F.PORTRAIT);
 		this._footer = this.spineUtils.startSpineAnimationCreation("HUD_FOOTER.json", "IDLE", !0).skinName("LANDSCAPE").createAndStart();
-		let n = this.mainUI.layout.getAbsoluteUIPosition("HUD_HEADER", I$1.LANDSCAPE), r = this.mainUI.layout.getAbsoluteUIPosition("HUD_HEADER", I$1.PORTRAIT);
+		let n = this.mainUI.layout.getAbsoluteUIPosition("HUD_HEADER", F.LANDSCAPE), r = this.mainUI.layout.getAbsoluteUIPosition("HUD_HEADER", F.PORTRAIT);
 		this._header = this.spineUtils.startSpineAnimationCreation("HUD_HEADER.json", "IDLE", !0).skinName("LANDSCAPE").createAndStart(), this._uiElements.push(new UIElement(this._footer.spine, e, t, [J$1.BOTTOM])), this._uiElements.push(new UIElement(this._header.spine, n, r, [J$1.TOP])), this.addLogos();
 	}
 	addLogos() {
@@ -107914,7 +107958,7 @@ var ji = (_HUDView = class HUDView extends hr {
 		this._numberStyle = this.getBalanceTextStyle(), this._textStyle = this.getBalanceTextStyle(), this._winFieldNumberStyle = this.getBalanceTextStyle();
 	}
 	getBalanceTextStyle() {
-		return yi;
+		return bi;
 	}
 	setupValueObjects() {
 		this._clock = new import_lib.Text({
@@ -107935,12 +107979,12 @@ var ji = (_HUDView = class HUDView extends hr {
 		this._balanceValue.anchor.set(0, .5), this._winValue.anchor.set(0, .5), this._betValue.anchor.set(1, .5), this._clock.anchor.set(1, .5);
 	}
 	emitTextInitialized() {
-		this.emit(Ai.TEXT_INITIALIZED);
+		this.emit(ji.TEXT_INITIALIZED);
 	}
-}, Ai = _HUDView, _defineProperty(_HUDView, "WIN_UPDATED", "InfoView::WIN_UPDATED"), _defineProperty(_HUDView, "BET_UPDATED", "InfoView::BET_UPDATED"), _defineProperty(_HUDView, "BALANCE_UPDATED", "InfoView::BALANCE_UPDATED"), _defineProperty(_HUDView, "TIME_UPDATED", "InfoView::TIME_UPDATED"), _defineProperty(_HUDView, "TEXT_INITIALIZED", "InfoView::TEXT_INITIALIZED"), _defineProperty(_HUDView, "TOGGLE_ALL_SOUND_OFF", "HUDView::TOGGLE_ALL_SOUND_OFF"), _defineProperty(_HUDView, "TOGGLE_ALL_SOUND_ON", "HUDView::TOGGLE_ALL_SOUND_ON"), _defineProperty(_HUDView, "BANKING_BUTTON_CLICKED", "HUDView::BUTTON_CLICKED"), _HUDView);
-ji = Ai = __decorate$1([injectFromBase()], ji);
+}, ji = _HUDView, _defineProperty(_HUDView, "WIN_UPDATED", "InfoView::WIN_UPDATED"), _defineProperty(_HUDView, "BET_UPDATED", "InfoView::BET_UPDATED"), _defineProperty(_HUDView, "BALANCE_UPDATED", "InfoView::BALANCE_UPDATED"), _defineProperty(_HUDView, "TIME_UPDATED", "InfoView::TIME_UPDATED"), _defineProperty(_HUDView, "TEXT_INITIALIZED", "InfoView::TEXT_INITIALIZED"), _defineProperty(_HUDView, "TOGGLE_ALL_SOUND_OFF", "HUDView::TOGGLE_ALL_SOUND_OFF"), _defineProperty(_HUDView, "TOGGLE_ALL_SOUND_ON", "HUDView::TOGGLE_ALL_SOUND_ON"), _defineProperty(_HUDView, "BANKING_BUTTON_CLICKED", "HUDView::BUTTON_CLICKED"), _HUDView);
+Mi = ji = __decorate$1([injectFromBase()], Mi);
 var SoundButtonLockProperties = (_Class19 = class {}, _defineProperty(_Class19, "SWITCHED", "switched"), _Class19);
-var Mi = (_HUDModule = class HUDModule extends vr {
+var Ni = (_HUDModule = class HUDModule extends vr {
 	constructor(..._args47) {
 		super(..._args47);
 		_defineProperty(this, "_delayWinClear", void 0);
@@ -107992,7 +108036,7 @@ var Mi = (_HUDModule = class HUDModule extends vr {
 		this.switchOff("SoundButtonLockReasons::SWITCHED_BY_SETTINGS");
 	}
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(ji.BALANCE_UPDATED, HUDEvents.BALANCE_UPDATED), this.onViewEmitEvent(ji.BET_UPDATED, HUDEvents.BET_UPDATED), this.onViewEmitEvent(ji.WIN_UPDATED, HUDEvents.WIN_UPDATED), this.onViewEmitEvent(ji.TIME_UPDATED, HUDEvents.TIME_UPDATED), this.on(StartScreenEvents.EXIT_FINISHED, this.onStartScreenExitFinished), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitReceived), this.on(BetMenuEvents.BET_CHANGED, this.onBetChange), this.on(FreeSpinsScreensEvents.SHOWING_WIN_SUMMARY_SCREEN, this.onShowingFinalFreeSpinValue), this.on(ScreenEvents.BECAME_VISIBLE, this.onScreenGainedFocus), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponse), this.on(PlatformEvents.FREEZE_BET_CALLBACK_CALLED, this.onFreezeBetCalled), this.on(PlatformEvents.UNFREEZE_BET_CALLBACK_CALLED, this.onUnfreezeBetCalled), this.onViewEmitEvent(ji.TOGGLE_ALL_SOUND_OFF, SoundButtonEvents.TOGGLE_ALL_SOUND_OFF), this.onViewEmitEvent(ji.TOGGLE_ALL_SOUND_ON, SoundButtonEvents.TOGGLE_ALL_SOUND_ON), this.onViewEmitEvent(ji.BANKING_BUTTON_CLICKED, BankingButtonEvents.BANKING_BUTTON_CLICKED);
+		super.setupEvents(), this.onViewEmitEvent(Mi.BALANCE_UPDATED, HUDEvents.BALANCE_UPDATED), this.onViewEmitEvent(Mi.BET_UPDATED, HUDEvents.BET_UPDATED), this.onViewEmitEvent(Mi.WIN_UPDATED, HUDEvents.WIN_UPDATED), this.onViewEmitEvent(Mi.TIME_UPDATED, HUDEvents.TIME_UPDATED), this.on(StartScreenEvents.EXIT_FINISHED, this.onStartScreenExitFinished), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitReceived), this.on(BetMenuEvents.BET_CHANGED, this.onBetChange), this.on(FreeSpinsScreensEvents.SHOWING_WIN_SUMMARY_SCREEN, this.onShowingFinalFreeSpinValue), this.on(ScreenEvents.BECAME_VISIBLE, this.onScreenGainedFocus), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponse), this.on(PlatformEvents.FREEZE_BET_CALLBACK_CALLED, this.onFreezeBetCalled), this.on(PlatformEvents.UNFREEZE_BET_CALLBACK_CALLED, this.onUnfreezeBetCalled), this.onViewEmitEvent(Mi.TOGGLE_ALL_SOUND_OFF, SoundButtonEvents.TOGGLE_ALL_SOUND_OFF), this.onViewEmitEvent(Mi.TOGGLE_ALL_SOUND_ON, SoundButtonEvents.TOGGLE_ALL_SOUND_ON), this.onViewEmitEvent(Mi.BANKING_BUTTON_CLICKED, BankingButtonEvents.BANKING_BUTTON_CLICKED);
 	}
 	switchOn(e) {
 		this._keypadLocker.unlock(SoundButtonLockProperties.SWITCHED, e);
@@ -108064,10 +108108,10 @@ var Mi = (_HUDModule = class HUDModule extends vr {
 		this._soundButtonStateSwitched = e;
 	}
 }, _defineProperty(_HUDModule, "MULTILINES_COUNTER_DURATION", 500), _defineProperty(_HUDModule, "WIN_CLEAR_DELAY", 500), _HUDModule);
-Mi = __decorate$1([injectFromBase()], Mi);
+Ni = __decorate$1([injectFromBase()], Ni);
 var SoundButtonEvents = (_Class20 = class {}, _defineProperty(_Class20, "TOGGLE_ALL_SOUND_OFF", "SoundControllerEvents::TOGGLE_ALL_SOUND_OFF"), _defineProperty(_Class20, "TOGGLE_ALL_SOUND_ON", "SoundControllerEvents::TOGGLE_ALL_SOUND_ON"), _Class20);
 var BankingButtonEvents = (_Class21 = class {}, _defineProperty(_Class21, "BANKING_BUTTON_CLICKED", "BankingButtonEvents::BANKING_BUTTON_CLICKED"), _Class21);
-var Ni = class SystemMessagesModule extends L {
+var Pi = class SystemMessagesModule extends I$1 {
 	init(e, t) {
 		super.init(e, t), this.view.showLoading();
 	}
@@ -108081,8 +108125,8 @@ var Ni = class SystemMessagesModule extends L {
 		this.view.hideMessage();
 	}
 };
-Ni = __decorate$1([injectFromBase()], Ni);
-var Pi = class SystemMessagesView extends q {
+Pi = __decorate$1([injectFromBase()], Pi);
+var Fi = class SystemMessagesView extends q {
 	constructor(..._args48) {
 		super(..._args48);
 		_defineProperty(this, "_messageBackground", void 0);
@@ -108097,7 +108141,7 @@ var Pi = class SystemMessagesView extends q {
 		}), this._messageTxt.anchor.set(.5), this._messageTxt.position.set(this.resolutionManager.halfResolution.width, this.resolutionManager.halfResolution.width), this._messageBackground.addChild(this._messageTxt), this.container.addChild(this._messageBackground);
 	}
 	getMessageTextStyle() {
-		return yi;
+		return bi;
 	}
 	showLoading() {
 		this._messageTxt.text = "WAITING FOR THE SERVER RESPONSE...", this._messageBackground.visible = !0;
@@ -108109,9 +108153,9 @@ var Pi = class SystemMessagesView extends q {
 		this._messageBackground.visible = !1;
 	}
 };
-Pi = __decorate$1([injectFromBase()], Pi);
-var Fi;
-var Ii = (_QuickPlayButtonView = class QuickPlayButtonView extends hr {
+Fi = __decorate$1([injectFromBase()], Fi);
+var Ii;
+var Li = (_QuickPlayButtonView = class QuickPlayButtonView extends hr {
 	constructor(..._args49) {
 		super(..._args49);
 		_defineProperty(this, "_quickPlayButton", void 0);
@@ -108129,13 +108173,13 @@ var Ii = (_QuickPlayButtonView = class QuickPlayButtonView extends hr {
 		this._quickPlayButton.button.enable();
 	}
 	turnOffButton() {
-		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "OFF"), this.emit(Fi.QUICK_PLAY_OFF), this.emit(Fi.QUICK_PLAY_BUTTON_CLICKED);
+		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "OFF"), this.emit(Ii.QUICK_PLAY_OFF), this.emit(Ii.QUICK_PLAY_BUTTON_CLICKED);
 	}
 	turnOnButton() {
-		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "ON"), this.emit(Fi.QUICK_PLAY_ON), this.emit(Fi.QUICK_PLAY_BUTTON_CLICKED);
+		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "ON"), this.emit(Ii.QUICK_PLAY_ON), this.emit(Ii.QUICK_PLAY_BUTTON_CLICKED);
 	}
 	turnOnSuperMode() {
-		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "SUPER"), this.emit(Fi.QUICK_PLAY_SUPER_MODE), this.emit(Fi.QUICK_PLAY_BUTTON_CLICKED);
+		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "SUPER"), this.emit(Ii.QUICK_PLAY_SUPER_MODE), this.emit(Ii.QUICK_PLAY_BUTTON_CLICKED);
 	}
 	setupLayout() {
 		let e = this.mainUI.getBoneFromUI("QUICKPLAY_BUTTON"), t = this.mainUI.getBoneFromPortraitUI("QUICKPLAY_BUTTON");
@@ -108163,28 +108207,28 @@ var Ii = (_QuickPlayButtonView = class QuickPlayButtonView extends hr {
 		var _this$_quickPlayButto, _this$_quickPlayButto2;
 		((_this$_quickPlayButto = this._quickPlayButton.button.spineAnimation.skeleton.skin) === null || _this$_quickPlayButto === void 0 ? void 0 : _this$_quickPlayButto.name) === "OFF" ? this.turnOnButton() : ((_this$_quickPlayButto2 = this._quickPlayButton.button.spineAnimation.skeleton.skin) === null || _this$_quickPlayButto2 === void 0 ? void 0 : _this$_quickPlayButto2.name) === "ON" ? this.turnOnSuperMode() : this.turnOffButton();
 	}
-}, Fi = _QuickPlayButtonView, _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_ON", "QuickPlayButtonView::QUICK_PLAY_ON"), _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_OFF", "QuickPlayButtonView::QUICK_PLAY_OFF"), _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_SUPER_MODE", "QuickPlayButtonView::QUICK_PLAY_SUPER_MODE"), _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_BUTTON_CLICKED", "QuickPlayButtonView::QUICK_PLAY_BUTTON_CLICKED"), _QuickPlayButtonView);
-Ii = Fi = __decorate$1([injectFromBase()], Ii);
-var Li = class QuickPlayButtonModule extends vr {
+}, Ii = _QuickPlayButtonView, _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_ON", "QuickPlayButtonView::QUICK_PLAY_ON"), _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_OFF", "QuickPlayButtonView::QUICK_PLAY_OFF"), _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_SUPER_MODE", "QuickPlayButtonView::QUICK_PLAY_SUPER_MODE"), _defineProperty(_QuickPlayButtonView, "QUICK_PLAY_BUTTON_CLICKED", "QuickPlayButtonView::QUICK_PLAY_BUTTON_CLICKED"), _QuickPlayButtonView);
+Li = Ii = __decorate$1([injectFromBase()], Li);
+var Ri = class QuickPlayButtonModule extends vr {
 	setupEvents() {
-		super.setupEvents(), this.onView(Ii.QUICK_PLAY_ON, this.onQuickPlayOn), this.onView(Ii.QUICK_PLAY_OFF, this.onQuickPlayOff), this.onView(Ii.QUICK_PLAY_SUPER_MODE, this.onSuperQuickPlayOn), this.onViewEmitEvent(Ii.QUICK_PLAY_BUTTON_CLICKED, QuickPlayButtonEvents.QUICK_PLAY_BUTTON_CLICKED);
+		super.setupEvents(), this.onView(Li.QUICK_PLAY_ON, this.onQuickPlayOn), this.onView(Li.QUICK_PLAY_OFF, this.onQuickPlayOff), this.onView(Li.QUICK_PLAY_SUPER_MODE, this.onSuperQuickPlayOn), this.onViewEmitEvent(Li.QUICK_PLAY_BUTTON_CLICKED, QuickPlayButtonEvents.QUICK_PLAY_BUTTON_CLICKED);
 	}
 	onQuickPlayOn() {
-		this.gameData.settings.fastPlayMode = Oe$1.ON;
+		this.gameData.settings.fastPlayMode = Ae$1.ON;
 	}
 	onQuickPlayOff() {
-		this.gameData.settings.fastPlayMode = Oe$1.OFF;
+		this.gameData.settings.fastPlayMode = Ae$1.OFF;
 	}
 	onSuperQuickPlayOn() {
-		this.gameData.settings.fastPlayMode = Oe$1.SUPER;
+		this.gameData.settings.fastPlayMode = Ae$1.SUPER;
 	}
 };
-Li = __decorate$1([injectFromBase()], Li);
+Ri = __decorate$1([injectFromBase()], Ri);
 var QuickPlayButtonEvents = (_Class22 = class {}, _defineProperty(_Class22, "QUICK_PLAY_BUTTON_CLICKED", "QuickPlayButtonEvents::QUICK_PLAY_BUTTON_CLICKED"), _Class22);
-var zi;
-var Bi = (_RestoreScreenView = class RestoreScreenView extends q {
+var Bi;
+var Vi = (_RestoreScreenView = class RestoreScreenView extends q {
 	showRestoreMessage() {
-		let e = new import_lib.Container(), t = new import_lib.Graphics().rect(-960, -960, O$1, k).fill({
+		let e = new import_lib.Container(), t = new import_lib.Graphics().rect(-960, -960, E$1, D$1).fill({
 			color: 16711680,
 			alpha: .5
 		});
@@ -108193,33 +108237,33 @@ var Bi = (_RestoreScreenView = class RestoreScreenView extends q {
 		n.anchor.set(.5), e.addChild(n), e.on("tap", this.onPlayerClicked.bind(this)), e.on("click", this.onPlayerClicked.bind(this));
 	}
 	onPlayerClicked() {
-		this.hide(), this.emit(zi.RESTORE_CLOSED);
+		this.hide(), this.emit(Bi.RESTORE_CLOSED);
 	}
-}, zi = _RestoreScreenView, _defineProperty(_RestoreScreenView, "RESTORE_CLOSED", "RestoreScreenView::RESTORE_CLOSED"), _RestoreScreenView);
-Bi = zi = __decorate$1([injectFromBase()], Bi);
+}, Bi = _RestoreScreenView, _defineProperty(_RestoreScreenView, "RESTORE_CLOSED", "RestoreScreenView::RESTORE_CLOSED"), _RestoreScreenView);
+Vi = Bi = __decorate$1([injectFromBase()], Vi);
 var RestoreScreenEvents = (_Class23 = class {}, _defineProperty(_Class23, "RESTORE_CLOSED", "RestoreScreenEvents::RESTORE_CLOSED"), _Class23);
-var Vi = class RestoreScreenModule extends L {
+var Hi = class RestoreScreenModule extends I$1 {
 	showRestoreMessage() {
 		this.view.showRestoreMessage();
 	}
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(Bi.RESTORE_CLOSED, RestoreScreenEvents.RESTORE_CLOSED);
+		super.setupEvents(), this.onViewEmitEvent(Vi.RESTORE_CLOSED, RestoreScreenEvents.RESTORE_CLOSED);
 	}
 };
-Vi = __decorate$1([injectFromBase()], Vi);
+Hi = __decorate$1([injectFromBase()], Hi);
 var MenuEvents = (_Class24 = class {}, _defineProperty(_Class24, "OPENED", "MenuEvents::OPENED"), _defineProperty(_Class24, "CLOSED", "MenuEvents::CLOSED"), _Class24);
-var Hi = /* @__PURE__ */ function(e) {
+var Ui = /* @__PURE__ */ function(e) {
 	return e.Info = "info", e.Settings = "settings", e.History = "history", e;
 }({});
 var textSection = (e, t = noop) => {
-	var n = Ji(), r = first_child(n), i = child(r), a = child(i, !0);
+	var n = Yi(), r = first_child(n), i = child(r), a = child(i, !0);
 	reset(i), reset(r);
 	var o = sibling(r, 2), s = child(o);
 	each(s, 16, () => {
 		var _t$intro;
 		return (_t$intro = t().intro) !== null && _t$intro !== void 0 ? _t$intro : [];
 	}, (e) => e, (e, t) => {
-		var n = Ui(), r = child(n, !0);
+		var n = Wi(), r = child(n, !0);
 		reset(n), template_effect(() => set_text(r, t)), append(e, n);
 	});
 	var c = sibling(s, 2), consequent_1 = (e) => {
@@ -108229,12 +108273,12 @@ var textSection = (e, t = noop) => {
 			var r = comment();
 			each(first_child(r), 17, () => t().bullets, (e) => typeof e == "string" ? e : e.text, (e, t) => {
 				var n = comment(), r = first_child(n), consequent = (e) => {
-					var n = Wi(), r = child(n, !0);
+					var n = Gi(), r = child(n, !0);
 					reset(n), template_effect(() => set_text(r, get(t))), append(e, n);
 				}, alternate = (e) => {
-					var n = Ki(), r = child(n), i = sibling(r);
+					var n = qi(), r = child(n), i = sibling(r);
 					each(i, 20, () => get(t).sub, (e) => e, (e, t) => {
-						var n = Gi(), r = child(n, !0);
+						var n = Ki(), r = child(n, !0);
 						reset(n), template_effect(() => set_text(r, t)), append(e, n);
 					}), reset(i), reset(n), template_effect(() => {
 						var _get$text;
@@ -108253,31 +108297,31 @@ var textSection = (e, t = noop) => {
 		var _t$outro;
 		return (_t$outro = t().outro) !== null && _t$outro !== void 0 ? _t$outro : [];
 	}, (e) => e, (e, t) => {
-		var n = qi(), r = child(n, !0);
+		var n = Ji(), r = child(n, !0);
 		reset(n), template_effect(() => set_text(r, t)), append(e, n);
 	}), reset(o), template_effect(() => set_text(a, t().title)), append(e, n);
 };
-var Ui = /* @__PURE__ */ from_html("<p class=\"menu-text-p svelte-pmm4xy\"> </p>");
-var Wi = /* @__PURE__ */ from_html("<li class=\"svelte-pmm4xy\"> </li>");
+var Wi = /* @__PURE__ */ from_html("<p class=\"menu-text-p svelte-pmm4xy\"> </p>");
 var Gi = /* @__PURE__ */ from_html("<li class=\"svelte-pmm4xy\"> </li>");
-var Ki = /* @__PURE__ */ from_html("<li class=\"svelte-pmm4xy\"> <ul class=\"menu-text-sublist svelte-pmm4xy\"></ul></li>");
-var qi = /* @__PURE__ */ from_html("<p class=\"menu-text-p svelte-pmm4xy\"> </p>");
-var Ji = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <div class=\"menu-textsection svelte-pmm4xy\"><!> <!> <!></div>", 1);
-var Yi = /* @__PURE__ */ from_html("<div class=\"menu-pay-row svelte-pmm4xy\"><span class=\"menu-pay-count svelte-pmm4xy\"> </span> <span class=\"menu-pay-val svelte-pmm4xy\"> </span></div>");
-var Xi = /* @__PURE__ */ from_html("<div class=\"menu-symbol svelte-pmm4xy\"><div class=\"menu-symbol-frame svelte-pmm4xy\"><img loading=\"lazy\" class=\"svelte-pmm4xy\"/></div> <div class=\"menu-pays svelte-pmm4xy\"></div></div>");
-var Zi = /* @__PURE__ */ from_html("<h3 class=\"menu-feature-title svelte-pmm4xy\"> </h3> <div class=\"menu-symbols svelte-pmm4xy\"></div>", 1);
-var Qi = /* @__PURE__ */ from_html("<img class=\"menu-feature-image svelte-pmm4xy\" loading=\"lazy\"/>");
-var $i = /* @__PURE__ */ from_html("<section class=\"menu-feature\"><h3 class=\"menu-feature-title svelte-pmm4xy\"> </h3> <!> <p class=\"menu-feature-body svelte-pmm4xy\"> </p></section>");
-var ea = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <div class=\"menu-features svelte-pmm4xy\"></div>", 1);
-var ta = /* @__PURE__ */ from_html("<p class=\"menu-muted-block\"> </p>");
-var na = /* @__PURE__ */ from_html("<p class=\"menu-version svelte-pmm4xy\"> </p>");
-var ra = /* @__PURE__ */ from_html("<div class=\"menu-info\"><header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <!> <!> <!> <!> <!> <!></div>");
-var ia = {
+var Ki = /* @__PURE__ */ from_html("<li class=\"svelte-pmm4xy\"> </li>");
+var qi = /* @__PURE__ */ from_html("<li class=\"svelte-pmm4xy\"> <ul class=\"menu-text-sublist svelte-pmm4xy\"></ul></li>");
+var Ji = /* @__PURE__ */ from_html("<p class=\"menu-text-p svelte-pmm4xy\"> </p>");
+var Yi = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <div class=\"menu-textsection svelte-pmm4xy\"><!> <!> <!></div>", 1);
+var Xi = /* @__PURE__ */ from_html("<div class=\"menu-pay-row svelte-pmm4xy\"><span class=\"menu-pay-count svelte-pmm4xy\"> </span> <span class=\"menu-pay-val svelte-pmm4xy\"> </span></div>");
+var Zi = /* @__PURE__ */ from_html("<div class=\"menu-symbol svelte-pmm4xy\"><div class=\"menu-symbol-frame svelte-pmm4xy\"><img loading=\"lazy\" class=\"svelte-pmm4xy\"/></div> <div class=\"menu-pays svelte-pmm4xy\"></div></div>");
+var Qi = /* @__PURE__ */ from_html("<h3 class=\"menu-feature-title svelte-pmm4xy\"> </h3> <div class=\"menu-symbols svelte-pmm4xy\"></div>", 1);
+var $i = /* @__PURE__ */ from_html("<img class=\"menu-feature-image svelte-pmm4xy\" loading=\"lazy\"/>");
+var ea = /* @__PURE__ */ from_html("<section class=\"menu-feature\"><h3 class=\"menu-feature-title svelte-pmm4xy\"> </h3> <!> <p class=\"menu-feature-body svelte-pmm4xy\"> </p></section>");
+var ta = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <div class=\"menu-features svelte-pmm4xy\"></div>", 1);
+var na = /* @__PURE__ */ from_html("<p class=\"menu-muted-block\"> </p>");
+var ra = /* @__PURE__ */ from_html("<p class=\"menu-version svelte-pmm4xy\"> </p>");
+var ia = /* @__PURE__ */ from_html("<div class=\"menu-info\"><header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <!> <!> <!> <!> <!> <!></div>");
+var aa = {
 	hash: "svelte-pmm4xy",
 	code: "\n	/* ---- Symbol grid ---------------------------------------------------- */.menu-symbols.svelte-pmm4xy {display:grid;grid-template-columns:repeat(auto-fit, minmax(90px, 1fr));gap:20px 32px;margin-bottom:28px;justify-content:center;}.menu-symbol.svelte-pmm4xy {display:flex;flex-direction:column;align-items:center;}.menu-symbol-frame.svelte-pmm4xy {width:100%;aspect-ratio:1 / 1;display:flex;align-items:center;justify-content:center;}.menu-symbol-frame.svelte-pmm4xy img:where(.svelte-pmm4xy) {width:100%;height:100%;object-fit:contain;}\n\n	/* ---- Pays (count | value, separator drawn via ::after) -------------- */.menu-pays.svelte-pmm4xy {margin-top:8px;display:flex;flex-direction:column;gap:2px;width:100%;max-width:80px;font-family:var(--menu-body);font-size:13px;color:var(--menu-ink);line-height:1.25;}.menu-pay-row.svelte-pmm4xy {display:flex;align-items:center;width:100%;position:relative;}.menu-pay-row.svelte-pmm4xy::after {content:'|';color:#5a4d35;position:absolute;left:50%;transform:translateX(-50%);font-weight:400;}.menu-pay-count.svelte-pmm4xy {color:#9a8a68;font-variant-numeric:tabular-nums;flex:1;text-align:right;padding-right:8px;}.menu-pay-val.svelte-pmm4xy {font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:0.3px;flex:1;text-align:left;padding-left:8px;}\n\n	/* ---- Feature blocks ------------------------------------------------- */.menu-features.svelte-pmm4xy {display:flex;flex-direction:column;gap:28px;max-width:640px;margin:0 auto;}.menu-feature-image.svelte-pmm4xy {display:block;width:100%;max-width:480px;height:auto;margin:8px auto 12px;object-fit:contain;}.menu-feature-title.svelte-pmm4xy {margin:0 0 10px;text-align:center;font-family:var(--menu-display);font-weight:700;letter-spacing:2px;font-size:22px;color:var(--menu-ink);}.menu-feature-body.svelte-pmm4xy {margin:0;color:var(--menu-ink);font-family:var(--menu-body);font-size:15px;line-height:1.6;text-align:left;text-wrap:pretty;}\n\n	/* ---- Text sections (Game Rules / How to Play) ----------------------- */.menu-textsection.svelte-pmm4xy {max-width:640px;margin:0 auto 32px;color:var(--menu-ink);font-family:var(--menu-body);font-size:15px;line-height:1.55;text-wrap:pretty;}.menu-text-p.svelte-pmm4xy {margin:0 0 12px;}.menu-text-list.svelte-pmm4xy {margin:4px 0 12px;padding-left:1.4em;}.menu-text-list.svelte-pmm4xy > li:where(.svelte-pmm4xy) {margin-bottom:8px;}.menu-text-list.svelte-pmm4xy > li:where(.svelte-pmm4xy)::marker {color:var(--menu-gold);}.menu-text-sublist.svelte-pmm4xy {margin:6px 0 4px;padding-left:1.4em;list-style-type:disc;}.menu-text-sublist.svelte-pmm4xy > li:where(.svelte-pmm4xy) {margin-bottom:4px;}.menu-version.svelte-pmm4xy {margin:32px 0 0;text-align:center;font-family:var(--menu-body);font-size:12px;letter-spacing:1px;color:var(--menu-muted);}\n\n	@media (max-width: 559px) {.menu-feature-title.svelte-pmm4xy {font-size:19px;}.menu-symbols.svelte-pmm4xy {gap:16px 24px;margin-bottom:20px;}.menu-pays.svelte-pmm4xy {font-size:14px;max-width:90px;}\n	}"
 };
 function InfoTab(e, t) {
-	push(t, !0), append_styles$1(e, ia);
+	push(t, !0), append_styles$1(e, aa);
 	let n = /* @__PURE__ */ state(proxy({
 		payCounts: [
 			5,
@@ -108307,22 +108351,22 @@ function InfoTab(e, t) {
 	function formatPay(e) {
 		return Number.isInteger(e) ? e.toString() : e.toFixed(2);
 	}
-	var a = ra();
+	var a = ia();
 	var o = child(a);
 	var s = child(o);
 	var c = child(s, !0);
 	reset(s), reset(o);
 	var l = sibling(o, 2);
 	var consequent_2 = (e) => {
-		var i = Zi(), a = first_child(i), o = child(a, !0);
+		var i = Qi(), a = first_child(i), o = child(a, !0);
 		reset(a);
 		var s = sibling(a, 2);
 		each(s, 21, () => get(n).symbols, (e) => e.id, (e, t) => {
-			var n = Xi(), i = child(n), a = child(i);
+			var n = Zi(), i = child(n), a = child(i);
 			reset(i);
 			var o = sibling(i, 2);
 			each(o, 21, () => payRows(get(t)), (e) => e.count, (e, t) => {
-				var n = Yi(), r = child(n), i = child(r, !0);
+				var n = Xi(), r = child(n), i = child(r, !0);
 				reset(r);
 				var a = sibling(r, 2), o = child(a, !0);
 				reset(a), reset(n), template_effect((e) => {
@@ -108338,14 +108382,14 @@ function InfoTab(e, t) {
 	});
 	var u = sibling(l, 2);
 	var consequent_4 = (e) => {
-		var i = ea(), a = first_child(i), o = child(a), s = child(o, !0);
+		var i = ta(), a = first_child(i), o = child(a), s = child(o, !0);
 		reset(o), reset(a);
 		var c = sibling(a, 2);
 		each(c, 21, () => get(n).features, (e) => e.title, (e, t) => {
-			var n = $i(), i = child(n), a = child(i, !0);
+			var n = ea(), i = child(n), a = child(i, !0);
 			reset(i);
 			var o = sibling(i, 2), consequent_3 = (e) => {
-				var n = Qi();
+				var n = $i();
 				template_effect(() => {
 					set_attribute(n, "src", get(r) + get(t).image), set_attribute(n, "alt", get(t).title);
 				}), append(e, n);
@@ -108378,7 +108422,7 @@ function InfoTab(e, t) {
 	});
 	var p = sibling(f, 2);
 	var consequent_7 = (e) => {
-		var n = ta(), r = child(n, !0);
+		var n = na(), r = child(n, !0);
 		reset(n), template_effect((e) => set_text(r, e), [() => t.host.t("menu.info.empty", "No information available.")]), append(e, n);
 	};
 	if_block(p, (e) => {
@@ -108386,7 +108430,7 @@ function InfoTab(e, t) {
 	});
 	var m = sibling(p, 2);
 	var consequent_8 = (e) => {
-		var r = na(), i = child(r);
+		var r = ra(), i = child(r);
 		reset(r), template_effect((e) => {
 			var _get$version;
 			return set_text(i, `${e !== null && e !== void 0 ? e : ""}: ${(_get$version = get(n).version) !== null && _get$version !== void 0 ? _get$version : ""}`);
@@ -108396,14 +108440,14 @@ function InfoTab(e, t) {
 		get(n).version && e(consequent_8);
 	}), reset(a), template_effect((e) => set_text(c, e), [() => t.host.t("menu.info.paytable", "PAYTABLE")]), append(e, a), pop();
 }
-var aa = /* @__PURE__ */ from_html("<div class=\"menu-row svelte-vahujd\"><span class=\"menu-row-label svelte-vahujd\"> </span> <button role=\"switch\"><span class=\"menu-toggle-knob svelte-vahujd\"></span></button></div>");
-var oa = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <div class=\"menu-settings svelte-vahujd\"><div class=\"menu-row svelte-vahujd\"><span class=\"menu-row-label svelte-vahujd\"> </span> <div class=\"menu-row-control svelte-vahujd\"><input class=\"menu-range svelte-vahujd\" type=\"range\" min=\"0\" max=\"100\" step=\"1\"/> <span class=\"menu-range-value svelte-vahujd\"> </span></div></div> <!></div>", 1);
-var sa = {
+var oa = /* @__PURE__ */ from_html("<div class=\"menu-row svelte-vahujd\"><span class=\"menu-row-label svelte-vahujd\"> </span> <button role=\"switch\"><span class=\"menu-toggle-knob svelte-vahujd\"></span></button></div>");
+var sa = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <div class=\"menu-settings svelte-vahujd\"><div class=\"menu-row svelte-vahujd\"><span class=\"menu-row-label svelte-vahujd\"> </span> <div class=\"menu-row-control svelte-vahujd\"><input class=\"menu-range svelte-vahujd\" type=\"range\" min=\"0\" max=\"100\" step=\"1\"/> <span class=\"menu-range-value svelte-vahujd\"> </span></div></div> <!></div>", 1);
+var ca = {
 	hash: "svelte-vahujd",
 	code: ".menu-settings.svelte-vahujd {max-width:520px;margin:0 auto;}.menu-row.svelte-vahujd {display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 4px;border-bottom:0.5px solid var(--menu-line);font-family:var(--menu-body);font-size:16px;}.menu-row-label.svelte-vahujd {color:var(--menu-ink);}.menu-row-control.svelte-vahujd {display:flex;align-items:center;gap:14px;flex:1;max-width:60%;}.menu-range.svelte-vahujd {flex:1;appearance:none;height:4px;border-radius:999px;background:var(--menu-muted);accent-color:var(--menu-gold);}.menu-range-value.svelte-vahujd {min-width:2.4em;text-align:right;color:var(--menu-muted);font-variant-numeric:tabular-nums;}.menu-toggle.svelte-vahujd {flex:none;width:50px;height:28px;border-radius:999px;background:var(--menu-line);border:1px solid #3a2e1c;position:relative;cursor:pointer;padding:0;transition:background 0.2s, border-color 0.2s;}.menu-toggle.on.svelte-vahujd {background:var(--menu-gold);border-color:var(--menu-gold-bright);}.menu-toggle-knob.svelte-vahujd {position:absolute;top:2px;left:3px;width:22px;height:22px;border-radius:999px;background:var(--menu-gold);transition:left 0.2s, background 0.2s;}.menu-toggle.on.svelte-vahujd .menu-toggle-knob:where(.svelte-vahujd) {left:25px;background:#0a0807;}"
 };
 function SettingsTab(e, t) {
-	push(t, !0), append_styles$1(e, sa);
+	push(t, !0), append_styles$1(e, ca);
 	let n = /* @__PURE__ */ state(0);
 	let r = /* @__PURE__ */ state(!1);
 	let i = /* @__PURE__ */ state(!1);
@@ -108419,7 +108463,7 @@ function SettingsTab(e, t) {
 	function onFastPlayToggle() {
 		t.host.setFastPlay(!get(r));
 	}
-	var a = oa();
+	var a = sa();
 	var o = first_child(a);
 	var s = child(o);
 	var c = child(s, !0);
@@ -108437,7 +108481,7 @@ function SettingsTab(e, t) {
 	reset(h), reset(p), reset(u);
 	var _ = sibling(u, 2);
 	var consequent = (e) => {
-		var n = aa(), i = child(n), a = child(i, !0);
+		var n = oa(), i = child(n), a = child(i, !0);
 		reset(i);
 		var o = sibling(i, 2);
 		let s;
@@ -108457,16 +108501,16 @@ function SettingsTab(e, t) {
 	]), delegated("input", m, onVolumeInput), append(e, a), pop();
 }
 delegate(["input", "click"]);
-var ca = /* @__PURE__ */ from_html("<p class=\"menu-muted-block\"> </p>");
-var la = /* @__PURE__ */ from_html("<article class=\"menu-hrow svelte-zkkne0\"><div class=\"menu-hgrid svelte-zkkne0\"><div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue menu-hvalue-time svelte-zkkne0\"><span> </span> <span class=\"menu-hclock svelte-zkkne0\"> </span></div></div> <div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue svelte-zkkne0\"> </div></div> <div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue svelte-zkkne0\"> </div></div> <div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue svelte-zkkne0\"> </div></div></div> <button class=\"menu-replay svelte-zkkne0\"><svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" aria-hidden=\"true\" class=\"svelte-zkkne0\"><path d=\"M8 5v14l11-7z\" fill=\"currentColor\"></path></svg> <span> </span></button></article>");
-var ua = /* @__PURE__ */ from_html("<div class=\"menu-history svelte-zkkne0\"></div>");
-var da = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <!>", 1);
-var fa = {
+var la = /* @__PURE__ */ from_html("<p class=\"menu-muted-block\"> </p>");
+var ua = /* @__PURE__ */ from_html("<article class=\"menu-hrow svelte-zkkne0\"><div class=\"menu-hgrid svelte-zkkne0\"><div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue menu-hvalue-time svelte-zkkne0\"><span> </span> <span class=\"menu-hclock svelte-zkkne0\"> </span></div></div> <div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue svelte-zkkne0\"> </div></div> <div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue svelte-zkkne0\"> </div></div> <div class=\"menu-hcell svelte-zkkne0\"><div class=\"menu-hlabel svelte-zkkne0\"> </div> <div class=\"menu-hvalue svelte-zkkne0\"> </div></div></div> <button class=\"menu-replay svelte-zkkne0\"><svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" aria-hidden=\"true\" class=\"svelte-zkkne0\"><path d=\"M8 5v14l11-7z\" fill=\"currentColor\"></path></svg> <span> </span></button></article>");
+var da = /* @__PURE__ */ from_html("<div class=\"menu-history svelte-zkkne0\"></div>");
+var fa = /* @__PURE__ */ from_html("<header class=\"menu-deco-head\"><h1 class=\"menu-deco-title\"> </h1></header> <!>", 1);
+var pa = {
 	hash: "svelte-zkkne0",
 	code: ".menu-history.svelte-zkkne0 {display:flex;flex-direction:column;gap:14px;max-width:720px;margin:0 auto;}.menu-hrow.svelte-zkkne0 {display:flex;align-items:center;gap:18px;padding:18px 20px;background:rgba(0, 0, 0, 0.45);border-radius:14px;}.menu-hgrid.svelte-zkkne0 {flex:1;display:grid;grid-template-columns:repeat(4, 1fr);gap:10px 18px;}.menu-hcell.svelte-zkkne0 {display:flex;flex-direction:column;gap:4px;min-width:0;}.menu-hlabel.svelte-zkkne0 {font-family:var(--menu-display);font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--menu-muted);}.menu-hvalue.svelte-zkkne0 {font-family:var(--menu-body);font-size:15px;font-weight:400;color:var(--menu-ink);font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}\n	/* Time cell stacks date on top, clock muted below — fits a narrow column. */.menu-hvalue-time.svelte-zkkne0 {display:flex;flex-direction:column;line-height:1.25;white-space:normal;}.menu-hclock.svelte-zkkne0 {font-size:13px;color:var(--menu-muted);}.menu-replay.svelte-zkkne0 {flex:none;display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border:none;border-radius:10px;background:var(--menu-gold-bright);color:#1a1108;font-family:var(--menu-display);font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:filter 0.15s;}.menu-replay.svelte-zkkne0:hover {filter:brightness(1.08);}.menu-replay.svelte-zkkne0 svg:where(.svelte-zkkne0) {display:block;}\n\n	@media (max-width: 559px) {.menu-hrow.svelte-zkkne0 {flex-direction:column;align-items:stretch;gap:14px;padding:14px;}.menu-hgrid.svelte-zkkne0 {grid-template-columns:1fr 1fr;gap:12px 16px;}.menu-replay.svelte-zkkne0 {align-self:flex-start;}\n	}"
 };
 function HistoryTab(e, t) {
-	push(t, !0), append_styles$1(e, fa);
+	push(t, !0), append_styles$1(e, pa);
 	let n = /* @__PURE__ */ state(proxy([]));
 	onMount(() => {
 		let sync = () => {
@@ -108482,21 +108526,21 @@ function HistoryTab(e, t) {
 	function onReplay(e) {
 		t.host.replayRound(e);
 	}
-	var r = da();
+	var r = fa();
 	var i = first_child(r);
 	var a = child(i);
 	var o = child(a, !0);
 	reset(a), reset(i);
 	var s = sibling(i, 2);
 	var consequent = (e) => {
-		var n = ca(), r = child(n, !0);
+		var n = la(), r = child(n, !0);
 		reset(n), template_effect((e) => set_text(r, e), [() => t.host.t("menu.history.placeholder", "History coming soon.")]), append(e, n);
 	};
 	var alternate = (e) => {
-		var r = ua();
+		var r = da();
 		each(r, 21, () => get(n), (e) => e.gameRoundId, (e, n) => {
 			let r = /* @__PURE__ */ user_derived(() => parseRoundTime(get(n).startTime));
-			var i = la(), a = child(i), o = child(a), s = child(o), c = child(s, !0);
+			var i = ua(), a = child(i), o = child(a), s = child(o), c = child(s, !0);
 			reset(s);
 			var l = sibling(s, 2), u = child(l), d = child(u, !0);
 			reset(u);
@@ -108510,13 +108554,13 @@ function HistoryTab(e, t) {
 			reset(b);
 			var S = sibling(b, 2), C = child(S, !0);
 			reset(S), reset(y);
-			var w = sibling(y, 2), T = child(w), E = child(T, !0);
-			reset(T);
-			var ee = sibling(T, 2), te = child(ee, !0);
-			reset(ee), reset(w), reset(a);
-			var ne = sibling(a, 2), re = sibling(child(ne), 2), ie = child(re, !0);
-			reset(re), reset(ne), reset(i), template_effect((e, t, n, r, i, a, o, s, l, u) => {
-				set_text(c, e), set_text(d, t), set_text(p, n), set_text(g, r), set_text(v, i), set_text(x, a), set_text(C, o), set_text(E, s), set_text(te, l), set_text(ie, u);
+			var ee = sibling(y, 2), w = child(ee), T = child(w, !0);
+			reset(w);
+			var te = sibling(w, 2), ne = child(te, !0);
+			reset(te), reset(ee), reset(a);
+			var re = sibling(a, 2), ie = sibling(child(re), 2), ae = child(ie, !0);
+			reset(ie), reset(re), reset(i), template_effect((e, t, n, r, i, a, o, s, l, u) => {
+				set_text(c, e), set_text(d, t), set_text(p, n), set_text(g, r), set_text(v, i), set_text(x, a), set_text(C, o), set_text(T, s), set_text(ne, l), set_text(ae, u);
 			}, [
 				() => t.host.t("menu.history.time", "Time"),
 				() => get(r) ? get(r).toLocaleDateString(void 0, {
@@ -108535,7 +108579,7 @@ function HistoryTab(e, t) {
 				() => t.host.t("menu.history.balance", "Balance"),
 				() => t.host.formatMoney(get(n).balanceAfter),
 				() => t.host.t("menu.history.replay", "Replay")
-			]), delegated("click", ne, () => onReplay(get(n).gameRoundId)), append(e, i);
+			]), delegated("click", re, () => onReplay(get(n).gameRoundId)), append(e, i);
 		}), reset(r), append(e, r);
 	};
 	if_block(s, (e) => {
@@ -108544,26 +108588,26 @@ function HistoryTab(e, t) {
 }
 delegate(["click"]);
 var infoIcon = (e) => {
-	append(e, pa());
-};
-var settingsIcon = (e) => {
 	append(e, ma());
 };
-var historyIcon = (e) => {
+var settingsIcon = (e) => {
 	append(e, ha());
 };
-var pa = /* @__PURE__ */ from_svg("<svg viewBox=\"0 0 26 26\" fill=\"none\" class=\"svelte-1pu34h4\"><circle cx=\"13\" cy=\"13\" r=\"11.5\" stroke=\"currentColor\" stroke-width=\"1.8\"></circle><circle cx=\"13\" cy=\"7.5\" r=\"1.4\" fill=\"currentColor\"></circle><rect x=\"11.7\" y=\"11\" width=\"2.6\" height=\"9\" rx=\"1.3\" fill=\"currentColor\"></rect></svg>");
-var ma = /* @__PURE__ */ from_svg("<svg viewBox=\"0 0 26 26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" class=\"svelte-1pu34h4\"><line x1=\"3\" y1=\"7\" x2=\"23\" y2=\"7\"></line><circle cx=\"9\" cy=\"7\" r=\"2.4\" fill=\"var(--menu-bg-2)\"></circle><line x1=\"3\" y1=\"13\" x2=\"23\" y2=\"13\"></line><circle cx=\"17\" cy=\"13\" r=\"2.4\" fill=\"var(--menu-bg-2)\"></circle><line x1=\"3\" y1=\"19\" x2=\"23\" y2=\"19\"></line><circle cx=\"11\" cy=\"19\" r=\"2.4\" fill=\"var(--menu-bg-2)\"></circle></svg>");
-var ha = /* @__PURE__ */ from_svg("<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svelte-1pu34h4\"><path d=\"M3 12a9 9 0 1 0 9-9 9.7 9.7 0 0 0-6.74 2.74L3 8\"></path><path d=\"M3 3v5h5\"></path><path d=\"M12 7v5l4 2\"></path></svg>");
-var ga = /* @__PURE__ */ from_html("<button><span class=\"menu-tab-icon svelte-1pu34h4\"><!></span></button>");
-var _a = /* @__PURE__ */ from_html("<div class=\"menu-overlay svelte-1pu34h4\" role=\"dialog\" aria-modal=\"true\"><button class=\"menu-close svelte-1pu34h4\"><svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" aria-hidden=\"true\"><path d=\"M6 6l12 12M18 6L6 18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></path></svg></button> <div class=\"menu-content svelte-1pu34h4\"><div class=\"menu-content-inner svelte-1pu34h4\"><!></div></div> <nav class=\"menu-tabbar svelte-1pu34h4\"><div class=\"menu-tabbar-rule svelte-1pu34h4\" aria-hidden=\"true\"></div> <div class=\"menu-tabs svelte-1pu34h4\"></div></nav></div>");
-var va = {
+var historyIcon = (e) => {
+	append(e, ga());
+};
+var ma = /* @__PURE__ */ from_svg("<svg viewBox=\"0 0 26 26\" fill=\"none\" class=\"svelte-1pu34h4\"><circle cx=\"13\" cy=\"13\" r=\"11.5\" stroke=\"currentColor\" stroke-width=\"1.8\"></circle><circle cx=\"13\" cy=\"7.5\" r=\"1.4\" fill=\"currentColor\"></circle><rect x=\"11.7\" y=\"11\" width=\"2.6\" height=\"9\" rx=\"1.3\" fill=\"currentColor\"></rect></svg>");
+var ha = /* @__PURE__ */ from_svg("<svg viewBox=\"0 0 26 26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" class=\"svelte-1pu34h4\"><line x1=\"3\" y1=\"7\" x2=\"23\" y2=\"7\"></line><circle cx=\"9\" cy=\"7\" r=\"2.4\" fill=\"var(--menu-bg-2)\"></circle><line x1=\"3\" y1=\"13\" x2=\"23\" y2=\"13\"></line><circle cx=\"17\" cy=\"13\" r=\"2.4\" fill=\"var(--menu-bg-2)\"></circle><line x1=\"3\" y1=\"19\" x2=\"23\" y2=\"19\"></line><circle cx=\"11\" cy=\"19\" r=\"2.4\" fill=\"var(--menu-bg-2)\"></circle></svg>");
+var ga = /* @__PURE__ */ from_svg("<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"svelte-1pu34h4\"><path d=\"M3 12a9 9 0 1 0 9-9 9.7 9.7 0 0 0-6.74 2.74L3 8\"></path><path d=\"M3 3v5h5\"></path><path d=\"M12 7v5l4 2\"></path></svg>");
+var _a = /* @__PURE__ */ from_html("<button><span class=\"menu-tab-icon svelte-1pu34h4\"><!></span></button>");
+var va = /* @__PURE__ */ from_html("<div class=\"menu-overlay svelte-1pu34h4\" role=\"dialog\" aria-modal=\"true\"><button class=\"menu-close svelte-1pu34h4\"><svg viewBox=\"0 0 24 24\" width=\"1em\" height=\"1em\" aria-hidden=\"true\"><path d=\"M6 6l12 12M18 6L6 18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></path></svg></button> <div class=\"menu-content svelte-1pu34h4\"><div class=\"menu-content-inner svelte-1pu34h4\"><!></div></div> <nav class=\"menu-tabbar svelte-1pu34h4\"><div class=\"menu-tabbar-rule svelte-1pu34h4\" aria-hidden=\"true\"></div> <div class=\"menu-tabs svelte-1pu34h4\"></div></nav></div>");
+var ya = {
 	hash: "svelte-1pu34h4",
 	code: "\n	@font-face {font-family:'Poppins';src:url('resources/FONTS/Poppins-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;\n	}\n	@font-face {font-family:'Poppins';src:url('resources/FONTS/Poppins-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap;\n	}\n\n	@font-face {font-family:'Poppins';src:url('resources/FONTS/Poppins-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap;\n	}.menu-overlay.svelte-1pu34h4 {\n		/* ---- Design tokens — inherited by child components -------------- */--menu-bg-2: #15100c;--menu-ink: #ffffff;--menu-gold: #caa23a;--menu-gold-bright: #f3d271;--menu-muted: #7a6a48;--menu-line: #2a2218;--menu-display: 'Poppins', system-ui, -apple-system, sans-serif;--menu-body: 'Poppins', system-ui, -apple-system, sans-serif;position:fixed;inset:0;z-index:9000;display:flex;flex-direction:column;overflow:hidden;background:radial-gradient(140% 80% at 50% 0%, rgba(21, 16, 12, 0.92), rgba(10, 8, 7, 0.92) 60%, rgba(5, 4, 2, 0.92));color:var(--menu-ink);font-family:var(--menu-body);user-select:none;-webkit-font-smoothing:antialiased;}.menu-overlay.svelte-1pu34h4 * {box-sizing:border-box;}.menu-overlay.svelte-1pu34h4 *::-webkit-scrollbar {width:0;height:0;}.menu-close.svelte-1pu34h4 {position:absolute;top:18px;right:18px;z-index:10;display:flex;align-items:center;justify-content:center;width:2.1em;height:2.1em;font-size:18px;border-radius:50%;background:rgba(10, 8, 7, 0.7);border:2px solid var(--menu-gold-bright);color:var(--menu-gold-bright);cursor:pointer;backdrop-filter:blur(6px);}.menu-close.svelte-1pu34h4:hover {background:rgba(202, 162, 58, 0.18);}\n\n	/* scroll area fills all space above the pinned tab bar */.menu-content.svelte-1pu34h4 {position:relative;z-index:2;flex:1 1 auto;min-height:0;overflow-y:auto;}.menu-content-inner.svelte-1pu34h4 {max-width:820px;margin:0 auto;padding:40px clamp(24px, 7vw, 80px) 48px;}\n\n	/* ---- Shared utility classes used by child tabs ---------------------- */.menu-overlay.svelte-1pu34h4 .menu-deco-head {text-align:center;padding:8px 0 22px;}.menu-overlay.svelte-1pu34h4 .menu-deco-title {margin:0;font-family:var(--menu-display);font-weight:700;letter-spacing:2px;font-size:28px;color:var(--menu-ink);text-shadow:0 2px 0 rgba(0, 0, 0, 0.5);}.menu-overlay.svelte-1pu34h4 .menu-muted-block {padding:72px 16px;text-align:center;color:var(--menu-muted);letter-spacing:2px;}\n\n	/* ---- Bottom tab bar — pinned to bottom of the full screen ----------- */.menu-tabbar.svelte-1pu34h4 {position:relative;z-index:3;flex:0 0 auto;background:linear-gradient(180deg, rgba(14, 10, 8, 0.96), rgba(6, 4, 3, 0.98));backdrop-filter:blur(14px) saturate(140%);border-top:1px solid rgba(202, 162, 58, 0.25);box-shadow:0 -10px 30px rgba(0, 0, 0, 0.5);}.menu-tabbar-rule.svelte-1pu34h4 {position:absolute;top:0;left:12%;right:12%;height:0.5px;background:linear-gradient(90deg, transparent, rgba(202, 162, 58, 0.53) 30%, rgba(202, 162, 58, 0.53) 70%, transparent);}.menu-tabs.svelte-1pu34h4 {display:grid;grid-template-columns:repeat(3, 1fr);gap:4px;max-width:560px;margin:0 auto;padding:12px 8px calc(12px + env(safe-area-inset-bottom, 0px));}.menu-tab.svelte-1pu34h4 {display:flex;align-items:center;justify-content:center;padding:14px 8px;background:transparent;border:none;cursor:pointer;color:var(--menu-muted);transition:color 0.15s;}.menu-tab.active.svelte-1pu34h4 {color:var(--menu-ink);}.menu-tab-icon.svelte-1pu34h4 {width:40px;height:40px;display:flex;align-items:center;justify-content:center;opacity:0.85;}.menu-tab.active.svelte-1pu34h4 .menu-tab-icon:where(.svelte-1pu34h4) {opacity:1;}.menu-tab-icon.svelte-1pu34h4 svg:where(.svelte-1pu34h4) {width:100%;height:100%;}\n\n	@media (max-width: 559px) {.menu-content-inner.svelte-1pu34h4 {padding:24px 18px 40px;}.menu-overlay.svelte-1pu34h4 .menu-deco-title {font-size:22px;letter-spacing:4px;}\n	}"
 };
 function MenuRoot(e, t) {
-	push(t, !0), append_styles$1(e, va);
-	let n = /* @__PURE__ */ state(proxy(Hi.Info));
+	push(t, !0), append_styles$1(e, ya);
+	let n = /* @__PURE__ */ state(proxy(Ui.Info));
 	onMount(() => {
 		let sync = () => {
 			set(n, t.host.activeView, !0);
@@ -108572,17 +108616,17 @@ function MenuRoot(e, t) {
 	});
 	let r = /* @__PURE__ */ user_derived(() => [
 		{
-			id: Hi.Info,
+			id: Ui.Info,
 			label: t.host.t("menu.tab.info", "Paytable"),
 			icon: infoIcon
 		},
 		{
-			id: Hi.Settings,
+			id: Ui.Settings,
 			label: t.host.t("menu.tab.settings", "Settings"),
 			icon: settingsIcon
 		},
 		{
-			id: Hi.History,
+			id: Ui.History,
 			label: t.host.t("menu.tab.history", "History"),
 			icon: historyIcon
 		}
@@ -108596,8 +108640,8 @@ function MenuRoot(e, t) {
 	function onKeydown(e) {
 		e.key === "Escape" && close();
 	}
-	var i = _a();
-	event("keydown", pn, onKeydown);
+	var i = va();
+	event("keydown", mn, onKeydown);
 	var a = child(i);
 	var o = sibling(a, 2);
 	var s = child(o);
@@ -108618,12 +108662,12 @@ function MenuRoot(e, t) {
 		} });
 	};
 	if_block(c, (e) => {
-		get(n) === Hi.Info ? e(consequent) : get(n) === Hi.Settings ? e(consequent_1, 1) : e(alternate, -1);
+		get(n) === Ui.Info ? e(consequent) : get(n) === Ui.Settings ? e(consequent_1, 1) : e(alternate, -1);
 	}), reset(s), reset(o);
 	var l = sibling(o, 2);
 	var u = sibling(child(l), 2);
 	each(u, 21, () => get(r), (e) => e.id, (e, t) => {
-		var r = ga();
+		var r = _a();
 		let i;
 		var a = child(r);
 		snippet(child(a), () => get(t).icon), reset(a), reset(r), template_effect(() => {
@@ -108632,10 +108676,10 @@ function MenuRoot(e, t) {
 	}), reset(u), reset(l), reset(i), template_effect((e) => set_attribute(a, "aria-label", e), [() => t.host.t("menu.close", "Close")]), delegated("click", a, close), append(e, i), pop();
 }
 delegate(["click"]);
-var ya = class MenuModule extends Gn {
+var ba = class MenuModule extends Gn {
 	constructor(..._args50) {
 		super(..._args50);
-		_defineProperty(this, "_activeView", Hi.Info);
+		_defineProperty(this, "_activeView", Ui.Info);
 		_defineProperty(this, "_paytable", {
 			payCounts: [
 				5,
@@ -108651,7 +108695,7 @@ var ya = class MenuModule extends Gn {
 		_defineProperty(this, "_volumeChanged", void 0);
 	}
 	init(e, t) {
-		super.init(e, t), this._quickPlayButton = this.diContainer.isBound(Li) ? this.diContainer.get(Li) : void 0, this._paytable = this.buildPaytable(), this._imageBase = this._gameConfig.get("paytable.imageBase", this._imageBase), this._history = this._gameConfig.get("menu.history", []);
+		super.init(e, t), this._quickPlayButton = this.diContainer.isBound(Ri) ? this.diContainer.get(Ri) : void 0, this._paytable = this.buildPaytable(), this._imageBase = this._gameConfig.get("paytable.imageBase", this._imageBase), this._history = this._gameConfig.get("menu.history", []);
 	}
 	afterInit() {
 		super.afterInit(), this._host.mount(MenuRoot, { host: this }, "MenuRoot");
@@ -108691,7 +108735,7 @@ var ya = class MenuModule extends Gn {
 		(_this$_quickPlayButto5 = this._quickPlayButton) === null || _this$_quickPlayButto5 === void 0 || _this$_quickPlayButto5.view[e ? "turnOnButton" : "turnOffButton"](), this.notify();
 	}
 	replayRound(e) {
-		A.info("[Menu] REPLAY ROUND CALLBACK NOT SET, roundId:", e);
+		O$1.info("[Menu] REPLAY ROUND CALLBACK NOT SET, roundId:", e);
 	}
 	close() {
 		this._host.hide(), this.emit(MenuEvents.CLOSED);
@@ -108728,10 +108772,10 @@ var ya = class MenuModule extends Gn {
 		};
 	}
 };
-ya = __decorate$1([injectFromBase()], ya);
+ba = __decorate$1([injectFromBase()], ba);
 var MenuButtonEvents = (_Class25 = class {}, _defineProperty(_Class25, "CLICKED", "MenuButtonEvents::CLICKED"), _Class25);
-var ba;
-var xa = (_MenuButtonView = class MenuButtonView extends hr {
+var xa;
+var Sa = (_MenuButtonView = class MenuButtonView extends hr {
 	constructor(..._args51) {
 		super(..._args51);
 		_defineProperty(this, "_menuButton", void 0);
@@ -108768,19 +108812,19 @@ var xa = (_MenuButtonView = class MenuButtonView extends hr {
 		return new GenericButton("MENU_BUTTON.json", void 0, this.spineUtils, this.onButtonClicked.bind(this));
 	}
 	onButtonClicked() {
-		this.emit(ba.BUTTON_CLICKED);
+		this.emit(xa.BUTTON_CLICKED);
 	}
-}, ba = _MenuButtonView, _defineProperty(_MenuButtonView, "BUTTON_CLICKED", "MenuButtonView::BUTTON_CLICKED"), _MenuButtonView);
-xa = ba = __decorate$1([injectFromBase()], xa);
-var Sa = class MenuButtonModule extends vr {
+}, xa = _MenuButtonView, _defineProperty(_MenuButtonView, "BUTTON_CLICKED", "MenuButtonView::BUTTON_CLICKED"), _MenuButtonView);
+Sa = xa = __decorate$1([injectFromBase()], Sa);
+var Ca = class MenuButtonModule extends vr {
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(xa.BUTTON_CLICKED, MenuButtonEvents.CLICKED);
+		super.setupEvents(), this.onViewEmitEvent(Sa.BUTTON_CLICKED, MenuButtonEvents.CLICKED);
 	}
 };
-Sa = __decorate$1([injectFromBase()], Sa);
+Ca = __decorate$1([injectFromBase()], Ca);
 var SpinButtonEvents = (_Class26 = class {}, _defineProperty(_Class26, "PRE_SPIN_BUTTON_PRESSED", "SpinButtonEvents::PRE_SPIN_BUTTON_PRESSED"), _defineProperty(_Class26, "SPIN_BUTTON_PRESSED", "SpinButtonEvents::__SPIN_BUTTON_PRESSED__"), _defineProperty(_Class26, "QUICKSTOP_PRESSED", "SpinButtonEvents::__QUICKSTOP_PRESSED__"), _defineProperty(_Class26, "SPIN_BUTTON_HOLD", "SpinButtonEvents::__SPIN_BUTTON_HOLD__"), _defineProperty(_Class26, "START_AUTOPLAY_BUTTON_PRESSED", "SpinButtonEvents::START_AUTOPLAY_BUTTON_PRESSED"), _defineProperty(_Class26, "SPIN_PRESSED_NOT_ENOUGH_MONEY", "SpinButtonEvents::__SPIN_PRESSED_NOT_ENOUGH_MONEY__"), _defineProperty(_Class26, "SPACE_BUTTON_CLICKED", "SpinButtonEvents::__SPACE_BUTTON_CLICKED__"), _defineProperty(_Class26, "SPIN_BUTTON_BECOMING_VISIBLE_AND_ENABLED", "SpinButtonEvents::SPIN_BUTTON_BECOMING_VISIBLE_AND_ENABLED"), _defineProperty(_Class26, "REGULATION_SPIN_DELAY_PASSED", "SpinButtonEvents::REGULATION_SPIN_DELAY_PASSED"), _defineProperty(_Class26, "REGULATION_SPIN_DELAY_STARTED", "SpinButtonEvents::REGULATION_SPIN_DELAY_STARTED"), _defineProperty(_Class26, "DISABLE_SPIN_BY_SPIN", "SpinButtonEvents::DISABLE_SPIN_BY_SPIN"), _defineProperty(_Class26, "ENABLE_SPIN_BY_SPIN", "SpinButtonEvents::ENABLE_SPIN_BY_SPIN"), _defineProperty(_Class26, "SKIP_BY_SPIN_BUTTON_PRESSED", "SpinButtonEvents::SKIP_BY_SPIN_BUTTON_PRESSED"), _Class26);
-var Ca;
-var wa = (_SpinButtonView = class SpinButtonView extends hr {
+var wa;
+var Ta = (_SpinButtonView = class SpinButtonView extends hr {
 	constructor(..._args52) {
 		super(..._args52);
 		_defineProperty(this, "_spinButton", void 0);
@@ -108831,11 +108875,11 @@ var wa = (_SpinButtonView = class SpinButtonView extends hr {
 	}
 	setupQuickstopContainer() {
 		this._quickstopCover = new import_lib.Container();
-		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, O$1, k).fill(16711680);
+		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, E$1, D$1).fill(16711680);
 		this._quickstopCover.pivot.set(960, 960), this._quickstopCover.addChild(e), this._quickstopCover.interactive = !0, this._quickstopCover.onclick = () => {
-			this.emit(Ca.QUICKSTOP_CLICKED);
+			this.emit(wa.QUICKSTOP_CLICKED);
 		}, this._quickstopCover.ontap = () => {
-			this.emit(Ca.QUICKSTOP_CLICKED);
+			this.emit(wa.QUICKSTOP_CLICKED);
 		}, this.mainUI.insert(this._quickstopCover, "RESULTS"), this._quickstopCover.visible = !1;
 	}
 	setupSpinButton() {
@@ -108845,11 +108889,11 @@ var wa = (_SpinButtonView = class SpinButtonView extends hr {
 		return new GenericButton("SPIN_BUTTON.json", void 0, this.spineUtils, this.onSpinButtonClicked.bind(this));
 	}
 	onSpinButtonClicked() {
-		this.soundPlayer.play("buttonClick"), this.emit(Ca.SPIN_BUTTON_CLICKED);
+		this.soundPlayer.play("buttonClick"), this.emit(wa.SPIN_BUTTON_CLICKED);
 	}
-}, Ca = _SpinButtonView, _defineProperty(_SpinButtonView, "SPIN_BUTTON_CLICKED", "SpinButtonView::SPIN_BUTTON_CLICKED"), _defineProperty(_SpinButtonView, "QUICKSTOP_CLICKED", "SpinButtonView::QUICKSTOP_CLICKED"), _SpinButtonView);
-wa = Ca = __decorate$1([injectFromBase()], wa);
-var Ta = class SpinButtonModule extends vr {
+}, wa = _SpinButtonView, _defineProperty(_SpinButtonView, "SPIN_BUTTON_CLICKED", "SpinButtonView::SPIN_BUTTON_CLICKED"), _defineProperty(_SpinButtonView, "QUICKSTOP_CLICKED", "SpinButtonView::QUICKSTOP_CLICKED"), _SpinButtonView);
+Ta = wa = __decorate$1([injectFromBase()], Ta);
+var Ea = class SpinButtonModule extends vr {
 	init(e, t) {
 		super.init(e, t), this.view.hideQuickStop();
 	}
@@ -108875,7 +108919,7 @@ var Ta = class SpinButtonModule extends vr {
 		this.view.enableSpinButton();
 	}
 	setupEvents() {
-		super.setupEvents(), this.onView(wa.SPIN_BUTTON_CLICKED, this.onViewSpinButtonClicked), this.onView(wa.QUICKSTOP_CLICKED, this.onViewQuickstopClicked);
+		super.setupEvents(), this.onView(Ta.SPIN_BUTTON_CLICKED, this.onViewSpinButtonClicked), this.onView(Ta.QUICKSTOP_CLICKED, this.onViewQuickstopClicked);
 	}
 	isQuickStopAvailable() {
 		return this.gameData.clientConfig.quickStop || this.gameData.clientConfig.minSpinTime === 0;
@@ -108896,10 +108940,10 @@ var Ta = class SpinButtonModule extends vr {
 		e ? this.enableSpinButton() : this.disableSpinButton();
 	}
 };
-Ta = __decorate$1([injectFromBase()], Ta);
+Ea = __decorate$1([injectFromBase()], Ea);
 var BetButtonEvents = (_Class27 = class {}, _defineProperty(_Class27, "BET_BUTTON_CLICKED", "BetButtonEvents::BET_BUTTON_CLICKED"), _Class27);
-var Ea;
-var Da = (_BetButtonView = class BetButtonView extends hr {
+var Da;
+var Oa = (_BetButtonView = class BetButtonView extends hr {
 	constructor(..._args53) {
 		super(..._args53);
 		_defineProperty(this, "_betButton", void 0);
@@ -108936,19 +108980,19 @@ var Da = (_BetButtonView = class BetButtonView extends hr {
 		return new GenericButton("BET_BUTTON.json", void 0, this.spineUtils, this.onButtonClicked.bind(this));
 	}
 	onButtonClicked() {
-		this.emit(Ea.BUTTON_CLICKED);
+		this.emit(Da.BUTTON_CLICKED);
 	}
-}, Ea = _BetButtonView, _defineProperty(_BetButtonView, "BUTTON_CLICKED", "BetButtonView::BUTTON_CLICKED"), _BetButtonView);
-Da = Ea = __decorate$1([injectFromBase()], Da);
-var Oa = class BetButtonModule extends vr {
+}, Da = _BetButtonView, _defineProperty(_BetButtonView, "BUTTON_CLICKED", "BetButtonView::BUTTON_CLICKED"), _BetButtonView);
+Oa = Da = __decorate$1([injectFromBase()], Oa);
+var ka = class BetButtonModule extends vr {
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(Da.BUTTON_CLICKED, BetButtonEvents.BET_BUTTON_CLICKED);
+		super.setupEvents(), this.onViewEmitEvent(Oa.BUTTON_CLICKED, BetButtonEvents.BET_BUTTON_CLICKED);
 	}
 };
-Oa = __decorate$1([injectFromBase()], Oa);
+ka = __decorate$1([injectFromBase()], ka);
 var BetMenuEvents = (_Class28 = class {}, _defineProperty(_Class28, "BET_MENU_OPENED", "BetMenuEvents::BET_MENU_OPENED"), _defineProperty(_Class28, "BET_MENU_CLOSED", "BetMenuEvents::BET_MENU_CLOSED"), _defineProperty(_Class28, "BET_CHANGED", "BetMenuEvents::BET_CHANGED"), _defineProperty(_Class28, "BET_MENU_ACCEPT_CLICKED", "BetMenuEvents::BET_MENU_ACCEPT_CLICKED"), _defineProperty(_Class28, "BET_MENU_DECLINE_CLICKED", "BetMenuEvents::BET_MENU_DECLINE_CLICKED"), _Class28);
-var ka;
-var Aa = {
+var Aa;
+var ja = {
 	fill: 16777215,
 	fontSize: 40,
 	fontWeight: "bold",
@@ -108960,7 +109004,7 @@ var Aa = {
 		angle: 0
 	}
 };
-var ja = {
+var Ma = {
 	color: "#918e8e",
 	hoverColor: "#e4dcdf",
 	pressedColor: "#807879",
@@ -108969,14 +109013,14 @@ var ja = {
 	panelColor: "#222425",
 	panelBorderColor: "#3e3f40"
 };
-var Ma = {
-	fontColor: ja.textColor,
-	bgColor: ja.panelColor,
-	bgBorderColor: ja.panelBorderColor,
-	buttonColor: ja.color,
-	hoverButtonColor: ja.hoverColor,
-	pressedButtonColor: ja.pressedColor,
-	disabledButtonColor: ja.disabledColor,
+var Na = {
+	fontColor: Ma.textColor,
+	bgColor: Ma.panelColor,
+	bgBorderColor: Ma.panelBorderColor,
+	buttonColor: Ma.color,
+	hoverButtonColor: Ma.hoverColor,
+	pressedButtonColor: Ma.pressedColor,
+	disabledButtonColor: Ma.disabledColor,
 	width: 705,
 	radius: 20,
 	elementsMargin: 10,
@@ -108986,7 +109030,7 @@ var Ma = {
 	elementsWidth: 100,
 	elementsHeight: 100
 };
-var Na = (_BetMenuView = class BetMenuView extends q {
+var Pa = (_BetMenuView = class BetMenuView extends q {
 	constructor(..._args54) {
 		super(..._args54);
 		_defineProperty(this, "_currentBetIndex", -1);
@@ -109017,11 +109061,11 @@ var Na = (_BetMenuView = class BetMenuView extends q {
 		});
 	}
 	initButtons() {
-		let { fontColor: e, bgColor: t, bgBorderColor: n, elementsMargin: r, topPadding: i, leftPadding: o, rightPadding: s, radius: c } = Ma, l = [];
+		let { fontColor: e, bgColor: t, bgBorderColor: n, elementsMargin: r, topPadding: i, leftPadding: o, rightPadding: s, radius: c } = Na, l = [];
 		for (let t = 0; t < this._bets.length; t++) {
 			let n = new import_lib.Text({
 				text: this.currencyFormatter.formatCurrency(this._bets[t], !0),
-				style: _objectSpread2(_objectSpread2({}, Aa), {}, { fill: e })
+				style: _objectSpread2(_objectSpread2({}, ja), {}, { fill: e })
 			}), r = this.createFancyButton(n);
 			r.label = `Button${t}`, r.onPress.connect(() => {
 				this.resetAllButtons(), this.onBetClicked(t), r.button.enabled = !1, r.setState("disabled");
@@ -109032,14 +109076,14 @@ var Na = (_BetMenuView = class BetMenuView extends q {
 			width: 1
 		}), _ = this.createFancyButton(new import_lib.Text({
 			text: "✕",
-			style: _objectSpread2(_objectSpread2({}, Aa), {}, { fill: e })
+			style: _objectSpread2(_objectSpread2({}, ja), {}, { fill: e })
 		}));
 		_.onPress.connect(() => {
 			this.onDeclineClicked();
 		}), _.position.set(g.width / 2 - _.width, g.height / 2 - _.height / 2);
 		let v = this.createFancyButton(new import_lib.Text({
 			text: "✓",
-			style: _objectSpread2(_objectSpread2({}, Aa), {}, { fill: e })
+			style: _objectSpread2(_objectSpread2({}, ja), {}, { fill: e })
 		}));
 		v.onPress.connect(() => {
 			this.onAcceptClicked();
@@ -109052,7 +109096,7 @@ var Na = (_BetMenuView = class BetMenuView extends q {
 		}), g.addChild(this._buttonsList), this.container.addChild(g, v, _), g.position.set(-(g.width / 2), -(g.height / 2 + _.height / 2)), l.forEach((e) => this._buttonsList.addChild(e));
 	}
 	createFancyButton(e) {
-		let { buttonColor: t, hoverButtonColor: n, pressedButtonColor: r, disabledButtonColor: i, elementsWidth: o, elementsHeight: s, radius: c } = Ma, l = new FancyButton({
+		let { buttonColor: t, hoverButtonColor: n, pressedButtonColor: r, disabledButtonColor: i, elementsWidth: o, elementsHeight: s, radius: c } = Na, l = new FancyButton({
 			defaultView: new import_lib.Graphics().roundRect(0, 0, o, s, c).fill(t).roundRect(0, 8, o - 3, s - 3, c).stroke({
 				color: t,
 				width: 2
@@ -109078,11 +109122,11 @@ var Na = (_BetMenuView = class BetMenuView extends q {
 		}), l.anchor.set(0), l;
 	}
 	onAcceptClicked() {
-		this._newBetIndex !== -1 && this._newBetIndex !== this._currentBetIndex && (this._currentBetIndex = this._newBetIndex, this.emit(ka.BET_CHANGED, this._bets[this._currentBetIndex])), this._newBetIndex = -1, this.emit(ka.ACCEPT_CLICKED);
+		this._newBetIndex !== -1 && this._newBetIndex !== this._currentBetIndex && (this._currentBetIndex = this._newBetIndex, this.emit(Aa.BET_CHANGED, this._bets[this._currentBetIndex])), this._newBetIndex = -1, this.emit(Aa.ACCEPT_CLICKED);
 	}
 	onDeclineClicked() {
 		let e = this._buttonsList.getChildByLabel(`Button${this._currentBetIndex}`);
-		e && (this.resetAllButtons(), e.button.enabled = !1, e.setState("disabled")), this._newBetIndex = -1, this.emit(ka.DECLINE_CLICKED);
+		e && (this.resetAllButtons(), e.button.enabled = !1, e.setState("disabled")), this._newBetIndex = -1, this.emit(Aa.DECLINE_CLICKED);
 	}
 	onBetClicked(e) {
 		this._newBetIndex = e;
@@ -109090,11 +109134,11 @@ var Na = (_BetMenuView = class BetMenuView extends q {
 	getDefaultOptionsPerRow() {
 		return 6;
 	}
-}, ka = _BetMenuView, _defineProperty(_BetMenuView, "BET_CHANGED", "BetButtonView::BET_CHANGED"), _defineProperty(_BetMenuView, "ACCEPT_CLICKED", "BetButtonView::ACCEPT_CLICKED"), _defineProperty(_BetMenuView, "DECLINE_CLICKED", "BetButtonView::DECLINE_CLICKED"), _BetMenuView);
-Na = ka = __decorate$1([injectFromBase()], Na);
-var Pa = class BetMenuModule extends L {
+}, Aa = _BetMenuView, _defineProperty(_BetMenuView, "BET_CHANGED", "BetButtonView::BET_CHANGED"), _defineProperty(_BetMenuView, "ACCEPT_CLICKED", "BetButtonView::ACCEPT_CLICKED"), _defineProperty(_BetMenuView, "DECLINE_CLICKED", "BetButtonView::DECLINE_CLICKED"), _BetMenuView);
+Pa = Aa = __decorate$1([injectFromBase()], Pa);
+var Fa = class BetMenuModule extends I$1 {
 	setupEvents() {
-		super.setupEvents(), this.onView(Na.BET_CHANGED, this.onViewBetChanged), this.onView(Na.ACCEPT_CLICKED, this.onViewAcceptClicked), this.onView(Na.DECLINE_CLICKED, this.onViewDeclineClicked), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponseReceived), this.on(BetButtonEvents.BET_BUTTON_CLICKED, this.onBetButtonClicked);
+		super.setupEvents(), this.onView(Pa.BET_CHANGED, this.onViewBetChanged), this.onView(Pa.ACCEPT_CLICKED, this.onViewAcceptClicked), this.onView(Pa.DECLINE_CLICKED, this.onViewDeclineClicked), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitResponseReceived), this.on(BetButtonEvents.BET_BUTTON_CLICKED, this.onBetButtonClicked);
 	}
 	onBetButtonClicked() {
 		this.view.show(), this.emit(BetMenuEvents.BET_MENU_OPENED);
@@ -109112,18 +109156,18 @@ var Pa = class BetMenuModule extends L {
 		this.view.hide(), this.eventManager.emit(BetMenuEvents.BET_MENU_CLOSED), this.eventManager.emit(BetMenuEvents.BET_MENU_DECLINE_CLICKED);
 	}
 };
-Pa = __decorate$1([injectFromBase()], Pa);
-var Fa = /* @__PURE__ */ from_html("<span class=\"bet-sym svelte-15grg4q\"> </span>");
+Fa = __decorate$1([injectFromBase()], Fa);
 var Ia = /* @__PURE__ */ from_html("<span class=\"bet-sym svelte-15grg4q\"> </span>");
-var La = /* @__PURE__ */ from_html("<!><span class=\"bet-num\"> </span><!>", 1);
-var Ra = /* @__PURE__ */ from_html("<button> </button>");
-var za = /* @__PURE__ */ from_html("<div class=\"bet-overlay svelte-15grg4q\"><button class=\"bet-backdrop svelte-15grg4q\"></button> <div class=\"bet-card svelte-15grg4q\" role=\"dialog\" aria-modal=\"true\"><div class=\"bet-head svelte-15grg4q\"><div class=\"bet-title svelte-15grg4q\"><span class=\"bet-dot svelte-15grg4q\"></span> <h2 class=\"svelte-15grg4q\"> </h2></div> <button class=\"bet-close svelte-15grg4q\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1 1L13 13M13 1L1 13\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg></button></div> <div class=\"bet-amount svelte-15grg4q\"><!></div> <div class=\"bet-slider svelte-15grg4q\"><div role=\"slider\" tabindex=\"0\"><div class=\"bet-track-fill svelte-15grg4q\"></div> <span class=\"bet-thumb svelte-15grg4q\"></span></div> <div class=\"bet-rangelabels svelte-15grg4q\"><span> </span> <span> </span></div></div> <div class=\"bet-grid svelte-15grg4q\"></div> <div class=\"bet-controls svelte-15grg4q\"><button class=\"bet-step svelte-15grg4q\">−</button> <button class=\"bet-step svelte-15grg4q\">+</button> <span class=\"bet-controls-spacer svelte-15grg4q\"></span> <div class=\"bet-jumps svelte-15grg4q\"><button class=\"svelte-15grg4q\"> </button> <button class=\"svelte-15grg4q\"> </button> <button class=\"svelte-15grg4q\"> </button></div></div></div></div>");
-var Ba = {
+var La = /* @__PURE__ */ from_html("<span class=\"bet-sym svelte-15grg4q\"> </span>");
+var Ra = /* @__PURE__ */ from_html("<!><span class=\"bet-num\"> </span><!>", 1);
+var za = /* @__PURE__ */ from_html("<button> </button>");
+var Ba = /* @__PURE__ */ from_html("<div class=\"bet-overlay svelte-15grg4q\"><button class=\"bet-backdrop svelte-15grg4q\"></button> <div class=\"bet-card svelte-15grg4q\" role=\"dialog\" aria-modal=\"true\"><div class=\"bet-head svelte-15grg4q\"><div class=\"bet-title svelte-15grg4q\"><span class=\"bet-dot svelte-15grg4q\"></span> <h2 class=\"svelte-15grg4q\"> </h2></div> <button class=\"bet-close svelte-15grg4q\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" aria-hidden=\"true\"><path d=\"M1 1L13 13M13 1L1 13\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"></path></svg></button></div> <div class=\"bet-amount svelte-15grg4q\"><!></div> <div class=\"bet-slider svelte-15grg4q\"><div role=\"slider\" tabindex=\"0\"><div class=\"bet-track-fill svelte-15grg4q\"></div> <span class=\"bet-thumb svelte-15grg4q\"></span></div> <div class=\"bet-rangelabels svelte-15grg4q\"><span> </span> <span> </span></div></div> <div class=\"bet-grid svelte-15grg4q\"></div> <div class=\"bet-controls svelte-15grg4q\"><button class=\"bet-step svelte-15grg4q\">−</button> <button class=\"bet-step svelte-15grg4q\">+</button> <span class=\"bet-controls-spacer svelte-15grg4q\"></span> <div class=\"bet-jumps svelte-15grg4q\"><button class=\"svelte-15grg4q\"> </button> <button class=\"svelte-15grg4q\"> </button> <button class=\"svelte-15grg4q\"> </button></div></div></div></div>");
+var Va = {
 	hash: "svelte-15grg4q",
 	code: ".bet-overlay.svelte-15grg4q {--cream: #ffffff;--muted: #7a6a48;--accent: #caa23a;--accent-2: #f3d271;--accent-soft: rgba(202, 162, 58, 0.14);--accent-ring: rgba(202, 162, 58, 0.20);--accent-shadow: rgba(202, 162, 58, 0.45);--surface-a: #1c150e;--surface-b: #120d08;--fill: rgba(255, 255, 255, 0.03);--fill-strong: rgba(255, 255, 255, 0.08);position:fixed;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;font-family:'Geist', 'Inter', system-ui, -apple-system, sans-serif;color:var(--cream);user-select:none;-webkit-font-smoothing:antialiased;}.bet-overlay.svelte-15grg4q * {box-sizing:border-box;}\n\n	/* Transparent click-catcher: clicking outside the card closes the menu. */.bet-backdrop.svelte-15grg4q {position:absolute;inset:0;border:none;padding:0;background:transparent;cursor:pointer;}.bet-card.svelte-15grg4q {position:relative;z-index:1;width:min(600px, 92vw);max-height:92vh;overflow-y:auto;padding:24px 28px 26px;display:flex;flex-direction:column;gap:20px;border-radius:18px;background:linear-gradient(var(--surface-a) 0%, var(--surface-b) 100%);box-shadow:rgba(0, 0, 0, 0.5) 0 30px 60px 0,\n			rgba(255, 255, 255, 0.06) 0 1px 0 0 inset;}.bet-head.svelte-15grg4q {display:flex;align-items:center;justify-content:space-between;}.bet-title.svelte-15grg4q {display:flex;align-items:center;gap:10px;}.bet-dot.svelte-15grg4q {width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px 0 var(--accent);}.bet-title.svelte-15grg4q h2:where(.svelte-15grg4q) {margin:0;font-size:13px;font-weight:600;letter-spacing:0.32em;text-transform:uppercase;}.bet-close.svelte-15grg4q {display:flex;align-items:center;justify-content:center;width:32px;height:32px;border:none;border-radius:8px;background:var(--fill);color:rgba(255, 255, 255, 0.7);cursor:pointer;}.bet-close.svelte-15grg4q:hover {background:var(--fill-strong);color:var(--cream);}.bet-amount.svelte-15grg4q {text-align:center;font-size:64px;font-weight:600;line-height:1;letter-spacing:-0.02em;}.bet-sym.svelte-15grg4q {color:var(--accent);}.bet-slider.svelte-15grg4q {display:flex;flex-direction:column;gap:12px;}.bet-track.svelte-15grg4q {position:relative;height:28px;margin:0 11px;cursor:pointer;touch-action:none;outline:none;}.bet-track.svelte-15grg4q::before {content:'';position:absolute;left:0;right:0;top:50%;height:4px;transform:translateY(-50%);background:var(--fill-strong);border-radius:4px;pointer-events:none;}.bet-track-fill.svelte-15grg4q {position:absolute;left:0;top:50%;height:4px;transform:translateY(-50%);background:linear-gradient(90deg, var(--accent), var(--accent-2));border-radius:4px;pointer-events:none;}.bet-thumb.svelte-15grg4q {position:absolute;top:50%;width:20px;height:20px;border-radius:50%;background:var(--accent);transform:translate(-50%, -50%);box-shadow:var(--accent-ring) 0 0 0 4px,\n			var(--accent-shadow) 0 4px 12px 0;pointer-events:none;}.bet-track.svelte-15grg4q:focus-visible .bet-thumb:where(.svelte-15grg4q) {box-shadow:var(--accent-ring) 0 0 0 5px,\n			var(--accent-shadow) 0 4px 12px 0;}.bet-track.dragging.svelte-15grg4q .bet-thumb:where(.svelte-15grg4q) {transform:translate(-50%, -50%) scale(1.12);}.bet-rangelabels.svelte-15grg4q {display:flex;justify-content:space-between;font-size:11px;color:var(--muted);}.bet-grid.svelte-15grg4q {display:grid;grid-template-columns:repeat(6, 1fr);gap:8px;}.bet-cell.svelte-15grg4q {padding:12px 4px;border:none;border-radius:9px;background:var(--fill);color:var(--muted);font:inherit;font-size:13px;font-weight:500;cursor:pointer;}.bet-cell.svelte-15grg4q:hover {background:var(--fill-strong);color:var(--cream);}.bet-cell.active.svelte-15grg4q {background:var(--accent-soft);color:var(--cream);box-shadow:inset 0 0 0 1px var(--accent-shadow);}.bet-controls.svelte-15grg4q {display:flex;align-items:center;gap:10px;}.bet-step.svelte-15grg4q {width:44px;height:44px;border:none;border-radius:11px;background:var(--fill);color:var(--cream);font-size:22px;line-height:1;cursor:pointer;}.bet-step.svelte-15grg4q:hover:not(:disabled) {background:var(--fill-strong);}.bet-step.svelte-15grg4q:disabled {opacity:0.35;cursor:not-allowed;}.bet-controls-spacer.svelte-15grg4q {flex:1;}.bet-jumps.svelte-15grg4q {display:flex;gap:4px;}.bet-jumps.svelte-15grg4q button:where(.svelte-15grg4q) {min-width:52px;padding:8px 10px;border:none;border-radius:8px;background:transparent;color:var(--muted);font:inherit;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;}.bet-jumps.svelte-15grg4q button:where(.svelte-15grg4q):hover {background:var(--fill);color:var(--cream);}\n\n	@media (max-width: 520px) {.bet-amount.svelte-15grg4q {font-size:52px;}.bet-card.svelte-15grg4q {gap:16px;padding:20px 18px 22px;}.bet-grid.svelte-15grg4q {grid-template-columns:repeat(4, 1fr);}\n	}"
 };
 function BetMenu(e, t) {
-	push(t, !0), append_styles$1(e, Ba);
+	push(t, !0), append_styles$1(e, Va);
 	let n = /* @__PURE__ */ state(proxy([]));
 	let r = /* @__PURE__ */ state(0);
 	let i = /* @__PURE__ */ state(0);
@@ -109172,14 +109216,14 @@ function BetMenu(e, t) {
 	function onKeydown(e) {
 		e.key === "Escape" && close();
 	}
-	var f = za();
-	event("keydown", pn, onKeydown);
+	var f = Ba();
+	event("keydown", mn, onKeydown);
 	{
 		let money = (e, t = noop) => {
-			var n = La();
+			var n = Ra();
 			var r = first_child(n);
 			var consequent = (e) => {
-				var n = Fa(), r = child(n, !0);
+				var n = Ia(), r = child(n, !0);
 				reset(n), template_effect(() => set_text(r, t().pre)), append(e, n);
 			};
 			if_block(r, (e) => {
@@ -109190,7 +109234,7 @@ function BetMenu(e, t) {
 			reset(i);
 			var o = sibling(i);
 			var consequent_1 = (e) => {
-				var n = Ia(), r = child(n, !0);
+				var n = La(), r = child(n, !0);
 				reset(n), template_effect(() => set_text(r, t().post)), append(e, n);
 			};
 			if_block(o, (e) => {
@@ -109212,38 +109256,38 @@ function BetMenu(e, t) {
 		var S = child(x);
 		let e;
 		var C = child(S);
-		var w = sibling(C, 2);
+		var ee = sibling(C, 2);
 		reset(S), bind_this(S, (e) => set(a, e), () => get(a));
-		var T = sibling(S, 2);
-		var E = child(T);
-		var ee = child(E, !0);
-		reset(E);
-		var te = sibling(E, 2);
-		var ne = child(te, !0);
-		reset(te), reset(T), reset(x);
-		var re = sibling(x, 2);
-		each(re, 20, () => get(n), (e) => e, (e, n) => {
-			var i = Ra();
+		var w = sibling(S, 2);
+		var T = child(w);
+		var te = child(T, !0);
+		reset(T);
+		var ne = sibling(T, 2);
+		var re = child(ne, !0);
+		reset(ne), reset(w), reset(x);
+		var ie = sibling(x, 2);
+		each(ie, 20, () => get(n), (e) => e, (e, n) => {
+			var i = za();
 			let a;
 			var o = child(i, !0);
 			reset(i), template_effect((e) => {
 				a = set_class(i, 1, "bet-cell svelte-15grg4q", null, a, { active: n === get(r) }), set_text(o, e);
 			}, [() => t.host.formatMoney(n, !1)]), delegated("click", i, () => select(n)), append(e, i);
-		}), reset(re);
-		var ie = sibling(re, 2);
-		var ae = child(ie);
-		var D = sibling(ae, 2);
-		var oe = sibling(D, 4);
-		var se = child(oe);
-		var ce = child(se, !0);
-		reset(se);
-		var le = sibling(se, 2);
-		var O = child(le, !0);
+		}), reset(ie);
+		var ae = sibling(ie, 2);
+		var oe = child(ae);
+		var se = sibling(oe, 2);
+		var ce = sibling(se, 4);
+		var le = child(ce);
+		var ue = child(le, !0);
 		reset(le);
-		var k = sibling(le, 2);
-		var ue = child(k, !0);
-		reset(k), reset(oe), reset(ie), reset(m), reset(f), template_effect((t, n, i, a, d, f, m, h, g, _, b) => {
-			set_attribute(p, "aria-label", t), set_text(v, n), set_attribute(y, "aria-label", i), e = set_class(S, 1, "bet-track svelte-15grg4q", null, e, { dragging: get(o) }), set_attribute(S, "aria-label", a), set_attribute(S, "aria-valuemin", get(c)), set_attribute(S, "aria-valuemax", get(l)), set_attribute(S, "aria-valuenow", get(r)), set_style(C, `width:${get(s) / get(u) * 100}%`), set_style(w, `left:${get(s) / get(u) * 100}%`), set_text(ee, d), set_text(ne, f), set_attribute(ae, "aria-label", m), ae.disabled = get(s) <= 0, set_attribute(D, "aria-label", h), D.disabled = get(s) >= get(u), set_text(ce, g), set_text(O, _), set_text(ue, b);
+		var de = sibling(le, 2);
+		var E = child(de, !0);
+		reset(de);
+		var D = sibling(de, 2);
+		var fe = child(D, !0);
+		reset(D), reset(ce), reset(ae), reset(m), reset(f), template_effect((t, n, i, a, d, f, m, h, g, _, b) => {
+			set_attribute(p, "aria-label", t), set_text(v, n), set_attribute(y, "aria-label", i), e = set_class(S, 1, "bet-track svelte-15grg4q", null, e, { dragging: get(o) }), set_attribute(S, "aria-label", a), set_attribute(S, "aria-valuemin", get(c)), set_attribute(S, "aria-valuemax", get(l)), set_attribute(S, "aria-valuenow", get(r)), set_style(C, `width:${get(s) / get(u) * 100}%`), set_style(ee, `left:${get(s) / get(u) * 100}%`), set_text(te, d), set_text(re, f), set_attribute(oe, "aria-label", m), oe.disabled = get(s) <= 0, set_attribute(se, "aria-label", h), se.disabled = get(s) >= get(u), set_text(ue, g), set_text(E, _), set_text(fe, b);
 		}, [
 			() => t.host.t("bet.close", "Close"),
 			() => t.host.t("bet.title", "Bet"),
@@ -109256,7 +109300,7 @@ function BetMenu(e, t) {
 			() => t.host.t("bet.min", "min"),
 			() => t.host.formatMoney(get(i), !1),
 			() => t.host.t("bet.max", "max")
-		]), delegated("click", p, close), delegated("click", y, close), delegated("pointerdown", S, onTrackPointerDown), delegated("pointermove", S, onTrackPointerMove), delegated("pointerup", S, onTrackPointerUp), delegated("keydown", S, onTrackKeydown), delegated("click", ae, () => step(-1)), delegated("click", D, () => step(1)), delegated("click", se, () => select(get(c))), delegated("click", le, () => select(get(i))), delegated("click", k, () => select(get(l)));
+		]), delegated("click", p, close), delegated("click", y, close), delegated("pointerdown", S, onTrackPointerDown), delegated("pointermove", S, onTrackPointerMove), delegated("pointerup", S, onTrackPointerUp), delegated("keydown", S, onTrackKeydown), delegated("click", oe, () => step(-1)), delegated("click", se, () => step(1)), delegated("click", le, () => select(get(c))), delegated("click", de, () => select(get(i))), delegated("click", D, () => select(get(l)));
 	}
 	append(e, f), pop();
 }
@@ -109267,7 +109311,7 @@ delegate([
 	"pointerup",
 	"keydown"
 ]);
-var Va = class BetSvelteMenuModule extends Gn {
+var Ha = class BetSvelteMenuModule extends Gn {
 	afterInit() {
 		super.afterInit(), this._host.mount(BetMenu, { host: this }, "BetSvelteMenuRoot");
 	}
@@ -109300,7 +109344,7 @@ var Va = class BetSvelteMenuModule extends Gn {
 		this.open(BetMenuEvents.BET_MENU_OPENED);
 	}
 };
-Va = __decorate$1([injectFromBase()], Va);
+Ha = __decorate$1([injectFromBase()], Ha);
 var SpinningReelSymbol = class extends import_lib.Container {
 	constructor(e, t) {
 		var _super18 = (..._args55) => (super(..._args55), _defineProperty(this, "_reelIndex", -1), _defineProperty(this, "_index", void 0), _defineProperty(this, "_symbolType", void 0), _defineProperty(this, "_symbolContainer", void 0), _defineProperty(this, "_animationContainer", void 0), _defineProperty(this, "_overReelsContainer", void 0), _defineProperty(this, "_normalContainer", void 0), _defineProperty(this, "_spineUtils", void 0), _defineProperty(this, "_timerUtils", void 0), _defineProperty(this, "_assets", void 0), _defineProperty(this, "_updateManager", void 0), _defineProperty(this, "_soundPlayer", void 0), _defineProperty(this, "_positionOnReel", void 0), _defineProperty(this, "_size", {
@@ -109360,7 +109404,7 @@ var SpinningReelSymbol = class extends import_lib.Container {
 		this._size = e;
 	}
 };
-var Ha = (_SpineReelSymbol = class SpineReelSymbol extends SpinningReelSymbol {
+var Ua = (_SpineReelSymbol = class SpineReelSymbol extends SpinningReelSymbol {
 	constructor(..._args56) {
 		super(..._args56);
 		_defineProperty(this, "_spineSymbol", void 0);
@@ -109425,15 +109469,15 @@ var Ha = (_SpineReelSymbol = class SpineReelSymbol extends SpinningReelSymbol {
 	}
 	getEnterWinAnimationName(e) {
 		switch (e) {
-			case j.ANTE: return SpineReelSymbol.winEnterAnimations.WIN_ANTE;
-			case j.SMALL: return SpineReelSymbol.winEnterAnimations.WIN_ENTER_SMALL;
-			case j.NICE: return SpineReelSymbol.winEnterAnimations.WIN_ENTER;
+			case k.ANTE: return SpineReelSymbol.winEnterAnimations.WIN_ANTE;
+			case k.SMALL: return SpineReelSymbol.winEnterAnimations.WIN_ENTER_SMALL;
+			case k.NICE: return SpineReelSymbol.winEnterAnimations.WIN_ENTER;
 			default: return SpineReelSymbol.winEnterAnimations.WIN_ENTER_LARGE;
 		}
 	}
 	getWinIdleAnimationName(e) {
 		switch (e) {
-			case j.ANTE: return "IDLE";
+			case k.ANTE: return "IDLE";
 			default: return "WIN_IDLE";
 		}
 	}
@@ -109530,7 +109574,7 @@ var Ha = (_SpineReelSymbol = class SpineReelSymbol extends SpinningReelSymbol {
 	DARKEN_EXIT: "DARKEN_EXIT",
 	DARKEN_TOGGLE: "DARKEN_TOGGLE"
 }), _defineProperty(_SpineReelSymbol, "specialSymbols", void 0), _SpineReelSymbol);
-var Ua = (_SpinningReelView = class SpinningReelView extends UpdateManager {
+var Wa = (_SpinningReelView = class SpinningReelView extends UpdateManager {
 	constructor(e, t, n, r, i, a) {
 		var _super19 = (..._args57) => (super(..._args57), _defineProperty(this, "_symbols", void 0), _defineProperty(this, "_offsets", void 0), _defineProperty(this, "_strip", void 0), _defineProperty(this, "_isSpinning", !1), _defineProperty(this, "_isExpectedToStop", !1), _defineProperty(this, "_hasNearWin", !1), _defineProperty(this, "_currentPosition", void 0), _defineProperty(this, "_stopPosition", void 0), _defineProperty(this, "_symbolsLeftToStop", void 0), _defineProperty(this, "_finalSymbolsLeftToDisappear", void 0), _defineProperty(this, "_movedOffset", 0), _defineProperty(this, "_onReelStopping", void 0), _defineProperty(this, "_onReelStopped", void 0), _defineProperty(this, "_onReelAnimationFinished", void 0), _defineProperty(this, "_onReelPerceivedStop", void 0), _defineProperty(this, "_container", void 0), _defineProperty(this, "_animationContainer", void 0), _defineProperty(this, "_overReelsContainer", void 0), _defineProperty(this, "_reelIndex", void 0), _defineProperty(this, "_resources", void 0), _defineProperty(this, "_spineUtils", void 0), _defineProperty(this, "_timerUtils", void 0), _defineProperty(this, "_soundPlayer", void 0), _defineProperty(this, "_device", void 0), _defineProperty(this, "_currentNearWinSpeed", 2), _defineProperty(this, "_lastSymbolStopTween", void 0), _defineProperty(this, "_nearWinStopTween", void 0), _defineProperty(this, "_currentNearWinDuration", 0), _defineProperty(this, "_isUsingSuperSpeed", !1), _defineProperty(this, "_getConfigValue", void 0), this);
 		_super19(), this._symbols = [], this._container = n, this._animationContainer = r, this._overReelsContainer = i, this._currentPosition = t, this._reelIndex = e, this._offsets = a;
@@ -109745,7 +109789,7 @@ var Ua = (_SpinningReelView = class SpinningReelView extends UpdateManager {
 		}
 	}
 	createReelSymbol(e) {
-		return new Ha(e);
+		return new Ua(e);
 	}
 	makeSizedSymbol(e, t) {
 		throw Error("ReelView::makeSizedSymbol must be overriden");
@@ -109884,7 +109928,7 @@ var Ua = (_SpinningReelView = class SpinningReelView extends UpdateManager {
 }, _defineProperty(_SpinningReelView, "FINAL_STOP_TWEEN_DURATION", 300), _defineProperty(_SpinningReelView, "REEL_SPEED_MULTIPLIER", 2), _defineProperty(_SpinningReelView, "Y_ADDITIONAL_SYMBOLS_OFFSET", -2), _SpinningReelView);
 var SpinningReelsEvents = (_Class29 = class {}, _defineProperty(_Class29, "WIN_PRESENTATION_FINISHED", "SpinningReelsEvents::WIN_PRESENTATION_FINISHED"), _defineProperty(_Class29, "REEL_STOPPED", "SpinningReelsEvents::REEL_STOPPED"), _defineProperty(_Class29, "ALL_REELS_STOPPED", "SpinningReelsEvents::ALL_REELS_STOPPED"), _defineProperty(_Class29, "ALL_REEL_ANIMATIONS_FINISHED", "SpinningReelsEvents::ALL_REEL_ANIMATIONS_FINISHED"), _Class29);
 var Q$1;
-var Wa = (_SpinningReelsView = class SpinningReelsView extends q {
+var Ga = (_SpinningReelsView = class SpinningReelsView extends q {
 	constructor(..._args58) {
 		super(..._args58);
 		_defineProperty(this, "_stopPositions", []);
@@ -109972,7 +110016,7 @@ var Wa = (_SpinningReelsView = class SpinningReelsView extends q {
 		_defineProperty(this, "_lastWinningPositions", void 0);
 	}
 	init() {
-		super.init(), Y$1.initializeFromLayout(this.mainUI.layout), Y$1.setReelsOffset(I$1.LANDSCAPE, this.mainUI.layout.getAbsolutePosition("REELS", I$1.LANDSCAPE)), Y$1.setReelsOffset(I$1.PORTRAIT, this.mainUI.layout.getAbsolutePosition("REELS", I$1.PORTRAIT)), this.initLayers();
+		super.init(), Y$1.initializeFromLayout(this.mainUI.layout), Y$1.setReelsOffset(F.LANDSCAPE, this.mainUI.layout.getAbsolutePosition("REELS", F.LANDSCAPE)), Y$1.setReelsOffset(F.PORTRAIT, this.mainUI.layout.getAbsolutePosition("REELS", F.PORTRAIT)), this.initLayers();
 	}
 	setSpinningSpeedToMax() {
 		for (let e of this._reels) e.setSpinningSpeedToMax();
@@ -110138,7 +110182,7 @@ var Wa = (_SpinningReelsView = class SpinningReelsView extends q {
 		this._reels[this.getTotalReels() - 1].onReelStopped = this.onLastReelStopped.bind(this), this._reels[this.getTotalReels() - 1].onReelAnimationFinished = this.onLastReelAnimationFinished.bind(this);
 	}
 	createReel(e, t, n, r, i, a) {
-		return new Ua(e, t, n, r, i, a);
+		return new Wa(e, t, n, r, i, a);
 	}
 	onReelStopping(e) {
 		this.emit(Q$1.REEL_STOPPING_CALLBACK, e);
@@ -110201,7 +110245,7 @@ var Wa = (_SpinningReelsView = class SpinningReelsView extends q {
 		}
 	}
 }, Q$1 = _SpinningReelsView, _defineProperty(_SpinningReelsView, "REEL_STOPPING_CALLBACK", "SpinningReelsView::REEL_STOPPING_CALLBACK"), _defineProperty(_SpinningReelsView, "REEL_STOPPED", "SpinningReelsView::REEL_STOPPED"), _defineProperty(_SpinningReelsView, "ALL_REELS_STOPPED", "SpinningReelsView::ALL_REELS_STOPPED"), _defineProperty(_SpinningReelsView, "REEL_ANIMATION_FINISHED", "SpinningReelsView::REEL_ANIMATION_FINISHED"), _defineProperty(_SpinningReelsView, "ALL_REEL_ANIMATIONS_FINISHED", "SpinningReelsView::ALL_REEL_ANIMATIONS_FINISHED"), _defineProperty(_SpinningReelsView, "REELS_FADING_OUT_FINISHED", "SpinningReelsView::REELS_FADING_OUT_FINISHED"), _defineProperty(_SpinningReelsView, "REELS_FADING_OUT_STARTED", "SpinningReelsView::REELS_FADING_OUT_STARTED"), _defineProperty(_SpinningReelsView, "REELS_FADING_IN_FINISHED", "SpinningReelsView::REELS_FADING_IN_FINISHED"), _defineProperty(_SpinningReelsView, "REELS_FADING_IN_STARTED", "SpinningReelsView::REELS_FADING_IN_STARTED"), _defineProperty(_SpinningReelsView, "REEL_PERCEIVED_STOP", "SpinningReelsView::REEL_PERCEIVED_STOP"), _defineProperty(_SpinningReelsView, "FADING_TIMER", 500), _SpinningReelsView);
-Wa = Q$1 = __decorate$1([injectFromBase()], Wa);
+Ga = Q$1 = __decorate$1([injectFromBase()], Ga);
 var SpinRegulationHandler = class {
 	constructor() {
 		_defineProperty(this, "_spinTimeRegulation", 0);
@@ -110218,15 +110262,15 @@ var SpinRegulationHandler = class {
 		return this._beforeStoppingTime = performance.now() - this._timestamp, this._beforeStoppingTime;
 	}
 	setupSpinDelayConfigForRegulationSpinTime(e) {
-		let t = e.reduce((e, t) => e + t, 0), n = this._spinTimeRegulation * 1e3 - this._beforeStoppingTime - Ua.FINAL_STOP_TWEEN_DURATION, r = t / Math.max(10, n);
+		let t = e.reduce((e, t) => e + t, 0), n = this._spinTimeRegulation * 1e3 - this._beforeStoppingTime - Wa.FINAL_STOP_TWEEN_DURATION, r = t / Math.max(10, n);
 		return r = Math.min(3, r), e.map((e) => e / r);
 	}
 	setupSpinDelayConfigForNonRegulationSpinTime(e, t) {
-		let n = e.reduce((e, t) => e + t, 0), r = t - this._beforeStoppingTime - Ua.FINAL_STOP_TWEEN_DURATION, i = n / Math.max(10, r);
+		let n = e.reduce((e, t) => e + t, 0), r = t - this._beforeStoppingTime - Wa.FINAL_STOP_TWEEN_DURATION, i = n / Math.max(10, r);
 		return i = Math.min(3, i), e.map((e) => e / i);
 	}
 };
-var Ga = class SpinningReelsModule extends L {
+var Ka = class SpinningReelsModule extends I$1 {
 	constructor(..._args59) {
 		super(..._args59);
 		_defineProperty(this, "_isAllAnimationsFinished", !1);
@@ -110260,10 +110304,10 @@ var Ga = class SpinningReelsModule extends L {
 		this.view.playExitWinAnimation();
 	}
 	playWinBeforeBigWin() {
-		this.view.playInitialWinPresentation(this.gameData.getCurrentSpinRound().winnings, M$1.getWinSize(this.gameData.getSpinWin(), this.gameData));
+		this.view.playInitialWinPresentation(this.gameData.getCurrentSpinRound().winnings, A.getWinSize(this.gameData.getSpinWin(), this.gameData));
 	}
 	playWin() {
-		this.view.playInitialWinPresentation(this.gameData.getCurrentSpinRound().winnings, M$1.getWinSize(this.gameData.getSpinWin(), this.gameData));
+		this.view.playInitialWinPresentation(this.gameData.getCurrentSpinRound().winnings, A.getWinSize(this.gameData.getSpinWin(), this.gameData));
 	}
 	playFreeSpinsSymbolsIntro() {
 		var _this23 = this;
@@ -110285,7 +110329,7 @@ var Ga = class SpinningReelsModule extends L {
 	}
 	setupCertificationSettings() {}
 	setupEvents() {
-		super.setupEvents(), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitReceived), this.on(SpinButtonEvents.QUICKSTOP_PRESSED, this.onTryinToQuickStop), this.on(GameControllerEvents.SPIN_RECEIVED, this.onSpinResponseReceived), this.on(GameControllerEvents.FREESPIN_RECEIVED, this.onSpinResponseReceived), this.on(BigWinEvents.FINISHED, this.onBigWinAnimationFinished), this.on(WinAmountPresentationEvents.PLAYING_INDIVIDUAL_WIN_FOR_LINE, this.onPlayingIndividualWinForLine), this.on(BetMenuEvents.BET_CHANGED, this.onBetValueChanged), this.onView(Wa.REEL_STOPPED, this.onReelStopped), this.onView(Wa.ALL_REELS_STOPPED, this.onAllReelsStoppedCallback), this.onView(Wa.ALL_REEL_ANIMATIONS_FINISHED, this.onAllReelAnimationsFinishedCallback), this.onView(Wa.REEL_STOPPING_CALLBACK, this.onReelStoppingCallback), this.on(FreeSpinsScreensEvents.FREE_SPINS_INTRO_STARTED, this.onFreeSpinsIntroStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_INTRO_FINISHED, this.onFreeSpinsIntroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_RESTORE_INTRO_STARTED, this.onFreeSpinsRestoreIntroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_STARTED, this.onFreeSpinsOutroStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_FINISHED, this.onFreeSpinsOutroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_CONTINUE_CLICKED, this.onFreeSpinsOutroContinueClicked), this.onViewEmitEvent(Wa.REELS_FADING_OUT_FINISHED, ReelsEvents.REELS_FADING_OUT_FINISHED), this.onViewEmitEvent(Wa.REELS_FADING_OUT_STARTED, ReelsEvents.REELS_FADING_OUT_STARTED), this.onViewEmitEvent(Wa.REELS_FADING_IN_FINISHED, ReelsEvents.REELS_FADING_IN_FINISHED), this.onViewEmitEvent(Wa.REELS_FADING_IN_STARTED, ReelsEvents.REELS_FADING_IN_STARTED), this.onViewEmitEvent(Wa.REEL_PERCEIVED_STOP, ReelsEvents.REEL_PERCEIVED_STOP), this.on(StartScreenEvents.EXIT_FINISHED, this.onStartScreenExitFinished), this.on(QuickPlayButtonEvents.QUICK_PLAY_BUTTON_CLICKED, this.onQuickPlaySettingChanged);
+		super.setupEvents(), this.on(GameControllerEvents.INIT_RECEIVED, this.onInitReceived), this.on(SpinButtonEvents.QUICKSTOP_PRESSED, this.onTryinToQuickStop), this.on(GameControllerEvents.SPIN_RECEIVED, this.onSpinResponseReceived), this.on(GameControllerEvents.FREESPIN_RECEIVED, this.onSpinResponseReceived), this.on(BigWinEvents.FINISHED, this.onBigWinAnimationFinished), this.on(WinAmountPresentationEvents.PLAYING_INDIVIDUAL_WIN_FOR_LINE, this.onPlayingIndividualWinForLine), this.on(BetMenuEvents.BET_CHANGED, this.onBetValueChanged), this.onView(Ga.REEL_STOPPED, this.onReelStopped), this.onView(Ga.ALL_REELS_STOPPED, this.onAllReelsStoppedCallback), this.onView(Ga.ALL_REEL_ANIMATIONS_FINISHED, this.onAllReelAnimationsFinishedCallback), this.onView(Ga.REEL_STOPPING_CALLBACK, this.onReelStoppingCallback), this.on(FreeSpinsScreensEvents.FREE_SPINS_INTRO_STARTED, this.onFreeSpinsIntroStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_INTRO_FINISHED, this.onFreeSpinsIntroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_RESTORE_INTRO_STARTED, this.onFreeSpinsRestoreIntroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_STARTED, this.onFreeSpinsOutroStarted), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_FINISHED, this.onFreeSpinsOutroFinished), this.on(FreeSpinsScreensEvents.FREE_SPINS_OUTRO_CONTINUE_CLICKED, this.onFreeSpinsOutroContinueClicked), this.onViewEmitEvent(Ga.REELS_FADING_OUT_FINISHED, ReelsEvents.REELS_FADING_OUT_FINISHED), this.onViewEmitEvent(Ga.REELS_FADING_OUT_STARTED, ReelsEvents.REELS_FADING_OUT_STARTED), this.onViewEmitEvent(Ga.REELS_FADING_IN_FINISHED, ReelsEvents.REELS_FADING_IN_FINISHED), this.onViewEmitEvent(Ga.REELS_FADING_IN_STARTED, ReelsEvents.REELS_FADING_IN_STARTED), this.onViewEmitEvent(Ga.REEL_PERCEIVED_STOP, ReelsEvents.REEL_PERCEIVED_STOP), this.on(StartScreenEvents.EXIT_FINISHED, this.onStartScreenExitFinished), this.on(QuickPlayButtonEvents.QUICK_PLAY_BUTTON_CLICKED, this.onQuickPlaySettingChanged);
 	}
 	onInitReceived() {
 		this.view.reelStrips = this.gameData.currentReelset.symbols, this.view.setupReelStrip(), this.shouldRestoreReels() ? this.view.setRestoresSymbols(this.gameData.currentRoundSymbols) : this.view.setRestoresSymbols(this.gameData.initialReels);
@@ -110318,7 +110362,7 @@ var Ga = class SpinningReelsModule extends L {
 		this.gameData.currentReelset && (this.view.reelStrips = this.gameData.currentReelset.symbols);
 	}
 	onQuickPlaySettingChanged() {
-		this.gameData.settings.fastPlayMode === Oe$1.SUPER ? this.view.setSpinningSpeedToMax() : this.view.setSpinningSpeedToNormal();
+		this.gameData.settings.fastPlayMode === Ae$1.SUPER ? this.view.setSpinningSpeedToMax() : this.view.setSpinningSpeedToNormal();
 	}
 	onStartScreenExitFinished() {
 		this.view.fadeInSymbols();
@@ -110333,7 +110377,7 @@ var Ga = class SpinningReelsModule extends L {
 		return this.hasFastPlay() ? this.getConfigValue("spinningReels.timeBeforeStoppingFastPlay", 200) : this.getConfigValue("spinningReels.timeBeforeStopping", 500);
 	}
 	tryInitializeStoppingState() {
-		this.canInitializeStopping() && (this.gameData.settings.fastPlayMode === Oe$1.OFF ? this.startSequentialStopping() : this.startQuickStopping());
+		this.canInitializeStopping() && (this.gameData.settings.fastPlayMode === Ae$1.OFF ? this.startSequentialStopping() : this.startQuickStopping());
 	}
 	startQuickStopping() {
 		this.clearStoppingTimer(), this.timeUtils.createTimer(this.onTimedQuickStop.bind(this), this.getSpinQuickStopDelay());
@@ -110422,23 +110466,23 @@ var Ga = class SpinningReelsModule extends L {
 		return this.getConfigValue("spinningReels.bonusNearWinTime", 2100);
 	}
 };
-Ga = __decorate$1([injectFromBase()], Ga);
-var Ka = {
+Ka = __decorate$1([injectFromBase()], Ka);
+var qa = {
 	fontFamily: "Poppins Bold",
 	fontSize: 30,
 	fill: "#FFCC00"
 };
-var qa = {
+var Ja = {
 	fontFamily: "Poppins Regular",
 	fontSize: 24,
 	fill: "#C3C3C3"
 };
-var Ja = {
+var Ya = {
 	fontFamily: "Poppins SemiBold",
 	fontSize: 20,
 	fill: "#B72838"
 };
-var Ya = (_StartScreen = class StartScreen {
+var Xa = (_StartScreen = class StartScreen {
 	constructor(e, t, n, _r5, i) {
 		_defineProperty(this, "_eventManager", void 0);
 		_defineProperty(this, "_spineUtils", void 0);
@@ -110485,21 +110529,21 @@ var Ya = (_StartScreen = class StartScreen {
 	createScreen() {
 		this._continueBtn = new YellowButton(this._spineUtils, "CONTINUE", "SPLASH", this.onContinue.bind(this)), this._continueBtn.btn.enable(), this._dontShowNextTimeTxt = new import_lib.Text({
 			text: "Don't show next time",
-			style: new import_lib.TextStyle(qa)
+			style: new import_lib.TextStyle(Ja)
 		}), this._page1Content = new import_lib.Container(), this._page2Content = new import_lib.Container(), this._page3Content = new import_lib.Container();
 		let e = new import_lib.Text({
 			text: "tabula rasa 1",
-			style: new import_lib.TextStyle(Si)
+			style: new import_lib.TextStyle(Ci)
 		});
 		e.anchor.set(.5);
 		let t = new import_lib.Text({
 			text: "tabula rasa 2",
-			style: new import_lib.TextStyle(yi)
+			style: new import_lib.TextStyle(bi)
 		});
 		t.anchor.set(.5);
 		let n = new import_lib.Text({
 			text: "tabula rasa but in red",
-			style: new import_lib.TextStyle(Ja)
+			style: new import_lib.TextStyle(Ya)
 		});
 		n.anchor.set(.5), this._page1Content.addChild(e), this._page2Content.addChild(t), this._page3Content.addChild(n);
 		for (let e = 0; e < 5; e++) {
@@ -110508,10 +110552,10 @@ var Ya = (_StartScreen = class StartScreen {
 		}
 		this._headerText = new import_lib.Text({
 			text: "PAGE 1",
-			style: new import_lib.TextStyle(Ka)
+			style: new import_lib.TextStyle(qa)
 		}), this._headerText.anchor.set(.5), this._nextHeaderText = new import_lib.Text({
 			text: "Next Header",
-			style: new import_lib.TextStyle(Ka)
+			style: new import_lib.TextStyle(qa)
 		}), this._nextHeaderText.anchor.set(.5), this._allPages.push(this._page1Content, this._page2Content, this._page3Content), this._currentPage = this._allPages[0], this._arrowLeft = new GenericButton("ARROW_BUTTON.json", void 0, this._spineUtils, this.onArrowLeftClicked.bind(this)), this._arrowRight = new GenericButton("ARROW_BUTTON.json", void 0, this._spineUtils, this.onArrowRightClicked.bind(this)), this._background = new import_lib.Container(), this._spineUtils.startSpineAnimationCreation("START_SCREEN_BACKGROUND.json", "IDLE", !0).container(this._background).createAndStart(), this._container.addChild(this._background), this._screen = this._spineUtils.startSpineAnimationCreation("START_SCREEN.json", "IDLE", !0).skinName("LANDSCAPE").createAndStart(), this._spineUtils.addSlotObject(this._screen, "YELLOW_BUTTON_STARTSCRN", this._preloader), this._spineUtils.addSlotObject(this._screen, "CHECKBOX_TEXT", this._dontShowNextTimeTxt), this._dontShowNextTimeTxt.anchor.set(0, .5), this._spineUtils.addSlotObject(this._screen, "CURRENT_HEADER", this._headerText), this._spineUtils.addSlotObject(this._screen, "NEXT_HEADER", this._nextHeaderText), this._spineUtils.addSlotObject(this._screen, "ARROW_BUTTON2", this._arrowLeft.button), this._spineUtils.addSlotObject(this._screen, "ARROW_BUTTON", this._arrowRight.button), this._spineUtils.addSlotObject(this._screen, "CURRENT_PAGE", this._currentPage);
 		for (let e = 0; e < 5; e++) this._spineUtils.addSlotObject(this._screen, `PAGE_INDICATOR_${e + 1}`, this._pageIndicators[e].spine);
 	}
@@ -110542,8 +110586,8 @@ var Ya = (_StartScreen = class StartScreen {
 		this._arrowRight.button.enable(), this._arrowLeft.button.enable();
 	}
 }, _defineProperty(_StartScreen, "BASIC_RATIO", .5625), _StartScreen);
-var Xa;
-var Za = (_WinAmountPresentationView = class WinAmountPresentationView extends q {
+var Za;
+var Qa = (_WinAmountPresentationView = class WinAmountPresentationView extends q {
 	constructor(..._args60) {
 		super(..._args60);
 		_defineProperty(this, "_meter", void 0);
@@ -110575,7 +110619,7 @@ var Za = (_WinAmountPresentationView = class WinAmountPresentationView extends q
 		let a = new import_lib.Container();
 		if (a.addChild(this._currentWinNumbers), this.spineUtils.replaceSlotAttachment(this._currentWinNumberAnimation, "NUMBER", a), this._isCounting) {
 			let e = this.currencyFormatter.formatCurrency(0, !1);
-			this._currentWinNumbers.showNumber(e), this.emit(Xa.COUNTUP_ANIMATION_STARTED);
+			this._currentWinNumbers.showNumber(e), this.emit(Za.COUNTUP_ANIMATION_STARTED);
 		} else {
 			let e = this.currencyFormatter.formatCurrency(this._currentFinalNumber, !1);
 			this._currentWinNumbers.showNumber(e), this._meter.snapToFinalValue(), this._currentScalingUpdateTimer = this.timeUtils.createRepeatingTimer(() => {
@@ -110593,8 +110637,8 @@ var Za = (_WinAmountPresentationView = class WinAmountPresentationView extends q
 				var _this$_meter2;
 				this._currentWinNumberAnimation = this.makeWinNumberEndAnimation();
 				let e = new import_lib.Container();
-				e.addChild(this._currentWinNumbers), this.spineUtils.replaceSlotAttachment(this._currentWinNumberAnimation, "NUMBER", e), (_this$_meter2 = this._meter) === null || _this$_meter2 === void 0 || _this$_meter2.forceUpdate(), this.emit(Xa.COUNTUP_ANIMATION_FINISHED);
-			} else this._currentWinNumberAnimation = null, this.emit(Xa.COUNTUP_ANIMATION_FINISHED), this.emit(Xa.WIN_ANIMATION_EXIT_FINISHED);
+				e.addChild(this._currentWinNumbers), this.spineUtils.replaceSlotAttachment(this._currentWinNumberAnimation, "NUMBER", e), (_this$_meter2 = this._meter) === null || _this$_meter2 === void 0 || _this$_meter2.forceUpdate(), this.emit(Za.COUNTUP_ANIMATION_FINISHED);
+			} else this._currentWinNumberAnimation = null, this.emit(Za.COUNTUP_ANIMATION_FINISHED), this.emit(Za.WIN_ANIMATION_EXIT_FINISHED);
 			this.killWinPresentationCounting();
 		}
 	}
@@ -110611,7 +110655,7 @@ var Za = (_WinAmountPresentationView = class WinAmountPresentationView extends q
 		return this.spineUtils.getAnimationDuration("WIN_NUMBERS.json", e, "ms");
 	}
 	shouldMakeWinNumbersEndAnimation() {
-		return this._currentWinType >= j.ANTE;
+		return this._currentWinType >= k.ANTE;
 	}
 	addExtraToWinNumbers(e) {}
 	makeWinNumberAnimation() {
@@ -110620,7 +110664,7 @@ var Za = (_WinAmountPresentationView = class WinAmountPresentationView extends q
 			this.onStartAnimationFinished();
 		}, this.getWinStartFinished("ANTE_WIN")), e = this.spineUtils.startSpineAnimationCreation("WIN_NUMBERS.json", "ANTE_WIN", !1).skinName(this.getCurrentWinAnimationSkin(this._currentWinType)).container(this._countupLayer).onComplete(() => {
 			this.disableInput(), this.emitWinNumberShownToPlayer();
-		}).createAndStart()) : e = this._currentWinType === j.SMALL ? this.spineUtils.startSpineAnimationCreation("WIN_NUMBERS.json", "START", !1).skinName(this.getCurrentWinAnimationSkin(this._currentWinType)).chainIdleAnimation("IDLE").container(this._countupLayer).onComplete(() => {
+		}).createAndStart()) : e = this._currentWinType === k.SMALL ? this.spineUtils.startSpineAnimationCreation("WIN_NUMBERS.json", "START", !1).skinName(this.getCurrentWinAnimationSkin(this._currentWinType)).chainIdleAnimation("IDLE").container(this._countupLayer).onComplete(() => {
 			this.emitWinNumberBounceFinished(), this.timeUtils.createTimer(() => {
 				this.emitWinNumberShownToPlayer();
 			}, 400);
@@ -110632,27 +110676,27 @@ var Za = (_WinAmountPresentationView = class WinAmountPresentationView extends q
 		}).createAndStart();
 	}
 	onWinNumberEndAnimationCompleted() {
-		this._currentWinNumberAnimation = null, this.emit(Xa.WIN_ANIMATION_EXIT_FINISHED);
+		this._currentWinNumberAnimation = null, this.emit(Za.WIN_ANIMATION_EXIT_FINISHED);
 	}
 	isAnteWin(e) {
-		return e === j.ANTE;
+		return e === k.ANTE;
 	}
 	getCurrentWinAnimationSkin(e) {
 		switch (e) {
-			case j.ANTE: return "ANTE";
-			case j.EXCELLENT: return "EXCELLENT";
-			case j.NICE: return "MEDIUM";
-			case j.SMALL: return "SMALL";
+			case k.ANTE: return "ANTE";
+			case k.EXCELLENT: return "EXCELLENT";
+			case k.NICE: return "MEDIUM";
+			case k.SMALL: return "SMALL";
 			default: throw Error(`getCurrentWinAnimationSkin impossible WinType - ${e}`);
 		}
 	}
 	setupInput() {
 		this._hiddenInputBox = new import_lib.Container();
-		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, O$1, k).fill(16711680);
+		let e = new import_lib.Graphics({ alpha: .1 }).rect(0, 0, E$1, D$1).fill(16711680);
 		this._hiddenInputBox.pivot.set(960, 960), this._hiddenInputBox.addChild(e), this._hiddenInputBox.interactive = !0, this._hiddenInputBox.onclick = this.onPlayerClicked.bind(this), this._hiddenInputBox.ontap = this.onPlayerClicked.bind(this), this._skipLayer.addChild(this._hiddenInputBox), this._hiddenInputBox.visible = !1;
 	}
 	onPlayerClicked() {
-		this.disableInput(), this.emit(Xa.PLAYER_CLICKED_DURING_WIN_PRESENTATION);
+		this.disableInput(), this.emit(Za.PLAYER_CLICKED_DURING_WIN_PRESENTATION);
 	}
 	shouldPlayEndAnimation() {
 		return !!this._currentWinNumberAnimation && this._currentWinNumberAnimation.isPlaying;
@@ -110661,13 +110705,13 @@ var Za = (_WinAmountPresentationView = class WinAmountPresentationView extends q
 		this.emitWinNumberBounceFinished(), this._isCounting || this.emitWinNumberShownToPlayer();
 	}
 	emitWinNumberBounceFinished() {
-		this.emit(Xa.WIN_NUMBER_BOUNCE_FINISHED);
+		this.emit(Za.WIN_NUMBER_BOUNCE_FINISHED);
 	}
 	emitWinNumberShownToPlayer() {
-		this.emit(Xa.WIN_NUMBER_SHOWN_TO_PLAYER);
+		this.emit(Za.WIN_NUMBER_SHOWN_TO_PLAYER);
 	}
 	getCountingTime() {
-		return this._currentWinType === j.EXCELLENT ? this.getConfigValue("win.excellentCountingTime", 3e3) : this.getConfigValue("win.niceCountingTime", 1500);
+		return this._currentWinType === k.EXCELLENT ? this.getConfigValue("win.excellentCountingTime", 3e3) : this.getConfigValue("win.niceCountingTime", 1500);
 	}
 	startMeter() {
 		this._meter.from(0).to(this._currentFinalNumber, this.getCountingTime()), this.playWinCountingSound(), this._meter.start(), this.updateManager.add(this._meter);
@@ -110689,9 +110733,9 @@ var Za = (_WinAmountPresentationView = class WinAmountPresentationView extends q
 	}
 	setupWinNumbers() {
 		let e = this.getWinnumberResource(this.device.isMobile, !1);
-		this._winNumber = new ni(this.assets, e), this._winNumber.numberKerning = this.getWinNumberKerning(), this.container.addChild(this._winNumber), this._winNumber.visible = !1;
+		this._winNumber = new ri(this.assets, e), this._winNumber.numberKerning = this.getWinNumberKerning(), this.container.addChild(this._winNumber), this._winNumber.visible = !1;
 		let t = this.getWinnumberResource(this.device.isMobile, !0);
-		this._biggerWinNumber = new ni(this.assets, t), this._biggerWinNumber.numberKerning = this.getBiggerWinNumberKerning(), this.container.addChild(this._biggerWinNumber), this._biggerWinNumber.visible = !1;
+		this._biggerWinNumber = new ri(this.assets, t), this._biggerWinNumber.numberKerning = this.getBiggerWinNumberKerning(), this.container.addChild(this._biggerWinNumber), this._biggerWinNumber.visible = !1;
 	}
 	getWinNumberKerning() {
 		return this.getConfigValue(this.device.isMobile ? "win.numberKerningMobile" : "win.numberKerning", 0);
@@ -110704,9 +110748,9 @@ var Za = (_WinAmountPresentationView = class WinAmountPresentationView extends q
 	}
 	playWinCountingSound() {}
 	stopWinCountingSound() {}
-}, Xa = _WinAmountPresentationView, _defineProperty(_WinAmountPresentationView, "COUNTUP_ANIMATION_FINISHED", "WinAmountPresentationView::COUNTUP_ANIMATION_FINISHED"), _defineProperty(_WinAmountPresentationView, "COUNTUP_ANIMATION_STARTED", "WinAmountPresentationView::COUNTUP_ANIMATION_STARTED"), _defineProperty(_WinAmountPresentationView, "WIN_NUMBER_SHOWN_TO_PLAYER", "WinAmountPresentationView::WIN_NUMBER_SHOWN_TO_PLAYER"), _defineProperty(_WinAmountPresentationView, "WIN_NUMBER_BOUNCE_FINISHED", "WinAmountPresentationView::NUMBER_BOUNCE_FINISHED"), _defineProperty(_WinAmountPresentationView, "WIN_ANIMATION_EXIT_FINISHED", "WinAmountPresentationView::WIN_ANIMATION_EXIT_FINISHED"), _defineProperty(_WinAmountPresentationView, "PLAYER_CLICKED_DURING_WIN_PRESENTATION", "WinAmountPresentationView::PLAYER_CLICKED_DURING_WIN_PRESENTATION"), _WinAmountPresentationView);
-Za = Xa = __decorate$1([injectFromBase()], Za);
-var Qa = class WinAmountPresentationModule extends L {
+}, Za = _WinAmountPresentationView, _defineProperty(_WinAmountPresentationView, "COUNTUP_ANIMATION_FINISHED", "WinAmountPresentationView::COUNTUP_ANIMATION_FINISHED"), _defineProperty(_WinAmountPresentationView, "COUNTUP_ANIMATION_STARTED", "WinAmountPresentationView::COUNTUP_ANIMATION_STARTED"), _defineProperty(_WinAmountPresentationView, "WIN_NUMBER_SHOWN_TO_PLAYER", "WinAmountPresentationView::WIN_NUMBER_SHOWN_TO_PLAYER"), _defineProperty(_WinAmountPresentationView, "WIN_NUMBER_BOUNCE_FINISHED", "WinAmountPresentationView::NUMBER_BOUNCE_FINISHED"), _defineProperty(_WinAmountPresentationView, "WIN_ANIMATION_EXIT_FINISHED", "WinAmountPresentationView::WIN_ANIMATION_EXIT_FINISHED"), _defineProperty(_WinAmountPresentationView, "PLAYER_CLICKED_DURING_WIN_PRESENTATION", "WinAmountPresentationView::PLAYER_CLICKED_DURING_WIN_PRESENTATION"), _WinAmountPresentationView);
+Qa = Za = __decorate$1([injectFromBase()], Qa);
+var $a = class WinAmountPresentationModule extends I$1 {
 	constructor(..._args61) {
 		super(..._args61);
 		_defineProperty(this, "_beforeInitialTimer", void 0);
@@ -110719,7 +110763,7 @@ var Qa = class WinAmountPresentationModule extends L {
 		}, this.getBeforeInitialWinDelay());
 	}
 	playFinalWin(e) {
-		this.view.playWinNumberCounter(e, M$1.isWinNumberExcellentWin(this.gameData, e), M$1.isWinNumberExcellentWin(this.gameData, e), this.getWinTypeForWin(e)), this.view.enableInput();
+		this.view.playWinNumberCounter(e, A.isWinNumberExcellentWin(this.gameData, e), A.isWinNumberExcellentWin(this.gameData, e), this.getWinTypeForWin(e)), this.view.enableInput();
 	}
 	playIndividualWin() {
 		this.startShowingIndividualWinlines();
@@ -110728,7 +110772,7 @@ var Qa = class WinAmountPresentationModule extends L {
 		this.stopWinPresentation();
 	}
 	setupEvents() {
-		super.setupEvents(), this.onViewEmitEvent(Za.WIN_NUMBER_SHOWN_TO_PLAYER, WinAmountPresentationEvents.WIN_NUMBER_SHOWN_TO_PLAYER), this.onViewEmitEvent(Za.WIN_ANIMATION_EXIT_FINISHED, WinAmountPresentationEvents.WIN_ANIMATION_EXIT_FINISHED), this.onViewEmitEvent(Za.COUNTUP_ANIMATION_FINISHED, WinAmountPresentationEvents.COUNTUP_ANIMATION_FINISHED), this.onViewEmitEvent(Za.COUNTUP_ANIMATION_STARTED, WinAmountPresentationEvents.COUNTUP_ANIMATION_STARTED), this.on(ReelsEvents.REELS_SPINNING_STARTED, this.onReelSpinningStarted), this.on(WinAmountPresentationEvents.WIN_ANIMATION_EXIT_FINISHED, this.onWinAnimationFinished), this.on(WinAmountPresentationEvents.WIN_NUMBER_SHOWN_TO_PLAYER, this.onFinalWinNumberOnScreen), this.onView(Za.PLAYER_CLICKED_DURING_WIN_PRESENTATION, this.onPlayerClicked);
+		super.setupEvents(), this.onViewEmitEvent(Qa.WIN_NUMBER_SHOWN_TO_PLAYER, WinAmountPresentationEvents.WIN_NUMBER_SHOWN_TO_PLAYER), this.onViewEmitEvent(Qa.WIN_ANIMATION_EXIT_FINISHED, WinAmountPresentationEvents.WIN_ANIMATION_EXIT_FINISHED), this.onViewEmitEvent(Qa.COUNTUP_ANIMATION_FINISHED, WinAmountPresentationEvents.COUNTUP_ANIMATION_FINISHED), this.onViewEmitEvent(Qa.COUNTUP_ANIMATION_STARTED, WinAmountPresentationEvents.COUNTUP_ANIMATION_STARTED), this.on(ReelsEvents.REELS_SPINNING_STARTED, this.onReelSpinningStarted), this.on(WinAmountPresentationEvents.WIN_ANIMATION_EXIT_FINISHED, this.onWinAnimationFinished), this.on(WinAmountPresentationEvents.WIN_NUMBER_SHOWN_TO_PLAYER, this.onFinalWinNumberOnScreen), this.onView(Qa.PLAYER_CLICKED_DURING_WIN_PRESENTATION, this.onPlayerClicked);
 	}
 	stopWinPresentation() {
 		this.view.killWinPresentationCounting(), this.view.forceKillWinNumbers();
@@ -110769,14 +110813,14 @@ var Qa = class WinAmountPresentationModule extends L {
 		this.view.killWinPresentationCounting(), this.timeUtils.killTimer(this._beforeInitialTimer), this._beforeInitialTimer = null, this.timeUtils.killTimer(this._finalShowingTimer), this._finalShowingTimer = null;
 	}
 	startInitialWinPresentation(e) {
-		e > 0 && (this.view.playWinNumberCounter(e, M$1.isWinNumberExcellentWin(this.gameData, e), M$1.isWinNumberExcellentWin(this.gameData, e), this.getWinTypeForWin(e)), this.view.enableInput()), this.emit(WinAmountPresentationEvents.INITIAL_ANIMATION_STARTED);
+		e > 0 && (this.view.playWinNumberCounter(e, A.isWinNumberExcellentWin(this.gameData, e), A.isWinNumberExcellentWin(this.gameData, e), this.getWinTypeForWin(e)), this.view.enableInput()), this.emit(WinAmountPresentationEvents.INITIAL_ANIMATION_STARTED);
 	}
 	getWinTypeForWin(e) {
-		return M$1.getWinSize(e, this.gameData);
+		return A.getWinSize(e, this.gameData);
 	}
 };
-Qa = __decorate$1([injectFromBase()], Qa);
-var $a = class IndividualSpinningReelsModule extends Ga {
+$a = __decorate$1([injectFromBase()], $a);
+var eo = class IndividualSpinningReelsModule extends Ka {
 	onReelStopped(e, t, n) {
 		super.onReelStopped(e, t, n), this.emit(IndividualSpinningReelsEvents.REEL_STOPPED, t, n);
 	}
@@ -110815,9 +110859,9 @@ var $a = class IndividualSpinningReelsModule extends Ga {
 		throw Error("IndividualSpinningReelsModule::getResultSymbols Not implemented");
 	}
 };
-$a = __decorate$1([injectFromBase()], $a);
+eo = __decorate$1([injectFromBase()], eo);
 var IndividualSpinningReelsEvents = (_Class30 = class {}, _defineProperty(_Class30, "REEL_STOPPED", "IndividualSpinningReelsEvents::REEL_STOPPED"), _defineProperty(_Class30, "ALL_REELS_STOPPED", "IndividualSpinningReelsEvents::ALL_REELS_STOPPED"), _Class30);
-var eo = class IndividualSpinningReelsView extends Wa {
+var to = class IndividualSpinningReelsView extends Ga {
 	constructor(..._args62) {
 		super(..._args62);
 		_defineProperty(this, "_reelsContainers", []);
@@ -110827,7 +110871,7 @@ var eo = class IndividualSpinningReelsView extends Wa {
 	}
 	playExitWinAnimation(e = null) {
 		let t = this._lastWinningPositions;
-		e && (t = Wa.getWinningPositionsFromWinLines(e));
+		e && (t = Ga.getWinningPositionsFromWinLines(e));
 		for (let e = 0; e < this.getTotalReels(); e++) for (let n = 0; n < this.getTotalRows(e); n++) (t === null || t === void 0 ? void 0 : t.findIndex((t) => t.x === e && t.y === n)) >= 0 ? this._reels[e * this.getTotalReels() + n].getReelSymbol(0).removeWin() : this._reels[e * this.getTotalReels() + n].getReelSymbol(0).removeDarken();
 	}
 	forceKillWinAnimations() {
@@ -110886,7 +110930,7 @@ var eo = class IndividualSpinningReelsView extends Wa {
 		return n;
 	}
 	createReelSet() {
-		this.container.children.length = 0, this._reels = [], $$1.setReelsOffset(I$1.LANDSCAPE, this.mainUI.layout.getAbsolutePosition(this.getReelsPositionBone(), I$1.LANDSCAPE)), $$1.setReelsOffset(I$1.PORTRAIT, this.mainUI.layout.getAbsolutePosition(this.getReelsPositionBone(), I$1.PORTRAIT)), this.container.addChild(this._reelsLayerToBeMasked), this._reelsLayerToBeMasked.addChild(this._reelsetContainer), this.container.addChild(this._reelSetAnimationContainer);
+		this.container.children.length = 0, this._reels = [], $$1.setReelsOffset(F.LANDSCAPE, this.mainUI.layout.getAbsolutePosition(this.getReelsPositionBone(), F.LANDSCAPE)), $$1.setReelsOffset(F.PORTRAIT, this.mainUI.layout.getAbsolutePosition(this.getReelsPositionBone(), F.PORTRAIT)), this.container.addChild(this._reelsLayerToBeMasked), this._reelsLayerToBeMasked.addChild(this._reelsetContainer), this.container.addChild(this._reelSetAnimationContainer);
 		for (let e = 0; e < this.getTotalReels(); e++) for (let t = 0; t < this.getTotalRows(); t++) {
 			let n = {
 				x: e * $$1.getSymbolSlot().width,
@@ -110911,8 +110955,8 @@ var eo = class IndividualSpinningReelsView extends Wa {
 		return $$1.ROW_AMOUNT;
 	}
 };
-eo = __decorate$1([injectFromBase()], eo);
-var IndividualSpinningReelView = class extends Ua {
+to = __decorate$1([injectFromBase()], to);
+var IndividualSpinningReelView = class extends Wa {
 	constructor(..._args63) {
 		super(..._args63);
 		_defineProperty(this, "_mask", void 0);
@@ -110934,7 +110978,7 @@ var IndividualSpinningReelView = class extends Ua {
 		return e;
 	}
 	createReelSymbol(e) {
-		return new Ha(e);
+		return new Ua(e);
 	}
 	getTotalRows(e) {
 		return 1;
@@ -110998,28 +111042,28 @@ var $$1 = (_IndividualReelConstants = class IndividualReelConstants {
 		};
 	}
 	static manualInit(e, t) {
-		IndividualReelConstants.SYMBOL_SLOT[I$1.LANDSCAPE] = {
+		IndividualReelConstants.SYMBOL_SLOT[F.LANDSCAPE] = {
 			width: e.width,
 			height: e.height
-		}, IndividualReelConstants.SYMBOL_SLOT[I$1.PORTRAIT] = {
+		}, IndividualReelConstants.SYMBOL_SLOT[F.PORTRAIT] = {
 			width: t.width,
 			height: t.height
-		}, IndividualReelConstants.recalculateNumbers(I$1.LANDSCAPE), IndividualReelConstants.recalculateNumbers(I$1.PORTRAIT);
+		}, IndividualReelConstants.recalculateNumbers(F.LANDSCAPE), IndividualReelConstants.recalculateNumbers(F.PORTRAIT);
 	}
 	static initializeFromLayout(e, t) {
 		IndividualReelConstants.initializeFromLayoutCustomResourceNames(e, t);
 	}
 	static initializeFromLayoutCustomResourceNames(e, t) {
-		let n = e.getSize(t, I$1.PORTRAIT), r = e.getSize(t, I$1.LANDSCAPE);
-		IndividualReelConstants.SYMBOL_SLOT[I$1.PORTRAIT] = {
+		let n = e.getSize(t, F.PORTRAIT), r = e.getSize(t, F.LANDSCAPE);
+		IndividualReelConstants.SYMBOL_SLOT[F.PORTRAIT] = {
 			width: n.width,
 			height: n.height
-		}, IndividualReelConstants.SYMBOL_SLOT[I$1.LANDSCAPE] = {
+		}, IndividualReelConstants.SYMBOL_SLOT[F.LANDSCAPE] = {
 			width: r.width,
 			height: r.height
-		}, IndividualReelConstants.recalculateNumbers(I$1.PORTRAIT), IndividualReelConstants.recalculateNumbers(I$1.LANDSCAPE);
+		}, IndividualReelConstants.recalculateNumbers(F.PORTRAIT), IndividualReelConstants.recalculateNumbers(F.LANDSCAPE);
 	}
-	static getSymbolSlot(e = I$1.PORTRAIT) {
+	static getSymbolSlot(e = F.PORTRAIT) {
 		return IndividualReelConstants.SYMBOL_SLOT[e];
 	}
 	static getReelsCenter(e) {
@@ -111034,7 +111078,7 @@ var $$1 = (_IndividualReelConstants = class IndividualReelConstants {
 	static getReels() {
 		return IndividualReelConstants.REELS;
 	}
-	static getSymbolPosition(e, t = I$1.PORTRAIT) {
+	static getSymbolPosition(e, t = F.PORTRAIT) {
 		return {
 			x: IndividualReelConstants.getSymbolSlot(t).width * e.x + IndividualReelConstants.getSymbolSlot(t).width / 2,
 			y: IndividualReelConstants.getSymbolSlot(t).height * e.y + IndividualReelConstants.getSymbolSlot(t).height / 2
@@ -111051,8 +111095,8 @@ var $$1 = (_IndividualReelConstants = class IndividualReelConstants {
 		return IndividualReelConstants.REELS_OFFSET[e];
 	}
 }, _defineProperty(_IndividualReelConstants, "REELS_AMOUNT", 3), _defineProperty(_IndividualReelConstants, "ROW_AMOUNT", 3), _defineProperty(_IndividualReelConstants, "SYMBOL_SLOT", []), _defineProperty(_IndividualReelConstants, "REELS", []), _defineProperty(_IndividualReelConstants, "REELS_CENTER", []), _defineProperty(_IndividualReelConstants, "REELS_OFFSET", []), _defineProperty(_IndividualReelConstants, "ROWS_ON_REEL", []), _IndividualReelConstants);
-var no;
-var ro = class BaseSoundManager {
+var ro;
+var io = class BaseSoundManager {
 	constructor() {
 		_defineProperty(this, "_gameConfig", void 0);
 		_defineProperty(this, "_volumes", {});
@@ -111173,7 +111217,7 @@ var ro = class BaseSoundManager {
 		return this._globalMusicVolume;
 	}
 };
-__decorate$1([inject(P$2.GameConfig), __decorateMetadata("design:type", typeof (no = GameConfig !== void 0 && GameConfig) == "function" ? no : Object)], ro.prototype, "_gameConfig", void 0), ro = __decorate$1([injectable()], ro);
+__decorate$1([inject(N$1.GameConfig), __decorateMetadata("design:type", typeof (ro = GameConfig !== void 0 && GameConfig) == "function" ? ro : Object)], io.prototype, "_gameConfig", void 0), io = __decorate$1([injectable()], io);
 var SoundsDuckingConfig = class {
 	constructor() {
 		_defineProperty(this, "_duckingConfig", {});
@@ -111226,10 +111270,10 @@ var SoundsDuckingConfig = class {
 		};
 	}
 };
-var io;
 var ao;
 var oo;
-var so = class BaseSoundPlayer {
+var so;
+var co = class BaseSoundPlayer {
 	constructor() {
 		_defineProperty(this, "_soundManager", void 0);
 		_defineProperty(this, "_updateManager", void 0);
@@ -111254,7 +111298,7 @@ var so = class BaseSoundPlayer {
 		this.setupSoundsDuckingConfig(), window.soundPlayer = this, window.enableSoundLogs = !0;
 	}
 	init() {
-		if (this._timeUtils = new TimerUtils(this._updateManager), this._visibilityManager.onVisibleCallback = this.onPageShow.bind(this), this._visibilityManager.onInvisibleCallback = this.onPageHide.bind(this), sound.disableAutoPause = !0, this._device.isMobile && this._device.os === Ne$1.IOS) {
+		if (this._timeUtils = new TimerUtils(this._updateManager), this._visibilityManager.onVisibleCallback = this.onPageShow.bind(this), this._visibilityManager.onInvisibleCallback = this.onPageHide.bind(this), sound.disableAutoPause = !0, this._device.isMobile && this._device.os === Fe$1.IOS) {
 			let e = sound.context.audioContext;
 			e.onstatechange = () => {
 				let t = e.state === "suspended", n = e.state === "interrupted";
@@ -111292,26 +111336,26 @@ var so = class BaseSoundPlayer {
 	play(e, t, n, r) {
 		var _this26 = this;
 		return _asyncToGenerator(function* () {
-			_this26.removeFromFadings(e), _this26._soundManager.getSoundDelay(e) > 0 && (yield _this26._timeUtils.wait(_this26._soundManager.getSoundDelay(e))), _this26.playSound(e, t), window.enableSoundLogs && A.info(`sound: ${e}`);
+			_this26.removeFromFadings(e), _this26._soundManager.getSoundDelay(e) > 0 && (yield _this26._timeUtils.wait(_this26._soundManager.getSoundDelay(e))), _this26.playSound(e, t), window.enableSoundLogs && O$1.info(`sound: ${e}`);
 		})();
 	}
 	stop(e) {
-		this.stopSound(e), window.enableSoundLogs && A.info(`stop sound: ${e}`);
+		this.stopSound(e), window.enableSoundLogs && O$1.info(`stop sound: ${e}`);
 	}
 	pause(e) {
-		this.pauseSound(e), window.enableSoundLogs && A.info(`pause sound: ${e}`);
+		this.pauseSound(e), window.enableSoundLogs && O$1.info(`pause sound: ${e}`);
 	}
 	resume(e) {
-		this.resumeSound(e), window.enableSoundLogs && A.info(`resume sound: ${e}`);
+		this.resumeSound(e), window.enableSoundLogs && O$1.info(`resume sound: ${e}`);
 	}
 	fadeCurrentMusicTo(e, t = 4e3) {
-		window.enableSoundLogs && A.info(`fade music to: ${this._currentMusicID} - ${e}`), this._soundManager.hasSound(e) && this.setupMusicPlaying(e, t);
+		window.enableSoundLogs && O$1.info(`fade music to: ${this._currentMusicID} - ${e}`), this._soundManager.hasSound(e) && this.setupMusicPlaying(e, t);
 	}
 	stopAllSoundIdInstances(e) {
 		this._soundManager.stopAllSoundInstances(e);
 	}
 	fadeOutCurrentMusic(e = 4e3) {
-		window.enableSoundLogs && A.info(`fade out music:${this._currentMusicID}`);
+		window.enableSoundLogs && O$1.info(`fade out music:${this._currentMusicID}`);
 		let t = this._soundManager.getSound(this._currentMusicID), n = this._soundManager.getAllSoundInstances(this._currentMusicID);
 		if (t && n[0]) {
 			this.killCurrentEffectsDuckingTween(), this.killCurrentNewMusicTween();
@@ -111321,7 +111365,7 @@ var so = class BaseSoundPlayer {
 		this._isMusicPlaying = !1, this._currentMusicID = null;
 	}
 	fadeInCurrentMusic(e = 4e3) {
-		window.enableSoundLogs && A.info(`fade in music:${this._currentMusicID}`);
+		window.enableSoundLogs && O$1.info(`fade in music:${this._currentMusicID}`);
 		let t = this._soundManager.getSound(this._currentMusicID), n = this._soundManager.getAllSoundInstances(this._currentMusicID);
 		t && n.length && (this.killCurrentEffectsDuckingTween(), this.killCurrentNewMusicTween(), this._currentFadingMusicTween = this.makeMusicTween(this._currentMusicID, 0, 1, e)), this._isMusicPlaying = !0;
 	}
@@ -111387,7 +111431,7 @@ var so = class BaseSoundPlayer {
 		return this._updateManager.add(o), o;
 	}
 	playMusicByID(e) {
-		if (window.enableSoundLogs && A.info(`music: ${e}`), !this._soundManager.isMusic(e)) throw Error(`BaseSoundPlayer::playMusicByID no music with the name ${e}`);
+		if (window.enableSoundLogs && O$1.info(`music: ${e}`), !this._soundManager.isMusic(e)) throw Error(`BaseSoundPlayer::playMusicByID no music with the name ${e}`);
 		if (this.stopMusic(), this._soundManager.hasSound(e)) {
 			let t = this._soundManager.getSound(e), n = this._soundManager.getSoundVolume(e);
 			this._soundManager.stopAllSoundInstances(e), t.loop = !0, t.play(), this._soundManager.setAllMusicVolume(n), this._isMusicPlaying = !0, this._currentMusicID = e;
@@ -111496,8 +111540,8 @@ var so = class BaseSoundPlayer {
 		this._allSoundsStatusChangedCallback = e;
 	}
 };
-__decorate$1([inject(P$2.SoundManager), __decorateMetadata("design:type", Object)], so.prototype, "_soundManager", void 0), __decorate$1([inject(N$1.UpdateManager), __decorateMetadata("design:type", typeof (io = UpdateManager !== void 0 && UpdateManager) == "function" ? io : Object)], so.prototype, "_updateManager", void 0), __decorate$1([inject(N$1.Device), __decorateMetadata("design:type", typeof (ao = Ie$1 !== void 0 && Ie$1) == "function" ? ao : Object)], so.prototype, "_device", void 0), __decorate$1([inject(N$1.VisibilityManager), __decorateMetadata("design:type", typeof (oo = Ye !== void 0 && Ye) == "function" ? oo : Object)], so.prototype, "_visibilityManager", void 0), __decorate$1([inject(N$1.Game), __decorateMetadata("design:type", Object)], so.prototype, "_game", void 0), so = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], so);
-var co = class SoundManager extends ro {
+__decorate$1([inject(N$1.SoundManager), __decorateMetadata("design:type", Object)], co.prototype, "_soundManager", void 0), __decorate$1([inject(M$1.UpdateManager), __decorateMetadata("design:type", typeof (ao = UpdateManager !== void 0 && UpdateManager) == "function" ? ao : Object)], co.prototype, "_updateManager", void 0), __decorate$1([inject(M$1.Device), __decorateMetadata("design:type", typeof (oo = j !== void 0 && j) == "function" ? oo : Object)], co.prototype, "_device", void 0), __decorate$1([inject(M$1.VisibilityManager), __decorateMetadata("design:type", typeof (so = Xe !== void 0 && Xe) == "function" ? so : Object)], co.prototype, "_visibilityManager", void 0), __decorate$1([inject(M$1.Game), __decorateMetadata("design:type", Object)], co.prototype, "_game", void 0), co = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], co);
+var lo = class SoundManager extends io {
 	init() {
 		this.initEffects(), this.initMusic();
 	}
@@ -111517,13 +111561,13 @@ var co = class SoundManager extends ro {
 		this.initVolumeFor(e), this.initDelaysFor(e);
 	}
 };
-co = __decorate$1([injectable(), injectFromBase()], co);
-var lo = class SoundPlayer extends so {
+lo = __decorate$1([injectable(), injectFromBase()], lo);
+var uo = class SoundPlayer extends co {
 	init() {
 		this._game.onSoundsLoaded = this.onAllSoundsLoaded.bind(this), super.init();
 	}
 	onAllSoundsLoaded() {
-		if (this._game.diContainer.get(P$2.GameData).isReplayMode) {
+		if (this._game.diContainer.get(N$1.GameData).isReplayMode) {
 			this.disableAllSound();
 			return;
 		}
@@ -111541,15 +111585,15 @@ var lo = class SoundPlayer extends so {
 		}).apply(this, arguments);
 	}
 };
-lo = __decorate$1([injectable(), injectFromBase()], lo);
-var uo;
+uo = __decorate$1([injectable(), injectFromBase()], uo);
 var fo;
 var po;
 var mo;
 var ho;
 var _o;
 var vo;
-var yo = class MainContainer {
+var yo;
+var bo = class MainContainer {
 	constructor() {
 		_defineProperty(this, "_parent", void 0);
 		_defineProperty(this, "_assets", void 0);
@@ -111566,7 +111610,7 @@ var yo = class MainContainer {
 		_defineProperty(this, "_containers", /* @__PURE__ */ new Map());
 	}
 	init(e) {
-		this._spineUtils = e, this._eventManager.on(ScreenEvents.SCREEN_RESIZED, this.onScreenResized.bind(this), this, 0), this._backgroundContainer = new import_lib.Container(), this._backgroundContainer.position.set(this._resolutionManager.halfResolution.width, this._resolutionManager.halfResolution.height), this._parent.addChild(this._backgroundContainer), this._ui = this._spineUtils.startSpineAnimationCreation(`${this.getMainUIContainerName()}.json`, "IDLE", !0).container(this._parent).position(this._resolutionManager.halfResolution.width, this._resolutionManager.halfResolution.height).createAndStart(), this._uiPortrait = this._spineUtils.startSpineAnimationCreation(`${this.getMainUIContainerName()}_PORTRAIT.json`, "IDLE", !0).container(this._parent).position(this._resolutionManager.halfResolution.width, this._resolutionManager.halfResolution.height).createAndStart(), this._uiPortrait.spine.visible = !1, this._ui.spine.visible = !1, this._layout.loadLayout(`${this.getMainUIContainerName()}_PORTRAIT.json`, I$1.PORTRAIT), this._layout.loadLayout(`${this.getMainUIContainerName()}.json`, I$1.LANDSCAPE);
+		this._spineUtils = e, this._eventManager.on(ScreenEvents.SCREEN_RESIZED, this.onScreenResized.bind(this), this, 0), this._backgroundContainer = new import_lib.Container(), this._backgroundContainer.position.set(this._resolutionManager.halfResolution.width, this._resolutionManager.halfResolution.height), this._parent.addChild(this._backgroundContainer), this._ui = this._spineUtils.startSpineAnimationCreation(`${this.getMainUIContainerName()}.json`, "IDLE", !0).container(this._parent).position(this._resolutionManager.halfResolution.width, this._resolutionManager.halfResolution.height).createAndStart(), this._uiPortrait = this._spineUtils.startSpineAnimationCreation(`${this.getMainUIContainerName()}_PORTRAIT.json`, "IDLE", !0).container(this._parent).position(this._resolutionManager.halfResolution.width, this._resolutionManager.halfResolution.height).createAndStart(), this._uiPortrait.spine.visible = !1, this._ui.spine.visible = !1, this._layout.loadLayout(`${this.getMainUIContainerName()}_PORTRAIT.json`, F.PORTRAIT), this._layout.loadLayout(`${this.getMainUIContainerName()}.json`, F.LANDSCAPE);
 		for (let e of this._uiPortrait.skeleton.drawOrder) if (!e.attachment) {
 			let t = new import_lib.Container(), n = this.uiPosToGamePos({
 				x: e.bone.worldX,
@@ -111646,7 +111690,7 @@ var yo = class MainContainer {
 		return this._layout;
 	}
 };
-__decorate$1([inject(P$2.PixiStageContainer), __decorateMetadata("design:type", typeof (uo = import_lib.Container !== void 0 && import_lib.Container) == "function" ? uo : Object)], yo.prototype, "_parent", void 0), __decorate$1([inject(P$2.AssetsManager), __decorateMetadata("design:type", typeof (fo = or !== void 0 && or) == "function" ? fo : Object)], yo.prototype, "_assets", void 0), __decorate$1([inject(N$1.UpdateManager), __decorateMetadata("design:type", typeof (po = UpdateManager !== void 0 && UpdateManager) == "function" ? po : Object)], yo.prototype, "_updateManager", void 0), __decorate$1([inject(N$1.ResolutionManager), __decorateMetadata("design:type", typeof (mo = We$1 !== void 0 && We$1) == "function" ? mo : Object)], yo.prototype, "_resolutionManager", void 0), __decorate$1([inject(N$1.IEventManager), __decorateMetadata("design:type", Object)], yo.prototype, "_eventManager", void 0), __decorate$1([inject(N$1.FullscreenManager), __decorateMetadata("design:type", typeof (ho = Ve$1 !== void 0 && Ve$1) == "function" ? ho : Object)], yo.prototype, "_fullscreenManager", void 0), __decorate$1([inject(N$1.ScreenLayoutManager), __decorateMetadata("design:type", typeof (_o = qe$1 !== void 0 && qe$1) == "function" ? _o : Object)], yo.prototype, "_screenLayoutManager", void 0), __decorate$1([inject(P$2.Layout), __decorateMetadata("design:type", typeof (vo = et !== void 0 && et) == "function" ? vo : Object)], yo.prototype, "_layout", void 0), yo = __decorate$1([injectable()], yo);
+__decorate$1([inject(N$1.PixiStageContainer), __decorateMetadata("design:type", typeof (fo = import_lib.Container !== void 0 && import_lib.Container) == "function" ? fo : Object)], bo.prototype, "_parent", void 0), __decorate$1([inject(N$1.AssetsManager), __decorateMetadata("design:type", typeof (po = or !== void 0 && or) == "function" ? po : Object)], bo.prototype, "_assets", void 0), __decorate$1([inject(M$1.UpdateManager), __decorateMetadata("design:type", typeof (mo = UpdateManager !== void 0 && UpdateManager) == "function" ? mo : Object)], bo.prototype, "_updateManager", void 0), __decorate$1([inject(M$1.ResolutionManager), __decorateMetadata("design:type", typeof (ho = Ge !== void 0 && Ge) == "function" ? ho : Object)], bo.prototype, "_resolutionManager", void 0), __decorate$1([inject(M$1.IEventManager), __decorateMetadata("design:type", Object)], bo.prototype, "_eventManager", void 0), __decorate$1([inject(M$1.FullscreenManager), __decorateMetadata("design:type", typeof (_o = He$1 !== void 0 && He$1) == "function" ? _o : Object)], bo.prototype, "_fullscreenManager", void 0), __decorate$1([inject(M$1.ScreenLayoutManager), __decorateMetadata("design:type", typeof (vo = Je$1 !== void 0 && Je$1) == "function" ? vo : Object)], bo.prototype, "_screenLayoutManager", void 0), __decorate$1([inject(N$1.Layout), __decorateMetadata("design:type", typeof (yo = tt !== void 0 && tt) == "function" ? yo : Object)], bo.prototype, "_layout", void 0), bo = __decorate$1([injectable()], bo);
 var Preloader = class extends import_lib.Container {
 	constructor(e) {
 		super();
@@ -111692,7 +111736,7 @@ var TickerSpeedOverlay = class {
 		this._element.remove();
 	}
 };
-var bo = (_TickerSpeedController = class TickerSpeedController {
+var xo = (_TickerSpeedController = class TickerSpeedController {
 	constructor() {
 		_defineProperty(this, "_multiplier", 1);
 		_defineProperty(this, "_enabled", !1);
@@ -111748,7 +111792,7 @@ var bo = (_TickerSpeedController = class TickerSpeedController {
 		this._overlay.update(this._multiplier, this._enabled);
 	}
 }, _defineProperty(_TickerSpeedController, "STEP_DEFAULT", .1), _defineProperty(_TickerSpeedController, "STEP_COARSE", 1), _defineProperty(_TickerSpeedController, "STEP_HUGE", 10), _TickerSpeedController);
-var xo = class Game {
+var So = class Game {
 	constructor() {
 		_defineProperty(this, "_diContainer", void 0);
 		_defineProperty(this, "_viewport", void 0);
@@ -111768,22 +111812,22 @@ var xo = class Game {
 	init() {
 		var _this29 = this;
 		return _asyncToGenerator(function* () {
-			_this29._device = new Ie$1(), _this29.diContainer.bind(P$2.Layout).to(et).inSingletonScope(), _this29.diContainer.bind(P$2.CurrencyFormatter).toConstantValue(_this29.createCurrencyFormatter()), _this29.diContainer.bind(N$1.ResolutionManager).toConstantValue(new We$1(_this29._viewport, _this29._device)), _this29._updateManager = new UpdateManager(), _this29.diContainer.bind(N$1.UpdateManager).toConstantValue(_this29._updateManager), _this29.diContainer.bind(P$2.Translator).to(Jn).inSingletonScope(), _this29.diContainer.get(P$2.Translator).init(_this29.getLocale()), _this29.diContainer.bind(N$1.Device).toConstantValue(_this29._device), _this29.diContainer.bind(N$1.VisibilityManager).to(Ye).inSingletonScope();
+			_this29._device = new j(), _this29.diContainer.bind(N$1.Layout).to(tt).inSingletonScope(), _this29.diContainer.bind(N$1.CurrencyFormatter).toConstantValue(_this29.createCurrencyFormatter()), _this29.diContainer.bind(M$1.ResolutionManager).toConstantValue(new Ge(_this29._viewport, _this29._device)), _this29._updateManager = new UpdateManager(), _this29.diContainer.bind(M$1.UpdateManager).toConstantValue(_this29._updateManager), _this29.diContainer.bind(N$1.Translator).to(Jn).inSingletonScope(), _this29.diContainer.get(N$1.Translator).init(_this29.getLocale()), _this29.diContainer.bind(M$1.Device).toConstantValue(_this29._device), _this29.diContainer.bind(M$1.VisibilityManager).to(Xe).inSingletonScope();
 			let t = _this29.createGameSpecificData();
-			_this29.diContainer.bind(P$2.GameData).toConstantValue(t), t.initParamsFromURL(_this29._urlParams), _this29.initViewport(_this29._device, _this29._viewport), _this29._app = new import_lib.Application(), yield _this29._app.init({
+			_this29.diContainer.bind(N$1.GameData).toConstantValue(t), t.initParamsFromURL(_this29._urlParams), _this29.initViewport(_this29._device, _this29._viewport), _this29._app = new import_lib.Application(), yield _this29._app.init({
 				resizeTo: window,
 				autoDensity: !0,
 				resolution: window.devicePixelRatio || 1,
 				preference: "webgl",
 				backgroundAlpha: .1,
 				backgroundColor: 0
-			}), _this29._tickerSpeedController = new bo(), _this29._app.ticker.add(_this29.onTickerUpdate.bind(_this29));
+			}), _this29._tickerSpeedController = new xo(), _this29._app.ticker.add(_this29.onTickerUpdate.bind(_this29));
 			let n = new import_lib.Container();
-			_this29._gameContainer = n, _this29._app.stage.addChild(n), _this29.diContainer.bind(P$2.PixiStageContainer).toConstantValue(n), _this29.diContainer.bind(P$2.Application).toConstantValue(_this29._app), _this29.diContainer.bind(N$1.IEventManager).to(ze$1).inSingletonScope(), yield _this29.setupGameContainer();
-			let i = new Preloader(_this29.diContainer.get(N$1.IEventManager));
-			_this29._assetsManager = _this29.createGameAssetsManager(), _this29._assetsManager.init(i, _this29._device), _this29.diContainer.bind(P$2.AssetsManager).toConstantValue(_this29._assetsManager);
-			let a = _this29.diContainer.get(N$1.IEventManager);
-			_this29.diContainer.bind(N$1.FullscreenManager).toConstantValue(new Ve$1(_this29._device, a)), _this29._screenLayoutManager = new qe$1(_this29._app, n, a), _this29.diContainer.bind(N$1.ScreenLayoutManager).toConstantValue(_this29._screenLayoutManager), _this29.bindSlotMainUiClass(), _this29.bindSoundManagers();
+			_this29._gameContainer = n, _this29._app.stage.addChild(n), _this29.diContainer.bind(N$1.PixiStageContainer).toConstantValue(n), _this29.diContainer.bind(N$1.Application).toConstantValue(_this29._app), _this29.diContainer.bind(M$1.IEventManager).to(Be$1).inSingletonScope(), yield _this29.setupGameContainer();
+			let i = new Preloader(_this29.diContainer.get(M$1.IEventManager));
+			_this29._assetsManager = _this29.createGameAssetsManager(), _this29._assetsManager.init(i, _this29._device), _this29.diContainer.bind(N$1.AssetsManager).toConstantValue(_this29._assetsManager);
+			let a = _this29.diContainer.get(M$1.IEventManager);
+			_this29.diContainer.bind(M$1.FullscreenManager).toConstantValue(new He$1(_this29._device, a)), _this29._screenLayoutManager = new Je$1(_this29._app, n, a), _this29.diContainer.bind(M$1.ScreenLayoutManager).toConstantValue(_this29._screenLayoutManager), _this29.bindSlotMainUiClass(), _this29.bindSoundManagers();
 			let o = document.getElementById("gameContainer");
 			_this29._app.canvas.id = "gameCanvas", _this29._app.canvas.addEventListener("contextmenu", (e) => e.preventDefault()), _this29._app.canvas.addEventListener("touchstart", (e) => e.preventDefault(), { passive: !1 }), o.appendChild(_this29._app.canvas), _this29._screenLayoutManager.forceScreenUpdate(), yield _this29.loadInitialResources(), _this29.initStartScreen(i);
 		})();
@@ -111791,11 +111835,11 @@ var xo = class Game {
 	loadResources() {
 		var _this30 = this;
 		return _asyncToGenerator(function* () {
-			_this30._assetsManager.calculateLoadExpectation(), yield _this30._assetsManager.loadConfigFiles(), yield _this30._assetsManager.loadStyleSheets(), yield _this30._assetsManager.loadTextures(), yield _this30._assetsManager.loadSpineAtlases(), yield _this30._assetsManager.loadParticles(), yield _this30._assetsManager.loadSpriteSheets(), yield _this30._assetsManager.loadHtmlFiles(), yield _this30._assetsManager.loadSounds(), _this30.diContainer.bind(P$2.GameConfig).toConstantValue(new GameConfig(_this30._assetsManager.getConfig("config.json"))), _this30.diContainer.get(P$2.SoundPlayer).init(), _this30.diContainer.get(P$2.SoundManager).init(), _this30._onSoundsLoaded && _this30._onSoundsLoaded(), yield _this30._assetsManager.loadFonts(_this30.getLocale());
+			_this30._assetsManager.calculateLoadExpectation(), yield _this30._assetsManager.loadConfigFiles(), yield _this30._assetsManager.loadStyleSheets(), yield _this30._assetsManager.loadTextures(), yield _this30._assetsManager.loadSpineAtlases(), yield _this30._assetsManager.loadParticles(), yield _this30._assetsManager.loadSpriteSheets(), yield _this30._assetsManager.loadHtmlFiles(), yield _this30._assetsManager.loadSounds(), _this30.diContainer.bind(N$1.GameConfig).toConstantValue(new GameConfig(_this30._assetsManager.getConfig("config.json"))), _this30.diContainer.get(N$1.SoundPlayer).init(), _this30.diContainer.get(N$1.SoundManager).init(), _this30._onSoundsLoaded && _this30._onSoundsLoaded(), yield _this30._assetsManager.loadFonts(_this30.getLocale());
 		})();
 	}
 	onReady() {
-		this.diContainer.get(P$2.MainUI).init(new SpineUtils(this._assetsManager, this._updateManager, this._gameContainer, this._app)), this._startScreen.finishLoading();
+		this.diContainer.get(N$1.MainUI).init(new SpineUtils(this._assetsManager, this._updateManager, this._gameContainer, this._app)), this._startScreen.finishLoading();
 	}
 	addModules(...e) {
 		for (let t of e) {
@@ -111814,20 +111858,20 @@ var xo = class Game {
 		this._screenLayoutManager.forceScreenUpdate();
 	}
 	restoreModules() {
-		if (this.diContainer.get(P$2.GameData).hasRestore) for (let e of this._registeredModules) e.instance.restore();
+		if (this.diContainer.get(N$1.GameData).hasRestore) for (let e of this._registeredModules) e.instance.restore();
 	}
 	initStartScreen(e) {
-		this._startScreen = new Ya(this.gameContainer, e, this._assetsManager, this._updateManager, this.diContainer.get(N$1.IEventManager));
+		this._startScreen = new Xa(this.gameContainer, e, this._assetsManager, this._updateManager, this.diContainer.get(M$1.IEventManager));
 	}
 	setupGameContainer() {
 		var _this31 = this;
 		return _asyncToGenerator(function* () {
-			let e = new be$1();
-			yield e.initialize(_this31._device, _this31, _this31.diContainer.get(N$1.IEventManager)), _this31.diContainer.bind(P$2.GameController).toConstantValue(e);
+			let e = new Se$1();
+			yield e.initialize(_this31._device, _this31, _this31.diContainer.get(M$1.IEventManager)), _this31.diContainer.bind(N$1.GameController).toConstantValue(e);
 		})();
 	}
 	bindSlotMainUiClass() {
-		this.diContainer.bind(P$2.MainUI).to(yo).inSingletonScope();
+		this.diContainer.bind(N$1.MainUI).to(bo).inSingletonScope();
 	}
 	loadInitialResources() {
 		var _this32 = this;
@@ -111843,7 +111887,7 @@ var xo = class Game {
 		return new qn();
 	}
 	bindSoundManagers() {
-		this.diContainer.bind(P$2.SoundManager).to(co).inSingletonScope(), this.diContainer.bind(P$2.SoundPlayer).to(lo).inSingletonScope();
+		this.diContainer.bind(N$1.SoundManager).to(lo).inSingletonScope(), this.diContainer.bind(N$1.SoundPlayer).to(uo).inSingletonScope();
 	}
 	createGameAssetsManager() {
 		throw Error("Game::createGameAssetsManager must be overridden");
@@ -111852,7 +111896,7 @@ var xo = class Game {
 		throw Error("Game::createGameSpecificData must be overridden");
 	}
 	initViewport(e, t) {
-		t.width = O$1, t.height = k;
+		t.width = E$1, t.height = D$1;
 	}
 	parseUrlParams() {
 		return Object.fromEntries(new URLSearchParams(window.location.search));
@@ -111872,7 +111916,7 @@ var xo = class Game {
 		return this._diContainer;
 	}
 };
-xo = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], xo);
+So = __decorate$1([injectable(), __decorateMetadata("design:paramtypes", [])], So);
 //#endregion
 //#region node_modules/@inversifyjs/common/lib/esm/index.js
 init_defineProperty();
@@ -113802,7 +113846,7 @@ var GoButtonView = (_GoButtonView2 = class GoButtonView extends hr {
 		this.container.addChild(this._goButton.button);
 	}
 	createSpineGoButton() {
-		return new GenericButton("SPIN_BUTTON.json", void 0, this.spineUtils, this.onGoButtonClicked.bind(this));
+		return new GenericButton("GO_BUTTON.json", void 0, this.spineUtils, this.onGoButtonClicked.bind(this));
 	}
 	onGoButtonClicked() {
 		this.soundPlayer.play("buttonClick");
@@ -113850,11 +113894,198 @@ var GoButtonModule = class GoButtonModule extends vr {
 };
 GoButtonModule = __decorate([Z()], GoButtonModule);
 //#endregion
+//#region src/gamedata/GameSpecificData.ts
+var GameMode = /* @__PURE__ */ function(GameMode) {
+	GameMode[GameMode["EASY"] = 0] = "EASY";
+	GameMode[GameMode["MEDIUM"] = 1] = "MEDIUM";
+	GameMode[GameMode["HARD"] = 2] = "HARD";
+	return GameMode;
+}({});
+var GameSpecificData = class extends je$1 {
+	constructor(..._args) {
+		super(..._args);
+		this._currentStep = -1;
+		this._isDead = false;
+		this._currentGameMode = GameMode.EASY;
+		this._multipliers = [
+			[],
+			[],
+			[]
+		];
+	}
+	resetSteps() {
+		this._currentStep = -1;
+		this._isDead = false;
+	}
+	hasReachedFinalPosition() {
+		return this._currentStep + 1 >= 20;
+	}
+	reactOnCashOut(data) {
+		this._lastSpinResponse = data;
+		if ((data === null || data === void 0 ? void 0 : data.hasOwnProperty("balance")) && typeof (data === null || data === void 0 ? void 0 : data.balance) === "number") this._balance = data.balance;
+		if (data === null || data === void 0 ? void 0 : data.roundId) this._roundID = data.roundId;
+		this._totalWin = this._currentWin = data.win;
+		O$1.info("step data:");
+		O$1.info(data);
+	}
+	reactOnStep(data) {
+		this._lastSpinResponse = data;
+		if ((data === null || data === void 0 ? void 0 : data.hasOwnProperty("balance")) && typeof (data === null || data === void 0 ? void 0 : data.balance) === "number") this._balance = data.balance;
+		if (data === null || data === void 0 ? void 0 : data.roundId) this._roundID = data.roundId;
+		this._totalWin = this._currentWin = data.win;
+		this._isDead = data.isDead;
+		this._currentStep = data.currentStep;
+		O$1.info("step data:");
+		O$1.info(data);
+	}
+	reactOnPayout(data) {
+		this._lastSpinResponse = data;
+		O$1.info("payout data:");
+		O$1.info(data);
+	}
+	setupGameFacts() {}
+	initializeServerSymbols() {}
+	afterInitRestoreSetup(data) {
+		if (this.hasRestore) {}
+	}
+	parseState(stateData) {
+		if (stateData) this._currentStep = stateData.currentStep;
+	}
+	parseOtherInitData(data) {
+		super.parseOtherInitData(data);
+		this._multipliers[GameMode.EASY] = [...data.config.multipliers[GameMode.EASY]];
+		this._multipliers[GameMode.MEDIUM] = [...data.config.multipliers[GameMode.MEDIUM]];
+		this._multipliers[GameMode.HARD] = [...data.config.multipliers[GameMode.HARD]];
+	}
+	parseConfigReelgrid(data) {}
+	parseConfigPaytable(data) {}
+	get currentStep() {
+		return this._currentStep;
+	}
+	get isDead() {
+		return this._isDead;
+	}
+	get multipliers() {
+		return this._multipliers;
+	}
+	get currentGameMode() {
+		return this._currentGameMode;
+	}
+	set currentGameMode(value) {
+		this._currentGameMode = value;
+	}
+};
+//#endregion
+//#region src/modules/difficulty/DifficultyButtonView.ts
+var _DifficultyButtonView2;
+var _DifficultyButtonView;
+var DifficultyButtonView = (_DifficultyButtonView2 = class DifficultyButtonView extends hr {
+	init() {
+		super.init();
+		this.setupBetButton();
+		this.setupLayout();
+	}
+	forceSetDifficulty(gameMode) {
+		switch (gameMode) {
+			case GameMode.EASY:
+				this.setEasyMode();
+				break;
+			case GameMode.MEDIUM:
+				this.setMediumMode();
+				break;
+			case GameMode.HARD:
+				this.setHardMode();
+				break;
+			default: throw new Error(`Unknown gameMode: ${gameMode}`);
+		}
+	}
+	disableButton() {
+		this._quickPlayButton.button.disable();
+	}
+	enableButton() {
+		this._quickPlayButton.button.enable();
+	}
+	setEasyMode() {
+		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "LOW");
+		this.emit(_DifficultyButtonView.DIFFICULTY_EASY_SELECTED);
+		this.emit(_DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED);
+	}
+	setMediumMode() {
+		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "MEDIUM");
+		this.emit(_DifficultyButtonView.DIFFICULTY_MEDIUM_SELECTED);
+		this.emit(_DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED);
+	}
+	setHardMode() {
+		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "HARD");
+		this.emit(_DifficultyButtonView.DIFFICULTY_HARD_SELECTED);
+		this.emit(_DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED);
+	}
+	setupLayout() {
+		const bone = this.mainUI.getBoneFromUI("DIFFICULTY_BUTTON");
+		const pmBone = this.mainUI.getBoneFromPortraitUI("DIFFICULTY_BUTTON");
+		this._uiElements.push(new UIElement(this._quickPlayButton.button, {
+			x: 0,
+			y: 0
+		}, {
+			x: 0,
+			y: 0
+		}, [J$1.RIGHT], [J$1.BOTTOM], {
+			x: bone.scaleX,
+			y: bone.scaleY
+		}, {
+			x: pmBone.scaleX,
+			y: pmBone.scaleY
+		}));
+	}
+	setupBetButton() {
+		this._quickPlayButton = this.createSpineButton();
+		this.container.addChild(this._quickPlayButton.button);
+	}
+	createSpineButton() {
+		return new GenericButton("DIFFICULTY_BUTTON.json", "LOW", this.spineUtils, this.onButtonClicked.bind(this));
+	}
+	onButtonClicked() {
+		var _this$_quickPlayButto;
+		var _this$_quickPlayButto2;
+		if (((_this$_quickPlayButto = this._quickPlayButton.button.spineAnimation.skeleton.skin) === null || _this$_quickPlayButto === void 0 ? void 0 : _this$_quickPlayButto.name) === "LOW") this.setMediumMode();
+		else if (((_this$_quickPlayButto2 = this._quickPlayButton.button.spineAnimation.skeleton.skin) === null || _this$_quickPlayButto2 === void 0 ? void 0 : _this$_quickPlayButto2.name) === "MEDIUM") this.setHardMode();
+		else this.setEasyMode();
+	}
+}, _DifficultyButtonView = _DifficultyButtonView2, _DifficultyButtonView2.DIFFICULTY_EASY_SELECTED = "DifficultyButtonView::DIFFICULTY_EASY_SELECTED", _DifficultyButtonView2.DIFFICULTY_MEDIUM_SELECTED = "DifficultyButtonView::DIFFICULTY_MEDIUM_SELECTED", _DifficultyButtonView2.DIFFICULTY_HARD_SELECTED = "DifficultyButtonView::DIFFICULTY_HARD_SELECTED", _DifficultyButtonView2.DIFFICULTY_BUTTON_CLICKED = "DifficultyButtonView::DIFFICULTY_BUTTON_CLICKED", _DifficultyButtonView2);
+DifficultyButtonView = _DifficultyButtonView = __decorate([Z()], DifficultyButtonView);
+//#endregion
+//#region src/modules/difficulty/DifficultyButtonModule.ts
+var DifficultyButtonModule = class DifficultyButtonModule extends vr {
+	setupEvents() {
+		super.setupEvents();
+		this.onView(DifficultyButtonView.DIFFICULTY_EASY_SELECTED, this.onEasyModeSelected);
+		this.onView(DifficultyButtonView.DIFFICULTY_MEDIUM_SELECTED, this.onMediumModeSelected);
+		this.onView(DifficultyButtonView.DIFFICULTY_HARD_SELECTED, this.onHardModeSelected);
+		this.onViewEmitEvent(DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED, DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED);
+		this.on(AutoplayHandlerEvents.AUTOPLAY_STARTED, this.onAutoplayStarted);
+	}
+	onButtonVisibilityChanged(isVisible) {}
+	onAutoplayStarted(eventID, spinsLeft, cashoutStep, selectedDifficulty) {
+		this.view.forceSetDifficulty(selectedDifficulty);
+	}
+	onEasyModeSelected() {
+		this.gameData.currentGameMode = GameMode.EASY;
+	}
+	onMediumModeSelected() {
+		this.gameData.currentGameMode = GameMode.MEDIUM;
+	}
+	onHardModeSelected() {
+		this.gameData.currentGameMode = GameMode.HARD;
+	}
+};
+DifficultyButtonModule = __decorate([Z()], DifficultyButtonModule);
+//#endregion
 //#region src/keypadController/ChickenKeypadController.ts
 var KeypadButtons = {
 	autoPlayButton: "autoPlayButton",
 	betButton: "betButton",
-	goButton: "goButton"
+	goButton: "goButton",
+	difficultyButton: "difficultyButton"
 };
 var goButtonLockReasons = [
 	"LockReasons::STEP_STARTED",
@@ -113871,7 +114102,8 @@ var chickenAutoplayButtonLockReasons = [
 	"LockReasons::LOCKED_BY_REGULATION",
 	"LockReasons::ROUND_STARTED"
 ];
-var ChickenKeypadController = class ChickenKeypadController extends L {
+var gameModeButtonLockReasons = [...goButtonLockReasons, "LockReasons::ROUND_STARTED"];
+var ChickenKeypadController = class ChickenKeypadController extends I$1 {
 	constructor(..._args) {
 		super(..._args);
 		this._keypad = {};
@@ -113907,13 +114139,15 @@ var ChickenKeypadController = class ChickenKeypadController extends L {
 	}
 	setupKeypadItems() {
 		this._keypad[KeypadButtons.autoPlayButton] = this.diContainer.get(Mr);
-		this._keypad[KeypadButtons.betButton] = this.diContainer.get(Oa);
+		this._keypad[KeypadButtons.betButton] = this.diContainer.get(ka);
 		this._keypad[KeypadButtons.goButton] = this.diContainer.get(GoButtonModule);
+		this._keypad[KeypadButtons.difficultyButton] = this.diContainer.get(DifficultyButtonModule);
 	}
 	setupButtonsLockingReasons() {
 		this._buttonLockingReasons[KeypadButtons.autoPlayButton] = this.getAutoplayButtonLockingReasons();
 		this._buttonLockingReasons[KeypadButtons.betButton] = this.getBetButtonLockingReasons();
 		this._buttonLockingReasons[KeypadButtons.goButton] = this.getGoButtonLockingReasons();
+		this._buttonLockingReasons[KeypadButtons.difficultyButton] = this.getDifficultyButtonLockingReasons();
 	}
 	/**
 	* We can DISABLE each button separately by configure it with KeypadButtonConfig, or we can set the same
@@ -113969,6 +114203,9 @@ var ChickenKeypadController = class ChickenKeypadController extends L {
 	getGoButtonLockingReasons() {
 		return goButtonLockReasons;
 	}
+	getDifficultyButtonLockingReasons() {
+		return gameModeButtonLockReasons;
+	}
 	disableOnRoundStarted(config) {
 		this.lockWithReason("LockReasons::ROUND_STARTED", config);
 	}
@@ -114004,7 +114241,7 @@ var CashoutButtonView = (_CashoutButtonView2 = class CashoutButtonView extends h
 		this.container.addChild(this._cashOutButton.button);
 	}
 	createSpineCashOutButton() {
-		return new GenericButton("SPIN_BUTTON2.json", void 0, this.spineUtils, this.onCashOutButtonClicked.bind(this));
+		return new GenericButton("CASHOUT_BUTTON.json", void 0, this.spineUtils, this.onCashOutButtonClicked.bind(this));
 	}
 	onCashOutButtonClicked() {
 		this.soundPlayer.play("buttonClick");
@@ -114088,7 +114325,7 @@ var gameNameTextStyle = {
 	fill: "#FFCC00",
 	align: "left"
 };
-var GameHUDView = (_GameHUDView2 = class GameHUDView extends ji {
+var GameHUDView = (_GameHUDView2 = class GameHUDView extends Mi {
 	setNewStepNumber(value) {
 		var _this = this;
 		return _asyncToGenerator(function* () {
@@ -114105,10 +114342,10 @@ var GameHUDView = (_GameHUDView2 = class GameHUDView extends ji {
 		this.spineUtils.replaceSlotAttachment(this._footer, "MENU_BUTTON", this._menuButton.button);
 		this._stepsCounter = this.spineUtils.startSpineAnimationCreation("STEP_NUMBER.json", "IDLE", true).createAndStart();
 		this.spineUtils.replaceSlotAttachment(this._header, "STEP_NUMBER", this._stepsCounter.spine);
-		this._currentStepNumber = new ni(this.assets, "COINS_");
+		this._currentStepNumber = new ri(this.assets, "COINS_");
 		this._currentStepNumber.showNumber("0123");
 		this.spineUtils.replaceSlotAttachment(this._stepsCounter, "SYMBOL_NUMBER", this._currentStepNumber);
-		this._nextStepNumber = new ni(this.assets, "COINS_");
+		this._nextStepNumber = new ri(this.assets, "COINS_");
 		this._nextStepNumber.showNumber("3210");
 		this.spineUtils.replaceSlotAttachment(this._stepsCounter, "SYMBOL_NUMBER_NEW", this._nextStepNumber);
 	}
@@ -114127,7 +114364,7 @@ var GameHUDView = (_GameHUDView2 = class GameHUDView extends ji {
 GameHUDView = _GameHUDView = __decorate([Z()], GameHUDView);
 //#endregion
 //#region src/hud/GameHUDModule.ts
-var GameHUDModule = class GameHUDModule extends Mi {
+var GameHUDModule = class GameHUDModule extends Ni {
 	setNewCounterNumber(value) {
 		this.view.setNewStepNumber(value);
 	}
@@ -114150,7 +114387,7 @@ _ChickenEvents.STEP_STARTED = "ChickenEvents::STEP_STARTED";
 //#endregion
 //#region src/modules/chicken/ChickenModule.ts
 init_asyncToGenerator();
-var ChickenModule = class ChickenModule extends L {
+var ChickenModule = class ChickenModule extends I$1 {
 	showMultiplier(value) {
 		this.view.showCurrentMultiplier();
 		this.view.setMultiplierValue(value);
@@ -114253,10 +114490,10 @@ var RoadView = (_RoadView2 = class RoadView extends q {
 			_this._barriersContainer.position.set(0, -9e3);
 			_this.container.addChild(_this._barriersContainer);
 			const apexOffsetY = Math.abs(_this._roadMainContainer.position.y);
-			const apexDistance = apexOffsetY + k;
+			const apexDistance = apexOffsetY + D$1;
 			_this._laneAngle = Math.atan(_this._roadWidth / apexDistance) * 1.072;
-			_this._laneTopY = apexOffsetY - k / 2 - _RoadView.CAR_OFFSCREEN_BUFFER;
-			_this._laneBottomY = apexOffsetY + k / 2 + _RoadView.CAR_OFFSCREEN_BUFFER;
+			_this._laneTopY = apexOffsetY - D$1 / 2 - _RoadView.CAR_OFFSCREEN_BUFFER;
+			_this._laneBottomY = apexOffsetY + D$1 / 2 + _RoadView.CAR_OFFSCREEN_BUFFER;
 			_this.createStartLane();
 			for (let i = 0; i < _this._totalLanes; i++) _this._roadElements.push(_this.createLane(i, `${1 + i % 5}`));
 			_this.createFinishLane(_this._totalLanes);
@@ -114359,8 +114596,8 @@ var RoadView = (_RoadView2 = class RoadView extends q {
 		laneContainer.rotation = index * this._laneAngle * -1;
 		this._roadMainContainer.addChild(laneContainer);
 		if (hasCoin) {
-			const coin = this.spineUtils.startSpineAnimationCreation("COIN.json", "IDLE", true).position(0, laneHeight - k / 2).container(laneContainer).createAndStart();
-			const coinValue = new ni(this.assets, "BIG_WINS_");
+			const coin = this.spineUtils.startSpineAnimationCreation("COIN.json", "IDLE", true).position(0, laneHeight - D$1 / 2).container(laneContainer).createAndStart();
+			const coinValue = new ri(this.assets, "BIG_WINS_");
 			coin.spine.addChild(coinValue);
 			coinValue.showNumber(`${index + 1}`);
 		}
@@ -114399,7 +114636,7 @@ _RoadEvents = RoadEvents;
 _RoadEvents.FATAL_CAR_REACHED_CHICKEN = "RoadEvents::FATAL_CAR_REACHED_CHICKEN";
 //#endregion
 //#region src/modules/road/RoadModule.ts
-var RoadModule = class RoadModule extends L {
+var RoadModule = class RoadModule extends I$1 {
 	restore() {
 		super.restore();
 		this.view.restoreToPosition(this.gameData.currentStep + 1);
@@ -114453,7 +114690,7 @@ var GlobalStateStep = class extends GlobalModuleState {
 				awaitStuff.push(_this.chickenGameController.roundStart((result) => {
 					_this.gameData.reactOnStep(result);
 					_this.handleFirstStep();
-				}, _this.gameData.getTotalBet()));
+				}, _this.gameData.getTotalBet(), _this.gameData.currentGameMode));
 			} else {
 				awaitStuff.push(_this._chickenModule.makeStep());
 				awaitStuff.push(_this.chickenGameController.step((result) => {
@@ -114463,7 +114700,7 @@ var GlobalStateStep = class extends GlobalModuleState {
 				}));
 			}
 			yield Promise.all(awaitStuff);
-			_this._chickenModule.showMultiplier(_this.gameData.multipliers[_this.gameData.currentStep]);
+			_this._chickenModule.showMultiplier(_this.gameData.multipliers[_this.gameData.currentGameMode][_this.gameData.currentStep]);
 			_this._hudModule.setNewCounterNumber(_this.gameData.currentStep + 1);
 			if (_this.gameData.isDead) {
 				yield _this.playFatalCarSequence();
@@ -114509,8 +114746,8 @@ init_asyncToGenerator();
 var GlobalStateWin = class extends GlobalModuleState {
 	constructor(module, name, eventManager) {
 		super(module, name, eventManager);
-		this._winAmountModule = module.diContainer.get(Qa);
-		this._bigWinModule = module.diContainer.get(ai);
+		this._winAmountModule = module.diContainer.get($a);
+		this._bigWinModule = module.diContainer.get(oi);
 		this._spinButtonModule = module.diContainer.get(CashoutButtonModule);
 		this._hudModule = module.diContainer.get(GameHUDModule);
 		this._chickenModule = module.diContainer.get(ChickenModule);
@@ -114570,8 +114807,8 @@ var GlobalStateInit = class extends GlobalModuleState {
 		super(module, name, eventManager);
 		this._hudModule = module.diContainer.get(GameHUDModule);
 		this._spinButtonModule = module.diContainer.get(CashoutButtonModule);
-		this._restoreScreenModule = module.diContainer.get(Vi);
-		this._currencyFormatter = module.diContainer.get(P$2.CurrencyFormatter);
+		this._restoreScreenModule = module.diContainer.get(Hi);
+		this._currencyFormatter = module.diContainer.get(N$1.CurrencyFormatter);
 	}
 	onEnterState() {
 		var _this = this;
@@ -114641,7 +114878,7 @@ var _LosePresentationView;
 var LosePresentationView = (_LosePresentationView2 = class LosePresentationView extends q {
 	showPresentation() {
 		const parentContainer = new import_lib.Container();
-		const back = new import_lib.Graphics().rect(-960, -960, O$1, k).fill({
+		const back = new import_lib.Graphics().rect(-960, -960, E$1, D$1).fill({
 			color: 0,
 			alpha: .5
 		});
@@ -114673,7 +114910,7 @@ _LosePresentationEvents.LOSE_PRESENTATION_STARTED = "LosePresentationEvents::LOS
 _LosePresentationEvents.LOSE_PRESENTATION_FINISHED = "LosePresentationEvents::LOSE_PRESENTATION_FINISHED";
 //#endregion
 //#region src/modules/losepresentation/LosePresentationModule.ts
-var LosePresentationModule = class LosePresentationModule extends L {
+var LosePresentationModule = class LosePresentationModule extends I$1 {
 	showPresentation() {
 		this.view.showPresentation();
 		this.emit(LosePresentationEvents.LOSE_PRESENTATION_STARTED);
@@ -114728,7 +114965,7 @@ var GlobalStateLose = class extends GlobalModuleState {
 //#region src/modules/globalstate/GlobalStateSpinModule.ts
 var _GlobalStateSpinModule2;
 var _GlobalStateSpinModule;
-var GlobalStateSpinModule = (_GlobalStateSpinModule2 = class GlobalStateSpinModule extends it$1 {
+var GlobalStateSpinModule = (_GlobalStateSpinModule2 = class GlobalStateSpinModule extends at$1 {
 	onStateHandle(event) {
 		this.onCurrentStateHandle(event);
 	}
@@ -114765,6 +115002,7 @@ var BasicSlotAssetsManager = class extends or {
 			"CHECKBOX.json",
 			"CLOSE_MENU_BUTTON.json",
 			"CURRENT_MULTIPLIER.json",
+			"DIFFICULTY_BUTTON.json",
 			"FREE_SPINS_ADDITIONAL_SPINS.json",
 			"FREE_SPINS_ENTER_SCREENS.json",
 			"FREE_SPINS_EXIT_SCREENS.json",
@@ -114803,8 +115041,8 @@ var BasicSlotAssetsManager = class extends or {
 			"SOUND_BUTTON.json",
 			"START_SCREEN.json",
 			"STEP_NUMBER.json",
-			"SPIN_BUTTON.json",
-			"SPIN_BUTTON2.json",
+			"GO_BUTTON.json",
+			"CASHOUT_BUTTON.json",
 			"WR.json",
 			"WIN_INDICATIONS.json",
 			"WIN_NUMBERS.json",
@@ -114855,71 +115093,8 @@ var BasicSlotAssetsManager = class extends or {
 	}
 };
 //#endregion
-//#region src/gamedata/GameSpecificData.ts
-var GameSpecificData = class extends ke$1 {
-	constructor(..._args) {
-		super(..._args);
-		this._currentStep = -1;
-		this._isDead = false;
-		this._multipliers = [];
-	}
-	resetSteps() {
-		this._currentStep = -1;
-		this._isDead = false;
-	}
-	hasReachedFinalPosition() {
-		return this._currentStep + 1 >= 20;
-	}
-	reactOnCashOut(data) {
-		this._lastSpinResponse = data;
-		if ((data === null || data === void 0 ? void 0 : data.hasOwnProperty("balance")) && typeof (data === null || data === void 0 ? void 0 : data.balance) === "number") this._balance = data.balance;
-		if (data === null || data === void 0 ? void 0 : data.roundId) this._roundID = data.roundId;
-		this._totalWin = this._currentWin = data.win;
-		A.info("step data:");
-		A.info(data);
-	}
-	reactOnStep(data) {
-		this._lastSpinResponse = data;
-		if ((data === null || data === void 0 ? void 0 : data.hasOwnProperty("balance")) && typeof (data === null || data === void 0 ? void 0 : data.balance) === "number") this._balance = data.balance;
-		if (data === null || data === void 0 ? void 0 : data.roundId) this._roundID = data.roundId;
-		this._totalWin = this._currentWin = data.win;
-		this._isDead = data.isDead;
-		this._currentStep = data.currentStep;
-		A.info("step data:");
-		A.info(data);
-	}
-	reactOnPayout(data) {
-		this._lastSpinResponse = data;
-		A.info("payout data:");
-		A.info(data);
-	}
-	setupGameFacts() {}
-	initializeServerSymbols() {}
-	afterInitRestoreSetup(data) {
-		if (this.hasRestore) {}
-	}
-	parseState(stateData) {
-		if (stateData) this._currentStep = stateData.currentStep;
-	}
-	parseOtherInitData(data) {
-		super.parseOtherInitData(data);
-		this._multipliers = [...data.config.multipliers];
-	}
-	parseConfigReelgrid(data) {}
-	parseConfigPaytable(data) {}
-	get currentStep() {
-		return this._currentStep;
-	}
-	get isDead() {
-		return this._isDead;
-	}
-	get multipliers() {
-		return this._multipliers;
-	}
-};
-//#endregion
 //#region src/ChickenMainContainer.ts
-var ChickenMainContainer = class ChickenMainContainer extends yo {
+var ChickenMainContainer = class ChickenMainContainer extends bo {
 	getMainUIContainerName() {
 		return "MAIN_UI";
 	}
@@ -114936,8 +115111,8 @@ _ChickenGameControllerEvents.PAYOUT_RECEIVED = "ChickenGameControllerEvents::PAY
 //#region src/ChickenGameController.ts
 init_objectSpread2();
 init_asyncToGenerator();
-var ChickenGameController = class extends be$1 {
-	roundStart(cb, bet) {
+var ChickenGameController = class extends Se$1 {
+	roundStart(cb, bet, gameMode) {
 		var _this = this;
 		return _asyncToGenerator(function* () {
 			var _result$action;
@@ -114946,7 +115121,8 @@ var ChickenGameController = class extends be$1 {
 			const result = yield _this._playBridge.play({
 				bet,
 				cheat,
-				action: "main"
+				action: "main",
+				data: { gameMode }
 			});
 			if (result.hasOwnProperty("error")) {
 				_this._eventManager.emit(GameControllerEvents.ERROR_RECEIVED, result);
@@ -115005,7 +115181,7 @@ var ChickenGameController = class extends be$1 {
 //#endregion
 //#region src/BasicSlotGame.ts
 init_asyncToGenerator();
-var BasicSlotGame = class extends xo {
+var BasicSlotGame = class extends So {
 	createGameAssetsManager() {
 		return new BasicSlotAssetsManager();
 	}
@@ -115013,14 +115189,14 @@ var BasicSlotGame = class extends xo {
 		return new GameSpecificData();
 	}
 	bindSlotMainUiClass() {
-		this.diContainer.bind(P$2.MainUI).to(ChickenMainContainer).inSingletonScope();
+		this.diContainer.bind(N$1.MainUI).to(ChickenMainContainer).inSingletonScope();
 	}
 	setupGameContainer() {
 		var _this = this;
 		return _asyncToGenerator(function* () {
 			const gameController = new ChickenGameController();
-			yield gameController.initialize(_this._device, _this, _this.diContainer.get(N$1.IEventManager));
-			_this.diContainer.bind(P$2.GameController).toConstantValue(gameController);
+			yield gameController.initialize(_this._device, _this, _this.diContainer.get(M$1.IEventManager));
+			_this.diContainer.bind(N$1.GameController).toConstantValue(gameController);
 		})();
 	}
 };
@@ -115036,7 +115212,7 @@ var ChickenView = (_ChickenView2 = class ChickenView extends q {
 		const roadWidth = this.getConfigValue("game.roadWidth");
 		this._chicken = this.spineUtils.startSpineAnimationCreation("CHICKEN.json", "IDLE", true).position(-roadWidth, 0).createAndStart();
 		this._currentMultiplier = this.spineUtils.startSpineAnimationCreation("CURRENT_MULTIPLIER.json", "IDLE", true).createAndStart();
-		this._multiplierValue = new ni(this.assets, "COINS_");
+		this._multiplierValue = new ri(this.assets, "COINS_");
 		this._multiplierValue.showNumber("0");
 		this.spineUtils.replaceSlotAttachment(this._currentMultiplier, "SYMBOL_NUMBER", this._multiplierValue);
 		this.spineUtils.replaceSlotAttachment(this._chicken, "CURRENT_MULTIPLIER", this._currentMultiplier.spine);
@@ -115082,7 +115258,7 @@ var ChickenView = (_ChickenView2 = class ChickenView extends q {
 ChickenView = _ChickenView = __decorate([Z()], ChickenView);
 //#endregion
 //#region src/sounds/GameSoundController.ts
-var GameSoundController = class GameSoundController extends hi {
+var GameSoundController = class GameSoundController extends gi {
 	setupHUDModule() {
 		this._hudModule = this.diContainer.get(GameHUDModule);
 		this._hudModule.soundButtonStateSwitched = this.onButtonStateSwitched.bind(this);
@@ -115097,9 +115273,9 @@ var GameAutoplayBasicState = class extends AutoplayBasicState {
 		this.on(AutoplayMenuEvents.AUTOPLAY_MENU_ACCEPTED, this.onAutoStepsSettingsAccepted);
 		this.on(GlobalStateEvents.CAN_SPIN, this.onGameRoundFinished);
 	}
-	onAutoStepsSettingsAccepted(eventID, spinsLeft, cashoutStep) {
+	onAutoStepsSettingsAccepted(eventID, spinsLeft, cashoutStep, selectedDifficulty) {
+		this.emit(AutoplayHandlerEvents.AUTOPLAY_STARTED, spinsLeft, cashoutStep, selectedDifficulty);
 		this.module.startChickenAutoplay(spinsLeft, cashoutStep);
-		this.emit(AutoplayHandlerEvents.AUTOPLAY_STARTED, spinsLeft, cashoutStep);
 		this.emit(GameAutoplayHandlerEvents.AUTOPLAY_STEP);
 		this.module.gotoState(Tr.IN_PROGRESS);
 	}
@@ -115156,7 +115332,7 @@ GameAutoplayHandlerModule = __decorate([Z()], GameAutoplayHandlerModule);
 init_asyncToGenerator();
 window.addEventListener("DOMContentLoaded", () => {
 	const game = new BasicSlotGame();
-	game.diContainer.bind(N$1.Game).toConstantValue(game);
+	game.diContainer.bind(M$1.Game).toConstantValue(game);
 	gameReady(game);
 });
 function gameReady(_x) {
@@ -115167,8 +115343,8 @@ function _gameReady() {
 		yield game.init();
 		yield game.loadResources();
 		game.addModules({ module: GlobalStateSpinModule }, {
-			module: Ni,
-			view: Pi,
+			module: Pi,
+			view: Fi,
 			viewScreen: "SYSTEM_MESSAGE"
 		}, {
 			module: yr,
@@ -115177,8 +115353,8 @@ function _gameReady() {
 			module: GameHUDModule,
 			view: GameHUDView
 		}, {
-			module: ti,
-			view: ei,
+			module: ni,
+			view: ti,
 			viewScreen: "BACKGROUND"
 		}, {
 			module: GoButtonModule,
@@ -115189,10 +115365,10 @@ function _gameReady() {
 			view: CashoutButtonView,
 			viewScreen: "CASHOUT_BUTTON"
 		}, {
-			module: Oa,
-			view: Da,
+			module: ka,
+			view: Oa,
 			viewScreen: "BET_BUTTON"
-		}, { module: Va }, { module: Xr }, {
+		}, { module: Ha }, { module: Zr }, {
 			module: Mr,
 			view: _r,
 			viewScreen: "AUTOPLAY_BUTTON"
@@ -115200,25 +115376,25 @@ function _gameReady() {
 			module: Nr,
 			view: Ir,
 			viewScreen: "AUTOPLAY_STOP_BUTTON"
-		}, { module: ya }, { module: GameSoundController }, { module: ChickenKeypadController }, {
-			module: Li,
-			view: Ii,
+		}, { module: ba }, { module: GameSoundController }, { module: ChickenKeypadController }, {
+			module: Ri,
+			view: Li,
 			viewScreen: "QUICKPLAY_BUTTON"
 		}, {
-			module: Qa,
-			view: Za,
+			module: $a,
+			view: Qa,
 			viewScreen: "WIN_PRESENTATION"
 		}, {
 			module: LosePresentationModule,
 			view: LosePresentationView,
 			viewScreen: "WIN_SYMBOLS"
 		}, {
-			module: ai,
-			view: ii,
+			module: oi,
+			view: ai,
 			viewScreen: "BIG_WIN"
-		}, { module: mi }, { module: GameAutoplayHandlerModule }, {
-			module: Vi,
-			view: Bi,
+		}, { module: hi }, { module: GameAutoplayHandlerModule }, {
+			module: Hi,
+			view: Vi,
 			viewScreen: "SYSTEM_MESSAGE"
 		}, {
 			module: RoadModule,
@@ -115228,6 +115404,10 @@ function _gameReady() {
 			module: ChickenModule,
 			view: ChickenView,
 			viewScreen: "CHICKEN"
+		}, {
+			module: DifficultyButtonModule,
+			view: DifficultyButtonView,
+			viewScreen: "DIFFICULTY_BUTTON"
 		});
 		game.onReady();
 		game.initModules();
