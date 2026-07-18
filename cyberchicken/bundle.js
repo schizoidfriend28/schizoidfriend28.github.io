@@ -73863,20 +73863,23 @@ _defineProperty(Color$1, "RED", new _Color(1, 0, 0, 1));
 _defineProperty(Color$1, "GREEN", new _Color(0, 1, 0, 1));
 _defineProperty(Color$1, "BLUE", new _Color(0, 0, 1, 1));
 _defineProperty(Color$1, "MAGENTA", new _Color(1, 0, 1, 1));
-var MathUtils = class MathUtils {
+var MathUtils$1 = class MathUtils$1 {
+	static {
+		__name$1(this, "MathUtils");
+	}
 	static clamp(value, min, max) {
 		if (value < min) return min;
 		if (value > max) return max;
 		return value;
 	}
 	static cosDeg(degrees) {
-		return Math.cos(degrees * MathUtils.degRad);
+		return Math.cos(degrees * MathUtils$1.degRad);
 	}
 	static sinDeg(degrees) {
-		return Math.sin(degrees * MathUtils.degRad);
+		return Math.sin(degrees * MathUtils$1.degRad);
 	}
 	static atan2Deg(y, x) {
-		return Math.atan2(y, x) * MathUtils.degRad;
+		return Math.atan2(y, x) * MathUtils$1.degRad;
 	}
 	static signum(value) {
 		return value > 0 ? 1 : value < 0 ? -1 : 0;
@@ -73889,7 +73892,7 @@ var MathUtils = class MathUtils {
 		return x < 0 ? -y : y;
 	}
 	static randomTriangular(min, max) {
-		return MathUtils.randomTriangularWith(min, max, (min + max) * .5);
+		return MathUtils$1.randomTriangularWith(min, max, (min + max) * .5);
 	}
 	static randomTriangularWith(min, max, mode) {
 		let u = Math.random();
@@ -73901,14 +73904,14 @@ var MathUtils = class MathUtils {
 		return value && (value & value - 1) === 0;
 	}
 };
-_MathUtils = MathUtils;
-_defineProperty(MathUtils, "PI", 3.1415927);
-_defineProperty(MathUtils, "PI2", _MathUtils.PI * 2);
-_defineProperty(MathUtils, "invPI2", 1 / _MathUtils.PI2);
-_defineProperty(MathUtils, "radiansToDegrees", 180 / _MathUtils.PI);
-_defineProperty(MathUtils, "radDeg", _MathUtils.radiansToDegrees);
-_defineProperty(MathUtils, "degreesToRadians", _MathUtils.PI / 180);
-_defineProperty(MathUtils, "degRad", _MathUtils.degreesToRadians);
+_MathUtils = MathUtils$1;
+_defineProperty(MathUtils$1, "PI", 3.1415927);
+_defineProperty(MathUtils$1, "PI2", _MathUtils.PI * 2);
+_defineProperty(MathUtils$1, "invPI2", 1 / _MathUtils.PI2);
+_defineProperty(MathUtils$1, "radiansToDegrees", 180 / _MathUtils.PI);
+_defineProperty(MathUtils$1, "radDeg", _MathUtils.radiansToDegrees);
+_defineProperty(MathUtils$1, "degreesToRadians", _MathUtils.PI / 180);
+_defineProperty(MathUtils$1, "degRad", _MathUtils.degreesToRadians);
 var Utils = class Utils {
 	static arrayCopy(source, sourceStart, dest, destStart, numElements) {
 		for (let i = sourceStart, j = destStart; i < sourceStart + numElements; i++, j++) dest[j] = source[i];
@@ -74632,19 +74635,19 @@ var CurveTimeline1 = class extends CurveTimeline {
 			return value;
 		}
 		if (direction == MixDirection.mixOut) switch (blend) {
-			case MixBlend.setup: return setup + (Math.abs(value) * MathUtils.signum(setup) - setup) * alpha;
+			case MixBlend.setup: return setup + (Math.abs(value) * MathUtils$1.signum(setup) - setup) * alpha;
 			case MixBlend.first:
-			case MixBlend.replace: return current + (Math.abs(value) * MathUtils.signum(current) - current) * alpha;
+			case MixBlend.replace: return current + (Math.abs(value) * MathUtils$1.signum(current) - current) * alpha;
 		}
 		else {
 			let s = 0;
 			switch (blend) {
 				case MixBlend.setup:
-					s = Math.abs(setup) * MathUtils.signum(value);
+					s = Math.abs(setup) * MathUtils$1.signum(value);
 					return s + (value - s) * alpha;
 				case MixBlend.first:
 				case MixBlend.replace:
-					s = Math.abs(current) * MathUtils.signum(value);
+					s = Math.abs(current) * MathUtils$1.signum(value);
 					return s + (value - s) * alpha;
 			}
 		}
@@ -74827,15 +74830,15 @@ var ScaleTimeline = class extends CurveTimeline2 {
 				case MixBlend.setup:
 					bx = bone.data.scaleX;
 					by = bone.data.scaleY;
-					bone.scaleX = bx + (Math.abs(x) * MathUtils.signum(bx) - bx) * alpha;
-					bone.scaleY = by + (Math.abs(y) * MathUtils.signum(by) - by) * alpha;
+					bone.scaleX = bx + (Math.abs(x) * MathUtils$1.signum(bx) - bx) * alpha;
+					bone.scaleY = by + (Math.abs(y) * MathUtils$1.signum(by) - by) * alpha;
 					break;
 				case MixBlend.first:
 				case MixBlend.replace:
 					bx = bone.scaleX;
 					by = bone.scaleY;
-					bone.scaleX = bx + (Math.abs(x) * MathUtils.signum(bx) - bx) * alpha;
-					bone.scaleY = by + (Math.abs(y) * MathUtils.signum(by) - by) * alpha;
+					bone.scaleX = bx + (Math.abs(x) * MathUtils$1.signum(bx) - bx) * alpha;
+					bone.scaleY = by + (Math.abs(y) * MathUtils$1.signum(by) - by) * alpha;
 					break;
 				case MixBlend.add:
 					bone.scaleX += (x - bone.data.scaleX) * alpha;
@@ -74843,15 +74846,15 @@ var ScaleTimeline = class extends CurveTimeline2 {
 			}
 			else switch (blend) {
 				case MixBlend.setup:
-					bx = Math.abs(bone.data.scaleX) * MathUtils.signum(x);
-					by = Math.abs(bone.data.scaleY) * MathUtils.signum(y);
+					bx = Math.abs(bone.data.scaleX) * MathUtils$1.signum(x);
+					by = Math.abs(bone.data.scaleY) * MathUtils$1.signum(y);
 					bone.scaleX = bx + (x - bx) * alpha;
 					bone.scaleY = by + (y - by) * alpha;
 					break;
 				case MixBlend.first:
 				case MixBlend.replace:
-					bx = Math.abs(bone.scaleX) * MathUtils.signum(x);
-					by = Math.abs(bone.scaleY) * MathUtils.signum(y);
+					bx = Math.abs(bone.scaleX) * MathUtils$1.signum(x);
+					by = Math.abs(bone.scaleY) * MathUtils$1.signum(y);
 					bone.scaleX = bx + (x - bx) * alpha;
 					bone.scaleY = by + (y - by) * alpha;
 					break;
@@ -76688,12 +76691,12 @@ var AnimationState = class AnimationState {
 			total = diff + loops;
 			let current = diff >= 0;
 			let dir = lastTotal >= 0;
-			if (Math.abs(lastDiff) <= 90 && MathUtils.signum(lastDiff) != MathUtils.signum(diff)) if (Math.abs(lastTotal - loops) > 180) {
-				total += 360 * MathUtils.signum(lastTotal);
+			if (Math.abs(lastDiff) <= 90 && MathUtils$1.signum(lastDiff) != MathUtils$1.signum(diff)) if (Math.abs(lastTotal - loops) > 180) {
+				total += 360 * MathUtils$1.signum(lastTotal);
 				dir = current;
-			} else if (loops != 0) total -= 360 * MathUtils.signum(lastTotal);
+			} else if (loops != 0) total -= 360 * MathUtils$1.signum(lastTotal);
 			else dir = current;
-			if (dir != current) total += 360 * MathUtils.signum(lastTotal);
+			if (dir != current) total += 360 * MathUtils$1.signum(lastTotal);
 			timelinesRotation[i] = total;
 		}
 		timelinesRotation[i + 1] = diff;
@@ -78267,12 +78270,12 @@ var PointAttachment = class PointAttachment extends VertexAttachment {
 		return point;
 	}
 	computeWorldRotation(bone) {
-		const r = this.rotation * MathUtils.degRad;
+		const r = this.rotation * MathUtils$1.degRad;
 		const cos = Math.cos(r);
 		const sin = Math.sin(r);
 		const x = cos * bone.a + sin * bone.b;
 		const y = cos * bone.c + sin * bone.d;
-		return MathUtils.atan2Deg(y, x);
+		return MathUtils$1.atan2Deg(y, x);
 	}
 	copy() {
 		let copy = new PointAttachment(this.name);
@@ -78410,7 +78413,7 @@ var RegionAttachment = class RegionAttachment extends Attachment {
 		let localY = -this.height / 2 * this.scaleY + this.region.offsetY * regionScaleY;
 		let localX2 = localX + this.region.width * regionScaleX;
 		let localY2 = localY + this.region.height * regionScaleY;
-		let radians = this.rotation * MathUtils.degRad;
+		let radians = this.rotation * MathUtils$1.degRad;
 		let cos = Math.cos(radians);
 		let sin = Math.sin(radians);
 		let x = this.x;
@@ -78998,8 +79001,8 @@ var Bone = class {
 			let skeleton = this.skeleton;
 			const sx = skeleton.scaleX;
 			const sy = skeleton.scaleY;
-			const rx = (rotation + shearX) * MathUtils.degRad;
-			const ry = (rotation + 90 + shearY) * MathUtils.degRad;
+			const rx = (rotation + shearX) * MathUtils$1.degRad;
+			const ry = (rotation + 90 + shearY) * MathUtils$1.degRad;
 			this.a = Math.cos(rx) * scaleX * sx;
 			this.b = Math.cos(ry) * scaleY * sx;
 			this.c = Math.sin(rx) * scaleX * sy;
@@ -79016,8 +79019,8 @@ var Bone = class {
 		this.worldY = pc * x + pd * y + parent.worldY;
 		switch (this.inherit) {
 			case Inherit.Normal: {
-				const rx = (rotation + shearX) * MathUtils.degRad;
-				const ry = (rotation + 90 + shearY) * MathUtils.degRad;
+				const rx = (rotation + shearX) * MathUtils$1.degRad;
+				const ry = (rotation + 90 + shearY) * MathUtils$1.degRad;
 				const la = Math.cos(rx) * scaleX;
 				const lb = Math.cos(ry) * scaleY;
 				const lc = Math.sin(rx) * scaleX;
@@ -79029,8 +79032,8 @@ var Bone = class {
 				return;
 			}
 			case Inherit.OnlyTranslation: {
-				const rx = (rotation + shearX) * MathUtils.degRad;
-				const ry = (rotation + 90 + shearY) * MathUtils.degRad;
+				const rx = (rotation + shearX) * MathUtils$1.degRad;
+				const ry = (rotation + 90 + shearY) * MathUtils$1.degRad;
 				this.a = Math.cos(rx) * scaleX;
 				this.b = Math.cos(ry) * scaleY;
 				this.c = Math.sin(rx) * scaleX;
@@ -79048,14 +79051,14 @@ var Bone = class {
 					s = Math.abs(pa * pd * sy - pb * sx * pc) / s;
 					pb = pc * s;
 					pd = pa * s;
-					prx = Math.atan2(pc, pa) * MathUtils.radDeg;
+					prx = Math.atan2(pc, pa) * MathUtils$1.radDeg;
 				} else {
 					pa = 0;
 					pc = 0;
-					prx = 90 - Math.atan2(pd, pb) * MathUtils.radDeg;
+					prx = 90 - Math.atan2(pd, pb) * MathUtils$1.radDeg;
 				}
-				const rx = (rotation + shearX - prx) * MathUtils.degRad;
-				const ry = (rotation + shearY - prx + 90) * MathUtils.degRad;
+				const rx = (rotation + shearX - prx) * MathUtils$1.degRad;
+				const ry = (rotation + shearY - prx + 90) * MathUtils$1.degRad;
 				const la = Math.cos(rx) * scaleX;
 				const lb = Math.cos(ry) * scaleY;
 				const lc = Math.sin(rx) * scaleX;
@@ -79068,7 +79071,7 @@ var Bone = class {
 			}
 			case Inherit.NoScale:
 			case Inherit.NoScaleOrReflection: {
-				rotation *= MathUtils.degRad;
+				rotation *= MathUtils$1.degRad;
 				const cos = Math.cos(rotation);
 				const sin = Math.sin(rotation);
 				let za = (pa * cos + pb * sin) / this.skeleton.scaleX;
@@ -79082,8 +79085,8 @@ var Bone = class {
 				rotation = Math.PI / 2 + Math.atan2(zc, za);
 				const zb = Math.cos(rotation) * s;
 				const zd = Math.sin(rotation) * s;
-				shearX *= MathUtils.degRad;
-				shearY = (90 + shearY) * MathUtils.degRad;
+				shearX *= MathUtils$1.degRad;
+				shearY = (90 + shearY) * MathUtils$1.degRad;
 				const la = Math.cos(shearX) * scaleX;
 				const lb = Math.cos(shearY) * scaleY;
 				const lc = Math.sin(shearX) * scaleX;
@@ -79125,11 +79128,11 @@ var Bone = class {
 		if (!parent) {
 			this.ax = this.worldX - this.skeleton.x;
 			this.ay = this.worldY - this.skeleton.y;
-			this.arotation = Math.atan2(this.c, this.a) * MathUtils.radDeg;
+			this.arotation = Math.atan2(this.c, this.a) * MathUtils$1.radDeg;
 			this.ascaleX = Math.sqrt(this.a * this.a + this.c * this.c);
 			this.ascaleY = Math.sqrt(this.b * this.b + this.d * this.d);
 			this.ashearX = 0;
-			this.ashearY = Math.atan2(this.a * this.b + this.c * this.d, this.a * this.d - this.b * this.c) * MathUtils.radDeg;
+			this.ashearY = Math.atan2(this.a * this.b + this.c * this.d, this.a * this.d - this.b * this.c) * MathUtils$1.radDeg;
 			return;
 		}
 		let pa = parent.a;
@@ -79167,8 +79170,8 @@ var Bone = class {
 				}
 				case Inherit.NoScale:
 				case Inherit.NoScaleOrReflection:
-					let cos = MathUtils.cosDeg(this.rotation);
-					let sin = MathUtils.sinDeg(this.rotation);
+					let cos = MathUtils$1.cosDeg(this.rotation);
+					let sin = MathUtils$1.sinDeg(this.rotation);
 					pa = (pa * cos + pb * sin) / this.skeleton.scaleX;
 					pc = (pc * cos + pd * sin) / this.skeleton.scaleY;
 					let s = Math.sqrt(pa * pa + pc * pc);
@@ -79177,7 +79180,7 @@ var Bone = class {
 					pc *= s;
 					s = Math.sqrt(pa * pa + pc * pc);
 					if (this.inherit == Inherit.NoScale && pid < 0 != (this.skeleton.scaleX < 0 != this.skeleton.scaleY < 0)) s = -s;
-					let r = MathUtils.PI / 2 + Math.atan2(pc, pa);
+					let r = MathUtils$1.PI / 2 + Math.atan2(pc, pa);
 					pb = Math.cos(r) * s;
 					pd = Math.sin(r) * s;
 					pid = 1 / (pa * pd - pb * pc);
@@ -79196,22 +79199,22 @@ var Bone = class {
 		if (this.ascaleX > 1e-4) {
 			let det = ra * rd - rb * rc;
 			this.ascaleY = det / this.ascaleX;
-			this.ashearY = -Math.atan2(ra * rb + rc * rd, det) * MathUtils.radDeg;
-			this.arotation = Math.atan2(rc, ra) * MathUtils.radDeg;
+			this.ashearY = -Math.atan2(ra * rb + rc * rd, det) * MathUtils$1.radDeg;
+			this.arotation = Math.atan2(rc, ra) * MathUtils$1.radDeg;
 		} else {
 			this.ascaleX = 0;
 			this.ascaleY = Math.sqrt(rb * rb + rd * rd);
 			this.ashearY = 0;
-			this.arotation = 90 - Math.atan2(rd, rb) * MathUtils.radDeg;
+			this.arotation = 90 - Math.atan2(rd, rb) * MathUtils$1.radDeg;
 		}
 	}
 	/** The world rotation for the X axis, calculated using {@link #a} and {@link #c}. */
 	getWorldRotationX() {
-		return Math.atan2(this.c, this.a) * MathUtils.radDeg;
+		return Math.atan2(this.c, this.a) * MathUtils$1.radDeg;
 	}
 	/** The world rotation for the Y axis, calculated using {@link #b} and {@link #d}. */
 	getWorldRotationY() {
-		return Math.atan2(this.d, this.b) * MathUtils.radDeg;
+		return Math.atan2(this.d, this.b) * MathUtils$1.radDeg;
 	}
 	/** The magnitude (always positive) of the world scale X, calculated using {@link #a} and {@link #c}. */
 	getWorldScaleX() {
@@ -79250,23 +79253,23 @@ var Bone = class {
 	}
 	/** Transforms a world rotation to a local rotation. */
 	worldToLocalRotation(worldRotation) {
-		let sin = MathUtils.sinDeg(worldRotation);
-		let cos = MathUtils.cosDeg(worldRotation);
-		return Math.atan2(this.a * sin - this.c * cos, this.d * cos - this.b * sin) * MathUtils.radDeg + this.rotation - this.shearX;
+		let sin = MathUtils$1.sinDeg(worldRotation);
+		let cos = MathUtils$1.cosDeg(worldRotation);
+		return Math.atan2(this.a * sin - this.c * cos, this.d * cos - this.b * sin) * MathUtils$1.radDeg + this.rotation - this.shearX;
 	}
 	/** Transforms a local rotation to a world rotation. */
 	localToWorldRotation(localRotation) {
 		localRotation -= this.rotation - this.shearX;
-		let sin = MathUtils.sinDeg(localRotation);
-		let cos = MathUtils.cosDeg(localRotation);
-		return Math.atan2(cos * this.c + sin * this.d, cos * this.a + sin * this.b) * MathUtils.radDeg;
+		let sin = MathUtils$1.sinDeg(localRotation);
+		let cos = MathUtils$1.cosDeg(localRotation);
+		return Math.atan2(cos * this.c + sin * this.d, cos * this.a + sin * this.b) * MathUtils$1.radDeg;
 	}
 	/** Rotates the world transform the specified amount.
 	* <p>
 	* After changes are made to the world transform, {@link #updateAppliedTransform()} should be called and
 	* {@link #update(Physics)} will need to be called on any child bones, recursively. */
 	rotateWorld(degrees) {
-		degrees *= MathUtils.degRad;
+		degrees *= MathUtils$1.degRad;
 		const sin = Math.sin(degrees);
 		const cos = Math.cos(degrees);
 		const ra = this.a;
@@ -79585,8 +79588,8 @@ var IkConstraint = class {
 		let ty = 0;
 		switch (bone.inherit) {
 			case Inherit.OnlyTranslation:
-				tx = (targetX - bone.worldX) * MathUtils.signum(bone.skeleton.scaleX);
-				ty = (targetY - bone.worldY) * MathUtils.signum(bone.skeleton.scaleY);
+				tx = (targetX - bone.worldX) * MathUtils$1.signum(bone.skeleton.scaleX);
+				ty = (targetY - bone.worldY) * MathUtils$1.signum(bone.skeleton.scaleY);
 				break;
 			case Inherit.NoRotationOrReflection:
 				let s = Math.abs(pa * pd - pb * pc) / Math.max(1e-4, pa * pa + pc * pc);
@@ -79594,7 +79597,7 @@ var IkConstraint = class {
 				let sc = pc / bone.skeleton.scaleY;
 				pb = -sc * s * bone.skeleton.scaleX;
 				pd = sa * s * bone.skeleton.scaleY;
-				rotationIK += Math.atan2(sc, sa) * MathUtils.radDeg;
+				rotationIK += Math.atan2(sc, sa) * MathUtils$1.radDeg;
 			default:
 				let x = targetX - p.worldX;
 				let y = targetY - p.worldY;
@@ -79607,7 +79610,7 @@ var IkConstraint = class {
 					ty = (y * pa - x * pc) / d - bone.ay;
 				}
 		}
-		rotationIK += Math.atan2(ty, tx) * MathUtils.radDeg;
+		rotationIK += Math.atan2(ty, tx) * MathUtils$1.radDeg;
 		if (bone.ascaleX < 0) rotationIK += 180;
 		if (rotationIK > 180) rotationIK -= 360;
 		else if (rotationIK < -180) rotationIK += 360;
@@ -79761,7 +79764,7 @@ var IkConstraint = class {
 					break outer;
 				}
 			}
-			let minAngle = MathUtils.PI;
+			let minAngle = MathUtils$1.PI;
 			let minX = l1 - a;
 			let minDist = minX * minX;
 			let minY = 0;
@@ -79798,12 +79801,12 @@ var IkConstraint = class {
 		}
 		let os = Math.atan2(cy, cx) * s2;
 		let rotation = parent.arotation;
-		a1 = (a1 - os) * MathUtils.radDeg + os1 - rotation;
+		a1 = (a1 - os) * MathUtils$1.radDeg + os1 - rotation;
 		if (a1 > 180) a1 -= 360;
 		else if (a1 < -180) a1 += 360;
 		parent.updateWorldTransformWith(px, py, rotation + a1 * alpha, sx, sy, 0, 0);
 		rotation = child.arotation;
-		a2 = ((a2 + os) * MathUtils.radDeg - child.ashearX) * s2 + os2 - rotation;
+		a2 = ((a2 + os) * MathUtils$1.radDeg - child.ashearX) * s2 + os2 - rotation;
 		if (a2 > 180) a2 -= 360;
 		else if (a2 < -180) a2 += 360;
 		child.updateWorldTransformWith(cx, cy, rotation + a2 * alpha, child.ascaleX, child.ascaleY, child.ashearX, child.ashearY);
@@ -80210,7 +80213,7 @@ var PathConstraint = class PathConstraint {
 		else {
 			tip = false;
 			let p = this.target.bone;
-			offsetRotation *= p.a * p.d - p.b * p.c > 0 ? MathUtils.degRad : -MathUtils.degRad;
+			offsetRotation *= p.a * p.d - p.b * p.c > 0 ? MathUtils$1.degRad : -MathUtils$1.degRad;
 		}
 		for (let i = 0, p = 3; i < boneCount; i++, p += 3) {
 			let bone = bones[i];
@@ -80249,8 +80252,8 @@ var PathConstraint = class PathConstraint {
 					boneX += (length * (cos * a - sin * c) - dx) * mixRotate;
 					boneY += (length * (sin * a + cos * c) - dy) * mixRotate;
 				} else r += offsetRotation;
-				if (r > MathUtils.PI) r -= MathUtils.PI2;
-				else if (r < -MathUtils.PI) r += MathUtils.PI2;
+				if (r > MathUtils$1.PI) r -= MathUtils$1.PI2;
+				else if (r < -MathUtils$1.PI) r += MathUtils$1.PI2;
 				r *= mixRotate;
 				cos = Math.cos(r);
 				sin = Math.sin(r);
@@ -80724,7 +80727,7 @@ var PhysicsConstraint = class {
 						if (rotateOrShearX) {
 							mr = (this.data.rotate + this.data.shearX) * mix;
 							let r = Math.atan2(dy + this.ty, dx + this.tx) - ca - this.rotateOffset * mr;
-							this.rotateOffset += (r - Math.ceil(r * MathUtils.invPI2 - .5) * MathUtils.PI2) * i;
+							this.rotateOffset += (r - Math.ceil(r * MathUtils$1.invPI2 - .5) * MathUtils$1.PI2) * i;
 							r = this.rotateOffset * mr + ca;
 							c = Math.cos(r);
 							s = Math.sin(r);
@@ -80829,7 +80832,7 @@ var PhysicsConstraint = class {
 	/** Rotates the physics constraint so next {@link #update(Physics)} forces are applied as if the bone rotated around the
 	* specified point in world space. */
 	rotate(x, y, degrees) {
-		const r = degrees * MathUtils.degRad;
+		const r = degrees * MathUtils$1.degRad;
 		const cos = Math.cos(r);
 		const sin = Math.sin(r);
 		const dx = this.cx - x;
@@ -81067,7 +81070,7 @@ var TransformConstraint = class {
 		let tb = target.b;
 		let tc = target.c;
 		let td = target.d;
-		let degRadReflect = ta * td - tb * tc > 0 ? MathUtils.degRad : -MathUtils.degRad;
+		let degRadReflect = ta * td - tb * tc > 0 ? MathUtils$1.degRad : -MathUtils$1.degRad;
 		let offsetRotation = this.data.offsetRotation * degRadReflect;
 		let offsetShearY = this.data.offsetShearY * degRadReflect;
 		let bones = this.bones;
@@ -81079,8 +81082,8 @@ var TransformConstraint = class {
 				let c = bone.c;
 				let d = bone.d;
 				let r = Math.atan2(tc, ta) - Math.atan2(c, a) + offsetRotation;
-				if (r > MathUtils.PI) r -= MathUtils.PI2;
-				else if (r < -MathUtils.PI) r += MathUtils.PI2;
+				if (r > MathUtils$1.PI) r -= MathUtils$1.PI2;
+				else if (r < -MathUtils$1.PI) r += MathUtils$1.PI2;
 				r *= mixRotate;
 				let cos = Math.cos(r);
 				let sin = Math.sin(r);
@@ -81112,8 +81115,8 @@ var TransformConstraint = class {
 				let d = bone.d;
 				let by = Math.atan2(d, b);
 				let r = Math.atan2(td, tb) - Math.atan2(tc, ta) - (by - Math.atan2(bone.c, bone.a));
-				if (r > MathUtils.PI) r -= MathUtils.PI2;
-				else if (r < -MathUtils.PI) r += MathUtils.PI2;
+				if (r > MathUtils$1.PI) r -= MathUtils$1.PI2;
+				else if (r < -MathUtils$1.PI) r += MathUtils$1.PI2;
 				r = by + (r + offsetShearY) * mixShearY;
 				let s = Math.sqrt(b * b + d * d);
 				bone.b = Math.cos(r) * s;
@@ -81135,7 +81138,7 @@ var TransformConstraint = class {
 		let tb = target.b;
 		let tc = target.c;
 		let td = target.d;
-		let degRadReflect = ta * td - tb * tc > 0 ? MathUtils.degRad : -MathUtils.degRad;
+		let degRadReflect = ta * td - tb * tc > 0 ? MathUtils$1.degRad : -MathUtils$1.degRad;
 		let offsetRotation = this.data.offsetRotation * degRadReflect;
 		let offsetShearY = this.data.offsetShearY * degRadReflect;
 		let bones = this.bones;
@@ -81147,8 +81150,8 @@ var TransformConstraint = class {
 				let c = bone.c;
 				let d = bone.d;
 				let r = Math.atan2(tc, ta) + offsetRotation;
-				if (r > MathUtils.PI) r -= MathUtils.PI2;
-				else if (r < -MathUtils.PI) r += MathUtils.PI2;
+				if (r > MathUtils$1.PI) r -= MathUtils$1.PI2;
+				else if (r < -MathUtils$1.PI) r += MathUtils$1.PI2;
 				r *= mixRotate;
 				let cos = Math.cos(r);
 				let sin = Math.sin(r);
@@ -81175,11 +81178,11 @@ var TransformConstraint = class {
 			}
 			if (mixShearY > 0) {
 				let r = Math.atan2(td, tb) - Math.atan2(tc, ta);
-				if (r > MathUtils.PI) r -= MathUtils.PI2;
-				else if (r < -MathUtils.PI) r += MathUtils.PI2;
+				if (r > MathUtils$1.PI) r -= MathUtils$1.PI2;
+				else if (r < -MathUtils$1.PI) r += MathUtils$1.PI2;
 				let b = bone.b;
 				let d = bone.d;
-				r = Math.atan2(d, b) + (r - MathUtils.PI / 2 + offsetShearY) * mixShearY;
+				r = Math.atan2(d, b) + (r - MathUtils$1.PI / 2 + offsetShearY) * mixShearY;
 				let s = Math.sqrt(b * b + d * d);
 				bone.b = Math.cos(r) * s;
 				bone.d = Math.sin(r) * s;
@@ -81622,8 +81625,8 @@ var Skeleton = class Skeleton {
 		let pd = parent.d;
 		rootBone.worldX = pa * this.x + pb * this.y + parent.worldX;
 		rootBone.worldY = pc * this.x + pd * this.y + parent.worldY;
-		const rx = (rootBone.rotation + rootBone.shearX) * MathUtils.degRad;
-		const ry = (rootBone.rotation + 90 + rootBone.shearY) * MathUtils.degRad;
+		const rx = (rootBone.rotation + rootBone.shearX) * MathUtils$1.degRad;
+		const ry = (rootBone.rotation + 90 + rootBone.shearY) * MathUtils$1.degRad;
 		const la = Math.cos(rx) * rootBone.scaleX;
 		const lb = Math.cos(ry) * rootBone.scaleY;
 		const lc = Math.sin(rx) * rootBone.scaleX;
@@ -102555,6 +102558,21 @@ var qn = class CurrencyFormatter {
 	}
 };
 qn = __decorate$1([injectable()], qn);
+var MathUtils = class {
+	static shuffle(e) {
+		for (let t = e.length - 1; t > 0; t--) {
+			let n = Math.floor(Math.random() * (t + 1));
+			[e[t], e[n]] = [e[n], e[t]];
+		}
+	}
+	static randomInt(e, t) {
+		return Math.floor(Math.random() * (t - e + 1)) + e;
+	}
+	static toFixedNumber(e, t) {
+		let n = 10 ** t;
+		return Math.round(e * n) / n;
+	}
+};
 var Jn = class Translator {
 	constructor() {
 		_defineProperty(this, "_locale", void 0);
@@ -113949,7 +113967,7 @@ var GameSpecificData = class extends je$1 {
 		if (this.hasRestore) {}
 	}
 	parseState(stateData) {
-		if (stateData) this._currentStep = stateData.currentStep;
+		if (stateData && !stateData.isDead) this._currentStep = stateData.currentStep;
 	}
 	parseOtherInitData(data) {
 		super.parseOtherInitData(data);
@@ -114008,17 +114026,17 @@ var DifficultyButtonView = (_DifficultyButtonView2 = class DifficultyButtonView 
 	setEasyMode() {
 		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "LOW");
 		this.emit(_DifficultyButtonView.DIFFICULTY_EASY_SELECTED);
-		this.emit(_DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED);
+		this.emit(_DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED, GameMode.EASY);
 	}
 	setMediumMode() {
 		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "MEDIUM");
 		this.emit(_DifficultyButtonView.DIFFICULTY_MEDIUM_SELECTED);
-		this.emit(_DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED);
+		this.emit(_DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED, GameMode.MEDIUM);
 	}
 	setHardMode() {
 		this.spineUtils.setSkinOnAnimation(this._quickPlayButton.button.spineAnimation, "HARD");
 		this.emit(_DifficultyButtonView.DIFFICULTY_HARD_SELECTED);
-		this.emit(_DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED);
+		this.emit(_DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED, GameMode.HARD);
 	}
 	setupLayout() {
 		const bone = this.mainUI.getBoneFromUI("DIFFICULTY_BUTTON");
@@ -114054,6 +114072,12 @@ var DifficultyButtonView = (_DifficultyButtonView2 = class DifficultyButtonView 
 }, _DifficultyButtonView = _DifficultyButtonView2, _DifficultyButtonView2.DIFFICULTY_EASY_SELECTED = "DifficultyButtonView::DIFFICULTY_EASY_SELECTED", _DifficultyButtonView2.DIFFICULTY_MEDIUM_SELECTED = "DifficultyButtonView::DIFFICULTY_MEDIUM_SELECTED", _DifficultyButtonView2.DIFFICULTY_HARD_SELECTED = "DifficultyButtonView::DIFFICULTY_HARD_SELECTED", _DifficultyButtonView2.DIFFICULTY_BUTTON_CLICKED = "DifficultyButtonView::DIFFICULTY_BUTTON_CLICKED", _DifficultyButtonView2);
 DifficultyButtonView = _DifficultyButtonView = __decorate([Z()], DifficultyButtonView);
 //#endregion
+//#region src/modules/difficulty/DifficultyButtonEvents.ts
+var _DifficultyButtonEvents;
+var DifficultyButtonEvents = class {};
+_DifficultyButtonEvents = DifficultyButtonEvents;
+_DifficultyButtonEvents.DIFFICULTY_BUTTON_CLICKED = "DifficultyButtonEvents::DIFFICULTY_BUTTON_CLICKED";
+//#endregion
 //#region src/modules/difficulty/DifficultyButtonModule.ts
 var DifficultyButtonModule = class DifficultyButtonModule extends vr {
 	setupEvents() {
@@ -114061,7 +114085,7 @@ var DifficultyButtonModule = class DifficultyButtonModule extends vr {
 		this.onView(DifficultyButtonView.DIFFICULTY_EASY_SELECTED, this.onEasyModeSelected);
 		this.onView(DifficultyButtonView.DIFFICULTY_MEDIUM_SELECTED, this.onMediumModeSelected);
 		this.onView(DifficultyButtonView.DIFFICULTY_HARD_SELECTED, this.onHardModeSelected);
-		this.onViewEmitEvent(DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED, DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED);
+		this.onViewEmitEvent(DifficultyButtonView.DIFFICULTY_BUTTON_CLICKED, DifficultyButtonEvents.DIFFICULTY_BUTTON_CLICKED);
 		this.on(AutoplayHandlerEvents.AUTOPLAY_STARTED, this.onAutoplayStarted);
 	}
 	onButtonVisibilityChanged(isVisible) {}
@@ -114326,14 +114350,14 @@ var gameNameTextStyle = {
 	align: "left"
 };
 var GameHUDView = (_GameHUDView2 = class GameHUDView extends Mi {
-	setNewStepNumber(value) {
+	setNewStepNumber(value, total = 20) {
 		var _this = this;
 		return _asyncToGenerator(function* () {
 			_this._stepsCounter.play("NUMBER_CHANGE", 0, false, "IDLE");
-			_this._nextStepNumber.showNumber(`${value}`);
+			_this._nextStepNumber.showNumber(`${value}/${total}`);
 			yield _this._stepsCounter.getPromise(0);
 			_this._currentValue = value;
-			_this._currentStepNumber.showNumber(`${value}`);
+			_this._currentStepNumber.showNumber(`${value}/${total}`);
 		})();
 	}
 	setupButtons() {
@@ -114364,12 +114388,23 @@ var GameHUDView = (_GameHUDView2 = class GameHUDView extends Mi {
 GameHUDView = _GameHUDView = __decorate([Z()], GameHUDView);
 //#endregion
 //#region src/hud/GameHUDModule.ts
+init_asyncToGenerator();
 var GameHUDModule = class GameHUDModule extends Ni {
+	restore() {
+		super.restore();
+		this.view.setNewStepNumber(this.gameData.currentStep);
+	}
 	setNewCounterNumber(value) {
-		this.view.setNewStepNumber(value);
+		var _this = this;
+		return _asyncToGenerator(function* () {
+			yield _this.view.setNewStepNumber(value);
+		})();
 	}
 	resetCounterNumber() {
-		this.view.setNewStepNumber(0);
+		var _this2 = this;
+		return _asyncToGenerator(function* () {
+			yield _this2.view.setNewStepNumber(0);
+		})();
 	}
 	setupEvents() {
 		super.setupEvents();
@@ -114390,7 +114425,7 @@ init_asyncToGenerator();
 var ChickenModule = class ChickenModule extends I$1 {
 	showMultiplier(value) {
 		this.view.showCurrentMultiplier();
-		this.view.setMultiplierValue(value);
+		this.view.setMultiplierValue(MathUtils.toFixedNumber(value, 2));
 	}
 	hideCurrentMultiplier() {
 		this.view.hideCurrentMultiplier();
@@ -114422,41 +114457,6 @@ var ChickenModule = class ChickenModule extends I$1 {
 };
 ChickenModule = __decorate([Z()], ChickenModule);
 //#endregion
-//#region src/modules/globalstate/states/GlobalStateIdle.ts
-var GlobalStateIdle = class extends GlobalModuleState {
-	constructor(module, name, eventManager) {
-		super(module, name, eventManager);
-		this._keypadController = module.diContainer.get(ChickenKeypadController);
-		this._goButtonModule = module.diContainer.get(GoButtonModule);
-		this._cashoutButtonModule = module.diContainer.get(CashoutButtonModule);
-		this._hudModule = module.diContainer.get(GameHUDModule);
-		this._chickenModule = module.diContainer.get(ChickenModule);
-	}
-	onEnterState() {
-		this._keypadController.enableOnRoundFinished();
-		this._keypadController.enableOnStepFinished();
-		this._hudModule.resetCounterNumber();
-		this._chickenModule.hideCurrentMultiplier();
-		this._cashoutButtonModule.hideButton();
-		this._goButtonModule.resetGame();
-	}
-	onLeaveState() {}
-	setupEvents() {
-		this.on(GoButtonEvents.GO_BUTTON_CLICKED, this.onSpinButtonPressed);
-		this.on(GameAutoplayHandlerEvents.AUTOPLAY_STEP, this.onAutostepStarted);
-	}
-	onAutostepStarted() {
-		this.module.gotoState(GlobalStateSpinModule.STEP);
-	}
-	onSpinButtonPressed() {
-		this._keypadController.disableOnRoundStarted();
-		this.module.gotoState(GlobalStateSpinModule.STEP);
-	}
-	get chickenGameController() {
-		return this.gameController;
-	}
-};
-//#endregion
 //#region src/modules/road/RoadView.ts
 init_asyncToGenerator();
 var _RoadView2;
@@ -114468,6 +114468,7 @@ var RoadView = (_RoadView2 = class RoadView extends q {
 		this._laneBottomY = 0;
 		this._roadElements = [];
 		this._coins = [];
+		this._coinValues = [];
 		this._currentOffset = 0;
 		this._roadWidth = 0;
 		this._totalLanes = 0;
@@ -114502,28 +114503,33 @@ var RoadView = (_RoadView2 = class RoadView extends q {
 			_this.spawnCarsLoop();
 		})();
 	}
+	resetCoinMultipliers(values) {
+		for (let i = 0; i < values.length; i++) {
+			const value = values[i];
+			this._coinValues[i].showNumber(`x${MathUtils.toFixedNumber(value, 2)}`);
+		}
+	}
+	restoreCoins() {
+		for (const coin of this._coins) coin.play("IDLE", 0, true);
+	}
+	playWinCollectCoinAt(position) {
+		this._coinValues[position].showNumber("");
+		this._coins[position].play("MOVE_COLLECT", 0, false, "COLLECT_IDLE");
+	}
+	playLoseCollectCoinAt(position) {
+		this._coinValues[position].showNumber("");
+		this._coins[position].play("MOVE_DEATH", 0, false, "DEATH_IDLE");
+	}
 	restoreToPosition(laneIndex) {
 		this._currentOffset = laneIndex;
 		this._roadMainContainer.rotation = this._currentOffset * this._laneAngle;
 		this._barriersContainer.rotation = this._currentOffset * this._laneAngle;
 	}
 	restoreBarriersTill(laneIndex) {
-		const laneHeight = 1e4;
 		for (let i = 0; i < laneIndex; i++) {
-			const barrierContainer = new import_lib.Container();
-			const barrier = this.spineUtils.startSpineAnimationCreation("BARRIER.json", "IDLE", true).position(0, laneHeight - 1920 / 2 - 400).container(barrierContainer).createAndStart();
-			barrierContainer.rotation = i * this._laneAngle * -1;
-			this._barriersContainer.addChild(barrierContainer);
-			this._barriers.push(barrier);
+			this._coinValues[i].showNumber("");
+			this._coins[i].play("COLLECT_IDLE", 0, true);
 		}
-	}
-	spawnBarrier(laneIndex) {
-		const laneHeight = 1e4;
-		const barrierContainer = new import_lib.Container();
-		const barrier = this.spineUtils.startSpineAnimationCreation("BARRIER.json", "APPEAR", false).chainIdleAnimation("IDLE").position(0, laneHeight - 1920 / 2 - 400).container(barrierContainer).createAndStart();
-		barrierContainer.rotation = laneIndex * this._laneAngle * -1;
-		this._barriersContainer.addChild(barrierContainer);
-		this._barriers.push(barrier);
 	}
 	spawnBarrierCar(laneIndex) {
 		var _this2 = this;
@@ -114531,9 +114537,11 @@ var RoadView = (_RoadView2 = class RoadView extends q {
 			const lane = _this2._roadElements[laneIndex];
 			const car = _this2.createCar(lane);
 			_this2._cars.push(car);
+			const carOffsetY = _this2.mainUI.layout.getPosition("CARS", F.PORTRAIT).y;
+			const finalPositionY = _RoadView.LANE_HEIGHT - D$1 / 2 + carOffsetY;
 			yield Zn.targetTween(car.spine, {
 				x: 0,
-				y: 8400
+				y: finalPositionY
 			}, _this2.updateManager, _RoadView.CAR_DRIVE_DURATION)[0].getPromise();
 			car.play("STOP", 0, false, "STOPPED_IDLE");
 		})();
@@ -114590,31 +114598,32 @@ var RoadView = (_RoadView2 = class RoadView extends q {
 		return this.spineUtils.startSpineAnimationCreation("CAR.json", "DRIVING", true).position(0, this._laneTopY).skinName(_RoadView.CAR_SKINS[GameUtils.randomInt(0, _RoadView.CAR_SKINS.length - 1)]).container(parentLane).createAndStart();
 	}
 	createLane(index, skinName, hasCoin = true) {
-		const laneHeight = 1e4;
 		const laneContainer = new import_lib.Container();
-		this.spineUtils.startSpineAnimationCreation("LANES.json", "IDLE", true).skinName(skinName).position(0, laneHeight - 1920 / 2).container(laneContainer).createAndStart();
+		this.spineUtils.startSpineAnimationCreation("LANES.json", "IDLE", true).skinName(skinName).position(0, _RoadView.LANE_HEIGHT - 1920 / 2).container(laneContainer).createAndStart();
 		laneContainer.rotation = index * this._laneAngle * -1;
 		this._roadMainContainer.addChild(laneContainer);
 		if (hasCoin) {
-			const coin = this.spineUtils.startSpineAnimationCreation("COIN.json", "IDLE", true).position(0, laneHeight - D$1 / 2).container(laneContainer).createAndStart();
-			const coinValue = new ri(this.assets, "BIG_WINS_");
+			const coinYOffset = this.mainUI.layout.getPosition("COINS", F.PORTRAIT).y;
+			const coin = this.spineUtils.startSpineAnimationCreation("COIN_BARRIER.json", "IDLE", true).position(0, _RoadView.LANE_HEIGHT - D$1 / 2 + coinYOffset).container(laneContainer).createAndStart();
+			const coinValue = new ri(this.assets, "WINS_");
 			coin.spine.addChild(coinValue);
+			coinValue.numberKerning = -20;
 			coinValue.showNumber(`${index + 1}`);
+			this._coins.push(coin);
+			this._coinValues.push(coinValue);
 		}
 		return laneContainer;
 	}
 	createStartLane() {
-		const laneHeight = 1e4;
 		const laneContainer = new import_lib.Container();
-		this.spineUtils.startSpineAnimationCreation("BCKGR_START.json", "IDLE", true).position(0, laneHeight - 1920 / 2).container(laneContainer).createAndStart();
+		this.spineUtils.startSpineAnimationCreation("BCKGR_START.json", "IDLE", true).position(0, _RoadView.LANE_HEIGHT - 1920 / 2).container(laneContainer).createAndStart();
 		laneContainer.rotation = -1 * this._laneAngle * -1;
 		this._roadMainContainer.addChild(laneContainer);
 		return laneContainer;
 	}
 	createFinishLane(totalPositions) {
-		const laneHeight = 1e4;
 		const laneContainer = new import_lib.Container();
-		this.spineUtils.startSpineAnimationCreation("BCKGR_FINISH.json", "IDLE", true).position(0, laneHeight - 1920 / 2).container(laneContainer).createAndStart();
+		this.spineUtils.startSpineAnimationCreation("BCKGR_FINISH.json", "IDLE", true).position(0, _RoadView.LANE_HEIGHT - 1920 / 2).container(laneContainer).createAndStart();
 		laneContainer.rotation = totalPositions * this._laneAngle * -1;
 		this._roadMainContainer.addChild(laneContainer);
 		return laneContainer;
@@ -114626,7 +114635,7 @@ var RoadView = (_RoadView2 = class RoadView extends q {
 	"BLACK",
 	"GREEN",
 	"RED"
-], _RoadView2.FATAL_CAR_REACHED_CHICKEN = "RoadView::FATAL_CAR_REACHED_CHICKEN", _RoadView2.CAR_SPAWN_MIN_DELAY = 1e3, _RoadView2.CAR_SPAWN_MAX_DELAY = 4e3, _RoadView2.CAR_DRIVE_DURATION = 1e3, _RoadView2.CAR_OFFSCREEN_BUFFER = 400, _RoadView2.LANE_SHIFT_DURATION = 500, _RoadView2);
+], _RoadView2.FATAL_CAR_REACHED_CHICKEN = "RoadView::FATAL_CAR_REACHED_CHICKEN", _RoadView2.CAR_SPAWN_MIN_DELAY = 1e3, _RoadView2.CAR_SPAWN_MAX_DELAY = 4e3, _RoadView2.CAR_DRIVE_DURATION = 1e3, _RoadView2.CAR_OFFSCREEN_BUFFER = 400, _RoadView2.LANE_SHIFT_DURATION = 500, _RoadView2.LANE_HEIGHT = 1e4, _RoadView2);
 RoadView = _RoadView = __decorate([Z()], RoadView);
 //#endregion
 //#region src/modules/road/RoadEvents.ts
@@ -114639,8 +114648,15 @@ _RoadEvents.FATAL_CAR_REACHED_CHICKEN = "RoadEvents::FATAL_CAR_REACHED_CHICKEN";
 var RoadModule = class RoadModule extends I$1 {
 	restore() {
 		super.restore();
+		this.resetCoinMultipliers(this.gameData.currentGameMode);
 		this.view.restoreToPosition(this.gameData.currentStep + 1);
 		this.view.restoreBarriersTill(this.gameData.currentStep + 1);
+	}
+	resetCoinMultipliers(gameMode) {
+		this.view.resetCoinMultipliers(this.gameData.multipliers[gameMode]);
+	}
+	restoreCoins() {
+		this.view.restoreCoins();
 	}
 	makeStep() {
 		this.view.moveLanesOneStep();
@@ -114651,16 +114667,65 @@ var RoadModule = class RoadModule extends I$1 {
 	spawnFatalCar(laneIndex) {
 		this.view.spawnFatalCar(laneIndex);
 	}
-	spawnBarrier(laneIndex) {
-		this.view.spawnBarrier(laneIndex);
+	spawnWinBarrier(laneIndex) {
+		this.view.playWinCollectCoinAt(laneIndex);
 		if (GameUtils.randomInt(1, 10) > 7) this.view.spawnBarrierCar(laneIndex);
+	}
+	spawnLoseBarrier(laneIndex) {
+		this.view.playLoseCollectCoinAt(laneIndex);
 	}
 	setupEvents() {
 		super.setupEvents();
 		this.onViewEmitEvent(RoadView.FATAL_CAR_REACHED_CHICKEN, RoadEvents.FATAL_CAR_REACHED_CHICKEN);
+		this.on(DifficultyButtonEvents.DIFFICULTY_BUTTON_CLICKED, this.onDifficultyChanged);
+		this.on(GameControllerEvents.INIT_RECEIVED, this.onInitReceived);
+	}
+	onInitReceived() {
+		this.resetCoinMultipliers(GameMode.EASY);
+	}
+	onDifficultyChanged(event, gameMode) {
+		this.resetCoinMultipliers(gameMode);
 	}
 };
 RoadModule = __decorate([Z()], RoadModule);
+//#endregion
+//#region src/modules/globalstate/states/GlobalStateIdle.ts
+var GlobalStateIdle = class extends GlobalModuleState {
+	constructor(module, name, eventManager) {
+		super(module, name, eventManager);
+		this._keypadController = module.diContainer.get(ChickenKeypadController);
+		this._goButtonModule = module.diContainer.get(GoButtonModule);
+		this._cashoutButtonModule = module.diContainer.get(CashoutButtonModule);
+		this._hudModule = module.diContainer.get(GameHUDModule);
+		this._chickenModule = module.diContainer.get(ChickenModule);
+		this._roadModule = module.diContainer.get(RoadModule);
+	}
+	onEnterState() {
+		this._keypadController.enableOnRoundFinished();
+		this._keypadController.enableOnStepFinished();
+		this._hudModule.resetCounterNumber();
+		this._roadModule.restoreCoins();
+		this._roadModule.resetCoinMultipliers(this.gameData.currentGameMode);
+		this._chickenModule.hideCurrentMultiplier();
+		this._cashoutButtonModule.hideButton();
+		this._goButtonModule.resetGame();
+	}
+	onLeaveState() {}
+	setupEvents() {
+		this.on(GoButtonEvents.GO_BUTTON_CLICKED, this.onSpinButtonPressed);
+		this.on(GameAutoplayHandlerEvents.AUTOPLAY_STEP, this.onAutostepStarted);
+	}
+	onAutostepStarted() {
+		this.module.gotoState(GlobalStateSpinModule.STEP);
+	}
+	onSpinButtonPressed() {
+		this._keypadController.disableOnRoundStarted();
+		this.module.gotoState(GlobalStateSpinModule.STEP);
+	}
+	get chickenGameController() {
+		return this.gameController;
+	}
+};
 //#endregion
 //#region src/modules/globalstate/states/GlobalStateStep.ts
 init_asyncToGenerator();
@@ -114684,22 +114749,20 @@ var GlobalStateStep = class extends GlobalModuleState {
 			_this._chickenModule.hideCurrentMultiplier();
 			_this.gameData.spinStartCleanup();
 			_this._roadModule.makeStep();
-			const awaitStuff = [];
 			if (_this.gameData.currentStep === -1) {
-				awaitStuff.push(_this._chickenModule.makeFirstStep());
-				awaitStuff.push(_this.chickenGameController.roundStart((result) => {
+				yield _this.chickenGameController.roundStart((result) => {
 					_this.gameData.reactOnStep(result);
 					_this.handleFirstStep();
-				}, _this.gameData.getTotalBet(), _this.gameData.currentGameMode));
+				}, _this.gameData.getTotalBet(), _this.gameData.currentGameMode);
+				_this._chickenModule.makeFirstStep();
 			} else {
-				awaitStuff.push(_this._chickenModule.makeStep());
-				awaitStuff.push(_this.chickenGameController.step((result) => {
+				yield _this.chickenGameController.step((result) => {
 					result.currentStep = result.result.currentStep;
 					result.isDead = result.result.isDead;
 					_this.gameData.reactOnStep(result);
-				}));
+				});
+				_this._chickenModule.makeStep();
 			}
-			yield Promise.all(awaitStuff);
 			_this._chickenModule.showMultiplier(_this.gameData.multipliers[_this.gameData.currentGameMode][_this.gameData.currentStep]);
 			_this._hudModule.setNewCounterNumber(_this.gameData.currentStep + 1);
 			if (_this.gameData.isDead) {
@@ -114710,9 +114773,10 @@ var GlobalStateStep = class extends GlobalModuleState {
 				_this.module.gotoState(GlobalStateSpinModule.LOSE);
 				return;
 			} else if (_this.gameData.hasReachedFinalPosition()) {
+				_this._roadModule.spawnWinBarrier(_this.gameData.currentStep);
 				_this.module.gotoState(GlobalStateSpinModule.WIN);
 				return;
-			} else _this._roadModule.spawnBarrier(_this.gameData.currentStep);
+			} else _this._roadModule.spawnWinBarrier(_this.gameData.currentStep);
 			yield _this.timeUtils.wait(500);
 			_this.module.gotoState(GlobalStateSpinModule.STEP_IDLE);
 		})();
@@ -114720,6 +114784,7 @@ var GlobalStateStep = class extends GlobalModuleState {
 	playFatalCarSequence() {
 		var _this2 = this;
 		return _asyncToGenerator(function* () {
+			_this2._roadModule.spawnLoseBarrier(_this2.gameData.currentStep);
 			_this2._roadModule.spawnFatalCar(_this2.gameData.currentStep);
 			yield _this2.queueEvents.getEventPromise(RoadEvents.FATAL_CAR_REACHED_CHICKEN);
 			_this2._chickenModule.hideCurrentMultiplier();
@@ -114988,66 +115053,36 @@ GlobalStateSpinModule = _GlobalStateSpinModule = __decorate([Z()], GlobalStateSp
 var BasicSlotAssetsManager = class extends or {
 	getSpineAtlasesPaths() {
 		return [
-			"AUTOPLAY_BUTTON.json",
 			"AUTOPLAY_STOP_BUTTON.json",
+			"AUTOPLAY_BUTTON.json",
 			"BACKGROUND.json",
 			"BANKING_BUTTON.json",
-			"BET_BUTTON.json",
-			"BARRIER.json",
 			"BCKGR_START.json",
 			"BCKGR_FINISH.json",
+			"BET_BUTTON.json",
 			"BIG_WINS_EFFECT.json",
 			"BIG_WINS.json",
-			"BN.json",
-			"CHECKBOX.json",
-			"CLOSE_MENU_BUTTON.json",
+			"CAR.json",
+			"CASHOUT_BUTTON.json",
+			"CHICKEN.json",
+			"COIN_BARRIER.json",
 			"CURRENT_MULTIPLIER.json",
 			"DIFFICULTY_BUTTON.json",
-			"FREE_SPINS_ADDITIONAL_SPINS.json",
-			"FREE_SPINS_ENTER_SCREENS.json",
-			"FREE_SPINS_EXIT_SCREENS.json",
-			"FREE_SPINS_REMAINING_SPINS.json",
-			"FREE_SPINS_TOTAL_WIN.json",
-			"GAME_SYMBOLS.json",
-			"GRAY_BUTTON.json",
-			"GRAY_BUTTON_TOGGLE.json",
+			"GO_BUTTON.json",
 			"HUD_HEADER.json",
 			"HUD_FOOTER.json",
-			"HOME_BUTTON.json",
+			"LANES.json",
 			"LOGO_COMPANY.json",
 			"LOGO_GAME.json",
-			"M1.json",
-			"M2.json",
-			"M3.json",
-			"M4.json",
-			"M5.json",
-			"CAR.json",
-			"CHICKEN.json",
-			"CN.json",
-			"CN_CREDITS.json",
-			"COIN.json",
-			"COL.json",
-			"COL_CREDITS.json",
-			"LANES.json",
-			"MAIN_MENU_BUTTON.json",
+			"LOOTBOX.json",
 			"MENU_BUTTON.json",
-			"MENU.json",
-			"MENU_PAGE_CONTENT.json",
-			"PAGE_INDICATOR.json",
-			"PLAY_BUTTON.json",
-			"QUICKPLAY_BUTTON.json",
 			"MAIN_UI.json",
 			"MAIN_UI_PORTRAIT.json",
+			"QUICKPLAY_BUTTON.json",
 			"SOUND_BUTTON.json",
-			"START_SCREEN.json",
 			"STEP_NUMBER.json",
-			"GO_BUTTON.json",
-			"CASHOUT_BUTTON.json",
-			"WR.json",
 			"WIN_INDICATIONS.json",
-			"WIN_NUMBERS.json",
-			"YELLOW_BUTTON.json",
-			"YELLOW_BUTTON_IDLE.json"
+			"WIN_NUMBERS.json"
 		];
 	}
 	getInitialResourcesPaths() {

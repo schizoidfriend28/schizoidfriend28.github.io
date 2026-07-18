@@ -1,0 +1,260 @@
+{
+"skeleton": {
+	"hash": "4mv4aUESLmc",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -207.5,
+	"y": -201.5,
+	"width": 415,
+	"height": 450,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
+	{ "name": "SYMBOL_ANCHOR", "parent": "MAIN_ROOT", "color": "ff0000ff", "icon": "square" },
+	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
+	{ "name": "WIN_INDICATIONS", "parent": "MAIN_ROOT", "color": "ffbf00ff", "icon": "diamond" },
+	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_ICON", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_SHADOWS", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_SHADOW3", "parent": "SYMBOL_SHADOWS", "x": 3, "y": -15, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_SHADOW4", "parent": "SYMBOL_SHADOWS", "x": 3, "y": -15, "color": "1eff00ff", "icon": "square" },
+	{ "name": "BARRIER_ROOT", "parent": "SYMBOL_ANCHOR", "y": 91, "color": "1eff00ff", "icon": "square" },
+	{ "name": "BARRIER_ICON", "parent": "BARRIER_ROOT", "color": "1eff00ff", "icon": "square" },
+	{ "name": "BARRIER_ICON_GLOW", "parent": "BARRIER_ICON", "y": 17, "color": "1eff00ff", "icon": "square" },
+	{ "name": "BARRIER_ICON_POLE", "parent": "BARRIER_ICON", "y": 10, "color": "1eff00ff", "icon": "square" },
+	{ "name": "BARRIER_ICON_RIM", "parent": "BARRIER_ICON", "y": -81, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_BASE", "parent": "SYMBOL_ICON", "scaleX": 1.59154, "scaleY": 1.78918, "color": "1eff00ff" }
+],
+"slots": [
+	{ "name": "WIN_INDICATIONS", "bone": "WIN_INDICATIONS" },
+	{ "name": "SYMBOL_ICON_SHADOW3", "bone": "SYMBOL_ICON_SHADOW3", "color": "ffffff50", "attachment": "COIN/COIN_SHADOW", "blend": "multiply" },
+	{ "name": "SYMBOL_ICON_SHADOW4", "bone": "SYMBOL_ICON_SHADOW4", "color": "ffffff50", "attachment": "COIN/COIN_SHADOW", "blend": "multiply" },
+	{ "name": "SYMBOL_ICON", "bone": "SYMBOL_ICON_BASE", "attachment": "BARRIER/BARRIER_PLATE_COIN_PLACEHOLDER" },
+	{ "name": "BARRIER_ICON", "bone": "BARRIER_ICON" },
+	{ "name": "BARRIER_ICON_RIM", "bone": "BARRIER_ICON_RIM", "color": "ffffff00", "attachment": "BARRIER/BARRIER_ICON_RIM" },
+	{ "name": "BARRIER_ICON_POLE", "bone": "BARRIER_ICON_POLE", "color": "ffffff00", "attachment": "BARRIER/BARRIER_ICON_POLE" },
+	{ "name": "SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a40000", "attachment": "COIN/COIN_GLOW", "blend": "additive" },
+	{ "name": "BARRIER_ICON_GLOW", "bone": "BARRIER_ICON_GLOW", "color": "f9a40000", "attachment": "BARRIER/BARRIER_GLOW", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"BARRIER_ICON": {
+				"BARRIER/BARRIER_ICON": { "width": 101, "height": 246 }
+			},
+			"BARRIER_ICON_GLOW": {
+				"BARRIER/BARRIER_GLOW": { "width": 163, "height": 281 }
+			},
+			"BARRIER_ICON_POLE": {
+				"BARRIER/BARRIER_ICON_POLE": { "width": 74, "height": 227 }
+			},
+			"BARRIER_ICON_RIM": {
+				"BARRIER/BARRIER_ICON_RIM": { "width": 101, "height": 84 }
+			},
+			"SYMBOL_ICON": {
+				"BARRIER/BARRIER_PLATE_COIN_PLACEHOLDER": { "width": 186, "height": 157 }
+			},
+			"SYMBOL_ICON_GLOW": {
+				"COIN/COIN_GLOW": { "width": 415, "height": 403 }
+			},
+			"SYMBOL_ICON_SHADOW3": {
+				"COIN/COIN_SHADOW": { "width": 325, "height": 314 }
+			},
+			"SYMBOL_ICON_SHADOW4": {
+				"COIN/COIN_SHADOW": { "width": 325, "height": 314 }
+			}
+		}
+	}
+],
+"animations": {
+	"COLLECT_IDLE": {
+		"slots": {
+			"BARRIER_ICON_POLE": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			},
+			"BARRIER_ICON_RIM": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ROOT": {
+				"translate": [
+					{ "y": 391 }
+				]
+			},
+			"BARRIER_ROOT": {
+				"translate": [
+					{ "y": 391 }
+				]
+			},
+			"SYMBOL_ICON_BASE": {
+				"scale": [
+					{ "x": 0.62832224, "y": 0.55891526 }
+				]
+			},
+			"SYMBOL_SHADOWS": {
+				"scale": [
+					{ "x": 0.5989009, "y": 0.5207401 }
+				]
+			}
+		}
+	},
+	"DEATH_IDLE": {
+		"bones": {
+			"SYMBOL_ANCHOR": {
+				"translate": [
+					{ "y": 391 }
+				]
+			},
+			"SYMBOL_ICON_BASE": {
+				"scale": [
+					{ "x": 0.62832224, "y": 0.55891526 }
+				]
+			},
+			"SYMBOL_SHADOWS": {
+				"scale": [
+					{ "x": 0.5989009, "y": 0.5207401 }
+				]
+			}
+		}
+	},
+	"IDLE": {
+		"slots": {
+			"BARRIER_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				],
+				"attachment": [
+					{}
+				]
+			},
+			"BARRIER_ICON_POLE": {
+				"attachment": [
+					{}
+				]
+			},
+			"BARRIER_ICON_RIM": {
+				"attachment": [
+					{}
+				]
+			},
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
+				]
+			}
+		}
+	},
+	"MOVE_COLLECT": {
+		"slots": {
+			"BARRIER_ICON_GLOW": {
+				"alpha": [
+					{ "time": 0.20000002, "value": 0.0011 },
+					{ "time": 0.36666667, "value": 1 },
+					{ "time": 0.6333334, "value": 0 }
+				],
+				"rgb": [
+					{ "time": 0.26666668, "color": "ffd700" }
+				]
+			},
+			"BARRIER_ICON_POLE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.033333335, "value": 1 }
+				]
+			},
+			"BARRIER_ICON_RIM": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.033333335, "value": 1 }
+				]
+			},
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "time": 0.20000002, "value": 0.0011 },
+					{ "time": 0.36666667, "value": 1 },
+					{ "time": 0.6333334, "value": 0 }
+				],
+				"rgb": [
+					{ "time": 0.26666668, "color": "ffd700" }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON_GLOW": {
+				"scale": [
+					{ "time": 0.26666668 },
+					{ "time": 0.6333334, "x": 2, "y": 2 }
+				]
+			},
+			"SYMBOL_ANCHOR": {
+				"translate": [
+					{},
+					{ "time": 0.06666667, "y": 391 }
+				],
+				"scale": [
+					{ "time": 0.06666667 },
+					{ "time": 0.13333334, "x": 1.05, "y": 1.05 },
+					{ "time": 0.26666668 }
+				]
+			},
+			"BARRIER_ICON_GLOW": {
+				"scale": [
+					{ "time": 0.26666668 },
+					{ "time": 0.6333334, "x": 2, "y": 2 }
+				]
+			},
+			"SYMBOL_ICON_BASE": {
+				"scale": [
+					{},
+					{ "time": 0.06666667, "x": 0.62832224, "y": 0.55891526 }
+				]
+			},
+			"SYMBOL_SHADOWS": {
+				"scale": [
+					{},
+					{ "time": 0.06666667, "x": 0.5989009, "y": 0.5207401 }
+				]
+			},
+			"BARRIER_ICON_POLE": {
+				"scale": [
+					{ "y": 0.1 },
+					{ "time": 0.06666667 }
+				]
+			}
+		}
+	},
+	"MOVE_DEATH": {
+		"bones": {
+			"SYMBOL_ANCHOR": {
+				"translate": [
+					{},
+					{ "time": 0.06666667, "y": 391 }
+				]
+			},
+			"SYMBOL_ICON_BASE": {
+				"scale": [
+					{},
+					{ "time": 0.06666667, "x": 0.62832224, "y": 0.55891526 }
+				]
+			},
+			"SYMBOL_SHADOWS": {
+				"scale": [
+					{},
+					{ "time": 0.06666667, "x": 0.5989009, "y": 0.5207401 }
+				]
+			}
+		}
+	}
+}
+}
