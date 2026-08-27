@@ -5,7 +5,8 @@
     },
     "game": {
       "totalRoads": 20,
-      "roadWidth": 384
+      "roadWidth": 384,
+      "chickenXOffset": 300
     },
     "avalanche": {
       "beforeNewSymbolsComingDelay": 1,
@@ -66,7 +67,7 @@
     }
   },
   "buildDate": {
-    "timestamp": "2026-07-18"
+    "timestamp": "2026-08-27"
   },
   "gameVersion": {
     "version": "0.0.2"

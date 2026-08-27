@@ -1,11 +1,11 @@
 {
 "skeleton": {
-	"hash": "fBq+fKT/0og",
+	"hash": "ZnB9rh4I788",
 	"spine": "4.2-from-4.3.39-beta",
-	"x": -199,
-	"y": -1250,
-	"width": 398,
-	"height": 2500,
+	"x": -214.5,
+	"y": -1674.5,
+	"width": 429,
+	"height": 3349,
 	"images": "../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
@@ -14,18 +14,23 @@
 	{ "name": "SYMBOL_ANCHOR", "parent": "MAIN_ROOT", "color": "ff0000ff", "icon": "square" },
 	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "color": "1eff00ff", "icon": "square" },
 	{ "name": "LANE", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
-	{ "name": "WIN_INDICATIONS", "parent": "MAIN_ROOT", "color": "ffbf00ff", "icon": "diamond" }
+	{ "name": "WIN_INDICATIONS", "parent": "MAIN_ROOT", "color": "ffbf00ff", "icon": "diamond" },
+	{ "name": "LANE_GLOW", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" }
 ],
 "slots": [
 	{ "name": "WIN_INDICATIONS", "bone": "WIN_INDICATIONS" },
-	{ "name": "LANE", "bone": "LANE", "attachment": "LANE" }
+	{ "name": "LANE", "bone": "LANE", "attachment": "LANE" },
+	{ "name": "LANE_GLOW", "bone": "LANE_GLOW", "color": "ffda0000", "blend": "additive" }
 ],
 "skins": [
 	{
 		"name": "1",
 		"attachments": {
 			"LANE": {
-				"LANE": { "name": "BACKGROUND/LANE1", "color": "ffc300ff", "width": 398, "height": 2500 }
+				"LANE": { "name": "BACKGROUND/LANE_BASE", "width": 429, "height": 3349 }
+			},
+			"LANE_GLOW": {
+				"LANE": { "name": "BACKGROUND/LANE_GLOW_X2", "width": 448, "height": 2503 }
 			}
 		}
 	},
@@ -33,7 +38,10 @@
 		"name": "2",
 		"attachments": {
 			"LANE": {
-				"LANE": { "name": "BACKGROUND/LANE2", "color": "be0000ff", "width": 398, "height": 2500 }
+				"LANE": { "name": "BACKGROUND/LANE_BASE", "width": 429, "height": 3349 }
+			},
+			"LANE_GLOW": {
+				"LANE": { "name": "BACKGROUND/LANE_GLOW_X2", "width": 448, "height": 2503 }
 			}
 		}
 	},
@@ -41,7 +49,10 @@
 		"name": "3",
 		"attachments": {
 			"LANE": {
-				"LANE": { "name": "BACKGROUND/LANE6", "width": 398, "height": 2500 }
+				"LANE": { "name": "BACKGROUND/LANE_BASE", "width": 429, "height": 3349 }
+			},
+			"LANE_GLOW": {
+				"LANE": { "name": "BACKGROUND/LANE_GLOW_X2", "width": 448, "height": 2503 }
 			}
 		}
 	},
@@ -49,7 +60,10 @@
 		"name": "4",
 		"attachments": {
 			"LANE": {
-				"LANE": { "name": "BACKGROUND/LANE4", "width": 398, "height": 2500 }
+				"LANE": { "name": "BACKGROUND/LANE_BASE", "width": 429, "height": 3349 }
+			},
+			"LANE_GLOW": {
+				"LANE": { "name": "BACKGROUND/LANE_GLOW_X2", "width": 448, "height": 2503 }
 			}
 		}
 	},
@@ -57,7 +71,10 @@
 		"name": "5",
 		"attachments": {
 			"LANE": {
-				"LANE": { "name": "BACKGROUND/LANE5", "color": "0360c9ff", "width": 398, "height": 2500 }
+				"LANE": { "name": "BACKGROUND/LANE_BASE", "width": 429, "height": 3349 }
+			},
+			"LANE_GLOW": {
+				"LANE": { "name": "BACKGROUND/LANE_GLOW_X2", "width": 448, "height": 2503 }
 			}
 		}
 	},
@@ -65,7 +82,10 @@
 		"name": "FINISH",
 		"attachments": {
 			"LANE": {
-				"LANE": { "name": "BACKGROUND/LANE7", "color": "00ff47ff", "width": 398, "height": 2500 }
+				"LANE": { "name": "BACKGROUND/LANE_BASE", "color": "00ff47ff", "width": 429, "height": 3349 }
+			},
+			"LANE_GLOW": {
+				"LANE": { "name": "BACKGROUND/LANE_GLOW_X2", "color": "00ff47ff", "width": 448, "height": 2503 }
 			}
 		}
 	},
@@ -73,7 +93,10 @@
 		"name": "START",
 		"attachments": {
 			"LANE": {
-				"LANE": { "name": "BACKGROUND/LANE3", "color": "d3d7f1ff", "width": 398, "height": 2500 }
+				"LANE": { "name": "BACKGROUND/LANE_BASE", "color": "ff00c6ff", "width": 429, "height": 3349 }
+			},
+			"LANE_GLOW": {
+				"LANE": { "name": "BACKGROUND/LANE_GLOW_X2", "color": "ff00c6ff", "width": 448, "height": 2503 }
 			}
 		}
 	}
@@ -82,8 +105,8 @@
 	"IDLE": {
 		"slots": {
 			"LANE": {
-				"alpha": [
-					{ "value": 1 }
+				"attachment": [
+					{ "name": "LANE" }
 				]
 			}
 		}

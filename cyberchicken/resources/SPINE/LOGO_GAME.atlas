@@ -1,13 +1,9 @@
 LOGO_GAME.png
-size:451,444
+size:544,93
 filter:Linear,Linear
 pma:true
 FX/BASE_SHINE_2
-bounds:353,0,93,93
+bounds:451,0,93,93
 offsets:16,16,125,125
 GENERIC/LOGO_GAME
-bounds:0,59,352,385
-offsets:16,19,391,425
-GENERIC/LOGO_GAME_TXT_ALT1
-bounds:353,94,350,98
-rotate:90
+bounds:0,9,450,84

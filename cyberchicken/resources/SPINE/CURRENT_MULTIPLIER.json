@@ -1,30 +1,41 @@
 {
 "skeleton": {
-	"hash": "pgTDpEUBGKk",
+	"hash": "m417aBw6UG4",
 	"spine": "4.2-from-4.3.39-beta",
-	"x": -72,
-	"y": -27.5,
-	"width": 204,
-	"height": 55,
+	"x": -134,
+	"y": -95,
+	"width": 328,
+	"height": 116,
 	"images": "../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
 "bones": [
 	{ "name": "root" },
-	{ "name": "SYMBOL_MAIN", "parent": "root", "x": 30 },
+	{ "name": "SYMBOL_MAIN", "parent": "root", "x": 30, "y": -37 },
 	{ "name": "SYMBOL_NUMBER", "parent": "SYMBOL_MAIN" },
-	{ "name": "SYMBOL_BACKPLATE", "parent": "SYMBOL_MAIN", "scaleX": 1.5 }
+	{ "name": "SYMBOL_BACKPLATE_OLD", "parent": "SYMBOL_MAIN", "scaleX": 1.5 },
+	{ "name": "SYMBOL_PLATE", "parent": "SYMBOL_MAIN", "x": -30 },
+	{ "name": "SYMBOL_BACKPLATE", "parent": "SYMBOL_PLATE", "x": 30, "scaleX": 0.35, "scaleY": 0.35 },
+	{ "name": "SYMBOL_FRAME", "parent": "SYMBOL_PLATE", "x": 30 }
 ],
 "slots": [
-	{ "name": "SYMBOL_BACKPLATE", "bone": "SYMBOL_BACKPLATE", "color": "474747a6", "attachment": "GENERIC/STEP_NUMBER_BACKPLATE", "blend": "multiply" },
-	{ "name": "SYMBOL_NUMBER", "bone": "SYMBOL_NUMBER", "attachment": "GENERIC/INVISIBLE_PLACEHOLDER" }
+	{ "name": "SYMBOL_BACKPLATE", "bone": "SYMBOL_BACKPLATE", "color": "7d7d7dff", "attachment": "STEP_NUMBER/STEP_NUMBER_PLATE_BACKPLATE" },
+	{ "name": "SYMBOL_FRAME", "bone": "SYMBOL_FRAME", "color": "7d7d7dff", "attachment": "STEP_NUMBER/CURRENT_MULTIPLIER_PLATE_FRAME" },
+	{ "name": "SYMBOL_NUMBER", "bone": "SYMBOL_NUMBER", "attachment": "GENERIC/INVISIBLE_PLACEHOLDER" },
+	{ "name": "SYMBOL_BACKPLATE_OLD", "bone": "SYMBOL_BACKPLATE_OLD", "color": "ff0000ff", "blend": "screen" }
 ],
 "skins": [
 	{
 		"name": "default",
 		"attachments": {
 			"SYMBOL_BACKPLATE": {
+				"STEP_NUMBER/STEP_NUMBER_PLATE_BACKPLATE": { "width": 843, "height": 221 }
+			},
+			"SYMBOL_BACKPLATE_OLD": {
 				"GENERIC/STEP_NUMBER_BACKPLATE": { "width": 136, "height": 55 }
+			},
+			"SYMBOL_FRAME": {
+				"STEP_NUMBER/CURRENT_MULTIPLIER_PLATE_FRAME": { "width": 328, "height": 116 }
 			},
 			"SYMBOL_NUMBER": {
 				"GENERIC/INVISIBLE_PLACEHOLDER": { "width": 1, "height": 1 }
@@ -37,7 +48,17 @@
 		"slots": {
 			"SYMBOL_BACKPLATE": {
 				"attachment": [
-					{ "name": "GENERIC/STEP_NUMBER_BACKPLATE" }
+					{ "name": "STEP_NUMBER/STEP_NUMBER_PLATE_BACKPLATE" }
+				]
+			},
+			"SYMBOL_BACKPLATE_OLD": {
+				"attachment": [
+					{}
+				]
+			},
+			"SYMBOL_FRAME": {
+				"attachment": [
+					{ "name": "STEP_NUMBER/CURRENT_MULTIPLIER_PLATE_FRAME" }
 				]
 			},
 			"SYMBOL_NUMBER": {
@@ -50,6 +71,22 @@
 	"INVISIBLE": {
 		"slots": {
 			"SYMBOL_BACKPLATE": {
+				"alpha": [
+					{ "value": 0 }
+				],
+				"attachment": [
+					{}
+				]
+			},
+			"SYMBOL_BACKPLATE_OLD": {
+				"alpha": [
+					{ "value": 0 }
+				],
+				"attachment": [
+					{}
+				]
+			},
+			"SYMBOL_FRAME": {
 				"alpha": [
 					{ "value": 0 }
 				],

@@ -1,50 +1,59 @@
 {
 "skeleton": {
-	"hash": "DJASy8+XoV0",
-	"spine": "4.3.39-beta",
-	"x": -960,
-	"y": -960,
-	"width": 1920,
-	"height": 1920,
-	"images": "../GRAPHIC_ASSETS/",
+	"hash": "JcANA/S5P9A",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -920,
+	"y": -493.99997,
+	"width": 1840,
+	"height": 987.99994,
+	"images": "../../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
 "bones": [
 	{ "name": "root" },
 	{ "name": "START_SCREEN", "parent": "root" },
-	{ "name": "ARROW_1", "parent": "START_SCREEN", "x": 358 },
-	{ "name": "ARROW_2", "parent": "START_SCREEN", "x": -358, "scaleX": -1 },
-	{ "name": "NEXT_PAGE", "parent": "START_SCREEN", "y": 63 },
-	{ "name": "CURRENT_PAGE", "parent": "START_SCREEN", "y": 63 },
-	{ "name": "PAGE_INDICATOR_5", "parent": "START_SCREEN", "x": 49.999996, "y": -146 },
-	{ "name": "PAGE_INDICATOR_4", "parent": "START_SCREEN", "x": 24.999992, "y": -146 },
-	{ "name": "PAGE_INDICATOR_3", "parent": "START_SCREEN", "y": -146 },
-	{ "name": "PAGE_INDICATOR_2", "parent": "START_SCREEN", "x": -25.000008, "y": -146 },
-	{ "name": "START_PLAYING_BUTTON", "parent": "START_SCREEN", "y": -285 },
-	{ "name": "PAGE_INDICATOR_1", "parent": "START_SCREEN", "x": -50, "y": -146 },
-	{ "name": "CHECKBOX", "parent": "START_SCREEN", "x": -134, "y": -205 },
-	{ "name": "CHECKBOX_TEXT", "parent": "START_SCREEN", "x": -99, "y": -205 },
-	{ "name": "HEADER", "parent": "START_SCREEN", "y": 290 }
+	{ "name": "START_SCREEN_BACKPLATE", "parent": "START_SCREEN" },
+	{ "name": "TXTS", "parent": "START_SCREEN", "color": "000000ff", "icon": "romanI" },
+	{
+		"name": "TXT_WINUPTO_LANDSCAPE",
+		"parent": "TXTS",
+		"x": 300,
+		"y": -280,
+		"skin": true,
+		"color": "000000ff",
+		"icon": "romanI"
+	},
+	{
+		"name": "TXT_CONTINUE_LANDSCAPE",
+		"parent": "TXTS",
+		"x": 300,
+		"y": -390,
+		"skin": true,
+		"color": "000000ff",
+		"icon": "romanI"
+	},
+	{ "name": "INTRO_READY", "parent": "START_SCREEN", "scaleX": 0.5, "scaleY": 0.5 },
+	{ "name": "LOGO_GAME", "parent": "START_SCREEN" },
+	{ "name": "TXT_WINUPTO_PORTRAIT", "parent": "TXTS", "y": -500, "skin": true, "color": "000000ff", "icon": "romanI" },
+	{ "name": "TXT_CONTINUE_PORTRAIT", "parent": "TXTS", "y": -700, "skin": true, "color": "000000ff", "icon": "romanI" },
+	{ "name": "INTRO_START", "parent": "START_SCREEN", "scaleX": 0.5, "scaleY": 0.5 },
+	{ "name": "INTRO_FINISH", "parent": "START_SCREEN", "scaleX": 0.5, "scaleY": 0.5 },
+	{ "name": "INTRO_DONE", "parent": "START_SCREEN", "scaleX": 0.5, "scaleY": 0.5 },
+	{ "name": "INTRO_DONE2", "parent": "START_SCREEN", "scaleX": 0.5, "scaleY": 0.5 }
 ],
 "slots": [
-	{ "name": "SCREEN_SIZE_REFERENCE", "bone": "START_SCREEN", "attachment": "SCREEN_SIZE_REFERENCE" },
-	{ "name": "START_SCREEN_BG", "bone": "START_SCREEN", "color": "ffffffcb", "attachment": "GENERIC/START_SCREEN_BG" },
-	{ "name": "ARROW_BUTTON", "bone": "ARROW_1" },
-	{ "name": "ARROW_BUTTON2", "bone": "ARROW_2" },
-	{ "name": "START_SCREEN_MASK", "bone": "START_SCREEN", "attachment": "START_SCREEN_MASK" },
-	{ "name": "NEXT_PAGE", "bone": "NEXT_PAGE" },
-	{ "name": "CURRENT_PAGE", "bone": "CURRENT_PAGE" },
-	{ "name": "SS_SEPARATOR", "bone": "START_SCREEN", "attachment": "GENERIC/SS_SEPARATOR" },
-	{ "name": "CURRENT_HEADER", "bone": "HEADER" },
-	{ "name": "NEXT_HEADER", "bone": "HEADER" },
-	{ "name": "PAGE_INDICATOR_5", "bone": "PAGE_INDICATOR_5" },
-	{ "name": "PAGE_INDICATOR_1", "bone": "PAGE_INDICATOR_1" },
-	{ "name": "PAGE_INDICATOR_4", "bone": "PAGE_INDICATOR_4" },
-	{ "name": "PAGE_INDICATOR_3", "bone": "PAGE_INDICATOR_3" },
-	{ "name": "PAGE_INDICATOR_2", "bone": "PAGE_INDICATOR_2" },
-	{ "name": "CHECKBOX_TEXT", "bone": "CHECKBOX_TEXT", "color": "ffffff7e" },
-	{ "name": "CHECKBOX", "bone": "CHECKBOX" },
-	{ "name": "YELLOW_BUTTON_STARTSCRN", "bone": "START_PLAYING_BUTTON" }
+	{ "name": "START_SCREEN_BACKPLATE", "bone": "START_SCREEN_BACKPLATE", "color": "ffffffde", "attachment": "START_SCREEN_BACKPLATE" },
+	{ "name": "SS_SEPARATOR", "bone": "START_SCREEN" },
+	{ "name": "LOGO_GAME", "bone": "LOGO_GAME", "attachment": "LOGO_GAME" },
+	{ "name": "INTRO_READY", "bone": "INTRO_READY", "attachment": "INTRO_READY" },
+	{ "name": "INTRO_START", "bone": "INTRO_START", "attachment": "INTRO_START" },
+	{ "name": "INTRO_FINISH", "bone": "INTRO_FINISH", "attachment": "INTRO_FINISH" },
+	{ "name": "INTRO_DONE", "bone": "INTRO_DONE", "attachment": "INTRO_DONE" },
+	{ "name": "INTRO_DONE2", "bone": "INTRO_DONE2", "color": "ffb50070", "blend": "additive" },
+	{ "name": "TXT_WINUPTO_LANDSCAPE", "bone": "TXT_WINUPTO_LANDSCAPE" },
+	{ "name": "TXT_WINUPTO_PORTRAIT", "bone": "TXT_WINUPTO_PORTRAIT" },
+	{ "name": "TXT_CONTINUE_LANDSCAPE", "bone": "TXT_CONTINUE_LANDSCAPE" },
+	{ "name": "TXT_CONTINUE_PORTRAIT", "bone": "TXT_CONTINUE_PORTRAIT" }
 ],
 "skins": [
 	{
@@ -52,34 +61,60 @@
 		"attachments": {
 			"SS_SEPARATOR": {
 				"GENERIC/SS_SEPARATOR": { "y": 259, "width": 560, "height": 2 }
-			},
-			"START_SCREEN_BG": {
-				"GENERIC/START_SCREEN_BG": { "width": 800, "height": 760 }
-			},
-			"START_SCREEN_MASK": {
-				"START_SCREEN_MASK": {
-					"type": "clipping",
-					"end": "CURRENT_PAGE",
-					"vertexCount": 4,
-					"vertices": [ -280.05, -129.37, -280.83, 230.37, 280.7, 230.75, 279.93, -128.59 ],
-					"color": "ce3a3a00"
-				}
 			}
 		}
 	},
 	{
 		"name": "LANDSCAPE",
+		"bones": [ "TXT_CONTINUE_LANDSCAPE", "TXT_WINUPTO_LANDSCAPE" ],
 		"attachments": {
-			"SCREEN_SIZE_REFERENCE": {
-				"SCREEN_SIZE_REFERENCE": { "name": "START_SCREEN/STARTSCREEN_BACKGROUND", "width": 1920, "height": 1920 }
+			"INTRO_DONE": {
+				"INTRO_DONE": { "name": "GUI/START_SCREEN/INTRO_DONE", "x": 600, "y": 200, "width": 1114, "height": 1114 }
+			},
+			"INTRO_DONE2": {
+				"INTRO_DONE": { "name": "GUI/START_SCREEN/INTRO_DONE", "x": 600, "y": 200, "width": 1114, "height": 1114 }
+			},
+			"INTRO_FINISH": {
+				"INTRO_FINISH": { "name": "GUI/START_SCREEN/INTRO_FINISH", "x": 600, "y": 200, "width": 1114, "height": 1114 }
+			},
+			"INTRO_READY": {
+				"INTRO_READY": { "name": "GUI/START_SCREEN/INTRO_READY", "x": 600, "y": 200, "width": 1114, "height": 1114 }
+			},
+			"INTRO_START": {
+				"INTRO_START": { "name": "GUI/START_SCREEN/INTRO_START", "x": 600, "y": 200, "width": 1114, "height": 1114 }
+			},
+			"LOGO_GAME": {
+				"LOGO_GAME": { "name": "GENERIC/LOGO_GAME", "x": -450, "scaleX": 1.5, "scaleY": 1.5, "width": 450, "height": 84 }
+			},
+			"START_SCREEN_BACKPLATE": {
+				"START_SCREEN_BACKPLATE": { "name": "GENERIC/START_SCREEN_BG", "scaleX": 2.3, "scaleY": 1.3, "width": 800, "height": 760 }
 			}
 		}
 	},
 	{
 		"name": "PORTRAIT",
+		"bones": [ "TXT_CONTINUE_PORTRAIT", "TXT_WINUPTO_PORTRAIT" ],
 		"attachments": {
-			"SCREEN_SIZE_REFERENCE": {
-				"SCREEN_SIZE_REFERENCE": { "name": "START_SCREEN/STARTSCREEN_BACKGROUND", "width": 1920, "height": 1920 }
+			"INTRO_DONE": {
+				"INTRO_DONE": { "name": "GUI/START_SCREEN/INTRO_DONE", "width": 1114, "height": 1114 }
+			},
+			"INTRO_DONE2": {
+				"INTRO_DONE": { "name": "GUI/START_SCREEN/INTRO_DONE", "width": 1114, "height": 1114 }
+			},
+			"INTRO_FINISH": {
+				"INTRO_FINISH": { "name": "GUI/START_SCREEN/INTRO_FINISH", "width": 1114, "height": 1114 }
+			},
+			"INTRO_READY": {
+				"INTRO_READY": { "name": "GUI/START_SCREEN/INTRO_READY", "width": 1114, "height": 1114 }
+			},
+			"INTRO_START": {
+				"INTRO_START": { "name": "GUI/START_SCREEN/INTRO_START", "width": 1114, "height": 1114 }
+			},
+			"LOGO_GAME": {
+				"LOGO_GAME": { "name": "GENERIC/LOGO_GAME", "y": 540, "scaleX": 1.5, "scaleY": 1.5, "width": 450, "height": 84 }
+			},
+			"START_SCREEN_BACKPLATE": {
+				"START_SCREEN_BACKPLATE": { "name": "GENERIC/START_SCREEN_BG", "scaleX": 1.3, "scaleY": 2.3, "width": 800, "height": 760 }
 			}
 		}
 	}
@@ -87,79 +122,16 @@
 "animations": {
 	"ENTER": {
 		"slots": {
-			"ARROW_BUTTON": {
+			"INTRO_START": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.5, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "INTRO_START" }
 				]
 			},
-			"ARROW_BUTTON2": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"CHECKBOX": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"CHECKBOX_TEXT": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"CURRENT_HEADER": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"CURRENT_PAGE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"NEXT_HEADER": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"NEXT_PAGE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"PAGE_INDICATOR_1": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"PAGE_INDICATOR_2": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"PAGE_INDICATOR_3": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"PAGE_INDICATOR_4": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"PAGE_INDICATOR_5": {
+			"LOGO_GAME": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.5, "value": 1 }
@@ -171,19 +143,31 @@
 					{ "time": 0.5, "value": 1 }
 				]
 			},
-			"START_SCREEN_BG": {
+			"START_SCREEN_BACKPLATE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.20000002, "value": 1 }
+				]
+			},
+			"TXT_CONTINUE_LANDSCAPE": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.5, "value": 1 }
 				]
 			},
-			"START_SCREEN_MASK": {
+			"TXT_CONTINUE_PORTRAIT": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.5, "value": 1 }
 				]
 			},
-			"YELLOW_BUTTON_STARTSCRN": {
+			"TXT_WINUPTO_LANDSCAPE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.5, "value": 1 }
+				]
+			},
+			"TXT_WINUPTO_PORTRAIT": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.5, "value": 1 }
@@ -193,82 +177,19 @@
 	},
 	"EXIT": {
 		"slots": {
-			"ARROW_BUTTON": {
+			"INTRO_DONE": {
 				"alpha": [
 					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
+					{ "time": 0.20000002, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "INTRO_DONE" }
 				]
 			},
-			"ARROW_BUTTON2": {
+			"LOGO_GAME": {
 				"alpha": [
 					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"CHECKBOX": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"CHECKBOX_TEXT": {
-				"alpha": [
-					{ "value": 0.49411765 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"CURRENT_HEADER": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"CURRENT_PAGE": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"NEXT_HEADER": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"NEXT_PAGE": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"PAGE_INDICATOR_1": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"PAGE_INDICATOR_2": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"PAGE_INDICATOR_3": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"PAGE_INDICATOR_4": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			},
-			"PAGE_INDICATOR_5": {
-				"alpha": [
-					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
+					{ "time": 0.20000002, "value": 0 }
 				]
 			},
 			"SS_SEPARATOR": {
@@ -277,155 +198,124 @@
 					{ "time": 0.5, "value": 0 }
 				]
 			},
-			"START_SCREEN_BG": {
+			"START_SCREEN_BACKPLATE": {
 				"alpha": [
-					{ "value": 0.79607844 },
+					{ "time": 0.16666667, "value": 0.79607844 },
 					{ "time": 0.5, "value": 0 }
 				]
 			},
-			"START_SCREEN_MASK": {
+			"TXT_CONTINUE_LANDSCAPE": {
 				"alpha": [
 					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
+					{ "time": 0.20000002, "value": 0 }
 				]
 			},
-			"YELLOW_BUTTON_STARTSCRN": {
+			"TXT_CONTINUE_PORTRAIT": {
 				"alpha": [
 					{ "value": 1 },
-					{ "time": 0.5, "value": 0 }
-				]
-			}
-		}
-	},
-	"GO_TO_LEFT_PAGE": {
-		"slots": {
-			"CURRENT_HEADER": {
-				"alpha": [
-					{
-						"value": 1,
-						"curve": [ 0.05555556, 1, 0.11111111, 0 ]
-					},
-					{ "time": 0.16666667, "value": 0 }
+					{ "time": 0.20000002, "value": 0 }
 				]
 			},
-			"CURRENT_PAGE": {
+			"TXT_WINUPTO_LANDSCAPE": {
 				"alpha": [
-					{ "value": 1 }
+					{ "value": 1 },
+					{ "time": 0.20000002, "value": 0 }
 				]
 			},
-			"NEXT_HEADER": {
+			"TXT_WINUPTO_PORTRAIT": {
 				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{
-						"time": 0.33333334,
-						"value": 0,
-						"curve": [ 0.38888893, 0, 0.44444445, 1 ]
-					},
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"NEXT_PAGE": {
-				"alpha": [
-					{
-						"value": 0,
-						"curve": [ 0.16666667, 0, 0.33333334, 1 ]
-					},
-					{ "time": 0.5, "value": 1 }
-				]
-			}
-		},
-		"bones": {
-			"CURRENT_PAGE": {
-				"translate": [
-					{
-						"curve": [ 0.16666667, 0, 0.33333334, 560, 0.16666667, 0, 0.33333334, 0 ]
-					},
-					{ "time": 0.5, "x": 560 }
-				]
-			},
-			"NEXT_PAGE": {
-				"translate": [
-					{
-						"x": -800,
-						"curve": [ 0.16666667, -800, 0.33333334, 0, 0.16666667, 0, 0.33333334, 0 ]
-					},
-					{ "time": 0.5 }
-				]
-			}
-		}
-	},
-	"GO_TO_RIGHT_PAGE": {
-		"slots": {
-			"CURRENT_HEADER": {
-				"alpha": [
-					{
-						"value": 1,
-						"curve": [ 0.05555556, 1, 0.11111111, 0 ]
-					},
-					{ "time": 0.16666667, "value": 0 }
-				]
-			},
-			"CURRENT_PAGE": {
-				"alpha": [
-					{ "value": 1 }
-				]
-			},
-			"NEXT_HEADER": {
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{
-						"time": 0.33333334,
-						"value": 0,
-						"curve": [ 0.38888893, 0, 0.44444445, 1 ]
-					},
-					{ "time": 0.5, "value": 1 }
-				]
-			},
-			"NEXT_PAGE": {
-				"alpha": [
-					{
-						"value": 0,
-						"curve": [ 0.16666667, 0, 0.33333334, 1 ]
-					},
-					{ "time": 0.5, "value": 1 }
-				]
-			}
-		},
-		"bones": {
-			"CURRENT_PAGE": {
-				"translate": [
-					{
-						"curve": [ 0.16666667, 0, 0.33333334, -560, 0.11111112, 0, 0.3888889, 0 ]
-					},
-					{ "time": 0.5, "x": -560 }
-				]
-			},
-			"NEXT_PAGE": {
-				"translate": [
-					{
-						"x": 800,
-						"curve": [ 0.16666667, 800, 0.33333334, -2.7538174E-6, 0.11111112, 0, 0.3888889, 0 ]
-					},
-					{ "time": 0.5 }
+					{ "value": 1 },
+					{ "time": 0.20000002, "value": 0 }
 				]
 			}
 		}
 	},
 	"IDLE": {
 		"slots": {
-			"CURRENT_HEADER": {
+			"INTRO_DONE": {
 				"alpha": [
-					{ "value": 1 }
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 2.9, "value": 0 },
+					{ "time": 3.0000002, "value": 0.9989, "curve": "stepped" },
+					{ "time": 5.4333334, "value": 0.9989 },
+					{ "time": 5.6333337, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "INTRO_DONE" }
 				]
 			},
-			"CURRENT_PAGE": {
+			"INTRO_DONE2": {
 				"alpha": [
-					{ "value": 1 }
+					{ "value": 0 },
+					{ "time": 3.0000002, "value": 0.057117473 },
+					{ "time": 3.4, "value": 0.2471 },
+					{ "time": 3.6666667, "value": 0 },
+					{ "time": 3.7333336, "value": 0.48889998 },
+					{ "time": 4, "value": 0 },
+					{ "time": 4.2000003, "value": 0.7262, "curve": "stepped" },
+					{ "time": 5.4, "value": 0.7255 },
+					{ "time": 5.5000005, "value": 0 }
+				],
+				"rgb": [
+					{ "time": 4.4666667, "color": "ffb500" }
+				],
+				"attachment": [
+					{ "name": "INTRO_DONE" }
 				]
 			},
-			"NEXT_HEADER": {
+			"INTRO_FINISH": {
 				"alpha": [
-					{ "value": 0 }
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 1.9000001, "value": 0 },
+					{ "time": 2, "value": 1, "curve": "stepped" },
+					{ "time": 2.9, "value": 1 },
+					{ "time": 3.0000002, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "INTRO_FINISH" }
+				]
+			},
+			"INTRO_READY": {
+				"alpha": [
+					{ "value": 0, "curve": "stepped" },
+					{ "time": 0.90000004, "value": 0 },
+					{ "time": 1, "value": 1, "curve": "stepped" },
+					{ "time": 1.9000001, "value": 1 },
+					{ "time": 2, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "INTRO_READY" }
+				]
+			},
+			"INTRO_START": {
+				"alpha": [
+					{ "time": 0.90000004, "value": 1 },
+					{ "time": 1, "value": 0, "curve": "stepped" },
+					{ "time": 3.9, "value": 0 },
+					{ "time": 4, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "INTRO_START" }
+				]
+			},
+			"TXT_CONTINUE_LANDSCAPE": {
+				"attachment": [
+					{}
+				]
+			},
+			"TXT_CONTINUE_PORTRAIT": {
+				"attachment": [
+					{}
+				]
+			},
+			"TXT_WINUPTO_LANDSCAPE": {
+				"attachment": [
+					{}
+				]
+			},
+			"TXT_WINUPTO_PORTRAIT": {
+				"attachment": [
+					{}
 				]
 			}
 		}

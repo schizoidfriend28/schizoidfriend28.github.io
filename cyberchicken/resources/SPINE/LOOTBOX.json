@@ -1,11 +1,11 @@
 {
 "skeleton": {
-	"hash": "gM7+sn3bWqA",
+	"hash": "SUcFrgk/0qw",
 	"spine": "4.2-from-4.3.39-beta",
-	"x": -263.5,
-	"y": -286.5,
-	"width": 539.5,
-	"height": 573,
+	"x": -235.5,
+	"y": -257.5,
+	"width": 499.05,
+	"height": 527.9,
 	"images": "../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
@@ -15,19 +15,17 @@
 	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "color": "1eff00ff", "icon": "square" },
 	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
 	{ "name": "WIN_INDICATIONS", "parent": "MAIN_ROOT", "color": "ffbf00ff", "icon": "diamond" },
-	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_ICON", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_ICON", "x": 22, "y": 20, "color": "1eff00ff", "icon": "square" },
 	{ "name": "SYMBOL_SHADOWS", "parent": "SYMBOL_ROOT", "x": 27, "y": 12, "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON_SHADOW3", "parent": "SYMBOL_SHADOWS", "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON_SHADOW4", "parent": "SYMBOL_SHADOWS", "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON_GLOW2", "parent": "SYMBOL_ICON", "color": "1eff00ff", "icon": "square" }
+	{ "name": "SYMBOL_ICON_SHADOW3", "parent": "SYMBOL_SHADOWS", "scaleX": 0.95, "scaleY": 0.95, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_GLOW_OUTER", "parent": "SYMBOL_ANCHOR", "color": "1eff00ff", "icon": "square" }
 ],
 "slots": [
 	{ "name": "WIN_INDICATIONS", "bone": "WIN_INDICATIONS" },
 	{ "name": "SYMBOL_ICON_SHADOW3", "bone": "SYMBOL_ICON_SHADOW3", "attachment": "LOOTBOX/LOOTBOX_SHADOW", "blend": "multiply" },
-	{ "name": "SYMBOL_ICON_SHADOW4", "bone": "SYMBOL_ICON_SHADOW4", "attachment": "LOOTBOX/LOOTBOX_SHADOW", "blend": "multiply" },
 	{ "name": "SYMBOL_ICON", "bone": "SYMBOL_ICON", "attachment": "LOOTBOX/LOOTBOX" },
-	{ "name": "SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a40000", "attachment": "LOOTBOX/LOOTBOX_GLOW", "blend": "additive" },
-	{ "name": "SYMBOL_ICON_GLOW2", "bone": "SYMBOL_ICON_GLOW2", "color": "f9a40000", "attachment": "LOOTBOX/LOOTBOX_GLOW", "blend": "additive" }
+	{ "name": "SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a400ff", "blend": "additive" },
+	{ "name": "SYMBOL_ICON_GLOW_OUTER", "bone": "SYMBOL_ICON_GLOW_OUTER", "color": "f9a40000", "blend": "additive" }
 ],
 "skins": [
 	{
@@ -39,19 +37,83 @@
 			"SYMBOL_ICON_GLOW": {
 				"LOOTBOX/LOOTBOX_GLOW": { "width": 527, "height": 573 }
 			},
-			"SYMBOL_ICON_GLOW2": {
+			"SYMBOL_ICON_GLOW_OUTER": {
 				"LOOTBOX/LOOTBOX_GLOW": { "width": 527, "height": 573 }
 			},
 			"SYMBOL_ICON_SHADOW3": {
-				"LOOTBOX/LOOTBOX_SHADOW": { "width": 498, "height": 544 }
-			},
-			"SYMBOL_ICON_SHADOW4": {
 				"LOOTBOX/LOOTBOX_SHADOW": { "width": 498, "height": 544 }
 			}
 		}
 	}
 ],
 "animations": {
+	"COIN_COLLECT": {
+		"slots": {
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.06666667, "value": 1 }
+				],
+				"attachment": [
+					{ "name": "LOOTBOX/LOOTBOX_GLOW" }
+				]
+			},
+			"SYMBOL_ICON_GLOW_OUTER": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.06666667, "value": 1, "curve": "stepped" },
+					{ "time": 0.26666668, "value": 1 },
+					{ "time": 0.53333336, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "LOOTBOX/LOOTBOX_GLOW" }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON_GLOW_OUTER": {
+				"scale": [
+					{},
+					{ "time": 0.53333336, "x": 4, "y": 4 }
+				]
+			},
+			"SYMBOL_ROOT": {
+				"scale": [
+					{},
+					{ "time": 0.10000001, "x": 1.1, "y": 1.1 },
+					{ "time": 0.23333335, "x": 0.01, "y": 0.01 }
+				]
+			}
+		}
+	},
+	"COIN_IDLE": {
+		"slots": {
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 1 },
+					{ "time": 3.0000002, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "LOOTBOX/LOOTBOX_GLOW" }
+				]
+			},
+			"SYMBOL_ICON_GLOW_OUTER": {
+				"attachment": [
+					{ "name": "LOOTBOX/LOOTBOX_GLOW" }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ROOT": {
+				"scale": [
+					{},
+					{ "time": 1.5000001, "x": 1.05, "y": 1.05 },
+					{ "time": 3.0000002 }
+				]
+			}
+		}
+	},
 	"IDLE": {
 		"slots": {
 			"SYMBOL_ICON_GLOW": {
@@ -59,13 +121,19 @@
 					{ "value": 0 },
 					{ "time": 1.5000001, "value": 0.1563 },
 					{ "time": 3.0000002, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "LOOTBOX/LOOTBOX_GLOW" }
 				]
 			},
-			"SYMBOL_ICON_GLOW2": {
+			"SYMBOL_ICON_GLOW_OUTER": {
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 1.5000001, "value": 0.1563 },
 					{ "time": 3.0000002, "value": 0 }
+				],
+				"attachment": [
+					{ "name": "LOOTBOX/LOOTBOX_GLOW" }
 				]
 			}
 		}
@@ -83,7 +151,7 @@
 					{ "time": 0.26666668, "color": "ffd700" }
 				]
 			},
-			"SYMBOL_ICON_GLOW2": {
+			"SYMBOL_ICON_GLOW_OUTER": {
 				"alpha": [
 					{ "time": 0.40000004, "value": 0.0011 },
 					{ "time": 0.5666667, "value": 1, "curve": "stepped" },
@@ -92,13 +160,6 @@
 				],
 				"rgb": [
 					{ "time": 0.4666667, "color": "ffd700" }
-				]
-			},
-			"SYMBOL_ICON_SHADOW4": {
-				"alpha": [
-					{ "time": 0.4666667, "value": 0.9989 },
-					{ "time": 0.6333334, "value": 0.0011 },
-					{ "time": 0.8000001, "value": 1 }
 				]
 			}
 		},
@@ -125,7 +186,7 @@
 					{ "time": 0.8000001 }
 				]
 			},
-			"SYMBOL_ICON_GLOW2": {
+			"SYMBOL_ICON_GLOW_OUTER": {
 				"scale": [
 					{ "time": 0.4666667 },
 					{ "time": 0.8333334, "x": 3, "y": 3 }

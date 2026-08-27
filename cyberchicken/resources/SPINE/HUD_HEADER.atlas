@@ -1,9 +1,8 @@
 HUD_HEADER.png
-size:1762,45
+size:1961,100
 filter:Linear,Linear
 pma:true
-GUI/HUD/HUD_HEADER_BCKGR
-bounds:0,0,1721,45
-offsets:0,0,1722,45
+GUI/HUD/HUD_FOOTER_BCKGR
+bounds:0,0,1920,100
 GUI/HUD/TIME_ICON
-bounds:1722,5,40,40
+bounds:1921,60,40,40

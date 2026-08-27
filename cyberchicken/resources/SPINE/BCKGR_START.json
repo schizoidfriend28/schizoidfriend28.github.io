@@ -1,18 +1,18 @@
 {
 "skeleton": {
-	"hash": "z28Tt1PztTY",
+	"hash": "dwiErbN2iR4",
 	"spine": "4.2-from-4.3.39-beta",
-	"x": -2355,
-	"y": -1250.5,
-	"width": 2548,
-	"height": 2501,
+	"x": -2302,
+	"y": -1250,
+	"width": 2500,
+	"height": 2500,
 	"images": "../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
 "bones": [
 	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
 	{ "name": "SYMBOL_ANCHOR", "parent": "MAIN_ROOT", "color": "ff0000ff", "icon": "square" },
-	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "x": -1081, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "x": -1052, "color": "1eff00ff", "icon": "square" },
 	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
 	{ "name": "WIN_INDICATIONS", "parent": "MAIN_ROOT", "color": "ffbf00ff", "icon": "diamond" },
 	{ "name": "SYMBOL_GLOWS", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
@@ -21,9 +21,9 @@
 ],
 "slots": [
 	{ "name": "WIN_INDICATIONS", "bone": "WIN_INDICATIONS" },
-	{ "name": "SYMBOL_ICON", "bone": "SYMBOL_ICON", "attachment": "BACKGROUND/BCKGR_START" },
+	{ "name": "SYMBOL_ICON", "bone": "SYMBOL_ICON", "attachment": "BACKGROUND/BCKGR_START_LIGHTS_ON" },
 	{ "name": "SYMBOL_ICON_OFF", "bone": "SYMBOL_ICON", "color": "0002bfff", "blend": "multiply" },
-	{ "name": "SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a40000", "attachment": "BACKGROUND/BCKGR_START", "blend": "additive" },
+	{ "name": "SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a40000", "attachment": "BACKGROUND/BCKGR_START_LIGHTS_ON", "blend": "additive" },
 	{ "name": "SYMBOL_ICON_GLOW2", "bone": "SYMBOL_ICON_GLOW2", "color": "ff0000d2", "blend": "additive" }
 ],
 "skins": [
@@ -31,16 +31,16 @@
 		"name": "default",
 		"attachments": {
 			"SYMBOL_ICON": {
-				"BACKGROUND/BCKGR_START": { "width": 2548, "height": 2501 }
+				"BACKGROUND/BCKGR_START_LIGHTS_ON": { "width": 2500, "height": 2500 }
 			},
 			"SYMBOL_ICON_GLOW": {
-				"BACKGROUND/BCKGR_START": { "width": 2548, "height": 2501 }
+				"BACKGROUND/BCKGR_START_LIGHTS_ON": { "width": 2500, "height": 2500 }
 			},
 			"SYMBOL_ICON_GLOW2": {
-				"BACKGROUND/BCKGR_START": { "width": 2548, "height": 2501 }
+				"BACKGROUND/BCKGR_START_LIGHTS_ON": { "width": 2500, "height": 2500 }
 			},
 			"SYMBOL_ICON_OFF": {
-				"BACKGROUND/BCKGR_START": { "width": 2548, "height": 2501 }
+				"BACKGROUND/BCKGR_START_LIGHTS_ON": { "width": 2500, "height": 2500 }
 			}
 		}
 	}
@@ -66,7 +66,7 @@
 					{ "time": 3.0000002, "value": 0 }
 				],
 				"attachment": [
-					{ "name": "BACKGROUND/BCKGR_START" }
+					{ "name": "BACKGROUND/BCKGR_START_LIGHTS_ON" }
 				]
 			},
 			"SYMBOL_ICON_OFF": {
@@ -76,7 +76,7 @@
 					{ "time": 3.0000002, "color": "0002bf" }
 				],
 				"attachment": [
-					{ "name": "BACKGROUND/BCKGR_START" }
+					{ "name": "BACKGROUND/BCKGR_START_LIGHTS_ON" }
 				]
 			}
 		}
@@ -97,7 +97,7 @@
 					{ "time": 1.1666667, "value": 1 }
 				],
 				"attachment": [
-					{ "name": "BACKGROUND/BCKGR_START" }
+					{ "name": "BACKGROUND/BCKGR_START_LIGHTS_ON" }
 				]
 			}
 		}

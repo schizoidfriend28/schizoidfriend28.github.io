@@ -1,10 +1,10 @@
 {
 "skeleton": {
-	"hash": "RngI+fSS71U",
+	"hash": "pzCekgsJwz4",
 	"spine": "4.2-from-4.3.39-beta",
-	"x": -175,
+	"x": -225,
 	"y": -72.045975,
-	"width": 350,
+	"width": 450,
 	"height": 157.56662,
 	"images": "../../GRAPHIC_ASSETS/",
 	"audio": "./audio"
@@ -22,7 +22,7 @@
 	{ "name": "SHIMMER_07", "parent": "FX", "x": -65.54692, "y": -53.295975, "scaleX": 0.2, "scaleY": 0.3 }
 ],
 "slots": [
-	{ "name": "LOGO_GAME_MAIN", "bone": "LOGO_GAME_MAIN", "attachment": "GENERIC/LOGO_GAME_TXT_ALT1" },
+	{ "name": "LOGO_GAME_MAIN", "bone": "LOGO_GAME_MAIN", "attachment": "GENERIC/LOGO_GAME" },
 	{ "name": "LOGO_GAME_MAIN_SHINE", "bone": "LOGO_GAME_MAIN", "blend": "additive" },
 	{ "name": "SHIMMER_01", "bone": "SHIMMER_01", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
 	{ "name": "SHIMMER_02", "bone": "SHIMMER_02", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
@@ -37,10 +37,10 @@
 		"name": "default",
 		"attachments": {
 			"LOGO_GAME_MAIN": {
-				"GENERIC/LOGO_GAME_TXT_ALT1": { "width": 350, "height": 98 }
+				"GENERIC/LOGO_GAME": { "width": 450, "height": 84 }
 			},
 			"LOGO_GAME_MAIN_SHINE": {
-				"GENERIC/LOGO_GAME": { "width": 391, "height": 425 }
+				"GENERIC/LOGO_GAME": { "width": 450, "height": 84 }
 			},
 			"SHIMMER_01": {
 				"FX/BASE_SHINE_2": { "x": 115.35841, "y": 6.701576, "width": 125, "height": 125 }
@@ -91,7 +91,7 @@
 		"slots": {
 			"LOGO_GAME_MAIN": {
 				"attachment": [
-					{ "name": "GENERIC/LOGO_GAME_TXT_ALT1" }
+					{ "name": "GENERIC/LOGO_GAME" }
 				]
 			},
 			"LOGO_GAME_MAIN_SHINE": {

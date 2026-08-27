@@ -1,67 +1,31 @@
 {
 "skeleton": {
-	"hash": "Vjp4ks7DEoc",
+	"hash": "ji2jYD0BjHs",
 	"spine": "4.2-from-4.3.39-beta",
-	"x": -78.04692,
-	"y": -72.045975,
-	"width": 158.85957,
-	"height": 157.56662,
-	"images": "../GRAPHIC_ASSETS/",
+	"x": -66.5,
+	"y": -67,
+	"width": 133,
+	"height": 134,
+	"images": "H:/My Drive/WORK_SLOTS/SLOT_SOURCE/MF_02_DRAGONS_BLESSING/GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
 "bones": [
 	{ "name": "root" },
-	{ "name": "LOGO_COMPANY_MAIN", "parent": "root" },
-	{ "name": "FX", "parent": "root" },
-	{ "name": "SHIMMER_01", "parent": "FX", "x": -88.45699, "y": 43.999702, "scaleX": 0.3, "scaleY": 0.6 },
-	{ "name": "SHIMMER_02", "parent": "FX", "x": 107.56827, "y": 27.923494, "scaleX": 0.3, "scaleY": 0.3 },
-	{ "name": "SHIMMER_03", "parent": "FX", "x": 10.504932, "y": 25.532764, "scaleX": 0.2, "scaleY": 0.2 },
-	{ "name": "SHIMMER_04", "parent": "FX", "x": 68.31265, "y": -41.646244, "scaleX": 0.2, "scaleY": 0.4 },
-	{ "name": "SHIMMER_05", "parent": "FX", "x": -17.146854, "y": -26.022072, "scaleX": 0.2, "scaleY": 0.35 },
-	{ "name": "SHIMMER_06", "parent": "FX", "x": 45.627743, "y": 34.69199, "scaleX": 0.1, "scaleY": 0.2 },
-	{ "name": "SHIMMER_07", "parent": "FX", "x": -65.54692, "y": -53.295975, "scaleX": 0.2, "scaleY": 0.3 }
+	{ "name": "LOGO_COMPANY_MAIN", "parent": "root" }
 ],
 "slots": [
 	{ "name": "LOGO_COMPANY_MAIN", "bone": "LOGO_COMPANY_MAIN", "attachment": "GENERIC/LOGO_COMPANY" },
-	{ "name": "LOGO_COMPANY_MAIN_SHINE", "bone": "LOGO_COMPANY_MAIN", "blend": "additive" },
-	{ "name": "SHIMMER_01", "bone": "SHIMMER_01", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
-	{ "name": "SHIMMER_02", "bone": "SHIMMER_02", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
-	{ "name": "SHIMMER_03", "bone": "SHIMMER_03", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
-	{ "name": "SHIMMER_06", "bone": "SHIMMER_06", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
-	{ "name": "SHIMMER_07", "bone": "SHIMMER_07", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
-	{ "name": "SHIMMER_04", "bone": "SHIMMER_04", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" },
-	{ "name": "SHIMMER_05", "bone": "SHIMMER_05", "color": "ffffff00", "attachment": "FX/BASE_SHINE_2", "blend": "screen" }
+	{ "name": "LOGO_COMPANY_MAIN_SHINE", "bone": "LOGO_COMPANY_MAIN", "blend": "additive" }
 ],
 "skins": [
 	{
 		"name": "default",
 		"attachments": {
 			"LOGO_COMPANY_MAIN": {
-				"GENERIC/LOGO_COMPANY": { "width": 133, "height": 133 }
+				"GENERIC/LOGO_COMPANY": { "width": 133, "height": 134 }
 			},
 			"LOGO_COMPANY_MAIN_SHINE": {
-				"GENERIC/LOGO_COMPANY": { "width": 133, "height": 133 }
-			},
-			"SHIMMER_01": {
-				"FX/BASE_SHINE_2": { "x": 115.35841, "y": 6.701576, "width": 125, "height": 125 }
-			},
-			"SHIMMER_02": {
-				"FX/BASE_SHINE_2": { "x": -504.026, "y": -98.20302, "width": 125, "height": 125 }
-			},
-			"SHIMMER_03": {
-				"FX/BASE_SHINE_2": { "width": 125, "height": 125 }
-			},
-			"SHIMMER_04": {
-				"FX/BASE_SHINE_2": { "width": 125, "height": 125 }
-			},
-			"SHIMMER_05": {
-				"FX/BASE_SHINE_2": { "width": 125, "height": 125 }
-			},
-			"SHIMMER_06": {
-				"FX/BASE_SHINE_2": { "x": -51.170807, "y": 79.734604, "width": 125, "height": 125 }
-			},
-			"SHIMMER_07": {
-				"FX/BASE_SHINE_2": { "width": 125, "height": 125 }
+				"GENERIC/LOGO_COMPANY": { "width": 133, "height": 134 }
 			}
 		}
 	}
@@ -100,82 +64,6 @@
 				],
 				"attachment": [
 					{ "name": "GENERIC/LOGO_COMPANY" }
-				]
-			},
-			"SHIMMER_01": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 4.9, "value": 1 },
-					{ "time": 10.066668, "value": 0 }
-				],
-				"attachment": [
-					{ "name": "FX/BASE_SHINE_2" }
-				]
-			},
-			"SHIMMER_02": {
-				"alpha": [
-					{ "time": 0.10000001, "value": 0.0011, "curve": "stepped" },
-					{ "time": 0.8000001, "value": 0 },
-					{ "time": 5.7000003, "value": 1 },
-					{ "time": 10.866667, "value": 0 }
-				],
-				"attachment": [
-					{ "time": 0.8000001, "name": "FX/BASE_SHINE_2" }
-				]
-			},
-			"SHIMMER_03": {
-				"alpha": [
-					{ "time": 0.10000001, "value": 0, "curve": "stepped" },
-					{ "time": 4.066667, "value": 0 },
-					{ "time": 8.966667, "value": 1 },
-					{ "time": 14.133334, "value": 0 }
-				],
-				"attachment": [
-					{ "time": 4.066667, "name": "FX/BASE_SHINE_2" }
-				]
-			},
-			"SHIMMER_04": {
-				"alpha": [
-					{ "time": 0.10000001, "value": 0, "curve": "stepped" },
-					{ "time": 8.133334, "value": 0 },
-					{ "time": 13.033334, "value": 1 },
-					{ "time": 18.2, "value": 0 }
-				],
-				"attachment": [
-					{ "time": 8.133334, "name": "FX/BASE_SHINE_2" }
-				]
-			},
-			"SHIMMER_05": {
-				"alpha": [
-					{ "time": 0.10000001, "value": 0, "curve": "stepped" },
-					{ "time": 6.8, "value": 0 },
-					{ "time": 11.700001, "value": 1 },
-					{ "time": 18.366667, "value": 0 }
-				],
-				"attachment": [
-					{ "time": 6.8, "name": "FX/BASE_SHINE_2" }
-				]
-			},
-			"SHIMMER_06": {
-				"alpha": [
-					{ "time": 0.10000001, "value": 0, "curve": "stepped" },
-					{ "time": 3.2333336, "value": 0 },
-					{ "time": 8.133334, "value": 1 },
-					{ "time": 16.433334, "value": 0 }
-				],
-				"attachment": [
-					{ "time": 3.2333336, "name": "FX/BASE_SHINE_2" }
-				]
-			},
-			"SHIMMER_07": {
-				"alpha": [
-					{ "time": 0.10000001, "value": 0, "curve": "stepped" },
-					{ "time": 13.233334, "value": 0 },
-					{ "time": 18.133335, "value": 1 },
-					{ "time": 25.300001, "value": 0 }
-				],
-				"attachment": [
-					{ "time": 13.233334, "name": "FX/BASE_SHINE_2" }
 				]
 			}
 		}

@@ -1,0 +1,147 @@
+{
+"skeleton": {
+	"hash": "PBnduGsmYQU",
+	"spine": "4.2-from-4.3.39-beta",
+	"x": -81.5,
+	"y": -40.5,
+	"width": 163,
+	"height": 297,
+	"images": "../GRAPHIC_ASSETS/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
+	{ "name": "SYMBOL_ANCHOR", "parent": "MAIN_ROOT", "color": "ff0000ff", "icon": "square" },
+	{ "name": "WIN_INDICATIONS", "parent": "MAIN_ROOT", "color": "ffbf00ff", "icon": "diamond" },
+	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "y": 91, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_ICON", "y": 17, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_POLE", "parent": "SYMBOL_ICON", "y": 14, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_RIM", "parent": "SYMBOL_ICON", "y": -81, "color": "1eff00ff", "icon": "square" }
+],
+"slots": [
+	{ "name": "WIN_INDICATIONS", "bone": "WIN_INDICATIONS" },
+	{ "name": "SYMBOL_ICON_RIM", "bone": "SYMBOL_ICON_RIM", "color": "ffffff00" },
+	{ "name": "SYMBOL_ICON_POLE", "bone": "SYMBOL_ICON_POLE", "attachment": "BARRIER/BARRIER_ICON_POLE" },
+	{ "name": "SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a40000", "attachment": "BARRIER/BARRIER_GLOW", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"SYMBOL_ICON_GLOW": {
+				"BARRIER/BARRIER_GLOW": { "width": 163, "height": 297 }
+			},
+			"SYMBOL_ICON_POLE": {
+				"BARRIER/BARRIER_ICON_POLE": { "width": 118, "height": 253 }
+			}
+		}
+	}
+],
+"animations": {
+	"COLLECT_ENTER": {
+		"slots": {
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "time": 0.20000002, "value": 0.0011 },
+					{ "time": 0.36666667, "value": 1 },
+					{ "time": 0.6333334, "value": 0 }
+				],
+				"rgb": [
+					{ "time": 0.26666668, "color": "ffd700" }
+				]
+			},
+			"SYMBOL_ICON_POLE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.033333335, "value": 1 }
+				]
+			},
+			"SYMBOL_ICON_RIM": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.033333335, "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ANCHOR": {
+				"scale": [
+					{ "time": 0.06666667 },
+					{ "time": 0.13333334, "x": 1.05, "y": 1.05 },
+					{ "time": 0.26666668 }
+				]
+			},
+			"SYMBOL_ICON_GLOW": {
+				"scale": [
+					{ "time": 0.26666668 },
+					{ "time": 0.6333334, "x": 2, "y": 2 }
+				]
+			},
+			"SYMBOL_ICON_POLE": {
+				"scale": [
+					{ "y": 0.1 },
+					{ "time": 0.06666667 }
+				]
+			}
+		}
+	},
+	"COLLECT_IDLE": {
+		"slots": {
+			"SYMBOL_ICON_RIM": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			}
+		}
+	},
+	"COLLISION": {
+		"slots": {
+			"SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0.0011 },
+					{ "time": 0.16666667, "value": 1 },
+					{ "time": 0.43333337, "value": 0 }
+				],
+				"rgb": [
+					{ "time": 0.06666667, "color": "ffd700" }
+				]
+			},
+			"SYMBOL_ICON_RIM": {
+				"alpha": [
+					{ "value": 1 }
+				]
+			}
+		},
+		"bones": {
+			"SYMBOL_ICON_GLOW": {
+				"scale": [
+					{ "time": 0.06666667 },
+					{ "time": 0.43333337, "x": 2, "y": 2 }
+				]
+			},
+			"SYMBOL_ROOT": {
+				"scale": [
+					{},
+					{ "time": 0.033333335, "x": 1.1, "y": 1.1 },
+					{ "time": 0.06666667 }
+				]
+			}
+		}
+	},
+	"INVISIBLE_IDLE": {
+		"slots": {
+			"SYMBOL_ICON_GLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"SYMBOL_ICON_POLE": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	}
+}
+}

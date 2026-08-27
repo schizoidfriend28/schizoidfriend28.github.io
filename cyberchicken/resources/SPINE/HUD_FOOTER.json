@@ -1,11 +1,11 @@
 {
 "skeleton": {
-	"hash": "iu29UEAMfkM",
+	"hash": "pCzdaptOBqA",
 	"spine": "4.2-from-4.3.39-beta",
-	"x": -977.0999,
-	"y": -54,
-	"width": 1958.3999,
-	"height": 104,
+	"x": -957.89996,
+	"y": -52,
+	"width": 1920,
+	"height": 100,
 	"images": "../../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
@@ -24,7 +24,7 @@
 	{ "name": "MENU_BUTTON", "parent": "HUD_FOOTER_ROOT", "x": -428, "y": -4.6402893, "scaleX": 0.8, "scaleY": 0.8 }
 ],
 "slots": [
-	{ "name": "FOOTER", "bone": "FOOTER", "color": "ffffffcb", "attachment": "GUI/HUD/HUD_FOOTER_BCKGR" },
+	{ "name": "FOOTER", "bone": "FOOTER", "color": "000000b5", "attachment": "GUI/HUD/HUD_FOOTER_BCKGR" },
 	{ "name": "BALANCE_VALUE_PORTRAIT", "bone": "BALANCE_VALUE_PORTRAIT" },
 	{ "name": "BALANCE_VALUE_LANDSCAPE", "bone": "BALANCE_VALUE_LANDSCAPE" },
 	{ "name": "BALANCE_ICON", "bone": "BALANCE_ICON", "attachment": "BALANCE_ICON" },
@@ -41,7 +41,7 @@
 		"name": "default",
 		"attachments": {
 			"FOOTER": {
-				"GUI/HUD/HUD_FOOTER_BCKGR": { "x": 2.1000366, "y": -2, "scaleX": 1.02, "scaleY": 1.04, "width": 1920, "height": 100 }
+				"GUI/HUD/HUD_FOOTER_BCKGR": { "x": 2.1000366, "y": -2, "width": 1920, "height": 100 }
 			}
 		}
 	},

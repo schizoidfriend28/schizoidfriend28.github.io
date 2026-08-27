@@ -1,129 +1,226 @@
 {
 "skeleton": {
-	"hash": "T0g6FFXaWok",
+	"hash": "ayo/CDAv5Mc",
 	"spine": "4.2-from-4.3.39-beta",
-	"x": -165,
-	"y": -196.5,
-	"width": 348,
-	"height": 380.5,
+	"x": -219.8,
+	"y": -275.10004,
+	"width": 476,
+	"height": 516.85767,
 	"images": "../GRAPHIC_ASSETS/",
 	"audio": "./audio"
 },
 "bones": [
 	{ "name": "MAIN_ROOT", "color": "ff0000ff", "icon": "warning" },
 	{ "name": "SYMBOL_ANCHOR", "parent": "MAIN_ROOT", "color": "ff0000ff", "icon": "square" },
-	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ROOT", "parent": "SYMBOL_ANCHOR", "scaleX": 1.4, "scaleY": 1.4, "color": "1eff00ff", "icon": "square" },
 	{ "name": "SYMBOL_ICON_MAIN", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_ICON_MAIN", "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON", "parent": "SYMBOL_ICON_MAIN", "y": 44.17391, "color": "1eff00ff", "icon": "square" },
 	{ "name": "WIN_INDICATIONS", "parent": "MAIN_ROOT", "color": "ffbf00ff", "icon": "diamond" },
-	{ "name": "SYMBOL_SHADOWS", "parent": "SYMBOL_ROOT", "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON_SHADOW3", "parent": "SYMBOL_SHADOWS", "x": 13, "y": -145, "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON_SHADOW4", "parent": "SYMBOL_SHADOWS", "x": 13, "y": -145, "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_ICON_MAIN", "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_PARTS", "parent": "SYMBOL_ICON_MAIN", "color": "1eff00ff", "icon": "square" },
-	{ "name": "BODY", "parent": "SYMBOL_ICON_PARTS", "color": "1eff00ff", "icon": "square" },
-	{ "name": "HEAD", "parent": "SYMBOL_ICON_PARTS", "color": "1eff00ff", "icon": "square" },
-	{ "name": "LEG_RIGHT", "parent": "SYMBOL_ICON_PARTS", "color": "1eff00ff", "icon": "square" },
-	{ "name": "LEG_LEFT", "parent": "SYMBOL_ICON_PARTS", "color": "1eff00ff", "icon": "square" },
-	{ "name": "TAIL", "parent": "SYMBOL_ICON_PARTS", "color": "1eff00ff", "icon": "square" },
-	{ "name": "SYMBOL_ICON_BODY_CORPUS_BOTTOM", "parent": "BODY", "x": -3, "y": -39, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_BODY_GEAR", "parent": "BODY", "x": 39, "y": -8, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_BODY_PLATE1", "parent": "BODY", "x": -31, "y": -37, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_BODY_PLATE2", "parent": "BODY", "x": -20, "y": -55, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_BODY_CORPUS_TOP", "parent": "BODY", "x": 68, "y": 1, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_COMB", "parent": "HEAD", "x": 81, "y": 134, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_EYE", "parent": "HEAD", "x": 100, "y": 88, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_HEAD", "parent": "HEAD", "x": 105, "y": 84, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_LEG_HOCK_LEFT", "parent": "LEG_LEFT", "x": 51, "y": -53, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_LEG_HOCK_RIGHT", "parent": "LEG_RIGHT", "x": 5, "y": -66, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_LEG_SHANK_LEFT", "parent": "LEG_LEFT", "x": 35, "y": -120, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_LEG_SHANK_RIGHT", "parent": "LEG_RIGHT", "x": -11, "y": -137, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_LEG_TOES_LEFT", "parent": "LEG_LEFT", "x": 57, "y": -140, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_LEG_TOES_RIGHT", "parent": "LEG_RIGHT", "x": 11, "y": -158, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_NECK", "parent": "SYMBOL_ICON_PARTS", "x": 77, "y": 46, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_TAIL_FEATHER1", "parent": "TAIL", "x": -86, "y": 40, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_TAIL_FEATHER2", "parent": "TAIL", "x": -89, "y": 21, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_TAIL_FEATHER3", "parent": "TAIL", "x": -92, "y": -7, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_WATTLES", "parent": "HEAD", "x": 118, "y": 49, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_WING", "parent": "SYMBOL_ICON_PARTS", "x": 14, "y": -21, "color": "1eff00ff" },
-	{ "name": "SYMBOL_ICON_GLOW_PARTS", "parent": "SYMBOL_ICON_GLOW", "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_WING", "parent": "SYMBOL_ICON_GLOW_PARTS", "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "GLOWS_TAIL", "parent": "SYMBOL_ICON_GLOW_PARTS", "color": "ffffffff" },
-	{ "name": "SYMBOL_ICON_GLOW_TAIL_FEATHER1", "parent": "GLOWS_TAIL", "x": -90, "y": 40, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_TAIL_FEATHER2", "parent": "GLOWS_TAIL", "x": -109, "y": 52, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_TAIL_FEATHER3", "parent": "GLOWS_TAIL", "x": -90, "y": -7, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 10, "y": -36, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_BODY_CORPUS_TOP", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 10, "y": -36, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_NECK", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 65, "y": 61, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_BODY_GEAR", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 39, "y": -6, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_COMB", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 65, "y": 61, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_WATTLES", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 65, "y": 61, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "GLOWS_LEG_RIGHT", "parent": "SYMBOL_ICON_GLOW_PARTS", "color": "ffffffff" },
-	{ "name": "SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT", "parent": "GLOWS_LEG_RIGHT", "x": -10, "y": -57, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT", "parent": "GLOWS_LEG_RIGHT", "x": -42, "y": -115, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_BODY_PLATE2", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": -21, "y": -55, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_BODY_PLATE1", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": -21, "y": -55, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_HEAD", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 86, "y": 77, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "SYMBOL_ICON_GLOW_EYE", "parent": "SYMBOL_ICON_GLOW_PARTS", "x": 86, "y": 77, "color": "ffffffff", "icon": "asterisk" },
-	{ "name": "CURRENT_MULTIPLIER", "parent": "SYMBOL_ROOT", "y": -220, "color": "1eff00ff", "icon": "romanX" }
+	{ "name": "SYMBOL_SHADOWS", "parent": "SYMBOL_ROOT", "x": 7.881016, "y": -192.81107, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_GLOW", "parent": "SYMBOL_ICON_MAIN", "y": 44.17391, "color": "ffffffff", "icon": "asterisk" },
+	{ "name": "SYMBOL_ICON_PARTS", "parent": "SYMBOL_ICON_MAIN", "x": 7.809807, "y": -18.152546, "color": "1eff00ff", "icon": "square" },
+	{ "name": "BIP", "parent": "SYMBOL_ICON_PARTS", "x": 12.006935, "y": -21.301971, "color": "ecff00ff", "icon": "diamond" },
+	{ "name": "BODY", "parent": "BIP", "x": 4.2535553, "y": -5.063072, "color": "1eff00ff", "icon": "square" },
+	{ "name": "LEG_RIGHT", "parent": "BODY", "x": -25.201508, "y": -24.288593, "color": "1eff00ff", "icon": "square" },
+	{ "name": "LEG_LEFT", "parent": "BODY", "x": 23.955627, "y": -12.994656, "color": "1eff00ff", "icon": "square" },
+	{ "name": "SYMBOL_ICON_BODY_CORPUS_BOTTOM", "parent": "BODY", "x": -44.436813, "y": -11.181385, "color": "1eff00ff" },
+	{
+		"name": "SYMBOL_ICON_BODY_PLATE1",
+		"parent": "SYMBOL_ICON_BODY_CORPUS_BOTTOM",
+		"length": 50.625,
+		"rotation": 132,
+		"x": 0.21429443,
+		"y": -2.0264015,
+		"color": "1eff00ff"
+	},
+	{
+		"name": "TAIL",
+		"parent": "SYMBOL_ICON_BODY_PLATE1",
+		"rotation": 7.961052,
+		"x": 44.46479,
+		"y": -5.4110947,
+		"color": "1eff00ff",
+		"icon": "square"
+	},
+	{ "name": "SYMBOL_ICON_BODY_GEAR", "parent": "SYMBOL_ICON_BODY_CORPUS_BOTTOM", "x": 58.667145, "y": 46.333755, "color": "1eff00ff" },
+	{ "name": "SYMBOL_ICON_BODY_PLATE2", "parent": "SYMBOL_ICON_BODY_CORPUS_BOTTOM", "x": -0.33285522, "y": -0.6662445, "color": "1eff00ff" },
+	{
+		"name": "SYMBOL_ICON_BODY_CORPUS_TOP",
+		"parent": "SYMBOL_ICON_BODY_CORPUS_BOTTOM",
+		"length": 63,
+		"rotation": 50.965183,
+		"x": 57.603012,
+		"y": 17.819748,
+		"color": "1eff00ff"
+	},
+	{
+		"name": "SYMBOL_ICON_NECK",
+		"parent": "SYMBOL_ICON_BODY_CORPUS_TOP",
+		"length": 46.8,
+		"rotation": 15.560329,
+		"x": 60.47777,
+		"y": 7.5992584,
+		"color": "1eff00ff"
+	},
+	{
+		"name": "SYMBOL_ICON_HEAD",
+		"parent": "SYMBOL_ICON_NECK",
+		"length": 41.4,
+		"rotation": 3.9166946,
+		"x": 52.048485,
+		"y": 3.9878578,
+		"color": "1eff00ff"
+	},
+	{
+		"name": "SYMBOL_ICON_COMB",
+		"parent": "SYMBOL_ICON_HEAD",
+		"length": 49.05,
+		"rotation": 65.52227,
+		"x": 49.67106,
+		"y": -23.118237,
+		"color": "1eff00ff"
+	},
+	{ "name": "SYMBOL_ICON_EYE", "parent": "SYMBOL_ICON_HEAD", "rotation": -70.44221, "x": 26.356445, "y": -4.2239914, "color": "1eff00ff" },
+	{
+		"name": "SYMBOL_ICON_LEG_HOCK_LEFT",
+		"parent": "LEG_LEFT",
+		"length": 49.05,
+		"rotation": -117.642746,
+		"x": 6.339447,
+		"y": 2.0449944,
+		"color": "1eff00ff"
+	},
+	{
+		"name": "SYMBOL_ICON_LEG_HOCK_RIGHT",
+		"parent": "LEG_RIGHT",
+		"length": 61.65,
+		"rotation": -119.040375,
+		"x": 8.478485,
+		"y": -2.6277924,
+		"color": "1eff00ff"
+	},
+	{
+		"name": "SYMBOL_ICON_LEG_SHANK_LEFT",
+		"parent": "SYMBOL_ICON_LEG_HOCK_LEFT",
+		"length": 43.425,
+		"rotation": 63.973083,
+		"x": 61.14234,
+		"y": -1.1119385,
+		"color": "1eff00ff"
+	},
+	{ "name": "target2", "parent": "BIP", "x": 28.04483, "y": -102.04617, "color": "ff0000ff", "icon": "ik" },
+	{ "name": "SYMBOL_ICON_LEG_TOES_LEFT", "parent": "target2", "x": 0.67861176, "y": 0.48799133, "color": "1eff00ff" },
+	{
+		"name": "SYMBOL_ICON_LEG_SHANK_RIGHT",
+		"parent": "SYMBOL_ICON_LEG_HOCK_RIGHT",
+		"length": 34.425,
+		"rotation": 64.63218,
+		"x": 59.45291,
+		"y": 0.67481995,
+		"color": "1eff00ff"
+	},
+	{ "name": "target", "parent": "BIP", "x": -22.095978, "y": -113.06796, "color": "ff0000ff", "icon": "ik" },
+	{ "name": "SYMBOL_ICON_LEG_TOES_RIGHT", "parent": "target", "x": 7.5361633, "y": -5.1625366, "color": "1eff00ff" },
+	{
+		"name": "SYMBOL_ICON_TAIL_FEATHER1",
+		"parent": "TAIL",
+		"length": 76.05,
+		"rotation": -6.041809,
+		"x": 3.7905197,
+		"y": -11.953011,
+		"color": "1eff00ff"
+	},
+	{
+		"name": "SYMBOL_ICON_TAIL_FEATHER2",
+		"parent": "TAIL",
+		"length": 48.825,
+		"rotation": -354.85287,
+		"x": 7.315754,
+		"y": -0.18811035,
+		"color": "1eff00ff"
+	},
+	{
+		"name": "SYMBOL_ICON_TAIL_FEATHER3",
+		"parent": "TAIL",
+		"length": 71.55,
+		"rotation": -346.9617,
+		"x": 0.5994377,
+		"y": 10.632179,
+		"color": "1eff00ff"
+	},
+	{
+		"name": "SYMBOL_ICON_WATTLES",
+		"parent": "SYMBOL_ICON_HEAD",
+		"length": 23.175,
+		"rotation": -145.62227,
+		"x": 13.08329,
+		"y": -23.745995,
+		"color": "1eff00ff"
+	},
+	{
+		"name": "SYMBOL_ICON_WING",
+		"parent": "SYMBOL_ICON_BODY_CORPUS_BOTTOM",
+		"length": 51.525,
+		"rotation": 171.60095,
+		"x": 82.81493,
+		"y": 27.190266,
+		"color": "1eff00ff"
+	},
+	{ "name": "SYMBOL_ICON_BODY_PLATE3", "parent": "SYMBOL_ICON_BODY_PLATE2", "color": "1eff00ff" },
+	{ "name": "CURRENT_MULTIPLIER", "parent": "SYMBOL_ANCHOR", "y": -265, "color": "b3ff00ff", "icon": "romanX" }
 ],
 "slots": [
-	{ "name": "SYMBOL_ICON_SHADOW3", "bone": "SYMBOL_ICON_SHADOW3", "color": "ffffff5f", "attachment": "CHICKEN/CHICKEN_SHADOW", "blend": "multiply" },
-	{ "name": "SYMBOL_ICON_SHADOW4", "bone": "SYMBOL_ICON_SHADOW4", "color": "ffffff5f", "attachment": "CHICKEN/CHICKEN_SHADOW", "blend": "multiply" },
-	{ "name": "ICON/SYMBOL_ICON", "bone": "SYMBOL_ICON" },
-	{ "name": "ICON/SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a40000", "attachment": "CHICKEN/CHICKEN_ICON_GLOW", "blend": "additive" },
-	{ "name": "ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER2", "bone": "SYMBOL_ICON_TAIL_FEATHER2", "attachment": "CHICKEN/CHICKEN_ICON_TAIL_FEATHER2" },
-	{ "name": "ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER3", "bone": "SYMBOL_ICON_TAIL_FEATHER3", "attachment": "CHICKEN/CHICKEN_ICON_TAIL_FEATHER3" },
-	{ "name": "ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER1", "bone": "SYMBOL_ICON_TAIL_FEATHER1", "attachment": "CHICKEN/CHICKEN_ICON_TAIL_FEATHER1" },
-	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE", "bone": "SYMBOL_ICON_GLOW_TAIL_FEATHER2", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER2_BLUE", "blend": "screen" },
-	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_YELLOW", "bone": "SYMBOL_ICON_GLOW_TAIL_FEATHER2", "color": "f95700ff", "blend": "additive" },
-	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE", "bone": "SYMBOL_ICON_GLOW_TAIL_FEATHER3", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER3_BLUE", "blend": "screen" },
-	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_YELLOW", "bone": "SYMBOL_ICON_GLOW_TAIL_FEATHER3", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER3_YELLOW", "blend": "additive" },
-	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_BLUE2", "bone": "SYMBOL_ICON_GLOW_TAIL_FEATHER1", "color": "00cbffff", "blend": "screen" },
-	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW", "bone": "SYMBOL_ICON_GLOW_TAIL_FEATHER1", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER1_YELLOW", "blend": "additive" },
-	{ "name": "ICON/LEG_LEFT/SYMBOL_ICON_LEG_SHANK_LEFT", "bone": "SYMBOL_ICON_LEG_SHANK_LEFT", "attachment": "CHICKEN/CHICKEN_ICON_LEG_SHANK_LEFT" },
-	{ "name": "ICON/LEG_LEFT/SYMBOL_ICON_LEG_TOES_LEFT", "bone": "SYMBOL_ICON_LEG_TOES_LEFT", "attachment": "CHICKEN/CHICKEN_ICON_LEG_TOES_LEFT" },
-	{ "name": "ICON/LEG_LEFT/SYMBOL_ICON_LEG_HOCK_LEFT", "bone": "SYMBOL_ICON_LEG_HOCK_LEFT", "attachment": "CHICKEN/CHICKEN_ICON_LEG_HOCK_LEFT" },
-	{ "name": "ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_GEAR", "bone": "SYMBOL_ICON_BODY_GEAR", "attachment": "CHICKEN/CHICKEN_ICON_BODY_GEAR" },
-	{ "name": "ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_CORPUS_BOTTOM", "bone": "SYMBOL_ICON_BODY_CORPUS_BOTTOM", "attachment": "CHICKEN/CHICKEN_ICON_BODY_CORPUS_BOTTOM" },
-	{ "name": "ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW", "bone": "SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_BOTTOM_YELLOW", "blend": "additive" },
-	{ "name": "ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE", "bone": "SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_BOTTOM_BLUE", "blend": "screen" },
-	{ "name": "ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE", "bone": "SYMBOL_ICON_GLOW_BODY_GEAR", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_BLUE", "blend": "screen" },
-	{ "name": "ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW", "bone": "SYMBOL_ICON_GLOW_BODY_GEAR", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_YELLOW", "blend": "additive" },
-	{ "name": "ICON/LEG_RIGHT/SYMBOL_ICON_LEG_SHANK_RIGHT", "bone": "SYMBOL_ICON_LEG_SHANK_RIGHT", "attachment": "CHICKEN/CHICKEN_ICON_LEG_SHANK_RIGHT" },
-	{ "name": "ICON/LEG_RIGHT/SYMBOL_ICON_LEG_TOES_RIGHT", "bone": "SYMBOL_ICON_LEG_TOES_RIGHT", "attachment": "CHICKEN/CHICKEN_ICON_LEG_TOES_RIGHT" },
-	{ "name": "ICON/LEG_RIGHT/SYMBOL_ICON_LEG_HOCK_RIGHT", "bone": "SYMBOL_ICON_LEG_HOCK_RIGHT", "attachment": "CHICKEN/CHICKEN_ICON_LEG_HOCK_RIGHT" },
-	{ "name": "ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_BLUE", "bone": "SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT", "color": "00cbffff", "blend": "screen" },
-	{ "name": "ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_BLUE", "bone": "SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT", "color": "00cbffff", "blend": "screen" },
-	{ "name": "ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW", "bone": "SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_LEG_HOCK_RIGHT_YELLOW", "blend": "additive" },
-	{ "name": "ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW", "bone": "SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_LEG_SHANK_RIGHT_YELLOW", "blend": "additive" },
-	{ "name": "ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE1", "bone": "SYMBOL_ICON_BODY_PLATE1", "attachment": "CHICKEN/CHICKEN_ICON_BODY_PLATE1" },
-	{ "name": "ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE2", "bone": "SYMBOL_ICON_BODY_PLATE2", "attachment": "CHICKEN/CHICKEN_ICON_BODY_PLATE2" },
-	{ "name": "ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW", "bone": "SYMBOL_ICON_GLOW_BODY_PLATE2", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_PLATE2_YELLOW", "blend": "additive" },
-	{ "name": "ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW", "bone": "SYMBOL_ICON_GLOW_BODY_PLATE1", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_PLATE1_YELLOW", "blend": "additive" },
-	{ "name": "ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE", "bone": "SYMBOL_ICON_GLOW_BODY_PLATE2", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_BLUE", "blend": "screen" },
-	{ "name": "ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE", "bone": "SYMBOL_ICON_GLOW_BODY_PLATE1", "color": "00cbffff", "blend": "screen" },
-	{ "name": "ICON/SYMBOL_ICON_BODY_CORPUS_TOP", "bone": "SYMBOL_ICON_BODY_CORPUS_TOP", "attachment": "CHICKEN/CHICKEN_ICON_BODY_CORPUS_TOP" },
-	{ "name": "ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW", "bone": "SYMBOL_ICON_GLOW_BODY_CORPUS_TOP", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_TOP_YELLOW", "blend": "additive" },
-	{ "name": "ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE", "bone": "SYMBOL_ICON_GLOW_BODY_CORPUS_TOP", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_TOP_BLUE", "blend": "screen" },
-	{ "name": "ICON/SYMBOL_ICON_NECK", "bone": "SYMBOL_ICON_NECK", "attachment": "CHICKEN/CHICKEN_ICON_NECK" },
-	{ "name": "ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW", "bone": "SYMBOL_ICON_GLOW_NECK", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_NECK_YELLOW", "blend": "additive" },
-	{ "name": "ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE", "bone": "SYMBOL_ICON_GLOW_NECK", "color": "00cbffff", "blend": "screen" },
-	{ "name": "ICON/COMB_WATTLES/SYMBOL_ICON_WATTLES", "bone": "SYMBOL_ICON_WATTLES", "attachment": "CHICKEN/CHICKEN_ICON_WATTLES" },
-	{ "name": "ICON/COMB_WATTLES/SYMBOL_ICON_COMB", "bone": "SYMBOL_ICON_COMB", "attachment": "CHICKEN/CHICKEN_ICON_COMB" },
-	{ "name": "ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE", "bone": "SYMBOL_ICON_GLOW_COMB", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_COMB_FILL_BLUE", "blend": "additive" },
-	{ "name": "ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE", "bone": "SYMBOL_ICON_GLOW_WATTLES", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_WATTLES_FILL_BLUE", "blend": "additive" },
-	{ "name": "ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE", "bone": "SYMBOL_ICON_GLOW_COMB", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_COMB_CONTOUR_BLUE", "blend": "screen" },
-	{ "name": "ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE", "bone": "SYMBOL_ICON_GLOW_WATTLES", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_WATTLES_CONTOUR_BLUE", "blend": "screen" },
+	{ "name": "SYMBOL_ICON_SHADOW3", "bone": "SYMBOL_SHADOWS", "color": "ffffff5f", "attachment": "CHICKEN/CHICKEN_SHADOW", "blend": "multiply" },
+	{ "name": "SYMBOL_ICON_SHADOW4", "bone": "SYMBOL_SHADOWS", "color": "ffffff5f", "attachment": "CHICKEN/CHICKEN_SHADOW", "blend": "multiply", "visible": false },
+	{ "name": "ICON/SYMBOL_ICON", "bone": "SYMBOL_ICON", "attachment": "CHICKEN/CHICKEN_ICON", "visible": false },
+	{ "name": "ICON/SYMBOL_ICON_GLOW", "bone": "SYMBOL_ICON_GLOW", "color": "f9a40000", "attachment": "CHICKEN/CHICKEN_ICON_GLOW", "blend": "additive", "visible": false },
+	{ "name": "ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER2", "bone": "SYMBOL_ICON_TAIL_FEATHER2", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_TAIL_FEATHER2" },
+	{ "name": "ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER3", "bone": "SYMBOL_ICON_TAIL_FEATHER3", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_TAIL_FEATHER3" },
+	{ "name": "ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER1", "bone": "SYMBOL_ICON_TAIL_FEATHER1", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_TAIL_FEATHER1" },
+	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE", "bone": "SYMBOL_ICON_TAIL_FEATHER2", "color": "00cbff00", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER2_BLUE", "blend": "screen" },
+	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE", "bone": "SYMBOL_ICON_TAIL_FEATHER3", "color": "00cbff00", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER3_BLUE", "blend": "screen" },
+	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_YELLOW", "bone": "SYMBOL_ICON_TAIL_FEATHER3", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER3_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW", "bone": "SYMBOL_ICON_TAIL_FEATHER1", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER1_YELLOW", "blend": "additive" },
+	{ "name": "ICON/LEG_LEFT/SYMBOL_ICON_LEG_SHANK_LEFT", "bone": "SYMBOL_ICON_LEG_SHANK_LEFT", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_LEG_SHANK_LEFT" },
+	{ "name": "ICON/LEG_LEFT/SYMBOL_ICON_LEG_TOES_LEFT", "bone": "SYMBOL_ICON_LEG_TOES_LEFT", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_LEG_TOES_LEFT" },
+	{ "name": "ICON/LEG_LEFT/SYMBOL_ICON_LEG_HOCK_LEFT", "bone": "SYMBOL_ICON_LEG_HOCK_LEFT", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_LEG_HOCK_LEFT" },
+	{ "name": "ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_GEAR", "bone": "SYMBOL_ICON_BODY_GEAR", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_BODY_GEAR" },
+	{ "name": "ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_CORPUS_BOTTOM", "bone": "SYMBOL_ICON_BODY_CORPUS_BOTTOM", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_BODY_CORPUS_BOTTOM" },
+	{ "name": "ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW", "bone": "SYMBOL_ICON_BODY_CORPUS_BOTTOM", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_BOTTOM_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE", "bone": "SYMBOL_ICON_BODY_CORPUS_BOTTOM", "color": "00cbff00", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_BOTTOM_BLUE", "blend": "screen" },
+	{ "name": "ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE", "bone": "SYMBOL_ICON_BODY_GEAR", "color": "00cbff00", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_BLUE", "blend": "screen" },
+	{ "name": "ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW", "bone": "SYMBOL_ICON_BODY_GEAR", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_YELLOW", "blend": "additive" },
+	{ "name": "ICON/LEG_RIGHT/SYMBOL_ICON_LEG_SHANK_RIGHT", "bone": "SYMBOL_ICON_LEG_SHANK_RIGHT", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_LEG_SHANK_RIGHT" },
+	{ "name": "ICON/LEG_RIGHT/SYMBOL_ICON_LEG_TOES_RIGHT", "bone": "SYMBOL_ICON_LEG_TOES_RIGHT", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_LEG_TOES_RIGHT" },
+	{ "name": "ICON/LEG_RIGHT/SYMBOL_ICON_LEG_HOCK_RIGHT", "bone": "SYMBOL_ICON_LEG_HOCK_RIGHT", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_LEG_HOCK_RIGHT" },
+	{ "name": "ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW", "bone": "SYMBOL_ICON_LEG_HOCK_RIGHT", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_LEG_HOCK_RIGHT_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW", "bone": "SYMBOL_ICON_LEG_SHANK_RIGHT", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_LEG_SHANK_RIGHT_YELLOW", "blend": "additive" },
+	{ "name": "ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE1", "bone": "SYMBOL_ICON_BODY_PLATE1", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_BODY_PLATE1" },
+	{ "name": "ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE2", "bone": "SYMBOL_ICON_BODY_PLATE2", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_BODY_PLATE2" },
+	{ "name": "ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW2", "bone": "SYMBOL_ICON_BODY_PLATE3", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_PLATE2_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW", "bone": "SYMBOL_ICON_BODY_PLATE1", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_PLATE1_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE2", "bone": "SYMBOL_ICON_BODY_PLATE3", "color": "00cbff00", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_BLUE", "blend": "screen" },
+	{ "name": "ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE", "bone": "SYMBOL_ICON_BODY_PLATE1", "color": "00cbff00", "blend": "screen" },
+	{ "name": "ICON/SYMBOL_ICON_BODY_CORPUS_TOP", "bone": "SYMBOL_ICON_BODY_CORPUS_TOP", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_BODY_CORPUS_TOP" },
+	{ "name": "ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW", "bone": "SYMBOL_ICON_BODY_CORPUS_TOP", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_TOP_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE", "bone": "SYMBOL_ICON_BODY_CORPUS_TOP", "color": "00cbff00", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_TOP_BLUE", "blend": "screen" },
+	{ "name": "ICON/SYMBOL_ICON_NECK", "bone": "SYMBOL_ICON_NECK", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_NECK" },
+	{ "name": "ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW", "bone": "SYMBOL_ICON_NECK", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_NECK_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE", "bone": "SYMBOL_ICON_NECK", "color": "00cbff00", "blend": "screen" },
+	{ "name": "ICON/COMB_WATTLES/SYMBOL_ICON_WATTLES", "bone": "SYMBOL_ICON_WATTLES", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_WATTLES" },
+	{ "name": "ICON/COMB_WATTLES/SYMBOL_ICON_COMB", "bone": "SYMBOL_ICON_COMB", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_COMB" },
+	{ "name": "ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE", "bone": "SYMBOL_ICON_COMB", "color": "00cbff00", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_COMB_FILL_BLUE", "blend": "additive" },
+	{ "name": "ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE", "bone": "SYMBOL_ICON_WATTLES", "color": "00cbff00", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_WATTLES_FILL_BLUE", "blend": "additive" },
+	{ "name": "ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE", "bone": "SYMBOL_ICON_COMB", "color": "00cbff00", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_COMB_CONTOUR_BLUE", "blend": "screen" },
+	{ "name": "ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE", "bone": "SYMBOL_ICON_WATTLES", "color": "00cbff00", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_WATTLES_CONTOUR_BLUE", "blend": "screen" },
 	{ "name": "ICON/HEAD/SYMBOL_ICON_EYE", "bone": "SYMBOL_ICON_EYE", "attachment": "CHICKEN/CHICKEN_ICON_EYE" },
-	{ "name": "ICON/HEAD/SYMBOL_ICON_HEAD", "bone": "SYMBOL_ICON_HEAD", "attachment": "CHICKEN/CHICKEN_ICON_HEAD" },
-	{ "name": "ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW", "bone": "SYMBOL_ICON_GLOW_HEAD", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_HEAD_YELLOW", "blend": "additive" },
-	{ "name": "ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_BLUE", "bone": "SYMBOL_ICON_GLOW_HEAD", "color": "00cbffff", "blend": "screen" },
-	{ "name": "ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW", "bone": "SYMBOL_ICON_GLOW_EYE", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_EYE_IRIS_YELLOW", "blend": "screen" },
-	{ "name": "ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW", "bone": "SYMBOL_ICON_GLOW_EYE", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_EYE_PUPIL_YELLOW", "blend": "additive" },
-	{ "name": "ICON/SYMBOL_ICON_WING", "bone": "SYMBOL_ICON_WING", "attachment": "CHICKEN/CHICKEN_ICON_WING" },
-	{ "name": "ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW", "bone": "SYMBOL_ICON_GLOW_WING", "color": "f95700ff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_WING_YELLOW", "blend": "additive" },
-	{ "name": "ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE", "bone": "SYMBOL_ICON_GLOW_WING", "color": "00cbffff", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_WING_BLUE", "blend": "screen" },
+	{ "name": "ICON/HEAD/SYMBOL_ICON_HEAD", "bone": "SYMBOL_ICON_HEAD", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_HEAD" },
+	{ "name": "ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW", "bone": "SYMBOL_ICON_HEAD", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_HEAD_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW", "bone": "SYMBOL_ICON_EYE", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_EYE_IRIS_YELLOW", "blend": "screen" },
+	{ "name": "ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW", "bone": "SYMBOL_ICON_EYE", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_EYE_PUPIL_YELLOW", "blend": "additive" },
+	{ "name": "ICON/SYMBOL_ICON_WING", "bone": "SYMBOL_ICON_WING", "color": "c5c5c5ff", "attachment": "CHICKEN/CHICKEN_ICON_WING" },
+	{ "name": "ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW", "bone": "SYMBOL_ICON_WING", "color": "f9570000", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_WING_YELLOW", "blend": "additive" },
+	{ "name": "ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE", "bone": "SYMBOL_ICON_WING", "color": "00cbff00", "attachment": "CHICKEN/CHICKEN_GLOWS/GLOWS_WING_BLUE", "blend": "screen" },
 	{ "name": "WIN_INDICATIONS", "bone": "WIN_INDICATIONS" },
 	{ "name": "CURRENT_MULTIPLIER", "bone": "CURRENT_MULTIPLIER" }
 ],
@@ -132,151 +229,187 @@
 		"name": "default",
 		"attachments": {
 			"SYMBOL_ICON_SHADOW3": {
-				"CHICKEN/CHICKEN_SHADOW": { "width": 340, "height": 103 }
+				"CHICKEN/CHICKEN_SHADOW": { "x": 5.118984, "y": 47.811035, "width": 340, "height": 103 }
 			},
 			"SYMBOL_ICON_SHADOW4": {
-				"CHICKEN/CHICKEN_SHADOW": { "width": 340, "height": 103 }
+				"CHICKEN/CHICKEN_SHADOW": { "x": 5.118984, "y": 47.81105, "width": 340, "height": 103 }
 			},
 			"ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_CORPUS_BOTTOM": {
-				"CHICKEN/CHICKEN_ICON_BODY_CORPUS_BOTTOM": { "width": 150, "height": 120 }
+				"CHICKEN/CHICKEN_ICON_BODY_CORPUS_BOTTOM": {
+					"type": "mesh",
+					"uvs": [ 0, 0.43011314, 0.0775796, 0.7220107, 0.3091835, 0.92059684, 0.4642241, 1, 0.6766873, 1, 0.925518, 0.9182041, 1, 0.84403354, 0.9542291, 0.6909069, 0.9102055, 0.6167363, 1, 0.4588244, 1, 0.28655696, 0.7915322, 0.14539337, 0.69582814, 0, 0.56567055, 0.0018371344, 0.39531723, 0.08079302, 0.2728159, 0.056866944 ],
+					"triangles": [ 11, 10, 9, 8, 11, 9, 5, 8, 7, 13, 12, 11, 8, 14, 11, 5, 7, 6, 4, 3, 8, 5, 4, 8, 14, 13, 11, 14, 1, 0, 14, 0, 15, 2, 1, 14, 14, 3, 2, 8, 3, 14 ],
+					"vertices": [ 1, 14, 61.98, 9.18, 1, 1, 14, 32.79, 31.77, 1, 2, 14, -10.6, 32.77, 0.92587, 10, -61.48, -30.13, 0.07413, 3, 14, -38.99, 27.8, 0.6674, 10, -38.79, -47.9, 0.33099, 18, -85.09, -2.11, 0.00161, 3, 14, -67.96, 4.63, 0.2847, 10, -2.18, -53.93, 0.63117, 18, -66.72, -34.33, 0.08413, 3, 14, -85.24, -39.46, 0.02385, 10, 42.14, -37.27, 0.58211, 18, -25.86, -58.27, 0.39404, 3, 14, -83.61, -55.34, 0.00422, 10, 52.85, -25.43, 0.54159, 18, -9.92, -59.13, 0.45419, 3, 14, -63.32, -61.97, 1.6E-4, 10, 44.2, -5.91, 0.43625, 18, -0.21, -40.12, 0.56358, 2, 10, 36.92, 5.23, 0.25865, 18, 3.86, -27.45, 0.74135, 2, 10, 44.56, 32.93, 0.00131, 18, 30.19, -15.94, 0.99869, 2, 14, -15.63, -96.31, 1.0E-5, 18, 41.14, 1.63, 0.99999, 3, 14, 8.19, -75.08, 0.06797, 10, 6.09, 56, 0.10921, 18, 23.88, 28.47, 0.82282, 3, 14, 25.37, -73.63, 0.36227, 10, -6.48, 67.8, 0.15662, 18, 25.13, 45.66, 0.48112, 3, 14, 32.72, -61.16, 0.53937, 10, -20.66, 64.92, 0.15517, 18, 13.96, 54.87, 0.30546, 1, 14, 38.24, -46.5, 1, 1, 14, 53.09, -42.42, 1 ],
+					"hull": 16,
+					"edges": [ 0, 2, 2, 4, 4, 6, 6, 8, 8, 10, 10, 12, 12, 14, 14, 16, 16, 18, 18, 20, 20, 22, 22, 24, 24, 26, 26, 28, 28, 30, 0, 30 ],
+					"width": 150,
+					"height": 120
+				}
 			},
 			"ICON/BODY_CORPUS_BOTTOM/SYMBOL_ICON_BODY_GEAR": {
 				"CHICKEN/CHICKEN_ICON_BODY_GEAR": { "width": 59, "height": 61 }
 			},
 			"ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE1": {
-				"CHICKEN/CHICKEN_ICON_BODY_PLATE1": { "width": 96, "height": 103 }
+				"CHICKEN/CHICKEN_ICON_BODY_PLATE1": { "x": 22.114029, "y": -4.373308, "rotation": -132.00002, "width": 96, "height": 103 }
 			},
 			"ICON/BODY_PLATES/SYMBOL_ICON_BODY_PLATE2": {
 				"CHICKEN/CHICKEN_ICON_BODY_PLATE2": { "width": 65, "height": 65 }
 			},
 			"ICON/COMB_WATTLES/SYMBOL_ICON_COMB": {
-				"CHICKEN/CHICKEN_ICON_COMB": { "width": 94, "height": 73 }
+				"CHICKEN/CHICKEN_ICON_COMB": {
+					"type": "mesh",
+					"uvs": [ 0.6582221, 0.17018144, 1, 0.5781847, 1, 1, 0.9456955, 1, 0.6654184, 0.84298456, 0.37064153, 0.99998957, 0, 0.64176244, 0, 0, 0.18462473, 0 ],
+					"triangles": [ 5, 0, 4, 3, 4, 1, 3, 1, 2, 6, 7, 8, 4, 0, 1, 0, 6, 8, 5, 6, 0 ],
+					"vertices": [ 1, 21, 61.22, -18.56, 1, 1, 21, 17.52, -21.56, 1, 1, 20, 48.05, -27.78, 1, 1, 20, 46.12, -23.06, 1, 1, 20, 46.74, 5.67, 1, 1, 20, 25.63, 26.96, 1, 1, 21, 78.54, 50.1, 1, 1, 21, 112.66, 18, 1, 1, 21, 100.77, 5.36, 1 ],
+					"hull": 9,
+					"edges": [ 4, 2, 2, 0, 14, 16, 0, 16, 12, 14, 12, 10, 4, 6, 8, 6, 8, 10 ],
+					"width": 94,
+					"height": 73
+				}
 			},
 			"ICON/COMB_WATTLES/SYMBOL_ICON_WATTLES": {
-				"CHICKEN/CHICKEN_ICON_WATTLES": { "width": 28, "height": 54 }
+				"CHICKEN/CHICKEN_ICON_WATTLES": { "x": 20.32891, "y": -1.1917896, "rotation": 75.18011, "width": 28, "height": 54 }
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_BOTTOM_BLUE": { "x": 17, "y": -44, "width": 66, "height": 30 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_BOTTOM_BLUE": { "x": 46.667145, "y": -25.666245, "width": 66, "height": 30 }
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_BOTTOM_YELLOW": { "x": 20, "y": -6, "width": 63, "height": 114 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_BOTTOM_YELLOW": { "x": 49.667145, "y": 12.3337555, "width": 63, "height": 114 }
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_BLUE": { "width": 25, "height": 25 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_BLUE": { "y": 2, "width": 25, "height": 25 }
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_YELLOW": { "width": 43, "height": 43 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_YELLOW": { "y": 2, "width": 43, "height": 43 }
 			},
 			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_TOP_BLUE": { "x": 61, "y": 24, "width": 73, "height": 121 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_TOP_BLUE": { "x": 40.20166, "y": -10.659121, "rotation": -50.965183, "width": 73, "height": 121 }
 			},
 			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_TOP_YELLOW": { "x": 67, "y": 42, "width": 79, "height": 147 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_CORPUS_TOP_YELLOW": { "x": 57.625637, "y": -3.5685735, "rotation": -50.965183, "width": 79, "height": 147 }
 			},
 			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_PLATE1_YELLOW": { "x": -27, "y": 32, "width": 48, "height": 56 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_PLATE1_YELLOW": { "x": 43.893192, "y": -1.1076308, "rotation": -132, "width": 48, "height": 56 }
 			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_BLUE": { "width": 25, "height": 25 }
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE2": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_GEAR_BLUE": { "x": -1, "width": 25, "height": 25 }
 			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_PLATE2_YELLOW": { "width": 43, "height": 43 }
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW2": {
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_BODY_PLATE2_YELLOW": { "x": -1, "width": 43, "height": 43 }
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_COMB_CONTOUR_BLUE": { "x": 17, "y": 73, "width": 95, "height": 74 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_COMB_CONTOUR_BLUE": { "x": 53.190853, "y": 8.041143, "rotation": -133.24449, "width": 95, "height": 74 }
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_COMB_FILL_BLUE": { "x": 17, "y": 71, "width": 88, "height": 68 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_COMB_FILL_BLUE": { "x": 51.733982, "y": 9.411384, "rotation": -133.24449, "width": 88, "height": 68 }
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_WATTLES_CONTOUR_BLUE": { "x": 53, "y": -12, "width": 31, "height": 57 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_WATTLES_CONTOUR_BLUE": { "x": 20.328913, "y": -1.1918106, "rotation": 75.18006, "width": 31, "height": 57 }
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_WATTLES_FILL_BLUE": { "x": 53, "y": -12, "width": 25, "height": 53 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_WATTLES_FILL_BLUE": { "x": 20.328913, "y": -1.1918106, "rotation": 75.18006, "width": 25, "height": 53 }
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_EYE_IRIS_YELLOW": { "x": 15, "y": 11, "width": 34, "height": 34 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_EYE_IRIS_YELLOW": { "x": 0.99998474, "width": 34, "height": 34 }
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_EYE_PUPIL_YELLOW": { "x": 15, "y": 12, "width": 43, "height": 43 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_EYE_PUPIL_YELLOW": { "x": 0.99998474, "y": 1.0000076, "width": 43, "height": 43 }
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_HEAD_YELLOW": { "x": 18, "y": -8, "width": 21, "height": 21 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_HEAD_YELLOW": { "x": 9.791695, "y": -14.353592, "rotation": -70.44221, "width": 21, "height": 21 }
 			},
 			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_LEG_HOCK_RIGHT_YELLOW": { "x": 18, "y": -8, "width": 70, "height": 101 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_LEG_HOCK_RIGHT_YELLOW": { "x": -2.330555, "y": 2.1374092, "rotation": 119.040375, "width": 70, "height": 101 }
 			},
 			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_LEG_SHANK_RIGHT_YELLOW": { "x": 18, "y": -8, "width": 13, "height": 13 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_LEG_SHANK_RIGHT_YELLOW": { "x": 0.015254311, "y": -1.5671761, "rotation": 54.4082, "width": 13, "height": 13 }
 			},
 			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_NECK_YELLOW": { "x": 18, "y": -8, "width": 45, "height": 105 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_NECK_YELLOW": { "x": 39.75679, "y": 3.2251549, "rotation": -66.52551, "width": 45, "height": 105 }
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER1_YELLOW": { "x": 18, "y": -8, "width": 91, "height": 106 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER1_YELLOW": { "x": 50.810455, "y": -5.0549393, "rotation": -133.91925, "width": 91, "height": 106 }
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER2_BLUE": { "x": 26, "y": -30, "width": 112, "height": 61 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER2_BLUE": { "x": 47.599625, "y": -11.72493, "rotation": -145.10818, "width": 112, "height": 61 }
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER3_BLUE": { "x": -22, "y": 14, "width": 26, "height": 24 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER3_BLUE": { "x": 68.67018, "y": -3.674389, "rotation": -152.99936, "width": 26, "height": 24 }
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER3_YELLOW": { "x": 18, "y": -8, "width": 53, "height": 30 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER3_YELLOW": { "x": 23.042118, "y": -2.2323685, "rotation": -152.99936, "width": 53, "height": 30 }
 			},
 			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_WING_BLUE": { "x": 26, "y": -30, "width": 82, "height": 42 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_WING_BLUE": { "x": 36.332138, "y": 8.251926, "rotation": -171.60095, "width": 82, "height": 42 }
 			},
 			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
-				"CHICKEN/CHICKEN_GLOWS/GLOWS_WING_YELLOW": { "x": 18, "y": -8, "width": 96, "height": 64 }
+				"CHICKEN/CHICKEN_GLOWS/GLOWS_WING_YELLOW": { "x": 47.4598, "y": -12.343588, "rotation": -171.60095, "width": 96, "height": 64 }
 			},
 			"ICON/HEAD/SYMBOL_ICON_EYE": {
 				"CHICKEN/CHICKEN_ICON_EYE": { "width": 20, "height": 20 }
 			},
 			"ICON/HEAD/SYMBOL_ICON_HEAD": {
-				"CHICKEN/CHICKEN_ICON_HEAD": { "width": 93, "height": 66 }
+				"CHICKEN/CHICKEN_ICON_HEAD": { "x": 24.261017, "y": -10.274534, "rotation": -70.44221, "width": 93, "height": 66 }
 			},
 			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_HOCK_LEFT": {
-				"CHICKEN/CHICKEN_ICON_LEG_HOCK_LEFT": { "width": 69, "height": 104 }
+				"CHICKEN/CHICKEN_ICON_LEG_HOCK_LEFT": { "rotation": 117.642746, "width": 69, "height": 104 }
 			},
 			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_SHANK_LEFT": {
-				"CHICKEN/CHICKEN_ICON_LEG_SHANK_LEFT": { "width": 47, "height": 51 }
+				"CHICKEN/CHICKEN_ICON_LEG_SHANK_LEFT": { "x": 18.667473, "y": 2.8463871, "rotation": 53.669662, "width": 47, "height": 51 }
 			},
 			"ICON/LEG_LEFT/SYMBOL_ICON_LEG_TOES_LEFT": {
-				"CHICKEN/CHICKEN_ICON_LEG_TOES_LEFT": { "width": 88, "height": 23 }
+				"CHICKEN/CHICKEN_ICON_LEG_TOES_LEFT": { "x": 8.901642, "y": 1.2138519, "width": 88, "height": 23 }
 			},
 			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_HOCK_RIGHT": {
-				"CHICKEN/CHICKEN_ICON_LEG_HOCK_RIGHT": { "width": 78, "height": 111 }
+				"CHICKEN/CHICKEN_ICON_LEG_HOCK_RIGHT": { "x": -3.082264, "y": -4.4959335, "rotation": 119.040375, "width": 78, "height": 111 }
 			},
 			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_SHANK_RIGHT": {
-				"CHICKEN/CHICKEN_ICON_LEG_SHANK_RIGHT": { "width": 49, "height": 54 }
+				"CHICKEN/CHICKEN_ICON_LEG_SHANK_RIGHT": { "x": 16.282738, "y": 0.91961324, "rotation": 54.408195, "width": 49, "height": 54 }
 			},
 			"ICON/LEG_RIGHT/SYMBOL_ICON_LEG_TOES_RIGHT": {
-				"CHICKEN/CHICKEN_ICON_LEG_TOES_RIGHT": { "width": 92, "height": 24 }
+				"CHICKEN/CHICKEN_ICON_LEG_TOES_RIGHT": { "x": 6.4739685, "width": 92, "height": 24 }
 			},
 			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER1": {
-				"CHICKEN/CHICKEN_ICON_TAIL_FEATHER1": { "width": 114, "height": 120 }
+				"CHICKEN/CHICKEN_ICON_TAIL_FEATHER1": { "x": 66.28427, "y": -0.51966643, "rotation": -133.91924, "width": 114, "height": 120 }
 			},
 			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER2": {
-				"CHICKEN/CHICKEN_ICON_TAIL_FEATHER2": { "width": 124, "height": 82 }
+				"CHICKEN/CHICKEN_ICON_TAIL_FEATHER2": { "x": 51.949238, "y": -7.4725456, "rotation": -145.10818, "width": 124, "height": 82 }
 			},
 			"ICON/TAIL/SYMBOL_ICON_TAIL_FEATHER3": {
-				"CHICKEN/CHICKEN_ICON_TAIL_FEATHER3": { "width": 94, "height": 59 }
+				"CHICKEN/CHICKEN_ICON_TAIL_FEATHER3": { "x": 44.494297, "y": -0.28039032, "rotation": -152.99936, "width": 94, "height": 59 }
 			},
 			"ICON/SYMBOL_ICON": {
-				"CHICKEN/CHICKEN_ICON": { "width": 302, "height": 340 }
+				"CHICKEN/CHICKEN_ICON": { "y": -44.17391, "width": 302, "height": 340 }
 			},
 			"ICON/SYMBOL_ICON_BODY_CORPUS_TOP": {
-				"CHICKEN/CHICKEN_ICON_BODY_CORPUS_TOP": { "width": 101, "height": 167 }
+				"CHICKEN/CHICKEN_ICON_BODY_CORPUS_TOP": {
+					"type": "mesh",
+					"uvs": [ 1, 0.33761436, 1, 0.7655916, 0.61807644, 1, 0.44210118, 1, 0.2698701, 0.8357887, 0.44210118, 0.6908653, 0, 0.4259271, 0, 0.33761436, 0.3073123, 0.24703598, 0.43461308, 0, 0.8539586, 0, 0.60309994, 0.82899547, 0.7865635, 0.53688407, 0.26612598, 0.4236626, 0.5694027, 0.3715807, 0.719169, 0.1519311 ],
+					"triangles": [ 15, 9, 10, 8, 9, 15, 15, 10, 0, 14, 8, 15, 14, 15, 0, 13, 7, 8, 13, 8, 14, 5, 13, 14, 6, 7, 13, 6, 13, 5, 12, 14, 0, 5, 14, 12, 12, 0, 1, 11, 5, 12, 1, 11, 12, 4, 5, 11, 3, 4, 11, 2, 11, 1, 3, 11, 2 ],
+					"vertices": [ 2, 18, 100.94, -21.87, 0.45969, 19, 31.08, -39.25, 0.54031, 1, 18, 45.43, -66.89, 1, 1, 18, -9.28, -61.58, 1, 1, 18, -20.47, -47.77, 1, 1, 18, -10.12, -16.99, 1, 1, 18, 19.63, -15.26, 1, 2, 18, 25.88, 47.29, 0.78118, 19, -22.68, 47.52, 0.21882, 3, 18, 37.33, 56.58, 0.87415, 19, -9.16, 53.39, 0.12582, 20, -57.69, 53.47, 4.0E-5, 3, 18, 68.63, 42, 0.0058, 19, 17.08, 30.95, 0.89177, 20, -33.04, 29.29, 0.10243, 2, 19, 60.04, 35.59, 0.06539, 20, 10.14, 30.98, 0.93461, 2, 19, 76.92, -3.26, 0.05428, 20, 24.31, -8.93, 0.94572, 1, 18, 11.95, -42.42, 1, 2, 18, 61.52, -26.09, 0.98436, 19, -8.04, -32.73, 0.01564, 3, 18, 43.1, 26.65, 0.43431, 19, -11.63, 23.01, 0.56504, 20, -62.23, 23.33, 6.5E-4, 2, 18, 69.15, 8.33, 0.05965, 19, 8.55, -1.62, 0.94035, 3, 18, 107.17, 19.69, 6.1E-4, 19, 48.22, -0.88, 0.96326, 20, -4.15, -4.59, 0.03613 ],
+					"hull": 11,
+					"edges": [ 18, 16, 16, 14, 12, 14, 12, 10, 10, 8, 8, 6, 4, 6, 4, 2, 18, 20, 2, 0, 20, 0 ],
+					"width": 101,
+					"height": 167
+				}
 			},
 			"ICON/SYMBOL_ICON_GLOW": {
-				"CHICKEN/CHICKEN_ICON_GLOW": { "width": 330, "height": 368 }
+				"CHICKEN/CHICKEN_ICON_GLOW": { "y": -44.17391, "width": 330, "height": 368 }
 			},
 			"ICON/SYMBOL_ICON_NECK": {
-				"CHICKEN/CHICKEN_ICON_NECK": { "width": 86, "height": 127 }
+				"CHICKEN/CHICKEN_ICON_NECK": {
+					"type": "mesh",
+					"uvs": [ 0.97038305, 0.4554565, 1, 0.6850587, 1, 1, 0.9007946, 0.9999972, 0.8105889, 0.93926406, 0.74258864, 0.9999927, 0.6411067, 0.99998987, 0.58938766, 0.88710874, 0.4302536, 0.9248247, 0.34670824, 0.77934885, 0.16768253, 0.80628884, 0.19950935, 0.69583476, 0, 0.7066107, 0, 0.5934627, 0.15995212, 0.38521087, 0.45581707, 5.4715797E-6, 0.911634, 1.09431585E-5, 0.90358573, 0.6506122, 0.767445, 0.54935443, 0.87903565, 0.44356287, 0.46838176, 0.5236622, 0.60898614, 0.16548207, 0.42597717, 0.31661293 ],
+					"triangles": [ 18, 9, 20, 7, 18, 17, 7, 9, 18, 8, 9, 7, 4, 7, 17, 4, 17, 1, 5, 6, 7, 4, 5, 7, 2, 3, 4, 2, 4, 1, 21, 15, 16, 22, 15, 21, 22, 14, 15, 19, 21, 16, 22, 21, 19, 19, 16, 0, 20, 22, 19, 14, 22, 20, 18, 20, 19, 11, 13, 14, 0, 18, 19, 17, 18, 0, 17, 0, 1, 20, 11, 14, 12, 13, 11, 9, 11, 20, 10, 11, 9 ],
+					"vertices": [ 3, 19, 52.25, -28.91, 0.60175, 20, -2.05, -32.84, 0.18004, 18, 118.57, -6.24, 0.21821, 2, 19, 26.52, -42.86, 0.63799, 18, 97.52, -26.58, 0.36201, 1, 18, 66.45, -51.77, 1, 1, 18, 61.08, -45.14, 1, 1, 18, 62.19, -34.26, 1, 1, 18, 52.51, -34.57, 1, 1, 18, 47.02, -27.79, 1, 1, 18, 55.35, -15.31, 1, 1, 18, 43.01, -7.7, 1, 1, 18, 52.84, 9.52, 1, 1, 19, -16.12, 16.66, 1, 1, 19, -2.16, 19.74, 1, 3, 19, -10.25, 34.93, 0.53932, 20, -60.04, 35.12, 0.09208, 18, 41.23, 38.5, 0.3686, 3, 19, 2.93, 40.65, 0.82622, 20, -46.5, 39.93, 0.07378, 18, 52.4, 47.55, 0.1, 3, 19, 32.67, 38.57, 0.53763, 20, -16.97, 35.83, 0.42237, 18, 81.6, 53.52, 0.04, 1, 20, 37.64, 28.23, 1, 1, 20, 50.77, -8.71, 1, 3, 19, 27.23, -33.51, 0.59978, 20, -27.32, -35.72, 0.0191, 18, 95.7, -17.38, 0.38112, 3, 19, 34.36, -17.65, 0.59487, 20, -19.13, -20.38, 0.11619, 18, 98.31, -0.19, 0.28894, 3, 19, 50.51, -21.1, 0.29727, 20, -3.25, -24.93, 0.29188, 18, 114.79, 0.82, 0.41085, 3, 19, 27.11, 7.24, 0.65452, 20, -24.66, 4.95, 0.19367, 18, 84.65, 21.84, 0.15181, 3, 19, 73.65, 14.27, 0.23861, 20, 22.25, 8.78, 0.69076, 18, 127.6, 41.1, 0.07063, 3, 19, 49.77, 21.06, 0.42906, 20, -1.1, 17.18, 0.49348, 18, 102.78, 41.24, 0.07746 ],
+					"hull": 17,
+					"edges": [ 4, 2, 30, 32, 24, 26, 24, 22, 22, 20, 20, 18, 18, 16, 16, 14, 14, 12, 10, 12, 10, 8, 4, 6, 8, 6, 26, 28, 28, 30, 2, 0, 0, 32 ],
+					"width": 86,
+					"height": 127
+				}
 			},
 			"ICON/SYMBOL_ICON_WING": {
-				"CHICKEN/CHICKEN_ICON_WING": { "width": 110, "height": 92 }
+				"CHICKEN/CHICKEN_ICON_WING": { "x": 49.518036, "y": 1.1013007, "rotation": -171.60095, "width": 110, "height": 92 }
 			}
 		}
 	}
@@ -322,83 +455,94 @@
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE2": {
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
@@ -409,18 +553,7 @@
 					{ "time": 0.6, "value": 0 }
 				]
 			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW": {
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW2": {
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
@@ -432,168 +565,124 @@
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_BLUE": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_BLUE": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_BLUE": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_BLUE2": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
@@ -608,25 +697,14 @@
 				]
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_YELLOW": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
@@ -652,25 +730,25 @@
 				]
 			},
 			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/HEAD/SYMBOL_ICON_EYE": {
@@ -731,6 +809,9 @@
 			"ICON/SYMBOL_ICON": {
 				"rgb": [
 					{ "time": 0.73333335, "color": "797979" }
+				],
+				"attachment": [
+					{}
 				]
 			},
 			"ICON/SYMBOL_ICON_BODY_CORPUS_TOP": {
@@ -770,29 +851,6 @@
 					{},
 					{ "time": 0.23333335, "y": 0.9 },
 					{ "time": 0.3 }
-				]
-			},
-			"SYMBOL_ICON_SHADOW3": {
-				"translate": [
-					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 }
-				],
-				"scale": [
-					{},
-					{ "time": 0.23333335, "y": 0.9 },
-					{ "time": 0.3 }
-				]
-			},
-			"SYMBOL_ICON_SHADOW4": {
-				"translate": [
-					{},
-					{ "time": 0.26666668, "y": 70 },
-					{ "time": 0.73333335, "x": -125.90759, "y": 458.45068 }
-				],
-				"scale": [
-					{},
-					{ "time": 0.16666667, "y": 1.088 },
-					{ "time": 0.73333335, "x": 0.5, "y": 0.5 }
 				]
 			},
 			"SYMBOL_ROOT": {
@@ -846,17 +904,6 @@
 					{ "time": 0.3 }
 				]
 			},
-			"HEAD": {
-				"translate": [
-					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 }
-				],
-				"scale": [
-					{},
-					{ "time": 0.23333335, "y": 0.9 },
-					{ "time": 0.3 }
-				]
-			},
 			"LEG_RIGHT": {
 				"translate": [
 					{ "time": 0.23333335 },
@@ -883,18 +930,6 @@
 				"translate": [
 					{ "time": 0.23333335 },
 					{ "time": 0.6, "y": 30 }
-				],
-				"scale": [
-					{},
-					{ "time": 0.23333335, "y": 0.9 },
-					{ "time": 0.3 }
-				]
-			},
-			"SYMBOL_ICON_GLOW_PARTS": {
-				"translate": [
-					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 },
-					{ "time": 0.73333335, "y": -30 }
 				],
 				"scale": [
 					{},
@@ -950,83 +985,94 @@
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE2": {
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
@@ -1037,18 +1083,7 @@
 					{ "time": 0.6, "value": 0 }
 				]
 			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW": {
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW2": {
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
@@ -1060,168 +1095,124 @@
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_BLUE": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_BLUE": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_BLUE": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_BLUE2": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
@@ -1236,25 +1227,14 @@
 				]
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_YELLOW": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
@@ -1280,25 +1260,25 @@
 				]
 			},
 			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/HEAD/SYMBOL_ICON_EYE": {
@@ -1371,6 +1351,9 @@
 				"rgb": [
 					{ "color": "ffffff" },
 					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"attachment": [
+					{}
 				]
 			},
 			"ICON/SYMBOL_ICON_BODY_CORPUS_TOP": {
@@ -1413,29 +1396,6 @@
 					{},
 					{ "time": 0.23333335, "y": 0.9 },
 					{ "time": 0.3 }
-				]
-			},
-			"SYMBOL_ICON_SHADOW3": {
-				"translate": [
-					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 }
-				],
-				"scale": [
-					{},
-					{ "time": 0.23333335, "y": 0.9 },
-					{ "time": 0.3 }
-				]
-			},
-			"SYMBOL_ICON_SHADOW4": {
-				"translate": [
-					{},
-					{ "time": 0.26666668, "y": 70 },
-					{ "time": 0.73333335, "x": -125.90759, "y": 458.45068 }
-				],
-				"scale": [
-					{},
-					{ "time": 0.16666667, "y": 1.088 },
-					{ "time": 0.73333335, "x": 0.5, "y": 0.5 }
 				]
 			},
 			"SYMBOL_ROOT": {
@@ -1496,17 +1456,6 @@
 					{ "time": 0.3 }
 				]
 			},
-			"HEAD": {
-				"translate": [
-					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 }
-				],
-				"scale": [
-					{},
-					{ "time": 0.23333335, "y": 0.9 },
-					{ "time": 0.3 }
-				]
-			},
 			"LEG_RIGHT": {
 				"translate": [
 					{ "time": 0.23333335 },
@@ -1533,18 +1482,6 @@
 				"translate": [
 					{ "time": 0.23333335 },
 					{ "time": 0.6, "y": 30 }
-				],
-				"scale": [
-					{},
-					{ "time": 0.23333335, "y": 0.9 },
-					{ "time": 0.3 }
-				]
-			},
-			"SYMBOL_ICON_GLOW_PARTS": {
-				"translate": [
-					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 },
-					{ "time": 0.73333335, "y": -30 }
 				],
 				"scale": [
 					{},
@@ -1630,83 +1567,94 @@
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.23333335, "value": 1 },
+					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE2": {
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
@@ -1717,18 +1665,7 @@
 					{ "time": 0.6, "value": 0 }
 				]
 			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW": {
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW2": {
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
@@ -1740,168 +1677,124 @@
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_BLUE": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_BLUE": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_BLUE": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_BLUE2": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
@@ -1916,25 +1809,14 @@
 				]
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_YELLOW": {
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 0.23333335, "color": "f90000" }
-				],
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 0.23333335, "value": 1 },
-					{ "time": 0.6, "value": 0 }
 				]
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
@@ -1960,25 +1842,25 @@
 				]
 			},
 			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 0.23333335, "color": "f90000" }
-				],
 				"alpha": [
 					{ "value": 0 },
 					{ "time": 0.23333335, "value": 1 },
 					{ "time": 0.6, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 0.23333335, "color": "f90000" }
 				]
 			},
 			"ICON/HEAD/SYMBOL_ICON_EYE": {
@@ -2099,6 +1981,9 @@
 				"rgb": [
 					{ "color": "ffffff" },
 					{ "time": 0.73333335, "color": "ff0000" }
+				],
+				"attachment": [
+					{}
 				]
 			},
 			"ICON/SYMBOL_ICON_BODY_CORPUS_TOP": {
@@ -2153,29 +2038,6 @@
 					{},
 					{ "time": 0.23333335, "y": 0.9 },
 					{ "time": 0.3 }
-				]
-			},
-			"SYMBOL_ICON_SHADOW3": {
-				"translate": [
-					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 }
-				],
-				"scale": [
-					{},
-					{ "time": 0.23333335, "y": 0.9 },
-					{ "time": 0.3 }
-				]
-			},
-			"SYMBOL_ICON_SHADOW4": {
-				"translate": [
-					{},
-					{ "time": 0.26666668, "y": 70 },
-					{ "time": 0.73333335, "x": -125.90759, "y": 458.45068 }
-				],
-				"scale": [
-					{},
-					{ "time": 0.16666667, "y": 1.088 },
-					{ "time": 0.73333335, "x": 0.5, "y": 0.5 }
 				]
 			},
 			"SYMBOL_ROOT": {
@@ -2237,17 +2099,6 @@
 					{ "time": 0.3 }
 				]
 			},
-			"HEAD": {
-				"translate": [
-					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 }
-				],
-				"scale": [
-					{},
-					{ "time": 0.23333335, "y": 0.9 },
-					{ "time": 0.3 }
-				]
-			},
 			"LEG_RIGHT": {
 				"translate": [
 					{ "time": 0.23333335 },
@@ -2280,250 +2131,14 @@
 					{ "time": 0.23333335, "y": 0.9 },
 					{ "time": 0.3 }
 				]
-			},
-			"SYMBOL_ICON_GLOW_PARTS": {
-				"translate": [
-					{ "time": 0.23333335 },
-					{ "time": 0.6, "y": 30 },
-					{ "time": 0.73333335, "y": -30 }
-				],
-				"scale": [
-					{},
-					{ "time": 0.23333335, "y": 0.9 },
-					{ "time": 0.3 }
-				]
 			}
 		}
 	},
 	"IDLE": {
 		"slots": {
-			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_BLUE2": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
-			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
-				"alpha": [
-					{ "value": 0 },
-					{ "time": 1.5000001, "value": 0.1563 },
-					{ "time": 3.0000002, "value": 0 }
-				]
-			},
 			"ICON/SYMBOL_ICON": {
 				"attachment": [
-					{ "name": "CHICKEN/CHICKEN_ICON" }
+					{}
 				]
 			},
 			"ICON/SYMBOL_ICON_GLOW": {
@@ -2533,58 +2148,1384 @@
 					{ "time": 3.0000002, "value": 0 }
 				]
 			}
+		},
+		"bones": {
+			"SYMBOL_ICON_BODY_PLATE2": {
+				"rotate": [
+					{
+						"curve": [ 0.24444455, 0, 0.4888889, -3.825 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": -3.825,
+						"curve": [ 0.988889, -3.825, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.9888892, -3.825 ]
+					},
+					{
+						"time": 2.2333333,
+						"value": -3.825,
+						"curve": [ 2.488889, -3.825, 2.7444446, 0 ]
+					},
+					{ "time": 3.0000002 }
+				]
+			},
+			"SYMBOL_ICON_BODY_CORPUS_TOP": {
+				"rotate": [
+					{
+						"curve": [ 0.24444455, 0, 0.4888889, -1.3500023 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": -1.3500023,
+						"curve": [ 0.988889, -1.3500023, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.9888892, -1.3500023 ]
+					},
+					{
+						"time": 2.2333333,
+						"value": -1.3500023,
+						"curve": [ 2.488889, -1.3500023, 2.7444446, 0 ]
+					},
+					{ "time": 3.0000002 }
+				]
+			},
+			"SYMBOL_ICON_COMB": {
+				"rotate": [
+					{
+						"value": 0.3336258,
+						"curve": [ 0.033555605, 0.14175165, 0.0667778, 0 ]
+					},
+					{
+						"time": 0.10000001,
+						"curve": [ 0.34444454, 0, 0.5888889, 6.5250015 ]
+					},
+					{
+						"time": 0.8333334,
+						"value": 6.5250015,
+						"curve": [ 1.088889, 6.5250015, 1.3444445, 0 ]
+					},
+					{
+						"time": 1.6000001,
+						"curve": [ 1.8444445, 0, 2.0888891, 6.5250015 ]
+					},
+					{
+						"time": 2.3333335,
+						"value": 6.5250015,
+						"curve": [ 2.5556667, 6.5250015, 2.7780004, 1.617707 ]
+					},
+					{ "time": 3.0000002, "value": 0.3336258 }
+				]
+			},
+			"SYMBOL_ICON_NECK": {
+				"rotate": [
+					{
+						"curve": [ 0.24444455, 0, 0.4888889, -1.7999992 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": -1.7999992,
+						"curve": [ 0.988889, -1.7999992, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.9888892, -1.7999992 ]
+					},
+					{
+						"time": 2.2333333,
+						"value": -1.7999992,
+						"curve": [ 2.488889, -1.7999992, 2.7444446, 0 ]
+					},
+					{ "time": 3.0000002 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER1": {
+				"rotate": [
+					{
+						"value": 0.6269593,
+						"curve": [ 0.14131826, 0.30836838, 0.25806633, 0 ]
+					},
+					{
+						"time": 0.3,
+						"curve": [ 0.54444456, 0, 0.78888893, 1.349999 ]
+					},
+					{
+						"time": 1.0333334,
+						"value": 1.349999,
+						"curve": [ 1.288889, 1.349999, 1.5444444, 0 ]
+					},
+					{
+						"time": 1.8000001,
+						"curve": [ 2.0444446, 0, 2.288889, 1.349999 ]
+					},
+					{
+						"time": 2.5333335,
+						"value": 1.349999,
+						"curve": [ 2.667926, 1.349999, 2.8488305, 0.9814479 ]
+					},
+					{ "time": 3.0000002, "value": 0.6269593 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER2": {
+				"rotate": [
+					{
+						"value": 0.3196411,
+						"curve": [ 0.012142691, 0.29100528, 0.15570374, 0 ]
+					},
+					{
+						"time": 0.20000002,
+						"curve": [ 0.44444457, 0, 0.6888889, 1.7999878 ]
+					},
+					{
+						"time": 0.9333334,
+						"value": 1.7999878,
+						"curve": [ 1.188889, 1.7999878, 1.4444444, 0 ]
+					},
+					{
+						"time": 1.7,
+						"curve": [ 1.9444445, 0, 2.1888893, 1.7999878 ]
+					},
+					{
+						"time": 2.4333334,
+						"value": 1.7999878,
+						"curve": [ 2.623326, 1.7999878, 2.8133187, 0.827927 ]
+					},
+					{ "time": 3.0000002, "value": 0.3196411 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER3": {
+				"rotate": [
+					{
+						"value": 0.085235596,
+						"curve": [ 0.011568706, 0.07014182, 0.07785187, 0 ]
+					},
+					{
+						"time": 0.10000001,
+						"curve": [ 0.34444454, 0, 0.5888889, 1.5750122 ]
+					},
+					{
+						"time": 0.8333334,
+						"value": 1.5750122,
+						"curve": [ 1.088889, 1.5750122, 1.3444445, 0 ]
+					},
+					{
+						"time": 1.6000001,
+						"curve": [ 1.8444445, 0, 2.0888891, 1.5750122 ]
+					},
+					{
+						"time": 2.3333335,
+						"value": 1.5750122,
+						"curve": [ 2.5558486, 1.5750122, 2.7783637, 0.3935799 ]
+					},
+					{ "time": 3.0000002, "value": 0.085235596 }
+				]
+			},
+			"SYMBOL_ICON_WATTLES": {
+				"rotate": [
+					{
+						"curve": [ 0.24444455, 0, 0.4888889, 2.6222687 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": 2.6222687,
+						"curve": [ 0.988889, 2.6222687, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.9888892, 2.6222687 ]
+					},
+					{
+						"time": 2.2333333,
+						"value": 2.6222687,
+						"curve": [ 2.488889, 2.6222687, 2.7444446, 0 ]
+					},
+					{ "time": 3.0000002 }
+				]
+			},
+			"SYMBOL_SHADOWS": {
+				"scale": [
+					{
+						"curve": [ 0.24444455, 1, 0.4888889, 1.03, 0.24444455, 1, 0.4888889, 1 ]
+					},
+					{
+						"time": 0.73333335,
+						"x": 1.03,
+						"curve": [ 0.988889, 1.03, 1.2444445, 1, 0.988889, 1, 1.2444445, 1 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 1, 1.9888892, 1.03, 1.7444445, 1, 1.9888892, 1 ]
+					},
+					{
+						"time": 2.2333333,
+						"x": 1.03,
+						"curve": [ 2.488889, 1.03, 2.7444446, 1, 2.488889, 1, 2.7444446, 1 ]
+					},
+					{ "time": 3.0000002 }
+				]
+			},
+			"BODY": {
+				"translate": [
+					{
+						"curve": [ 0.24444446, 0, 0.4888889, 0, 0.24444446, 0, 0.4888889, -4.795746 ]
+					},
+					{
+						"time": 0.73333335,
+						"y": -4.795746,
+						"curve": [ 0.988889, 0, 1.2444445, 0, 0.988889, -4.795746, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.988889, 0, 1.7444445, 0, 1.988889, -4.795746 ]
+					},
+					{
+						"time": 2.2333333,
+						"y": -4.795746,
+						"curve": [ 2.488889, 0, 2.7444446, 0, 2.488889, -4.795746, 2.7444446, 0 ]
+					},
+					{ "time": 3.0000002 }
+				]
+			}
 		}
 	},
 	"IDLE_RAND1": {
 		"slots": {
 			"ICON/SYMBOL_ICON": {
 				"attachment": [
-					{ "name": "CHICKEN/CHICKEN_ICON" }
+					{}
+				]
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
 				]
 			}
 		},
 		"bones": {
-			"SYMBOL_ROOT": {
-				"translate": [
-					{},
-					{ "time": 0.86666673, "y": 20 },
-					{ "time": 1.7 }
+			"SYMBOL_ICON_BODY_PLATE2": {
+				"rotate": [
+					{
+						"curve": [ 0.24444455, 0, 0.4888889, -3.825 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": -3.825,
+						"curve": [ 0.988889, -3.825, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.9888892, -3.825 ]
+					},
+					{
+						"time": 2.2333333,
+						"value": -3.825,
+						"curve": [ 2.488889, -3.825, 2.7444446, 0 ]
+					},
+					{
+						"time": 3.0000002,
+						"curve": [ 3.1114075, 0, 3.222815, -15.525004 ]
+					},
+					{
+						"time": 3.3333335,
+						"value": -15.525004,
+						"curve": [ 3.4678235, -15.525004, 3.6022186, 9.936451 ]
+					},
+					{
+						"time": 3.7333336,
+						"value": 9.936451,
+						"curve": [ 4.0134363, 9.936451, 4.2900515, 0 ]
+					},
+					{ "time": 4.566667 }
+				]
+			},
+			"SYMBOL_ICON_BODY_CORPUS_TOP": {
+				"rotate": [
+					{
+						"curve": [ 0.24444455, 0, 0.4888889, -1.3500023 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": -1.3500023,
+						"curve": [ 0.988889, -1.3500023, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.9888892, -1.3500023 ]
+					},
+					{
+						"time": 2.2333333,
+						"value": -1.3500023,
+						"curve": [ 2.488889, -1.3500023, 2.7444446, 0 ]
+					},
+					{ "time": 3.0000002, "curve": "stepped" },
+					{
+						"time": 3.3000002,
+						"curve": [ 3.3666668, 0, 3.4333334, -0.67499924 ]
+					},
+					{
+						"time": 3.5000002,
+						"value": -0.67499924,
+						"curve": [ 3.8555558, -0.67499924, 4.2111115, 0 ]
+					},
+					{ "time": 4.566667 }
+				]
+			},
+			"SYMBOL_ICON_COMB": {
+				"rotate": [
+					{
+						"value": 0.3336258,
+						"curve": [ 0.033555605, 0.14175165, 0.0667778, 0 ]
+					},
+					{
+						"time": 0.10000001,
+						"curve": [ 0.34444454, 0, 0.5888889, 6.5250015 ]
+					},
+					{
+						"time": 0.8333334,
+						"value": 6.5250015,
+						"curve": [ 1.088889, 6.5250015, 1.3444445, 0 ]
+					},
+					{
+						"time": 1.6000001,
+						"curve": [ 1.8444445, 0, 2.0888891, 6.5250015 ]
+					},
+					{
+						"time": 2.3333335,
+						"value": 6.5250015,
+						"curve": [ 2.5556667, 6.5250015, 2.7780004, 1.617707 ]
+					},
+					{
+						"time": 3.0000002,
+						"value": 0.3336258,
+						"curve": [ 3.070726, -0.075463, 3.377778, 14.73362 ]
+					},
+					{
+						"time": 3.4,
+						"value": 14.73362,
+						"curve": [ 3.577778, 14.73362, 3.7555556, -5.7413826 ]
+					},
+					{
+						"time": 3.9333336,
+						"value": -5.7413826,
+						"curve": [ 4.1000004, -5.7413826, 4.266667, 9.783623 ]
+					},
+					{
+						"time": 4.4333334,
+						"value": 9.783623,
+						"curve": [ 4.522222, 9.783623, 4.4462857, 1.8011477 ]
+					},
+					{ "time": 4.7000003, "value": 0.3336258 }
+				]
+			},
+			"SYMBOL_ICON_NECK": {
+				"rotate": [
+					{
+						"curve": [ 0.24444446, 0, 0.4888889, -1.7999992 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": -1.7999992,
+						"curve": [ 0.988889, -1.7999992, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.9888892, -1.7999992 ]
+					},
+					{
+						"time": 2.2333333,
+						"value": -1.7999992,
+						"curve": [ 2.488889, -1.7999992, 2.7444446, 0 ]
+					},
+					{ "time": 3.0000002, "curve": "stepped" },
+					{
+						"time": 3.3000002,
+						"curve": [ 3.3666668, 0, 3.4333334, -31.499998 ]
+					},
+					{
+						"time": 3.5000002,
+						"value": -31.499998,
+						"curve": [ 3.777778, -31.499998, 4.055556, 0 ]
+					},
+					{
+						"time": 4.3333335,
+						"curve": [ 4.377778, 0, 4.4222226, -8.324993 ]
+					},
+					{
+						"time": 4.4666667,
+						"value": -8.324993,
+						"curve": [ 4.5222225, -8.324993, 4.585902, 0 ]
+					},
+					{ "time": 4.6333337 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER1": {
+				"rotate": [
+					{
+						"value": 0.6269593,
+						"curve": [ 0.14131826, 0.30836838, 0.25806633, 0 ]
+					},
+					{
+						"time": 0.3,
+						"curve": [ 0.54444456, 0, 0.78888893, 1.349999 ]
+					},
+					{
+						"time": 1.0333334,
+						"value": 1.349999,
+						"curve": [ 1.288889, 1.349999, 1.5444444, 0 ]
+					},
+					{
+						"time": 1.8000001,
+						"curve": [ 2.0444446, 0, 2.288889, 1.349999 ]
+					},
+					{
+						"time": 2.5333335,
+						"value": 1.349999,
+						"curve": [ 2.667926, 1.349999, 2.8488305, 0.9814479 ]
+					},
+					{
+						"time": 3.0000002,
+						"value": 0.6269593,
+						"curve": [ 3.0853722, 0.426764, 3.154839, 9.58284 ]
+					},
+					{
+						"time": 3.3000002,
+						"value": 9.58284,
+						"curve": [ 3.7222223, 9.58284, 4.144445, 1.5788261 ]
+					},
+					{ "time": 4.566667, "value": 0.6269593 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER2": {
+				"rotate": [
+					{
+						"value": 0.3196411,
+						"curve": [ 0.012142691, 0.29100528, 0.15570374, 0 ]
+					},
+					{
+						"time": 0.20000002,
+						"curve": [ 0.44444457, 0, 0.6888889, 1.7999878 ]
+					},
+					{
+						"time": 0.9333334,
+						"value": 1.7999878,
+						"curve": [ 1.188889, 1.7999878, 1.4444444, 0 ]
+					},
+					{
+						"time": 1.7,
+						"curve": [ 1.9444445, 0, 2.1888893, 1.7999878 ]
+					},
+					{
+						"time": 2.4333334,
+						"value": 1.7999878,
+						"curve": [ 2.623326, 1.7999878, 2.8133187, 0.827927 ]
+					},
+					{
+						"time": 3.0000002,
+						"value": 0.3196411,
+						"curve": [ 3.073527, 0.1194458, 3.2000003, 9.275513 ]
+					},
+					{
+						"time": 3.3000002,
+						"value": 9.275513,
+						"curve": [ 3.7222223, 9.275513, 4.144445, 1.3153372 ]
+					},
+					{ "time": 4.566667, "value": 0.3196411 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER3": {
+				"rotate": [
+					{
+						"value": 0.085235596,
+						"curve": [ 0.011568706, 0.07014182, 0.07785187, 0 ]
+					},
+					{
+						"time": 0.10000001,
+						"curve": [ 0.34444454, 0, 0.5888889, 1.5750122 ]
+					},
+					{
+						"time": 0.8333334,
+						"value": 1.5750122,
+						"curve": [ 1.088889, 1.5750122, 1.3444445, 0 ]
+					},
+					{
+						"time": 1.6000001,
+						"curve": [ 1.8444445, 0, 2.0888891, 1.5750122 ]
+					},
+					{
+						"time": 2.3333335,
+						"value": 1.5750122,
+						"curve": [ 2.5558486, 1.5750122, 2.7783637, 0.3935799 ]
+					},
+					{
+						"time": 3.0000002,
+						"value": 0.085235596,
+						"curve": [ 3.1000001, -0.053886056, 3.2000003, 9.041077 ]
+					},
+					{
+						"time": 3.3000002,
+						"value": 9.041077,
+						"curve": [ 3.7222223, 9.041077, 4.144445, 0.6361119 ]
+					},
+					{ "time": 4.566667, "value": 0.085235596 }
+				]
+			},
+			"SYMBOL_ICON_WATTLES": {
+				"rotate": [
+					{
+						"curve": [ 0.24444455, 0, 0.4888889, 2.6222687 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": 2.6222687,
+						"curve": [ 0.988889, 2.6222687, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.9888892, 2.6222687 ]
+					},
+					{
+						"time": 2.2333333,
+						"value": 2.6222687,
+						"curve": [ 2.488889, 2.6222687, 2.7444446, 0 ]
+					},
+					{
+						"time": 3.0000002,
+						"curve": [ 3.1009629, 0, 3.201926, 3.600006 ]
+					},
+					{
+						"time": 3.3000002,
+						"value": 3.600006,
+						"curve": [ 3.3890712, 3.600006, 3.478015, 30.05707 ]
+					},
+					{
+						"time": 3.5666668,
+						"value": 28.610893,
+						"curve": [ 3.711578, 26.253395, 3.8561857, -7.6861115 ]
+					},
+					{
+						"time": 4,
+						"value": -7.6861115,
+						"curve": [ 4.133913, -7.6861115, 4.267369, 3.3367157 ]
+					},
+					{
+						"time": 4.4,
+						"value": 3.3367157,
+						"curve": [ 4.456031, 3.3367157, 4.5113487, 0 ]
+					},
+					{ "time": 4.566667 }
+				]
+			},
+			"BODY": {
+				"rotate": [
+					{
+						"time": 3.0000002,
+						"curve": [ 3.0000002, -0.34282094, 3.2000003, -4.95 ]
+					},
+					{
+						"time": 3.3000002,
+						"value": -4.95,
+						"curve": [ 3.5000002, -4.95, 3.7000003, 22.5 ]
+					},
+					{
+						"time": 3.9,
+						"value": 22.5,
+						"curve": [ 4.1222224, 22.5, 4.566667, 1.1752197 ]
+					},
+					{
+						"time": 4.566667,
+						"value": 1,
+						"curve": [ 4.566667, 0.80954397, 4.7000003, 0.19045608 ]
+					},
+					{ "time": 4.7000003 }
 				],
+				"translate": [
+					{
+						"curve": [ 0.24444446, 1.9073486E-6, 0.4888889, 0, 0.24444446, 0, 0.4888889, -4.795746 ]
+					},
+					{
+						"time": 0.73333335,
+						"y": -4.795746,
+						"curve": [ 0.988889, 0, 1.2444445, 0, 0.988889, -4.795746, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.988889, 0, 1.7444445, 0, 1.988889, -4.795746 ]
+					},
+					{
+						"time": 2.2333333,
+						"y": -4.795746,
+						"curve": [ 2.488889, 0, 2.7444446, 0, 2.488889, -4.795746, 2.6207888, -0.0035543442 ]
+					},
+					{
+						"time": 3.0000002,
+						"curve": [ 3.1000004, 0, 3.1999998, 1.9073486E-6, 3.0020852, 1.9073486E-5, 3.1935482, -15.809433 ]
+					},
+					{
+						"time": 3.3000002,
+						"y": -15.809433,
+						"curve": [ 3.4142857, 1.9073486E-6, 3.4502308, 1.9073486E-6, 3.4142857, -15.809433, 3.4502308, 95.523766 ]
+					},
+					{
+						"time": 3.9,
+						"y": 95.523766,
+						"curve": [ 4.0474358, 2.861023E-6, 4.2525644, 1.9073486E-6, 4.2141023, 95.523766, 4.3063273, -14.726227 ]
+					},
+					{
+						"time": 4.4,
+						"y": -14.726238,
+						"curve": [ 4.4555554, 1.9073486E-6, 4.5111113, -4.3348996E-7, 4.4555554, -14.726244, 4.5111113, 2.25 ]
+					},
+					{
+						"time": 4.566667,
+						"y": 2.25,
+						"curve": [ 4.611111, 3.4678956E-7, 4.6444445, -4.3348996E-7, 4.611111, 2.25, 4.6444445, 0 ]
+					},
+					{ "time": 4.7000003 }
+				]
+			},
+			"SYMBOL_SHADOWS": {
 				"scale": [
-					{},
-					{ "time": 0.86666673, "y": 1.0485198 },
-					{ "time": 1.7 }
+					{
+						"curve": [ 0.24444455, 1, 0.4888889, 1.03, 0.24444455, 1, 0.4888889, 1 ]
+					},
+					{
+						"time": 0.73333335,
+						"x": 1.03,
+						"curve": [ 0.988889, 1.03, 1.2444445, 1, 0.988889, 1, 1.2444445, 1 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 1, 1.9888892, 1.03, 1.7444445, 1, 1.9888892, 1 ]
+					},
+					{
+						"time": 2.2333333,
+						"x": 1.03,
+						"curve": [ 2.488889, 1.03, 2.7444446, 1, 2.488889, 1, 2.7444446, 1 ]
+					},
+					{ "time": 3.0000002 }
+				]
+			},
+			"target": {
+				"rotate": [
+					{
+						"time": 3.3000002,
+						"curve": [ 3.4081502, -0.5440799, 3.4501116, -63.268677 ]
+					},
+					{
+						"time": 3.766667,
+						"value": -63.268677,
+						"curve": [ 3.972854, -63.268677, 4.0749826, 13.949997 ]
+					},
+					{
+						"time": 4.3333335,
+						"value": 13.95,
+						"curve": [ 4.3999996, 13.950001, 4.377778, 0 ]
+					},
+					{ "time": 4.4 }
+				],
+				"translate": [
+					{
+						"time": 3.0000002,
+						"curve": [ 3.0000002, -2.887249, 3.2000003, -19.894272, 3.1000001, 0, 3.2000008, -0.07715607 ]
+					},
+					{
+						"time": 3.3000002,
+						"x": -19.875015,
+						"curve": [ 3.4741938, -19.841469, 3.4419355, -0.015453339, 3.4741938, 0.13441005, 3.4419355, 79.57075 ]
+					},
+					{
+						"time": 3.9,
+						"x": -0.015453339,
+						"y": 79.57075,
+						"curve": [ 3.978244, -0.015453339, 4.055556, 4.678334, 3.9777799, 79.57075, 4.055556, 76.80811 ]
+					},
+					{
+						"time": 4.1333337,
+						"x": 4.6863937,
+						"y": 76.81226,
+						"curve": [ 4.187935, 4.6920514, 4.366667, 0.17340602, 4.190538, 76.815315, 4.366667, 2.8422081 ]
+					},
+					{ "time": 4.366667 }
+				]
+			},
+			"SYMBOL_ICON_WING": {
+				"rotate": [
+					{ "time": 3.3000002 },
+					{ "time": 3.5000002, "value": -22.5 },
+					{ "time": 3.6000001 },
+					{ "time": 3.7000003, "value": -22.5 },
+					{ "time": 3.8000002 },
+					{ "time": 3.9, "value": -22.5 },
+					{ "time": 4 },
+					{ "time": 4.1000004, "value": -22.5 },
+					{ "time": 4.2333336 }
+				]
+			},
+			"target2": {
+				"rotate": [
+					{
+						"time": 3.3000002,
+						"curve": [ 3.3985662, -0.7935812, 3.4103944, -58.725006 ]
+					},
+					{
+						"time": 3.6666667,
+						"value": -58.725006,
+						"curve": [ 3.888889, -58.725006, 4.111111, 23.625 ]
+					},
+					{
+						"time": 4.3333335,
+						"value": 23.625,
+						"curve": [ 4.3985667, 23.625, 4.377778, 0 ]
+					},
+					{ "time": 4.4 }
+				],
+				"translate": [
+					{
+						"time": 3.3000002,
+						"curve": [ 3.5000002, 0, 3.7000003, 0, 3.5000002, 0, 3.4290323, 89.75656 ]
+					},
+					{
+						"time": 3.9,
+						"y": 89.75656,
+						"curve": [ 3.977778, 0, 3.9333336, 0, 3.985305, 89.75656, 4.0637994, 92.625 ]
+					},
+					{
+						"time": 4.1333337,
+						"y": 92.625,
+						"curve": [ 4.211111, 0, 4.2888894, 0, 4.2111115, 92.625, 4.2888894, 0 ]
+					},
+					{ "time": 4.366667 }
+				]
+			},
+			"TAIL": {
+				"rotate": [
+					{
+						"time": 3.0000002,
+						"curve": [ 3.1111114, 0, 3.3260503, -20.184443 ]
+					},
+					{
+						"time": 3.3333335,
+						"value": -12.824993,
+						"curve": [ 3.341147, -4.930033, 3.5240145, 10.800009 ]
+					},
+					{
+						"time": 3.966667,
+						"value": 10.800009,
+						"curve": [ 4.1444445, 10.800009, 4.455556, 0 ]
+					},
+					{ "time": 4.7000003 }
+				]
+			},
+			"SYMBOL_ICON_HEAD": {
+				"rotate": [
+					{
+						"time": 3.3000002,
+						"curve": [ 3.3666668, 0, 3.4333334, -8.099997 ]
+					},
+					{
+						"time": 3.5000002,
+						"value": -8.099997,
+						"curve": [ 3.7777781, -8.099997, 4.055556, 10.230871 ]
+					},
+					{
+						"time": 4.3333335,
+						"value": 10.230871,
+						"curve": [ 4.377778, 10.230871, 4.4222226, -7.424995 ]
+					},
+					{
+						"time": 4.4666667,
+						"value": -7.424995,
+						"curve": [ 4.5222225, -7.424995, 4.577778, 0 ]
+					},
+					{ "time": 4.6333337 }
 				]
 			}
 		}
 	},
 	"IDLE_RAND2": {
 		"slots": {
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
+				"alpha": [
+					{ "time": 3.9333336, "value": 0 },
+					{ "time": 4.1000004, "value": 1, "curve": "stepped" },
+					{ "time": 4.2000003, "value": 1 },
+					{ "time": 4.366667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
+				"alpha": [
+					{ "time": 3.9333336, "value": 0 },
+					{ "time": 4.1000004, "value": 1, "curve": "stepped" },
+					{ "time": 4.2000003, "value": 1 },
+					{ "time": 4.366667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
+				"alpha": [
+					{ "time": 3.8333335, "value": 0 },
+					{ "time": 4, "value": 1, "curve": "stepped" },
+					{ "time": 4.1000004, "value": 1 },
+					{ "time": 4.266667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
+				"alpha": [
+					{ "time": 3.8666668, "value": 0 },
+					{ "time": 4.033334, "value": 1, "curve": "stepped" },
+					{ "time": 4.1333337, "value": 1 },
+					{ "time": 4.3, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE": {
+				"alpha": [
+					{ "time": 4.033334, "value": 0 },
+					{ "time": 4.2000003, "value": 1, "curve": "stepped" },
+					{ "time": 4.3, "value": 1 },
+					{ "time": 4.4666667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
+				"alpha": [
+					{ "time": 4.033334, "value": 0 },
+					{ "time": 4.2000003, "value": 1, "curve": "stepped" },
+					{ "time": 4.3, "value": 1 },
+					{ "time": 4.4666667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE2": {
+				"alpha": [
+					{ "time": 4, "value": 0 },
+					{ "time": 4.166667, "value": 1, "curve": "stepped" },
+					{ "time": 4.266667, "value": 1 },
+					{ "time": 4.4333334, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW2": {
+				"alpha": [
+					{ "time": 4, "value": 0 },
+					{ "time": 4.166667, "value": 1, "curve": "stepped" },
+					{ "time": 4.266667, "value": 1 },
+					{ "time": 4.4333334, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
+				"alpha": [
+					{ "time": 3.5666668, "value": 0 },
+					{ "time": 3.9, "value": 1, "curve": "stepped" },
+					{ "time": 4, "value": 1 },
+					{ "time": 4.3, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
+				"alpha": [
+					{ "time": 3.5666668, "value": 0 },
+					{ "time": 3.9, "value": 1, "curve": "stepped" },
+					{ "time": 4, "value": 1 },
+					{ "time": 4.3, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
+				"alpha": [
+					{ "time": 3.5666668, "value": 0 },
+					{ "time": 3.9, "value": 1, "curve": "stepped" },
+					{ "time": 4, "value": 1 },
+					{ "time": 4.3, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
+				"alpha": [
+					{ "time": 3.5666668, "value": 0 },
+					{ "time": 3.9, "value": 1, "curve": "stepped" },
+					{ "time": 4, "value": 1 },
+					{ "time": 4.3, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
+				"alpha": [
+					{ "time": 3.4333334, "value": 0 },
+					{ "time": 3.7333336, "value": 1, "curve": "stepped" },
+					{ "time": 3.8333335, "value": 1 },
+					{ "time": 4.2333336, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
+				"alpha": [
+					{ "time": 3.4333334, "value": 0 },
+					{ "time": 3.7333336, "value": 1, "curve": "stepped" },
+					{ "time": 3.8333335, "value": 1 },
+					{ "time": 4.2333336, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
+				"alpha": [
+					{ "time": 3.7000003, "value": 0 },
+					{ "time": 3.8666668, "value": 1, "curve": "stepped" },
+					{ "time": 3.966667, "value": 1 },
+					{ "time": 4.1333337, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
+				"alpha": [
+					{ "time": 4.033334, "value": 0 },
+					{ "time": 4.2000003, "value": 1, "curve": "stepped" },
+					{ "time": 4.3, "value": 1 },
+					{ "time": 4.4666667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
+				"alpha": [
+					{ "time": 4.066667, "value": 0 },
+					{ "time": 4.2333336, "value": 1, "curve": "stepped" },
+					{ "time": 4.3333335, "value": 1 },
+					{ "time": 4.5, "value": 0 }
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE": {
+				"alpha": [
+					{ "time": 3.766667, "value": 0 },
+					{ "time": 3.9333336, "value": 1, "curve": "stepped" },
+					{ "time": 4.033334, "value": 1 },
+					{ "time": 4.2000003, "value": 0 }
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
+				"alpha": [
+					{ "time": 3.766667, "value": 0 },
+					{ "time": 3.9333336, "value": 1, "curve": "stepped" },
+					{ "time": 4.033334, "value": 1 },
+					{ "time": 4.2000003, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
+				"alpha": [
+					{ "time": 4.1333337, "value": 0 },
+					{ "time": 4.3, "value": 1, "curve": "stepped" },
+					{ "time": 4.4, "value": 1 },
+					{ "time": 4.566667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
+				"alpha": [
+					{ "time": 4.166667, "value": 0 },
+					{ "time": 4.3333335, "value": 1, "curve": "stepped" },
+					{ "time": 4.4333334, "value": 1 },
+					{ "time": 4.6000004, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
+				"alpha": [
+					{ "time": 4.2000003, "value": 0 },
+					{ "time": 4.366667, "value": 1, "curve": "stepped" },
+					{ "time": 4.4666667, "value": 1 },
+					{ "time": 4.6333337, "value": 0 }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_YELLOW": {
+				"alpha": [
+					{ "time": 4.2333336, "value": 0 },
+					{ "time": 4.4, "value": 1, "curve": "stepped" },
+					{ "time": 4.5, "value": 1 },
+					{ "time": 4.666667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
+				"alpha": [
+					{ "time": 3.9, "value": 0 },
+					{ "time": 4.066667, "value": 1, "curve": "stepped" },
+					{ "time": 4.166667, "value": 1 },
+					{ "time": 4.3333335, "value": 0 }
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
+				"alpha": [
+					{ "time": 3.966667, "value": 0 },
+					{ "time": 4.1333337, "value": 1, "curve": "stepped" },
+					{ "time": 4.2333336, "value": 1 },
+					{ "time": 4.4, "value": 0 }
+				]
+			},
 			"ICON/SYMBOL_ICON": {
 				"attachment": [
-					{ "name": "CHICKEN/CHICKEN_ICON" }
+					{}
+				]
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 1.5000001, "value": 0.1563 },
+					{ "time": 3.0000002, "value": 0 }
 				]
 			}
 		},
 		"bones": {
-			"SYMBOL_ROOT": {
-				"translate": [
-					{},
-					{ "time": 0.86666673, "y": 20 },
-					{ "time": 1 },
-					{ "time": 1.1333334, "y": 20 },
-					{ "time": 1.2666668 },
-					{ "time": 1.6333334, "y": 20 },
-					{ "time": 1.7666668 }
-				],
+			"SYMBOL_ICON_BODY_PLATE2": {
+				"rotate": [
+					{
+						"curve": [ 0.24444455, 0, 0.4888889, -3.825 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": -3.825,
+						"curve": [ 0.988889, -3.825, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.9888892, -3.825 ]
+					},
+					{
+						"time": 2.2333333,
+						"value": -3.825,
+						"curve": [ 2.488889, -3.825, 2.7444444, 0 ]
+					},
+					{ "time": 3.0000002 }
+				]
+			},
+			"SYMBOL_ICON_BODY_CORPUS_TOP": {
+				"rotate": [
+					{
+						"curve": [ 0.24444455, 0, 0.4888889, -1.3500023 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": -1.3500023,
+						"curve": [ 0.988889, -1.3500023, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.9888892, -1.3500023 ]
+					},
+					{
+						"time": 2.2333333,
+						"value": -1.3500023,
+						"curve": [ 2.488889, -1.3500023, 2.7444444, -0.01576233 ]
+					},
+					{
+						"time": 3.0000002,
+						"curve": [ 3.1166077, 0.007193037, 3.0444443, 2.457247 ]
+					},
+					{
+						"time": 3.3000002,
+						"value": 2.4750023,
+						"curve": [ 3.4166076, 2.4831047, 3.5909095, -19.575003 ]
+					},
+					{
+						"time": 3.8333335,
+						"value": -19.575003,
+						"curve": [ 4.0222225, -19.575003, 4.2262225, 0 ]
+					},
+					{ "time": 4.4 }
+				]
+			},
+			"SYMBOL_ICON_COMB": {
+				"rotate": [
+					{
+						"value": 0.3336258,
+						"curve": [ 0.033555605, 0.14175165, 0.0667778, 0 ]
+					},
+					{
+						"time": 0.10000001,
+						"curve": [ 0.34444454, 0, 0.5888889, 6.5250015 ]
+					},
+					{
+						"time": 0.8333334,
+						"value": 6.5250015,
+						"curve": [ 1.088889, 6.5250015, 1.3444445, 0 ]
+					},
+					{
+						"time": 1.6000001,
+						"curve": [ 1.8444445, 0, 2.0888891, 6.5250015 ]
+					},
+					{
+						"time": 2.3333335,
+						"value": 6.5250015,
+						"curve": [ 2.5556667, 6.5250015, 2.7780004, 1.617707 ]
+					},
+					{ "time": 3.0000002, "value": 0.3336258 }
+				]
+			},
+			"SYMBOL_ICON_NECK": {
+				"rotate": [
+					{
+						"curve": [ 0.24444455, 0, 0.4888889, -1.7999992 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": -1.7999992,
+						"curve": [ 0.988889, -1.7999992, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.9888892, -1.7999992 ]
+					},
+					{
+						"time": 2.2333333,
+						"value": -1.7999992,
+						"curve": [ 2.488889, -1.7999992, 2.7444444, 0 ]
+					},
+					{
+						"time": 3.0000002,
+						"curve": [ 3.2916667, 0, 2.786111, 2.002716E-5 ]
+					},
+					{
+						"time": 3.2333336,
+						"curve": [ 3.4757576, 2.002716E-5, 3.5242429, -20.699993 ]
+					},
+					{
+						"time": 3.766667,
+						"value": -20.699993,
+						"curve": [ 3.955556, -20.699993, 4.159556, 0 ]
+					},
+					{ "time": 4.3333335 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER1": {
+				"rotate": [
+					{
+						"value": 0.6269593,
+						"curve": [ 0.14131826, 0.30836838, 0.25806633, 0 ]
+					},
+					{
+						"time": 0.3,
+						"curve": [ 0.54444456, 0, 0.78888893, 1.349999 ]
+					},
+					{
+						"time": 1.0333334,
+						"value": 1.349999,
+						"curve": [ 1.288889, 1.349999, 1.5444444, 0 ]
+					},
+					{
+						"time": 1.8000001,
+						"curve": [ 2.0444446, 0, 2.288889, 1.349999 ]
+					},
+					{
+						"time": 2.5333335,
+						"value": 1.349999,
+						"curve": [ 2.667926, 1.349999, 2.8488305, 0.9814479 ]
+					},
+					{ "time": 3.0000002, "value": 0.6269593 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER2": {
+				"rotate": [
+					{
+						"value": 0.3196411,
+						"curve": [ 0.012142691, 0.29100528, 0.15570374, 0 ]
+					},
+					{
+						"time": 0.20000002,
+						"curve": [ 0.44444457, 0, 0.6888889, 1.7999878 ]
+					},
+					{
+						"time": 0.9333334,
+						"value": 1.7999878,
+						"curve": [ 1.188889, 1.7999878, 1.4444444, 0 ]
+					},
+					{
+						"time": 1.7,
+						"curve": [ 1.9444445, 0, 2.1888893, 1.7999878 ]
+					},
+					{
+						"time": 2.4333334,
+						"value": 1.7999878,
+						"curve": [ 2.623326, 1.7999878, 2.8133187, 0.827927 ]
+					},
+					{ "time": 3.0000002, "value": 0.3196411 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER3": {
+				"rotate": [
+					{
+						"value": 0.085235596,
+						"curve": [ 0.011568706, 0.07014182, 0.07785187, 0 ]
+					},
+					{
+						"time": 0.10000001,
+						"curve": [ 0.34444454, 0, 0.5888889, 1.5750122 ]
+					},
+					{
+						"time": 0.8333334,
+						"value": 1.5750122,
+						"curve": [ 1.088889, 1.5750122, 1.3444445, 0 ]
+					},
+					{
+						"time": 1.6000001,
+						"curve": [ 1.8444445, 0, 2.0888891, 1.5750122 ]
+					},
+					{
+						"time": 2.3333335,
+						"value": 1.5750122,
+						"curve": [ 2.5558486, 1.5750122, 2.7783637, 0.3935799 ]
+					},
+					{ "time": 3.0000002, "value": 0.085235596 }
+				]
+			},
+			"SYMBOL_ICON_WATTLES": {
+				"rotate": [
+					{
+						"curve": [ 0.24444455, 0, 0.4888889, 2.6222687 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": 2.6222687,
+						"curve": [ 0.988889, 2.6222687, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.9888892, 2.6222687 ]
+					},
+					{
+						"time": 2.2333333,
+						"value": 2.6222687,
+						"curve": [ 2.488889, 2.6222687, 2.7444444, 0 ]
+					},
+					{ "time": 3.0000002 }
+				]
+			},
+			"SYMBOL_SHADOWS": {
 				"scale": [
-					{},
-					{ "time": 0.86666673, "y": 1.0485198 },
-					{ "time": 1 },
-					{ "time": 1.1333334, "y": 1.0485198 },
-					{ "time": 1.2666668 },
-					{ "time": 1.6333334, "y": 1.0485198 },
-					{ "time": 1.7666668 }
+					{
+						"curve": [ 0.24444455, 1, 0.4888889, 1.03, 0.24444455, 1, 0.4888889, 1 ]
+					},
+					{
+						"time": 0.73333335,
+						"x": 1.03,
+						"curve": [ 0.988889, 1.03, 1.2444445, 1, 0.988889, 1, 1.2444445, 1 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 1, 1.9888892, 1.03, 1.7444445, 1, 1.9888892, 1 ]
+					},
+					{
+						"time": 2.2333333,
+						"x": 1.03,
+						"curve": [ 2.488889, 1.03, 2.7444444, 1, 2.488889, 1, 2.7444444, 1 ]
+					},
+					{ "time": 3.0000002 }
+				]
+			},
+			"BODY": {
+				"rotate": [
+					{
+						"time": 3.0000002,
+						"curve": [ 3.0555556, 0, 3.1111114, 1.3499999 ]
+					},
+					{
+						"time": 3.1666667,
+						"value": 1.3499999,
+						"curve": [ 3.3666668, 1.3499999, 3.5666668, -9 ]
+					},
+					{
+						"time": 3.766667,
+						"value": -9,
+						"curve": [ 3.9555557, -9, 4.144445, 0 ]
+					},
+					{ "time": 4.3333335 }
+				],
+				"translate": [
+					{
+						"curve": [ 0.24444446, 0, 0.4888889, 0, 0.24444446, 0, 0.4888889, -4.795746 ]
+					},
+					{
+						"time": 0.73333335,
+						"y": -4.795746,
+						"curve": [ 0.988889, 0, 1.2444445, 0, 0.988889, -4.795746, 1.2444445, 0 ]
+					},
+					{
+						"time": 1.5000001,
+						"curve": [ 1.7444445, 0, 1.988889, 0, 1.7444445, 0, 1.988889, -4.795746 ]
+					},
+					{
+						"time": 2.2333333,
+						"y": -4.795746,
+						"curve": [ 2.488889, 0, 2.7444444, 0, 2.488889, -4.795746, 2.7444444, 0 ]
+					},
+					{
+						"time": 3.0000002,
+						"curve": [ 3.2222223, 0, 2.911111, 0, 3.0616486, 0, 3.0917563, 2.9999886 ]
+					},
+					{
+						"time": 3.1666667,
+						"y": 2.9999886,
+						"curve": [ 3.4333334, 0, 3.5000002, 0, 3.4333334, 2.9999886, 3.4462368, -12.789108 ]
+					},
+					{
+						"time": 3.766667,
+						"y": -12.789108,
+						"curve": [ 4.066667, 0, 4.3216667, 0, 4.2215056, -12.789108, 4.3216667, 0 ]
+					},
+					{ "time": 4.666667 }
+				]
+			},
+			"SYMBOL_ICON_HEAD": {
+				"rotate": [
+					{
+						"time": 3.0000002,
+						"curve": [ 3.0555556, 0, 3.1111114, 8.999991 ]
+					},
+					{
+						"time": 3.1666667,
+						"value": 8.999991,
+						"curve": [ 3.2777781, 8.999992, 3.388889, -11.250002 ]
+					},
+					{
+						"time": 3.5000002,
+						"value": -11.250002,
+						"curve": [ 3.6666667, -11.250002, 3.6881719, 37.945595 ]
+					},
+					{
+						"time": 4,
+						"value": 37.945595,
+						"curve": [ 4.1577044, 37.945595, 4.4444456, 0 ]
+					},
+					{ "time": 4.666667 }
+				]
+			},
+			"TAIL": {
+				"rotate": [
+					{
+						"time": 3.0000002,
+						"curve": [ 3.1444447, 0, 3.288889, 4.7249994 ]
+					},
+					{
+						"time": 3.4333334,
+						"value": 4.7249994,
+						"curve": [ 3.6222222, 4.7249994, 3.8111115, -12.8250065 ]
+					},
+					{
+						"time": 4,
+						"value": -12.8250065,
+						"curve": [ 4.2222223, -12.8250065, 4.4444447, 0 ]
+					},
+					{ "time": 4.666667 }
+				]
+			},
+			"SYMBOL_ICON_WING": {
+				"rotate": [
+					{
+						"time": 3.2333336,
+						"curve": [ 3.4333334, 0, 3.6333334, -21.149994 ]
+					},
+					{
+						"time": 3.8333335,
+						"value": -21.149994,
+						"curve": [ 4.0222225, -21.149994, 4.2111115, 0 ]
+					},
+					{
+						"time": 4.4,
+						"curve": [ 4.4444447, 0, 4.488889, -5.625 ]
+					},
+					{
+						"time": 4.533334,
+						"value": -5.625,
+						"curve": [ 4.577778, -5.625, 4.6222224, 0 ]
+					},
+					{ "time": 4.666667 }
 				]
 			}
 		}
@@ -2592,104 +3533,110 @@
 	"IDLE_RAND3": {
 		"slots": {
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_BLUE": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
+				"rgb": [
+					{ "color": "f9a400" },
+					{ "time": 1.2666668, "color": "38c7c1" },
+					{ "time": 1.6333334, "color": "00d1f9" },
+					{ "time": 1.7666668, "color": "f9a400" }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE2": {
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
@@ -2697,13 +3644,12 @@
 					{ "time": 1.7666668, "color": "f9a400" }
 				],
 				"alpha": [
-					{ "value": 0, "curve": "stepped" },
 					{ "time": 1.2666668, "value": 0.0011 },
 					{ "time": 1.6333334, "value": 0.5288 },
 					{ "time": 1.7666668, "value": 0 }
 				]
 			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE": {
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW2": {
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
@@ -2711,234 +3657,152 @@
 					{ "time": 1.7666668, "color": "f9a400" }
 				],
 				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
-				]
-			},
-			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 1.2666668, "color": "38c7c1" },
-					{ "time": 1.6333334, "color": "00d1f9" },
-					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
 					{ "time": 1.2666668, "value": 0.0011 },
 					{ "time": 1.6333334, "value": 0.5288 },
 					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
-				]
-			},
-			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 1.2666668, "color": "38c7c1" },
-					{ "time": 1.6333334, "color": "00d1f9" },
-					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
-				]
-			},
-			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 1.2666668, "color": "38c7c1" },
-					{ "time": 1.6333334, "color": "00d1f9" },
-					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
-				]
-			},
-			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_BLUE": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 1.2666668, "color": "38c7c1" },
-					{ "time": 1.6333334, "color": "00d1f9" },
-					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_BLUE": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_BLUE2": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 1.2666668, "color": "38c7c1" },
-					{ "time": 1.6333334, "color": "00d1f9" },
-					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
@@ -2949,38 +3813,22 @@
 					{ "time": 1.7666668, "color": "f9a400" }
 				],
 				"alpha": [
-					{ "value": 0, "curve": "stepped" },
 					{ "time": 1.2666668, "value": 0.0011 },
 					{ "time": 1.6333334, "value": 0.5288 },
 					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
-				]
-			},
-			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_YELLOW": {
-				"rgb": [
-					{ "color": "f9a400" },
-					{ "time": 1.2666668, "color": "38c7c1" },
-					{ "time": 1.6333334, "color": "00d1f9" },
-					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
@@ -2991,7 +3839,6 @@
 					{ "time": 1.7666668, "color": "f9a400" }
 				],
 				"alpha": [
-					{ "value": 0, "curve": "stepped" },
 					{ "time": 1.2666668, "value": 0.0011 },
 					{ "time": 1.6333334, "value": 0.5288 },
 					{ "time": 1.7666668, "value": 0 }
@@ -3005,43 +3852,40 @@
 					{ "time": 1.7666668, "color": "f9a400" }
 				],
 				"alpha": [
-					{ "value": 0, "curve": "stepped" },
 					{ "time": 1.2666668, "value": 0.0011 },
 					{ "time": 1.6333334, "value": 0.5288 },
 					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
+				"alpha": [
+					{ "time": 1.2666668, "value": 0.0011 },
+					{ "time": 1.6333334, "value": 0.5288 },
+					{ "time": 1.7666668, "value": 0 }
+				],
 				"rgb": [
 					{ "color": "f9a400" },
 					{ "time": 1.2666668, "color": "38c7c1" },
 					{ "time": 1.6333334, "color": "00d1f9" },
 					{ "time": 1.7666668, "color": "f9a400" }
-				],
-				"alpha": [
-					{ "value": 0, "curve": "stepped" },
-					{ "time": 1.2666668, "value": 0.0011 },
-					{ "time": 1.6333334, "value": 0.5288 },
-					{ "time": 1.7666668, "value": 0 }
 				]
 			},
 			"ICON/SYMBOL_ICON": {
 				"attachment": [
-					{ "name": "CHICKEN/CHICKEN_ICON" }
+					{}
 				]
 			},
 			"ICON/SYMBOL_ICON_GLOW": {
@@ -3083,11 +3927,6 @@
 	},
 	"RUNNING": {
 		"slots": {
-			"SYMBOL_ICON_SHADOW3": {
-				"alpha": [
-					{ "value": 1 }
-				]
-			},
 			"SYMBOL_ICON_SHADOW4": {
 				"alpha": [
 					{ "value": 0.44009998 }
@@ -3096,82 +3935,1439 @@
 					{}
 				]
 			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_BLUE": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_CORPUS_BOTTOM_YELLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_BLUE": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_BOTTOM/SYMBOL_ICON_GLOW_BODY_GEAR_YELLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_BLUE": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_BODY_CORPUS_TOP/SYMBOL_ICON_GLOW_BODY_CORPUS_TOP_YELLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE1_YELLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE2": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW2": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_HEAD_YELLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER1_YELLOW": {
+				"attachment": [
+					{},
+					{ "time": 0.23333335, "name": "CHICKEN/CHICKEN_GLOWS/GLOWS_TAIL_FEATHER1_YELLOW" }
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER2_BLUE": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_BLUE": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_TAIL/SYMBOL_ICON_GLOW_TAIL_FEATHER3_YELLOW": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_BLUE": {
+				"attachment": [
+					{}
+				]
+			},
+			"ICON/GLOW_WING/SYMBOL_ICON_GLOW_WING_YELLOW": {
+				"attachment": [
+					{}
+				]
+			},
 			"ICON/SYMBOL_ICON": {
 				"attachment": [
-					{ "name": "CHICKEN/CHICKEN_ICON" }
+					{}
+				]
+			},
+			"ICON/SYMBOL_ICON_GLOW": {
+				"attachment": [
+					{}
 				]
 			}
 		},
 		"bones": {
-			"SYMBOL_ICON_SHADOW4": {
+			"SYMBOL_ICON_BODY_CORPUS_BOTTOM": {
 				"translate": [
-					{ "x": -13, "y": 15 }
+					{
+						"curve": [ 0.016161617, 0, 0.017171716, 0, 0.016161617, 0, 0.017171716, -13.3550415 ]
+					},
+					{ "time": 0.033333335, "y": -13.3550415 }
 				]
 			},
-			"SYMBOL_ROOT": {
+			"SYMBOL_ICON_BODY_PLATE1": {
+				"rotate": [
+					{
+						"curve": [ 0.002656145, 1.1304682, 0.046464644, 14.116364 ]
+					},
+					{
+						"time": 0.06666667,
+						"value": 14.116364,
+						"curve": [ 0.08686869, 14.116364, 0.113131315, 1.4982758 ]
+					},
+					{ "time": 0.13333334, "value": 1.4982758 }
+				],
 				"translate": [
 					{},
-					{ "time": 0.13333334, "x": 60, "y": -40 },
-					{ "time": 0.26666668, "x": 60 }
+					{ "time": 0.13333334, "x": -3.9575806, "y": -2.3745651 }
+				]
+			},
+			"SYMBOL_ICON_BODY_CORPUS_TOP": {
+				"rotate": [
+					{},
+					{ "time": 0.06666667, "value": -19.059582, "curve": "stepped" },
+					{ "time": 0.20000002, "value": -19.059582 },
+					{ "time": 0.23333335 }
+				]
+			},
+			"SYMBOL_ICON_COMB": {
+				"rotate": [
+					{
+						"curve": [ 0.020202022, 0, 0.046464648, 10.274879 ]
+					},
+					{
+						"time": 0.06666667,
+						"value": 10.274879,
+						"curve": [ 0.08686869, 10.274879, 0.113131315, -6.483864 ]
+					},
+					{
+						"time": 0.13333334,
+						"value": -6.483864,
+						"curve": [ 0.16161618, -6.483864, 0.17171718, 2.4430466 ]
+					},
+					{
+						"time": 0.20000002,
+						"value": 2.4430466,
+						"curve": [ 0.21212123, 2.4430466, 0.22121213, 0 ]
+					},
+					{ "time": 0.23333335 }
+				]
+			},
+			"SYMBOL_ICON_HEAD": {
+				"rotate": [
+					{
+						"curve": [ 0.016161617, -2.1621997, 0.017171716, -2.1621997 ]
+					},
+					{
+						"time": 0.033333335,
+						"value": -2.1621997,
+						"curve": [ 0.06161617, -2.1621997, 0.105050504, 6.667811 ]
+					},
+					{
+						"time": 0.13333334,
+						"value": 9.428127,
+						"curve": [ 0.15353538, 11.399783, 0.17979799, 12.033712 ]
+					},
+					{
+						"time": 0.20000002,
+						"value": 12.033712,
+						"curve": [ 0.21616162, 12.033712, 0.21717173, 2.1622005 ]
+					},
+					{ "time": 0.23333335 }
+				]
+			},
+			"SYMBOL_ICON_LEG_TOES_LEFT": {
+				"rotate": [
+					{ "time": 0.13333334, "value": -32.4 },
+					{ "time": 0.16666667 }
+				]
+			},
+			"SYMBOL_ICON_LEG_TOES_RIGHT": {
+				"rotate": [
+					{ "time": 0.13333334, "value": -3.6 },
+					{ "time": 0.16666667, "value": -24 },
+					{ "time": 0.20000002, "value": -31.2 },
+					{ "time": 0.23333335 }
+				]
+			},
+			"SYMBOL_ICON_NECK": {
+				"rotate": [
+					{
+						"curve": [ 0.016161617, 3.8594236, 0.02053617, -1.0848083 ]
+					},
+					{
+						"time": 0.033333335,
+						"value": -1.0848083,
+						"curve": [ 0.057241626, -1.0848083, 0.11765657, 3.5782452 ]
+					},
+					{
+						"time": 0.13333334,
+						"value": 0.5152664,
+						"curve": [ 0.15353538, -3.4318733, 0.14646466, -13.453381 ]
+					},
+					{
+						"time": 0.16666667,
+						"value": -13.453381,
+						"curve": [ 0.1868687, -13.453381, 0.21313132, -4.824276 ]
+					},
+					{ "time": 0.23333335 }
+				],
+				"translate": [
+					{
+						"time": 0.033333335,
+						"curve": [ 0.05757577, 0, 0.10909092, 5.7310486, 0.05757577, 0, 0.10909092, 5.2901917 ]
+					},
+					{
+						"time": 0.13333334,
+						"x": 5.7310486,
+						"y": 5.2901917,
+						"curve": [ 0.15353538, 5.7310486, 0.14646466, 5.7310486, 0.15353538, 5.2901917, 0.14646466, -2.6450958 ]
+					},
+					{ "time": 0.16666667, "x": 5.7310486, "y": -2.6450958 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER1": {
+				"rotate": [
+					{},
+					{ "time": 0.06666667, "value": 22.60289 },
+					{ "time": 0.13333334, "value": 21.595833 },
+					{ "time": 0.16666667, "value": -0.99760437 },
+					{ "time": 0.23333335 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER2": {
+				"rotate": [
+					{},
+					{ "time": 0.06666667, "value": 22.602997 },
+					{ "time": 0.13333334, "value": 32.103973 },
+					{ "time": 0.16666667, "value": 9.510468 },
+					{ "time": 0.23333335 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER3": {
+				"rotate": [
+					{},
+					{ "time": 0.06666667, "value": 22.602997 },
+					{ "time": 0.13333334, "value": 34.90732 },
+					{ "time": 0.16666667, "value": 12.313812 },
+					{ "time": 0.23333335 }
+				]
+			},
+			"SYMBOL_ICON_WING": {
+				"rotate": [
+					{},
+					{ "time": 0.033333335, "value": -7.597687 },
+					{
+						"time": 0.06666667,
+						"value": -8.818176,
+						"curve": [ 0.07038527, -10.948126, 0.14187478, -69.00017 ]
+					},
+					{
+						"time": 0.16666667,
+						"value": -35.415237,
+						"curve": [ 0.16932282, -31.81707, 0.21111113, 0 ]
+					},
+					{ "time": 0.23333335 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.033333335, "y": -12.145416 },
+					{ "time": 0.06666667, "y": 26.158539 },
+					{ "time": 0.16666667, "x": 1.3051453, "y": 12.854439 },
+					{ "time": 0.23333335 }
+				]
+			},
+			"SYMBOL_SHADOWS": {
+				"translate": [
+					{ "time": 0.033333335 },
+					{ "time": 0.13333334, "x": 45.10202 },
+					{ "time": 0.16666667, "x": 37.72168 },
+					{ "time": 0.23333335, "x": 59.99898 }
 				],
 				"scale": [
 					{},
-					{ "time": 0.13333334, "y": 0.85931194 },
-					{ "time": 0.26666668 }
+					{ "time": 0.033333335, "x": 1.0656034, "y": 1.0656034 },
+					{ "time": 0.13333334, "x": 0.9827038, "y": 0.9827038 },
+					{ "time": 0.16666667, "x": 1.0656034, "y": 1.0656034 },
+					{ "time": 0.20000002, "x": 0.9827038, "y": 0.9827038 },
+					{ "time": 0.23333335 }
+				]
+			},
+			"BODY": {
+				"translatex": [
+					{
+						"value": 0.047073364,
+						"curve": [ 0.016377108, 0.047073364, 0.012759273, -4.881104 ]
+					},
+					{
+						"time": 0.033333335,
+						"value": -4.774453,
+						"curve": [ 0.06161617, -4.627842, 0.105050504, 5.066137 ]
+					},
+					{
+						"time": 0.13333334,
+						"value": 5.066139,
+						"curve": [ 0.1556555, 5.066141, 0.18118472, 59.92373 ]
+					},
+					{
+						"time": 0.20000002,
+						"value": 59.97136,
+						"curve": [ 0.21616304, 60.011932, 0.21668041, 60.047073 ]
+					},
+					{ "time": 0.23333335, "value": 60.047073 }
 				],
-				"shear": [
-					{},
-					{ "time": 0.13333334, "x": 4.894142, "y": -9.779778 },
-					{ "time": 0.26666668 }
+				"translatey": [
+					{
+						"value": 0.68346405,
+						"curve": [ 0.019903738, 0.68346405, 0.016520914, -0.47462463 ]
+					},
+					{
+						"time": 0.033333335,
+						"value": -7.1678314,
+						"curve": [ 0.03518119, -7.9034815, 0.08432446, 20.894861 ]
+					},
+					{ "time": 0.10000001, "value": 20.939905 },
+					{
+						"time": 0.16666667,
+						"value": -1.3419113,
+						"curve": [ 0.16826035, 0.5701438, 0.18241058, 30.493149 ]
+					},
+					{ "time": 0.20000002, "value": 30.493149 },
+					{ "time": 0.23333335, "value": 0.68346405 }
+				]
+			},
+			"target2": {
+				"translate": [
+					{ "time": 0.033333335 },
+					{ "time": 0.10000001, "y": 57.01964 },
+					{ "time": 0.13333334, "x": 61.22114, "y": 57.01964 },
+					{ "time": 0.16666667, "x": 59.999912 }
+				]
+			},
+			"target": {
+				"translate": [
+					{ "time": 0.13333334 },
+					{ "time": 0.16666667, "x": 11.84845, "y": 44.03189 },
+					{ "time": 0.20000002, "x": 53.955902, "y": 78.56758 },
+					{ "time": 0.23333335, "x": 60.000072 }
 				]
 			}
 		}
 	},
 	"WALKING": {
 		"slots": {
-			"SYMBOL_ICON_SHADOW3": {
-				"alpha": [
-					{ "value": 1 }
-				]
-			},
 			"SYMBOL_ICON_SHADOW4": {
 				"alpha": [
-					{ "value": 0.44009998 }
-				],
+					{ "value": 0.37254903 },
+					{ "time": 0.16666667, "value": 0.44009998, "curve": "stepped" },
+					{ "time": 0.90000004, "value": 0.44009998 },
+					{ "time": 1.6333334, "value": 0.38065514 },
+					{ "time": 1.6666667, "value": 0.37254903 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_BLUE2": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.16666667, "value": 1 },
+					{ "time": 0.5, "value": 0, "curve": "stepped" },
+					{ "time": 0.53333336, "value": 0 },
+					{ "time": 0.8333334, "value": 1, "curve": "stepped" },
+					{ "time": 0.90000004, "value": 1 },
+					{ "time": 1.2333333, "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0 },
+					{ "time": 1.5666667, "value": 1 },
+					{ "time": 1.6333334, "value": 0.5999999 },
+					{ "time": 1.6666667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_BODY_PLATES/SYMBOL_ICON_GLOW_BODY_PLATE2_YELLOW2": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.16666667, "value": 1 },
+					{ "time": 0.5, "value": 0, "curve": "stepped" },
+					{ "time": 0.53333336, "value": 0 },
+					{ "time": 0.8333334, "value": 1, "curve": "stepped" },
+					{ "time": 0.90000004, "value": 1 },
+					{ "time": 1.2333333, "value": 0, "curve": "stepped" },
+					{ "time": 1.2666668, "value": 0 },
+					{ "time": 1.5666667, "value": 1 },
+					{ "time": 1.6333334, "value": 0.5999999 },
+					{ "time": 1.6666667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_CONTOUR_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.16666667, "value": 1 },
+					{ "time": 0.33333334, "value": 0 },
+					{ "time": 0.5, "value": 0.9989 },
+					{ "time": 0.6666667, "value": 0 },
+					{ "time": 0.8333334, "value": 0.9989, "curve": "stepped" },
+					{ "time": 0.90000004, "value": 1 },
+					{ "time": 1.0666667, "value": 0 },
+					{ "time": 1.2333333, "value": 0.9989 },
+					{ "time": 1.4000001, "value": 0 },
+					{ "time": 1.5666667, "value": 0.9989 },
+					{ "time": 1.6333334, "value": 0.59933996 },
+					{ "time": 1.6666667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_COMB_FILL_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.16666667, "value": 1 },
+					{ "time": 0.33333334, "value": 0 },
+					{ "time": 0.5, "value": 0.9989 },
+					{ "time": 0.6666667, "value": 0 },
+					{ "time": 0.8333334, "value": 0.9989, "curve": "stepped" },
+					{ "time": 0.90000004, "value": 1 },
+					{ "time": 1.0666667, "value": 0 },
+					{ "time": 1.2333333, "value": 0.9989 },
+					{ "time": 1.4000001, "value": 0 },
+					{ "time": 1.5666667, "value": 0.9989 },
+					{ "time": 1.6333334, "value": 0.59933996 },
+					{ "time": 1.6666667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_CONTOUR_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.16666667, "value": 0.6999999 },
+					{ "time": 0.26666668, "value": 1 },
+					{ "time": 0.6, "value": 0 },
+					{ "time": 0.8333334, "value": 0.6999999, "curve": "stepped" },
+					{ "time": 0.90000004, "value": 0.6999999 },
+					{ "time": 1, "value": 1 },
+					{ "time": 1.3333334, "value": 0 },
+					{ "time": 1.5666667, "value": 0.6999999 },
+					{ "time": 1.6333334, "value": 0.4199999 },
+					{ "time": 1.6666667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_COMB_WATTLES/SYMBOL_ICON_GLOW_WATTLES_FILL_BLUE": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.16666667, "value": 0.6999999 },
+					{ "time": 0.26666668, "value": 1 },
+					{ "time": 0.6, "value": 0 },
+					{ "time": 0.8333334, "value": 0.6999999, "curve": "stepped" },
+					{ "time": 0.90000004, "value": 0.6999999 },
+					{ "time": 1, "value": 1 },
+					{ "time": 1.3333334, "value": 0 },
+					{ "time": 1.5666667, "value": 0.6999999 },
+					{ "time": 1.6333334, "value": 0.4199999 },
+					{ "time": 1.6666667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_IRIS_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.16666667, "value": 1 },
+					{ "time": 0.33333334, "value": 0.5 },
+					{ "time": 0.5, "value": 0 },
+					{ "time": 0.8333334, "value": 1, "curve": "stepped" },
+					{ "time": 0.90000004, "value": 1 },
+					{ "time": 1.0666667, "value": 0.5 },
+					{ "time": 1.2333333, "value": 0 },
+					{ "time": 1.5666667, "value": 1 },
+					{ "time": 1.6333334, "value": 0.5999999 },
+					{ "time": 1.6666667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_HEAD/SYMBOL_ICON_GLOW_EYE_PUPIL_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.16666667, "value": 1 },
+					{ "time": 0.5, "value": 0.0011 },
+					{ "time": 0.8333334, "value": 1, "curve": "stepped" },
+					{ "time": 0.90000004, "value": 1 },
+					{ "time": 1.2333333, "value": 0.0011 },
+					{ "time": 1.5666667, "value": 1 },
+					{ "time": 1.6333334, "value": 0.5999999 },
+					{ "time": 1.6666667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_HOCK_RIGHT_YELLOW": {
 				"attachment": [
-					{}
+					{ "time": 0.16666667 },
+					{ "time": 1.6666667, "name": "CHICKEN/CHICKEN_GLOWS/GLOWS_LEG_HOCK_RIGHT_YELLOW" }
+				]
+			},
+			"ICON/GLOW_LEG_RIGHT/SYMBOL_ICON_GLOW_LEG_SHANK_RIGHT_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.16666667, "value": 1 },
+					{ "time": 0.4666667, "value": 0 },
+					{ "time": 0.6, "value": 1, "curve": "stepped" },
+					{ "time": 0.90000004, "value": 1 },
+					{ "time": 1.2, "value": 0 },
+					{ "time": 1.3333334, "value": 1 },
+					{ "time": 1.6333334, "value": 0.24999994 },
+					{ "time": 1.6666667, "value": 0 }
+				]
+			},
+			"ICON/GLOW_NECK/SYMBOL_ICON_GLOW_NECK_YELLOW": {
+				"alpha": [
+					{ "value": 0 },
+					{ "time": 0.16666667, "value": 1 },
+					{ "time": 0.33333334, "value": 0 },
+					{ "time": 0.5, "value": 1 },
+					{ "time": 0.6666667, "value": 0 },
+					{ "time": 0.8333334, "value": 1, "curve": "stepped" },
+					{ "time": 0.90000004, "value": 1 },
+					{ "time": 1.0666667, "value": 0 },
+					{ "time": 1.2333333, "value": 1 },
+					{ "time": 1.4000001, "value": 0 },
+					{ "time": 1.5666667, "value": 1 },
+					{ "time": 1.6333334, "value": 0.5999999 },
+					{ "time": 1.6666667, "value": 0 }
 				]
 			},
 			"ICON/SYMBOL_ICON": {
 				"attachment": [
-					{ "name": "CHICKEN/CHICKEN_ICON" }
+					{}
 				]
 			}
 		},
 		"bones": {
-			"SYMBOL_ICON_SHADOW4": {
+			"SYMBOL_ICON_BODY_PLATE1": {
+				"rotate": [
+					{
+						"curve": [ 0.05555556, 0, 0.11111111, -10.232647 ]
+					},
+					{
+						"time": 0.16666667,
+						"curve": [ 0.17397107, 1.3453798, 0.2777778, 16.800003 ]
+					},
+					{
+						"time": 0.33333334,
+						"value": 16.800003,
+						"curve": [ 0.38888893, 16.800003, 0.44444445, -7.199997 ]
+					},
+					{
+						"time": 0.5,
+						"value": -7.199997,
+						"curve": [ 0.6338889, -7.199997, 0.8444445, -10.232647 ]
+					},
+					{
+						"time": 0.90000004,
+						"curve": [ 0.9073044, 1.3453798, 1.0111111, 16.800003 ]
+					},
+					{
+						"time": 1.0666667,
+						"value": 16.800003,
+						"curve": [ 1.1222223, 16.800003, 1.1777778, -7.199997 ]
+					},
+					{
+						"time": 1.2333333,
+						"value": -7.199997,
+						"curve": [ 1.3672223, -7.199997, 1.5011111, -2.5764093 ]
+					},
+					{
+						"time": 1.6333334,
+						"value": -0.74879456,
+						"curve": [ 1.6364648, -0.70811903, 1.633889, 0 ]
+					},
+					{ "time": 1.6666667 }
+				],
 				"translate": [
-					{ "x": -13, "y": 15 }
+					{ "time": 0.16666667 },
+					{ "time": 0.5, "x": -3.9575806, "y": -2.3745651 },
+					{ "time": 0.90000004 },
+					{ "time": 1.2333333, "x": -3.9575806, "y": -2.3745651 },
+					{ "time": 1.6333334, "x": -0.7915158, "y": -0.47491288 },
+					{ "time": 1.6666667 }
 				]
 			},
-			"SYMBOL_ROOT": {
+			"SYMBOL_ICON_BODY_PLATE2": {
+				"translate": [
+					{
+						"time": 0.16666667,
+						"curve": [ 0.22222224, 0, 0.2777778, 0, 0.22222224, 0, 0.2777778, -4.9048157 ]
+					},
+					{
+						"time": 0.33333334,
+						"y": -4.9048157,
+						"curve": [ 0.38888893, 4.082918E-6, 0.44444445, 0, 0.38888893, -4.9048185, 0.44444445, -1.4013977 ]
+					},
+					{
+						"time": 0.5,
+						"y": -1.4013977,
+						"curve": [ 0.55555564, 4.082918E-6, 0.6111111, 0, 0.55555564, -1.401402, 0.6111111, -4.9048157 ]
+					},
+					{
+						"time": 0.6666667,
+						"y": -4.9048157,
+						"curve": [ 0.7222222, 4.082918E-6, 0.77777785, 4.082918E-6, 0.7222222, -4.9048185, 0.77777785, -2.503395E-6 ]
+					},
+					{ "time": 0.8333334, "curve": "stepped" },
+					{
+						"time": 0.90000004,
+						"curve": [ 0.9555557, 0, 1.0111111, 0, 0.9555557, 0, 1.0111111, -4.9048157 ]
+					},
+					{
+						"time": 1.0666667,
+						"y": -4.9048157,
+						"curve": [ 1.1222223, 4.082918E-6, 1.1777778, 0, 1.1222223, -4.9048185, 1.1777778, -1.4013977 ]
+					},
+					{
+						"time": 1.2333333,
+						"y": -1.4013977,
+						"curve": [ 1.288889, 4.082918E-6, 1.3444445, 0, 1.288889, -1.401402, 1.3444445, -4.9048157 ]
+					},
+					{
+						"time": 1.4000001,
+						"y": -4.9048157,
+						"curve": [ 1.4555556, 4.082918E-6, 1.5111113, 4.082918E-6, 1.4555556, -4.9048185, 1.5111113, -2.503395E-6 ]
+					},
+					{ "time": 1.5666667 }
+				]
+			},
+			"SYMBOL_ICON_BODY_CORPUS_TOP": {
+				"rotate": [
+					{
+						"curve": [ 0.05555556, 0, 0.11111111, 9.001263 ]
+					},
+					{
+						"time": 0.16666667,
+						"value": 9.001263,
+						"curve": [ 0.21111113, 9.001263, 0.25555557, -11.0228615 ]
+					},
+					{
+						"time": 0.3,
+						"value": -11.0228615,
+						"curve": [ 0.36666664, -11.0228615, 0.43333337, 9.001263 ]
+					},
+					{
+						"time": 0.5,
+						"value": 9.001263,
+						"curve": [ 0.54444444, 9.001263, 0.5666667, -11.0228615 ]
+					},
+					{
+						"time": 0.6,
+						"value": -11.0228615,
+						"curve": [ 0.6777778, -11.0228615, 0.75555557, 9.001263 ]
+					},
+					{ "time": 0.8333334, "value": 9.001263, "curve": "stepped" },
+					{
+						"time": 0.90000004,
+						"value": 9.001263,
+						"curve": [ 0.94444454, 9.001263, 0.9888889, -11.0228615 ]
+					},
+					{
+						"time": 1.0333334,
+						"value": -11.0228615,
+						"curve": [ 1.1, -11.0228615, 1.1666667, 9.001263 ]
+					},
+					{
+						"time": 1.2333333,
+						"value": 9.001263,
+						"curve": [ 1.2777778, 9.001263, 1.3000001, -11.0228615 ]
+					},
+					{
+						"time": 1.3333334,
+						"value": -11.0228615,
+						"curve": [ 1.4111112, -11.0228615, 1.4888889, 9.001263 ]
+					},
+					{
+						"time": 1.5666667,
+						"value": 9.001263,
+						"curve": [ 1.5890741, 9.001263, 1.6114815, 7.580218 ]
+					},
+					{
+						"time": 1.6333334,
+						"value": 5.8328133,
+						"curve": [ 1.6363974, 5.597813, 1.6335186, 0 ]
+					},
+					{ "time": 1.6666667 }
+				]
+			},
+			"SYMBOL_ICON_COMB": {
+				"rotate": [
+					{
+						"curve": [ 0.05555556, 0, 0.15032122, 6.8716583 ]
+					},
+					{
+						"time": 0.16666667,
+						"value": 3.4358292,
+						"curve": [ 0.18925929, -1.31316, 0.21129635, -5.3686676 ]
+					},
+					{
+						"time": 0.23333335,
+						"value": -5.3686676,
+						"curve": [ 0.28888887, -5.3686676, 0.34444445, 19.644142 ]
+					},
+					{
+						"time": 0.40000004,
+						"value": 19.644142,
+						"curve": [ 0.4555556, 19.644142, 0.51111114, -5.3686676 ]
+					},
+					{
+						"time": 0.5666667,
+						"value": -5.3686676,
+						"curve": [ 0.60634923, -5.3686676, 0.67777777, 19.644142 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": 19.644142,
+						"curve": [ 0.7668519, 19.644142, 0.80037045, 10.659082 ]
+					},
+					{
+						"time": 0.8333334,
+						"value": 3.4358292,
+						"curve": [ 0.84106845, 1.74082, 0.8836546, 6.8716583 ]
+					},
+					{
+						"time": 0.90000004,
+						"value": 3.4358292,
+						"curve": [ 0.92259264, -1.31316, 0.9446297, -5.3686676 ]
+					},
+					{
+						"time": 0.9666667,
+						"value": -5.3686676,
+						"curve": [ 1.0222223, -5.3686676, 1.0777777, 19.644142 ]
+					},
+					{
+						"time": 1.1333334,
+						"value": 19.644142,
+						"curve": [ 1.188889, 19.644142, 1.2444445, -5.3686676 ]
+					},
+					{
+						"time": 1.3000001,
+						"value": -5.3686676,
+						"curve": [ 1.3396826, -5.3686676, 1.4111111, 19.644142 ]
+					},
+					{
+						"time": 1.4666667,
+						"value": 19.644142,
+						"curve": [ 1.5001853, 19.644142, 1.5337038, 10.659082 ]
+					},
+					{
+						"time": 1.5666667,
+						"value": 3.4358292,
+						"curve": [ 1.5744019, 1.74082, 1.601547, 0.89288366 ]
+					},
+					{
+						"time": 1.6333334,
+						"value": 0.45775604,
+						"curve": [ 1.6363759, 0.41712973, 1.6385186, 0 ]
+					},
+					{ "time": 1.6666667 }
+				]
+			},
+			"SYMBOL_ICON_HEAD": {
+				"rotate": [
+					{
+						"curve": [ 0.05555556, 0, 0.11111111, 2.7027495 ]
+					},
+					{
+						"time": 0.16666667,
+						"curve": [ 0.21111113, -2.1621997, 0.25555557, 29.174934 ]
+					},
+					{
+						"time": 0.3,
+						"value": 29.174934,
+						"curve": [ 0.3777778, 29.174934, 0.45555556, -1.4032912 ]
+					},
+					{
+						"time": 0.53333336,
+						"value": 5.5089455,
+						"curve": [ 0.5666667, 8.471335, 0.6, 25.84435 ]
+					},
+					{
+						"time": 0.6333334,
+						"value": 25.84435,
+						"curve": [ 0.7000001, 25.84435, 0.76666665, 3.2433023 ]
+					},
+					{
+						"time": 0.8333334,
+						"curve": [ 0.8557408, -1.0901085, 0.8444445, 2.7027495 ]
+					},
+					{
+						"time": 0.90000004,
+						"curve": [ 0.94444454, -2.1621997, 0.9888889, 29.174934 ]
+					},
+					{
+						"time": 1.0333334,
+						"value": 29.174934,
+						"curve": [ 1.1111113, 29.174934, 1.1888889, -1.4032912 ]
+					},
+					{
+						"time": 1.2666668,
+						"value": 5.5089455,
+						"curve": [ 1.3000001, 8.471335, 1.3333334, 25.84435 ]
+					},
+					{
+						"time": 1.3666668,
+						"value": 25.84435,
+						"curve": [ 1.4333334, 25.84435, 1.5000001, 3.2433023 ]
+					},
+					{
+						"time": 1.5666667,
+						"curve": [ 1.5890741, -1.0901085, 1.6114815, -1.3041774 ]
+					},
+					{
+						"time": 1.6333334,
+						"value": -1.1675868,
+						"curve": [ 1.6363974, -1.1492174, 1.6335186, 0 ]
+					},
+					{ "time": 1.6666667 }
+				],
+				"translate": [
+					{ "time": 0.16666667 },
+					{ "time": 0.36666667, "x": 2.8793335, "y": -8.886528 },
+					{ "time": 0.5666667, "x": 2.8793335, "y": 0.21586609 },
+					{ "time": 0.70000005, "x": 2.8793335, "y": -8.886528 },
+					{ "time": 0.8333334, "curve": "stepped" },
+					{ "time": 0.90000004 },
+					{ "time": 1.1, "x": 2.8793335, "y": -8.886528 },
+					{ "time": 1.3000001, "x": 2.8793335, "y": 0.21586609 },
+					{ "time": 1.4333334, "x": 2.8793335, "y": -8.886528 },
+					{ "time": 1.5666667 }
+				]
+			},
+			"SYMBOL_ICON_LEG_TOES_LEFT": {
+				"rotate": [
+					{ "time": 0.7666667 },
+					{ "time": 0.8333334, "value": 22.8 },
+					{ "time": 0.90000004, "curve": "stepped" },
+					{ "time": 1.5000001 },
+					{ "time": 1.5666667, "value": 22.8 },
+					{ "time": 1.6333334 }
+				],
+				"translate": [
+					{ "time": 0.7666667 },
+					{ "time": 0.8333334, "x": 11.1276245, "y": 5.398819 },
+					{ "time": 0.90000004, "curve": "stepped" },
+					{ "time": 1.5000001 },
+					{ "time": 1.5666667, "x": 11.1276245, "y": 5.398819 },
+					{ "time": 1.6333334 }
+				]
+			},
+			"SYMBOL_ICON_LEG_TOES_RIGHT": {
+				"rotate": [
+					{
+						"time": 0.16666667,
+						"curve": [ 0.1777778, 0, 0.18888889, -26.4 ]
+					},
+					{
+						"time": 0.20000002,
+						"value": -26.4,
+						"curve": [ 0.26666668, -26.4, 0.33333334, 8.733334 ]
+					},
+					{
+						"time": 0.40000004,
+						"value": 21,
+						"curve": [ 0.43333337, 27.133331, 0.4666667, 28.8 ]
+					},
+					{
+						"time": 0.5,
+						"value": 28.8,
+						"curve": [ 0.5166667, 28.8, 0.55555564, 0 ]
+					},
+					{ "time": 0.5666667, "curve": "stepped" },
+					{
+						"time": 0.90000004,
+						"curve": [ 0.9111112, 0, 0.92222226, -26.4 ]
+					},
+					{
+						"time": 0.9333334,
+						"value": -26.4,
+						"curve": [ 1, -26.4, 1.0666667, 8.733334 ]
+					},
+					{
+						"time": 1.1333334,
+						"value": 21,
+						"curve": [ 1.1666667, 27.133331, 1.2, 28.8 ]
+					},
+					{
+						"time": 1.2333333,
+						"value": 28.8,
+						"curve": [ 1.2500001, 28.8, 1.288889, 0 ]
+					},
+					{ "time": 1.3000001 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER1": {
+				"rotate": [
+					{
+						"curve": [ 0.05555556, 0, 0.11111111, 30.59163 ]
+					},
+					{
+						"time": 0.16666667,
+						"value": 17.677692,
+						"curve": [ 0.20037036, 9.843243, 0.23351856, 1.1380514E-6 ]
+					},
+					{
+						"time": 0.26666668,
+						"curve": [ 0.3222223, 0, 0.37777779, 29.162827 ]
+					},
+					{
+						"time": 0.43333337,
+						"value": 29.162827,
+						"curve": [ 0.48888892, 29.162825, 0.54444444, -12.417084 ]
+					},
+					{
+						"time": 0.6,
+						"value": -12.417084,
+						"curve": [ 0.6555556, -12.41708, 0.7111111, 27.28041 ]
+					},
+					{
+						"time": 0.7666667,
+						"value": 27.28041,
+						"curve": [ 0.7890741, 27.28041, 0.81148154, 22.973606 ]
+					},
+					{
+						"time": 0.8333334,
+						"value": 17.677692,
+						"curve": [ 0.8557408, 12.24714, 0.8444445, 30.59163 ]
+					},
+					{
+						"time": 0.90000004,
+						"value": 17.677692,
+						"curve": [ 0.9337037, 9.843243, 0.96685195, 1.1380514E-6 ]
+					},
+					{
+						"time": 1,
+						"curve": [ 1.0555557, 0, 1.1111112, 29.162827 ]
+					},
+					{
+						"time": 1.1666667,
+						"value": 29.162827,
+						"curve": [ 1.2222223, 29.162825, 1.2777778, -12.417084 ]
+					},
+					{
+						"time": 1.3333334,
+						"value": -12.417084,
+						"curve": [ 1.388889, -12.41708, 1.4444444, 27.28041 ]
+					},
+					{
+						"time": 1.5000001,
+						"value": 27.28041,
+						"curve": [ 1.5224075, 27.28041, 1.544815, 22.973606 ]
+					},
+					{
+						"time": 1.5666667,
+						"value": 17.677692,
+						"curve": [ 1.5890741, 12.24714, 1.6114815, 8.389914 ]
+					},
+					{
+						"time": 1.6333334,
+						"value": 5.6386123,
+						"curve": [ 1.6363974, 5.2686024, 1.6335186, 0 ]
+					},
+					{ "time": 1.6666667 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER2": {
+				"rotate": [
+					{
+						"curve": [ 0.05555556, 0, 0.12478058, 26.60315 ]
+					},
+					{
+						"time": 0.16666667,
+						"value": 13.301575,
+						"curve": [ 0.18925929, 6.1269436, 0.21129635, 0 ]
+					},
+					{
+						"time": 0.23333335,
+						"curve": [ 0.28888887, 0, 0.34444445, 29.162994 ]
+					},
+					{
+						"time": 0.40000004,
+						"value": 29.162994,
+						"curve": [ 0.4555556, 29.162994, 0.51111114, -9.406403 ]
+					},
+					{
+						"time": 0.5666667,
+						"value": -9.406403,
+						"curve": [ 0.6222223, -9.406403, 0.67777777, 37.788605 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": 37.788605,
+						"curve": [ 0.76685184, 37.788605, 0.8003704, 24.214249 ]
+					},
+					{
+						"time": 0.8333334,
+						"value": 13.301575,
+						"curve": [ 0.8510121, 7.448882, 0.85811394, 26.60315 ]
+					},
+					{
+						"time": 0.90000004,
+						"value": 13.301575,
+						"curve": [ 0.92259264, 6.1269436, 0.9446297, 0 ]
+					},
+					{
+						"time": 0.9666667,
+						"curve": [ 1.0222223, 0, 1.0777777, 29.162994 ]
+					},
+					{
+						"time": 1.1333334,
+						"value": 29.162994,
+						"curve": [ 1.188889, 29.162994, 1.2444445, -9.406403 ]
+					},
+					{
+						"time": 1.3000001,
+						"value": -9.406403,
+						"curve": [ 1.3555557, -9.406403, 1.4111111, 37.788605 ]
+					},
+					{
+						"time": 1.4666667,
+						"value": 37.788605,
+						"curve": [ 1.5001853, 37.788605, 1.5337037, 24.214249 ]
+					},
+					{
+						"time": 1.5666667,
+						"value": 13.301575,
+						"curve": [ 1.5843455, 7.448882, 1.607978, 4.2501993 ]
+					},
+					{
+						"time": 1.6333334,
+						"value": 2.414795,
+						"curve": [ 1.6363294, 2.2024364, 1.6355556, 0 ]
+					},
+					{ "time": 1.6666667 }
+				]
+			},
+			"SYMBOL_ICON_TAIL_FEATHER3": {
+				"rotate": [
+					{
+						"curve": [ 0.05555556, 0, 0.14745153, 8.443115 ]
+					},
+					{
+						"time": 0.16666667,
+						"value": 4.2215576,
+						"curve": [ 0.17814815, 1.6990819, 0.18907408, 0 ]
+					},
+					{
+						"time": 0.20000002,
+						"curve": [ 0.25555554, 0, 0.31111112, 29.162994 ]
+					},
+					{
+						"time": 0.36666667,
+						"value": 29.162994,
+						"curve": [ 0.42222226, 29.162994, 0.47777778, -0.3755188 ]
+					},
+					{
+						"time": 0.53333336,
+						"value": -0.3755188,
+						"curve": [ 0.58888894, -0.3755188, 0.6444444, 40.59195 ]
+					},
+					{
+						"time": 0.70000005,
+						"value": 40.59195,
+						"curve": [ 0.7446296, 40.59195, 0.7892593, 14.525234 ]
+					},
+					{
+						"time": 0.8333334,
+						"value": 4.2215576,
+						"curve": [ 0.8421215, 2.167066, 0.8807849, 8.443115 ]
+					},
+					{
+						"time": 0.90000004,
+						"value": 4.2215576,
+						"curve": [ 0.9114815, 1.6990819, 0.92240745, 0 ]
+					},
+					{
+						"time": 0.9333334,
+						"curve": [ 0.9888889, 0, 1.0444444, 29.162994 ]
+					},
+					{
+						"time": 1.1,
+						"value": 29.162994,
+						"curve": [ 1.1555556, 29.162994, 1.2111112, -0.3755188 ]
+					},
+					{
+						"time": 1.2666668,
+						"value": -0.3755188,
+						"curve": [ 1.3222224, -0.3755188, 1.3777778, 40.59195 ]
+					},
+					{
+						"time": 1.4333334,
+						"value": 40.59195,
+						"curve": [ 1.4779631, 40.59195, 1.5225928, 14.525234 ]
+					},
+					{
+						"time": 1.5666667,
+						"value": 4.2215576,
+						"curve": [ 1.5754548, 2.167066, 1.6020054, 1.1222833 ]
+					},
+					{
+						"time": 1.6333334,
+						"value": 0.5809021,
+						"curve": [ 1.636341, 0.52898765, 1.6381483, 0 ]
+					},
+					{ "time": 1.6666667 }
+				]
+			},
+			"SYMBOL_ICON_WATTLES": {
+				"rotate": [
+					{
+						"curve": [ 0.05555556, 0, 0.14544384, 0 ]
+					},
+					{
+						"time": 0.16666667,
+						"value": 9.462067,
+						"curve": [ 0.18925929, 19.534838, 0.21129635, 28.136719 ]
+					},
+					{
+						"time": 0.23333335,
+						"value": 28.136719,
+						"curve": [ 0.28888887, 28.136719, 0.34444445, -24.91632 ]
+					},
+					{
+						"time": 0.40000004,
+						"value": -24.91632,
+						"curve": [ 0.4555556, -24.91632, 0.51111114, 28.136719 ]
+					},
+					{
+						"time": 0.5666667,
+						"value": 28.136719,
+						"curve": [ 0.6222223, 28.136719, 0.67777777, -24.91632 ]
+					},
+					{
+						"time": 0.73333335,
+						"value": -24.91632,
+						"curve": [ 0.76685184, -24.91632, 0.8003704, -5.8587036 ]
+					},
+					{
+						"time": 0.8333334,
+						"value": 9.462067,
+						"curve": [ 0.843173, 14.0353985, 0.8787772, 0 ]
+					},
+					{
+						"time": 0.90000004,
+						"value": 9.462067,
+						"curve": [ 0.92259264, 19.534838, 0.9446297, 28.136719 ]
+					},
+					{
+						"time": 0.9666667,
+						"value": 28.136719,
+						"curve": [ 1.0222223, 28.136719, 1.0777777, -24.91632 ]
+					},
+					{
+						"time": 1.1333334,
+						"value": -24.91632,
+						"curve": [ 1.188889, -24.91632, 1.2444445, 28.136719 ]
+					},
+					{
+						"time": 1.3000001,
+						"value": 28.136719,
+						"curve": [ 1.3555557, 28.136719, 1.4111111, -24.91632 ]
+					},
+					{
+						"time": 1.4666667,
+						"value": -24.91632,
+						"curve": [ 1.5001853, -24.91632, 1.5337037, -5.8587036 ]
+					},
+					{
+						"time": 1.5666667,
+						"value": 9.462067,
+						"curve": [ 1.5765064, 14.0353985, 1.6027912, 11.986936 ]
+					},
+					{
+						"time": 1.6333334,
+						"value": 8.639511,
+						"curve": [ 1.6363513, 8.314208, 1.637963, 0 ]
+					},
+					{ "time": 1.6666667 }
+				]
+			},
+			"SYMBOL_ICON_WING": {
+				"rotate": [
+					{
+						"curve": [ 0.05555556, 0, 0.13575558, 8.217682 ]
+					},
+					{
+						"time": 0.16666667,
+						"value": 4.108841,
+						"curve": [ 0.20037036, -0.37120152, 0.23351856, -5.999945 ]
+					},
+					{
+						"time": 0.26666668,
+						"value": -5.999954,
+						"curve": [ 0.31111115, -5.999954, 0.35555556, 9.600052 ]
+					},
+					{
+						"time": 0.40000004,
+						"value": 9.600052,
+						"curve": [ 0.46666667, 9.600052, 0.53333336, -5.999954 ]
+					},
+					{
+						"time": 0.6,
+						"value": -5.999954,
+						"curve": [ 0.6555556, -5.999939, 0.7111111, 9.600052 ]
+					},
+					{
+						"time": 0.7666667,
+						"value": 9.600052,
+						"curve": [ 0.7890741, 9.600052, 0.81148154, 7.13725 ]
+					},
+					{
+						"time": 0.8333334,
+						"value": 4.108841,
+						"curve": [ 0.8470702, 2.2050781, 0.8690889, 8.217682 ]
+					},
+					{
+						"time": 0.90000004,
+						"value": 4.108841,
+						"curve": [ 0.9337037, -0.37120152, 0.96685195, -5.999945 ]
+					},
+					{
+						"time": 1,
+						"value": -5.999954,
+						"curve": [ 1.0444446, -5.999954, 1.0888889, 9.600052 ]
+					},
+					{
+						"time": 1.1333334,
+						"value": 9.600052,
+						"curve": [ 1.2, 9.600052, 1.2666668, -5.999954 ]
+					},
+					{
+						"time": 1.3333334,
+						"value": -5.999954,
+						"curve": [ 1.388889, -5.999939, 1.4444444, 9.600052 ]
+					},
+					{
+						"time": 1.5000001,
+						"value": 9.600052,
+						"curve": [ 1.5224075, 9.600052, 1.544815, 7.13725 ]
+					},
+					{
+						"time": 1.5666667,
+						"value": 4.108841,
+						"curve": [ 1.5804036, 2.2050781, 1.6052641, 1.2051653 ]
+					},
+					{
+						"time": 1.6333334,
+						"value": 0.65686035,
+						"curve": [ 1.6363251, 0.5991243, 1.636852, 0 ]
+					},
+					{ "time": 1.6666667 }
+				]
+			},
+			"SYMBOL_SHADOWS": {
+				"scale": [
+					{ "time": 0.16666667 },
+					{ "time": 0.3, "x": 1.0656034, "y": 1.0656034 },
+					{ "time": 0.5, "x": 0.9827038, "y": 0.9827038 },
+					{ "time": 0.6, "x": 1.0656034, "y": 1.0656034 },
+					{ "time": 0.73333335, "x": 0.9827038, "y": 0.9827038 },
+					{ "time": 0.8333334, "curve": "stepped" },
+					{ "time": 0.90000004 },
+					{ "time": 1.0333334, "x": 1.0656034, "y": 1.0656034 },
+					{ "time": 1.2333333, "x": 0.9827038, "y": 0.9827038 },
+					{ "time": 1.3333334, "x": 1.0656034, "y": 1.0656034 },
+					{ "time": 1.4666667, "x": 0.9827038, "y": 0.9827038 },
+					{ "time": 1.5666667 }
+				]
+			},
+			"BODY": {
+				"translatey": [
+					{
+						"curve": [ 0.05555556, 0, 0.11111111, 10.814911 ]
+					},
+					{
+						"time": 0.16666667,
+						"value": 10.814911,
+						"curve": [ 0.20000002, 10.814911, 0.23333335, -0.2817688 ]
+					},
+					{
+						"time": 0.26666668,
+						"value": -0.2817688,
+						"curve": [ 0.34444448, -0.2817688, 0.42222223, 26.472517 ]
+					},
+					{
+						"time": 0.5,
+						"value": 26.472519,
+						"curve": [ 0.53333336, 26.472519, 0.5666667, -0.2817688 ]
+					},
+					{
+						"time": 0.6,
+						"value": -0.2817688,
+						"curve": [ 0.6777778, -0.2817688, 0.75555557, 4.3188114 ]
+					},
+					{
+						"time": 0.8333334,
+						"value": 4.3188114,
+						"curve": [ 0.8557408, 4.3188114, 0.8444445, 10.814911 ]
+					},
+					{
+						"time": 0.90000004,
+						"value": 10.814911,
+						"curve": [ 0.9333334, 10.814911, 0.9666667, -0.2817688 ]
+					},
+					{
+						"time": 1,
+						"value": -0.2817688,
+						"curve": [ 1.0777779, -0.2817688, 1.1555555, 26.472517 ]
+					},
+					{
+						"time": 1.2333333,
+						"value": 26.472519,
+						"curve": [ 1.2666668, 26.472519, 1.3000001, -0.2817688 ]
+					},
+					{
+						"time": 1.3333334,
+						"value": -0.2817688,
+						"curve": [ 1.4111112, -0.2817688, 1.4888889, 4.3188114 ]
+					},
+					{
+						"time": 1.5666667,
+						"value": 4.3188114,
+						"curve": [ 1.5890741, 4.3188114, 1.6114815, 3.636993 ]
+					},
+					{
+						"time": 1.6333334,
+						"value": 2.7985873,
+						"curve": [ 1.6363974, 2.685834, 1.6335186, 0 ]
+					},
+					{ "time": 1.6666667 }
+				]
+			},
+			"target2": {
 				"translate": [
 					{},
-					{ "time": 0.33333334, "x": 60, "y": -40 },
-					{ "time": 0.6666667, "x": 60 }
-				],
+					{ "time": 0.16666667, "x": 39.270996 },
+					{ "time": 0.5, "x": -91.09213, "y": 2.1710815 },
+					{ "time": 0.6666667, "x": -61.819107, "y": 40.62602 },
+					{ "time": 0.90000004, "x": 39.270996 },
+					{ "time": 1.2333333, "x": -91.09213, "y": 2.1710815 },
+					{ "time": 1.4000001, "x": -61.819107, "y": 40.62602 },
+					{ "time": 1.6333334 }
+				]
+			},
+			"target": {
+				"translate": [
+					{},
+					{ "time": 0.16666667, "x": -50.842926 },
+					{ "time": 0.3, "y": 31.039612 },
+					{ "time": 0.5, "x": 78.110016, "y": 39.893097 },
+					{ "time": 0.53333336, "x": 68.76465 },
+					{ "time": 0.8333334 },
+					{ "time": 0.90000004, "x": -50.842926 },
+					{ "time": 1.0333334, "y": 31.039612 },
+					{ "time": 1.2333333, "x": 78.110016, "y": 39.893097 },
+					{ "time": 1.2666668, "x": 68.76465 },
+					{ "time": 1.5666667 }
+				]
+			},
+			"LEG_LEFT": {
+				"translate": [
+					{},
+					{ "time": 0.16666667, "x": -10.823975, "y": -10.814915 },
+					{ "time": 0.5, "x": -49.056053, "y": -26.472523 },
+					{ "time": 0.8333334, "x": -10.823975, "y": -4.318817 },
+					{ "time": 0.90000004, "x": -10.823975, "y": -10.814915 },
+					{ "time": 1.2333333, "x": -49.056053, "y": -26.472523 },
+					{ "time": 1.5666667, "x": -10.823975, "y": -4.318817 },
+					{ "time": 1.6333334 }
+				]
+			},
+			"SYMBOL_ICON_BODY_PLATE3": {
 				"scale": [
-					{},
-					{ "time": 0.33333334, "y": 0.85931194 },
-					{ "time": 0.6666667 }
-				],
-				"shear": [
-					{},
-					{ "time": 0.33333334, "x": 4.894142, "y": -9.779778 },
-					{ "time": 0.6666667 }
+					{ "time": 0.16666667 },
+					{ "time": 0.5, "x": 1.4858649, "y": 1.4858649, "curve": "stepped" },
+					{ "time": 0.53333336, "x": 1.1987708, "y": 1.1987708 },
+					{ "time": 0.8333334, "curve": "stepped" },
+					{ "time": 0.90000004 },
+					{ "time": 1.2333333, "x": 1.4858649, "y": 1.4858649, "curve": "stepped" },
+					{ "time": 1.2666668, "x": 1.1987708, "y": 1.1987708 },
+					{ "time": 1.5666667 }
 				]
 			}
 		}
 	}
-}
+},
+"ik": [
+	{
+		"name": "target",
+		"target": "target",
+		"bones": [ "SYMBOL_ICON_LEG_HOCK_RIGHT", "SYMBOL_ICON_LEG_SHANK_RIGHT" ],
+		"order": 0
+	},
+	{
+		"name": "target2",
+		"target": "target2",
+		"bones": [ "SYMBOL_ICON_LEG_HOCK_LEFT", "SYMBOL_ICON_LEG_SHANK_LEFT" ],
+		"order": 1
+	}
+]
 }

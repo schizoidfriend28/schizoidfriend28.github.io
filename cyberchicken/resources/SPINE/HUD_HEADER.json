@@ -1,10 +1,10 @@
 {
 "skeleton": {
-	"hash": "ZnRLDmXhNSg",
+	"hash": "W9djQ/jKxWQ",
 	"spine": "4.2-from-4.3.39-beta",
-	"x": -861,
+	"x": -960,
 	"y": -22.5,
-	"width": 1722,
+	"width": 1920,
 	"height": 45,
 	"images": "../../GRAPHIC_ASSETS/",
 	"audio": "./audio"
@@ -12,38 +12,38 @@
 "bones": [
 	{ "name": "HUD_HEADER_ROOT" },
 	{ "name": "TIME_PORTRAIT", "parent": "HUD_HEADER_ROOT", "x": 177, "scaleX": 0.6, "scaleY": 0.6 },
-	{ "name": "HEADER", "parent": "HUD_HEADER_ROOT" },
 	{ "name": "TIME_ICON", "parent": "HUD_HEADER_ROOT", "x": 212 },
 	{ "name": "TIME_LANDSCAPE", "parent": "HUD_HEADER_ROOT", "x": 177, "scaleX": 0.6, "scaleY": 0.6 },
 	{ "name": "SOUND_BUTTON", "parent": "HUD_HEADER_ROOT", "x": 416, "scaleX": 0.22555, "scaleY": 0.22555 },
-	{ "name": "BANKING_BUTTON", "parent": "HUD_HEADER_ROOT", "x": 478, "y": -0.85224, "scaleX": 0.36111, "scaleY": 0.36111 },
+	{ "name": "BANKING_BUTTON", "parent": "HUD_HEADER_ROOT", "x": 488, "y": -0.85224, "scaleX": 0.36111, "scaleY": 0.36111 },
 	{ "name": "LOGO_GAME_LANDSCAPE", "parent": "HUD_HEADER_ROOT", "x": -617, "y": -75 },
-	{ "name": "LOGO_COMPANY", "parent": "HUD_HEADER_ROOT", "x": 315, "y": -14, "scaleX": 0.5, "scaleY": 0.5 },
+	{ "name": "LOGO_COMPANY", "parent": "HUD_HEADER_ROOT", "x": 295, "y": -14, "scaleX": 0.5, "scaleY": 0.5 },
 	{ "name": "LOGO_GAME_PORTRAIT", "parent": "HUD_HEADER_ROOT", "x": -607.70667, "y": -37.33358 },
 	{ "name": "LOGO_GAME", "parent": "HUD_HEADER_ROOT", "x": -330, "y": -32, "scaleX": 0.8, "scaleY": 0.8 },
-	{ "name": "STEP_NUMBER", "parent": "HUD_HEADER_ROOT", "x": 310, "y": -100, "scaleX": 1.0074347, "scaleY": 1.0074347 },
-	{ "name": "GAME_NAME_TXT", "parent": "HUD_HEADER_ROOT", "x": 385, "y": -34 }
+	{ "name": "STEP_NUMBER", "parent": "HUD_HEADER_ROOT", "x": 361, "y": -117 },
+	{ "name": "GAME_NAME_TXT", "parent": "HUD_HEADER_ROOT", "x": 363, "y": -27 },
+	{ "name": "HEADER", "parent": "HUD_HEADER_ROOT" }
 ],
 "slots": [
-	{ "name": "HEADER", "bone": "HEADER", "color": "ffffffcb", "attachment": "GUI/HUD/HUD_HEADER_BCKGR" },
-	{ "name": "TIME_PORTRAIT", "bone": "TIME_PORTRAIT", "color": "ffffff7e" },
-	{ "name": "TIME_LANDSCAPE", "bone": "TIME_LANDSCAPE", "color": "ffffff7e" },
-	{ "name": "TIME_ICON", "bone": "TIME_ICON", "color": "ffffff7e", "attachment": "TIME_ICON" },
+	{ "name": "HEADER", "bone": "HEADER", "color": "000000b5", "attachment": "GUI/HUD/HUD_FOOTER_BCKGR" },
+	{ "name": "TIME_PORTRAIT", "bone": "TIME_PORTRAIT", "color": "ffffffe4" },
+	{ "name": "TIME_LANDSCAPE", "bone": "TIME_LANDSCAPE", "color": "ffffffe4" },
+	{ "name": "TIME_ICON", "bone": "TIME_ICON", "color": "ffffffcb", "attachment": "TIME_ICON" },
 	{ "name": "SOUND_BUTTON", "bone": "SOUND_BUTTON" },
 	{ "name": "BANKING_BUTTON", "bone": "BANKING_BUTTON" },
 	{ "name": "LOGO_GAME_LANDSCAPE", "bone": "LOGO_GAME_LANDSCAPE" },
 	{ "name": "LOGO_GAME", "bone": "LOGO_GAME" },
 	{ "name": "LOGO_GAME_PORTRAIT", "bone": "LOGO_GAME_PORTRAIT" },
 	{ "name": "LOGO_COMPANY", "bone": "LOGO_COMPANY" },
-	{ "name": "GAME_NAME_TXT", "bone": "GAME_NAME_TXT" },
-	{ "name": "STEP_NUMBER", "bone": "STEP_NUMBER" }
+	{ "name": "STEP_NUMBER", "bone": "STEP_NUMBER" },
+	{ "name": "GAME_NAME_TXT", "bone": "GAME_NAME_TXT", "color": "5f5f5fca" }
 ],
 "skins": [
 	{
 		"name": "default",
 		"attachments": {
 			"HEADER": {
-				"GUI/HUD/HUD_HEADER_BCKGR": { "width": 1722, "height": 45 }
+				"GUI/HUD/HUD_FOOTER_BCKGR": { "scaleY": 0.45, "width": 1920, "height": 100 }
 			}
 		}
 	},
@@ -125,7 +125,7 @@
 		"slots": {
 			"HEADER": {
 				"attachment": [
-					{ "name": "GUI/HUD/HUD_HEADER_BCKGR" }
+					{ "name": "GUI/HUD/HUD_FOOTER_BCKGR" }
 				]
 			},
 			"TIME_ICON": {

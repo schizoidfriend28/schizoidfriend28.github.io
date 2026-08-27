@@ -1,0 +1,7 @@
+BARRIER_BASE.png
+size:184,271
+filter:Linear,Linear
+BARRIER/BARRIER_ICON_RIM
+bounds:0,0,124,96
+BARRIER/BARRIER_PLATE
+bounds:0,97,184,174
