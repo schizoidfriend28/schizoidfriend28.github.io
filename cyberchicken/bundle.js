@@ -121571,13 +121571,13 @@ var RoadView = (_RoadView2 = class RoadView extends BasicView {
 		this._laneAngle = 0;
 		this._cars = [];
 		this._barriers = [];
+		this._barrierPoles = [];
 	}
 	init() {
 		var _superprop_getInit = () => super.init;
 		var _this = this;
 		return _asyncToGenerator(function* () {
 			_superprop_getInit().call(_this);
-			window.RoadView = _this;
 			_this._totalLanes = _this.getConfigValue("game.totalRoads");
 			_this._roadWidth = _this.getConfigValue("game.roadWidth");
 			_this._roadMainContainer = new import_lib.Container();
@@ -121651,14 +121651,16 @@ var RoadView = (_RoadView2 = class RoadView extends BasicView {
 		return _asyncToGenerator(function* () {
 			const lane = _this2._carsContainers[laneIndex];
 			const car = _this2.createCar(lane);
-			_this2._cars.push(car);
 			_this2.soundPlayer.play("car_driving");
-			const carOffsetY = _this2.mainUI.layout.getPosition("CARS", ScreenOrientation.PORTRAIT).y;
+			const carOffsetY = _this2.mainUI.layout.getPosition("CARS", _this2.screenOrientation).y;
 			const finalPositionY = _RoadView.LANE_HEIGHT - SCREEN_HEIGHT / 2 + carOffsetY;
 			yield TweenPresetUtils.targetTween(car.spine, {
 				x: 0,
 				y: finalPositionY
 			}, _this2.updateManager, _RoadView.CAR_DRIVE_DURATION)[0].getPromise();
+			_this2._cars.push(car);
+			const carOffsetYFinal = _this2.mainUI.layout.getPosition("CARS", _this2.screenOrientation).y;
+			car.spine.y = _RoadView.LANE_HEIGHT - SCREEN_HEIGHT / 2 + carOffsetYFinal;
 			_this2.soundPlayer.stop("car_driving");
 			_this2.soundPlayer.play("car_crash");
 			car.play("STOP", 0, false, "STOPPED_IDLE");
@@ -121693,6 +121695,28 @@ var RoadView = (_RoadView2 = class RoadView extends BasicView {
 	moveLanesOneStep() {
 		this._currentOffset++;
 		this.tweenToCurrentOffset();
+	}
+	onLandscape() {
+		super.onLandscape();
+		const barrierBaseYOffset = this.mainUI.layout.getPosition("BARRIERS_BASE", ScreenOrientation.LANDSCAPE).y;
+		for (const barrier of this._barriers) barrier.spine.position.set(0, _RoadView.LANE_HEIGHT - SCREEN_HEIGHT / 2 + barrierBaseYOffset);
+		const barrierPoleYOffset = this.mainUI.layout.getPosition("BARRIERS_POLE", ScreenOrientation.LANDSCAPE).y;
+		for (const barrierPoles of this._barrierPoles) barrierPoles.spine.position.set(0, _RoadView.LANE_HEIGHT - SCREEN_HEIGHT / 2 + barrierPoleYOffset);
+		for (const car of this._cars) {
+			const carOffsetYFinal = this.mainUI.layout.getPosition("CARS", ScreenOrientation.LANDSCAPE).y;
+			car.spine.y = _RoadView.LANE_HEIGHT - SCREEN_HEIGHT / 2 + carOffsetYFinal;
+		}
+	}
+	onPortrait() {
+		super.onPortrait();
+		const barrierBaseYOffset = this.mainUI.layout.getPosition("BARRIERS_BASE", ScreenOrientation.PORTRAIT).y;
+		for (const barrier of this._barriers) barrier.spine.position.set(0, _RoadView.LANE_HEIGHT - SCREEN_HEIGHT / 2 + barrierBaseYOffset);
+		const barrierPoleYOffset = this.mainUI.layout.getPosition("BARRIERS_POLE", ScreenOrientation.PORTRAIT).y;
+		for (const barrierPoles of this._barrierPoles) barrierPoles.spine.position.set(0, _RoadView.LANE_HEIGHT - SCREEN_HEIGHT / 2 + barrierPoleYOffset);
+		for (const car of this._cars) {
+			const carOffsetYFinal = this.mainUI.layout.getPosition("CARS", ScreenOrientation.PORTRAIT).y;
+			car.spine.y = _RoadView.LANE_HEIGHT - SCREEN_HEIGHT / 2 + carOffsetYFinal;
+		}
 	}
 	tweenToCurrentOffset() {
 		const tween = new Tween(this._roadMainContainer).to({ rotation: this._currentOffset * this._laneAngle }, _RoadView.LANE_SHIFT_DURATION).start();
@@ -121746,9 +121770,10 @@ var RoadView = (_RoadView2 = class RoadView extends BasicView {
 		const barrierContainer = new import_lib.Container();
 		barrierContainer.rotation = index * this._laneAngle * -1;
 		this._barriersContainer.addChild(barrierContainer);
-		const barrierBaseYOffset = this.mainUI.layout.getPosition("BARRIERS_BASE", ScreenOrientation.PORTRAIT).y;
-		this.spineUtils.startSpineAnimationCreation("BARRIER_BASE.json", "IDLE", true).position(0, _RoadView.LANE_HEIGHT - SCREEN_HEIGHT / 2 + barrierBaseYOffset).container(laneContainer).createAndStart();
-		const barrierPoleYOffset = this.mainUI.layout.getPosition("BARRIERS_POLE", ScreenOrientation.PORTRAIT).y;
+		const barrierBaseYOffset = this.mainUI.layout.getPosition("BARRIERS_BASE", this.screenOrientation).y;
+		const barrierBaseAnim = this.spineUtils.startSpineAnimationCreation("BARRIER_BASE.json", "IDLE", true).position(0, _RoadView.LANE_HEIGHT - SCREEN_HEIGHT / 2 + barrierBaseYOffset).container(laneContainer).createAndStart();
+		this._barrierPoles.push(barrierBaseAnim);
+		const barrierPoleYOffset = this.mainUI.layout.getPosition("BARRIERS_POLE", this.screenOrientation).y;
 		const barrierPole = this.spineUtils.startSpineAnimationCreation("BARRIER_POLE.json", "COLLECT_IDLE", true).position(0, _RoadView.LANE_HEIGHT - SCREEN_HEIGHT / 2 + barrierPoleYOffset).container(barrierContainer).createAndStart();
 		this._barriers.push(barrierPole);
 		const carsContainer = new import_lib.Container();
@@ -121774,9 +121799,6 @@ var RoadView = (_RoadView2 = class RoadView extends BasicView {
 		laneContainer.rotation = totalPositions * this._laneAngle * -1;
 		this._roadMainContainer.addChild(laneContainer);
 		return laneContainer;
-	}
-	onResized(screenParams) {
-		super.onResized(screenParams);
 	}
 }, _RoadView = _RoadView2, _RoadView2.CAR_SKINS = [
 	"BLACK",
@@ -122478,7 +122500,6 @@ var _ChickenView;
 var ChickenView = (_ChickenView2 = class ChickenView extends BasicView {
 	init() {
 		super.init();
-		window.ChickenView = this;
 		const chickenXOffset = this.getConfigValue("game.chickenXOffset");
 		this._chicken = this.spineUtils.startSpineAnimationCreation("CHICKEN.json", "IDLE", true).position(-chickenXOffset, 0).createAndStart();
 		this._currentMultiplier = this.spineUtils.startSpineAnimationCreation("CURRENT_MULTIPLIER.json", "IDLE", true).createAndStart();
@@ -122500,8 +122521,10 @@ var ChickenView = (_ChickenView2 = class ChickenView extends BasicView {
 	playDead() {
 		var _this = this;
 		return _asyncToGenerator(function* () {
+			_this.resetIdle();
 			_this._chicken.play(`DEATH${GameUtils.randomInt(1, 3)}`, 0, false, "IDLE");
 			yield _this._chicken.getPromise(0);
+			_this.startIdleTimer();
 		})();
 	}
 	resetRound() {
@@ -122519,13 +122542,35 @@ var ChickenView = (_ChickenView2 = class ChickenView extends BasicView {
 	makeStep() {
 		var _this3 = this;
 		return _asyncToGenerator(function* () {
+			_this3.resetIdle();
 			_this3.soundPlayer.play("walking");
 			_this3._chicken.play("WALKING", 0, true);
 			yield _this3.timeUtils.wait(500);
 			_this3._chicken.play("IDLE", 0, true);
+			_this3.startIdleTimer();
 		})();
 	}
-}, _ChickenView = _ChickenView2, _ChickenView2.FIRST_STEP_DURATION = 500, _ChickenView2);
+	resetIdle() {
+		if (this._chicken.isTrackPlaying(1)) {
+			this._chicken.stopTrack(1, false);
+			if (this._idleTimer) {
+				this.timeUtils.killTimer(this._idleTimer);
+				this._idleTimer = null;
+			}
+		}
+	}
+	startIdleTimer() {
+		if (this._idleTimer) {
+			this.timeUtils.killTimer(this._idleTimer);
+			this._idleTimer = null;
+		}
+		this._idleTimer = this.timeUtils.createTimer(this.playRandomIdle.bind(this), _ChickenView.IDLE_ADD_TIME);
+	}
+	playRandomIdle() {
+		this._chicken.play(`IDLE_RAND${GameUtils.randomInt(1, 3)}`, 1, false);
+		this.startIdleTimer();
+	}
+}, _ChickenView = _ChickenView2, _ChickenView2.FIRST_STEP_DURATION = 500, _ChickenView2.IDLE_ADD_TIME = 5e3, _ChickenView2);
 ChickenView = _ChickenView = __decorate([injectFromBase()], ChickenView);
 //#endregion
 //#region src/autoplay/states/GameAutoplayBasicState.ts
